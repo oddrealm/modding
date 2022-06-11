@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
+  m_Name: isg_plant_mature_drops_blood_crown_mushroom
+  m_EditorClassIdentifier: 
+  FriendlyName: 'Harvest yield:'
+  Data: '{"items":[{"item_id":"item_blood_crown_mushroom_raw","count":3,"spawn_rate":1000},{"item_id":"item_blood_crown_mushroom_raw","count":1,"spawn_rate":10},{"item_id":"item_blood_crown_mushroom_seed","count":2,"spawn_rate":1000},{"item_id":"item_blood_crown_mushroom_seed","count":1,"spawn_rate":75}]}'
+  Spawns:
+  - ItemID: item_blood_crown_mushroom_raw
+    GenerateNameKey: 
+    Count: 3
+    SpawnRate: 1000
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_blood_crown_mushroom_raw
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 10
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_blood_crown_mushroom_seed
+    GenerateNameKey: 
+    Count: 2
+    SpawnRate: 1000
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_blood_crown_mushroom_seed
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 75
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1

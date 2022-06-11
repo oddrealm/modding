@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7db86f420f50c418342177bb967083, type: 3}
+  m_Name: biome_desert_mountain
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_biome_desert_mountain
+  TerrainGeneration:
+  - biome_terrain_gen_desert_sable_bedrock0
+  - biome_terrain_gen_desert_ridgestone_bedrock1
+  - biome_terrain_gen_desert_kalite_bedrock2
+  - biome_terrain_gen_desert_ridgestone_peaks
+  - biome_terrain_gen_desert_sandstone_mountains
+  - biome_terrain_gen_desert_sand_hills
+  - biome_terrain_gen_desert_sand_plains
+  - biome_terrain_gen_desert_sand_beach
+  ModelPrefabGen:
+  - mpg_trees_palm_thin
+  - mpg_desert_giant_skeleton
+  DecoGeneration:
+  - biome_deco_gen_desert_surface_weeds
+  - biome_deco_gen_desert_surface_plants
+  - biome_deco_gen_desert_surface_props
+  - biome_deco_gen_desert_surface_void_crystals
+  LodeGeneration:
+  - biome_lode_gen_coal_ore
+  - biome_lode_gen_copper_ore
+  - biome_lode_gen_tin_ore
+  - biome_lode_gen_iron_ore
+  - biome_lode_gen_rutile_ore
+  - biome_lode_gen_void_crystal
+  - biome_lode_gen_amber_opal
+  - biome_lode_gen_sunrise_opal
+  - biome_lode_gen_forest_emerald
+  - biome_lode_gen_seabreeze_sapphire
+  OverworldMapGeneration: overworld_map_gen_desert_mountain
+  OverworldTerrainVisuals: overworld_visuals_desert_mountain
+  OverworldRiverVisuals: overworld_visuals_desert_river
+  MovementCost: 4
+  GenerateNameKey: biome_names_desert_mountains
+  Travel: overworld_travel_default
+  Fish:
+  - fish_chi_chi
+  - fish_sand_shrimp
+  Seasons:
+  - season_desert_spring
+  - season_desert_summer
+  - season_desert_fall
+  - season_desert_winter

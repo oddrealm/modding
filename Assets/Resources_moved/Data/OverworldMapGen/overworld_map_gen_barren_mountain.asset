@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2306836ee8b4298459405f228e2dabb0, type: 3}
+  m_Name: overworld_map_gen_barren_mountain
+  m_EditorClassIdentifier: 
+  BuildPriority: 4
+  SeedOffset: 0
+  Frequency: 3
+  Octaves: 4
+  Persistence: 0.5
+  Lacunarity: 1.75
+  MinThreshold: 0.75
+  MaxThreshold: 0.8
+  Falloff: 0.25
+  UseBotTopMinMax: 0
+  TopMax: 0.9
+  TopMin: 0.5
+  BotMax: 0.5
+  BotMin: 0.1
+  UseLongitudinalFade: 1
+  UseLateralFade: 0
+  InvertLongitudinalFade: 0
+  InvertLateralFade: 0

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_scenario_bandit1_deen0
+  m_EditorClassIdentifier: 
+  AppearanceID: 
+  NextDialogueID:
+  - dialogue_scenario_bandit2a_deen0
+  - dialogue_scenario_bandit2b_deen0
+  - dialogue_scenario_bandit2c_deen0
+  SpeakerTarget: '#bandit_deen'
+  Message: 'Hand over {x#scenario_item} {n#scenario_item} and no one dies. '
+  Response:
+  - Fine. Fine. Just leave us alone!
+  - Are we supposed to fear you?
+  - We need that to survive! Have mercy!

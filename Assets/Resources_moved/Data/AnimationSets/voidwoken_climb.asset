@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: voidwoken_climb
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 0568f5713f1565a4aa7c5e1b2f739391, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 86652c9c22cdcf948b05ad87e7104cab, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 93cf38e883f227f46a5e99154714616f, type: 2}
+  RightAnimation: {fileID: 11400000, guid: e610ca30a9f41444bbb54b5fb33471bc, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 6e4ee666a6564914184c665a5be1007a, type: 2}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: setha_walk
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 08dfca07b5a89b54c9a4b1c4ad9e15ff, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 069da75804e1a104ca629ae7a5e55be2, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 9cf2e4c4b8d63684d8833ec995a7deee, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 94ab006f2f39e204fa161b5de848a4c3, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: a3cae14b42fe34c4e92da9c514fc7265, type: 2}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: mirmit_fly
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 651bb14276f1fae4781e957ada548b39, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 0c1b007103617df4694e2a7688e97054, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 117fd633da6b4504890d9c48750cb0eb, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: c56d2fcc207d95745b11d661b56de5c2, type: 2}

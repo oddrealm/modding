@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_2
+  m_EditorClassIdentifier: 
+  AppearanceID: 
+  NextDialogueID:
+  - dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_3a
+  - dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_3b
+  SpeakerTarget: '#entity_townsend_kidnapped_child0'
+  Message: I'm sure you don't quite recognize me anymore. I've returned to join you
+    and help you build this settlement. I needed to return home. Will you take me
+    back? I've seen the Void and its horrors. You need my help.
+  Response:
+  - Of course! We had almost given up hope that you were still alive!
+  - How can we trust you? How are we to know you won't just kidnapp another child?
+    Leave us. Leave this place!

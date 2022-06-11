@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
+  m_Name: scenario_deen_and_greg_return0
+  m_EditorClassIdentifier: 
+  Index: 88
+  ActivationType: 1
+  IsThreat: 0
+  TooltipID: tooltip_scenario_taiga_deen_and_greg_return0
+  TileNoteTooltipID: 
+  TryQueueOnNewGame: 0
+  TileChance: -1
+  ActivationChance: 5
+  MinGameDays: -1
+  MinSettlerLevel: -1
+  MaxSettlerLevel: -1
+  MaxIDActivations: 1
+  MaxTagActivations: -1
+  IDInterval: 7200
+  TagInterval: 7200
+  Tag: 
+  RequiredTag: deen_and_greg0
+  RequiredEntityTagsInTile: []
+  RequiredRoomFunctions: []
+  PermittedNations: []
+  PermittedWeather: 
+  PermittedBiomes: []
+  PermittedRaces: []
+  PermittedSeasons: []
+  NotificationOnActivate: notif_scenario_activated_default
+  Components: '{"activate_actions":{"collect":{"block_tag":"random_map_edge_ground","block_count":1},"spawn_entities":{"spawn_tag":"collected_blocks","group_id":"esg_scenario_deen_and_greg_return0"},"move_camera":{"focus":"spawned_entities"},"start_dialogue":{"dialogue_id":"dialogue_scenario_bandit_return0_deen0"}},"output0_actions":{"leave_map":{"immediate":true,"focus":"spawned_entities"}},"output1_actions":{"leave_map":{"immediate":true,"focus":"spawned_entities"}}}'

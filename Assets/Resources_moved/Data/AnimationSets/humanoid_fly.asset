@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: humanoid_fly
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 0eccd9b6217d3314bb13e9ef5817079b, type: 2}
+  DownAnimation: {fileID: 11400000, guid: e5af222570629b24490b96f3344d9ea3, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 9a2cfa59b9d5e1b43b48bf8058be9b99, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 61a35fd4c87d0884eb4ccf8e8b417e01, type: 2}

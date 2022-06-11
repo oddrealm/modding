@@ -1,0 +1,20 @@
+﻿[System.Flags]
+public enum EntityAnimationTriggers
+{
+    NONE = 0,
+
+    WORK_START = 1,
+    MELEE_START = 2,
+    SWORD_START = 4,
+    BOW_START = 8,
+    MAGIC_START = 16,
+    THROW_START = 32,
+    LINE_CAST_START = 64,
+    FISH_CATCH_START = 128,
+    BLOCK_START = 256,
+    IDLE_TIMEOUT0_START = 512,
+    IDLE_TIMEOUT1_START = 1024,
+    IDLE_TIMEOUT2_START = 2048,
+    SLEEP_START = 4096,
+    CHANNEL_START = 8192
+}

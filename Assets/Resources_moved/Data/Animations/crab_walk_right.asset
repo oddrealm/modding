@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b430687389d853f48ba3d8c7adf38bfb, type: 3}
+  m_Name: crab_walk_right
+  m_EditorClassIdentifier: 
+  Loop: 1
+  FramesPerSecond: 16
+  Frames:
+  - AnimSprite: {fileID: 3174105973941069361, guid: 4fcd8f86911bcfc4a957855328fa7e79,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 1, y: -1}
+  - AnimSprite: {fileID: -2132920945421067480, guid: 4fcd8f86911bcfc4a957855328fa7e79,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 1, y: -1}
+  - AnimSprite: {fileID: 6452745483970645498, guid: 4fcd8f86911bcfc4a957855328fa7e79,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -7692200724063404969, guid: 4fcd8f86911bcfc4a957855328fa7e79,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 4935854292592922795, guid: 4fcd8f86911bcfc4a957855328fa7e79,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 1, y: -1}
+  - AnimSprite: {fileID: -3726862524081318097, guid: 4fcd8f86911bcfc4a957855328fa7e79,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 1, y: -1}
+  - AnimSprite: {fileID: -2309488101260017852, guid: 4fcd8f86911bcfc4a957855328fa7e79,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -853101835605761733, guid: 4fcd8f86911bcfc4a957855328fa7e79,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -853101835605761733, guid: 4fcd8f86911bcfc4a957855328fa7e79,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
+  m_Name: entity_names_void_woken
+  m_EditorClassIdentifier: 
+  FirstNameMasculinePrependChances: 1000
+  FirstNameMasculinePrepends:
+  - O'
+  - oO'
+  - Ooo'
+  - OOo'
+  - oOo'
+  MasculineFirstNames:
+  - mMm
+  - Mmm
+  - mm
+  - mmM
+  - m
+  - M
+  FirstNameFemininePrependChances: 1000
+  FirstNameFemininePrepends:
+  - U'
+  - uuUU'
+  - uU'
+  - Uuu'
+  - UuU'
+  - u'
+  FeminineFirstNames:
+  - Ww
+  - WwW
+  - WWw
+  - w
+  - W
+  - Www
+  - WwWww
+  LastNamePrependChances: 1000
+  LastNamePrepends:
+  - A'
+  - AA'
+  - aa'
+  - aA'
+  - Aa'
+  - a'
+  LastNames:
+  - Xoo
+  - Voo
+  - Yoo
+  - Uoo
+  - ooX
+  - ooV
+  - ooY
+  - ooU

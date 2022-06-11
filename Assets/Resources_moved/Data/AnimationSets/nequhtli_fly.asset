@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: nequhtli_fly
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 49a4ff215d2b4b64c91d2d8b2e2bc9f7, type: 2}
+  DownAnimation: {fileID: 11400000, guid: aa162892f20cd8d47b58c09af1651be9, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 2e47c47d338fd5d4582d95963bf93912, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 88ce559e574602649bc1490bd8eceedf, type: 2}

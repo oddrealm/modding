@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
+  m_Name: overworld_nation_gwdir
+  m_EditorClassIdentifier: 
+  Order: 3
+  TooltipID: tooltip_overworld_nation_gwdir
+  Unlocked: 0
+  Banner: sp_gwdir_banner
+  OverworldVisuals: overworld_visuals_gwdir
+  Color: 848f6e
+  Loadouts: []
+  Races:
+  - race_gwdir
+  DiscoveredRaces:
+  - race_gwdir
+  GenerateNameKey: location_names_gwdir_settlements
+  OriginCount: 3
+  MinCount: 2
+  MaxCount: 3
+  SettlementPrefabs:
+  - mpg_gwdir_town
+  Biomes:
+  - biome_taiga_forest
+  HostileTowards:
+  - race_ardyn
+  - race_ancient
+  FriendlyDiscoveryGroups:
+  - discoverygroup_shared_gwdir_settlement_friendly
+  HostileDiscoveryGroups:
+  - discoverygroup_shared_gwdir_settlement_hostile

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: traelik_fish_caught
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: addb0449603f8fe4e8447b395983126b, type: 2}
+  UpAnimation: {fileID: 11400000, guid: c84e41a99b2d6524ea7251809c5ff8d4, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 83be290fcb8d2304b9e710f330470c4e, type: 2}
+  RightAnimation: {fileID: 11400000, guid: c5b2a691268ce6c4cb12759138c17467, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: c61db2524f9705c4392b2987d81f3e2a, type: 2}

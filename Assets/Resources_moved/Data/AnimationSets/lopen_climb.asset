@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: lopen_climb
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 0568f5713f1565a4aa7c5e1b2f739391, type: 2}
+  UpAnimation: {fileID: 11400000, guid: a7bd3811468db78419bcb4887abb48cb, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 06bd34c63957ec542b585ca8eca967ab, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 05f2df6cd5b57064ca28f59a1f7a1e18, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 5c8c9ac8b3831aa4eae6c940e0473a4b, type: 2}

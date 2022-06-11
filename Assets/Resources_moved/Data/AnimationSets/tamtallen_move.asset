@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: tamtallen_move
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 1e6a859c913a2d940b7db7c995938744, type: 2}
+  UpAnimation: {fileID: 11400000, guid: b6f1287e869aa1546805c56bf2c3e9ad, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 19acc2e7f56d69847b8c0f36acf35322, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 46ce0aad508122a4fa179fcfd4080696, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 791071ba84b1c144eb903611397f2423, type: 2}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
+  m_Name: ccm_vytrax_ma0
+  m_EditorClassIdentifier: 
+  Priority: 0
+  Pairs:
+  - BodyPart: 2
+    Target: {r: 0.6698113, g: 0.6424291, b: 0.628738, a: 1}
+  - BodyPart: 1
+    Target: {r: 0.33962262, g: 0.27706054, b: 0.25471696, a: 1}
+  - BodyPart: 4
+    Target: {r: 0.1981132, g: 0.14607345, b: 0.12241901, a: 1}
+  - BodyPart: 8
+    Target: {r: 0.31764707, g: 0.28235295, b: 0.27450982, a: 1}
+  - BodyPart: 192
+    Target: {r: 0.28235295, g: 0.22745098, b: 0.20784314, a: 1}
+  - BodyPart: 256
+    Target: {r: 0.18867922, g: 0.1447415, b: 0.12904947, a: 1}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: smolkin_swim_idle
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 52f7e62038e9f5c4bbeb2c62a88a25fb, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 487798037ca253c439dda41a7f943a5d, type: 2}
+  DownAnimation: {fileID: 11400000, guid: a9a700288950e7a4f8602c1770c9ab0f, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 42fe495393a24c14192fa583eec70dbd, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: c077baf4ab336d94181780cb0ed4935a, type: 2}

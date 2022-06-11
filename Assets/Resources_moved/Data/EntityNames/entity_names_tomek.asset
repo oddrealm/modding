@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
+  m_Name: entity_names_tomek
+  m_EditorClassIdentifier: 
+  FirstNameMasculinePrependChances: 0
+  FirstNameMasculinePrepends: []
+  MasculineFirstNames:
+  - Arak
+  - Btak
+  - Cobak
+  - Dranak
+  - Elak
+  FirstNameFemininePrependChances: 0
+  FirstNameFemininePrepends:
+  - Ant'krl
+  - Bin'krl
+  - Ceten'krl
+  - Dayla'krl
+  - Em'krl
+  FeminineFirstNames: []
+  LastNamePrependChances: 1000
+  LastNamePrepends:
+  - K'Den'
+  - Ko'Den'
+  LastNames:
+  - Anvil
+  - Breaker
+  - Crag

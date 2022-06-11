@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: rat_attack_magic
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: e5b61f9b622e9ee47a2605b950cc37d7, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 8a742e86d669d8142921caed498890c0, type: 2}
+  DownAnimation: {fileID: 11400000, guid: b5494b0acf895a3419856d0bb8d16e8b, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 3a2b7f87bea37c146a5b97be4b53bf91, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 30ca9e065994fc440866820281ddc695, type: 2}

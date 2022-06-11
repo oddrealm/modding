@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa86ebf3cf42b684cb06c9616041dc72, type: 3}
+  m_Name: season_desert_spring
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_season_desert_spring
+  SeasonType: 0
+  SeasonStart: 0
+  Weather:
+  - weather_desert_spring_calm
+  - weather_desert_spring_wind
+  - weather_desert_spring_dust
+  SeasonColor: {r: 0.07797537, g: 0.7264151, b: 0, a: 1}

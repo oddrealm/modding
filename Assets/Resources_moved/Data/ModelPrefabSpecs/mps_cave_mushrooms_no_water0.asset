@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad02cc5c2fcc0e5418b9b43cc49c1402, type: 3}
+  m_Name: mps_cave_mushrooms_no_water0
+  m_EditorClassIdentifier: 
+  Group: mps_cave_mushrooms_no_water
+  ClearType: 2
+  Corridor: 
+  CorridorType: 2
+  Entrance: 
+  EntranceType: 2
+  Vertical: 
+  VerticalType: 2
+  Floor: 
+  FloorType: 2
+  Roof: 
+  RoofType: 2
+  A: 00000000
+  AType: 2
+  B: 00000000
+  BType: 2
+  C: b5040000b6040000b8040000
+  CType: 2
+  D: 100e0000110e0000120e0000130e0000140e0000150e0000160e0000
+  DType: 2

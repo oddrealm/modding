@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
+  m_Name: entity_tuning_shared_baddies_hard_v0_diff1
+  m_EditorClassIdentifier: 
+  SightRange: 128
+  MinRandomSkill: 5
+  MaxRandomSkill: 15
+  Health: 1d6+180
+  HealthChange: 0
+  Toughness: 1d3
+  Evasion: 2d6
+  MoveSpeed: 24
+  ClimbSpeed: 2
+  Happiness: 10000
+  HappinessChange: 5
+  Hunger: 10000
+  HungerChange: -40
+  Thirst: 10000
+  ThirstChange: -50
+  Energy: 10000
+  EnergyChange: -20
+  BlockCurrentTemperature: 50
+  Temperature: 50
+  ColdTolerance: 20
+  CritRate: 2
+  DamageIgnoreRate: 0
+  Age: 0
+  XP: 0
+  Level: 2
+  AttackSpeedMod: 10000
+  OutputQualityMax: 3
+  FishLure: 0
+  FishScare: 50
+  ProjectileMultRate: 0
+  ProjectileMultMod: 0
+  UsageDecreaseRate: 0
+  UsageDecreaseMod: 0
+  ResourceFindRate: 0
+  ResourceFindMod: 0
+  BurnRate: 0
+  BurnMod: 0
+  Oxygen: 10000
+  OxygenChange: 2500
+  StartingStatuses: []
+  RandomStartingStatuses: []
+  FirstName: 
+  LastName: 
+  Appearance: 
+  InventoryGroupID: isg_entity_inventory_shared_baddies_hard_v0_diff1
+  EquipmentGroupID: isg_entity_equipment_shared_baddies_hard_v0_diff1

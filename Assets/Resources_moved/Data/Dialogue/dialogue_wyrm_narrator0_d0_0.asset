@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_wyrm_narrator0_d0_0
+  m_EditorClassIdentifier: 
+  AppearanceID: 
+  NextDialogueID: []
+  SpeakerTarget: 
+  Message: '{*}A low rumble vibrates the air. Slowly, it builds, with the inevitability
+    of a stone tumbling down a mountain. The earth begins to undulate with its rhythm.
+    Many horrors reside within the depths of Odd, but only the fearsome Wyrm is known
+    to summon the power of an earthquake. The noise is blinding, and standing is
+    only achieved by the strongest trees as the creature rends the earth below. Unseen,
+    the Wyrm passes and, with each breath, the chaos gradually eases. A tremendous
+    scar traces the earth, marking the creature''s path.{*/}'
+  Response: []

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: nequhtli_block
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: dda4ba75608eefa4e881089b251fda00, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 98b2194500293d448923534a4be8d819, type: 2}
+  DownAnimation: {fileID: 11400000, guid: b397b8f1d1f4c374ca6cb53f86da1ee2, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 49c48addd0e9a764d895b9d3e125cc68, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 8c2b3945a4756da4dbd011de1e1e919c, type: 2}

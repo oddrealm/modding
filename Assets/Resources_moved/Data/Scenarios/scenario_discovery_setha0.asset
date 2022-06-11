@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
+  m_Name: scenario_discovery_setha0
+  m_EditorClassIdentifier: 
+  Index: 15
+  ActivationType: 2
+  IsThreat: 1
+  TooltipID: tooltip_scenario_discovery_setha0
+  TileNoteTooltipID: 
+  TryQueueOnNewGame: 0
+  TileChance: -1
+  ActivationChance: 100
+  MinGameDays: -1
+  MinSettlerLevel: -1
+  MaxSettlerLevel: -1
+  MaxIDActivations: 1
+  MaxTagActivations: 1
+  IDInterval: 7200
+  TagInterval: 7200
+  Tag: underground_boss
+  RequiredTag: 
+  RequiredEntityTagsInTile: []
+  RequiredRoomFunctions: []
+  PermittedNations: []
+  PermittedWeather: 
+  PermittedBiomes: []
+  PermittedRaces: []
+  PermittedSeasons: []
+  NotificationOnActivate: notif_scenario_activated_no_pip
+  Components: '{"activate_actions":{"collect":{"block_tag":"random_new_discovered_block","block_count":1,"max_z":2},"gen_model_prefabs":{"model_prefab_gen_id":"mpg_setha","spawn_tag":"collected_blocks"},"spawn_entities":{"group_id":"esg_scenario_setha0","spawn_tag":"spawned_blocks_not_obstruction"},"move_camera":{"focus":"spawned_entities"},"start_dialogue":{"dialogue_id":"dialogue_shared_discovery_setha0_person0_d0"}}}'

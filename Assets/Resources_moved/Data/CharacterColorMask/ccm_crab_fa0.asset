@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
+  m_Name: ccm_crab_fa0
+  m_EditorClassIdentifier: 
+  Priority: 0
+  Pairs:
+  - BodyPart: 1
+    Target: {r: 1, g: 0.8352941, b: 0.8352941, a: 1}
+  - BodyPart: 4
+    Target: {r: 0.88235295, g: 0.23529412, b: 0.23529412, a: 1}
+  - BodyPart: 32
+    Target: {r: 0.15686275, g: 0.003921569, b: 0.003921569, a: 1}
+  - BodyPart: 256
+    Target: {r: 0.54901963, g: 0.02745098, b: 0.02745098, a: 1}
+  - BodyPart: 128
+    Target: {r: 0.4, g: 0.019607844, b: 0.019607844, a: 1}

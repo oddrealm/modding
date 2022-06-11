@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b430687389d853f48ba3d8c7adf38bfb, type: 3}
+  m_Name: nequhtli_climb_down
+  m_EditorClassIdentifier: 
+  Loop: 1
+  FramesPerSecond: 16
+  Frames:
+  - AnimSprite: {fileID: -8230898106348859693, guid: 751ee0f889bb2c746ba0230f65512ff6,
+      type: 3}
+    Accessories:
+    - Point: 1
+      Position: {x: -1, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 2
+      Position: {x: -1, y: -1, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -2}
+  - AnimSprite: {fileID: 879541082526851308, guid: 751ee0f889bb2c746ba0230f65512ff6,
+      type: 3}
+    Accessories:
+    - Point: 1
+      Position: {x: 0, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 2
+      Position: {x: 0, y: -1, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -2}
+  - AnimSprite: {fileID: 784972891515936932, guid: 751ee0f889bb2c746ba0230f65512ff6,
+      type: 3}
+    Accessories:
+    - Point: 1
+      Position: {x: 0, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 2
+      Position: {x: 0, y: -1, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -2}
+  - AnimSprite: {fileID: -8598839518822902996, guid: 751ee0f889bb2c746ba0230f65512ff6,
+      type: 3}
+    Accessories:
+    - Point: 1
+      Position: {x: 0, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 2
+      Position: {x: 0, y: -1, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -2}
+  - AnimSprite: {fileID: 6725484946966705868, guid: 751ee0f889bb2c746ba0230f65512ff6,
+      type: 3}
+    Accessories:
+    - Point: 1
+      Position: {x: 0, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 2
+      Position: {x: 0, y: -1, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -2}
+  - AnimSprite: {fileID: 7516151438399504589, guid: 751ee0f889bb2c746ba0230f65512ff6,
+      type: 3}
+    Accessories:
+    - Point: 1
+      Position: {x: -1, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 2
+      Position: {x: -1, y: -1, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -2}
+  - AnimSprite: {fileID: 7555268982666878354, guid: 751ee0f889bb2c746ba0230f65512ff6,
+      type: 3}
+    Accessories:
+    - Point: 1
+      Position: {x: -1, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 2
+      Position: {x: -1, y: -1, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -2}
+  - AnimSprite: {fileID: -773037077338325310, guid: 751ee0f889bb2c746ba0230f65512ff6,
+      type: 3}
+    Accessories:
+    - Point: 1
+      Position: {x: -1, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 2
+      Position: {x: -1, y: -1, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -2}

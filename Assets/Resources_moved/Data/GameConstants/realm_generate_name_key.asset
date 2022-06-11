@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dc60255f0e8e468ee5c704f7cb8d7, type: 3}
+  m_Name: realm_generate_name_key
+  m_EditorClassIdentifier: 
+  StringValue: realm_names_default
+  IntValue: 0
+  FloatValue: 0
+  BoolValue: 1
+  StringListValue: []

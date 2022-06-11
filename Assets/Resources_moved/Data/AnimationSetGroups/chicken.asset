@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
+  m_Name: chicken
+  m_EditorClassIdentifier: 
+  Sets:
+  - {fileID: 11400000, guid: f7dc1bd55385a084fb5274499b91ea32, type: 2}
+  - {fileID: 11400000, guid: 941b8a115ccc8dc439acbe57aa765c56, type: 2}
+  - {fileID: 11400000, guid: 77ed7342efb489242b2fe984ba2a4613, type: 2}
+  - {fileID: 11400000, guid: b966857e70bc71940ade39926ce768a2, type: 2}
+  - {fileID: 11400000, guid: e690c0e897ab2fc4c9d77c9e0868e06f, type: 2}
+  - {fileID: 11400000, guid: 16e3d28e9573ab74181db9dc6ca2fb3b, type: 2}
+  - {fileID: 11400000, guid: 5647ee3a0d2442b41862bee8e1ea1ef5, type: 2}
+  - {fileID: 11400000, guid: f25453c3ad16b9d49bb8466c0f3c2e61, type: 2}
+  - {fileID: 11400000, guid: aaed1d2358bd1124eaf9a8c8be8e553b, type: 2}
+  - {fileID: 11400000, guid: 090c64c82be4a8048ac6568997c98bfe, type: 2}
+  - {fileID: 11400000, guid: 3495608e942a44d4da8625c45e35a714, type: 2}
+  - {fileID: 11400000, guid: a31ef448585d28240827ea06e4eb12d9, type: 2}
+  - {fileID: 11400000, guid: e0e5719bd5d159740a6339cb2cabfd7b, type: 2}
+  - {fileID: 11400000, guid: fd3ee8b84174d3242b0221c596bc957f, type: 2}
+  - {fileID: 11400000, guid: 529821e1beffbb44baf1ad436a7c7de6, type: 2}
+  - {fileID: 11400000, guid: 8ead728f6ed56ed4b9398ef06648300a, type: 2}
+  - {fileID: 11400000, guid: d03f42cf9d410704f9c8627a16fb7825, type: 2}
+  - {fileID: 11400000, guid: 285cadc94d8a4f54b8d3b87a7844f4ab, type: 2}
+  - {fileID: 11400000, guid: cf3647d411c7a3947825e32e27a4fd66, type: 2}
+  - {fileID: 11400000, guid: 0972eb98e33a5c14b9902697f41e8428, type: 2}
+  - {fileID: 11400000, guid: 2a5586ddb6a696045a33826a0d866945, type: 2}
+  - {fileID: 11400000, guid: dc785aef1185d964e9939d84296e8591, type: 2}

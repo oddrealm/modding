@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
+  m_Name: room_farm
+  m_EditorClassIdentifier: 
+  ActivationType: 1
+  Enabled: 1
+  Stockpile: room_stockpiles_empty
+  ResearchKey: farm0
+  Owners:
+  - room_owner_farmers
+  RequiredBlockTags: []
+  DefaultAutoJobBlueprints:
+  - blueprint_harvest_ground_cover
+  - blueprint_harvest_standing
+  - blueprint_water_plant
+  InterfaceInfo: interface_info_room_farm
+  TooltipID: tooltip_room_farm
+  Visuals:
+  - visuals_room_display_farm
+  - visuals_room_display_farm_background

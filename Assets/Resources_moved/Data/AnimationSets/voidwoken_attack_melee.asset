@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: voidwoken_attack_melee
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: f24030c166ac23941a71d46becc88fa6, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 360e1a33504d8a745939e37d38accdd4, type: 2}
+  DownAnimation: {fileID: 11400000, guid: cac8214ccc7a3ec4984746f6570ab573, type: 2}
+  RightAnimation: {fileID: 11400000, guid: e9bf7b48a4e0a1542ae0245d1cd7286b, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: f03e96e73ebcc3745bdc741b383ed0e8, type: 2}

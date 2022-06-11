@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
+  m_Name: prop_bronze_weapon_rack
+  m_EditorClassIdentifier: 
+  Index: 306
+  Tags:
+  - weapon_rack
+  PhysicsHeatSource: 0
+  PhysicsHeatPass: 0.95
+  TooltipID: tooltip_prop_bronze_weapon_rack
+  Visuals:
+  - visuals_prop_bronze_weapon_rack
+  TriggerFaction: 7
+  Triggers: 32
+  TriggerActions: 0
+  TriggerStatuses: []
+  TriggerAttacks: []
+  TriggerSFX: 
+  CanSupportWeight: 0
+  CanHavePlants: 1
+  IsFertile: 0
+  CanHaveFish: 0
+  SoilQuality: 0
+  PhysicsTypes: 1026
+  PhysicHeatSinkTemp: 0
+  FXPhysicsTypes: 0
+  PhysicsUnstableFX: []
+  PhysicsFillFX: []
+  PhysicsClearBlock: 0
+  PhysicsSolidBlock: -1
+  PhysicsLiquidBlock: -1
+  PhysicsGasBlock: -1
+  MinTemperature: -100
+  MaxTemperature: 100
+  Toughness: 0
+  MaxItemCount: 175
+  ItemCategoryRestriction: 64
+  CanShowItems: 0
+  RestrictItemsToSameKey: 0
+  Permissions: 4196352
+  AddSFX: 
+  RemoveSFX: 
+  InteractSFX: sfx_hammer_wood
+  FlammableChance: 100
+  DecayBuff: 0
+  Level: 1
+  RemoveItemDrops: isg_prop_bronze_weapon_rack
+  VerticalMovementMod: 1
+  HorizontalMovementMod: 1
+  CanBeLocked: 0
+  LockedMovementFlags: 0
+  RestrictedMovementFlags: 0
+  MovementCost: 2
+  VerticalMoveRequiresClimb: 1
+  ForceFocusDirection: 0
+  IsObstruction: 1
+  CanHaveRoom: 1
+  IsVerticalAccess: 0

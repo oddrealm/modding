@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
+  m_Name: sheep
+  m_EditorClassIdentifier: 
+  Sets:
+  - {fileID: 11400000, guid: cfb264ecab90287428a8c26e84bd2dd1, type: 2}
+  - {fileID: 11400000, guid: 22ae9ef17e08b7a4996b418c79b06410, type: 2}
+  - {fileID: 11400000, guid: 6a679fee1f1b2c946be7f41654428288, type: 2}
+  - {fileID: 11400000, guid: 130d4310ea00e014a889fb0c24ed21b4, type: 2}
+  - {fileID: 11400000, guid: 3117b77031d2dac428fe2428d06bc121, type: 2}
+  - {fileID: 11400000, guid: ed7bdd67a1a760b488fe5f347821851c, type: 2}
+  - {fileID: 11400000, guid: e4dc389c10aecf1418bdba0897862935, type: 2}
+  - {fileID: 11400000, guid: 737aa2f579a45ca4bb05a24960ae57d9, type: 2}
+  - {fileID: 11400000, guid: c7aabbf0189092a45a5ca3e80a4d783b, type: 2}
+  - {fileID: 11400000, guid: 1b1ee3f1fa31ac04bb5a173bb0e15814, type: 2}
+  - {fileID: 11400000, guid: 9bb5aee399cec0340b4e0f66fe763817, type: 2}
+  - {fileID: 11400000, guid: 794a598258e30584880d85f656a0b2c9, type: 2}
+  - {fileID: 11400000, guid: 781cdd03f791e2c48abd5081f6217243, type: 2}
+  - {fileID: 11400000, guid: d1edc2d4decce994384fc953a2dbdb35, type: 2}
+  - {fileID: 11400000, guid: 0e01cd3359dc53448882d16484d72207, type: 2}
+  - {fileID: 11400000, guid: 39c4a35c87cbee14da97e9ff9cfcba4f, type: 2}
+  - {fileID: 11400000, guid: 95f50ef30e9dc1747849901ed64e1352, type: 2}
+  - {fileID: 11400000, guid: 36d24b5120a9b80469b1339c21e20ad9, type: 2}
+  - {fileID: 11400000, guid: 3bd710da493b6a94a8c06b2ee5eec276, type: 2}
+  - {fileID: 11400000, guid: 20b7e17a3612355408890be5c4762a61, type: 2}
+  - {fileID: 11400000, guid: 7754f23899d08d148a60487f1afc2f6f, type: 2}
+  - {fileID: 11400000, guid: 6e2ebf9f37218ca408c5a154456b2e14, type: 2}

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7db86f420f50c418342177bb967083, type: 3}
+  m_Name: biome_water
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_biome_water
+  TerrainGeneration:
+  - biome_terrain_gen_water_sable_bedrock0
+  - biome_terrain_gen_water_ridgestone_bedrock1
+  - biome_terrain_gen_water_kalite_bedrock2
+  ModelPrefabGen:
+  - mpg_trees_palm_thin
+  DecoGeneration:
+  - biome_deco_gen_water_surface_grass
+  - biome_deco_gen_water_surface_weeds
+  - biome_deco_gen_water_surface_plants
+  - biome_deco_gen_water_surface_props
+  - biome_deco_gen_water_surface_void_crystals
+  LodeGeneration:
+  - biome_lode_gen_coal_ore
+  - biome_lode_gen_copper_ore
+  - biome_lode_gen_tin_ore
+  - biome_lode_gen_iron_ore
+  - biome_lode_gen_rutile_ore
+  - biome_lode_gen_void_crystal
+  - biome_lode_gen_amber_opal
+  - biome_lode_gen_sunrise_opal
+  - biome_lode_gen_forest_emerald
+  - biome_lode_gen_seabreeze_sapphire
+  OverworldMapGeneration: 
+  OverworldTerrainVisuals: overworld_visuals_water
+  OverworldRiverVisuals: overworld_visuals_water_river
+  MovementCost: 5
+  GenerateNameKey: biome_names_water
+  Travel: overworld_travel_water
+  Fish:
+  - fish_chi_chi
+  - fish_sand_shrimp
+  Seasons:
+  - season_water_spring
+  - season_water_summer
+  - season_water_fall
+  - season_water_winter

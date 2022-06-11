@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
+  m_Name: isg_scenario_inventory_bandits_humans_mid
+  m_EditorClassIdentifier: 
+  FriendlyName: 
+  Data: '{"items":[{"item_id":"item_ren","count":25,"spawn_rate":100},{"item_id":"item_rutile_ore","count":1,"spawn_rate":2},{"item_id":"item_rutile_ingot","count":1,"spawn_rate":2},{"item_id":"item_medium_leather","count":2,"spawn_rate":2},{"item_id":"item_linen_cloth","count":1,"spawn_rate":2},{"item_id":"item_iron_ore","count":5,"spawn_rate":2},{"item_id":"item_blackberry_wine","count":1,"spawn_rate":10},{"item_id":"item_apple_cider","count":1,"spawn_rate":10},{"item_id":"item_coconut_brew","count":1,"spawn_rate":10},{"item_id":"item_pumpkin_ale","count":1,"spawn_rate":10},{"item_id":"item_sweet_root_brew","count":1,"spawn_rate":10}]}'
+  Spawns:
+  - ItemID: item_ren
+    GenerateNameKey: 
+    Count: 25
+    SpawnRate: 100
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_rutile_ore
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 2
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_rutile_ingot
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 2
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_medium_leather
+    GenerateNameKey: 
+    Count: 2
+    SpawnRate: 2
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_linen_cloth
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 2
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_iron_ore
+    GenerateNameKey: 
+    Count: 5
+    SpawnRate: 2
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_blackberry_wine
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 10
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_apple_cider
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 10
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_coconut_brew
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 10
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_pumpkin_ale
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 10
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_sweet_root_brew
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 10
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1

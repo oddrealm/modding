@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
+  m_Name: location_names_human_settlements
+  m_EditorClassIdentifier: 
+  Determiner: []
+  Prepends:
+  - Alter-
+  - Anvil-
+  - Bell-
+  - Calm-
+  - Dark-
+  - Ember-
+  - Fire-
+  - Grey-
+  - High-
+  - Ingle-
+  - Jade-
+  - Kit-
+  - Long-
+  - Lost-
+  - Little-
+  - Merry-
+  - New-
+  - Old-
+  - Pretty-
+  - Queens-
+  - Red-
+  - Stone-
+  - Titan-
+  - Under-
+  - Vine-
+  - West-
+  - Yellow-
+  - Zero-
+  Names:
+  - Arch
+  - Bath
+  - Court
+  - Dam
+  - End
+  - Fall
+  - Gorge
+  - Hall
+  - Ink
+  - Joy
+  - Knock
+  - Leaf
+  - Moon
+  - Nook
+  - Oak
+  - Poke
+  - Quest
+  - Rose
+  - Sentinel
+  - Tower
+  - Valor
+  - Wall
+  - Yoke

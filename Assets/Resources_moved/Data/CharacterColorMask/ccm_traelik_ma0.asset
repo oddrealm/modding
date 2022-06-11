@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
+  m_Name: ccm_traelik_ma0
+  m_EditorClassIdentifier: 
+  Priority: 0
+  Pairs:
+  - BodyPart: 4
+    Target: {r: 0.8679245, g: 0.24154504, b: 0.36772224, a: 1}
+  - BodyPart: 1
+    Target: {r: 0.6037736, g: 0.1509434, b: 0.1509434, a: 1}
+  - BodyPart: 130
+    Target: {r: 0.80784315, g: 0.5686275, b: 0.22745098, a: 1}
+  - BodyPart: 256
+    Target: {r: 0.7924528, g: 0.42226666, b: 0.13082945, a: 1}
+  - BodyPart: 8
+    Target: {r: 0.5943396, g: 0.058873262, b: 0.22202316, a: 1}

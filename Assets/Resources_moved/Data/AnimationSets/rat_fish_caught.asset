@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: rat_fish_caught
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: addb0449603f8fe4e8447b395983126b, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 0d8ffe258ee818047a34a214a3f4249e, type: 2}
+  DownAnimation: {fileID: 11400000, guid: fdf306486a1b8124b97623a157e44ecf, type: 2}
+  RightAnimation: {fileID: 11400000, guid: add1548d0f2b90c46a6793f8d92b7d00, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: e1f8777a4a2900d43b206c07cc3903d5, type: 2}

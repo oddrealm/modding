@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
+  m_Name: race_lopen
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_race_lopen
+  MerchantValue: 50
+  IntelligenceType: 2
+  Tags:
+  - animal
+  StartingResearchKeys: []
+  DefaultEntityID: entity_lopen
+  Diet: diet_lopen
+  Public: 1
+  BuffGroupID: 
+  Perks: []

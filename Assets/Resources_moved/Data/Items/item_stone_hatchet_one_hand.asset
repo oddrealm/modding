@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
+  m_Name: item_stone_hatchet_one_hand
+  m_EditorClassIdentifier: 
+  Index: 356
+  TooltipID: tooltip_item_stone_hatchet_one_hand
+  Visuals: visuals_item_stone_hatchet_one_hand
+  CharacterColorMask: {fileID: 0}
+  AccessoryData: {fileID: 11400000, guid: ec9cc8ddc9b120f4d9a8821fc22458a8, type: 2}
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
+  Tags: []
+  Category: 64
+  Inventory: inventory_one_hand
+  Buffs: 
+  AttackGroup: attack_group_stone_hatchet_one_hand
+  StartDiscovered: 1
+  MaxCountInMerchantList: 1
+  GenerateNameKey: weapon
+  MerchantBuyValue: 115
+  MerchantSellValue: 22
+  TuneRating: 2
+  RarityType: 1
+  DecayRate: -1
+  DecayItem: 
+  HasMeltThreshold: 0
+  MeltThreshold: 0
+  FlammableChance: 100
+  LightStrength: 0
+  LightSize: 0
+  StackSize: 1

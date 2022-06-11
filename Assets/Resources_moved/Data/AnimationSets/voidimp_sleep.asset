@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: voidimp_sleep
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 7af7740d1c2f88647ad5c759a3ad39bf, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 3729013f1e85c014299587a2d57e7e8e, type: 2}
+  DownAnimation: {fileID: 11400000, guid: ff8eef10665e52a43b85413aba34420a, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 0f109878bdac0db488810e71aca4e647, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 6215f5aa472030749905fa0d86c61d37, type: 2}

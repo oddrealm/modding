@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
+  m_Name: room_transmutation_chamber
+  m_EditorClassIdentifier: 
+  ActivationType: 1
+  Enabled: 1
+  Stockpile: room_stockpiles_empty
+  ResearchKey: thaumaturgy0
+  Owners:
+  - room_owner_thaumaturges
+  RequiredBlockTags: []
+  DefaultAutoJobBlueprints: []
+  InterfaceInfo: interface_info_room_transmutation_chamber
+  TooltipID: tooltip_room_transmutation_chamber
+  Visuals:
+  - visuals_room_display_transmutation_chamber
+  - visuals_room_display_transmutation_chamber_background

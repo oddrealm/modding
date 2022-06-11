@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
+  m_Name: scenario_taiga_tomb_easy_ancient0
+  m_EditorClassIdentifier: 
+  Index: 85
+  ActivationType: 0
+  IsThreat: 0
+  TooltipID: tooltip_scenario_taiga_tomb_easy_ancient0
+  TileNoteTooltipID: 
+  TryQueueOnNewGame: 0
+  TileChance: -1
+  ActivationChance: 0
+  MinGameDays: -1
+  MinSettlerLevel: -1
+  MaxSettlerLevel: -1
+  MaxIDActivations: -1
+  MaxTagActivations: -1
+  IDInterval: 7200
+  TagInterval: 7200
+  Tag: 
+  RequiredTag: 
+  RequiredEntityTagsInTile: []
+  RequiredRoomFunctions: []
+  PermittedNations: []
+  PermittedWeather: 
+  PermittedBiomes: []
+  PermittedRaces: []
+  PermittedSeasons: []
+  NotificationOnActivate: notif_scenario_activated_default
+  Components: '{"warmup_actions":{"spawn_entities":{"entity_id":"entity_ancient","entity_profession":"profession_warrior","entity_gender":"male","entity_count":3,"spawn_tag":"collected_blocks","same_room_as_player":false,"spawn_at_discovered_point":false,"entity_faction":4},"spawn_items":{"item_id":"isg_ancient_tomb_easy0","item_id_is_group_id":true,"item_count":5,"randomize_item_count":false,"spawn_tag":"collected_blocks","same_room_as_player":false,"spawn_at_discovered_point":false,"disperse_spawned_items":true}},"activate_actions":{"move_camera":{"focus":"spawned_entities"},"start_dialogue":{"dialogue_id":"dialogue_scenario_ancient_tomb0"}}}'

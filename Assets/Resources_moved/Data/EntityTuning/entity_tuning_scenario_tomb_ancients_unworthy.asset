@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
+  m_Name: entity_tuning_scenario_tomb_ancients_unworthy
+  m_EditorClassIdentifier: 
+  SightRange: 128
+  MinRandomSkill: 7
+  MaxRandomSkill: 15
+  Health: 1d6+500
+  HealthChange: 0
+  Toughness: 1d3
+  Evasion: 2d6
+  MoveSpeed: 24
+  ClimbSpeed: 2
+  Happiness: 10000
+  HappinessChange: 5
+  Hunger: 10000
+  HungerChange: 0
+  Thirst: 10000
+  ThirstChange: 0
+  Energy: 10000
+  EnergyChange: -8
+  BlockCurrentTemperature: 50
+  Temperature: 50
+  ColdTolerance: -50
+  CritRate: 2
+  DamageIgnoreRate: 0
+  Age: 0
+  XP: 0
+  Level: 0
+  AttackSpeedMod: 10000
+  OutputQualityMax: 3
+  FishLure: 0
+  FishScare: 50
+  ProjectileMultRate: 0
+  ProjectileMultMod: 0
+  UsageDecreaseRate: 0
+  UsageDecreaseMod: 0
+  ResourceFindRate: 0
+  ResourceFindMod: 0
+  BurnRate: 0
+  BurnMod: 0
+  Oxygen: 10000
+  OxygenChange: 0
+  StartingStatuses: []
+  RandomStartingStatuses:
+  - entity_status_trait_big_boned
+  - entity_status_trait_lazy
+  - entity_status_trait_dull
+  - entity_status_trait_impaired_leg
+  - entity_status_trait_impaired_arm
+  - entity_status_trait_impaired_foot
+  - entity_status_trait_short_legs
+  - entity_status_trait_jack_of_all_trades
+  - entity_status_trait_strong
+  - entity_status_trait_weak
+  - entity_status_trait_fast
+  - entity_status_trait_slow
+  FirstName: 
+  LastName: 
+  Appearance: 
+  InventoryGroupID: isg_scenario_inventory_tomb_ancients_unworthy
+  EquipmentGroupID: isg_scenario_equipment_tomb_ancients_unworthy

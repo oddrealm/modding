@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
+  m_Name: research_agriculture_fishing1
+  m_EditorClassIdentifier: 
+  Enabled: 1
+  Races: []
+  ResearchKey: fishing1
+  TooltipID: tooltip_research_agriculture_fishing1
+  Dependency: fishing0
+  Column: 2
+  Row: 3
+  RequiredItem: item_tome_of_agriculture
+  RequiredItemCount: 2
+  ResearchCategory: 2

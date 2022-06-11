@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
+  m_Name: app_adult_dog_ma0
+  m_EditorClassIdentifier: 
+  Gender: male
+  Race: race_dog
+  Group: race_dog_male
+  AppearanceType: 1
+  AgeType: 2
+  ShadowType: 2
+  Portrait: sp_adult_dog_ma0
+  HealthBarOffset: 0
+  StealthSightingDialogueGroup: dialoguegroup_unstealthed_by_dog
+  IdleFX: []
+  SleepFX: []
+  DeathFX:
+  - fx_entity_death
+  Accessories: []
+  KilledSFX: sfx_dog_male_killed
+  HitSFX: sfx_dog_male_hit
+  SelectPositiveSFX: sfx_dog_male_select_positive
+  SelectNegativeSFX: sfx_dog_male_select_negative
+  OrderPositiveSFX: sfx_dog_male_order_positive
+  OrderNegativeSFX: sfx_dog_male_order_negative
+  ColorMask: {fileID: 11400000, guid: c6815de071eb2514185f5b0826d375a3, type: 2}
+  Animations: {fileID: 11400000, guid: 943ce42e03c43a44cb3f2257f461c8aa, type: 2}

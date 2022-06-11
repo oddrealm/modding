@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: humanoid_fish_caught
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: addb0449603f8fe4e8447b395983126b, type: 2}
+  UpAnimation: {fileID: 11400000, guid: db765d0c510ce904c82d20683f8aca7e, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 681bdd560bf51884ea43d3922b998f56, type: 2}
+  RightAnimation: {fileID: 11400000, guid: f48b3dc8726c32a4fb0f950afffd4c6d, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: ea5f52d75c97a4e43ac01b94435c12de, type: 2}

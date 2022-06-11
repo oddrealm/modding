@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
+  m_Name: ccm_dweller_ma0
+  m_EditorClassIdentifier: 
+  Priority: 0
+  Pairs:
+  - BodyPart: 273
+    Target: {r: 0.4166607, g: 0.34158066, b: 0.7169812, a: 1}
+  - BodyPart: 70
+    Target: {r: 0.13754895, g: 0.078097194, b: 0.3679245, a: 1}
+  - BodyPart: 136
+    Target: {r: 0.25760052, g: 0.19464225, b: 0.509434, a: 1}
+  - BodyPart: 32
+    Target: {r: 0.48235294, g: 0.26666668, b: 0.4627451, a: 1}

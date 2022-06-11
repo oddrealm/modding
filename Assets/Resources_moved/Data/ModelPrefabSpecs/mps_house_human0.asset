@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad02cc5c2fcc0e5418b9b43cc49c1402, type: 3}
+  m_Name: mps_house_human0
+  m_EditorClassIdentifier: 
+  Group: mps_house_human
+  ClearType: 2
+  Corridor: 12070000
+  CorridorType: 2
+  Entrance: 3a0c0000
+  EntranceType: 2
+  Vertical: 440c0000
+  VerticalType: 2
+  Floor: 12070000
+  FloorType: 2
+  Roof: 13070000
+  RoofType: 2
+  A: 1c0c0000
+  AType: 2
+  B: 260c0000270c0000280c0000290c00002a0c00002b0c00002c0c00002d0c00002e0c00002f0c0000300c0000
+  BType: 2
+  C: 
+  CType: 2
+  D: 
+  DType: 2

@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f5567e91398a049bdbe2cc1baaf57e, type: 3}
+  m_Name: descriptors_biomes
+  m_EditorClassIdentifier: 
+  Words:
+  - Abandoned
+  - Abandoned
+  - Ailing
+  - Airy
+  - Ancient
+  - Bold
+  - Bright
+  - Brutal
+  - Carnal
+  - Cheery
+  - Cutthroat
+  - Dark
+  - Deep
+  - Dreaming
+  - Epic
+  - Evil
+  - Fell
+  - Feral
+  - Fetid
+  - Fierce
+  - Forgotten
+  - Furious
+  - Glimmering
+  - Golden
+  - Happy
+  - Haven
+  - Hidden
+  - High
+  - Honored
+  - Howling
+  - Lost
+  - Low
+  - Malign
+  - Meandering
+  - Mighty
+  - New
+  - Open
+  - Perilous
+  - Placid
+  - Sacred
+  - Safe
+  - Sleepy
+  - Slow
+  - Stinking
+  - Stolen
+  - Stormy
+  - Stray
+  - Tame
+  - Tamed
+  - Terrible
+  - Timid
+  - Treacherous
+  - Untamed
+  - Vast

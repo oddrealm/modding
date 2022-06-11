@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
+  m_Name: overworld_nation_human
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_overworld_nation_human
+  Unlocked: 1
+  Banner: sp_human_banner
+  OverworldVisuals: overworld_visuals_human
+  Color: 37695d
+  Loadouts:
+  - starting_loadout_human_settlers
+  - starting_loadout_human_rangers
+  - starting_loadout_human_survivor
+  - starting_loadout_custom
+  Races:
+  - race_human
+  DiscoveredRaces:
+  - race_human
+  - race_cat
+  - race_dog
+  - race_chicken
+  - race_cow
+  - race_sheep
+  GenerateNameKey: location_names_human_settlements
+  OriginCount: 3
+  MinCount: 5
+  MaxCount: 10
+  SettlementPrefabs:
+  - mpg_human_town
+  Biomes:
+  - biome_taiga
+  - biome_taiga_forest
+  - biome_taiga_mountain
+  - biome_tropical
+  - biome_tropical_forest
+  - biome_tropical_mountain
+  HostileTowards:
+  - race_ardyn
+  - race_ancient
+  FriendlyDiscoveryGroups:
+  - discoverygroup_shared_human_settlement_friendly
+  HostileDiscoveryGroups:
+  - discoverygroup_shared_human_settlement_hostile

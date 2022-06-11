@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4b82001461fc34e9d1cf053d56a7e5, type: 3}
+  m_Name: fish_sand_shrimp
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_fish_sand_shrimp
+  Level: 1
+  AnimController: tiny_fish_animations
+  IdealDepthMin: 0
+  IdealDepthmax: 2
+  LureRollAdd: -50
+  BaseHealth: 50
+  BaseToughness: 0
+  BaseEvasion: 0
+  ItemSpawnGroupID: isg_fish_sand_shrimp

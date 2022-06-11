@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
+  m_Name: scenario_human_proximity_merchant0
+  m_EditorClassIdentifier: 
+  Index: 38
+  ActivationType: 1
+  IsThreat: 0
+  TooltipID: tooltip_scenario_human_proximity_merchant0
+  TileNoteTooltipID: 
+  TryQueueOnNewGame: 0
+  TileChance: -1
+  ActivationChance: 500
+  MinGameDays: 4
+  MinSettlerLevel: -1
+  MaxSettlerLevel: -1
+  MaxIDActivations: -1
+  MaxTagActivations: -1
+  IDInterval: 7200
+  TagInterval: 1440
+  Tag: merchant
+  RequiredTag: 
+  RequiredEntityTagsInTile: []
+  RequiredRoomFunctions:
+  - room_market
+  PermittedNations: []
+  PermittedWeather: 
+  PermittedBiomes: []
+  PermittedRaces: []
+  PermittedSeasons: []
+  NotificationOnActivate: notif_scenario_activated_default
+  Components: '{"activate_actions":{"collect":{"block_tag":"random_map_edge_ground","block_count":1},"spawn_entities":{"spawn_tag":"collected_blocks","group_id":"esg_scenario_human_proximity_merchant0"},"move_camera":{"focus":"spawned_entities"},"start_dialogue":{"dialogue_id":"dialogue_shared_human_proximity_merchant0_person0"}},"output0_actions":{"start_merchant":{"item_group_ids":["isg_entity_inventory_shared_human_merchant0"],"farewell_dialogue_id":"dialogue_shared_human_proximity_merchant_farewell0_person0"}},"output1_actions":{"leave_map":{"immediate":true,"focus":"spawned_entities"}}}'

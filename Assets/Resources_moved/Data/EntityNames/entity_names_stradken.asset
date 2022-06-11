@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
+  m_Name: entity_names_stradken
+  m_EditorClassIdentifier: 
+  FirstNameMasculinePrependChances: 1000
+  FirstNameMasculinePrepends:
+  - Jx'
+  MasculineFirstNames:
+  - Altha
+  - Boltesh
+  - Cincide
+  - Delth
+  - Esx
+  - Fnalthe
+  - Gleth
+  - Hilx
+  - Inth
+  - Jal
+  - Kepth
+  - Leosh
+  - Mzth
+  - Nzthas
+  - Orthas
+  - Prizx
+  - Qratz
+  - Risth
+  - Sth
+  - Trazth
+  - Uxth
+  - Vxthez
+  - Wxthenla
+  - Xensheth
+  - Ythxesh
+  - Zethshin
+  FirstNameFemininePrependChances: 1000
+  FirstNameFemininePrepends:
+  - Sz'
+  FeminineFirstNames:
+  - Althan
+  - Bolteshen
+  - Cinciden
+  - Delthen
+  - Esxen
+  - Fnalthen
+  - Glethen
+  - Hilxn
+  - Inthen
+  - Jalen
+  - Kepthen
+  - Leoshen
+  - Mzthen
+  - Nzthasen
+  - Orthasen
+  - Prizxn
+  - Qratzn
+  - Risthen
+  - Sthen
+  - Trazthen
+  - Uxthen
+  - Vxthezn
+  - Wxthenlen
+  - Xenshethen
+  - Ythxeshen
+  - Zethshinen
+  LastNamePrependChances: 0
+  LastNamePrepends: []
+  LastNames:
+  - I
+  - II
+  - III
+  - IIII
+  - IIIII

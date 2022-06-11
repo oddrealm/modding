@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
+  m_Name: entity_names_nequhtli
+  m_EditorClassIdentifier: 
+  FirstNameMasculinePrependChances: 1000
+  FirstNameMasculinePrepends:
+  - Fth'
+  MasculineFirstNames:
+  - Atl
+  - Baxtl
+  - Clatn
+  - Dextl
+  - Exo
+  - Fetl
+  - Ghextl
+  - Hixtol
+  - Imochatl
+  - Jextl
+  - Klatl
+  - Ltl
+  - Mitlth
+  - Ntl
+  - Otl
+  - Pextl
+  - Quatl
+  - Rextl
+  - Sthl
+  - Txtl
+  - Uxl
+  - Vthl
+  - Wtl
+  - Xtl
+  - Yeotl
+  - Zeotl
+  FirstNameFemininePrependChances: 1000
+  FirstNameFemininePrepends:
+  - Sth'
+  FeminineFirstNames:
+  - Atl
+  - Baxtl
+  - Clatn
+  - Dextl
+  - Exo
+  - Fetl
+  - Ghextl
+  - Hixtol
+  - Imochatl
+  - Jextl
+  - Klatl
+  - Ltl
+  - Mitlth
+  - Ntl
+  - Otl
+  - Pextl
+  - Quatl
+  - Rextl
+  - Sthl
+  - Txtl
+  - Uxl
+  - Vthl
+  - Wtl
+  - Xtl
+  - Yeotl
+  - Zeotl
+  LastNamePrependChances: 0
+  LastNamePrepends: []
+  LastNames:
+  - Axan
+  - Bixan
+  - Cixo
+  - Dexo
+  - Exan
+  - Fexan
+  - Gixo
+  - Hixo
+  - Ixo
+  - Jexan
+  - Kixo
+  - Lexan
+  - Mixo
+  - Nixo
+  - Oxo
+  - Pexan
+  - Qxan
+  - Rixo
+  - Sixan
+  - Tixan
+  - Uxo
+  - Vxo
+  - Wexan
+  - Xo
+  - Yxo
+  - Zexan

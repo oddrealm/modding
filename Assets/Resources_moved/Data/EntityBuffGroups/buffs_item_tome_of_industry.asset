@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abac97dd3fbc07b4799e0a1f2debe84e, type: 3}
+  m_Name: buffs_item_tome_of_industry
+  m_EditorClassIdentifier: 
+  Buffs:
+  - bt_tome_of_industry_craft_wood
+  - bt_tome_of_industry_craft_stone
+  - bt_tome_of_industry_craft_metal
+  - bt_tome_of_industry_deconstruct
+  - bt_tome_of_industry_carry
+  - bt_tome_of_industry_mine
+  - bt_tome_of_industry_labor
+  - bt_tome_of_industry_craft_cloth
+  - bt_tome_of_industry_craft_leather
+  - bt_tome_of_industry_log
+  - bt_tome_of_industry_evasion

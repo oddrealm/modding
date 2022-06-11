@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
+  m_Name: dialoguegroup_scenario_tomb_ancients_mid0
+  m_EditorClassIdentifier: 
+  DialogueIDs:
+  - dialogue_shared_discovery_tomb_easy0_person0_d0_0
+  - dialogue_shared_discovery_tomb_easy0_person0_d1_0
+  - dialogue_shared_discovery_tomb_easy0_person0_d2_0

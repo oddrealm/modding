@@ -1,0 +1,305 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b430687389d853f48ba3d8c7adf38bfb, type: 3}
+  m_Name: faceless_dead
+  m_EditorClassIdentifier: 
+  Loop: 0
+  FramesPerSecond: 16
+  Frames:
+  - AnimSprite: {fileID: 8066737950410091983, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 2263747349135581052, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 3377639449336113534, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 3064066136097220827, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 7976025909870335886, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 4461979365827651043, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 9072270261824997174, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 1678416970915304404, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -4041118121692733192, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -4147243828699138935, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -2439014544342794037, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -1266461815957481240, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 305317892148339067, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 8182118544100035943, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -2848547982460142278, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 4216936275676727212, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -3471810871532808176, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 1962114637518714986, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 5979972535269046241, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -8716467344051510778, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 4239039279388089398, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -4316831642310122919, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 4246119796308639578, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 2724624712266933226, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 5138775509345821485, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 8283939850358671928, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 3632623959764419827, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -554422036285486172, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -9058908244565792979, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 7729270571152195829, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 8857718610466426330, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -6541758027129884646, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -1613172895963875573, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -7536440163253456734, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -8567884021363163649, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -4594014355164408967, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 7968536145224969751, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -5446604441118200106, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 4767412347471828486, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -5283682674260796311, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 5329682887928954269, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 8260575778720670287, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 7993336907832291906, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: 7862690689385262911, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}
+  - AnimSprite: {fileID: -3634093098821943788, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 1, y: -1}
+  - AnimSprite: {fileID: -4907897731230667833, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 1, y: -1}
+  - AnimSprite: {fileID: -2948249824668349206, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 1, y: -1}
+  - AnimSprite: {fileID: -2948249824668349206, guid: fd547d61e15186f4aae6ab31178da568,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 2
+    ShadowPosition: {x: 1, y: -1}

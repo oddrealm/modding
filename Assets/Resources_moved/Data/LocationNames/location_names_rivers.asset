@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
+  m_Name: location_names_rivers
+  m_EditorClassIdentifier: 
+  Determiner:
+  - The
+  Prepends:
+  - Bi
+  - Al
+  - Col
+  - Den
+  - Dyn
+  - Effa
+  - Fir
+  - Goro
+  - Hil
+  - Istara
+  - Je
+  - Kun
+  - Lo
+  - Mene
+  - Nor
+  - Or
+  - Pe
+  - Qoro
+  - Re
+  - Sy
+  - Telne
+  - Uthu
+  - Ve
+  - Vo
+  - We
+  - Wy
+  - Xelte
+  - Yotho
+  Names:
+  - anth River
+  - ban River
+  - cort River
+  - dethl River
+  - et River
+  - fuin River
+  - gor River
+  - hem River
+  - is River
+  - ith River
+  - jurn River
+  - jerth River
+  - kirn River
+  - loth River
+  - mirth River
+  - nod River
+  - nox River
+  - ortan River
+  - pryn River
+  - peth River
+  - quell River
+  - qeth River
+  - queth River
+  - qiln River
+  - rol River
+  - ryth River
+  - res River
+  - ryn River
+  - styl River
+  - ston River
+  - tren River
+  - teth River
+  - torq River
+  - uthl River
+  - ustan River
+  - ust River
+  - ude River
+  - veln River
+  - vl River
+  - wat River
+  - wen River
+  - wor River
+  - war River
+  - wyq River
+  - went River
+  - xy River
+  - y River
+  - ytan River
+  - ztl River
+  - zod River

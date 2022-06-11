@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
+  m_Name: esg_scenario_loth_loth0
+  m_EditorClassIdentifier: 
+  Spawns:
+  - EntityId: entity_loth_loth
+    EntityTag: loth_loth0
+    EntityProfession: profession_none
+    EntityGender: male
+    EntityCount: 1
+    SameRoomAsPlayer: 0
+    EntityFaction: 4
+    EntityTuning: 
+    SpawnRate: 1000
+    AgeType: 2
+    ScenarioID: 
+    SchemaID: 
+  - EntityId: entity_nequhtli
+    EntityTag: loth_loth_minion0
+    EntityProfession: profession_random_fighters
+    EntityGender: random
+    EntityCount: 100
+    SameRoomAsPlayer: 0
+    EntityFaction: 4
+    EntityTuning: entity_tuning_scenario_loth_loth_nequhtli
+    SpawnRate: 900
+    AgeType: 2
+    ScenarioID: 
+    SchemaID: 

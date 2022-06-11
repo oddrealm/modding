@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0213a4de9e4e74d41b330785bb4c7fff, type: 3}
+  m_Name: accessory_hair_crew_black
+  m_EditorClassIdentifier: 
+  Priority: 0
+  TexX: 64
+  TexY: 181
+  ColorA: {r: 0.20845197, g: 0.19139372, b: 0.21698111, a: 1}
+  ColorB: {r: 0.16414271, g: 0.15138838, b: 0.16981131, a: 1}
+  ColorC: {r: 0.09307994, g: 0.06901923, b: 0.103773594, a: 1}
+  ColorMaskA: {r: 1, g: 0, b: 0, a: 1}
+  ColorMaskB: {r: 0, g: 1, b: 0, a: 1}
+  ColorMaskC: {r: 0, g: 0, b: 1, a: 1}
+  DefaultAccessoryPoint: 1

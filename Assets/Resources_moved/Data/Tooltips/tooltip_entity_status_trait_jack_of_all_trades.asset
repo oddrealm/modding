@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
+  m_Name: tooltip_entity_status_trait_jack_of_all_trades
+  m_EditorClassIdentifier: 
+  Name: 'Trait: Jack of all Trades (Status)'
+  InlineIcon: <sprite=1066>
+  Description: Ugh. One of those. Can't you be bad at everything like the rest of
+    us???
+  Action: 
+  Icon: 
+  Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

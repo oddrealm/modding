@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: lopen_sleep
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 7af7740d1c2f88647ad5c759a3ad39bf, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 55e00091ef04dad418153cc477319f63, type: 2}
+  DownAnimation: {fileID: 11400000, guid: acc18a525f7c1a0469f157e9b04835da, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 2b7af9419ce83114497a9b2a17ae7003, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 082b99e142c580f41b9faf827a09c5c7, type: 2}

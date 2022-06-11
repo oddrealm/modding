@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: nightwing_swim_idle
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 52f7e62038e9f5c4bbeb2c62a88a25fb, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 1b1c5cf1aae09c24ea1a8b2150a8591a, type: 2}
+  DownAnimation: {fileID: 11400000, guid: df007f4bde77e1440ad177c28d5c3444, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 035ba52faa4c81d4a81e8b30f1c106ba, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 5136cb14eaa7aca4f98ee83bae37c695, type: 2}

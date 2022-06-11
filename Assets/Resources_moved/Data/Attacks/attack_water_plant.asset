@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
+  m_Name: attack_water_plant
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_attack_entity_sleep
+  ShowOnAttacksDisplay: 1
+  MinAmount: 1
+  MaxAmount: 1
+  TargetAction: 1
+  TargetAttribute: 1
+  SourceAction: 0
+  SourceAttribute: 0
+  SkillUsed: 1024
+  Range: 14
+  AnimationTrigger: 0
+  AnimationHitEvent: 0
+  FiringType: 0
+  ActivationType: 0
+  ActivationWeight: 100
+  OriginFX: []
+  HitFX:
+  - fx_water_plant
+  DamageType: 0
+  ProjectileType: 0

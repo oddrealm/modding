@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8769b5322a978824daacc474a8d3df3d, type: 3}
+  m_Name: quality_food_raw0_excellent
+  m_EditorClassIdentifier: 
+  Group: food_raw0
+  FriendlyName: Tasty
+  Quality: 4
+  ChanceToDegrade: 0
+  BuffGroupID: buff_tuning_item_quality_food_raw0_tasty

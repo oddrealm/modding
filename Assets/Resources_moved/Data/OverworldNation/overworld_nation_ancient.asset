@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
+  m_Name: overworld_nation_ancient
+  m_EditorClassIdentifier: 
+  Order: 1
+  TooltipID: tooltip_overworld_nation_ancient
+  Unlocked: 1
+  Banner: sp_ancient_banner
+  OverworldVisuals: overworld_visuals_ancient
+  Color: 7e5585
+  Loadouts:
+  - starting_loadout_ancient_immortal_conquest
+  - starting_loadout_ancient_void_lord
+  - starting_loadout_ancient_bare_bones
+  - starting_loadout_custom
+  Races:
+  - race_ancient
+  DiscoveredRaces:
+  - race_void_imp
+  - race_cat
+  - race_void_woken
+  - race_ancient
+  GenerateNameKey: location_names_ancient_settlements
+  OriginCount: 3
+  MinCount: 1
+  MaxCount: 2
+  SettlementPrefabs:
+  - mpg_ancient_town
+  Biomes:
+  - biome_desert
+  - biome_tundra
+  HostileTowards:
+  - race_human
+  - race_ardyn
+  - race_gwdir
+  - race_tomek
+  FriendlyDiscoveryGroups:
+  - discoverygroup_shared_ancient_settlement_friendly
+  HostileDiscoveryGroups:
+  - discoverygroup_shared_ancient_settlement_hostile

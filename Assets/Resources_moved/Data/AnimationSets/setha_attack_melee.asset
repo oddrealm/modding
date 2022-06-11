@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: setha_attack_melee
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: f24030c166ac23941a71d46becc88fa6, type: 2}
+  UpAnimation: {fileID: 11400000, guid: acdf994876b3c2b4fb9a287c6d3b1581, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 8d31731d93807f1459edefa11a5c4856, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 6dd42bbd95906ee419f79afc724a2ca2, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: dbc233c764ec5e14e8ba984fbe8a2290, type: 2}

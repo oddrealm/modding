@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_shared_discovery_tomb_easy0_person0_d2_1
+  m_EditorClassIdentifier: 
+  AppearanceID: 
+  NextDialogueID:
+  - dialogue_shared_discovery_tomb_easy0_person0_d2_2
+  SpeakerTarget: '@0'
+  Message: Welcome to the tomb. Now that you're here, we'll need to kill you. I mean,
+    that's what tombs are for, right? Holding the dead. Giving Spiders a nice place
+    to stay.
+  Response: []

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
+  m_Name: all_diets0
+  m_EditorClassIdentifier: 
+  TutorialType: 1
+  SelectTarget: 0
+  InputsToLock: 126
+  Trigger: 1
+  PreviousSegments: []
+  MinGameMinutes: 900
+  MinPlayTime: -1
+  MinCooldown: -1
+  Hooks: []
+  ActiveRaces: []
+  PermittedWindows: []
+  SelectionType: 1
+  AttributeRaces: []
+  AttributeType: 0
+  MinAttributeAmount: -1
+  MaxAttributeAmount: -1
+  ItemIDs: []
+  ItemConditionType: 1
+  ItemMinCount: -1
+  ConstructionCategoryType: 0
+  MinRoomCount: -1
+  MinProductionRoomCount: -1
+  MinAutoJobCount: -1
+  Dialogue: {fileID: 0}
+  FadeInDelay: 0
+  PopUpPosition: 0
+  ShowBackground: 1
+  ShowBackgroundMask: 1
+  BackgroundMaskTarget: diets_button
+  AnimatedImage: 
+  PopUpTextBody: Sometimes you'll want to enable or disable certain items within
+    an entity's diet. The <sprite=1011> Diets window is where you can create custom
+    diets for anyone in your settlement.
+  NextSegment: {fileID: 0}

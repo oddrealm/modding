@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
+  m_Name: app_elder_human_mb2
+  m_EditorClassIdentifier: 
+  Gender: male
+  Race: race_human
+  Group: race_human_male
+  AppearanceType: 2
+  AgeType: 4
+  Portrait: sp_elder_human_mb2
+  HealthBarOffset: 0
+  StealthSightingDialogueGroup: dialoguegroup_shared_generic_stealth_sightings_settler
+  IdleFX: []
+  SleepFX: []
+  DeathFX:
+  - fx_entity_death
+  Accessories:
+  - accessory_hair_short_white
+  KilledSFX: sfx_human_male_killed
+  HitSFX: sfx_human_male_hit
+  SelectPositiveSFX: sfx_human_male_select_positive
+  SelectNegativeSFX: sfx_human_male_select_negative
+  OrderPositiveSFX: sfx_human_male_order_positive
+  OrderNegativeSFX: sfx_human_male_order_negative
+  ColorMask: {fileID: 11400000, guid: 1a9687b341f25e14cb090cf39114c94b, type: 2}
+  Animations: {fileID: 11400000, guid: ed5baaf039825aa4e925426c97799d2c, type: 2}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: dog_walk
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 08dfca07b5a89b54c9a4b1c4ad9e15ff, type: 2}
+  UpAnimation: {fileID: 11400000, guid: dedaee68777252a41b9c5e3f01cc9278, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 0e79c7569c289fd4292dc66fc2df3344, type: 2}
+  RightAnimation: {fileID: 11400000, guid: f9e42062c5697f44eaa24640f8f901a1, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 35cc8db2c709edf4192fd8e726f78ddd, type: 2}

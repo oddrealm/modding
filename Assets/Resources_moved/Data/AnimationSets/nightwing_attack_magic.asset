@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: nightwing_attack_magic
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: e5b61f9b622e9ee47a2605b950cc37d7, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 8f0ca31df39d4a547a1646ec0c40da7b, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 87193fcc9e682fd44b70962563124d9c, type: 2}
+  RightAnimation: {fileID: 11400000, guid: bbb1aefebbde4dc419157718124e08e6, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: eb6060dab6b677544a5e4c2e35165ab3, type: 2}

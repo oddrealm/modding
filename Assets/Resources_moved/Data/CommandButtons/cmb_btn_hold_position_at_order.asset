@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbd562150f96bf40848873f2e877dd8, type: 3}
+  m_Name: cmb_btn_hold_position_at_order
+  m_EditorClassIdentifier: 
+  DependencyTag: []
+  ActivationType: 2
+  ActiveTooltipName: Holding Position
+  SaveBtnState: 0
+  InactiveTooltipName: Hold Position At Point
+  ActiveDisplayText: <sprite=884>
+  InactiveDisplayText: <sprite=884>
+  ActiveHotkeyDisplay: Cancel
+  InactiveHotkeyDisplay: Issue
+  Hotkey: entity_hold_position
+  WindowNameToToggle: 
+  WindowLayerToToggle: 
+  Description: 

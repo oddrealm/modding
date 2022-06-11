@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
+  m_Name: notif_level_up
+  m_EditorClassIdentifier: 
+  Index: 29
+  Enabled: 1
+  NotificationType: 1
+  Priority: 29
+  FilterType: 4
+  Sound: ding
+  FactionToShowPipFor: 1
+  DefaultPermitted:
+  - race_human
+  - race_ancient
+  InlineIcon: <sprite=140>
+  ShowInSettings: 1
+  FriendlyName: Entity Level Up
+  DescriptionDisplay: '{0} levelled up to level {1}.'
+  DuplicateDescriptionDisplay: '{0} entities levelled up.'
+  UIToOpen: entity_overlay
+  ShowPip: 0
+  PipInterval: -1
+  PauseGameOnCreate: 0
+  PauseGameInterval: 1
+  FocusCamOnCreate: 0
+  FocusCamInterval: 1
+  CanSetFaction: 1
+  CanSetRace: 1

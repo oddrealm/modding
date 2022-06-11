@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: dog_fishing
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
+  UpAnimation: {fileID: 11400000, guid: dd5ef7470ac81b14b9d30294944db152, type: 2}
+  DownAnimation: {fileID: 11400000, guid: acecd366568f29a499677ada3d4cb5e2, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 5efc2729e6d1a204db192f8db9f08f33, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 6bb891df140df7f40879a19141d12222, type: 2}

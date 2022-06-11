@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
+  m_Name: entity_chirpen
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_entity_chirpen
+  Size: 2
+  PermittedAges: 2
+  CompanionType: 1
+  CompanionPermanenceType: 3
+  ReproductionType: 2
+  ReproductionIntervalMinutes: 2880
+  ReproductionCount: 1
+  TakeLastNameOfCompanion: 0
+  AgeToBecomeAdult: 0
+  AgeToBecomeElder: 6
+  RandomElderStatuses:
+  - entity_status_cardiac_arrest
+  GenerateNameKey: 
+  InherentWorkAttacks: attack_group_hand_skills_fallback
+  InherentCombatAttacks: attack_group_chirpen
+  ProhibitedSkillTypes: 67074047
+  ProhibitedProfessionTypes: 8372223
+  PermittedRandomProfessions: 0
+  Race: race_chirpen
+  EquippableTypes: 0
+  PathingType: 2
+  SleepPointTag: 
+  DefaultTuning: entity_tuning_chirpen
+  DeathItemSpawnGroup: isg_entity_death_chirpen
+  PreyRaces: []
+  AttributeActions: []
+  DefaultPickUpBlueprint: blueprint_pick_up_item
+  DefaultDropOffBlueprint: blueprint_drop_off_item
+  Statuses: []

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
+  m_Name: tooltip_room_somnic_pools
+  m_EditorClassIdentifier: 
+  Name: Somnic Pools
+  InlineIcon: <sprite=1210>
+  Description: The Somnic Pools are where Ardynians meditate to recover energy while
+    also producing Astrasomes.
+  Action: 
+  Icon: sp_room_somnic_pools_icon
+  Formatting: '{2}''s {0} {1}'
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: gully_idle
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
+  UpAnimation: {fileID: 11400000, guid: b19d57e9aba7cb24388c5cc47da5caf5, type: 2}
+  DownAnimation: {fileID: 11400000, guid: f79e203c461fd9a46900e2db6dbdd260, type: 2}
+  RightAnimation: {fileID: 11400000, guid: f71119eb773302f4281698f35d460d7d, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: bacf23b24466b104dbcdb580769611aa, type: 2}

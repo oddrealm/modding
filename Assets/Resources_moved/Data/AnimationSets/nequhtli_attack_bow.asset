@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: nequhtli_attack_bow
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 73df296c004647f4a8a0bd393365cce9, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 826c4c3864647f345a5358394419ae95, type: 2}
+  DownAnimation: {fileID: 11400000, guid: dd4c8debeba788a4d9da4309d8770e2e, type: 2}
+  RightAnimation: {fileID: 11400000, guid: bf8d012c2c20e014494813ea3749f383, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 6e8335c855acf0544a8ab33b4de8b4b4, type: 2}

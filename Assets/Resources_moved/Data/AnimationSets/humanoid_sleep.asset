@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: humanoid_sleep
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 7af7740d1c2f88647ad5c759a3ad39bf, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 20914800839d6f24182d2d012d2557e3, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 7405f2fec963d1a4f860ae90551d8c18, type: 2}
+  RightAnimation: {fileID: 11400000, guid: b912e5aa7d8219f45b5dba1337efcbf0, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 7ec7cc4b830f7c94a94649b656f81db2, type: 2}

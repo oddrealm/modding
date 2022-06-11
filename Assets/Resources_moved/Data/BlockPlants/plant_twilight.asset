@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
+  m_Name: plant_twilight
+  m_EditorClassIdentifier: 
+  Index: 67
+  IsRoot: 1
+  Biomes:
+  - biome_barren
+  - biome_barren_forest
+  - biome_barren_mountain
+  Seasons:
+  - season_barren_spring
+  - season_barren_summer
+  - season_barren_fall
+  - season_barren_winter
+  NaturalSpawnBlock: 1
+  Permissions: 0
+  MaturePermissions: 1048576
+  PlantType: 2
+  PlantPermission: 1
+  Group: -1
+  IsObstruction: 0
+  FertilityRequirement: 1
+  PhysicsType: 66
+  NaturalSpawnChance: 15
+  NaturalReproduceChance: 150
+  ReproducePlant: plant_twilight
+  ReproduceMinDist: 1
+  ReproduceMaxDist: 1
+  ReproduceFX: 
+  ReproduceIntervals: 12
+  TooltipID: tooltip_plant_twilight
+  Visuals:
+  - visuals_plant_twilight
+  RemoveItemDrops: isg_plant_remove_drops_default
+  MatureItemDrops: isg_plant_mature_drops_twilight
+  MatureEntityDrops: 
+  MaturePrefabID: 
+  NeedsSkylight: 1
+  MinTemp: -5
+  MaxTemp: 75
+  MatureTime: 60
+  MaxLifeTime: 120
+  GrowthStages: 4
+  FlammableChance: 400
+  HealthMax: 100
+  HealthTooltipID: tooltip_attribute_health
+  MaintenanceDecayMin: 1
+  MaintenanceDecayMax: 2
+  MaintenanceMax: 100
+  MaintenanceTooltipID: tooltip_plant_maintenance_watering
+  MaintenanceTags:
+  - needs_watering
+  MatureTags:
+  - mature_plant

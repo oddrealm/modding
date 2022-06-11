@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
+  m_Name: notif_fire
+  m_EditorClassIdentifier: 
+  Index: 16
+  Enabled: 0
+  NotificationType: 3
+  Priority: 16
+  FilterType: 8
+  Sound: bad
+  FactionToShowPipFor: 7
+  DefaultPermitted: []
+  InlineIcon: <sprite=803>
+  ShowInSettings: 0
+  FriendlyName: Out Of Control Fire
+  DescriptionDisplay: A fire has started!
+  DuplicateDescriptionDisplay: '{0} fires have started!'
+  UIToOpen: 
+  ShowPip: 1
+  PipInterval: 60
+  PauseGameOnCreate: 1
+  PauseGameInterval: 60
+  FocusCamOnCreate: 1
+  FocusCamInterval: 60
+  CanSetFaction: 0
+  CanSetRace: 0

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
+  m_Name: isg_discovery_dungeon_easy0_items
+  m_EditorClassIdentifier: 
+  FriendlyName: 
+  Data: '{"items":[{"item_id":"item_carrot_seed","count":5,"spawn_rate":5},{"item_id":"item_broccoli_seed","count":5,"spawn_rate":5}]}'
+  Spawns:
+  - ItemID: item_carrot_seed
+    GenerateNameKey: 
+    Count: 5
+    SpawnRate: 5
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_broccoli_seed
+    GenerateNameKey: 
+    Count: 5
+    SpawnRate: 5
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1

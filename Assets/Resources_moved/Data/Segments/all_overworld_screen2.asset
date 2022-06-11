@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
+  m_Name: all_overworld_screen2
+  m_EditorClassIdentifier: 
+  TutorialType: 1
+  SelectTarget: 0
+  InputsToLock: 126
+  Trigger: 0
+  PreviousSegments: []
+  MinGameMinutes: -1
+  MinPlayTime: -1
+  MinCooldown: -1
+  Hooks: []
+  ActiveRaces: []
+  PermittedWindows: []
+  SelectionType: 11
+  AttributeRaces: []
+  AttributeType: 0
+  MinAttributeAmount: -1
+  MaxAttributeAmount: -1
+  ItemIDs: []
+  ItemConditionType: 1
+  ItemMinCount: -1
+  MinRoomCount: -1
+  MinProductionRoomCount: -1
+  MinAutoJobCount: -1
+  Dialogue: {fileID: 0}
+  FadeInDelay: 0
+  PopUpPosition: 4
+  ShowBackground: 1
+  ShowBackgroundMask: 1
+  BackgroundMaskTarget: preview
+  AnimatedImage: 
+  PopUpTextBody: The preview window will give you an idea of what the terrain looks
+    like in a tile.
+  NextSegment: {fileID: 11400000, guid: f4ffcd02618183d4587d3be181137f46, type: 2}

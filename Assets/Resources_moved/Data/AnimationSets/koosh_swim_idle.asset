@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: koosh_swim_idle
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 52f7e62038e9f5c4bbeb2c62a88a25fb, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 2dc35d210b113a943b393203ceb6c8cb, type: 2}
+  DownAnimation: {fileID: 11400000, guid: d1c774a552031ff49acaf0307530c751, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 77e7e7cdf19c2b24893ef9d5e911fd36, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 1d11553a48c92e24d93c7d959bf7684d, type: 2}

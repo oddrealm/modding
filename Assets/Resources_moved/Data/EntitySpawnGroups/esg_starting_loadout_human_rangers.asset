@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
+  m_Name: esg_starting_loadout_human_rangers
+  m_EditorClassIdentifier: 
+  Spawns:
+  - EntityId: entity_human
+    EntityTag: 
+    EntityProfession: profession_archer
+    EntityGender: priority
+    EntityCount: 1
+    SameRoomAsPlayer: 0
+    EntityFaction: 1
+    EntityTuning: 
+    SpawnRate: 1000
+    AgeType: 2
+    ScenarioID: 
+    SchemaID: 
+  - EntityId: entity_human
+    EntityTag: 
+    EntityProfession: profession_warrior
+    EntityGender: priority
+    EntityCount: 2
+    SameRoomAsPlayer: 0
+    EntityFaction: 1
+    EntityTuning: 
+    SpawnRate: 1000
+    AgeType: 2
+    ScenarioID: 
+    SchemaID: 

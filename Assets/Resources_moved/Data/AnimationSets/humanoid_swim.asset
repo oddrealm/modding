@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: humanoid_swim
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 95dd57af025d802449a75f9832bf4bd4, type: 2}
+  UpAnimation: {fileID: 11400000, guid: c4a4360ca892d964ab6b6cbee320da59, type: 2}
+  DownAnimation: {fileID: 11400000, guid: a0891380a3354454dbb766690a5007ae, type: 2}
+  RightAnimation: {fileID: 11400000, guid: e7153af738b50c54893d85db719b951f, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: a0e9361e062cfa543a4837e7e0118f6f, type: 2}

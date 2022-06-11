@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
+  m_Name: race_ancient
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_race_ancient
+  MerchantValue: 300
+  IntelligenceType: 1
+  Tags:
+  - sapient
+  - playable
+  StartingResearchKeys:
+  - basics0
+  - thaumaturgy0
+  - ancient_immortality_tomb0
+  DefaultEntityID: entity_ancient
+  Diet: diet_ancient
+  Public: 1
+  BuffGroupID: buffs_racial_ancient
+  Perks:
+  - '<sprite=14> Attuned To The Void: All ancients start with higher ranks in void-based
+    skills'
+  - '<sprite=1062> Air Of Superiority: Having no lungs, Ancients are unaffected by
+    environments without oxygen'

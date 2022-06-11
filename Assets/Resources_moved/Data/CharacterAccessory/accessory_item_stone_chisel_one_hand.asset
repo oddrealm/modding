@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0213a4de9e4e74d41b330785bb4c7fff, type: 3}
+  m_Name: accessory_item_stone_chisel_one_hand
+  m_EditorClassIdentifier: 
+  Priority: 3
+  TexX: 64
+  TexY: 214
+  ColorA: {r: 0.68235296, g: 0.7294118, b: 0.7490196, a: 1}
+  ColorB: {r: 0.5921569, g: 0.64705884, b: 0.6784314, a: 1}
+  ColorC: {r: 0.48235294, g: 0.5372549, b: 0.5803922, a: 1}
+  ColorMaskA: {r: 1, g: 0, b: 0, a: 1}
+  ColorMaskB: {r: 0, g: 1, b: 0, a: 1}
+  ColorMaskC: {r: 0, g: 0, b: 1, a: 1}
+  DefaultAccessoryPoint: 2
+  HiddenAnimationStates:
+  - {fileID: 11400000, guid: 73df296c004647f4a8a0bd393365cce9, type: 2}
+  - {fileID: 11400000, guid: e5b61f9b622e9ee47a2605b950cc37d7, type: 2}
+  - {fileID: 11400000, guid: f24030c166ac23941a71d46becc88fa6, type: 2}
+  - {fileID: 11400000, guid: 626021479c17f12419b698d7491673b1, type: 2}
+  - {fileID: 11400000, guid: dda4ba75608eefa4e881089b251fda00, type: 2}
+  - {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
+  - {fileID: 11400000, guid: addb0449603f8fe4e8447b395983126b, type: 2}
+  - {fileID: 11400000, guid: 1f0961e45dbbb8e47b80903da40a2533, type: 2}
+  - {fileID: 11400000, guid: 75374486d7da1134ea18a8e6edacf70d, type: 2}

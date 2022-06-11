@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbd562150f96bf40848873f2e877dd8, type: 3}
+  m_Name: cmd_btn_open_jobs_toolbar
+  m_EditorClassIdentifier: 
+  DependencyTag: []
+  ActivationType: 2
+  ActiveTooltipName: Jobs Menu
+  SaveBtnState: 0
+  InactiveTooltipName: Jobs Menu
+  ActiveDisplayText: <sprite=122>
+  InactiveDisplayText: <sprite=122>
+  ActiveHotkeyDisplay: Close
+  InactiveHotkeyDisplay: Open
+  Hotkey: open_jobs
+  WindowNameToToggle: 
+  WindowLayerToToggle: 
+  Description: 

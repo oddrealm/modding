@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
+  m_Name: blueprint_item_mud_cat_bowl
+  m_EditorClassIdentifier: 
+  DefaultAutoJobPriority: 1
+  DefaultThresholdType: 4
+  TimeoutTime: 300
+  Requirements: requirement_blueprint_item_mud_cat_bowl
+  AutoJobBlockSearchType: 1
+  JobBarType: 3
+  InvertProgressDisplay: 1
+  JobActionTextTypes: 1
+  AttributeToUseForProgress: 0
+  AttributeTargetPercentage: 1
+  ProgressMax: 75
+  Toughness: 0
+  XPMod: 1
+  UseBlockForToughness: 0
+  ToolbarMenu: 
+  ResearchKey: complex_meals0
+  AutoPlacementClearType: 0
+  Placement: 16
+  PlacementClear: 16
+  Category: 2048
+  TooltipID: tooltip_item_fish_bowl
+  OnlyShowYieldTooltip: 0
+  YieldTooltipIDs: []
+  InterfaceInfo: interface_info_mud_cat_bowl
+  Visuals:
+  - visuals_item_fish_bowl
+  WorkFX: fx_work_add
+  InteractSFX: sfx_hammer_wood
+  CompleteSFX: 
+  SetLiquidMass: 0
+  LiquidMass: 1
+  ModelIndex: 2114
+  ModelMultipler: 3
+  EntitiesToCreate: 
+  PickUpActionType: 0
+  ResetPlantMaintenance: 0
+  ReleaseContainedEntity: 0
+  TryCaptureContainedEntity: 0
+  StatusesToApply: []

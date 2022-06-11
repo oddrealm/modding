@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: nequhtli_attack_melee
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: f24030c166ac23941a71d46becc88fa6, type: 2}
+  UpAnimation: {fileID: 11400000, guid: b43568d2e1806fb4a8c78396e7b13757, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 7ab708383bb4cd44681ca56d6b529a84, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 2080e243cc712574380d884459d5bcd5, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 5b5c6b3946945d546a0351d1bfed0c1c, type: 2}

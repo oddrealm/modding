@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
+  m_Name: scenario_tomek_proximity_settlers_wave0
+  m_EditorClassIdentifier: 
+  Index: 37
+  ActivationType: 0
+  IsThreat: 0
+  TooltipID: tooltip_scenario_tomek_proximity_settlers_wave0
+  TileNoteTooltipID: 
+  TryQueueOnNewGame: 0
+  TileChance: -1
+  ActivationChance: 0
+  MinGameDays: 10
+  MinSettlerLevel: -1
+  MaxSettlerLevel: -1
+  MaxIDActivations: 1
+  MaxTagActivations: 1
+  IDInterval: 7200
+  TagInterval: 7200
+  Tag: tome_settler_wave
+  RequiredTag: 
+  RequiredEntityTagsInTile: []
+  RequiredRoomFunctions: []
+  PermittedNations: []
+  PermittedWeather: 
+  PermittedBiomes: []
+  PermittedRaces:
+  - race_tomek
+  PermittedSeasons: []
+  NotificationOnActivate: notif_scenario_activated_default
+  Components: '{"warmup_actions":{"spawn_entities":{"entity_id":"entity_tomek","entity_profession":"profession_random_no_children","entity_gender":"random","entity_count":3,"spawn_tag":"collected_blocks","same_room_as_player":false,"spawn_at_discovered_point":true,"entity_faction":2}},"activate_actions":{"move_camera":{"focus":"spawned_entities"},"start_dialogue":{"dialogue_id":"dialogue_shared_tomek_proximity_settlers0_settler0"}},"output0_actions":{"change_faction":{"focus":"spawned_entities","faction":1}},"output1_actions":{"change_faction":{"focus":"spawned_entities","faction":4}}}'

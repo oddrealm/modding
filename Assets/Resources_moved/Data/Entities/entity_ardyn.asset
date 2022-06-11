@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
+  m_Name: entity_ardyn
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_entity_ardyn
+  Size: 3
+  PermittedAges: 2
+  CompanionType: 2
+  CompanionPermanenceType: 1
+  ReproductionType: 1
+  ReproductionIntervalMinutes: 2880
+  ReproductionCount: 1
+  TakeLastNameOfCompanion: 0
+  AgeToBecomeAdult: 16
+  AgeToBecomeElder: 80
+  RandomElderStatuses: []
+  GenerateNameKey: entity_names_ardyn
+  InherentWorkAttacks: attack_group_hand_skills_fallback
+  InherentCombatAttacks: attack_group_ardyn
+  ProhibitedSkillTypes: 0
+  DefaultSkillTypes: 33554432
+  ProhibitedProfessionTypes: 131072
+  PermittedRandomProfessions: 3717119
+  Race: race_ardyn
+  EquippableTypes: 127
+  PathingType: 1
+  SleepPointTag: human_sleep_point
+  DefaultTuning: entity_tuning_ardyn
+  DeathItemSpawnGroup: isg_entity_death_ardyn
+  PreyRaces: []
+  AttributeActions: []
+  DefaultPickUpBlueprint: blueprint_pick_up_item
+  DefaultDropOffBlueprint: blueprint_drop_off_item
+  Statuses: []

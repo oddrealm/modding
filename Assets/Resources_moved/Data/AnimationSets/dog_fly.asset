@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: dog_fly
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 5a1950ee889291f4dbce43822b8aebd2, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 59b6b35f0e74c10408e09ca7c570a589, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 901a87826b8caf5498e4b43935b3bd3e, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 68c7f855b31197c42a0d702f651a43f5, type: 2}

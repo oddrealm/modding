@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
+  m_Name: visuals_item_sand_clod
+  m_EditorClassIdentifier: 
+  ReceiveSkylightColor: 0
+  OnlyRenderIfVisible: 1
+  RotationType: 0
+  VisibilityFlag: 1
+  ShowPermissionColor: 1
+  ColorAddType: 1
+  HasTriggerOffset: 0
+  DepthOffset: 0.041
+  HideSurfaceWhenObscuredAbove: 0
+  HideSurfaceWhenSameTypeAbove: 0
+  CanTransitionIfObscuredAbove: 1
+  ObscureDirectSurfaceBelow: 0
+  HasSurface: 0
+  HasSeasonOffset: 0
+  HasMapColor: 1
+  MapColor: {r: 0.7176471, g: 0.7176471, b: 0.7176471, a: 1}
+  TextureX: 70
+  TextureY: 74
+  WeatherY: 1
+  TransitionType: 0
+  TransitionKey: 0
+  CanTransitionNULL: 1
+  IsRotationFixture: 0
+  BlockAmbientLight: 0
+  ShowAmbientLight: 1
+  TailVariants: 0
+  ShowTailVariant: 0
+  ShowAnims: 0
+  TemperatureStrength: 0
+  TemperatureHorizontalPass: 1
+  TemperatureDownPass: 1
+  TemperatureUpPass: 1
+  ShowLighting: 1
+  SpotlightStrength: 0
+  SpotlightHorizontalPass: 1
+  SpotlightDownPass: 1
+  SpotlightUpPass: 1
+  AddVFX: 
+  RemoveVFX: 
+  InteractVFX: 
+  IdleVFX: 
+  SkylightPass: 0
+  SkylightMin: 11
+  SkylightMax: 15

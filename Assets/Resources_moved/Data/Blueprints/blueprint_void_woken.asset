@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
+  m_Name: blueprint_void_woken
+  m_EditorClassIdentifier: 
+  DefaultAutoJobPriority: 1
+  DefaultThresholdType: 5
+  TimeoutTime: 300
+  Requirements: requirement_blueprint_void_woken
+  AutoJobBlockSearchType: 1
+  JobBarType: 3
+  InvertProgressDisplay: 1
+  JobActionTextTypes: 1
+  AttributeToUseForProgress: 0
+  AttributeTargetPercentage: 1
+  ProgressMax: 100
+  Toughness: 3
+  XPMod: 1
+  UseBlockForToughness: 0
+  ToolbarMenu: 
+  ResearchKey: summoner0
+  AutoPlacementClearType: 0
+  Placement: 0
+  PlacementClear: 0
+  Category: 8192
+  TooltipID: tooltip_race_void_woken
+  OnlyShowYieldTooltip: 0
+  YieldTooltipIDs: []
+  InterfaceInfo: interface_info_void_woken
+  Visuals:
+  - visuals_block_summon_void_woken
+  WorkFX: fx_work_add
+  InteractSFX: sfx_spell_interact
+  CompleteSFX: sfx_summon
+  SetLiquidMass: 0
+  LiquidMass: 1
+  ModelIndex: -1
+  ModelMultipler: 1
+  EntitiesToCreate: esg_blueprint_void_woken
+  PickUpActionType: 0
+  ResetPlantMaintenance: 0
+  ReleaseContainedEntity: 0
+  TryCaptureContainedEntity: 0
+  StatusesToApply: []

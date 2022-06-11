@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: dweller_sit
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 1c4464af3af0fcc408d2be3da4077885, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 44df6ff0f780c704cbfb0b52d43a1871, type: 2}
+  DownAnimation: {fileID: 11400000, guid: db026cf676cb7de4283f20445fb74c7f, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 669fb61fe971dad43ac2515a4630058f, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 2c27fa14e16966f48bf9990369484f94, type: 2}

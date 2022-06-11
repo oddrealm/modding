@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: dweller_block
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: dda4ba75608eefa4e881089b251fda00, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 82bdefb259ab9504584ad49b4e213e11, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 7515ee94d8c795d4b8645b49a2ffeb67, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 1abef116e0f6fb043b893aa5276c9ee1, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: f3e6bdd0ecec06745bc291c6901af67f, type: 2}

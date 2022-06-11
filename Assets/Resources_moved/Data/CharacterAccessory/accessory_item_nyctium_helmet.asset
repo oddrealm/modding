@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0213a4de9e4e74d41b330785bb4c7fff, type: 3}
+  m_Name: accessory_item_nyctium_helmet
+  m_EditorClassIdentifier: 
+  Priority: 3
+  TexX: 64
+  TexY: 235
+  ColorA: {r: 0.4862745, g: 0.1764706, b: 0.59607846, a: 1}
+  ColorB: {r: 0.34509805, g: 0.11372549, b: 0.54901963, a: 1}
+  ColorC: {r: 0.24705882, g: 0.0627451, b: 0.5019608, a: 1}
+  ColorMaskA: {r: 1, g: 0, b: 0, a: 1}
+  ColorMaskB: {r: 0, g: 1, b: 0, a: 1}
+  ColorMaskC: {r: 0, g: 0, b: 1, a: 1}
+  DefaultAccessoryPoint: 1
+  HiddenAnimationStates: []

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: voidimp_sit
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 1c4464af3af0fcc408d2be3da4077885, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 37273227b0f55ea4fa1bb1be0ca57414, type: 2}
+  DownAnimation: {fileID: 11400000, guid: a60deaffcca53314bae01156c306b1a9, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 526a10953860ee442bba53f67a105a25, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 9c716ab47f1112e478675b8ff492e638, type: 2}

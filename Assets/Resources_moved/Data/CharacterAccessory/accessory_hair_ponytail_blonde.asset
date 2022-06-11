@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0213a4de9e4e74d41b330785bb4c7fff, type: 3}
+  m_Name: accessory_hair_ponytail_blonde
+  m_EditorClassIdentifier: 
+  Priority: 0
+  TexX: 64
+  TexY: 179
+  ColorA: {r: 0.6784314, g: 0.5647059, b: 0.49019608, a: 1}
+  ColorB: {r: 0.6132076, g: 0.4891319, b: 0.4078409, a: 1}
+  ColorC: {r: 0.5283019, g: 0.4079675, b: 0.3264507, a: 1}
+  ColorMaskA: {r: 1, g: 0, b: 0, a: 1}
+  ColorMaskB: {r: 0, g: 1, b: 0, a: 1}
+  ColorMaskC: {r: 0, g: 0, b: 1, a: 1}
+  DefaultAccessoryPoint: 1

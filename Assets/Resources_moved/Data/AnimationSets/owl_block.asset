@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: owl_block
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: dda4ba75608eefa4e881089b251fda00, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 61e1345086a428042aac60b0ecd2606b, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 8bb09f90ad708424a9e54625f0b341cf, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 3c45cea4d03669c4892517231eb95433, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: cf79e91ca3de29b44ab65168088616fe, type: 2}

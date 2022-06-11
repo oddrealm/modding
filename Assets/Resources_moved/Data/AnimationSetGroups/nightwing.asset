@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
+  m_Name: nightwing
+  m_EditorClassIdentifier: 
+  Sets:
+  - {fileID: 11400000, guid: cdb498d9c8340d849af2f501a54ebb5d, type: 2}
+  - {fileID: 11400000, guid: 71f3d2b61e3e1904eb12b8aba164304d, type: 2}
+  - {fileID: 11400000, guid: 67738c705492cd345ab21b7c6142d705, type: 2}
+  - {fileID: 11400000, guid: 202822669fb00244abd986e6b4ef3dac, type: 2}
+  - {fileID: 11400000, guid: 5954303831510bd45ba62750d1a79e58, type: 2}
+  - {fileID: 11400000, guid: 777f1ca1505db604da1ad6e956e55c20, type: 2}
+  - {fileID: 11400000, guid: f74e4770597cc9949ad8f2237411221a, type: 2}
+  - {fileID: 11400000, guid: fdac06cace9a6c2488c3fea2808690ad, type: 2}
+  - {fileID: 11400000, guid: 8d9466a95d93a4e4fa89ba9ae7da37de, type: 2}
+  - {fileID: 11400000, guid: 5a2e282d4711cb54abd78a5ecb4d0b20, type: 2}
+  - {fileID: 11400000, guid: 19561fd9aa8fb404d940bb774dc718dd, type: 2}
+  - {fileID: 11400000, guid: 2a3df383db75fd741a5565cdba578080, type: 2}
+  - {fileID: 11400000, guid: c717012583f37d34fbfb78b1f6f0691c, type: 2}
+  - {fileID: 11400000, guid: ac2a28361f03c92448a6ed7d41a6602c, type: 2}
+  - {fileID: 11400000, guid: ba308b69e5a4dc544b31bf702b7d78ad, type: 2}
+  - {fileID: 11400000, guid: e01ab2ca5d9156c4ca69f3f744d63b65, type: 2}
+  - {fileID: 11400000, guid: 79558ee70175f2d43a89c46b6fbd2ba6, type: 2}
+  - {fileID: 11400000, guid: 7faf9d9ac03188146af60bdfa699b2b3, type: 2}
+  - {fileID: 11400000, guid: 548d122f121b30b4d8bbc9a97db55628, type: 2}
+  - {fileID: 11400000, guid: 6a49831751f88244b85f9714a9a5a98d, type: 2}
+  - {fileID: 11400000, guid: 2716d9e983e8cec42ad3893351b6dd19, type: 2}
+  - {fileID: 11400000, guid: 4c4c296e10f453043a5818a78210884d, type: 2}

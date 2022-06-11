@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: shimmer_climb
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 0568f5713f1565a4aa7c5e1b2f739391, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 54435ee0bf6342d469a01e8edaa9c665, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 2f52a5d861c6bff45a40259e545fa5a4, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 86f00b69d4c77e748b56cce533249e1f, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: a3af665d30849df43803c3e6a6784177, type: 2}

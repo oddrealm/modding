@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
+  m_Name: overworld_nation_tomek
+  m_EditorClassIdentifier: 
+  Order: 4
+  TooltipID: tooltip_overworld_nation_tomek
+  Unlocked: 0
+  Banner: sp_tomek_banner
+  OverworldVisuals: overworld_visuals_tomek
+  Color: 375869
+  Loadouts: []
+  Races:
+  - race_tomek
+  DiscoveredRaces:
+  - race_tomek
+  GenerateNameKey: location_names_tomek_settlements
+  OriginCount: 3
+  MinCount: 2
+  MaxCount: 3
+  SettlementPrefabs:
+  - mpg_tomek_town
+  Biomes:
+  - biome_barren_mountain
+  - biome_taiga_mountain
+  - biome_tundra_mountain
+  - biome_desert_mountain
+  HostileTowards:
+  - race_ardyn
+  - race_ancient
+  FriendlyDiscoveryGroups:
+  - discoverygroup_shared_tomek_settlement_friendly
+  HostileDiscoveryGroups:
+  - discoverygroup_shared_tomek_settlement_hostile

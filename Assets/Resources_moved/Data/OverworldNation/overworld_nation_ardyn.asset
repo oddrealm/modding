@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
+  m_Name: overworld_nation_ardyn
+  m_EditorClassIdentifier: 
+  Order: 2
+  TooltipID: tooltip_overworld_nation_ardyn
+  Unlocked: 1
+  Banner: sp_ardyn_banner
+  OverworldVisuals: overworld_visuals_ardyn
+  Color: ab6370
+  Loadouts:
+  - starting_loadout_ardyn_tyrants
+  - starting_loadout_ardyn_herders
+  - starting_loadout_ardyn_blood_thirsty
+  - starting_loadout_ardyn_dev
+  - starting_loadout_custom
+  Races:
+  - race_ardyn
+  DiscoveredRaces:
+  - race_ardyn
+  GenerateNameKey: location_names_ardyn_settlements
+  OriginCount: 3
+  MinCount: 5
+  MaxCount: 7
+  SettlementPrefabs:
+  - mpg_ardyn_town
+  Biomes:
+  - biome_barren
+  - biome_taiga
+  HostileTowards:
+  - race_human
+  - race_ancient
+  - race_gwdir
+  - race_tomek
+  FriendlyDiscoveryGroups:
+  - discoverygroup_shared_ardyn_settlement_friendly
+  HostileDiscoveryGroups:
+  - discoverygroup_shared_ardyn_settlement_hostile

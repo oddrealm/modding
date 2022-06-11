@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
+  m_Name: app_adult_rabbit_fa0
+  m_EditorClassIdentifier: 
+  Gender: female
+  Race: race_rabbit
+  Group: race_rabbit_female
+  AppearanceType: 1
+  AgeType: 2
+  ShadowType: 1
+  Portrait: sp_adult_rabbit_fa0
+  HealthBarOffset: 0
+  StealthSightingDialogueGroup: 
+  IdleFX: []
+  SleepFX: []
+  DeathFX:
+  - fx_entity_death
+  Accessories: []
+  KilledSFX: sfx_rabbit_female_killed
+  HitSFX: sfx_rabbit_female_hit
+  SelectPositiveSFX: sfx_rabbit_female_select_positive
+  SelectNegativeSFX: sfx_rabbit_female_select_negative
+  OrderPositiveSFX: sfx_rabbit_female_order_positive
+  OrderNegativeSFX: sfx_rabbit_female_order_negative
+  ColorMask: {fileID: 11400000, guid: 6f7db6946c4fe9f4c8116d64e11796e9, type: 2}
+  Animations: {fileID: 11400000, guid: c74320b98ec30ae4197660a9738f4905, type: 2}

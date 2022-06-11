@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
+  m_Name: tooltip_overworld_nation_gwdir
+  m_EditorClassIdentifier: 
+  Name: Gwdir
+  InlineIcon: <sprite=1028>
+  Description: Master crafters, the Gwdir produce the most advanced tools, clothing,
+    and weapons. Unlike Humans, their symbiotic relationship with nature has allowed
+    them to easily collect resources from their surroundings without destroying it
+    in the process.
+  Action: 
+  Icon: sp_race_gwdir
+  Formatting: 

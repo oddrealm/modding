@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: vytrax_fly
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
+  UpAnimation: {fileID: 11400000, guid: bd607db8212adba43aeca8901940d2b0, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 355c86be289d4d74db6b2e90ed23b223, type: 2}
+  RightAnimation: {fileID: 11400000, guid: d5ac4d4d31c62a8419e6341d37d6f563, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 26d78117a0066bf4d914eeb68a776878, type: 2}

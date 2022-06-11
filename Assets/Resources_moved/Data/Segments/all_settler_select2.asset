@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
+  m_Name: all_settler_select2
+  m_EditorClassIdentifier: 
+  TutorialType: 1
+  SelectTarget: 0
+  InputsToLock: 126
+  Trigger: 5
+  PreviousSegments: []
+  MinGameMinutes: -1
+  MinPlayTime: -1
+  MinCooldown: -1
+  Hooks:
+  - entity_tooltip
+  ActiveRaces: []
+  Window: 
+  SelectionType: 1
+  AttributeRaces: []
+  AttributeType: 0
+  MinAttributeAmount: -1
+  MaxAttributeAmount: -1
+  Dialogue: {fileID: 0}
+  FadeInDelay: 0
+  PopUpPosition: 0
+  ShowBackground: 1
+  ShowBackgroundMask: 1
+  BackgroundMaskTarget: entity_tooltip
+  AnimatedImage: 
+  PopUpTextBody: Selected entities will have their info shown here.
+  NextSegment: {fileID: 11400000, guid: ae7f29c5ed33b704e8a8c73b6a79a003, type: 2}

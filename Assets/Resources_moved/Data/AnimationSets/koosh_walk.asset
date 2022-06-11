@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: koosh_walk
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 08dfca07b5a89b54c9a4b1c4ad9e15ff, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 3b171d4549e494d4d92cbf3b594f2162, type: 2}
+  DownAnimation: {fileID: 11400000, guid: a4a9eb707951114488114b8d2f474c05, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 375b03d89dc945440a42a796ac7544ae, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 423b89ea272fc0a44ad9890cad23dc63, type: 2}

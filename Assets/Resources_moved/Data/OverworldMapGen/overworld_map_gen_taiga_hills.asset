@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2306836ee8b4298459405f228e2dabb0, type: 3}
+  m_Name: overworld_map_gen_taiga_hills
+  m_EditorClassIdentifier: 
+  BuildPriority: 2
+  SeedOffset: 0
+  Frequency: 3
+  Octaves: 4
+  Persistence: 0.7
+  Lacunarity: 2
+  MinThreshold: 0.7
+  MaxThreshold: 0.75
+  Falloff: 0.1
+  UseBotTopMinMax: 0
+  TopMax: 0.9
+  TopMin: 0.5
+  BotMax: 0.5
+  BotMin: 0.1
+  UseLongitudinalFade: 1
+  UseLateralFade: 0
+  InvertLongitudinalFade: 0
+  InvertLateralFade: 0

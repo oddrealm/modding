@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: cat_throw
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 75374486d7da1134ea18a8e6edacf70d, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 497d464f7e28741459d0de667222bc6a, type: 2}
+  DownAnimation: {fileID: 11400000, guid: a4aecc4f5b220d2438588c26512d99ef, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 9af566f166d821b4e93fac430f4324ed, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 1a1ab77747ed4a340b83a010b2ce5a28, type: 2}

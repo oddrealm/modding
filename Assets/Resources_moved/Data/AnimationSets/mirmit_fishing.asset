@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: mirmit_fishing
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
+  UpAnimation: {fileID: 11400000, guid: f32fafb479897c645a4538e2b0ca3f72, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 0f572fd9dff1a334a9dd883521c63fc6, type: 2}
+  RightAnimation: {fileID: 11400000, guid: e861acf7e74f78849820202f66837e91, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: b49f6a0f36fd6ff499d3680fde9af827, type: 2}

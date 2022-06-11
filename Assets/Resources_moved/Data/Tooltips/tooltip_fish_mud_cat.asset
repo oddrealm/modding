@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
+  m_Name: tooltip_fish_mud_cat
+  m_EditorClassIdentifier: 
+  Name: Mud Cat
+  InlineIcon: <sprite=326>
+  Description: This large fish is known to be incredibly friendly and has even been
+    seen to ward of predators from those lost at sea.
+  Action: 
+  Icon: sp_fish_mud_cat_icon
+  Formatting: 

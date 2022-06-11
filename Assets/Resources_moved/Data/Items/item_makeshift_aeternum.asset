@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
+  m_Name: item_makeshift_aeternum
+  m_EditorClassIdentifier: 
+  Index: 182
+  TooltipID: tooltip_item_makeshift_aeternum
+  Visuals: visuals_item_makeshift_aeternum
+  CharacterColorMask: {fileID: 0}
+  AccessoryData: {fileID: 11400000, guid: b80f4ee6d28f5ea4e85ca9bb4e8364f6, type: 2}
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
+  Tags: []
+  Category: 128
+  Inventory: inventory_head
+  Buffs: buffs_makeshift_aeternum
+  AttackGroup: 
+  StartDiscovered: 0
+  MaxCountInMerchantList: 1
+  GenerateNameKey: 
+  MerchantBuyValue: 80
+  MerchantSellValue: 15
+  TuneRating: 1
+  RarityType: 1
+  DecayRate: -1
+  DecayItem: 
+  HasMeltThreshold: 0
+  MeltThreshold: 0
+  FlammableChance: 100
+  LightStrength: 0
+  LightSize: 0
+  StackSize: 1

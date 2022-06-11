@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7db86f420f50c418342177bb967083, type: 3}
+  m_Name: biome_barren
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_biome_barren
+  TerrainGeneration:
+  - biome_terrain_gen_barren_sable_bedrock0
+  - biome_terrain_gen_barren_ridgestone_bedrock1
+  - biome_terrain_gen_barren_ember_rock_bedrock2
+  - biome_terrain_gen_barren_dirt_hills
+  - biome_terrain_gen_barren_dirt_plains
+  - biome_terrain_gen_barren_bloodsand_beach
+  ModelPrefabGen:
+  - mpg_trees_nila_thin
+  - mpg_trees_pala_thin
+  - mpg_voidlands_void_ruins
+  DecoGeneration:
+  - biome_deco_gen_barren_surface_grass
+  - biome_deco_gen_barren_surface_weeds
+  - biome_deco_gen_barren_surface_plants
+  - biome_deco_gen_barren_surface_props
+  - biome_deco_gen_barren_surface_void_crystals
+  LodeGeneration:
+  - biome_lode_gen_coal_ore
+  - biome_lode_gen_copper_ore
+  - biome_lode_gen_tin_ore
+  - biome_lode_gen_iron_ore
+  - biome_lode_gen_rutile_ore
+  - biome_lode_gen_void_crystal
+  - biome_lode_gen_amber_opal
+  - biome_lode_gen_sunrise_opal
+  - biome_lode_gen_forest_emerald
+  - biome_lode_gen_seabreeze_sapphire
+  OverworldMapGeneration: overworld_map_gen_barren
+  OverworldTerrainVisuals: overworld_visuals_barren
+  OverworldRiverVisuals: overworld_visuals_barren_river
+  MovementCost: 1
+  GenerateNameKey: biome_names_barren
+  Travel: overworld_travel_default
+  Fish:
+  - fish_dolma
+  - fish_gnarl_tooth
+  - fish_kelp_witch
+  Seasons:
+  - season_barren_spring
+  - season_barren_summer
+  - season_barren_fall
+  - season_barren_winter

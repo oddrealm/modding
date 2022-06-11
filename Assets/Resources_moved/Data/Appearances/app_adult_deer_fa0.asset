@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
+  m_Name: app_adult_deer_fa0
+  m_EditorClassIdentifier: 
+  Gender: female
+  Race: race_deer
+  Group: race_deer_female
+  AppearanceType: 1
+  AgeType: 2
+  ShadowType: 2
+  Portrait: sp_adult_deer_fa0
+  HealthBarOffset: 0
+  StealthSightingDialogueGroup: 
+  IdleFX: []
+  SleepFX: []
+  DeathFX:
+  - fx_entity_death
+  Accessories: []
+  KilledSFX: sfx_deer_female_killed
+  HitSFX: sfx_deer_female_hit
+  SelectPositiveSFX: sfx_deer_female_select_positive
+  SelectNegativeSFX: sfx_deer_female_select_negative
+  OrderPositiveSFX: sfx_deer_female_order_positive
+  OrderNegativeSFX: sfx_deer_female_order_negative
+  ColorMask: {fileID: 11400000, guid: 65feb96abf2c6c94a9937f36358b64dc, type: 2}
+  Animations: {fileID: 11400000, guid: 02febd1e564d6014bb8a5000c90144b1, type: 2}

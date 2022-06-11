@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: bird_idle
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 557b7fcfbc088e849b8c7e3a57dc781a, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 131c52232b420324c90d615192fa06a9, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 3ad9ab888da4fb14ea64e5eb399f2c69, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 69b51a7f07e166140a27549dc3ddc8a5, type: 2}

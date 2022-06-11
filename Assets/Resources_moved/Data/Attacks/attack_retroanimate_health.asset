@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
+  m_Name: attack_retroanimate_health
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_attack_retroanimate
+  ShowOnAttacksDisplay: 1
+  ActivationWeight: 100
+  ProjectileType: 0
+  FiringType: 1
+  ActivationType: 0
+  DamageType: 0
+  SkillUsed: 32768
+  AddSkillToOutput: 1
+  MinAmount: 1
+  MaxAmount: 2
+  Range: 64
+  SourceAction: 2
+  SourceAttribute: 1
+  TargetAction: 0
+  TargetAttribute: 0
+  AnimationTrigger: 8192
+  AnimationHitEvent: 1
+  OriginFX: []
+  HitFX: []
+  PrimeFX:
+  - fx_retroanimate_channel
+  AttackStartTargetColor: {r: 1, g: 0.24056602, b: 0.5594125, a: 1}
+  AttackStartTargetColorDuration: 1
+  AttackStartTargetColorFlashType: 1
+  AttackStartSourceColor: {r: 0.11764706, g: 0.9529412, b: 0.37254903, a: 1}
+  AttackStartSourceColorDuration: 1
+  AttackStartSourceColorFlashType: 2

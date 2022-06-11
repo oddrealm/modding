@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
+  m_Name: isg_discovery_cave_rutile_floor
+  m_EditorClassIdentifier: 
+  FriendlyName: 
+  Data: '{"items":[{"generate_name_key":"","item_id":"item_stone_chunk","count":3,"spawn_rate":3},{"generate_name_key":"","item_id":"item_coal","count":3,"spawn_rate":3},{"generate_name_key":"","item_id":"item_boletus_mushroom_seed","count":1,"spawn_rate":3}]}'
+  Spawns:
+  - ItemID: item_stone_chunk
+    GenerateNameKey: 
+    Count: 3
+    SpawnRate: 3
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_coal
+    GenerateNameKey: 
+    Count: 3
+    SpawnRate: 3
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_boletus_mushroom_seed
+    GenerateNameKey: 
+    Count: 1
+    SpawnRate: 3
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1

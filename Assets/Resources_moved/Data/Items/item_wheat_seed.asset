@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
+  m_Name: item_wheat_seed
+  m_EditorClassIdentifier: 
+  Index: 412
+  TooltipID: tooltip_item_wheat_seed
+  Visuals: visuals_item_wheat_seed
+  CharacterColorMask: 
+  AccessoryData: 
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
+  Tags:
+  - consumable_seeds_raw
+  Category: 8
+  Inventory: inventory_none
+  Buffs: 
+  AttackGroup: 
+  StartDiscovered: 1
+  MaxCountInMerchantList: 50
+  GenerateNameKey: 
+  MerchantBuyValue: 10
+  MerchantSellValue: 1
+  TuneRating: 0
+  RarityType: 0
+  DecayRate: -1
+  DecayItem: 
+  HasMeltThreshold: 0
+  MeltThreshold: 0
+  FlammableChance: 500
+  LightStrength: 0
+  LightSize: 0
+  StackSize: 5

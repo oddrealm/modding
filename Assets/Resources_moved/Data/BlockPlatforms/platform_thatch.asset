@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e256d1ab8c0d2438043b751e626442, type: 3}
+  m_Name: platform_thatch
+  m_EditorClassIdentifier: 
+  Index: 13
+  Visuals: visuals_platform_thatch
+  TooltipID: tooltip_platform_thatch
+  PhysicsHeatPass: 0
+  HasMeltThreshold: 0
+  MeltThreshold: 0
+  NeedsSupport: 0
+  Permissions: 8388672
+  MovementSpeedMod: 1
+  MovementCostMult: 2
+  IsRoof: 1
+  CanGrow: 0
+  GrowTime: -1
+  GrowLightReq: -1
+  BlocksCursorRaycast: 1
+  BlocksVerticalLight: 1
+  VerticalLightPass: 8
+  CanWorkThrough: 0
+  CanBuildOnWater: 1
+  FlammableChance: 200
+  BurnFuel: 5
+  BaseHealth: 25
+  BaseToughness: 0
+  ItemDropGroupID: isg_platform_thatch

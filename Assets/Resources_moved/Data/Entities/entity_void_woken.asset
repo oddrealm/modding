@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
+  m_Name: entity_void_woken
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_entity_void_woken
+  Size: 3
+  PermittedAges: 2
+  CompanionType: 0
+  CompanionPermanenceType: 0
+  ReproductionType: 0
+  ReproductionIntervalMinutes: 0
+  ReproductionCount: 0
+  TakeLastNameOfCompanion: 0
+  AgeToBecomeAdult: 600000
+  AgeToBecomeElder: 1000000
+  RandomElderStatuses: []
+  GenerateNameKey: entity_names_void_woken
+  InherentWorkAttacks: attack_group_void_skills_fallback
+  InherentCombatAttacks: attack_group_void_woken
+  ProhibitedSkillTypes: 66482224
+  DefaultSkillTypes: 0
+  ProhibitedProfessionTypes: 8372223
+  PermittedRandomProfessions: 0
+  Race: race_void_woken
+  EquippableTypes: 0
+  PathingType: 1
+  SleepPointTag: 
+  DefaultTuning: entity_tuning_void_woken
+  DeathItemSpawnGroup: isg_entity_death_void_woken
+  PreyRaces: []
+  AttributeActions: []
+  DefaultPickUpBlueprint: blueprint_pick_up_item
+  DefaultDropOffBlueprint: blueprint_drop_off_item
+  Statuses: []

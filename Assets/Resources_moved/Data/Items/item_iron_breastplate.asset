@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
+  m_Name: item_iron_breastplate
+  m_EditorClassIdentifier: 
+  Index: 142
+  TooltipID: tooltip_item_iron_breastplate
+  Visuals: visuals_item_iron_breastplate
+  CharacterColorMask: {fileID: 11400000, guid: b0385567a384f314e8853472dfd07da2, type: 2}
+  AccessoryData: {fileID: 0}
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
+  Tags: []
+  Category: 128
+  Inventory: inventory_body
+  Buffs: buffs_item_iron_breastplate
+  AttackGroup: 
+  StartDiscovered: 0
+  MaxCountInMerchantList: 1
+  GenerateNameKey: 
+  MerchantBuyValue: 550
+  MerchantSellValue: 109
+  TuneRating: 4
+  RarityType: 1
+  DecayRate: -1
+  DecayItem: 
+  HasMeltThreshold: 0
+  MeltThreshold: 0
+  FlammableChance: 100
+  LightStrength: 0
+  LightSize: 0
+  StackSize: 1

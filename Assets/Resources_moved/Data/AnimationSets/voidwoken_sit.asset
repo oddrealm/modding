@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: voidwoken_sit
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 1c4464af3af0fcc408d2be3da4077885, type: 2}
+  UpAnimation: {fileID: 11400000, guid: c51b368e4d19e1f4a9156f9578d88e9b, type: 2}
+  DownAnimation: {fileID: 11400000, guid: b7d0d959ae9ed0c4f9727f7d5afa5694, type: 2}
+  RightAnimation: {fileID: 11400000, guid: da2029c4fde65df418549f66bbf94af0, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 2010f4b6ea73f5a40892a1824e550654, type: 2}

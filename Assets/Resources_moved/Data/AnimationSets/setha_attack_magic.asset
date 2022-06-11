@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: setha_attack_magic
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: e5b61f9b622e9ee47a2605b950cc37d7, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 72c8e1dd7470d524f80567be9dfd224f, type: 2}
+  DownAnimation: {fileID: 11400000, guid: a0e26f4372665f9488e21f7d08ac326b, type: 2}
+  RightAnimation: {fileID: 11400000, guid: dd99a3c3f90979b4ab832fde8fb63e82, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 4d120b3110abb40419750ba4be6c718d, type: 2}

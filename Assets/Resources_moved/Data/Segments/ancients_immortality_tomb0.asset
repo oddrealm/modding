@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
+  m_Name: ancients_immortality_tomb0
+  m_EditorClassIdentifier: 
+  TutorialType: 2
+  SelectTarget: 1
+  InputsToLock: 126
+  Trigger: 1
+  PreviousSegments: []
+  MinGameMinutes: 120
+  MinPlayTime: -1
+  MinCooldown: -1
+  Hooks: []
+  ActiveRaces:
+  - race_ancient
+  PermittedWindows: []
+  SelectionType: 1
+  AttributeRaces: []
+  AttributeType: 0
+  MinAttributeAmount: -1
+  MaxAttributeAmount: -1
+  ItemIDs: []
+  ItemConditionType: 1
+  ItemMinCount: -1
+  ConstructionCategoryType: 0
+  MinRoomCount: -1
+  MinProductionRoomCount: -1
+  MinAutoJobCount: -1
+  Dialogue: {fileID: 11400000, guid: 2adb3205cc935a048a20b7bcee13ac9e, type: 2}
+  FadeInDelay: 0
+  PopUpPosition: 0
+  ShowBackground: 0
+  ShowBackgroundMask: 0
+  BackgroundMaskTarget: 
+  AnimatedImage: 
+  PopUpTextBody: 
+  NextSegment: {fileID: 11400000, guid: 0df8c5eac9230dc4fb80f2e65f225428, type: 2}

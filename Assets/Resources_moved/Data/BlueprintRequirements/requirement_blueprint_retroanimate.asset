@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
+  m_Name: requirement_blueprint_retroanimate
+  m_EditorClassIdentifier: 
+  CanStackWithSameJobType: 0
+  PermissionType: 0
+  BlockTagConditionType: 1
+  BlockTags: []
+  WorkstationTags: []
+  WorkPointLocation: 0
+  Entities:
+  - RaceID: race_ardyn
+    StatusConditionType: 1
+    Statuses:
+    - entity_status_senectia
+    - entity_status_deep_senectia
+    IntelligenceType: 3
+  Targets:
+  - RaceID: race_cat
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_chicken
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_chirpen
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_cow
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_crab
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_deer
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_dog
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_faceless
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_gharox
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_gully
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_gwdir
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_human
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_lopen
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_mirmit
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_nequhtli
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_nightwing
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_owl
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_rabbit
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_rat
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_sheep
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_snoot
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_squeaken
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_stradken
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_tamtallen
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_tomek
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_traelik
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_void_imp
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  - RaceID: race_vytrax
+    StatusConditionType: 0
+    Statuses: []
+    IntelligenceType: 3
+  Rooms:
+  - room_somnic_pools
+  Attacks:
+  - attack_retroanimate_age
+  - attack_retroanimate_health
+  Skill: skill_survival
+  SpecialItemTooltipID: 
+  DietAttributesForItemFilter: 
+  ItemConditionType: 0
+  Items: []

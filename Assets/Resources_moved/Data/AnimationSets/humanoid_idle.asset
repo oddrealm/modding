@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: humanoid_idle
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
+  UpAnimation: {fileID: 11400000, guid: e0bb725b56ff9414d9dfcd7e08e7bdb9, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 60be611fa7aa2fd4b92fefce1b0b1ba4, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 63eb28ee013ad6145895b2212e51f108, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 2d7100c58e5c3354aa6315dce0d8f468, type: 2}

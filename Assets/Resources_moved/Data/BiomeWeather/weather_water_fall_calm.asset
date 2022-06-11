@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5fb1d1b07810e4ca30537b1d718d1f, type: 3}
+  m_Name: weather_water_fall_calm
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_weather_water_fall_calm
+  UIDisplayAnimKey: calm
+  FlammabilityMod: 1
+  ChanceToSpawnSnow: 0
+  WeatherType: 0
+  NightOffset: -7
+  DayOffset: 5
+  MinTemp: 21
+  MaxTemp: 60
+  FXIndex: 0
+  ChanceToStart: 500
+  MinHourDuration: 8
+  HourDurationVariance: 1
+  Brightness: 1
+  AquaticAmbientSFX: sfx_aquatic
+  SubterraneanAmbientSFX: sfx_subterranean
+  DaytimeAmbientSFX: sfx_day_ocean
+  NighttimeAmbientSFX: sfx_night_ocean

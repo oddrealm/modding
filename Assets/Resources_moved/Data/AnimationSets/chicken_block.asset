@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: chicken_block
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: dda4ba75608eefa4e881089b251fda00, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 1c877ea87449f3d44ba5446bb83eae21, type: 2}
+  DownAnimation: {fileID: 11400000, guid: bf761387ace935043b1ac4808793e704, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 690432a2f7c44094aa7a18d91cd3add6, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: bc56438eceaaf044b81be2d7229dbb1d, type: 2}

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
+  m_Name: blueprint_sleep_on_ground
+  m_EditorClassIdentifier: 
+  DefaultAutoJobPriority: 1
+  DefaultThresholdType: 6
+  TimeoutTime: 300
+  Requirements: requirement_blueprint_sleep_on_ground
+  AutoJobBlockSearchType: 4
+  JobBarType: 0
+  InvertProgressDisplay: 0
+  JobActionTextTypes: 2
+  AttributeToUseForProgress: 4
+  AttributeTargetPercentage: 1
+  ProgressMax: 1
+  Toughness: 0
+  XPMod: 1
+  UseBlockForToughness: 0
+  ToolbarMenu: 
+  ResearchKey: 
+  AutoPlacementClearType: 0
+  Placement: 0
+  PlacementClear: 0
+  Category: 0
+  TooltipID: tooltip_blueprint_sleep_on_ground
+  OnlyShowYieldTooltip: 0
+  YieldTooltipIDs:
+  - tooltip_blueprint_yield_sleep
+  InterfaceInfo: interface_info_blueprint_sleep_on_ground
+  Visuals:
+  - visuals_job_sleep_on_ground
+  WorkFX: 
+  InteractSFX: 
+  CompleteSFX: 
+  SetLiquidMass: 0
+  LiquidMass: 1
+  ModelIndex: 0
+  ModelMultipler: 1
+  EntitiesToCreate: 
+  PickUpActionType: 3
+  ResetPlantMaintenance: 0
+  ReleaseContainedEntity: 0
+  TryCaptureContainedEntity: 0
+  StatusesToApply: []

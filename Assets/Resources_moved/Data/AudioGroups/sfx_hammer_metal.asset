@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bbd2cf8d9e60a40b72614a6e504830, type: 3}
+  m_Name: sfx_hammer_metal
+  m_EditorClassIdentifier: 
+  SFX:
+  - audio_sfx_hammer_metal_00
+  - audio_sfx_hammer_metal_01
+  - audio_sfx_hammer_metal_02
+  - audio_sfx_hammer_metal_03
+  - audio_sfx_hammer_metal_04
+  - audio_sfx_hammer_metal_05

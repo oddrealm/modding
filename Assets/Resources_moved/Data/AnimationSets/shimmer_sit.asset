@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: shimmer_sit
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 1c4464af3af0fcc408d2be3da4077885, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 5f84ea4e4151a654080255ee33a066de, type: 2}
+  DownAnimation: {fileID: 11400000, guid: e45a89d1c7003dd4199a263bc56a3b93, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 5acae119859f0c24ca91252231f7deae, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 0723fdad14097fb43b9b858f589e5cce, type: 2}

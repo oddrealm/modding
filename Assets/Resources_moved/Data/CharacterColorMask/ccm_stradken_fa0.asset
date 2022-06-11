@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
+  m_Name: ccm_stradken_fa0
+  m_EditorClassIdentifier: 
+  Priority: 0
+  Pairs:
+  - BodyPart: 289
+    Target: {r: 0.7924528, g: 0.46042627, b: 0.09344961, a: 1}
+  - BodyPart: 14
+    Target: {r: 0.7075472, g: 0.32502475, b: 0.043387346, a: 1}
+  - BodyPart: 64
+    Target: {r: 0.0465023, g: 0.29862386, b: 0.5188679, a: 1}
+  - BodyPart: 144
+    Target: {r: 0.5943396, g: 0.26333275, b: 0.019624433, a: 1}

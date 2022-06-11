@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
+  m_Name: app_adult_stradken_fa0
+  m_EditorClassIdentifier: 
+  Gender: female
+  Race: race_stradken
+  Group: race_stradken_female
+  AppearanceType: 1
+  AgeType: 2
+  ShadowType: 2
+  Portrait: sp_adult_stradken_fa0
+  HealthBarOffset: 0
+  StealthSightingDialogueGroup: 
+  IdleFX: []
+  SleepFX: []
+  DeathFX:
+  - fx_entity_death
+  Accessories: []
+  KilledSFX: sfx_stradken_female_killed
+  HitSFX: sfx_stradken_female_hit
+  SelectPositiveSFX: sfx_stradken_female_select_positive
+  SelectNegativeSFX: sfx_stradken_female_select_negative
+  OrderPositiveSFX: sfx_stradken_female_order_positive
+  OrderNegativeSFX: sfx_stradken_female_order_negative
+  ColorMask: {fileID: 11400000, guid: ae887a71cadb13b4e8d22bee0daf69f2, type: 2}
+  Animations: {fileID: 11400000, guid: 107c32323ec3a284d9102d84044de3dd, type: 2}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Name: traelik_climb
+  m_EditorClassIdentifier: 
+  State: {fileID: 11400000, guid: 0568f5713f1565a4aa7c5e1b2f739391, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 7b1e03b2befb53943b3ed2935dbb800f, type: 2}
+  DownAnimation: {fileID: 11400000, guid: b9a2f4d1a1794b544a4ba89a5b47ee48, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 4fa66704f1c97c64ca1d53d780f20c65, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: df4af6a2bf270ec4bbee744943d3cb08, type: 2}
