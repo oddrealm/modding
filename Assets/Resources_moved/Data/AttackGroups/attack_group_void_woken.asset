@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4633816f5b17345921387ce966b49a, type: 3}
   m_Name: attack_group_void_woken
   m_EditorClassIdentifier: 
+  Key: attack_group_void_woken
   Attacks:
   - attack_energy_direct_bludgeon

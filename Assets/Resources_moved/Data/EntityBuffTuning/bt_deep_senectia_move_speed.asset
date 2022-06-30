@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_deep_senectia_move_speed
   m_EditorClassIdentifier: 
+  Key: bt_deep_senectia_move_speed
   BuffID: buff_attribute_move_speed
   Amount: 0
   BaseBuff: -5

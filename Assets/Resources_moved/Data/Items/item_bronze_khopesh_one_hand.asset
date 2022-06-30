@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_bronze_khopesh_one_hand
   m_EditorClassIdentifier: 
+  Key: item_bronze_khopesh_one_hand
   Index: 41
   TooltipID: tooltip_item_bronze_khopesh_one_hand
   Visuals: visuals_item_bronze_khopesh_one_hand
@@ -21,6 +22,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Tags: []
   Category: 64
+  Permissions: 0
   Inventory: inventory_one_hand
   Buffs: 
   AttackGroup: attack_group_bronze_khopesh_one_hand
@@ -39,3 +41,4 @@ MonoBehaviour:
   LightStrength: 0
   LightSize: 0
   StackSize: 1
+  JobOutputMod: 1

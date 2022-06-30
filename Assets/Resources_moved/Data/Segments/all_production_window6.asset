@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_production_window6
   m_EditorClassIdentifier: 
+  Key: all_production_window6
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126
@@ -42,5 +43,7 @@ MonoBehaviour:
   ShowBackgroundMask: 1
   BackgroundMaskTarget: threshold_type_drop_down
   AnimatedImage: 
-  PopUpTextBody: The Threshold Type determines how jobs get queued.
+  PopUpTextBody: Many jobs will start with the <sprite=906> Auto queue type enabled
+    by default. This means a job will be created in the room if the job requirements
+    are met.
   NextSegment: {fileID: 11400000, guid: 48301350cd089c1428d3c68ac152b316, type: 2}

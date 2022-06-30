@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_tree_caelum_oscula_leaves
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_tree_caelum_oscula_leaves
   Name: Caelum Oscula Tree (Leaves)
   InlineIcon: <sprite=822>
+  InlineAndName: <sprite=822> Caelum Oscula Tree (Leaves)
   Description: 
   Action: 
   Icon: sp_caelum_oscula_tree_icon

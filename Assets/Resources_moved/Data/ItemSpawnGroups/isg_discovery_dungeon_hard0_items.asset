@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_discovery_dungeon_hard0_items
   m_EditorClassIdentifier: 
+  Key: isg_discovery_dungeon_hard0_items
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_corn_roasted","count":1,"spawn_rate":2},{"item_id":"item_wheat_boiled","count":1,"spawn_rate":2},{"item_id":"item_egg_boiled","count":1,"spawn_rate":2},{"item_id":"item_onion_raw","count":1,"spawn_rate":3},{"item_id":"item_shadow_fern_seed","count":1,"spawn_rate":2},{"item_id":"item_iron_sword_two_hand","count":1,"spawn_rate":1}]}'
   Spawns:
   - ItemID: item_corn_roasted
     GenerateNameKey: 

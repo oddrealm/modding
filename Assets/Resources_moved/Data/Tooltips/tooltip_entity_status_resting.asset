@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_resting
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_resting
   Name: Resting (Status)
   InlineIcon: <sprite=1065>
+  InlineAndName: <sprite=1065> Resting (Status)
   Description: While resting, entities will regain health over time.
   Action: 
   Icon: 

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: setha_climb
   m_EditorClassIdentifier: 
+  Key: setha_climb
   State: {fileID: 11400000, guid: 0568f5713f1565a4aa7c5e1b2f739391, type: 2}
   UpAnimation: {fileID: 11400000, guid: 46b03d88c76df27458d2645910b372d4, type: 2}
   DownAnimation: {fileID: 11400000, guid: a3c4c6189217ad04b8ef758df171a371, type: 2}

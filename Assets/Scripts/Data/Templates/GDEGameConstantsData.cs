@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/GameConstants")]
 public class GDEGameConstantsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string StringValue = "";
 	public int IntValue = 0;
 	public float FloatValue = 0.0f;

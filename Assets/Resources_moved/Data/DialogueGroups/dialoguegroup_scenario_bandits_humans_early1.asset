@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_scenario_bandits_humans_early1
   m_EditorClassIdentifier: 
+  Key: dialoguegroup_scenario_bandits_humans_early1
   DialogueIDs:
   - dialogue_shared_wild_two_bandits0_group0_d0
   - dialogue_shared_wild_two_bandits0_group0_d1

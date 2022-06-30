@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f66563dfb5f81c43953c223ddf50217, type: 3}
   m_Name: room_stockpiles_somnic_pools
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_stockpiles_somnic_pools
+  Key: room_stockpiles_somnic_pools
+  TooltipID: tooltip_room_stockpiles_default
+  StoragePreference: 3
   Items: []
-  Categories:
-  - zone_beverages
-  - zone_food_raw
-  - zone_food_cooked
+  Categories: 020000000400000000040000

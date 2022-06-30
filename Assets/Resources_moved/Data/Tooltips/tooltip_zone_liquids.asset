@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_zone_liquids
   m_EditorClassIdentifier: 
+  Key: tooltip_zone_liquids
   Name: Liquids
   InlineIcon: <sprite=653>
+  InlineAndName: <sprite=653> Liquids
   Description: Unpurified water and other liquid materials can be stored here.
   Action: 
   Icon: sp_zone_liquids_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

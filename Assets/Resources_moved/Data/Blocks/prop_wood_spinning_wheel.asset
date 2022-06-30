@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_wood_spinning_wheel
   m_EditorClassIdentifier: 
+  Key: prop_wood_spinning_wheel
   Index: 387
   Tags:
   - spinning_wheel

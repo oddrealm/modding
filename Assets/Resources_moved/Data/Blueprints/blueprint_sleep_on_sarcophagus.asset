@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_sleep_on_sarcophagus
   m_EditorClassIdentifier: 
+  Key: blueprint_sleep_on_sarcophagus
+  StartProgressType: 4
+  StartProgressAttribute: 4
+  StartProgressAttributePercent: 1
+  FixedProgressStart: 0
+  TargetProgressType: 2
+  TargetProgressAttribute: 4
+  TargetProgressAttributePercent: 1
+  FixedProgressTarget: 100
   DefaultAutoJobPriority: 1
   DefaultThresholdType: 6
   TimeoutTime: 300
@@ -19,10 +28,7 @@ MonoBehaviour:
   AutoJobBlockSearchType: 1
   JobBarType: 0
   InvertProgressDisplay: 0
-  JobActionTextTypes: 0
-  AttributeToUseForProgress: 4
-  AttributeTargetPercentage: 1
-  ProgressMax: 1
+  JobActionTextTypes: 2
   Toughness: 0
   XPMod: 1
   UseBlockForToughness: 0
@@ -51,3 +57,5 @@ MonoBehaviour:
   ReleaseContainedEntity: 0
   TryCaptureContainedEntity: 0
   StatusesToApply: []
+  StatusesToApplyToTarget: []
+  MarkRequirementsDiscoveredOnDiscovery: 1

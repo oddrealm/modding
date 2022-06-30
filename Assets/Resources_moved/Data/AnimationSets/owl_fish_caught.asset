@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: owl_fish_caught
   m_EditorClassIdentifier: 
+  Key: owl_fish_caught
   State: {fileID: 11400000, guid: addb0449603f8fe4e8447b395983126b, type: 2}
   UpAnimation: {fileID: 11400000, guid: 14a09992c9eecc144ad830dc1339bc03, type: 2}
   DownAnimation: {fileID: 11400000, guid: cbaef49a95ccd4040963f8aa3bbd194e, type: 2}

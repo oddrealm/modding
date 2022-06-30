@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_gully_meat_roasted
   m_EditorClassIdentifier: 
+  Key: tooltip_item_gully_meat_roasted
   Name: Gully Meat (Roasted)
   InlineIcon: <sprite=788>
+  InlineAndName: <sprite=788> Gully Meat (Roasted)
   Description: 
   Action: 
   Icon: sp_gully_meat_roasted_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

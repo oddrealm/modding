@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Names")]
 public class GDEEntityNamesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int FirstNameMasculinePrependChances = 0;
 	public List<string> FirstNameMasculinePrepends = new List<string>();
 	public List<string> MasculineFirstNames = new List<string>();

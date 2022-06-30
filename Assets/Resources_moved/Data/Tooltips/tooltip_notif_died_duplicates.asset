@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_notif_died_duplicates
   m_EditorClassIdentifier: 
+  Key: tooltip_notif_died_duplicates
   Name: '{0} entities have died.'
   InlineIcon: 
+  InlineAndName: '{0} entities have died.'
   Description: 
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

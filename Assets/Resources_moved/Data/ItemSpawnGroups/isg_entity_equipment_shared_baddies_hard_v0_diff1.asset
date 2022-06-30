@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_entity_equipment_shared_baddies_hard_v0_diff1
   m_EditorClassIdentifier: 
+  Key: isg_entity_equipment_shared_baddies_hard_v0_diff1
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_iron_flail_one_hand","count":2,"spawn_rate":1000},{"item_id":"item_stoneleaf_vest","count":1,"spawn_rate":1000},{"item_id":"item_stoneleaf_leggings","count":1,"spawn_rate":1000}]}'
   Spawns:
   - ItemID: item_iron_flail_one_hand
     GenerateNameKey: 

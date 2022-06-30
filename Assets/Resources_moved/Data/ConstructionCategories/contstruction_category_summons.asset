@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e39074657701e24b886574fc07f4492, type: 3}
   m_Name: contstruction_category_summons
   m_EditorClassIdentifier: 
+  Key: contstruction_category_summons
   MenuKey: M_summons
   MenuIndex: 12
   Name: Summons

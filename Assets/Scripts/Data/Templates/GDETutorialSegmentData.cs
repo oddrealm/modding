@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu()]
 public class GDETutorialSegmentData : ScriptableObject
 {
+    public string Key;
+
     public TutorialTypes TutorialType = TutorialTypes.POPUP;
 
     [Header("On Activate")]

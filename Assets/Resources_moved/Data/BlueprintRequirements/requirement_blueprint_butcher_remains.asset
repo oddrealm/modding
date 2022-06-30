@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_butcher_remains
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_butcher_remains
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 256
   BlockTagConditionType: 1
   BlockTags: []

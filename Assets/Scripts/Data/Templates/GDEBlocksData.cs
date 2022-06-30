@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Blocks")]
 public class GDEBlocksData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int Index = 0;
 
 	public List<string> Tags = new List<string>();
@@ -19,6 +19,7 @@ public class GDEBlocksData : ScriptableObject
 	public List<string> TriggerStatuses = new List<string>();
 	public List<string> TriggerAttacks = new List<string>();
 	public string TriggerSFX = "";
+	public bool CanHavePlatform = true;
 	public bool CanSupportWeight = false;
 	public bool CanHavePlants = false;
 	public bool IsFertile = false;

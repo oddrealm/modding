@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe39ea62f8a60f4589e4d657645225c, type: 3}
   m_Name: inventory_two_hand
   m_EditorClassIdentifier: 
+  Key: inventory_two_hand
   FriendlyName: Two-Hand
   FillAllSlots: 1
   Slots:

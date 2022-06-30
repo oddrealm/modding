@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_buff_skill_plant
   m_EditorClassIdentifier: 
+  Key: tooltip_buff_skill_plant
   Name: Horticulture Buff
   InlineIcon: <sprite=11>
+  InlineAndName: <sprite=11> Horticulture Buff
   Description: 
   Action: 
   Icon: 

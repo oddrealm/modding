@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_block_lode_iron_ore
   m_EditorClassIdentifier: 
+  Key: visuals_block_lode_iron_ore
   ReceiveSkylightColor: 1
   OnlyRenderIfVisible: 1
   RotationType: 0

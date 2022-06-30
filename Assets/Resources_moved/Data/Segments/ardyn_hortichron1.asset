@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
+  m_Name: ardyn_hortichron1
+  m_EditorClassIdentifier: 
+  Key: ardyn_hortichron1
+  TutorialType: 1
+  SelectTarget: 0
+  InputsToLock: 126
+  Trigger: 0
+  PreviousSegments: []
+  MinGameMinutes: -1
+  MinPlayTime: -1
+  MinCooldown: -1
+  Hooks: []
+  ActiveRaces:
+  - race_ardyn
+  PermittedWindows: []
+  SelectionType: 1
+  AttributeRaces: []
+  AttributeType: 0
+  MinAttributeAmount: -1
+  MaxAttributeAmount: -1
+  ItemIDs:
+  - item_astrasome
+  ItemConditionType: 1
+  ItemMinCount: 1
+  ConstructionCategoryType: 0
+  MinRoomCount: -1
+  MinProductionRoomCount: -1
+  MinAutoJobCount: -1
+  Dialogue: {fileID: 11400000, guid: 8f2514ca0a124e9418aee34c15e0a28b, type: 2}
+  FadeInDelay: 0
+  PopUpPosition: 0
+  ShowBackground: 1
+  ShowBackgroundMask: 1
+  BackgroundMaskTarget: 
+  AnimatedImage: 
+  PopUpTextBody: Astrasomes can be used to grow <sprite=1204> Chronoblasts in the
+    <sprite=1204> Hortichron room to produce more Ardyn.
+  NextSegment: {fileID: 0}

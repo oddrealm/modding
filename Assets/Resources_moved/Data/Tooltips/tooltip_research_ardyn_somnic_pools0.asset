@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_research_ardyn_somnic_pools0
   m_EditorClassIdentifier: 
+  Key: tooltip_research_ardyn_somnic_pools0
   Name: Somnic Pools
   InlineIcon: 
+  InlineAndName: Somnic Pools
   Description: 
   Action: 
   Icon: sp_research_ardyn_somnic_pools0

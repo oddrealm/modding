@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe39ea62f8a60f4589e4d657645225c, type: 3}
   m_Name: inventory_feet
   m_EditorClassIdentifier: 
+  Key: inventory_feet
   FriendlyName: Feet
   FillAllSlots: 1
   Slots:

@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/CharacterAccessoryData")]
 public class GDECharacterAccessoryData : ScriptableObject
 {
+    public string Key;
+
     public int Priority = 0;
     public int TexX = 69;
     public int TexY = 128;

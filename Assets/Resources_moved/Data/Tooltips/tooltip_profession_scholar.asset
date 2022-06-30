@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_scholar
   m_EditorClassIdentifier: 
+  Key: tooltip_profession_scholar
   Name: Scholar
   InlineIcon: <sprite=1203>
+  InlineAndName: <sprite=1203> Scholar
   Description: Scholars are specialized in the production of paper, ink, and books.
   Action: 
   Icon: sp_profession_scholar_icon
   Formatting: 
+  TextColor: {r: 0.7725491, g: 0.58431375, b: 0.40000004, a: 1}

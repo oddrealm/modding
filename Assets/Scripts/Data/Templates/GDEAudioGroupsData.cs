@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/AudioGroups")]
 public class GDEAudioGroupsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public List<string> SFX = new List<string>();
 }

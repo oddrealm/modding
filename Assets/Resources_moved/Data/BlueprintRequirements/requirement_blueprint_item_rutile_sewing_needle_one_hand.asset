@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_item_rutile_sewing_needle_one_hand
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_item_rutile_sewing_needle_one_hand
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 0
   BlockTagConditionType: 1
   BlockTags:
@@ -32,5 +32,6 @@ MonoBehaviour:
   ItemConditionType: 0
   Items:
   - ID: item_rutile_ingot
+    CanUseWithoutDiscovering: 0
     Count: 1
     Category: 0

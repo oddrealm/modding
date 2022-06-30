@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_inventory_bandits_humans_mid
   m_EditorClassIdentifier: 
+  Key: isg_scenario_inventory_bandits_humans_mid
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_ren","count":25,"spawn_rate":100},{"item_id":"item_rutile_ore","count":1,"spawn_rate":2},{"item_id":"item_rutile_ingot","count":1,"spawn_rate":2},{"item_id":"item_medium_leather","count":2,"spawn_rate":2},{"item_id":"item_linen_cloth","count":1,"spawn_rate":2},{"item_id":"item_iron_ore","count":5,"spawn_rate":2},{"item_id":"item_blackberry_wine","count":1,"spawn_rate":10},{"item_id":"item_apple_cider","count":1,"spawn_rate":10},{"item_id":"item_coconut_brew","count":1,"spawn_rate":10},{"item_id":"item_pumpkin_ale","count":1,"spawn_rate":10},{"item_id":"item_sweet_root_brew","count":1,"spawn_rate":10}]}'
   Spawns:
   - ItemID: item_ren
     GenerateNameKey: 

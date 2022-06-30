@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_skill_summoning
   m_EditorClassIdentifier: 
+  Key: tooltip_skill_summoning
   Name: Summoning Skill
   InlineIcon: <sprite=565>
+  InlineAndName: <sprite=565> Summoning Skill
   Description: Used to summon objects and entities.
   Action: Summoning
   Icon: sp_skill_summoning_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

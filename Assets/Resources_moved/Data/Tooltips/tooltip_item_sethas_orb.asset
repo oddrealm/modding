@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_sethas_orb
   m_EditorClassIdentifier: 
+  Key: tooltip_item_sethas_orb
   Name: Setha's Orb 1h
   InlineIcon: <sprite=409>
+  InlineAndName: <sprite=409> Setha's Orb 1h
   Description: 
   Action: 
   Icon: sp_sethas_orb_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

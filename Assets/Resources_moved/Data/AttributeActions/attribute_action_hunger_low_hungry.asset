@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f6ac6f3cbc87b4bb35c34479d7c6ff, type: 3}
   m_Name: attribute_action_hunger_low_hungry
   m_EditorClassIdentifier: 
+  Key: attribute_action_hunger_low_hungry
   FriendlyName: Low Hunger
   ConditionEvent: 0
   Condition: $attribute_energy[amount]<=20

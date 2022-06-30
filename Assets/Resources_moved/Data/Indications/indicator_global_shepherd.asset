@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff10558c1bfd79439c3106021204b77, type: 3}
   m_Name: indicator_global_shepherd
   m_EditorClassIdentifier: 
+  Key: indicator_global_shepherd
   Priority: 0
   IconID: sp_indicator_shepherd_icon
   Duration: -1

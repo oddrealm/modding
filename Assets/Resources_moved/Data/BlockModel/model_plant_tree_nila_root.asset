@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0375ec74fcc66c9458902e3c3cf729a4, type: 3}
   m_Name: model_plant_tree_nila_root
   m_EditorClassIdentifier: 
+  Key: model_plant_tree_nila_root
   ModelIndex: 803
   BlockIndex: -1
   Plants:
@@ -21,3 +22,4 @@ MonoBehaviour:
   Platform: 
   ContainedEntitySpawnGroup: 
   FishSpawnGroup: 
+  AppearInPaint: 1

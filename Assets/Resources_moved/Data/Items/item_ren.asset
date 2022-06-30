@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_ren
   m_EditorClassIdentifier: 
+  Key: item_ren
   Index: 274
   TooltipID: tooltip_item_ren
   Visuals: visuals_item_ren
-  CharacterColorMask: 
-  AccessoryData: 
+  CharacterColorMask: {fileID: 0}
+  AccessoryData: {fileID: 0}
   PickUpSFX: sfx_item_pick_up_coin
   DropSFX: sfx_item_drop_coin
   Tags: []
   Category: 32
+  Permissions: 0
   Inventory: inventory_none
   Buffs: 
   AttackGroup: 
@@ -39,3 +41,4 @@ MonoBehaviour:
   LightStrength: 0
   LightSize: 0
   StackSize: 50
+  JobOutputMod: 1

@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f45cade355ba7c409db97bf5f5f3d2e, type: 3}
   m_Name: biome_terrain_gen_tropical_dirt_hills
   m_EditorClassIdentifier: 
+  Key: biome_terrain_gen_tropical_dirt_hills
   ModelIndex: 1
   Noise: biome_terrain_noise_hills

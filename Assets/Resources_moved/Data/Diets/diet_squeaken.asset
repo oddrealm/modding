@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e092951da863c774d920d0cd6e4dc609, type: 3}
   m_Name: diet_squeaken
   m_EditorClassIdentifier: 
+  Key: diet_squeaken
   TooltipID: tooltip_diet_squeaken
   HarmfulFoods:
   - item_squeaken_meat_roasted

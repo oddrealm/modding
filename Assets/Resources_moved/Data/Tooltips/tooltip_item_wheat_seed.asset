@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_wheat_seed
   m_EditorClassIdentifier: 
+  Key: tooltip_item_wheat_seed
   Name: Wheat (Seed)
   InlineIcon: <sprite=169>
+  InlineAndName: <sprite=169> Wheat (Seed)
   Description: Used to grow Wheat.
   Action: 
   Icon: sp_wheat_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc12d5ddb38d0440a34b97fffa8228d, type: 3}
   m_Name: mp_cave9
   m_EditorClassIdentifier: 
+  Key: mp_cave9
   Group: mp_cave
   Width: 7
   Height: 8

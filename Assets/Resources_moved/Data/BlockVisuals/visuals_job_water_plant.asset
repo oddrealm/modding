@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_job_water_plant
   m_EditorClassIdentifier: 
+  Key: visuals_job_water_plant
   ReceiveSkylightColor: 0
   OnlyRenderIfVisible: 0
   RotationType: 0
@@ -29,7 +30,7 @@ MonoBehaviour:
   HasMapColor: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TextureX: 133
-  TextureY: 24
+  TextureY: 34
   WeatherY: 0
   TransitionType: 0
   TransitionKey: 1110

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f66563dfb5f81c43953c223ddf50217, type: 3}
   m_Name: room_stockpiles_hortichron
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_stockpiles_hortichron
+  Key: room_stockpiles_hortichron
+  TooltipID: tooltip_room_stockpiles_default
+  StoragePreference: 3
   Items:
   - item_astrasome
-  Categories: []
+  Categories: 

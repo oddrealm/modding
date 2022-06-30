@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: dweller_attack_melee
   m_EditorClassIdentifier: 
+  Key: dweller_attack_melee
   State: {fileID: 11400000, guid: f24030c166ac23941a71d46becc88fa6, type: 2}
   UpAnimation: {fileID: 11400000, guid: 942519ccbf22da54da3edb0538cd2d93, type: 2}
   DownAnimation: {fileID: 11400000, guid: 8445a7572006cc44b8daf52b210d184e, type: 2}

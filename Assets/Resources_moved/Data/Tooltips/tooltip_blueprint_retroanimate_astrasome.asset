@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_retroanimate_astrasome
   m_EditorClassIdentifier: 
+  Key: tooltip_blueprint_retroanimate_astrasome
   Name: Retroanimate Astrasome
   InlineIcon: <sprite=1215>
+  InlineAndName: <sprite=1215> Retroanimate Astrasome
   Description: The transferring of life from a target, making them older, while the
     source gets younger.
   Action: Retroanimating

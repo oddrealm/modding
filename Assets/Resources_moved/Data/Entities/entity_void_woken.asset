@@ -12,18 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_void_woken
   m_EditorClassIdentifier: 
+  Key: entity_void_woken
   TooltipID: tooltip_entity_void_woken
   Size: 3
-  PermittedAges: 2
   CompanionType: 0
   CompanionPermanenceType: 0
   ReproductionType: 0
   ReproductionIntervalMinutes: 0
   ReproductionCount: 0
   TakeLastNameOfCompanion: 0
-  AgeToBecomeAdult: 600000
-  AgeToBecomeElder: 1000000
-  RandomElderStatuses: []
   GenerateNameKey: entity_names_void_woken
   InherentWorkAttacks: attack_group_void_skills_fallback
   InherentCombatAttacks: attack_group_void_woken
@@ -42,3 +39,11 @@ MonoBehaviour:
   DefaultPickUpBlueprint: blueprint_pick_up_item
   DefaultDropOffBlueprint: blueprint_drop_off_item
   Statuses: []
+  PermittedAges:
+  - Min: 0
+    Max: 99999999
+    CanRespec: 1
+    AgeType: 2
+    Statuses:
+    - entity_status_adult
+    RandomStatuses: []

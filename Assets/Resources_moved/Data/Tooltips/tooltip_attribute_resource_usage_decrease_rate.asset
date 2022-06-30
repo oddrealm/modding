@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_resource_usage_decrease_rate
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_resource_usage_decrease_rate
   Name: Resource Usage Decrease Rate
   InlineIcon: <sprite=395>
+  InlineAndName: <sprite=395> Resource Usage Decrease Rate
   Description: How likely a Entity is to use fewer resources for a job. The required
     amount can only be reduced to a minimum of 1 per unique resource.
   Action: 

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_cow_milk_spawn
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_cow_milk_spawn
   Name: 'Ability: Spawn Milk (Status)'
   InlineIcon: <sprite=192>
+  InlineAndName: '<sprite=192> Ability: Spawn Milk (Status)'
   Description: Chance to spawn milk each day.
   Action: 
   Icon: 

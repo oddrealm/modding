@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0ee651054521040a74be8bdd0a48eb, type: 3}
   m_Name: sleep
   m_EditorClassIdentifier: 
+  Key: sleep
   Transitions:
   - NextState: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
     TrueFlags: 2
+    FalseFlags: 0
+    Triggers: 0
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
+    TrueFlags: 128
     FalseFlags: 0
     Triggers: 0
     IsComplete: 0

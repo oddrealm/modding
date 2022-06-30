@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: bird
   m_EditorClassIdentifier: 
+  Key: bird
   Sets:
   - {fileID: 11400000, guid: e7a3741569a0646438fa7c0241c40a1f, type: 2}
   - {fileID: 11400000, guid: 822754de37d01cd409e19ad1a7679e34, type: 2}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f6ac6f3cbc87b4bb35c34479d7c6ff, type: 3}
   m_Name: attribute_action_temperature_hourly_increase
   m_EditorClassIdentifier: 
+  Key: attribute_action_temperature_hourly_increase
   FriendlyName: Hourly Temp Increase
   ConditionEvent: 1
   Condition: ($attribute_temperature<$block_temperature) || (!(@cold) && ($attribute_temperature<50))

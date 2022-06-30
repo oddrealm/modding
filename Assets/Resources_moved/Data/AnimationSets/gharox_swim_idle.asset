@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: gharox_swim_idle
   m_EditorClassIdentifier: 
+  Key: gharox_swim_idle
   State: {fileID: 11400000, guid: 52f7e62038e9f5c4bbeb2c62a88a25fb, type: 2}
   UpAnimation: {fileID: 11400000, guid: 7b8c4c34b83c8f74982cdc525484732a, type: 2}
   DownAnimation: {fileID: 11400000, guid: 9ea569657adf6914c8cfdc110b012d0b, type: 2}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_miner
   m_EditorClassIdentifier: 
+  Key: profession_miner
   ResearchKey: 
   TooltipID: tooltip_profession_miner
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 104704
   SkillsToIncreaseOnLevelUp: 65536
   ProfessionType: 256
-  Color:
-  - 129
-  - 108
-  - 75

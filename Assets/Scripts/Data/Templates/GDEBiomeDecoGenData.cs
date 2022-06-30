@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BiomeDecoGen")]
 public class GDEBiomeDecoGenData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int SpawnType = 0;
 	public int ModelRequirement = 0;
 	public List<int> ModelsToSet = new List<int>();

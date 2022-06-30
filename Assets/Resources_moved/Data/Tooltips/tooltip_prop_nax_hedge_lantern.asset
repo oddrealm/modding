@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_nax_hedge_lantern
   m_EditorClassIdentifier: 
+  Key: tooltip_prop_nax_hedge_lantern
   Name: Nax Hedge Lantern
   InlineIcon: <sprite=683>
+  InlineAndName: <sprite=683> Nax Hedge Lantern
   Description: 
   Action: 
   Icon: sp_nax_hedge_lantern_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_warm_up
   m_EditorClassIdentifier: 
+  Key: blueprint_warm_up
+  StartProgressType: 4
+  StartProgressAttribute: 29
+  StartProgressAttributePercent: 1
+  FixedProgressStart: 0
+  TargetProgressType: 0
+  TargetProgressAttribute: 0
+  TargetProgressAttributePercent: 1
+  FixedProgressTarget: 50
   DefaultAutoJobPriority: 3
   DefaultThresholdType: 6
   TimeoutTime: 300
@@ -20,9 +29,6 @@ MonoBehaviour:
   JobBarType: 0
   InvertProgressDisplay: 0
   JobActionTextTypes: 0
-  AttributeToUseForProgress: 29
-  AttributeTargetPercentage: 0.5
-  ProgressMax: 1
   Toughness: 0
   XPMod: 1
   UseBlockForToughness: 0
@@ -53,3 +59,5 @@ MonoBehaviour:
   TryCaptureContainedEntity: 0
   StatusesToApply:
   - entity_status_warmed
+  StatusesToApplyToTarget: []
+  MarkRequirementsDiscoveredOnDiscovery: 1

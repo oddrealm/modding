@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_blood_crown_mushroom_seed
   m_EditorClassIdentifier: 
+  Key: tooltip_item_blood_crown_mushroom_seed
   Name: Blood Crown Mushroom (Spore)
   InlineIcon: <sprite=226>
+  InlineAndName: <sprite=226> Blood Crown Mushroom (Spore)
   Description: Used to grow Blood Crown Mushroom.
   Action: 
   Icon: sp_blood_crown_mushroom_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

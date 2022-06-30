@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_void_woken
   m_EditorClassIdentifier: 
+  Key: entity_tuning_void_woken
   SightRange: 128
   MinRandomSkill: 5
   MaxRandomSkill: 7
+  SkillBonuses: []
   Health: 1d6+140
   HealthChange: 0
   Toughness: 1d3
@@ -27,8 +29,8 @@ MonoBehaviour:
   HungerChange: 0
   Thirst: 10000
   ThirstChange: 0
-  Energy: 100000
-  EnergyChange: -20
+  Energy: 10000
+  EnergyChange: -3
   BlockCurrentTemperature: 50
   Temperature: 50
   ColdTolerance: -50

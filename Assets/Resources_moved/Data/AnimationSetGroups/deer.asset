@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: deer
   m_EditorClassIdentifier: 
+  Key: deer
   Sets:
   - {fileID: 11400000, guid: 5ffcb9c2f64540548a3741d020ba7ba2, type: 2}
   - {fileID: 11400000, guid: fa9aa707219ac244d8b983fe71fa4dca, type: 2}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0132ee68ba3ec4bb2c9a23bb65667d, type: 3}
   m_Name: mpg_human_town
   m_EditorClassIdentifier: 
+  Key: mpg_human_town
   GenerateCorridors: 1
   PlacementType: 3
   ModelRequirement: 0

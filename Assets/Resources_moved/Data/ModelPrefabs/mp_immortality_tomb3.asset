@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc12d5ddb38d0440a34b97fffa8228d, type: 3}
   m_Name: mp_immortality_tomb3
   m_EditorClassIdentifier: 
+  Key: mp_immortality_tomb3
   Group: mp_immortality_tomb
   Width: 8
   Height: 9

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a18fe19f17dd4499e49f5363784a00, type: 3}
   m_Name: ols_default_sunrise_opal_deposit
   m_EditorClassIdentifier: 
+  Key: ols_default_sunrise_opal_deposit
   Shape: 1
   SpawnCount: 32
   MinZ: 1

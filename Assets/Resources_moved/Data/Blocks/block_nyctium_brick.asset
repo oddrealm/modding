@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: block_nyctium_brick
   m_EditorClassIdentifier: 
+  Key: block_nyctium_brick
   Index: 27
   Tags: []
   PhysicsHeatSource: 0
@@ -25,6 +26,7 @@ MonoBehaviour:
   TriggerStatuses: []
   TriggerAttacks: []
   TriggerSFX: 
+  CanHavePlatform: 0
   CanSupportWeight: 1
   CanHavePlants: 0
   IsFertile: 0

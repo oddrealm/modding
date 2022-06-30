@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: shimmer_move
   m_EditorClassIdentifier: 
+  Key: shimmer_move
   State: {fileID: 11400000, guid: 1e6a859c913a2d940b7db7c995938744, type: 2}
   UpAnimation: {fileID: 11400000, guid: 9347180afa6c67b48ac018ec2f94ade0, type: 2}
   DownAnimation: {fileID: 11400000, guid: f8fba6007fc78ac428bfc295b887e1bb, type: 2}

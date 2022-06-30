@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_thaumaturge
   m_EditorClassIdentifier: 
+  Key: tooltip_profession_thaumaturge
   Name: Thaumaturge
   InlineIcon: <sprite=567>
+  InlineAndName: <sprite=567> Thaumaturge
   Description: Thaumaturges are specialized in the production of void-based items
     and materials.
   Action: 
   Icon: sp_profession_thaumaturge_icon
   Formatting: 
+  TextColor: {r: 0.7169812, g: 0.29423285, b: 0.6342696, a: 1}

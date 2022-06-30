@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_biome_desert
   m_EditorClassIdentifier: 
+  Key: tooltip_biome_desert
   Name: Desert
   InlineIcon: 
+  InlineAndName: Desert
   Description: An arid place welcome to only the strong willed. This biome may be
     devoid of life but, upon closer inspection, you'll discover it has many beautiful
     secrets to find.
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

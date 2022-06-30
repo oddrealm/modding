@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_butcher_tamtallen_remains
   m_EditorClassIdentifier: 
+  Key: tooltip_butcher_tamtallen_remains
   Name: Butcher Tamtallen Remains
   InlineIcon: <sprite=873>
+  InlineAndName: <sprite=873> Butcher Tamtallen Remains
   Description: 
   Action: 
   Icon: sp_remains_stradken_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

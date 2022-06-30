@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BiomeLodeGen")]
 public class GDEBiomeLodeGenData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int ModelIndex = 0;
 	public float NoiseThreshold = 0.0f;
 	public float NoiseFrequency = 0.0f;

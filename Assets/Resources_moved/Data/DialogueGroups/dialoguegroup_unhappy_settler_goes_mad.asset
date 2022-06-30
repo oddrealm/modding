@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_unhappy_settler_goes_mad
   m_EditorClassIdentifier: 
+  Key: dialoguegroup_unhappy_settler_goes_mad
   DialogueIDs:
   - dialogue_unhappy_settler_goes_mad0_settler0_d0_0
   - dialogue_unhappy_settler_goes_mad0_settler0_d1_0

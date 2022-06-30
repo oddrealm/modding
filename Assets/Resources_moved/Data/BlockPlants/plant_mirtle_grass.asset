@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_mirtle_grass
   m_EditorClassIdentifier: 
+  Key: plant_mirtle_grass
   Index: 36
   IsRoot: 1
   Biomes:

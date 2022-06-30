@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_plant_mature_drops_sweet_root
   m_EditorClassIdentifier: 
+  Key: isg_plant_mature_drops_sweet_root
   FriendlyName: 'Harvest yield:'
-  Data: '{"items":[{"item_id":"item_sweet_root_raw","count":3,"spawn_rate":1000},{"item_id":"item_sweet_root_raw","count":1,"spawn_rate":10},{"item_id":"item_sweet_root_seed","count":2,"spawn_rate":1000},{"item_id":"item_sweet_root_seed","count":1,"spawn_rate":75}]}'
   Spawns:
   - ItemID: item_sweet_root_raw
     GenerateNameKey: 

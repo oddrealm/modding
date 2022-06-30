@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_fish_night_ghost
   m_EditorClassIdentifier: 
+  Key: tooltip_fish_night_ghost
   Name: Night Ghost
   InlineIcon: <sprite=323>
+  InlineAndName: <sprite=323> Night Ghost
   Description: Preferring the dark, the Night Ghost is generally very hard to find.
   Action: 
   Icon: sp_fish_night_ghost_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

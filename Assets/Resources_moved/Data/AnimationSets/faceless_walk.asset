@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: faceless_walk
   m_EditorClassIdentifier: 
+  Key: faceless_walk
   State: {fileID: 11400000, guid: 08dfca07b5a89b54c9a4b1c4ad9e15ff, type: 2}
   UpAnimation: {fileID: 11400000, guid: bc712428f3f8c3a419d8723d5f1dfa35, type: 2}
   DownAnimation: {fileID: 11400000, guid: be6570cc8fdaacd4d8df73ee4b8604d3, type: 2}

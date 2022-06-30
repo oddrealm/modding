@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_maintenance_nyctoid
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_maintenance_nyctoid
   Name: Needs Tending
   InlineIcon: <sprite=1238>
-  Description: A Technochron needs to use Animatropys on this Chronoblast or it will
-    start to die.
+  InlineAndName: <sprite=1238> Needs Tending
+  Description: A Technochron needs to use Animatropys on this plant or it will start
+    to die.
   Action: 
   Icon: 
   Formatting: 

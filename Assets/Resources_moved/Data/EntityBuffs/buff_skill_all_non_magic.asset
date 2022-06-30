@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f34b932efa6fe43b5a9ce349340762, type: 3}
   m_Name: buff_skill_all_non_magic
   m_EditorClassIdentifier: 
+  Key: buff_skill_all_non_magic
   TooltipID: tooltip_buff_skill_all_non_magic
   BuffType: 2
-  DisplayType: 2
   NegativeIsPositive: 0
   AggregateSameType: 1
   Identifier: skill_all_none_magic

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_stoneleaf_bag
   m_EditorClassIdentifier: 
+  Key: tooltip_prop_stoneleaf_bag
   Name: Stoneleaf Bag
   InlineIcon: <sprite=426>
+  InlineAndName: <sprite=426> Stoneleaf Bag
   Description: 
   Action: 
   Icon: sp_stoneleaf_bag_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

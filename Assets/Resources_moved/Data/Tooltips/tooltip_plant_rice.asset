@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_rice
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_rice
   Name: Rice (Plant)
   InlineIcon: <sprite=190>
+  InlineAndName: <sprite=190> Rice (Plant)
   Description: 
   Action: 
   Icon: sp_rice_icon

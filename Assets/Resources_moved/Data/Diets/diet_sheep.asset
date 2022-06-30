@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e092951da863c774d920d0cd6e4dc609, type: 3}
   m_Name: diet_sheep
   m_EditorClassIdentifier: 
+  Key: diet_sheep
   TooltipID: tooltip_diet_sheep
   HarmfulFoods:
   - item_sheep_meat_roasted

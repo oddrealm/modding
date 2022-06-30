@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abac97dd3fbc07b4799e0a1f2debe84e, type: 3}
   m_Name: buffs_item_rutile_leggings
   m_EditorClassIdentifier: 
+  Key: buffs_item_rutile_leggings
   Buffs:
   - bt_item_rutile_leggings_toughness
   - bt_item_rutile_leggings_evasion

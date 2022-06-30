@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: dog_fish_caught
   m_EditorClassIdentifier: 
+  Key: dog_fish_caught
   State: {fileID: 11400000, guid: addb0449603f8fe4e8447b395983126b, type: 2}
   UpAnimation: {fileID: 11400000, guid: 0d962e7f682f4554aa7f42a9e94d4574, type: 2}
   DownAnimation: {fileID: 11400000, guid: 2b0b6aee380a38c4095c8d2164cb1f45, type: 2}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_discovery_dungeon_med0_containers
   m_EditorClassIdentifier: 
+  Key: isg_discovery_dungeon_med0_containers
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_darbys_pointy_stick","count":1,"spawn_rate":2},{"item_id":"item_ancient_helmet","count":1,"spawn_rate":1},{"item_id":"item_iron_breastplate","count":1,"spawn_rate":75},{"item_id":"item_iron_helmet","count":1,"spawn_rate":75},{"item_id":"item_iron_leggings","count":1,"spawn_rate":75},{"item_id":"item_iron_boots","count":1,"spawn_rate":75},{"item_id":"item_stone_hammer_one_hand","count":1,"spawn_rate":60},{"item_id":"item_stone_sickle_one_hand","count":1,"spawn_rate":75},{"item_id":"item_iron_pickaxe_two_hand","count":1,"spawn_rate":65},{"item_id":"item_steel_pickaxe_two_hand","count":1,"spawn_rate":75},{"item_id":"item_iron_kite_shield_one_hand","count":1,"spawn_rate":65}]}'
   Spawns:
   - ItemID: item_darbys_pointy_stick
     GenerateNameKey: 

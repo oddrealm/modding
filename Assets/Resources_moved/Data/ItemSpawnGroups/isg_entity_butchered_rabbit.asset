@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_entity_butchered_rabbit
   m_EditorClassIdentifier: 
+  Key: isg_entity_butchered_rabbit
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_bone","count":1,"spawn_rate":1000},{"item_id":"item_bone","count":1,"spawn_rate":500},{"item_id":"item_rabbit_meat_raw","count":2,"spawn_rate":1000},{"item_id":"item_rabbit_meat_raw","count":1,"spawn_rate":100},{"item_id":"item_rabbit_hide","count":1,"spawn_rate":1000}]}'
   Spawns:
   - ItemID: item_bone
     GenerateNameKey: 

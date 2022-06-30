@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f3a63260dd3054eba2ee68ee867d93, type: 3}
   m_Name: overworld_visuals_world_skirt
   m_EditorClassIdentifier: 
+  Key: overworld_visuals_world_skirt
   MeshIndex: 0
   TextureX: 0
   TextureY: 56

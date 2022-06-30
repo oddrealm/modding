@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_sight_range
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_sight_range
   Name: Sight Range
   InlineIcon: <sprite=954>
+  InlineAndName: <sprite=954> Sight Range
   Description: How far in pixels the entity can see threats. Each tile is 8px by
     8px. A sight of 128px sees up to 16 tiles away.
   Action: 

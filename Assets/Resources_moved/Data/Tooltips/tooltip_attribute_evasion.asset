@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_evasion
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_evasion
   Name: Evasion
   InlineIcon: <sprite=82>
+  InlineAndName: <sprite=82> Evasion
   Description: How likely the Entity is to dodge incoming damage. One, twenty-sided
     die (1d20) is rolled and compared to this value.
   Action: 

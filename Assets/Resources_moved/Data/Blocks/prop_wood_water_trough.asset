@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_wood_water_trough
   m_EditorClassIdentifier: 
+  Key: prop_wood_water_trough
   Index: 394
   Tags:
   - water_trough
@@ -26,6 +27,7 @@ MonoBehaviour:
   TriggerStatuses: []
   TriggerAttacks: []
   TriggerSFX: 
+  CanHavePlatform: 1
   CanSupportWeight: 0
   CanHavePlants: 1
   IsFertile: 0

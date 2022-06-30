@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a18fe19f17dd4499e49f5363784a00, type: 3}
   m_Name: ols_default_void_crystal_vein
   m_EditorClassIdentifier: 
+  Key: ols_default_void_crystal_vein
   Shape: 1
   SpawnCount: 64
   MinZ: 1

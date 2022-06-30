@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_scenario_tile_note_migrant_dogs
   m_EditorClassIdentifier: 
+  Key: tooltip_scenario_tile_note_migrant_dogs
   Name: Dogs Sighted!
   InlineIcon: <sprite=50>
+  InlineAndName: <sprite=50> Dogs Sighted!
   Description: Dogs are known to hunt in small packs in this area.
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

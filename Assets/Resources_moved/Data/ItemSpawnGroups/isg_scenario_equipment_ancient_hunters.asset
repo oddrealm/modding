@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_equipment_ancient_hunters
   m_EditorClassIdentifier: 
+  Key: isg_scenario_equipment_ancient_hunters
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_stoneleaf_boots","count":1,"spawn_rate":1000},{"item_id":"item_stoneleaf_cap","count":1,"spawn_rate":1000},{"item_id":"item_stoneleaf_leggings","count":1,"spawn_rate":1000},{"item_id":"item_stoneleaf_vest","count":1,"spawn_rate":1000},{"item_id":"item_wood_buckler_one_hand","count":1,"spawn_rate":1000},{"item_id":"item_wood_cudgel_one_hand","count":1,"spawn_rate":1000}]}'
   Spawns:
   - ItemID: item_stoneleaf_boots
     GenerateNameKey: 

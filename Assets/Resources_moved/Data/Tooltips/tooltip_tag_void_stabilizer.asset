@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_void_stabilizer
   m_EditorClassIdentifier: 
+  Key: tooltip_tag_void_stabilizer
   Name: Stabilizer
   InlineIcon: <sprite=575>
+  InlineAndName: <sprite=575> Stabilizer
   Description: 
   Action: 
   Icon: 

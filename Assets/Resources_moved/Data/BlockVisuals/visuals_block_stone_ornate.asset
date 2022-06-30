@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_block_stone_ornate
   m_EditorClassIdentifier: 
+  Key: visuals_block_stone_ornate
   ReceiveSkylightColor: 1
   OnlyRenderIfVisible: 1
   RotationType: 0
@@ -46,7 +47,7 @@ MonoBehaviour:
   TemperatureUpPass: 15
   ShowLighting: 1
   SpotlightStrength: 0
-  SpotlightHorizontalPass: 15
+  SpotlightHorizontalPass: 1
   SpotlightDownPass: 8
   SpotlightUpPass: 7
   AddVFX: 

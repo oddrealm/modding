@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_entity_combat
   m_EditorClassIdentifier: 
+  Key: notif_entity_combat
   Index: 34
   Enabled: 1
   NotificationType: 2
   Priority: 34
   FilterType: 1
   Sound: pop
-  FactionToShowPipFor: 7
+  FactionToShowPipFor: 15
   DefaultPermitted: []
   InlineIcon: <sprite=7>
   ShowInSettings: 1

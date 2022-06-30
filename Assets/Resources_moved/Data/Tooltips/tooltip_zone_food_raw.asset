@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_zone_food_raw
   m_EditorClassIdentifier: 
+  Key: tooltip_zone_food_raw
   Name: Raw Food
   InlineIcon: <sprite=54>
+  InlineAndName: <sprite=54> Raw Food
   Description: Meat, vegetables, fruits, and other uncooked foods are stored here.
   Action: 
   Icon: sp_zone_raw_food_icon

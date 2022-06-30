@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_basket
   m_EditorClassIdentifier: 
+  Key: tooltip_tag_basket
   Name: Basket
   InlineIcon: <sprite=555>
+  InlineAndName: <sprite=555> Basket
   Description: 
   Action: 
   Icon: 

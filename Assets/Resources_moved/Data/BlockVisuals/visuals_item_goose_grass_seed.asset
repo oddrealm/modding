@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_item_goose_grass_seed
   m_EditorClassIdentifier: 
+  Key: visuals_item_goose_grass_seed
   ReceiveSkylightColor: 0
   OnlyRenderIfVisible: 1
   RotationType: 0

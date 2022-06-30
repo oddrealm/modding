@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: tamtallen
   m_EditorClassIdentifier: 
+  Key: tamtallen
   Sets:
   - {fileID: 11400000, guid: f75bbc000367f034ab6d827519412c7f, type: 2}
   - {fileID: 11400000, guid: 88d0bc11205d06745a5b683a872aab06, type: 2}

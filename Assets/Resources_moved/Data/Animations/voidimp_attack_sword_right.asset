@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b430687389d853f48ba3d8c7adf38bfb, type: 3}
   m_Name: voidimp_attack_sword_right
   m_EditorClassIdentifier: 
+  Key: voidimp_attack_sword_right
   Loop: 1
   FramesPerSecond: 16
   Frames:

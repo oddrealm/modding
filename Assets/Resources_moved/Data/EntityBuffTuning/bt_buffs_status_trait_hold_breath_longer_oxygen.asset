@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_buffs_status_trait_hold_breath_longer_oxygen
   m_EditorClassIdentifier: 
+  Key: bt_buffs_status_trait_hold_breath_longer_oxygen
   BuffID: buff_attribute_oxygen
   Amount: 0
   BaseBuff: 100

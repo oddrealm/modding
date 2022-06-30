@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_fish_sand_shrimp
   m_EditorClassIdentifier: 
+  Key: tooltip_fish_sand_shrimp
   Name: Sand Shrimp
   InlineIcon: <sprite=322>
+  InlineAndName: <sprite=322> Sand Shrimp
   Description: Hidden amongst the sand, this shrimp is quite easy to miss.
   Action: 
   Icon: sp_fish_sand_shrimp_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

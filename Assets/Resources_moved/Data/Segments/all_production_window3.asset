@@ -12,19 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_production_window3
   m_EditorClassIdentifier: 
+  Key: all_production_window3
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126
-  Trigger: 2
-  PreviousSegments:
-  - {fileID: 11400000, guid: 6b91fa49df3a09b4b83c71ddd6c27f96, type: 2}
+  Trigger: 0
+  PreviousSegments: []
   MinGameMinutes: -1
-  MinPlayTime: 5
+  MinPlayTime: -1
   MinCooldown: -1
   Hooks: []
   ActiveRaces: []
-  PermittedWindows:
-  - production_overlay
+  PermittedWindows: []
   SelectionType: 0
   AttributeRaces: []
   AttributeType: 0
@@ -36,13 +35,14 @@ MonoBehaviour:
   ConstructionCategoryType: 0
   MinRoomCount: -1
   MinProductionRoomCount: 1
-  MinAutoJobCount: 1
+  MinAutoJobCount: -1
   Dialogue: {fileID: 0}
-  FadeInDelay: -1
+  FadeInDelay: 0
   PopUpPosition: 2
   ShowBackground: 1
   ShowBackgroundMask: 1
-  BackgroundMaskTarget: auto_job_entry
+  BackgroundMaskTarget: room_list_entry
   AnimatedImage: 
-  PopUpTextBody: This is an auto-job entry.
-  NextSegment: {fileID: 11400000, guid: 7c897c0c0642a5d44a5fced143b52a09, type: 2}
+  PopUpTextBody: The Region is a room which every settlement has by default. It encompasses
+    the entire settlement map. All basic survival jobs are created by this room.
+  NextSegment: {fileID: 11400000, guid: df1963e240e278e4d874fb7d7a9979de, type: 2}

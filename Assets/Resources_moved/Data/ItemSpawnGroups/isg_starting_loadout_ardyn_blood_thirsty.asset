@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_starting_loadout_ardyn_blood_thirsty
   m_EditorClassIdentifier: 
+  Key: isg_starting_loadout_ardyn_blood_thirsty
   FriendlyName: 
   Spawns:
   - ItemID: item_astralite

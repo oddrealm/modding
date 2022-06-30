@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_toolbar_menu_zones
   m_EditorClassIdentifier: 
+  Key: tooltip_toolbar_menu_zones
   Name: Zones
   InlineIcon: <sprite=123>
+  InlineAndName: <sprite=123> Zones
   Description: Zones tell your settlers where to put items
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_archer
   m_EditorClassIdentifier: 
+  Key: profession_archer
   ResearchKey: 
   TooltipID: tooltip_profession_archer
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 39168
   SkillsToIncreaseOnLevelUp: 4096
   ProfessionType: 8
-  Color:
-  - 60
-  - 143
-  - 62

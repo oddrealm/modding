@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_age
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_age
   Name: Age
   InlineIcon: <sprite=116>
+  InlineAndName: <sprite=116> Age
   Description: How old the Entity is in Days.
   Action: 
   Icon: 

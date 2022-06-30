@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_shared_generic_kidnapped_witness_settler
   m_EditorClassIdentifier: 
+  Key: dialoguegroup_shared_generic_kidnapped_witness_settler
   DialogueIDs:
   - dialogue_shared_kidnapped_witness_settler0_d0

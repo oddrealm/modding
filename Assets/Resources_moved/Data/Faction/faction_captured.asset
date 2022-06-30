@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29980e1a3c779fc4b95decfe8a376f99, type: 3}
   m_Name: faction_captured
   m_EditorClassIdentifier: 
+  Key: faction_captured
   FactionType: 8
   EnemyFactionType: 4
   IsPlayerControlled: 1
@@ -19,3 +20,4 @@ MonoBehaviour:
   TooltipID: tooltip_faction_captured
   SelectionColor: {r: 1, g: 0.5411765, b: 0, a: 1}
   CursorHoverColor: {r: 1, g: 0.5411765, b: 0, a: 0.5019608}
+  LimitMovementToRooms: 1

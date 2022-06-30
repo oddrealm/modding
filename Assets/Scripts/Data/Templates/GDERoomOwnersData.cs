@@ -5,10 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/RoomOwners")]
 public class GDERoomOwnersData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public bool LimitToUnique = false;
 	public bool LimitByFamily = false;
+	public bool LimitToRoom = false;
+	public StockpileAutoPopulateTypes AutoPopType = StockpileAutoPopulateTypes.NONE;
 	public int MaxOwners = -1;
 	public EntityIntelligenceTypes PermittedSapientTypes = EntityIntelligenceTypes.SAPIENT;
 	public List<string> DefaultRaces = new List<string>();

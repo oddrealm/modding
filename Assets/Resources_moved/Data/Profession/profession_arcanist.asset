@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_arcanist
   m_EditorClassIdentifier: 
+  Key: profession_arcanist
   ResearchKey: 
   TooltipID: tooltip_profession_arcanist
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 3193088
   SkillsToIncreaseOnLevelUp: 0
   ProfessionType: 262144
-  Color:
-  - 159
-  - 120
-  - 197

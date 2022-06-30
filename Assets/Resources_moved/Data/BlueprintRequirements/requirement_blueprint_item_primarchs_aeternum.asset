@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_item_primarchs_aeternum
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_item_primarchs_aeternum
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 0
   BlockTagConditionType: 0
   BlockTags:
@@ -33,11 +33,14 @@ MonoBehaviour:
   ItemConditionType: 0
   Items:
   - ID: item_linen_cloth
+    CanUseWithoutDiscovering: 0
     Count: 1
     Category: 0
   - ID: item_arcane_dust
+    CanUseWithoutDiscovering: 0
     Count: 1
     Category: 0
   - ID: item_seabreeze_sapphire
+    CanUseWithoutDiscovering: 0
     Count: 5
     Category: 0

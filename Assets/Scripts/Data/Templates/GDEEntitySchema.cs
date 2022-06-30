@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/EntitySchema")]
 public class GDEEntitySchema : ScriptableObject
 {
-	public string Key { get { return name; } }
+    public string Key;
 
     [System.Serializable]
     public class EquipmentLoadout

@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_scenario_tomb_ancients_unworthy
   m_EditorClassIdentifier: 
+  Key: entity_tuning_scenario_tomb_ancients_unworthy
   SightRange: 128
   MinRandomSkill: 7
   MaxRandomSkill: 15
+  SkillBonuses: []
   Health: 1d6+500
   HealthChange: 0
   Toughness: 1d3

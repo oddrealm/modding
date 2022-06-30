@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: crab_sleep
   m_EditorClassIdentifier: 
+  Key: crab_sleep
   State: {fileID: 11400000, guid: 7af7740d1c2f88647ad5c759a3ad39bf, type: 2}
   UpAnimation: {fileID: 11400000, guid: e9d8b29df74efd14c95b47ab24225718, type: 2}
   DownAnimation: {fileID: 11400000, guid: 67446194ff727c7499a33b1b3af7dc86, type: 2}

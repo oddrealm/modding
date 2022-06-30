@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd0c9a4a7179de14ab865c2f2c50e906, type: 3}
   m_Name: biome_terrain_noise_bedrock1
   m_EditorClassIdentifier: 
+  Key: biome_terrain_noise_bedrock1
   Priority: 1
   Frequency: 0.008
   Octaves: 3

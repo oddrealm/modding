@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cb679d16102814ebd643fd5fb2d2a3, type: 3}
   m_Name: attribute_attack_speed_mod
   m_EditorClassIdentifier: 
+  Key: attribute_attack_speed_mod
   TooltipID: tooltip_attribute_attack_speed_mod
   DisplayOrder: 23
   StartMin: 0
   StartDefault: 0
-  StartMax: 999999
+  StartMax: 99999
   ShowPositiveAndNegativeSign: 0
   Append: '%'
   SmallDisplayType: 4

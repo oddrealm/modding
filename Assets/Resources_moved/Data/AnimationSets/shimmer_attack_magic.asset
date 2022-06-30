@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: shimmer_attack_magic
   m_EditorClassIdentifier: 
+  Key: shimmer_attack_magic
   State: {fileID: 11400000, guid: e5b61f9b622e9ee47a2605b950cc37d7, type: 2}
   UpAnimation: {fileID: 11400000, guid: ed2b344390c83f54e8934c3a760b1b17, type: 2}
   DownAnimation: {fileID: 11400000, guid: 943a7c682f125f04387524328b964c5d, type: 2}

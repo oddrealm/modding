@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e39074657701e24b886574fc07f4492, type: 3}
   m_Name: construction_category_tools
   m_EditorClassIdentifier: 
+  Key: construction_category_tools
   MenuKey: Q_tools
   MenuIndex: 16
   Name: Tools

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_gwdir_remains
   m_EditorClassIdentifier: 
+  Key: item_gwdir_remains
   Index: 256
   TooltipID: tooltip_item_gwdir_remains
   Visuals: visuals_item_gwdir_remains

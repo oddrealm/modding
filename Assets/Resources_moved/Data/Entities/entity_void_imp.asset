@@ -12,24 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_void_imp
   m_EditorClassIdentifier: 
+  Key: entity_void_imp
   TooltipID: tooltip_entity_void_imp
   Size: 2
-  PermittedAges: 2
   CompanionType: 0
   CompanionPermanenceType: 0
   ReproductionType: 0
   ReproductionIntervalMinutes: 0
   ReproductionCount: 0
   TakeLastNameOfCompanion: 0
-  AgeToBecomeAdult: 0
-  AgeToBecomeElder: 3
-  RandomElderStatuses:
-  - entity_status_cardiac_arrest
   GenerateNameKey: entity_names_void_imp
   InherentWorkAttacks: attack_group_hand_skills_fallback
   InherentCombatAttacks: attack_group_void_imp
   ProhibitedSkillTypes: 67008511
-  DefaultSkillTypes: 0
+  DefaultSkillTypes: 65536
   ProhibitedProfessionTypes: 8372223
   PermittedRandomProfessions: 0
   Race: race_void_imp
@@ -43,3 +39,28 @@ MonoBehaviour:
   DefaultPickUpBlueprint: blueprint_pick_up_item
   DefaultDropOffBlueprint: blueprint_drop_off_item
   Statuses: []
+  PermittedAges:
+  - Min: 0
+    Max: 3
+    CanRespec: 1
+    AgeType: 1
+    Statuses:
+    - entity_status_adult
+    RandomStatuses: []
+  - Min: 4
+    Max: 8
+    CanRespec: 1
+    AgeType: 2
+    Statuses:
+    - entity_status_adult
+    RandomStatuses: []
+  - Min: 9
+    Max: 99
+    CanRespec: 1
+    AgeType: 4
+    Statuses:
+    - entity_status_adult
+    RandomStatuses:
+    - Chances: 200
+      StatusID: entity_status_cardiac_arrest
+      AddAgeToChances: 1

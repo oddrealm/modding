@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_production_window1
   m_EditorClassIdentifier: 
+  Key: all_production_window1
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126
@@ -42,5 +43,6 @@ MonoBehaviour:
   ShowBackgroundMask: 1
   BackgroundMaskTarget: add_job_btn
   AnimatedImage: 
-  PopUpTextBody: To create new auto-jobs, click <sprite=1003> Add New Job
+  PopUpTextBody: Most rooms start with a default set of jobs, but more can be added
+    by clicking <sprite=1003> Add New Job
   NextSegment: {fileID: 11400000, guid: 6b91fa49df3a09b4b83c71ddd6c27f96, type: 2}

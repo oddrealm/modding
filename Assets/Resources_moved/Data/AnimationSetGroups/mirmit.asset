@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: mirmit
   m_EditorClassIdentifier: 
+  Key: mirmit
   Sets:
   - {fileID: 11400000, guid: 5e0e51b81882b284ba89bdeca64d5cac, type: 2}
   - {fileID: 11400000, guid: 3896642f08063a244a4cf18f74c7ab5d, type: 2}

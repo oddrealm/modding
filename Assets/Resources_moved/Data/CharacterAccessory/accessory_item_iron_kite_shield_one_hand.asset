@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0213a4de9e4e74d41b330785bb4c7fff, type: 3}
   m_Name: accessory_item_iron_kite_shield_one_hand
   m_EditorClassIdentifier: 
+  Key: accessory_item_iron_kite_shield_one_hand
   Priority: 3
   TexX: 64
   TexY: 205
@@ -22,3 +23,4 @@ MonoBehaviour:
   ColorMaskB: {r: 0, g: 1, b: 0, a: 1}
   ColorMaskC: {r: 0, g: 0, b: 1, a: 1}
   DefaultAccessoryPoint: 2
+  HiddenAnimationStates: []

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_prop_wood_desiccated_trunk
   m_EditorClassIdentifier: 
+  Key: isg_prop_wood_desiccated_trunk
   FriendlyName: 'Deconstruction yield:'
-  Data: '{"items":[{"item_id":"item_wood_log","count":6,"spawn_rate":1000}, {"item_id":"item_wood_log","count":1,"spawn_rate":100}]}'
   Spawns:
   - ItemID: item_wood_log
     GenerateNameKey: 

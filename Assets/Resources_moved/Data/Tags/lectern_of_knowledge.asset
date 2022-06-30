@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: lectern_of_knowledge
   m_EditorClassIdentifier: 
+  Key: lectern_of_knowledge
   TooltipID: tooltip_tag_lectern_of_knowledge
-  Name: Lectern Of Knowledge
-  InlineIcon: <sprite=572>

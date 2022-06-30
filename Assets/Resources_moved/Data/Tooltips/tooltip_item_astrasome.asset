@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_astrasome
   m_EditorClassIdentifier: 
+  Key: tooltip_item_astrasome
   Name: Astrasome
   InlineIcon: <sprite=1201>
+  InlineAndName: <sprite=1201> Astrasome
   Description: 'A pod-like organism that can be used to grow <sprite=1204> Chronoblasts. '
   Action: 
   Icon: sp_astrasome_icon

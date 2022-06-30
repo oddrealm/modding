@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_three_fighting_merchants0_recondite0_d0_6b
   m_EditorClassIdentifier: 
+  Key: dialogue_shared_three_fighting_merchants0_recondite0_d0_6b
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '#recondite_merchant0'

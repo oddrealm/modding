@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: chicken
   m_EditorClassIdentifier: 
+  Key: chicken
   Sets:
   - {fileID: 11400000, guid: f7dc1bd55385a084fb5274499b91ea32, type: 2}
   - {fileID: 11400000, guid: 941b8a115ccc8dc439acbe57aa765c56, type: 2}

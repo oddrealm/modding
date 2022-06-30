@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: rabbit
   m_EditorClassIdentifier: 
+  Key: rabbit
   Sets:
   - {fileID: 11400000, guid: 21778b8ec541bea45a8d8704a3471926, type: 2}
   - {fileID: 11400000, guid: 3a7892073a9589c4080f97c1c729f605, type: 2}

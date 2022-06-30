@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0375ec74fcc66c9458902e3c3cf729a4, type: 3}
   m_Name: model_prop_wood_water_trough
   m_EditorClassIdentifier: 
+  Key: model_prop_wood_water_trough
   ModelIndex: 394
   BlockIndex: 394
   Plants: []
@@ -20,3 +21,4 @@ MonoBehaviour:
   Platform: 
   ContainedEntitySpawnGroup: 
   FishSpawnGroup: 
+  AppearInPaint: 1

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bbd2cf8d9e60a40b72614a6e504830, type: 3}
   m_Name: sfx_plant_harvest
   m_EditorClassIdentifier: 
+  Key: sfx_plant_harvest
   SFX:
-  - audio_sfx_plant_remove_00
-  - audio_sfx_plant_remove_01
-  - audio_sfx_plant_remove_02
+  - audio_sfx_plant_interact_00
+  - audio_sfx_plant_interact_01
+  - audio_sfx_plant_interact_02

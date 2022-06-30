@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Skills")]
 public class GDESkillsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string ResearchKey = "";
 	public string LevelUpScenario = "";
 	public string TooltipID = "";

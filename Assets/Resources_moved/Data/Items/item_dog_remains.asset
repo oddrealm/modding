@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_dog_remains
   m_EditorClassIdentifier: 
+  Key: item_dog_remains
   Index: 252
   TooltipID: tooltip_item_dog_remains
   Visuals: visuals_item_dog_remains

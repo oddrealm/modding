@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_entity_adult
   m_EditorClassIdentifier: 
+  Key: notif_entity_adult
   Index: 32
   Enabled: 1
   NotificationType: 1

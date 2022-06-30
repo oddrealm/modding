@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_sleep_on_sarcophagus
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_sleep_on_sarcophagus
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 0
   BlockTagConditionType: 1
   BlockTags:
@@ -23,10 +23,15 @@ MonoBehaviour:
   WorkPointLocation: 1
   Entities:
   - RaceID: 
-    StatusConditionType: 0
+    CanUseWithoutDiscovering: 0
+    StatusConditionType: 1
     Statuses:
     - entity_status_void_sick
+    - entity_status_void_sick_dmg
+    - entity_status_void_sick_primer
+    ProhibitedOwnedRooms: []
     IntelligenceType: 3
+    IsCompanion: 0
   Targets: []
   Rooms:
   - room_immortality_tomb

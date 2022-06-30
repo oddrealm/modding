@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0375ec74fcc66c9458902e3c3cf729a4, type: 3}
   m_Name: model_house_human_B4
   m_EditorClassIdentifier: 
+  Key: model_house_human_B4
   ModelIndex: 3114
   BlockIndex: 371
   Plants: []

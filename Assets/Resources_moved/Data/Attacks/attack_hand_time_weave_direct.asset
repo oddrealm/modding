@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
   m_Name: attack_hand_time_weave_direct
   m_EditorClassIdentifier: 
+  Key: attack_hand_time_weave_direct
   TooltipID: tooltip_attack_hand_survival_direct
   ShowOnAttacksDisplay: 0
   ActivationWeight: 100
   ProjectileType: 0
   FiringType: 1
-  ActivationType: 0
+  ActivationType: 1
   DamageType: 0
   SkillUsed: 33554432
   AddSkillToOutput: 1

@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Indications")]
 public class GDEIndicationsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int Priority = 0;
 	public string IconID = "";
 	public float Duration = 0.0f;

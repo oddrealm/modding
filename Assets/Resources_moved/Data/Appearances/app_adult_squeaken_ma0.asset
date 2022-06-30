@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_squeaken_ma0
   m_EditorClassIdentifier: 
+  Key: app_adult_squeaken_ma0
   Gender: male
   Race: race_squeaken
   Group: race_squeaken_male
+  Iteration: 0
   AppearanceType: 1
   AgeType: 2
   ShadowType: 1

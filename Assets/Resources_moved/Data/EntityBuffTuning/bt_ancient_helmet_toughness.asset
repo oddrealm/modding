@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_ancient_helmet_toughness
   m_EditorClassIdentifier: 
+  Key: bt_ancient_helmet_toughness
   BuffID: buff_attribute_toughness
   Amount: 0
   BaseBuff: 20

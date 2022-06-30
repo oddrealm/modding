@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0375ec74fcc66c9458902e3c3cf729a4, type: 3}
   m_Name: model_cave_treasure_D3
   m_EditorClassIdentifier: 
+  Key: model_cave_treasure_D3
   ModelIndex: 3603
   BlockIndex: 324
   Plants: []

@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Inventory")]
 public class GDEInventoryData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string FriendlyName = "";
 	public bool FillAllSlots = false;
 	public List<string> Slots = new List<string>();

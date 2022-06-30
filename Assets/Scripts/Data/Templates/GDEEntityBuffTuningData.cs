@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/EntityBuffTuning")]
 public class GDEEntityBuffTuningData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string BuffID = "";
 	public int Amount = 0;
 	public int BaseBuff = 0;

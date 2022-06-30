@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0375ec74fcc66c9458902e3c3cf729a4, type: 3}
   m_Name: model_platform_sandstone_shingle
   m_EditorClassIdentifier: 
+  Key: model_platform_sandstone_shingle
   ModelIndex: 1806
   BlockIndex: -1
   Plants: []
@@ -20,3 +21,4 @@ MonoBehaviour:
   Platform: platform_sandstone_shingle
   ContainedEntitySpawnGroup: 
   FishSpawnGroup: 
+  AppearInPaint: 1

@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_prop_wood_water_trough
   m_EditorClassIdentifier: 
+  Key: visuals_prop_wood_water_trough
   ReceiveSkylightColor: 0
   OnlyRenderIfVisible: 1
   RotationType: 2
   VisibilityFlag: 1
   ShowPermissionColor: 1
   ColorAddType: 1
-  HasTriggerOffset: 0
+  HasTriggerOffset: 1
   DepthOffset: 0.04
   HideSurfaceWhenObscuredAbove: 0
   HideSurfaceWhenSameTypeAbove: 0

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_foundry
   m_EditorClassIdentifier: 
+  Key: tooltip_room_foundry
   Name: Foundry
   InlineIcon: <sprite=423>
+  InlineAndName: <sprite=423> Foundry
   Description: The Foundry is where metal-based materials are produced.
   Action: 
   Icon: sp_room_foundry_icon
   Formatting: room_names_foundry
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

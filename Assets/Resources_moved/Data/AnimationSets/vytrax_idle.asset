@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: vytrax_idle
   m_EditorClassIdentifier: 
+  Key: vytrax_idle
   State: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
   UpAnimation: {fileID: 11400000, guid: 99d1fa33a473fba46a7e0b73f8cd43d8, type: 2}
   DownAnimation: {fileID: 11400000, guid: 7d2951015437717478551e8e57b2a850, type: 2}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_racial_ancient_fight_magic
   m_EditorClassIdentifier: 
+  Key: bt_racial_ancient_fight_magic
   BuffID: buff_skill_fight_magic
   Amount: 0
   BaseBuff: 1

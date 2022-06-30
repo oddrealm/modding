@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_model_cave_treasure0
   m_EditorClassIdentifier: 
+  Key: isg_model_cave_treasure0
   FriendlyName: 
-  Data: '{"items":[{"count":100,"spawn_rate":100,"randomize_count":true,"random_id_rarity":0,"max_value":100},{"count":5,"spawn_rate":100,"randomize_count":true,"random_id_rarity":1,"max_value":100},{"count":1,"spawn_rate":10,"randomize_count":false,"random_id_rarity":2,"max_value":1000}]}'
   Spawns:
   - ItemID: 
     GenerateNameKey: 

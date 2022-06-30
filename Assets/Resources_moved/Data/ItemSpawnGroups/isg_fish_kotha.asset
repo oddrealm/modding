@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_fish_kotha
   m_EditorClassIdentifier: 
+  Key: isg_fish_kotha
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_bone","count":1,"spawn_rate":1000},{"item_id":"item_kotha_meat_raw","count":1,"spawn_rate":1000},
-    {"item_id":"item_kotha_scale","count":3,"spawn_rate":500}]}'
   Spawns:
   - ItemID: item_bone
     GenerateNameKey: 

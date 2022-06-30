@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_room_display_distillery_background
   m_EditorClassIdentifier: 
+  Key: visuals_room_display_distillery_background
   ReceiveSkylightColor: 0
   OnlyRenderIfVisible: 0
   RotationType: 0

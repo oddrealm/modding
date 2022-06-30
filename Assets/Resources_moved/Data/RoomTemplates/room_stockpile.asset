@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_stockpile
   m_EditorClassIdentifier: 
+  Key: room_stockpile
   ActivationType: 1
   CanEditOwnersAndStockpiles: 1
   Enabled: 1

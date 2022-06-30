@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: traelik
   m_EditorClassIdentifier: 
+  Key: traelik
   Sets:
   - {fileID: 11400000, guid: 0eb0438c584756b4a8dce91d105b9f57, type: 2}
   - {fileID: 11400000, guid: c03b8106e94e26a4e8c0f29dbaec7f4b, type: 2}

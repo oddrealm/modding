@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_stasis_crystal
   m_EditorClassIdentifier: 
+  Key: tooltip_tag_stasis_crystal
   Name: Stasis Crystal
   InlineIcon: <sprite=580>
+  InlineAndName: <sprite=580> Stasis Crystal
   Description: 
   Action: 
   Icon: 

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: dweller
   m_EditorClassIdentifier: 
+  Key: dweller
   Sets:
   - {fileID: 11400000, guid: ecbb9eda9bdca304880bec7fb7f0da06, type: 2}
   - {fileID: 11400000, guid: 116218dc83d827c488e9f9706c7744ce, type: 2}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_block_nyctium_brick
   m_EditorClassIdentifier: 
+  Key: isg_block_nyctium_brick
   FriendlyName: 'Deconstruction yield:'
   Spawns:
   - ItemID: item_nyctium_brick

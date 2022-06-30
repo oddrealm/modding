@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_melon_seed
   m_EditorClassIdentifier: 
+  Key: tooltip_item_melon_seed
   Name: Melon (Seed)
   InlineIcon: <sprite=152>
+  InlineAndName: <sprite=152> Melon (Seed)
   Description: Used to grow Melon.
   Action: 
   Icon: sp_melon_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

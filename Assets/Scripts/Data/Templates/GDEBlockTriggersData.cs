@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockTriggers")]
 public class GDEBlockTriggersData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string SpawnTag = "";
 }

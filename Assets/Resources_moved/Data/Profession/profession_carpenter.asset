@@ -12,14 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_carpenter
   m_EditorClassIdentifier: 
+  Key: profession_carpenter
   ResearchKey: 
   TooltipID: tooltip_profession_carpenter
   VisibleToPlayer: 1
   GlobalIndicator: indicator_global_carpenter
-  SkillsActiveByDefault: 39182
+  SkillsActiveByDefault: 39694
   SkillsToIncreaseOnLevelUp: 2
   ProfessionType: 32
-  Color:
-  - 101
-  - 71
-  - 62

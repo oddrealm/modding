@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: sheep_idle
   m_EditorClassIdentifier: 
+  Key: sheep_idle
   State: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
   UpAnimation: {fileID: 11400000, guid: 3fd6c11df1d9af14a9410823723ed70b, type: 2}
   DownAnimation: {fileID: 11400000, guid: b5037ddf3c9f8404d88fa80a3f81b45e, type: 2}

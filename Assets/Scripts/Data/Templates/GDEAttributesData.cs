@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Attributes")]
 public class GDEAttributesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public int DisplayOrder = 0;
 	public int StartMin = 0;

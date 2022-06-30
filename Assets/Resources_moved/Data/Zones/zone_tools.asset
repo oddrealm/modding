@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8d54d958bb52746bbda34a427ca237, type: 3}
   m_Name: zone_tools
   m_EditorClassIdentifier: 
+  Key: zone_tools
   TooltipID: tooltip_zone_tools
   Visuals: visuals_zone_tools
   VisibleToPlayer: 1

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: snoot_walk
   m_EditorClassIdentifier: 
+  Key: snoot_walk
   State: {fileID: 11400000, guid: 08dfca07b5a89b54c9a4b1c4ad9e15ff, type: 2}
   UpAnimation: {fileID: 11400000, guid: de320a6d1b0664a4382870b2f24defa3, type: 2}
   DownAnimation: {fileID: 11400000, guid: 7bce6aad89510cd4fa2209780502255c, type: 2}

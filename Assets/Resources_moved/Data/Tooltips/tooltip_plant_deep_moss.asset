@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_deep_moss
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_deep_moss
   Name: Deep Moss (Plant)
   InlineIcon: <sprite=70>
+  InlineAndName: <sprite=70> Deep Moss (Plant)
   Description: A thick carpet-like moss which produces an odor akin to old shoes.
   Action: 
   Icon: sp_deep_moss_icon

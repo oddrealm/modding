@@ -12,19 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_gwdir
   m_EditorClassIdentifier: 
+  Key: entity_gwdir
   TooltipID: tooltip_entity_gwdir
   Size: 3
-  PermittedAges: 2
   CompanionType: 1
   CompanionPermanenceType: 3
   ReproductionType: 1
   ReproductionIntervalMinutes: 2880
   ReproductionCount: 1
   TakeLastNameOfCompanion: 0
-  AgeToBecomeAdult: 16
-  AgeToBecomeElder: 200
-  RandomElderStatuses:
-  - entity_status_cardiac_arrest
   GenerateNameKey: entity_names_gwdir
   InherentWorkAttacks: attack_group_hand_skills_fallback
   InherentCombatAttacks: attack_group_gwdir
@@ -43,3 +39,28 @@ MonoBehaviour:
   DefaultPickUpBlueprint: blueprint_pick_up_item
   DefaultDropOffBlueprint: blueprint_drop_off_item
   Statuses: []
+  PermittedAges:
+  - Min: 0
+    Max: 16
+    CanRespec: 0
+    AgeType: 1
+    Statuses:
+    - entity_status_child
+    RandomStatuses: []
+  - Min: 17
+    Max: 90
+    CanRespec: 1
+    AgeType: 2
+    Statuses:
+    - entity_status_adult
+    RandomStatuses: []
+  - Min: 91
+    Max: 150
+    CanRespec: 1
+    AgeType: 4
+    Statuses:
+    - entity_status_elder
+    RandomStatuses:
+    - Chances: 10
+      StatusID: entity_status_cardiac_arrest
+      AddAgeToChances: 1

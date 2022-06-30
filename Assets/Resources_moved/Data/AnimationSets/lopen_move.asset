@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: lopen_move
   m_EditorClassIdentifier: 
+  Key: lopen_move
   State: {fileID: 11400000, guid: 1e6a859c913a2d940b7db7c995938744, type: 2}
   UpAnimation: {fileID: 11400000, guid: a7bd3811468db78419bcb4887abb48cb, type: 2}
   DownAnimation: {fileID: 11400000, guid: 06bd34c63957ec542b585ca8eca967ab, type: 2}

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_special_item_from_uniform
   m_EditorClassIdentifier: 
+  Key: tooltip_special_item_from_uniform
   Name: From Uniforms
   InlineIcon: <sprite=213>
+  InlineAndName: <sprite=213> From Uniforms
   Description: Items are chosen based on uniforms assigned to entity. To edit an
     entity's unforms, open the <sprite=213> Uniforms Overlay.
   Action: 

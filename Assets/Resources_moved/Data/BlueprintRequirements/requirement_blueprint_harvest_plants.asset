@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_harvest_plants
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_harvest_plants
   CanStackWithSameJobType: 0
   PermissionType: 1048576
   BlockTagConditionType: 1

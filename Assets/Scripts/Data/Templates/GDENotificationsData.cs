@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Notifications")]
 public class GDENotificationsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int Index = 0;
 	public bool Enabled = false;
 	public NotificationTypes NotificationType = 0;

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_shared_immortality_tomb_looted0
   m_EditorClassIdentifier: 
+  Key: dialoguegroup_shared_immortality_tomb_looted0
   DialogueIDs:
   - dialogue_shared_immortality_tomb_looted0_ancient0_d0_0
   - dialogue_shared_immortality_tomb_looted0_ancient0_d1_0

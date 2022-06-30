@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_cardiac_arrest
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_cardiac_arrest
   Name: Cardiac Arrest (Status)
   InlineIcon: <sprite=1154>
+  InlineAndName: <sprite=1154> Cardiac Arrest (Status)
   Description: The entity's heart has stopped. Either from old age, or from stress.
   Action: 
   Icon: 

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86ebf3cf42b684cb06c9616041dc72, type: 3}
   m_Name: season_taiga_summer
   m_EditorClassIdentifier: 
+  Key: season_taiga_summer
   TooltipID: tooltip_season_taiga_summer
   SeasonType: 1
   SeasonStart: 16

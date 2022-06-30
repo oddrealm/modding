@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: crab_sit
   m_EditorClassIdentifier: 
+  Key: crab_sit
   State: {fileID: 11400000, guid: 1c4464af3af0fcc408d2be3da4077885, type: 2}
   UpAnimation: {fileID: 11400000, guid: b745942194d05fe4299003ce27ca3f90, type: 2}
   DownAnimation: {fileID: 11400000, guid: 75092fdf58c1da341a8e1d62ea114f28, type: 2}

@@ -5,9 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Tooltips")]
 public class GDETooltipsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string Name = "";
 	public string InlineIcon = "";
+	public string InlineAndName = "";
 	public string Description = "";
 	public string Action = "";
 	public string Icon = "";

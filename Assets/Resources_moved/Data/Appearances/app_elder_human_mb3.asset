@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_elder_human_mb3
   m_EditorClassIdentifier: 
+  Key: app_elder_human_mb3
   Gender: male
   Race: race_human
   Group: race_human_male
+  Iteration: 3
   AppearanceType: 2
   AgeType: 4
+  ShadowType: 2
   Portrait: sp_elder_human_mb3
   HealthBarOffset: 0
   StealthSightingDialogueGroup: dialoguegroup_shared_generic_stealth_sightings_settler

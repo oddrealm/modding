@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Research")]
 public class GDEResearchData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public bool Enabled = false;
 	public List<string> Races = new List<string>();
 	public string ResearchKey = "";

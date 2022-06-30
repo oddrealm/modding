@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_dead_combat
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_dead_combat
   Name: Dead (Combat) (Status)
   InlineIcon: <sprite=0>
+  InlineAndName: <sprite=0> Dead (Combat) (Status)
   Description: Has died from combat.
   Action: 
   Icon: 

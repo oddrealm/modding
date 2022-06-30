@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcbd562150f96bf40848873f2e877dd8, type: 3}
   m_Name: cmd_btn_new_room_placement
   m_EditorClassIdentifier: 
+  Key: cmd_btn_new_room_placement
   DependencyTag:
   - room_select
   ActivationType: 2

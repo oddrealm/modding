@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BiomeTerrainNoiseTuning")]
 public class GDEBiomeTerrainNoiseTuningData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int Priority = 0;
 	public float Frequency = 0.0f;
 	public int Octaves = 0;

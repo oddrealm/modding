@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: block_water
   m_EditorClassIdentifier: 
+  Key: block_water
   Index: 3
   Tags: []
   PhysicsHeatSource: 0
@@ -65,4 +66,5 @@ MonoBehaviour:
   VerticalMoveRequiresClimb: 0
   ForceFocusDirection: 0
   IsObstruction: 0
+  CanHaveRoom: 1
   IsVerticalAccess: 1

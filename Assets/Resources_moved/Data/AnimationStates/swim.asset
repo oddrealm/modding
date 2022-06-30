@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0ee651054521040a74be8bdd0a48eb, type: 3}
   m_Name: swim
   m_EditorClassIdentifier: 
+  Key: swim
   Transitions:
   - NextState: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
     TrueFlags: 0
@@ -21,5 +22,10 @@ MonoBehaviour:
   - NextState: {fileID: 11400000, guid: 52f7e62038e9f5c4bbeb2c62a88a25fb, type: 2}
     TrueFlags: 0
     FalseFlags: 2
+    Triggers: 0
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
+    TrueFlags: 128
+    FalseFlags: 0
     Triggers: 0
     IsComplete: 0

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: gully_swim
   m_EditorClassIdentifier: 
+  Key: gully_swim
   State: {fileID: 11400000, guid: 95dd57af025d802449a75f9832bf4bd4, type: 2}
   UpAnimation: {fileID: 11400000, guid: c1f329f592963cc48afc884b30757d77, type: 2}
   DownAnimation: {fileID: 11400000, guid: 1820857981abc434995a1f9d8012e85f, type: 2}

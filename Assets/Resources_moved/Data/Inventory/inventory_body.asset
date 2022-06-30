@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe39ea62f8a60f4589e4d657645225c, type: 3}
   m_Name: inventory_body
   m_EditorClassIdentifier: 
+  Key: inventory_body
   FriendlyName: Body
   FillAllSlots: 1
   Slots:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e256d1ab8c0d2438043b751e626442, type: 3}
   m_Name: platform_wood_shingle
   m_EditorClassIdentifier: 
+  Key: platform_wood_shingle
   Index: 11
   Visuals: visuals_platform_wood_shingle
   TooltipID: tooltip_platform_wood_shingle
@@ -19,7 +20,7 @@ MonoBehaviour:
   HasMeltThreshold: 0
   MeltThreshold: 0
   NeedsSupport: 0
-  Permissions: 8388672
+  Permissions: 8388608
   MovementSpeedMod: 1
   MovementCostMult: 2
   IsRoof: 1

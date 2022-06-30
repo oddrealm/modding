@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_equipment_tomb_ancients_early
   m_EditorClassIdentifier: 
+  Key: isg_scenario_equipment_tomb_ancients_early
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_fledgling_aeternum","count":1,"spawn_rate":1000},{"item_id":"item_wool_coat","count":1,"spawn_rate":1000},{"item_id":"item_wool_pants","count":1,"spawn_rate":1000},{"item_id":"item_cloth_boots","count":1,"spawn_rate":1000},{"item_id":"item_iron_dagger_one_hand","count":1,"spawn_rate":500},{"item_id":"item_rope_buckler_one_hand","count":1,"spawn_rate":100}]}'
   Spawns:
   - ItemID: item_fledgling_aeternum
     GenerateNameKey: 

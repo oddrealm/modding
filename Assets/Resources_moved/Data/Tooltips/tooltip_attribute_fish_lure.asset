@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_fish_lure
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_fish_lure
   Name: Fish Lure
   InlineIcon: <sprite=403>
+  InlineAndName: <sprite=403> Fish Lure
   Description: How likely fish are to move closer to a Entity that is Fishing.
   Action: 
   Icon: 

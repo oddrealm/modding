@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_trait_hold_breath_longer
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_trait_hold_breath_longer
   Name: 'Trait: Bigger Lungs (Status)'
   InlineIcon: <sprite=1066>
+  InlineAndName: '<sprite=1066> Trait: Bigger Lungs (Status)'
   Description: They can hold their breath for much longer than normal.
   Action: 
   Icon: 

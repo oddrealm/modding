@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: gharox
   m_EditorClassIdentifier: 
+  Key: gharox
   Sets:
   - {fileID: 11400000, guid: 6ce292b9381c8ba428013ecf7c0d1e9c, type: 2}
   - {fileID: 11400000, guid: 0f93789f41af9574ebe18644e0d1d95a, type: 2}

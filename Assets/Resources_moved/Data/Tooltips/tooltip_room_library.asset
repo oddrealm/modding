@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_library
   m_EditorClassIdentifier: 
+  Key: tooltip_room_library
   Name: Library
   InlineIcon: <sprite=716>
+  InlineAndName: <sprite=716> Library
   Description: The Library is where ink, paper, and books are created.
   Action: 
   Icon: sp_room_library_icon
   Formatting: room_names_library
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

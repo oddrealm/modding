@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_emily_townsend_fa0
   m_EditorClassIdentifier: 
+  Key: app_adult_emily_townsend_fa0
   Gender: female
   Race: race_human
   Group: race_human_emily_townsend_female
+  Iteration: 0
   AppearanceType: 1
   AgeType: 2
   ShadowType: 2

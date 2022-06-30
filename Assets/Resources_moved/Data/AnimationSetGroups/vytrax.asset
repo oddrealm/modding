@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: vytrax
   m_EditorClassIdentifier: 
+  Key: vytrax
   Sets:
   - {fileID: 11400000, guid: ed58bc832991e324790618bbf4f1bffc, type: 2}
   - {fileID: 11400000, guid: 0d9342262f997f04c89a126d5c544747, type: 2}

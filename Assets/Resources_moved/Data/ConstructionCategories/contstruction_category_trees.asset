@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e39074657701e24b886574fc07f4492, type: 3}
   m_Name: contstruction_category_trees
   m_EditorClassIdentifier: 
+  Key: contstruction_category_trees
   MenuKey: L_trees
   MenuIndex: 11
   Name: Trees

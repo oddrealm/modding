@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Attacks")]
 public class GDEAttacksData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public bool ShowOnAttacksDisplay = false;
 	public int ActivationWeight = 0;
@@ -13,6 +13,7 @@ public class GDEAttacksData : ScriptableObject
 	public FiringTypes FiringType;
 	public AttackActivationTypes ActivationType;
 	public DamageTypes DamageType;
+	public bool AttackFishInRange = false;
 
 	[Header("Output")]
 	public SkillTypes SkillUsed = SkillTypes.NONE;

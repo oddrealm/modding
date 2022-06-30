@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: chicken_fishing
   m_EditorClassIdentifier: 
+  Key: chicken_fishing
   State: {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
   UpAnimation: {fileID: 11400000, guid: 5a6c2239b51518842800742be60f3202, type: 2}
   DownAnimation: {fileID: 11400000, guid: 3024623c9fa91a84db0c63a86da4ab54, type: 2}

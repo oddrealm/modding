@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Races")]
 public class GDERacesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public int MerchantValue = 0;
 	public int IntelligenceType = 0;

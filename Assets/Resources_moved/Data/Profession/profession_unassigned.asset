@@ -12,14 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_unassigned
   m_EditorClassIdentifier: 
+  Key: profession_unassigned
   ResearchKey: 
   TooltipID: tooltip_profession_unassigned
   VisibleToPlayer: 1
   GlobalIndicator: indicator_global_none
-  SkillsActiveByDefault: 39168
+  SkillsActiveByDefault: 33554431
   SkillsToIncreaseOnLevelUp: 0
   ProfessionType: 16384
-  Color:
-  - 86
-  - 67
-  - 67

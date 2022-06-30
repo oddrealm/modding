@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_equipment_bandits_humans_mid
   m_EditorClassIdentifier: 
+  Key: isg_scenario_equipment_bandits_humans_mid
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_bronze_helmet","count":1,"spawn_rate":750},{"item_id":"item_bronze_breastplate","count":1,"spawn_rate":750},{"item_id":"item_bronze_leggings","count":1,"spawn_rate":750},{"item_id":"item_bronze_boots","count":1,"spawn_rate":750},{"item_id":"item_iron_helmet","count":1,"spawn_rate":100},{"item_id":"item_iron_breastplate","count":1,"spawn_rate":100},{"item_id":"item_iron_leggings","count":1,"spawn_rate":100},{"item_id":"item_iron_boots","count":1,"spawn_rate":100},{"item_id":"item_bronze_crossbow_two_hand","count":1,"spawn_rate":50},{"item_id":"item_iron_sword_one_hand","count":1,"spawn_rate":50},{"item_id":"item_iron_sword_two_hand","count":1,"spawn_rate":10},{"item_id":"item_iron_mace_one_hand","count":1,"spawn_rate":100},{"item_id":"item_iron_kite_shield_one_hand","count":1,"spawn_rate":50},{"item_id":"item_iron_dagger_one_hand","count":1,"spawn_rate":150}]}'
   Spawns:
   - ItemID: item_bronze_helmet
     GenerateNameKey: 

@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_harvest
   m_EditorClassIdentifier: 
+  Key: tooltip_blueprint_harvest
   Name: Harvest Ground Cover
   InlineIcon: <sprite=1182>
+  InlineAndName: <sprite=1182> Harvest Ground Cover
   Description: Used to collect food, seeds, and resources from grasses and other
     vegetation growing on the ground floor. Only mature plants will drop food.
   Action: Harvesting Ground Cover
   Icon: sp_job_harvest_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

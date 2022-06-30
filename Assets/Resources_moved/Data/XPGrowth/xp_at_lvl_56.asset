@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef08b9ae464b074fb650ec350a98d23, type: 3}
   m_Name: xp_at_lvl_56
   m_EditorClassIdentifier: 
+  Key: xp_at_lvl_56
   Level: 56
   XPReward: 35
   XPRequireToLevel: 32330

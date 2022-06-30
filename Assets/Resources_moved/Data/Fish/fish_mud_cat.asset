@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b82001461fc34e9d1cf053d56a7e5, type: 3}
   m_Name: fish_mud_cat
   m_EditorClassIdentifier: 
+  Key: fish_mud_cat
   TooltipID: tooltip_fish_mud_cat
   Level: 4
   AnimController: large_fish_animations

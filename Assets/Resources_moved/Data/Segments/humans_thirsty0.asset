@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: humans_thirsty0
   m_EditorClassIdentifier: 
+  Key: humans_thirsty0
   TutorialType: 2
   SelectTarget: 0
   InputsToLock: 126
@@ -23,13 +24,20 @@ MonoBehaviour:
   Hooks: []
   ActiveRaces:
   - race_human
-  Window: 
+  PermittedWindows: []
   SelectionType: 1
   AttributeRaces:
   - race_human
   AttributeType: 26
   MinAttributeAmount: 0
   MaxAttributeAmount: 1000
+  ItemIDs: []
+  ItemConditionType: 1
+  ItemMinCount: -1
+  ConstructionCategoryType: 0
+  MinRoomCount: -1
+  MinProductionRoomCount: -1
+  MinAutoJobCount: -1
   Dialogue: {fileID: 11400000, guid: a736c51ca70ef8f41ba7bf30caad956c, type: 2}
   FadeInDelay: 0
   PopUpPosition: 0

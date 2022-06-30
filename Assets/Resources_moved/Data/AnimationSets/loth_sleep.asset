@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: loth_sleep
   m_EditorClassIdentifier: 
+  Key: loth_sleep
   State: {fileID: 11400000, guid: 7af7740d1c2f88647ad5c759a3ad39bf, type: 2}
   UpAnimation: {fileID: 11400000, guid: 3762c8cddb51bb744a90406b35c21788, type: 2}
   DownAnimation: {fileID: 11400000, guid: 823e7dd1667bf1f49a2915d1fd765c29, type: 2}

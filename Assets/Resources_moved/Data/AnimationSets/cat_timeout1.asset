@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: cat_timeout1
   m_EditorClassIdentifier: 
+  Key: cat_timeout1
   State: {fileID: 11400000, guid: 672be28644883d24393b65e82c2e90fa, type: 2}
   UpAnimation: {fileID: 11400000, guid: 04e34e7ae94f07249981f95e46ff1252, type: 2}
   DownAnimation: {fileID: 11400000, guid: 04e34e7ae94f07249981f95e46ff1252, type: 2}

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_lonely
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_lonely
   Name: Lonely (Status)
   InlineIcon: <sprite=62>
+  InlineAndName: <sprite=62> Lonely (Status)
   Description: Is looking for companion.
   Action: 
   Icon: 

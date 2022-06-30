@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_block_clay_brick
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_block_clay_brick
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 2048
   BlockTagConditionType: 1
   BlockTags: []
@@ -29,5 +29,6 @@ MonoBehaviour:
   ItemConditionType: 0
   Items:
   - ID: item_clay_brick
+    CanUseWithoutDiscovering: 0
     Count: 2
     Category: 0

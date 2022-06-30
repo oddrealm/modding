@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/OverworldMapGen")]
 public class GDEOverworldMapGenData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int BuildPriority = 0;
 	public int SeedOffset = 0;
 	public float Frequency = 0.0f;

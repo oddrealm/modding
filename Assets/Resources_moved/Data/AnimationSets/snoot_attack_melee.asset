@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: snoot_attack_melee
   m_EditorClassIdentifier: 
+  Key: snoot_attack_melee
   State: {fileID: 11400000, guid: f24030c166ac23941a71d46becc88fa6, type: 2}
   UpAnimation: {fileID: 11400000, guid: aec692ccaf458d94582afbc4c809d334, type: 2}
   DownAnimation: {fileID: 11400000, guid: 46e6efede12b59a49a187aba32cae245, type: 2}

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_hortichron
   m_EditorClassIdentifier: 
+  Key: room_hortichron
+  UpdateEveryFrame: 0
   ActivationType: 1
   CanEditOwnersAndStockpiles: 1
   Enabled: 1
@@ -22,9 +24,9 @@ MonoBehaviour:
   DefaultAutoJobBlueprints:
   - blueprint_tend_chronoblast
   - blueprint_plant_chronoblast
-  - blueprint_tend_nyctoid
   - blueprint_plant_nyctoid
-  - blueprint_harvest_standing
+  - blueprint_harvest_chronoblast
+  - blueprint_harvest_nyctoid
   InterfaceInfo: interface_info_room_hortichron
   TooltipID: tooltip_room_hortichron
   Visuals:

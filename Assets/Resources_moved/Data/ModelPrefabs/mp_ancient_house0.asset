@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc12d5ddb38d0440a34b97fffa8228d, type: 3}
   m_Name: mp_ancient_house0
   m_EditorClassIdentifier: 
+  Key: mp_ancient_house0
   Group: mp_house_ancient
   Width: 11
   Height: 6

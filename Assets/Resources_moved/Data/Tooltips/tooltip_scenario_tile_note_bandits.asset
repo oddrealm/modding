@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_scenario_tile_note_bandits
   m_EditorClassIdentifier: 
+  Key: tooltip_scenario_tile_note_bandits
   Name: Bandits!
   InlineIcon: <sprite=1095>
+  InlineAndName: <sprite=1095> Bandits!
   Description: Reports of bandits attacking travelers indicate a dangerously high
     safety risk. Travel in area is discouraged.
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

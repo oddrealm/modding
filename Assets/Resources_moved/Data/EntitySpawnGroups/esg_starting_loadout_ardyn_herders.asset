@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
   m_Name: esg_starting_loadout_ardyn_herders
   m_EditorClassIdentifier: 
+  Key: esg_starting_loadout_ardyn_herders
   FriendlyName: 'Spawns:'
   Spawns:
   - EntityId: entity_ardyn
@@ -32,7 +33,7 @@ MonoBehaviour:
     EntityGender: priority
     EntityCount: 10
     SameRoomAsPlayer: 0
-    EntityFaction: 1
+    EntityFaction: 8
     EntityTuning: 
     SpawnRate: 1000
     AgeType: 2

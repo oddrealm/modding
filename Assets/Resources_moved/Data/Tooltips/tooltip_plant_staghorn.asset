@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_staghorn
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_staghorn
   Name: Staghorn (Plant)
   InlineIcon: <sprite=70>
+  InlineAndName: <sprite=70> Staghorn (Plant)
   Description: A unique plant that gets its name from its unusually shaped fronds.
   Action: 
   Icon: sp_staghorn_icon

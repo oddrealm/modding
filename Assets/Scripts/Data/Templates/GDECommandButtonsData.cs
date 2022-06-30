@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/CommandButtons")]
 public class GDECommandButtonsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public List<string> DependencyTag = new List<string>();
 	public int ActivationType = 0;
 	public string ActiveTooltipName = "";

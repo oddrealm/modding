@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_scenario_tile_note_migrant_rats
   m_EditorClassIdentifier: 
+  Key: tooltip_scenario_tile_note_migrant_rats
   Name: Rats Sighted!
   InlineIcon: <sprite=768>
+  InlineAndName: <sprite=768> Rats Sighted!
   Description: 'Rats have been seen in this area. '
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

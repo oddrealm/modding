@@ -5,8 +5,21 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Blueprints")]
 public class GDEBlueprintsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 
+	[Header("Progression Start")]
+	public JobProgressTypes StartProgressType = JobProgressTypes.FIXED_AMOUNT;
+	public AttributeTypes StartProgressAttribute = AttributeTypes.NONE;
+	public float StartProgressAttributePercent = 1f;
+	public int FixedProgressStart = 0;
+
+	[Header("Progression Target")]
+	public JobProgressTypes TargetProgressType = JobProgressTypes.FIXED_AMOUNT;
+	public AttributeTypes TargetProgressAttribute = AttributeTypes.NONE;
+	public float TargetProgressAttributePercent = 1f;
+	public int FixedProgressTarget = 100;
+
+	[Header("")]
 	public int DefaultAutoJobPriority = 1;
 	public ThresholdTypes DefaultThresholdType = ThresholdTypes.AUTO;
 	public float TimeoutTime = 10f;
@@ -15,10 +28,7 @@ public class GDEBlueprintsData : ScriptableObject
 	public JobBarTypes JobBarType = JobBarTypes.NONE;
 	public bool InvertProgressDisplay = false;
 	public JobActionTextTypes JobActionTextTypes = JobActionTextTypes.NONE;
-	public AttributeTypes AttributeToUseForProgress = AttributeTypes.NONE;
 
-	public float AttributeTargetPercentage = 1f;
-	public int ProgressMax = 0;
 	public int Toughness = 0;
 	public float XPMod = 0.0f;
 	public bool UseBlockForToughness = false;
@@ -46,6 +56,9 @@ public class GDEBlueprintsData : ScriptableObject
 	public bool ReleaseContainedEntity = false;
 	public bool TryCaptureContainedEntity = false;
 	public List<string> StatusesToApply = new List<string>();
+	public List<string> StatusesToApplyToTarget = new List<string>();
+
+	public bool MarkRequirementsDiscoveredOnDiscovery = true;
 
 	public void Clone(GDEBlueprintsData other)
     {
@@ -57,7 +70,7 @@ public class GDEBlueprintsData : ScriptableObject
 		JobBarType = other.JobBarType;
 		InvertProgressDisplay = other.InvertProgressDisplay;
 		JobActionTextTypes = other.JobActionTextTypes;
-		ProgressMax = other.ProgressMax;
+		FixedProgressTarget = other.FixedProgressTarget;
 		Toughness = other.Toughness;
 		XPMod = other.XPMod;
 		UseBlockForToughness = other.UseBlockForToughness;

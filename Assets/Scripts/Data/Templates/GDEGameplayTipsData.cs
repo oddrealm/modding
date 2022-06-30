@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/GameplayTips")]
 public class GDEGameplayTipsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string DisplayText = "";
 	public string HotkeyID = "";
 }

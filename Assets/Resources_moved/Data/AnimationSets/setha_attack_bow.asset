@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: setha_attack_bow
   m_EditorClassIdentifier: 
+  Key: setha_attack_bow
   State: {fileID: 11400000, guid: 73df296c004647f4a8a0bd393365cce9, type: 2}
   UpAnimation: {fileID: 11400000, guid: 4245432bd1523514b928b35c0be5cb85, type: 2}
   DownAnimation: {fileID: 11400000, guid: 84143cd447d76bc4793e31a6679a47f8, type: 2}

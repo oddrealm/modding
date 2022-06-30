@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: smolkin_dead_rotting
   m_EditorClassIdentifier: 
+  Key: smolkin_dead_rotting
   State: {fileID: 11400000, guid: 1ab125c3926739a4c86b3628293b188e, type: 2}
   UpAnimation: {fileID: 11400000, guid: 861376c8c7d26b74d86085bc664796ba, type: 2}
   DownAnimation: {fileID: 11400000, guid: 861376c8c7d26b74d86085bc664796ba, type: 2}

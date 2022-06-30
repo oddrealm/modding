@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0864c966134504b9ca65223cb7ceea, type: 3}
   m_Name: item_slot_body
   m_EditorClassIdentifier: 
+  Key: item_slot_body
   FriendlyName: Body Slot
   EmptyIcon: sp_empty_body_slot_icon
   InventoryType: 8

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0375ec74fcc66c9458902e3c3cf729a4, type: 3}
   m_Name: model_item_squeaken_remains
   m_EditorClassIdentifier: 
+  Key: model_item_squeaken_remains
   ModelIndex: 2266
   BlockIndex: -1
   Plants: []

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_danger
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_danger
   Name: In Danger (Status)
   InlineIcon: <sprite=931>
+  InlineAndName: <sprite=931> In Danger (Status)
   Description: In danger.
   Action: 
   Icon: 

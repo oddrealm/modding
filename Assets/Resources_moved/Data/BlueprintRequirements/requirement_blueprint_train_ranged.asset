@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_train_ranged
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_train_ranged
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 131072
   BlockTagConditionType: 1
   BlockTags:

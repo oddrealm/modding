@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_sendalo
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_sendalo
   Name: Sendalo (Plant)
   InlineIcon: <sprite=70>
+  InlineAndName: <sprite=70> Sendalo (Plant)
   Description: A plant which thrives in arid environments.
   Action: 
   Icon: sp_sendalo_icon

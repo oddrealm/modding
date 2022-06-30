@@ -5,10 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Appearances")]
 public class GDEAppearancesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string Gender = "";
 	public string Race = "";
 	public string Group = "";
+	public int Iteration = 0;
 	public EntityAppearanceTypes AppearanceType = EntityAppearanceTypes.ABE;
 	public EntityAgeTypes AgeType = EntityAgeTypes.ADULT;
 	public ShadowTypes ShadowType = ShadowTypes.MEDIUM;

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_production_window0
   m_EditorClassIdentifier: 
+  Key: all_production_window0
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126
@@ -43,6 +44,6 @@ MonoBehaviour:
   ShowBackgroundMask: 1
   BackgroundMaskTarget: production_window
   AnimatedImage: 
-  PopUpTextBody: This is the Production window, where room auto-jobs are created,
-    and edited.
+  PopUpTextBody: This is the Production window, where room jobs are created, and
+    edited.
   NextSegment: {fileID: 11400000, guid: 0ae55d9b0d86df04fb3bf33e00fedade, type: 2}

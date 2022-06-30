@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_sleep_on_ground
   m_EditorClassIdentifier: 
+  Key: tooltip_blueprint_sleep_on_ground
   Name: Sleep On Ground
   InlineIcon: <sprite=952>
+  InlineAndName: <sprite=952> Sleep On Ground
   Description: Restores energy at a slower rate.
   Action: Sleeping On Ground
   Icon: sp_job_sleep_on_ground_icon

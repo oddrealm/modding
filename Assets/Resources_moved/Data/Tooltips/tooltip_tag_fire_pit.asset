@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_fire_pit
   m_EditorClassIdentifier: 
+  Key: tooltip_tag_fire_pit
   Name: Fire Pit
   InlineIcon: <sprite=435>
+  InlineAndName: <sprite=435> Fire Pit
   Description: 
   Action: 
   Icon: 

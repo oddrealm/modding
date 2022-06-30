@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_entity_butchered_nightwing
   m_EditorClassIdentifier: 
+  Key: isg_entity_butchered_nightwing
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_bone","count":1,"spawn_rate":1000},{"item_id":"item_bone","count":1,"spawn_rate":500},{"item_id":"item_nightwing_meat_raw","count":2,"spawn_rate":1000},{"item_id":"item_nightwing_meat_raw","count":1,"spawn_rate":100}]}'
   Spawns:
   - ItemID: item_bone
     GenerateNameKey: 

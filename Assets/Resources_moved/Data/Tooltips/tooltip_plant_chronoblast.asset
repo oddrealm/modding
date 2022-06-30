@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_chronoblast
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_chronoblast
   Name: Chronoblast (Plant)
   InlineIcon: <sprite=1204>
+  InlineAndName: <sprite=1204> Chronoblast (Plant)
   Description: The chronoblast is an Ardyn zygote. When mature, the chronoblast will
     produce an Ardyn adult. The gestation period requires Ardyn Technochrons to sacrifice
     their own youth into the zygote through a process called Animatropys.

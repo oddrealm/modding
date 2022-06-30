@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_ancient_fa3
   m_EditorClassIdentifier: 
+  Key: app_adult_ancient_fa3
   Gender: female
   Race: race_ancient
   Group: race_ancient_female
+  Iteration: 3
   AppearanceType: 1
   AgeType: 2
+  ShadowType: 2
   Portrait: sp_adult_ancient_fa3
   HealthBarOffset: 0
   StealthSightingDialogueGroup: 

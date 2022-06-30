@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914865ccb910c944599dbca02766b4f9, type: 3}
   m_Name: olsg_default
   m_EditorClassIdentifier: 
+  Key: olsg_default
   Spawns:
   - ols_default_copper_vein
   - ols_default_tin_vein

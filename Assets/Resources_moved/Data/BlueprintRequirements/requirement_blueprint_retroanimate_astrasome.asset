@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_retroanimate_astrasome
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_retroanimate_astrasome
   CanStackWithSameJobType: 0
   PermissionType: 0
   BlockTagConditionType: 1
@@ -22,22 +23,25 @@ MonoBehaviour:
   WorkPointLocation: 0
   Entities:
   - RaceID: race_ardyn
+    CanUseWithoutDiscovering: 0
     StatusConditionType: 1
     Statuses:
     - entity_status_senectia
     - entity_status_deep_senectia
+    ProhibitedOwnedRooms: []
     IntelligenceType: 3
+    IsCompanion: 0
   Targets: []
   Rooms:
   - room_somnic_pools
   Attacks:
   - attack_retroanimate_age
-  - attack_retroanimate_health
   Skill: skill_survival
   SpecialItemTooltipID: 
   DietAttributesForItemFilter: 
   ItemConditionType: 0
   Items:
   - ID: item_astrasome
+    CanUseWithoutDiscovering: 0
     Count: 1
     Category: 0

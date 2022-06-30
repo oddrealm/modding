@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: hedge
   m_EditorClassIdentifier: 
+  Key: hedge
   TooltipID: tooltip_tag_hedge
-  Name: Hedge
-  InlineIcon: <sprite=682>

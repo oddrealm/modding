@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_block_abstract_quantity
   m_EditorClassIdentifier: 
+  Key: visuals_block_abstract_quantity
   ReceiveSkylightColor: 0
   OnlyRenderIfVisible: 0
   RotationType: 0
@@ -19,7 +20,7 @@ MonoBehaviour:
   ShowPermissionColor: 0
   ColorAddType: 0
   HasTriggerOffset: 0
-  DepthOffset: 0.0502
+  DepthOffset: 0.0512
   HideSurfaceWhenObscuredAbove: 1
   HideSurfaceWhenSameTypeAbove: 0
   CanTransitionIfObscuredAbove: 1

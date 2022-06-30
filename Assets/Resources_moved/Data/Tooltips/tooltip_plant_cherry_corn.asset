@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_cherry_corn
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_cherry_corn
   Name: Cherry Corn (Plant)
   InlineIcon: <sprite=234>
+  InlineAndName: <sprite=234> Cherry Corn (Plant)
   Description: 
   Action: 
   Icon: sp_cherry_corn_icon

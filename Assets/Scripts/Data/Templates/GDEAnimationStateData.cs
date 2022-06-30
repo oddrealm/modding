@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/AnimationState")]
 public class GDEAnimationStateData : ScriptableObject
 {
+    public string Key;
+
     [System.Serializable]
     public class Transition
     {

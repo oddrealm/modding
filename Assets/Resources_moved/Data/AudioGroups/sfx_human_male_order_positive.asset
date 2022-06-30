@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bbd2cf8d9e60a40b72614a6e504830, type: 3}
   m_Name: sfx_human_male_order_positive
   m_EditorClassIdentifier: 
+  Key: sfx_human_male_order_positive
   SFX:
   - audio_sfx_select_male_hmm_question_00
   - audio_sfx_select_male_hmm_question_01

@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/OverworldNation")]
 public class GDEOverworldNationData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int Order;
 	public string TooltipID = "";
 	public bool Unlocked = false;

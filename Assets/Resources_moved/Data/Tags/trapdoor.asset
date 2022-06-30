@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: trapdoor
   m_EditorClassIdentifier: 
+  Key: trapdoor
   TooltipID: tooltip_tag_trapdoor
-  Name: Trapdoor
-  InlineIcon: <sprite=686>

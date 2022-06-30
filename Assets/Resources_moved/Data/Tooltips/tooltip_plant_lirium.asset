@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_lirium
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_lirium
   Name: Lirium (Plant)
   InlineIcon: <sprite=70>
+  InlineAndName: <sprite=70> Lirium (Plant)
   Description: 
   Action: 
   Icon: sp_lirium_icon

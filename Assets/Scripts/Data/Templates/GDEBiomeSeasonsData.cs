@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BiomeSeasons")]
 public class GDEBiomeSeasonsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public int SeasonType = 0;
 	public int SeasonStart = 0;

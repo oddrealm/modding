@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_stone_mason
   m_EditorClassIdentifier: 
+  Key: profession_stone_mason
   ResearchKey: 
   TooltipID: tooltip_profession_stone_mason
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 39182
   SkillsToIncreaseOnLevelUp: 4
   ProfessionType: 64
-  Color:
-  - 55
-  - 67
-  - 95

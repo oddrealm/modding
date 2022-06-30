@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_sunrise_opal
   m_EditorClassIdentifier: 
+  Key: tooltip_item_sunrise_opal
   Name: Sunrise Opal
   InlineIcon: <sprite=809>
+  InlineAndName: <sprite=809> Sunrise Opal
   Description: 
   Action: 
   Icon: sp_sunrise_opal_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

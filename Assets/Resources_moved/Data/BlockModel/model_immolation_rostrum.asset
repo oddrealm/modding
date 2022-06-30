@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0375ec74fcc66c9458902e3c3cf729a4, type: 3}
   m_Name: model_immolation_rostrum
   m_EditorClassIdentifier: 
+  Key: model_immolation_rostrum
   ModelIndex: 30
   BlockIndex: 26
   Plants: []
@@ -20,3 +21,4 @@ MonoBehaviour:
   Platform: 
   ContainedEntitySpawnGroup: 
   FishSpawnGroup: 
+  AppearInPaint: 1

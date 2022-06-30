@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_fish_scare
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_fish_scare
   Name: Fish Scare
   InlineIcon: <sprite=386>
+  InlineAndName: <sprite=386> Fish Scare
   Description: How likely fish are to move away from a Entity that is Fishing.
   Action: 
   Icon: 

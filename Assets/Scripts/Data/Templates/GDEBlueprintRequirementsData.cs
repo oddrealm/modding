@@ -9,6 +9,7 @@ public class GDEBlueprintRequirementsData : ScriptableObject
 	public class ItemRequirement
     {
 		public string ID = "";
+		public bool CanUseWithoutDiscovering;
 		public int Count = 1;
 		public ItemCategories Category = ItemCategories.NONE;
 
@@ -24,15 +25,16 @@ public class GDEBlueprintRequirementsData : ScriptableObject
 	public class EntityRequirement
     {
 		public string RaceID = "";
+		public bool CanUseWithoutDiscovering;
 
 		public ConditionTypes StatusConditionType = ConditionTypes.AND;
 		public List<string> Statuses = new List<string>();
+		public List<string> ProhibitedOwnedRooms = new List<string>();
 		public EntityIntelligenceTypes IntelligenceType = EntityIntelligenceTypes.ALL;
-
-		
+		public bool IsCompanion = false;
 	}
 
-	public string Key { get { return name; } }
+	public string Key;
 	[Header("Blocks")]
 	public bool CanStackWithSameJobType = false;
 	public BlockPermissionTypes PermissionType = BlockPermissionTypes.NONE;

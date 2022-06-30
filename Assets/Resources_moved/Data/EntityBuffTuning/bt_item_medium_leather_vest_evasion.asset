@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_item_medium_leather_vest_evasion
   m_EditorClassIdentifier: 
+  Key: bt_item_medium_leather_vest_evasion
   BuffID: buff_attribute_evasion
   Amount: 0
   BaseBuff: -2

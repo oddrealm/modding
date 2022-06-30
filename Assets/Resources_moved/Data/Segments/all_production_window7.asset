@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_production_window7
   m_EditorClassIdentifier: 
+  Key: all_production_window7
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126
@@ -40,9 +41,8 @@ MonoBehaviour:
   PopUpPosition: 2
   ShowBackground: 1
   ShowBackgroundMask: 1
-  BackgroundMaskTarget: threshold_target_btn
+  BackgroundMaskTarget: threshold_type_drop_down
   AnimatedImage: 
-  PopUpTextBody: The Threshold Target is what the Threshold Type (<sprite=1080> Jobs
-    In Room) looks at for comparison. If it's set to <sprite=1182> Harvest Ground
-    Cover jobs, it will count the number of those jobs in the room.
+  PopUpTextBody: You can disable or change how jobs auto-queue from this drop-down
+    menu.
   NextSegment: {fileID: 11400000, guid: fe178413f84ae20439adac745a626d91, type: 2}

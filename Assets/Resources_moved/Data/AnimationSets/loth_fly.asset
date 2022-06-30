@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: loth_fly
   m_EditorClassIdentifier: 
+  Key: loth_fly
   State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
   UpAnimation: {fileID: 11400000, guid: eb269d7fb49e3a148b481528f85d8657, type: 2}
   DownAnimation: {fileID: 11400000, guid: b4c170e8a083c504aa4114a26b30d084, type: 2}

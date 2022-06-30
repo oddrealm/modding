@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_ardyn
   m_EditorClassIdentifier: 
+  Key: race_ardyn
   TooltipID: tooltip_race_ardyn
   MerchantValue: 150
   IntelligenceType: 1
@@ -22,13 +23,17 @@ MonoBehaviour:
   - ardyn_hortichron0
   - ardyn_somnic_pools0
   - basics0
+  - animals0
+  - campfire_cook0
   DefaultEntityID: entity_ardyn
   Diet: diet_ardyn
   Public: 1
   BuffGroupID: 
   Perks:
-  - '<sprite=77> Siphon Life: An inherent ability to steal the life force from other
-    living creatures to keep from aging'
+  - '<sprite=1215> Retroanimate: An inherent ability to steal the life force from
+    other living creatures to keep from aging'
   - '<sprite=57> Unending Fast: Ardyn do not need to eat food or drink beverages'
-  - '<sprite=376> Passing Time: Time affects the Ardyn at a faster rate than normal
+  - '<sprite=1221> Passing Time: Time affects the Ardyn at a faster rate than normal
     creatures'
+  - '<sprite=376> Time Weave: The ability to build and grow objects by manipulating
+    time.'

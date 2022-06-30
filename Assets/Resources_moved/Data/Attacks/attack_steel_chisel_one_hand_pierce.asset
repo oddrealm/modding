@@ -12,22 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
   m_Name: attack_steel_chisel_one_hand_pierce
   m_EditorClassIdentifier: 
+  Key: attack_steel_chisel_one_hand_pierce
   TooltipID: tooltip_attack_steel_chisel_one_hand_pierce
   ShowOnAttacksDisplay: 1
+  ActivationWeight: 100
+  ProjectileType: 0
+  FiringType: 1
+  ActivationType: 2
+  DamageType: 0
+  SkillUsed: 2048
+  AddSkillToOutput: 1
   MinAmount: 17
   MaxAmount: 24
-  TargetAdditive: 0
-  TargetAttribute: 1
-  SourceAdditive: 0
-  SourceAttribute: 0
-  SkillUsed: 2048
   Range: 14
+  SourceAction: 2
+  SourceAttribute: 0
+  TargetAction: 1
+  TargetAttribute: 1
   AnimationTrigger: 2
   AnimationHitEvent: 1
-  FiringType: 1
-  ActivationType: 0
-  ActivationWeight: 100
   OriginFX: []
   HitFX: []
-  DamageType: 0
-  ProjectileType: 0
+  PrimeFX: []
+  AttackStartTargetColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartTargetColorDuration: 0
+  AttackStartTargetColorFlashType: 1
+  AttackStartSourceColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartSourceColorDuration: 0
+  AttackStartSourceColorFlashType: 1

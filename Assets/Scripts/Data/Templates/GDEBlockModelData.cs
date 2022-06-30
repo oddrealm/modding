@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockModel")]
 public class GDEBlockModelData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int ModelIndex = 0;
 	public int BlockIndex = -1;
 	public List<string> Plants = new List<string>();

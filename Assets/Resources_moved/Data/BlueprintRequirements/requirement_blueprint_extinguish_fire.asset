@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_extinguish_fire
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_extinguish_fire
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 512
   BlockTagConditionType: 1
   BlockTags:
@@ -22,9 +22,12 @@ MonoBehaviour:
   WorkPointLocation: 0
   Entities:
   - RaceID: 
+    CanUseWithoutDiscovering: 0
     StatusConditionType: 1
     Statuses: []
+    ProhibitedOwnedRooms: []
     IntelligenceType: 1
+    IsCompanion: 0
   Targets: []
   Rooms:
   - room_region
@@ -35,8 +38,10 @@ MonoBehaviour:
   ItemConditionType: 1
   Items:
   - ID: item_water
+    CanUseWithoutDiscovering: 0
     Count: 1
     Category: 0
   - ID: item_water_purified
+    CanUseWithoutDiscovering: 0
     Count: 1
     Category: 0

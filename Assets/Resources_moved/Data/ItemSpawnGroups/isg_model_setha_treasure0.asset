@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_model_setha_treasure0
   m_EditorClassIdentifier: 
+  Key: isg_model_setha_treasure0
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_ren","count":50,"spawn_rate":500,"randomize_count":true},{"count":10,"spawn_rate":100,"randomize_count":true,"random_id_rarity":0,"max_value":100},{"count":10,"spawn_rate":300,"randomize_count":true,"random_id_rarity":1,"max_value":100},{"count":5,"spawn_rate":200,"randomize_count":true,"random_id_rarity":2,"max_value":100},{"count":1,"spawn_rate":500,"randomize_count":false,"random_id_rarity":3,"max_value":1000}]}'
   Spawns:
   - ItemID: item_ren
     GenerateNameKey: 

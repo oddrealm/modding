@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_water_plant
   m_EditorClassIdentifier: 
+  Key: tooltip_blueprint_water_plant
   Name: Water Plant
   InlineIcon: <sprite=1208>
+  InlineAndName: <sprite=1208> Water Plant
   Description: Keeps planted crops from wilting.
   Action: Watering Plant
   Icon: sp_job_water_plant_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

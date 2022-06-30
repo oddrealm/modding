@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_crit_rate
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_crit_rate
   Name: Critical Hit Rate
   InlineIcon: <sprite=387>
+  InlineAndName: <sprite=387> Critical Hit Rate
   Description: How likely the Entity's outgoing damage will get 2x damage. This is
     calculated for each individual attack.
   Action: 

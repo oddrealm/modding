@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fbbb8b5fa06dce41afc2ca41824448e, type: 3}
   m_Name: room_names_work_shop
   m_EditorClassIdentifier: 
+  Key: room_names_work_shop
   FrontCompounds:
   - The
   - Ye

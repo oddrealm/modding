@@ -12,23 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_loth_loth
   m_EditorClassIdentifier: 
+  Key: entity_loth_loth
   TooltipID: tooltip_entity_loth_loth
   Size: 3
-  PermittedAges: 2
   CompanionType: 0
   CompanionPermanenceType: 0
   ReproductionType: 1
   ReproductionIntervalMinutes: 2880
   ReproductionCount: 1
   TakeLastNameOfCompanion: 0
-  AgeToBecomeAdult: 6000
-  AgeToBecomeElder: 6000
-  RandomElderStatuses:
-  - entity_status_cardiac_arrest
   GenerateNameKey: 
   InherentWorkAttacks: attack_group_hand_skills_fallback
   InherentCombatAttacks: attack_group_loth_loth
   ProhibitedSkillTypes: 33554432
+  DefaultSkillTypes: 0
   ProhibitedProfessionTypes: 8372223
   PermittedRandomProfessions: 8372211
   Race: race_nequhtli
@@ -42,3 +39,11 @@ MonoBehaviour:
   DefaultPickUpBlueprint: blueprint_pick_up_item
   DefaultDropOffBlueprint: blueprint_drop_off_item
   Statuses: []
+  PermittedAges:
+  - Min: 0
+    Max: 99999999
+    CanRespec: 1
+    AgeType: 2
+    Statuses:
+    - entity_status_adult
+    RandomStatuses: []

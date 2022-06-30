@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e092951da863c774d920d0cd6e4dc609, type: 3}
   m_Name: diet_gully
   m_EditorClassIdentifier: 
+  Key: diet_gully
   TooltipID: tooltip_diet_gully
   HarmfulFoods:
   - item_gully_meat_roasted

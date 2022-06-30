@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0ee651054521040a74be8bdd0a48eb, type: 3}
   m_Name: fish_caught
   m_EditorClassIdentifier: 
+  Key: fish_caught
   Transitions:
   - NextState: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
     TrueFlags: 0

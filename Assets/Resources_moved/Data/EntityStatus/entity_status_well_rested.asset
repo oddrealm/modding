@@ -12,13 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_well_rested
   m_EditorClassIdentifier: 
+  Key: entity_status_well_rested
   TooltipID: tooltip_entity_status_well_rested
-  Tag: well_rested
+  HasEntityInfo: 0
   ShowToPlayer: 1
   Indicator: 
   Notification: 
   BuffGroup: buffs_status_well_rested
   OverworldPartyActionGroup: 
-  ExpireTimeMinutes: -1
+  ExpireTimeMinutesMin: 120
+  ExpireTimeMinutesMax: 120
   ActivateIntervals: 0
   ActivateItems: 
+  StatusesToRemove: []
+  StatusesToAddOnExpire: []
+  PermittedGenders: []
+  CooldownMin: 0
+  CooldownMax: 0
+  EntitiesToSpawnOnExpire: 

@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: void_mine
   m_EditorClassIdentifier: 
+  Key: void_mine
   TooltipID: tooltip_tag_void_mine
-  Name: Void Landmine
-  InlineIcon: <sprite=592>

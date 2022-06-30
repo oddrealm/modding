@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_buff_attribute_sight_range
   m_EditorClassIdentifier: 
+  Key: tooltip_buff_attribute_sight_range
   Name: Sight Range Buff
   InlineIcon: <sprite=954>
+  InlineAndName: <sprite=954> Sight Range Buff
   Description: 
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

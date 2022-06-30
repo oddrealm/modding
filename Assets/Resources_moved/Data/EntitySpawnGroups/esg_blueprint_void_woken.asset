@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
   m_Name: esg_blueprint_void_woken
   m_EditorClassIdentifier: 
+  Key: esg_blueprint_void_woken
+  FriendlyName: 'Spawns:'
   Spawns:
   - EntityId: entity_void_woken
     EntityTag: 
@@ -19,7 +21,7 @@ MonoBehaviour:
     EntityGender: random
     EntityCount: 1
     SameRoomAsPlayer: 0
-    EntityFaction: 1
+    EntityFaction: 8
     EntityTuning: 
     SpawnRate: 1000
     AgeType: 2

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_skill_unused6
   m_EditorClassIdentifier: 
+  Key: tooltip_skill_unused6
   Name: Voidwork
   InlineIcon: <sprite=42>
+  InlineAndName: <sprite=42> Voidwork
   Description: 
   Action: 
   Icon: sp_skill_craft_void_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

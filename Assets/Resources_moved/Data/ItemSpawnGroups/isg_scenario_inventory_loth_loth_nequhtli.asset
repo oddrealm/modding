@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_inventory_loth_loth_nequhtli
   m_EditorClassIdentifier: 
+  Key: isg_scenario_inventory_loth_loth_nequhtli
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_wheat_ale","count":2,"spawn_rate":100},{"item_id":"item_sunrise_opal","count":1,"spawn_rate":10},{"item_id":"item_summer_stew","count":1,"spawn_rate":10},{"item_id":"item_spring_stew","count":1,"spawn_rate":10},{"item_id":"item_snoot_meat_raw","count":50,"spawn_rate":1},{"item_id":"item_sheep_meat_raw","count":50,"spawn_rate":1},{"item_id":"item_sand_shrimp_meat_raw","count":1,"spawn_rate":50},{"item_id":"item_ren","count":10,"spawn_rate":10},{"item_id":"item_coconut_brew","count":1,"spawn_rate":10},{"item_id":"item_pumpkin_ale","count":1,"spawn_rate":10},{"item_id":"item_sweet_root_brew","count":1,"spawn_rate":10}]}'
   Spawns:
   - ItemID: item_wheat_ale
     GenerateNameKey: 

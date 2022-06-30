@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: smolkin_fly
   m_EditorClassIdentifier: 
+  Key: smolkin_fly
   State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
   UpAnimation: {fileID: 11400000, guid: 1f302971df445a84c8951f49ea96f70e, type: 2}
   DownAnimation: {fileID: 11400000, guid: 6385556a563c2a64b93274db68cbe5e1, type: 2}

@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: needs_watering
   m_EditorClassIdentifier: 
+  Key: needs_watering
   TooltipID: tooltip_tag_needs_watering
-  Name: Needs Watering
-  InlineIcon: <sprite=1226>

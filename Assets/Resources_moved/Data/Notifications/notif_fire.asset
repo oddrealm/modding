@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_fire
   m_EditorClassIdentifier: 
+  Key: notif_fire
   Index: 16
   Enabled: 0
   NotificationType: 3

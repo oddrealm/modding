@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_sheep
   m_EditorClassIdentifier: 
+  Key: race_sheep
   TooltipID: tooltip_race_sheep
   MerchantValue: 80
   IntelligenceType: 2

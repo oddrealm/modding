@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7db86f420f50c418342177bb967083, type: 3}
   m_Name: biome_tropical_mountain
   m_EditorClassIdentifier: 
+  Key: biome_tropical_mountain
   TooltipID: tooltip_biome_tropical_mountain
   TerrainGeneration:
   - biome_terrain_gen_tropical_sable_bedrock0

@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_entity_died
   m_EditorClassIdentifier: 
+  Key: notif_entity_died
   Index: 1
   Enabled: 1
   NotificationType: 14
   Priority: 1
   FilterType: 4
   Sound: death
-  FactionToShowPipFor: 1
+  FactionToShowPipFor: 9
   DefaultPermitted:
   - race_human
   - race_ancient

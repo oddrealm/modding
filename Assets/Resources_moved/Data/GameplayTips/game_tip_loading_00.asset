@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d36768bf959e942a0b78f315069ddc, type: 3}
   m_Name: game_tip_loading_00
   m_EditorClassIdentifier: 
+  Key: game_tip_loading_00
   DisplayText: Hold {0} to see additional tooltip info.
   HotkeyID: toggle_basic_tooltip_expand

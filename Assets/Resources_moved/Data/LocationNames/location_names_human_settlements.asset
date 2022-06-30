@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
   m_Name: location_names_human_settlements
   m_EditorClassIdentifier: 
+  Key: location_names_human_settlements
   Determiner: []
   Prepends:
   - Alter-

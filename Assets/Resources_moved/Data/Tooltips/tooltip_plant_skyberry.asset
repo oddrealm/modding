@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_skyberry
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_skyberry
   Name: Skyberry (Plant)
   InlineIcon: <sprite=232>
+  InlineAndName: <sprite=232> Skyberry (Plant)
   Description: 
   Action: 
   Icon: sp_skyberry_icon

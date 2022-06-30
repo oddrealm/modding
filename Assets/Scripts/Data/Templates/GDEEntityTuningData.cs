@@ -5,10 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/EntityTuning")]
 public class GDEEntityTuningData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int SightRange = 0;
 	public int MinRandomSkill = 0;
 	public int MaxRandomSkill = 0;
+	public SkillTuning[] SkillBonuses;
 	public string Health = "";
 	public int HealthChange = 0;
 	public string Toughness = "";
@@ -52,4 +53,11 @@ public class GDEEntityTuningData : ScriptableObject
 	public string Appearance = "";
 	public string InventoryGroupID = "";
 	public string EquipmentGroupID = "";
+
+	[System.Serializable]
+	public class SkillTuning
+    {
+		public SkillTypes Skill;
+		public int Amount;
+    }
 }

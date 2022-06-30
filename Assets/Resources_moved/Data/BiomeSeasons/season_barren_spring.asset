@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86ebf3cf42b684cb06c9616041dc72, type: 3}
   m_Name: season_barren_spring
   m_EditorClassIdentifier: 
+  Key: season_barren_spring
   TooltipID: tooltip_season_barren_spring
   SeasonType: 0
   SeasonStart: 0

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_xp
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_xp
   Name: XP
   InlineIcon: <sprite=1002>
+  InlineAndName: <sprite=1002> XP
   Description: XP determines when a Entity levels up. Each subsequent level requires
     more XP. XP is earned when Entities do jobs, fight, and tame animals.
   Action: 

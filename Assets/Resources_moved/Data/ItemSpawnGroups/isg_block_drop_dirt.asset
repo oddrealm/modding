@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_block_drop_dirt
   m_EditorClassIdentifier: 
+  Key: isg_block_drop_dirt
   FriendlyName: 'Mine yield:'
-  Data: '{"items":[{"item_id":"item_dirt_clod","count":2,"spawn_rate":1000},{"item_id":"item_dirt_clod","count":1,"spawn_rate":200},{"item_id":"item_stone_chunk","count":1,"spawn_rate":100}]}'
   Spawns:
   - ItemID: item_dirt_clod
     GenerateNameKey: 

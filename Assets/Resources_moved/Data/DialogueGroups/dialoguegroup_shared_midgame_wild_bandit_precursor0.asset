@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_shared_midgame_wild_bandit_precursor0
   m_EditorClassIdentifier: 
+  Key: dialoguegroup_shared_midgame_wild_bandit_precursor0
   DialogueIDs:
   - dialogue_shared_midgame_wild_bandit0_precursor0_d0

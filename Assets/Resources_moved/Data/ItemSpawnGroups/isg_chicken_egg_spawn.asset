@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_chicken_egg_spawn
   m_EditorClassIdentifier: 
+  Key: isg_chicken_egg_spawn
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_egg_raw","count":2,"spawn_rate":1000}, {"item_id":"item_egg_raw","count":1,"spawn_rate":250}]}'
   Spawns:
   - ItemID: item_egg_raw
     GenerateNameKey: 

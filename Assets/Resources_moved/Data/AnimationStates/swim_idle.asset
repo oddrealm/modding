@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0ee651054521040a74be8bdd0a48eb, type: 3}
   m_Name: swim_idle
   m_EditorClassIdentifier: 
+  Key: swim_idle
   Transitions:
   - NextState: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
     TrueFlags: 0
@@ -20,6 +21,56 @@ MonoBehaviour:
     IsComplete: 0
   - NextState: {fileID: 11400000, guid: 95dd57af025d802449a75f9832bf4bd4, type: 2}
     TrueFlags: 2
+    FalseFlags: 0
+    Triggers: 0
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: 1f0961e45dbbb8e47b80903da40a2533, type: 2}
+    TrueFlags: 0
+    FalseFlags: 0
+    Triggers: 1
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: f24030c166ac23941a71d46becc88fa6, type: 2}
+    TrueFlags: 0
+    FalseFlags: 0
+    Triggers: 2
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: 626021479c17f12419b698d7491673b1, type: 2}
+    TrueFlags: 0
+    FalseFlags: 0
+    Triggers: 4
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: 73df296c004647f4a8a0bd393365cce9, type: 2}
+    TrueFlags: 0
+    FalseFlags: 0
+    Triggers: 8
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: e5b61f9b622e9ee47a2605b950cc37d7, type: 2}
+    TrueFlags: 0
+    FalseFlags: 0
+    Triggers: 16
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: 75374486d7da1134ea18a8e6edacf70d, type: 2}
+    TrueFlags: 0
+    FalseFlags: 0
+    Triggers: 32
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
+    TrueFlags: 0
+    FalseFlags: 0
+    Triggers: 64
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: addb0449603f8fe4e8447b395983126b, type: 2}
+    TrueFlags: 0
+    FalseFlags: 0
+    Triggers: 128
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
+    TrueFlags: 256
+    FalseFlags: 0
+    Triggers: 0
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
+    TrueFlags: 128
     FalseFlags: 0
     Triggers: 0
     IsComplete: 0

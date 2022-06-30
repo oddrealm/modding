@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5fb1d1b07810e4ca30537b1d718d1f, type: 3}
   m_Name: weather_taiga_spring_wind
   m_EditorClassIdentifier: 
+  Key: weather_taiga_spring_wind
   TooltipID: tooltip_weather_taiga_spring_wind
   UIDisplayAnimKey: windy
   FlammabilityMod: 1

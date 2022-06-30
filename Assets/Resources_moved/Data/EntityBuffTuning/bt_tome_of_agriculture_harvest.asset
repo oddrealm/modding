@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_tome_of_agriculture_harvest
   m_EditorClassIdentifier: 
+  Key: bt_tome_of_agriculture_harvest
   BuffID: buff_skill_harvest
   Amount: 0
   BaseBuff: 2

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_cloth_pants
   m_EditorClassIdentifier: 
+  Key: item_cloth_pants
   Index: 79
   TooltipID: tooltip_item_cloth_pants
   Visuals: visuals_item_cloth_pants
@@ -21,6 +22,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Tags: []
   Category: 128
+  Permissions: 0
   Inventory: inventory_legs
   Buffs: buffs_item_cloth_pants
   AttackGroup: 
@@ -39,3 +41,4 @@ MonoBehaviour:
   LightStrength: 0
   LightSize: 0
   StackSize: 1
+  JobOutputMod: 1

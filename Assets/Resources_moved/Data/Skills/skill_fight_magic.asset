@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701e5e6cf84de544cb78430a61b6eb34, type: 3}
   m_Name: skill_fight_magic
   m_EditorClassIdentifier: 
+  Key: skill_fight_magic
   ResearchKey: 
   LevelUpScenario: scenario_level_up_tome_of_arcana0
   TooltipID: tooltip_skill_fight_magic
   VisibleToPlayer: 1
-  Priority: 5
+  Priority: 4
   Index: 13
   XPMod: 20
   EnergyCost: 10

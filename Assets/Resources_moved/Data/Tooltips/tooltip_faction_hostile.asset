@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_faction_hostile
   m_EditorClassIdentifier: 
+  Key: tooltip_faction_hostile
   Name: Hostile
   InlineIcon: <sprite=300>
+  InlineAndName: <sprite=300> Hostile
   Description: Will attack on sight
   Action: 
   Icon: 

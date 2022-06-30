@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_item_wool_cloth
   m_EditorClassIdentifier: 
+  Key: isg_item_wool_cloth
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_wool_cloth","count":1,"spawn_rate":1000}]}'
   Spawns:
   - ItemID: item_wool_cloth
     GenerateNameKey: 

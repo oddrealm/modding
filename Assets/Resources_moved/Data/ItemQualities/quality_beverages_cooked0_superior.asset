@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8769b5322a978824daacc474a8d3df3d, type: 3}
   m_Name: quality_beverages_cooked0_superior
   m_EditorClassIdentifier: 
+  Key: quality_beverages_cooked0_superior
   Group: beverages_cooked0
   FriendlyName: Delicious
   Quality: 5

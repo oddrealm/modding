@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_entity_starving
   m_EditorClassIdentifier: 
+  Key: notif_entity_starving
   Index: 7
   Enabled: 0
   NotificationType: 1
   Priority: 7
   FilterType: 4
   Sound: bad
-  FactionToShowPipFor: 1
+  FactionToShowPipFor: 9
   DefaultPermitted: []
   InlineIcon: <sprite=56>
   ShowInSettings: 0

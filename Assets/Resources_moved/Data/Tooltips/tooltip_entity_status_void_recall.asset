@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_void_recall
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_void_recall
   Name: Void Recall (Status)
   InlineIcon: <sprite=562>
+  InlineAndName: <sprite=562> Void Recall (Status)
   Description: When Void Woken run out of energy, the void will begin pulling them
     back.
   Action: 

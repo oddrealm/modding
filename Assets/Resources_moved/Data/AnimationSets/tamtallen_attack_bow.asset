@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: tamtallen_attack_bow
   m_EditorClassIdentifier: 
+  Key: tamtallen_attack_bow
   State: {fileID: 11400000, guid: 73df296c004647f4a8a0bd393365cce9, type: 2}
   UpAnimation: {fileID: 11400000, guid: 7a8ad5494ee3ce6489cee784d7729de6, type: 2}
   DownAnimation: {fileID: 11400000, guid: 4bdcd2d5a6981f143ba98706657e5143, type: 2}

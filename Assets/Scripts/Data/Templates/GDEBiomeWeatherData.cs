@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BiomeWeather")]
 public class GDEBiomeWeatherData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public string UIDisplayAnimKey = "";
 	public float FlammabilityMod = 0.0f;

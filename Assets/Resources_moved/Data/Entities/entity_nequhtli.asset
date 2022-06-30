@@ -12,19 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_nequhtli
   m_EditorClassIdentifier: 
+  Key: entity_nequhtli
   TooltipID: tooltip_entity_nequhtli
   Size: 3
-  PermittedAges: 2
   CompanionType: 1
   CompanionPermanenceType: 3
   ReproductionType: 1
   ReproductionIntervalMinutes: 2880
   ReproductionCount: 3
   TakeLastNameOfCompanion: 0
-  AgeToBecomeAdult: 16
-  AgeToBecomeElder: 40
-  RandomElderStatuses:
-  - entity_status_cardiac_arrest
   GenerateNameKey: entity_names_nequhtli
   InherentWorkAttacks: attack_group_hand_skills_fallback
   InherentCombatAttacks: attack_group_nequhtli
@@ -43,3 +39,28 @@ MonoBehaviour:
   DefaultPickUpBlueprint: blueprint_pick_up_item
   DefaultDropOffBlueprint: blueprint_drop_off_item
   Statuses: []
+  PermittedAges:
+  - Min: 0
+    Max: 3
+    CanRespec: 0
+    AgeType: 1
+    Statuses:
+    - entity_status_child
+    RandomStatuses: []
+  - Min: 4
+    Max: 25
+    CanRespec: 1
+    AgeType: 2
+    Statuses:
+    - entity_status_adult
+    RandomStatuses: []
+  - Min: 26
+    Max: 44
+    CanRespec: 1
+    AgeType: 4
+    Statuses:
+    - entity_status_elder
+    RandomStatuses:
+    - Chances: 10
+      StatusID: entity_status_cardiac_arrest
+      AddAgeToChances: 1

@@ -12,13 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_warmed
   m_EditorClassIdentifier: 
+  Key: entity_status_warmed
   TooltipID: tooltip_entity_status_warmed
-  Tag: warmed
+  HasEntityInfo: 0
   ShowToPlayer: 1
   Indicator: 
   Notification: 
   BuffGroup: buffs_status_warmed
   OverworldPartyActionGroup: 
-  ExpireTimeMinutes: 120
+  ExpireTimeMinutesMin: 120
+  ExpireTimeMinutesMax: 120
   ActivateIntervals: 0
   ActivateItems: 
+  StatusesToRemove: []
+  StatusesToAddOnExpire: []
+  PermittedGenders: []
+  CooldownMin: 0
+  CooldownMax: 0
+  EntitiesToSpawnOnExpire: 

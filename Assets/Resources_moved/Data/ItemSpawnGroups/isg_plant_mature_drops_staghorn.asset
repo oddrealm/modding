@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_plant_mature_drops_staghorn
   m_EditorClassIdentifier: 
+  Key: isg_plant_mature_drops_staghorn
   FriendlyName: 'Harvest yield:'
-  Data: '{"items":[{"item_id":"item_staghorn_seed","count":1,"spawn_rate":100},{"item_id":"item_staghorn_seed","count":1,"spawn_rate":1000}]}'
   Spawns:
   - ItemID: item_staghorn_seed
     GenerateNameKey: 

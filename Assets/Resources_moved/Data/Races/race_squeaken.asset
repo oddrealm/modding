@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_squeaken
   m_EditorClassIdentifier: 
+  Key: race_squeaken
   TooltipID: tooltip_race_squeaken
   MerchantValue: 50
   IntelligenceType: 2

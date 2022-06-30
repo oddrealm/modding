@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e092951da863c774d920d0cd6e4dc609, type: 3}
   m_Name: diet_rat
   m_EditorClassIdentifier: 
+  Key: diet_rat
   TooltipID: tooltip_diet_rat
   HarmfulFoods:
   - item_rat_meat_roasted

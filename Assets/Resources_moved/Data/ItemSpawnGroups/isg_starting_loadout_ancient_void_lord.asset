@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_starting_loadout_ancient_void_lord
   m_EditorClassIdentifier: 
+  Key: isg_starting_loadout_ancient_void_lord
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_ren","count":200,"spawn_rate":1000},{"item_id":"item_void_shard","count":20,"spawn_rate":1000},{"item_id":"item_void_crystal","count":1,"spawn_rate":1000},{"item_id":"item_arcane_dust","count":5,"spawn_rate":1000},{"item_id":"item_tome_of_arcana","count":5,"spawn_rate":1000}]}'
   Spawns:
   - ItemID: item_ren
     GenerateNameKey: 

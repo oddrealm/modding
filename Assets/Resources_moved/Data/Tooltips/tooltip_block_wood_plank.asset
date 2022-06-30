@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_block_wood_plank
   m_EditorClassIdentifier: 
+  Key: tooltip_block_wood_plank
   Name: Wood Plank Wall
   InlineIcon: <sprite=1168>
+  InlineAndName: <sprite=1168> Wood Plank Wall
   Description: 
   Action: 
   Icon: sp_block_wood_plank_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_scenario_tomb_ancients_early0
   m_EditorClassIdentifier: 
+  Key: dialoguegroup_scenario_tomb_ancients_early0
   DialogueIDs:
   - dialogue_shared_discovery_tomb_easy0_person0_d0_0
   - dialogue_shared_discovery_tomb_easy0_person0_d1_0

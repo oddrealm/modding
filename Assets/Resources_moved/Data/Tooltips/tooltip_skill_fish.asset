@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_skill_fish
   m_EditorClassIdentifier: 
+  Key: tooltip_skill_fish
   Name: Fishing Skill
   InlineIcon: <sprite=58>
+  InlineAndName: <sprite=58> Fishing Skill
   Description: Used to catch fish at open bodies of water.
   Action: Fishing
   Icon: sp_skill_fish_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

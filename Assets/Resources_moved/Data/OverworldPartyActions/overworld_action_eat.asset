@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb7b169ce826814da1c0479e771d2ac, type: 3}
   m_Name: overworld_action_eat
   m_EditorClassIdentifier: 
+  Key: overworld_action_eat
   Chances: 1000
   TooltipID: tooltip_oag_eat
   ActivationType: 2

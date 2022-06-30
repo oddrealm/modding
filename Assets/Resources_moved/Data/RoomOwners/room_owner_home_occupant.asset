@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eb3dca774a8382469e308aa5057244d, type: 3}
   m_Name: room_owner_home_occupant
   m_EditorClassIdentifier: 
+  Key: room_owner_home_occupant
   TooltipID: tooltip_room_owner_occupants
   LimitToUnique: 1
   LimitByFamily: 1
+  LimitToRoom: 0
+  AutoPopType: -1
   MaxOwners: 9
   PermittedSapientTypes: 1
-  DefaultRaces:
-  - race_human
+  DefaultRaces: []
   DefaultSkills: []
   DefaultProfessions: []
+  DefaultFactions:
+  - faction_player

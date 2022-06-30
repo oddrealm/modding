@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_ancient_settler_unworthy0
   m_EditorClassIdentifier: 
+  Key: dialoguegroup_ancient_settler_unworthy0
   DialogueIDs:
   - dialogue_ancients_settler_unworthy_unworthy0_d0_0

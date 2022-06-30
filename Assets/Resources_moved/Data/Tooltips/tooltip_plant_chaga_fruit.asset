@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_chaga_fruit
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_chaga_fruit
   Name: Chaga Fruit (Plant)
   InlineIcon: <sprite=233>
+  InlineAndName: <sprite=233> Chaga Fruit (Plant)
   Description: 
   Action: 
   Icon: sp_chaga_fruit_icon

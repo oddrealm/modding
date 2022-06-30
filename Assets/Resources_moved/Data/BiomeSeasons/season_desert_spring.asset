@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86ebf3cf42b684cb06c9616041dc72, type: 3}
   m_Name: season_desert_spring
   m_EditorClassIdentifier: 
+  Key: season_desert_spring
   TooltipID: tooltip_season_desert_spring
   SeasonType: 0
   SeasonStart: 0

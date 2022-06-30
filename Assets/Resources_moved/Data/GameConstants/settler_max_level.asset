@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399dc60255f0e8e468ee5c704f7cb8d7, type: 3}
   m_Name: settler_max_level
   m_EditorClassIdentifier: 
+  Key: settler_max_level
   StringValue: 
   IntValue: 99
   FloatValue: 0

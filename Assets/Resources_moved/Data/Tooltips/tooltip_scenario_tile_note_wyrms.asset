@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_scenario_tile_note_wyrms
   m_EditorClassIdentifier: 
+  Key: tooltip_scenario_tile_note_wyrms
   Name: Wyrms Sighted!
   InlineIcon: <sprite=1151>
+  InlineAndName: <sprite=1151> Wyrms Sighted!
   Description: Tears in the earth indicate this region is Wyrm territory. Subterranean
     exploration is discouraged.
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

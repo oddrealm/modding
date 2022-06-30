@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: ancients_immortality_tomb0
   m_EditorClassIdentifier: 
+  Key: ancients_immortality_tomb0
   TutorialType: 2
   SelectTarget: 1
   InputsToLock: 126

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_somnic_pools
   m_EditorClassIdentifier: 
+  Key: room_somnic_pools
   ActivationType: 1
   CanEditOwnersAndStockpiles: 1
   Enabled: 1
@@ -21,8 +22,8 @@ MonoBehaviour:
   - room_owner_somnic_pools_occupant
   - room_owner_somnic_pools_captured
   DefaultAutoJobBlueprints:
-  - blueprint_animatrophic_meditation
   - blueprint_retroanimate
+  - blueprint_retroanimate_astrasome
   InterfaceInfo: interface_info_room_somnic_pools
   TooltipID: tooltip_room_somnic_pools
   Visuals:

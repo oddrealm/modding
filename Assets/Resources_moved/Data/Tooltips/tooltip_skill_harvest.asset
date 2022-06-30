@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_skill_harvest
   m_EditorClassIdentifier: 
+  Key: tooltip_skill_harvest
   Name: Harvesting Skill
   InlineIcon: <sprite=8>
+  InlineAndName: <sprite=8> Harvesting Skill
   Description: Used to collect food, seeds, and resources from plants. Only mature
     plants will drop food.
   Action: Harvesting
   Icon: sp_skill_harvest_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

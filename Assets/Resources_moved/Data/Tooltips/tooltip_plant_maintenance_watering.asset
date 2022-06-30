@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_maintenance_watering
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_maintenance_watering
   Name: Needs Watering
   InlineIcon: <sprite=1208>
+  InlineAndName: <sprite=1208> Needs Watering
   Description: A Farmer will need to give water to this plant or it will soon start
     to die.
   Action: 

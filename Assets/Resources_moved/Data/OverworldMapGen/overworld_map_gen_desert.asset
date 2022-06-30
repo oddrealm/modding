@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2306836ee8b4298459405f228e2dabb0, type: 3}
   m_Name: overworld_map_gen_desert
   m_EditorClassIdentifier: 
+  Key: overworld_map_gen_desert
   BuildPriority: 3
   SeedOffset: 0
   Frequency: 3

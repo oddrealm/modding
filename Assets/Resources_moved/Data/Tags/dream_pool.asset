@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: dream_pool
   m_EditorClassIdentifier: 
+  Key: dream_pool
   TooltipID: tooltip_tag_dream_pool
-  Name: Dream Pool
-  InlineIcon: <sprite=1213>

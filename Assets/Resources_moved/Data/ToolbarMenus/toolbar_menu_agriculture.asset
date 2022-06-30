@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ac1c6d5b00c5243a09b3c978f5097b, type: 3}
   m_Name: toolbar_menu_agriculture
   m_EditorClassIdentifier: 
+  Key: toolbar_menu_agriculture
   TooltipID: tooltip_toolbar_menu_agriculture
   TabOrder: 2
   ToggleType: 1

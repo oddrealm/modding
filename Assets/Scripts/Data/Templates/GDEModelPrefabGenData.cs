@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/ModelPrefabGen")]
 public class GDEModelPrefabGenData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public bool GenerateCorridors = false;
 	public int PlacementType = 0;
 	public int ModelRequirement = 0;

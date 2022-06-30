@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
   m_Name: scenario_human_proximity_saboteur0
   m_EditorClassIdentifier: 
+  Key: scenario_human_proximity_saboteur0
   Index: 45
   ActivationType: 0
   IsThreat: 0

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_item_food_raw0_hunger
   m_EditorClassIdentifier: 
+  Key: bt_item_food_raw0_hunger
   BuffID: buff_attribute_hunger
   Amount: 5000
   BaseBuff: 0

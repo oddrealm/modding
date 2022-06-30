@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cb679d16102814ebd643fd5fb2d2a3, type: 3}
   m_Name: attribute_level
   m_EditorClassIdentifier: 
+  Key: attribute_level
   TooltipID: tooltip_attribute_level
   DisplayOrder: 2
   StartMin: 1
   StartDefault: 1
-  StartMax: 999999
+  StartMax: 99
   ShowPositiveAndNegativeSign: 0
   Append: 
   SmallDisplayType: 1

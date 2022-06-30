@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_void_crystal_node
   m_EditorClassIdentifier: 
+  Key: tooltip_tag_void_crystal_node
   Name: Void Crystal Node
   InlineIcon: <sprite=1089>
+  InlineAndName: <sprite=1089> Void Crystal Node
   Description: 
   Action: 
   Icon: 

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_resource_find_mod
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_resource_find_mod
   Name: Resource Find Mod
   InlineIcon: <sprite=396>
+  InlineAndName: <sprite=396> Resource Find Mod
   Description: How much additional resources will be found for job's that produce
     resources.
   Action: 

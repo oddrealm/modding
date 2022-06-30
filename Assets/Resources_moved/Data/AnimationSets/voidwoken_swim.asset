@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: voidwoken_swim
   m_EditorClassIdentifier: 
+  Key: voidwoken_swim
   State: {fileID: 11400000, guid: 95dd57af025d802449a75f9832bf4bd4, type: 2}
   UpAnimation: {fileID: 11400000, guid: 1f36e111c4734a342a82199d2e9d0569, type: 2}
   DownAnimation: {fileID: 11400000, guid: c28a098403ac5b341ab71ab0f3d3cff1, type: 2}

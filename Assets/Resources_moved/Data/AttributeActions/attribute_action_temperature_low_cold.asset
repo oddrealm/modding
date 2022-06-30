@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f6ac6f3cbc87b4bb35c34479d7c6ff, type: 3}
   m_Name: attribute_action_temperature_low_cold
   m_EditorClassIdentifier: 
+  Key: attribute_action_temperature_low_cold
   FriendlyName: Low Temperature
   ConditionEvent: 0
   Condition: $attribute_energy[amount]<=20

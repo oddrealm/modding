@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_warm_up
   m_EditorClassIdentifier: 
+  Key: tooltip_blueprint_warm_up
   Name: Warm Up
   InlineIcon: <sprite=845>
+  InlineAndName: <sprite=845> Warm Up
   Description: 
   Action: Warming Up
   Icon: sp_job_warm_up_icon

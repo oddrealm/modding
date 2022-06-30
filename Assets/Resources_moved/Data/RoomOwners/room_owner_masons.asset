@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eb3dca774a8382469e308aa5057244d, type: 3}
   m_Name: room_owner_masons
   m_EditorClassIdentifier: 
+  Key: room_owner_masons
   TooltipID: tooltip_room_owner_masons
   LimitToUnique: 0
   LimitByFamily: 0
@@ -21,3 +22,5 @@ MonoBehaviour:
   DefaultSkills:
   - skill_craft_stone
   DefaultProfessions: []
+  DefaultFactions:
+  - faction_player

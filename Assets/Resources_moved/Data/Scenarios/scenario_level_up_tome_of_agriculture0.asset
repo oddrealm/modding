@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
   m_Name: scenario_level_up_tome_of_agriculture0
   m_EditorClassIdentifier: 
+  Key: scenario_level_up_tome_of_agriculture0
   Index: 28
   ActivationType: 0
   IsThreat: 0
@@ -37,6 +38,7 @@ MonoBehaviour:
   PermittedRaces:
   - race_ancient
   - race_human
+  - race_ardyn
   PermittedSeasons: []
   NotificationOnActivate: notif_scenario_activated_default
   Components: '{"activate_actions":{"spawn_items":{"spawn_tag":"init_entities","group_id":"isg_scenario_level_up_tome_of_agriculture0"}}}'

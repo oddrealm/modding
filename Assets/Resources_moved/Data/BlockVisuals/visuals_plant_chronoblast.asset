@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_plant_chronoblast
   m_EditorClassIdentifier: 
+  Key: visuals_plant_chronoblast
   ReceiveSkylightColor: 0
   OnlyRenderIfVisible: 1
   RotationType: 0
@@ -40,7 +41,6 @@ MonoBehaviour:
   TailVariants: 0
   ShowTailVariant: 0
   ShowAnims: 1
-  AnimFrames: 64
   TemperatureStrength: 0
   TemperatureHorizontalPass: 1
   TemperatureDownPass: 1

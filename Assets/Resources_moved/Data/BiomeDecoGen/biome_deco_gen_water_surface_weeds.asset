@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf819511111956749aabbe0cde6628e2, type: 3}
   m_Name: biome_deco_gen_water_surface_weeds
   m_EditorClassIdentifier: 
+  Key: biome_deco_gen_water_surface_weeds
   SpawnType: 0
   ModelRequirement: 1
   ModelsToSet: 

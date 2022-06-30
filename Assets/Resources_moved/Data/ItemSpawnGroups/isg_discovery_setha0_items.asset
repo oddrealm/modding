@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_discovery_setha0_items
   m_EditorClassIdentifier: 
+  Key: isg_discovery_setha0_items
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_iron_flail_one_hand","count":1,"spawn_rate":5},{"item_id":"item_iron_kite_shield_one_hand","count":1,"spawn_rate":10},{"item_id":"item_iron_dagger_one_hand","count":1,"spawn_rate":10},{"item_id":"item_iron_mace_one_hand","count":1,"spawn_rate":5},{"item_id":"item_iron_sword_one_hand","count":1,"spawn_rate":10},{"item_id":"item_iron_sword_two_hand","count":1,"spawn_rate":5}]}'
   Spawns:
   - ItemID: item_iron_flail_one_hand
     GenerateNameKey: 

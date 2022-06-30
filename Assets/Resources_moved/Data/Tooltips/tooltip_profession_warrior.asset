@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_warrior
   m_EditorClassIdentifier: 
+  Key: tooltip_profession_warrior
   Name: Warrior
   InlineIcon: <sprite=46>
+  InlineAndName: <sprite=46> Warrior
   Description: Warriors specialize in using Melee Fighting in combat.
   Action: 
   Icon: sp_profession_warrior_icon
   Formatting: 
+  TextColor: {r: 0.5297836, g: 0.4267978, b: 0.6509434, a: 1}

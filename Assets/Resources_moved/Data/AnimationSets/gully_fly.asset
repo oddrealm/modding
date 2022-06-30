@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: gully_fly
   m_EditorClassIdentifier: 
+  Key: gully_fly
   State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
   UpAnimation: {fileID: 11400000, guid: 23cb44bf43cbeaa42a1215e48f2339dd, type: 2}
   DownAnimation: {fileID: 11400000, guid: f148b4040ecc9b743ae2b4a39436d26f, type: 2}

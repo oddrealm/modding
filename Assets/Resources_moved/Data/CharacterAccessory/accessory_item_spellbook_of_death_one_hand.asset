@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0213a4de9e4e74d41b330785bb4c7fff, type: 3}
   m_Name: accessory_item_spellbook_of_death_one_hand
   m_EditorClassIdentifier: 
+  Key: accessory_item_spellbook_of_death_one_hand
   Priority: 3
   TexX: 64
   TexY: 206
-  ColorA: {r: 0.39607844, g: 0.3529412, b: 0.50980395, a: 1}
+  ColorA: {r: 0.3598256, g: 0.21003917, b: 0.754717, a: 1}
   ColorB: {r: 0.89411765, g: 0.8235294, b: 0.8156863, a: 1}
   ColorC: {r: 1, g: 0, b: 0.8980393, a: 0}
   ColorMaskA: {r: 1, g: 0, b: 0, a: 1}

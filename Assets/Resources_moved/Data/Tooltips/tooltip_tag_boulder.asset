@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_boulder
   m_EditorClassIdentifier: 
+  Key: tooltip_tag_boulder
   Name: Boulder
   InlineIcon: <sprite=626>
+  InlineAndName: <sprite=626> Boulder
   Description: 
   Action: 
   Icon: 

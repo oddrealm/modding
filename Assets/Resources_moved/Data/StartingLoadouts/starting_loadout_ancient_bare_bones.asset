@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73b2bfdc033e354fa9a09aeafd5628c, type: 3}
   m_Name: starting_loadout_ancient_bare_bones
   m_EditorClassIdentifier: 
+  Key: starting_loadout_ancient_bare_bones
   TooltipID: tooltip_starting_loadout_ancient_bare_bones
   Public: 1
   EntitySpawnGroupID: esg_starting_loadout_ancient_bare_bones
   Items: isg_starting_loadout_ancient_bare_bones
+  ContainerModels: 7201000078010000

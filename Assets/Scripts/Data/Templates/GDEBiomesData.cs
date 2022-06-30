@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Biomes")]
 public class GDEBiomesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public List<string> TerrainGeneration = new List<string>();
 	public List<string> ModelPrefabGen = new List<string>();

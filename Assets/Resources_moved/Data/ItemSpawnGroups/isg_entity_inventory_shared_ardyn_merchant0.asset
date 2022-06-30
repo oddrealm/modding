@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_entity_inventory_shared_ardyn_merchant0
   m_EditorClassIdentifier: 
+  Key: isg_entity_inventory_shared_ardyn_merchant0
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_bronze_cap_mushroom_seed","count":20,"spawn_rate":300},{"item_id":"item_boletus_mushroom_seed","count":20,"spawn_rate":300},{"item_id":"item_blood_crown_mushroom_seed","count":20,"spawn_rate":300},{"item_id":"item_bronze_cap_mushroom_raw","count":10,"spawn_rate":300},{"item_id":"item_boletus_mushroom_raw","count":10,"spawn_rate":300},{"item_id":"item_blood_crown_mushroom_raw","count":10,"spawn_rate":300}]}'
   Spawns:
   - ItemID: item_bronze_cap_mushroom_seed
     GenerateNameKey: 

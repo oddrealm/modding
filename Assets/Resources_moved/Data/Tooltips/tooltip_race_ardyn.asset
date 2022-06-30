@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_race_ardyn
   m_EditorClassIdentifier: 
+  Key: tooltip_race_ardyn
   Name: Ardyn
   InlineIcon: <sprite=241>
+  InlineAndName: <sprite=241> Ardyn
   Description: The Ardyn are a feared and mistrusted race. Their rapid aging combined
     the inherent ability to siphon the life-force from other entities has produced
     a culture intent on the dominance and subjugation of others. Their profound understanding
@@ -23,3 +25,4 @@ MonoBehaviour:
   Action: 
   Icon: sp_race_ardyn
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

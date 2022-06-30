@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2128b3e75d012c408474b227cec67d5, type: 3}
   m_Name: biome_lode_gen_tin_ore
   m_EditorClassIdentifier: 
+  Key: biome_lode_gen_tin_ore
   ModelIndex: 201
   NoiseThreshold: 0.5
   NoiseFrequency: 0.04

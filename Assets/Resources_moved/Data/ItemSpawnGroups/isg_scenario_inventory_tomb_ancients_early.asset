@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_inventory_tomb_ancients_early
   m_EditorClassIdentifier: 
+  Key: isg_scenario_inventory_tomb_ancients_early
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_ren","count":5,"spawn_rate":100},{"item_id":"item_copper_ore","count":1,"spawn_rate":100},{"item_id":"item_coal","count":1,"spawn_rate":100}]}'
   Spawns:
   - ItemID: item_ren
     GenerateNameKey: 

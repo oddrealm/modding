@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_iron_door
   m_EditorClassIdentifier: 
+  Key: tooltip_prop_iron_door
   Name: Iron Door
   InlineIcon: <sprite=438>
+  InlineAndName: <sprite=438> Iron Door
   Description: 
   Action: 
   Icon: sp_iron_door_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_prison_cell
   m_EditorClassIdentifier: 
+  Key: room_prison_cell
   ActivationType: 1
-  Enabled: 0
+  CanEditOwnersAndStockpiles: 1
+  Enabled: 1
   Stockpile: room_stockpiles_empty
   ResearchKey: prison_cell0
   Owners:
+  - room_owner_guards
   - room_owner_prisoners
-  RequiredBlockTags: []
   DefaultAutoJobBlueprints: []
   InterfaceInfo: interface_info_room_prison_cell
   TooltipID: tooltip_room_prison_cell

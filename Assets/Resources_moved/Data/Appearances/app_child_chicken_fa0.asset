@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_child_chicken_fa0
   m_EditorClassIdentifier: 
+  Key: app_child_chicken_fa0
   Gender: female
   Race: race_chicken
   Group: race_chicken_female
+  Iteration: 0
   AppearanceType: 1
   AgeType: 1
   ShadowType: 2
-  Portrait: sp_adult_chicken_fa0
+  Portrait: sp_child_chicken_fa0
   HealthBarOffset: 0
   StealthSightingDialogueGroup: 
   IdleFX: []

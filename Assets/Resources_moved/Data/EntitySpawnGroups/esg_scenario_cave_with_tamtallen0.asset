@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
   m_Name: esg_scenario_cave_with_tamtallen0
   m_EditorClassIdentifier: 
-  Data: '{"entities":[{"entity_tag":"","entity_id":"entity_tamtallen,"entity_profession":"profession_none","entity_gender":"random","entity_count":3,"spawn_rate":900,"entity_faction":4}]}'
+  Key: esg_scenario_cave_with_tamtallen0
+  FriendlyName: 'Spawns:'
+  Spawns: []

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_zone_seeds
   m_EditorClassIdentifier: 
+  Key: tooltip_zone_seeds
   Name: Seeds
   InlineIcon: <sprite=132>
+  InlineAndName: <sprite=132> Seeds
   Description: Seeds for crops and trees are stored here.
   Action: 
   Icon: sp_zone_seeds_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

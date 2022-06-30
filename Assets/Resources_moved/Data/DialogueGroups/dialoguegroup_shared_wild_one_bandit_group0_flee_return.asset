@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_shared_wild_one_bandit_group0_flee_return
   m_EditorClassIdentifier: 
+  Key: dialoguegroup_shared_wild_one_bandit_group0_flee_return
   DialogueIDs:
   - dialogue_shared_wild_one_bandit_group0_flee_return0_d0

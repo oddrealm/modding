@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_resource_find_rate
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_resource_find_rate
   Name: Resource Find Rate
   InlineIcon: <sprite=397>
+  InlineAndName: <sprite=397> Resource Find Rate
   Description: How likely a Entity is to find additional resources for job's that
     produce resources.
   Action: 

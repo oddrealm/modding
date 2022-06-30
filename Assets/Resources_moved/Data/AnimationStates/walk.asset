@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0ee651054521040a74be8bdd0a48eb, type: 3}
   m_Name: walk
   m_EditorClassIdentifier: 
+  Key: walk
   Transitions:
   - NextState: {fileID: 11400000, guid: 1e6a859c913a2d940b7db7c995938744, type: 2}
     TrueFlags: 2

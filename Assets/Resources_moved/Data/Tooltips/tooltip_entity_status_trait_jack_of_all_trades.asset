@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_trait_jack_of_all_trades
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_trait_jack_of_all_trades
   Name: 'Trait: Jack of all Trades (Status)'
   InlineIcon: <sprite=1066>
+  InlineAndName: '<sprite=1066> Trait: Jack of all Trades (Status)'
   Description: Ugh. One of those. Can't you be bad at everything like the rest of
     us???
   Action: 

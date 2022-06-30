@@ -12,22 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
   m_Name: attack_void_woken_direct_void_recall
   m_EditorClassIdentifier: 
+  Key: attack_void_woken_direct_void_recall
   TooltipID: tooltip_attack_void_woken_direct_void_recall
   ShowOnAttacksDisplay: 1
+  ActivationWeight: 100
+  ProjectileType: 0
+  FiringType: 0
+  ActivationType: 2
+  DamageType: 0
+  SkillUsed: 0
+  AddSkillToOutput: 1
   MinAmount: 1000
   MaxAmount: 1005
-  TargetAdditive: 0
-  TargetAttribute: 1
-  SourceAdditive: 0
-  SourceAttribute: 0
-  SkillUsed: 0
   Range: 14
+  SourceAction: 2
+  SourceAttribute: 0
+  TargetAction: 1
+  TargetAttribute: 1
   AnimationTrigger: 0
   AnimationHitEvent: 1
-  FiringType: 0
-  ActivationType: 0
-  ActivationWeight: 100
   OriginFX: []
   HitFX: []
-  DamageType: 0
-  ProjectileType: 0
+  PrimeFX: []
+  AttackStartTargetColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartTargetColorDuration: 0
+  AttackStartTargetColorFlashType: 1
+  AttackStartSourceColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartSourceColorDuration: 0
+  AttackStartSourceColorFlashType: 1

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad02cc5c2fcc0e5418b9b43cc49c1402, type: 3}
   m_Name: mps_cave_mushrooms_no_water0
   m_EditorClassIdentifier: 
+  Key: mps_cave_mushrooms_no_water0
   Group: mps_cave_mushrooms_no_water
   ClearType: 2
   Corridor: 

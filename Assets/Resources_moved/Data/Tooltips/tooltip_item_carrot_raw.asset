@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_carrot_raw
   m_EditorClassIdentifier: 
+  Key: tooltip_item_carrot_raw
   Name: Carrot (Raw)
   InlineIcon: <sprite=179>
+  InlineAndName: <sprite=179> Carrot (Raw)
   Description: 
   Action: 
   Icon: sp_carrot_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

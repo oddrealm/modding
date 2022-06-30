@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_plant_remove_drops_default
   m_EditorClassIdentifier: 
-  FriendlyName: 'Harvest yield:'
-  Data: '{"items":[{"item_id":"item_plant_fiber","count":2,"spawn_rate":1000},{"item_id":"item_plant_fiber","count":1,"spawn_rate":50},{"item_id":"item_plant_fiber","count":1,"spawn_rate":50}]}'
+  Key: isg_plant_remove_drops_default
+  FriendlyName: 'Remove yield:'
   Spawns:
   - ItemID: item_plant_fiber
     GenerateNameKey: 

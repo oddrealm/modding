@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f34b932efa6fe43b5a9ce349340762, type: 3}
   m_Name: buff_attribute_thirst_change
   m_EditorClassIdentifier: 
+  Key: buff_attribute_thirst_change
   TooltipID: tooltip_buff_attribute_thirst_change
   BuffType: 1
-  DisplayType: 1
   NegativeIsPositive: 0
   AggregateSameType: 1
   Identifier: attribute_thirst_change

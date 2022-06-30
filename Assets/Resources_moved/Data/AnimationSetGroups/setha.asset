@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: setha
   m_EditorClassIdentifier: 
+  Key: setha
   Sets:
   - {fileID: 11400000, guid: d3b5037ecb1438f44b330b8ec5bd5def, type: 2}
   - {fileID: 11400000, guid: af8879c59307b544aaca91117b0686e5, type: 2}

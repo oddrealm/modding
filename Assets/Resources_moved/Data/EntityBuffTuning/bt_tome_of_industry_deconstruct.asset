@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_tome_of_industry_deconstruct
   m_EditorClassIdentifier: 
+  Key: bt_tome_of_industry_deconstruct
   BuffID: buff_skill_deconstruct
   Amount: 0
   BaseBuff: 1

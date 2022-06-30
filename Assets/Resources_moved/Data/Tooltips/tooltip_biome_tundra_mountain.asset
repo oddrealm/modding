@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_biome_tundra_mountain
   m_EditorClassIdentifier: 
+  Key: tooltip_biome_tundra_mountain
   Name: Tundra (Mountainous)
   InlineIcon: 
+  InlineAndName: Tundra (Mountainous)
   Description: A harsh environment where even the bravest souls are often lost without
     a trace. A preferred place to call home for Ancients due to its natural ability
     to keep outsiders away.
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

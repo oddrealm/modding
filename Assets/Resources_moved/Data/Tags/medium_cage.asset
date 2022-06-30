@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: medium_cage
   m_EditorClassIdentifier: 
+  Key: medium_cage
   TooltipID: tooltip_tag_medium_cage
-  Name: Medium Cage
-  InlineIcon: <sprite=886>

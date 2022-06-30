@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_tree_spring_caelum_oscula_trunk_spawn
   m_EditorClassIdentifier: 
+  Key: isg_tree_spring_caelum_oscula_trunk_spawn
   FriendlyName: 'Logging yield:'
-  Data: '{"items":[{"item_id":"item_wood_log","count":1,"spawn_rate":1000}, {"item_id":"item_wood_log","count":1,"spawn_rate":10},
-    {"item_id":"item_caelum_oscula_tree_seed","count":1,"spawn_rate":75}, {"item_id":"item_caelum_oscula_tree_seed","count":1,"spawn_rate":25}]}'
   Spawns:
   - ItemID: item_wood_log
     GenerateNameKey: 

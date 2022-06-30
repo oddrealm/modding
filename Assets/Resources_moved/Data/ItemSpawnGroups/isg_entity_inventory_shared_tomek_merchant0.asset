@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_entity_inventory_shared_tomek_merchant0
   m_EditorClassIdentifier: 
+  Key: isg_entity_inventory_shared_tomek_merchant0
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_stone_chunk","count":50,"spawn_rate":300},{"item_id":"item_sandstone_chunk","count":50,"spawn_rate":300},{"item_id":"item_copper_ore","count":25,"spawn_rate":400},{"item_id":"item_iron_ore","count":10,"spawn_rate":300},{"item_id":"item_dirt_clod","count":30,"spawn_rate":300},{"item_id":"item_bronze_ingot","count":10,"spawn_rate":150},{"item_id":"item_iron_ingot","count":10,"spawn_rate":150},{"item_id":"item_steel_ingot","count":10,"spawn_rate":150}]}'
   Spawns:
   - ItemID: item_stone_chunk
     GenerateNameKey: 

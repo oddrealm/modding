@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701e5e6cf84de544cb78430a61b6eb34, type: 3}
   m_Name: skill_time_weave
   m_EditorClassIdentifier: 
+  Key: skill_time_weave
   ResearchKey: 
-  LevelUpScenario: 
+  LevelUpScenario: scenario_level_up_tome_of_agriculture0
   TooltipID: tooltip_skill_time_weave
   VisibleToPlayer: 1
-  Priority: 0
+  Priority: 2
   Index: 26
   XPMod: 1
   EnergyCost: 3

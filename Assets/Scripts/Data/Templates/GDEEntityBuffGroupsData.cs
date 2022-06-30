@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/EntityBuffGroups")]
 public class GDEEntityBuffGroupsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public List<string> Buffs = new List<string>();
 }

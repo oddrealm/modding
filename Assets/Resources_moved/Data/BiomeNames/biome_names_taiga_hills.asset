@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc4209543b06a94084c0fd26a8b6e74, type: 3}
   m_Name: biome_names_taiga_hills
   m_EditorClassIdentifier: 
+  Key: biome_names_taiga_hills
   Determiner:
   - The
   Names:

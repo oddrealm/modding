@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_leatherworker
   m_EditorClassIdentifier: 
+  Key: profession_leatherworker
   ResearchKey: 
   TooltipID: tooltip_profession_leatherworker
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 8427776
   SkillsToIncreaseOnLevelUp: 8388608
   ProfessionType: 8192
-  Color:
-  - 186
-  - 116
-  - 72

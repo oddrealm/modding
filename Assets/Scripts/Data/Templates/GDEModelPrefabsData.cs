@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/ModelPrefabs")]
 public class GDEModelPrefabsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string Group = "";
 	public int Width = 0;
 	public int Height = 0;

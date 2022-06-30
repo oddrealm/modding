@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff9a848d346b884ebc5fc3de5772762, type: 3}
   m_Name: discoverygroup_shared_dungeons_easy
   m_EditorClassIdentifier: 
+  Key: discoverygroup_shared_dungeons_easy
   DiscoveryIDs:
   - discovery_shared_dungeon_easy

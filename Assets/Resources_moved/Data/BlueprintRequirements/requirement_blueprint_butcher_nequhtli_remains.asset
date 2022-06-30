@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_butcher_nequhtli_remains
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_butcher_nequhtli_remains
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 0
   BlockTagConditionType: 1
   BlockTags:
@@ -26,11 +26,12 @@ MonoBehaviour:
   Rooms:
   - room_kitchen
   Attacks: []
-  Skill: skill_misc
+  Skill: skill_cook
   SpecialItemTooltipID: 
   DietAttributesForItemFilter: 
   ItemConditionType: 0
   Items:
   - ID: item_nequhtli_remains
+    CanUseWithoutDiscovering: 0
     Count: 1
     Category: 0

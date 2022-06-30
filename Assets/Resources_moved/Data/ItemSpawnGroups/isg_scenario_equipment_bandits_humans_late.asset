@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_equipment_bandits_humans_late
   m_EditorClassIdentifier: 
+  Key: isg_scenario_equipment_bandits_humans_late
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_iron_helmet","count":1,"spawn_rate":750},{"item_id":"item_iron_breastplate","count":1,"spawn_rate":750},{"item_id":"item_iron_leggings","count":1,"spawn_rate":750},{"item_id":"item_iron_boots","count":1,"spawn_rate":750},{"item_id":"item_rutile_helmet","count":1,"spawn_rate":100},{"item_id":"item_rutile_breastplate","count":1,"spawn_rate":100},{"item_id":"item_rutile_leggings","count":1,"spawn_rate":100},{"item_id":"item_rutile_boots","count":1,"spawn_rate":100},{"item_id":"item_rutile_halberd_two_hand","count":1,"spawn_rate":50},{"item_id":"item_rutile_gladius_one_hand","count":1,"spawn_rate":50},{"item_id":"item_rutile_dire_flail_one_hand","count":1,"spawn_rate":100},{"item_id":"item_rutile_crossbow_two_hand","count":1,"spawn_rate":50},{"item_id":"item_rutile_bow_two_hand","count":1,"spawn_rate":50},{"item_id":"item_rutile_bfs_two_hand","count":1,"spawn_rate":15},{"item_id":"item_steel_kukri_one_hand","count":1,"spawn_rate":100},{"item_id":"item_steel_buckler_one_hand","count":1,"spawn_rate":100},{"item_id":"item_steel_bastard_sword_two_hand","count":1,"spawn_rate":75}]}'
   Spawns:
   - ItemID: item_iron_helmet
     GenerateNameKey: 

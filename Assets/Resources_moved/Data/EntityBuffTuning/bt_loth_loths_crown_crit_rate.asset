@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_loth_loths_crown_crit_rate
   m_EditorClassIdentifier: 
+  Key: bt_loth_loths_crown_crit_rate
   BuffID: buff_attribute_crit_rate
   Amount: 0
   BaseBuff: 100

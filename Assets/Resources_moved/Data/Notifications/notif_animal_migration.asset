@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_animal_migration
   m_EditorClassIdentifier: 
+  Key: notif_animal_migration
   Index: 26
   Enabled: 1
   NotificationType: 7
   Priority: 26
   FilterType: 8
   Sound: animal_arrival
-  FactionToShowPipFor: 7
+  FactionToShowPipFor: 15
   DefaultPermitted: []
   InlineIcon: <sprite=96>
   ShowInSettings: 1

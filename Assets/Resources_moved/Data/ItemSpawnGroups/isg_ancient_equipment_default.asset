@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_ancient_equipment_default
   m_EditorClassIdentifier: 
+  Key: isg_ancient_equipment_default
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_fledgling_aeternum","count":1,"spawn_rate":1000},{"item_id":"item_wool_coat","count":1,"spawn_rate":1000},{"item_id":"item_wool_pants","count":1,"spawn_rate":1000},{"item_id":"item_wool_boots","count":1,"spawn_rate":1000}]}'
   Spawns:
   - ItemID: item_fledgling_aeternum
     GenerateNameKey: 
@@ -22,21 +22,21 @@ MonoBehaviour:
     RandomizeCount: 0
     MaxValue: 2147483647
     RandomIDRarity: -1
-  - ItemID: item_wool_coat
+  - ItemID: item_gibaren_robe
     GenerateNameKey: 
     Count: 1
     SpawnRate: 1000
     RandomizeCount: 0
     MaxValue: 2147483647
     RandomIDRarity: -1
-  - ItemID: item_wool_pants
+  - ItemID: item_gibaren_pants
     GenerateNameKey: 
     Count: 1
     SpawnRate: 1000
     RandomizeCount: 0
     MaxValue: 2147483647
     RandomIDRarity: -1
-  - ItemID: item_wool_boots
+  - ItemID: item_gibaren_boots
     GenerateNameKey: 
     Count: 1
     SpawnRate: 1000

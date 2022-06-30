@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_production_window8
   m_EditorClassIdentifier: 
+  Key: all_production_window8
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126
@@ -40,9 +41,7 @@ MonoBehaviour:
   PopUpPosition: 2
   ShowBackground: 1
   ShowBackgroundMask: 1
-  BackgroundMaskTarget: set_threshold_btn
+  BackgroundMaskTarget: threshold_type_drop_down
   AnimatedImage: 
-  PopUpTextBody: The Threshold Amount (number of <sprite=1182> jobs) is the comparison
-    pass value. If this value is set to < 1, then our auto-job queues when the <sprite=1182>
-    jobs count drops below 1.
+  PopUpTextBody: Conditions can also be added to auto-queue jobs.
   NextSegment: {fileID: 11400000, guid: 8183034861fec044e84197df2207cf61, type: 2}

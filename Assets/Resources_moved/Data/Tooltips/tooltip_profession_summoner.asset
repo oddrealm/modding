@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_summoner
   m_EditorClassIdentifier: 
+  Key: tooltip_profession_summoner
   Name: Summoner
   InlineIcon: <sprite=568>
+  InlineAndName: <sprite=568> Summoner
   Description: Summoners are specialized in the summoning of entities from the void.
   Action: 
   Icon: sp_profession_summoner_icon
   Formatting: 
+  TextColor: {r: 0.745283, g: 0.2917853, b: 0.316432, a: 1}

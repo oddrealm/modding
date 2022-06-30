@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_vytrax
   m_EditorClassIdentifier: 
+  Key: entity_tuning_vytrax
   SightRange: 128
   MinRandomSkill: 1
   MaxRandomSkill: 3
+  SkillBonuses: []
   Health: 1d6+240
   HealthChange: 0
   Toughness: 1d3
@@ -31,7 +33,7 @@ MonoBehaviour:
   EnergyChange: -20
   BlockCurrentTemperature: 50
   Temperature: 50
-  ColdTolerance: 0
+  ColdTolerance: -10
   CritRate: 2
   DamageIgnoreRate: 0
   Age: 0

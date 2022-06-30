@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: owl
   m_EditorClassIdentifier: 
+  Key: owl
   Sets:
   - {fileID: 11400000, guid: f0d42ec820c0f7b4f9bba73e6076a4a8, type: 2}
   - {fileID: 11400000, guid: ef078f1f6b15e2147be1893f15f24391, type: 2}

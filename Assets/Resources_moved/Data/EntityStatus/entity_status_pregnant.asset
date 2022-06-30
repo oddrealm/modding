@@ -12,13 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_pregnant
   m_EditorClassIdentifier: 
+  Key: entity_status_pregnant
   TooltipID: tooltip_entity_status_pregnant
-  Tag: pregnant
+  HasEntityInfo: 1
   ShowToPlayer: 1
   Indicator: 
   Notification: 
   BuffGroup: buffs_status_pregnant
   OverworldPartyActionGroup: 
-  ExpireTimeMinutes: -1
+  ExpireTimeMinutesMin: 0
+  ExpireTimeMinutesMax: 0
   ActivateIntervals: 0
   ActivateItems: 
+  StatusesToRemove: []
+  StatusesToAddOnExpire: []
+  PermittedGenders:
+  - female
+  CooldownMin: 500
+  CooldownMax: 600
+  EntitiesToSpawnOnExpire: 

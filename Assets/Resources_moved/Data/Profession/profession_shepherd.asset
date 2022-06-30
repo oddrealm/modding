@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_shepherd
   m_EditorClassIdentifier: 
+  Key: profession_shepherd
   ResearchKey: 
   TooltipID: tooltip_profession_shepherd
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 55552
   SkillsToIncreaseOnLevelUp: 16384
   ProfessionType: 16
-  Color:
-  - 137
-  - 113
-  - 102

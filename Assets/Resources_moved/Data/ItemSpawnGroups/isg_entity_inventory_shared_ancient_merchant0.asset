@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_entity_inventory_shared_ancient_merchant0
   m_EditorClassIdentifier: 
+  Key: isg_entity_inventory_shared_ancient_merchant0
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_stoneleaf_husk","count":20,"spawn_rate":300},{"item_id":"item_steel_war_axe_one_hand","count":2,"spawn_rate":100},{"item_id":"item_iron_kite_shield_one_hand","count":2,"spawn_rate":100},{"item_id":"item_bronze_khopesh_one_hand","count":2,"spawn_rate":100},{"item_id":"item_bronze_sagaris_two_hand","count":2,"spawn_rate":50},{"item_id":"item_macuahuitl_one_hand","count":2,"spawn_rate":50}]}'
   Spawns:
   - ItemID: item_stoneleaf_husk
     GenerateNameKey: 

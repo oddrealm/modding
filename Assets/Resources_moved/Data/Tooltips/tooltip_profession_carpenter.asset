@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_carpenter
   m_EditorClassIdentifier: 
+  Key: tooltip_profession_carpenter
   Name: Carpenter
   InlineIcon: <sprite=35>
+  InlineAndName: <sprite=35> Carpenter
   Description: Carpenters specialize in the production of wood-based items and materials
   Action: 
   Icon: sp_profession_carpenter_icon
   Formatting: 
+  TextColor: {r: 0.6392157, g: 0.47058827, b: 0.4039216, a: 1}

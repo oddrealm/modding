@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: spinning_wheel
   m_EditorClassIdentifier: 
+  Key: spinning_wheel
   TooltipID: tooltip_tag_spinning_wheel
-  Name: Spinning Wheel
-  InlineIcon: <sprite=723>

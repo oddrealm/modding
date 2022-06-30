@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_nyctium_brick
   m_EditorClassIdentifier: 
+  Key: tooltip_item_nyctium_brick
   Name: Nyctium Brick
   InlineIcon: <sprite=1239>
+  InlineAndName: <sprite=1239> Nyctium Brick
   Description: 
   Action: 
   Icon: sp_nyctium_brick_icon

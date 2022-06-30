@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff10558c1bfd79439c3106021204b77, type: 3}
   m_Name: indicator_sick
   m_EditorClassIdentifier: 
+  Key: indicator_sick
   Priority: 2
   IconID: sp_indicator_sick_icon
   Duration: 1

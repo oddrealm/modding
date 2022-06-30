@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_tutorial_settler_level_up_settler0
   m_EditorClassIdentifier: 
+  Key: dialogue_tutorial_settler_level_up_settler0
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'

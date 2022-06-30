@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c453d00309e21b4da02a1ce30a65700, type: 3}
   m_Name: oag_entity_status_hungry
   m_EditorClassIdentifier: 
+  Key: oag_entity_status_hungry
   Actions:
   - overworld_action_eat

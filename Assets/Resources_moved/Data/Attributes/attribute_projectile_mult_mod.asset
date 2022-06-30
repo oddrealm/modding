@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cb679d16102814ebd643fd5fb2d2a3, type: 3}
   m_Name: attribute_projectile_mult_mod
   m_EditorClassIdentifier: 
+  Key: attribute_projectile_mult_mod
   TooltipID: tooltip_attribute_projectile_mult_mod
   DisplayOrder: 28
   StartMin: 0

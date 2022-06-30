@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8d54d958bb52746bbda34a427ca237, type: 3}
   m_Name: zone_all
   m_EditorClassIdentifier: 
+  Key: zone_all
   TooltipID: tooltip_zone_all
   Visuals: visuals_zone_all
   VisibleToPlayer: 0
   OrderIndex: 12
-  ItemPermissions: 16127
+  ItemPermissions: 16383

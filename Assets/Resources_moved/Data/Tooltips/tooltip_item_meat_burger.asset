@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_meat_burger
   m_EditorClassIdentifier: 
+  Key: tooltip_item_meat_burger
   Name: Meat Burger
   InlineIcon: <sprite=612>
+  InlineAndName: <sprite=612> Meat Burger
   Description: 
   Action: 
   Icon: sp_meat_burger_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

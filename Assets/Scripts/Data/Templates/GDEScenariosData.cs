@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Scenarios")]
 public class GDEScenariosData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int Index = 0;
 	public int ActivationType = 0;
 	public bool IsThreat = false;

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_celery_seed
   m_EditorClassIdentifier: 
+  Key: tooltip_item_celery_seed
   Name: Celery (Seed)
   InlineIcon: <sprite=155>
+  InlineAndName: <sprite=155> Celery (Seed)
   Description: Used to grow Celery.
   Action: 
   Icon: sp_celery_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

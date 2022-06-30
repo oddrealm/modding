@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_loth_loths_crown
   m_EditorClassIdentifier: 
+  Key: tooltip_item_loth_loths_crown
   Name: Loth Loth's Crown
   InlineIcon: <sprite=411>
+  InlineAndName: <sprite=411> Loth Loth's Crown
   Description: 
   Action: 
   Icon: sp_loth_loths_crown_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

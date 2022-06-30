@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_taiga_wild_bandits0_group2
   m_EditorClassIdentifier: 
+  Key: dialogue_taiga_wild_bandits0_group2
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@~'

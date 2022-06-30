@@ -5,4 +5,5 @@ public enum EntityAnimationEvents
 
     ATTACK_HIT = 1,
     DEAD_COMPLETE = 2,
+    SHOW_LINE = 4
 }

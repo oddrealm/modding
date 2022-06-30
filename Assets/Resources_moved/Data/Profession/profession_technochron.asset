@@ -12,14 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_technochron
   m_EditorClassIdentifier: 
+  Key: profession_technochron
   ResearchKey: 
   TooltipID: tooltip_profession_technochron
   VisibleToPlayer: 1
   GlobalIndicator: indicator_global_technochron
-  SkillsActiveByDefault: 33594112
+  SkillsActiveByDefault: 33594114
   SkillsToIncreaseOnLevelUp: 33554432
   ProfessionType: 2097152
-  Color:
-  - 137
-  - 113
-  - 102

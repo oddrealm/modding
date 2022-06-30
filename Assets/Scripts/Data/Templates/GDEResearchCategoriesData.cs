@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/ResearchCategories")]
 public class GDEResearchCategoriesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int ResearchCategory = 0;
 	public string FriendlyName = "";
 }

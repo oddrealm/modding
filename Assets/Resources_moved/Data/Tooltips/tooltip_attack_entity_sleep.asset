@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attack_entity_sleep
   m_EditorClassIdentifier: 
+  Key: tooltip_attack_entity_sleep
   Name: Sleep
   InlineIcon: <sprite=1216>
+  InlineAndName: <sprite=1216> Sleep
   Description: Sleeping recovers energy over time.
   Action: 
   Icon: 

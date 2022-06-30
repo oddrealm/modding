@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_special_item_from_diet
   m_EditorClassIdentifier: 
+  Key: tooltip_special_item_from_diet
   Name: From Diet
   InlineIcon: <sprite=1011>
+  InlineAndName: <sprite=1011> From Diet
   Description: Items are chosen based on diet assigned to entity. To edit an entity's
     diet, open the <sprite=1011> Diet Overlay.
   Action: 

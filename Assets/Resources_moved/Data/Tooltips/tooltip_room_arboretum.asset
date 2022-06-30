@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_arboretum
   m_EditorClassIdentifier: 
+  Key: tooltip_room_arboretum
   Name: Arboretum
   InlineIcon: <sprite=709>
+  InlineAndName: <sprite=709> Arboretum
   Description: The Arboretum is where saplings can be planted to grow trees.
   Action: 
   Icon: sp_room_arboretum_icon
   Formatting: '{2}''s {0} {1}'
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

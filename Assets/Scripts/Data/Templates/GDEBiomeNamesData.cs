@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BiomeNames")]
 public class GDEBiomeNamesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public List<string> Determiner = new List<string>();
 	public List<string> Names = new List<string>();
 }

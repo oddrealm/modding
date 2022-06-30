@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/EntitySpawnGroups")]
 public class GDEEntitySpawnGroupsData : ScriptableObject
 {
-    public string Key { get { return name; } }
+    public string Key;
 
     public string FriendlyName = "Spawns:";
     public Spawn[] Spawns;

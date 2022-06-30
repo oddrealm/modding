@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4633816f5b17345921387ce966b49a, type: 3}
   m_Name: attack_group_mirmit
   m_EditorClassIdentifier: 
+  Key: attack_group_mirmit
   Attacks:
   - attack_claw_direct_slash
   - attack_bite_direct_pierce

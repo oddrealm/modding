@@ -12,22 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
   m_Name: attack_stone_spear_two_hand_throw_pierce
   m_EditorClassIdentifier: 
+  Key: attack_stone_spear_two_hand_throw_pierce
   TooltipID: tooltip_attack_stone_spear_two_hand_throw_pierce
   ShowOnAttacksDisplay: 1
+  ActivationWeight: 100
+  ProjectileType: 0
+  FiringType: 2
+  ActivationType: 2
+  DamageType: 0
+  SkillUsed: 4096
+  AddSkillToOutput: 1
   MinAmount: 3
   MaxAmount: 8
-  TargetAdditive: 0
-  TargetAttribute: 1
-  SourceAdditive: 0
-  SourceAttribute: 0
-  SkillUsed: 4096
   Range: 128
+  SourceAction: 2
+  SourceAttribute: 0
+  TargetAction: 1
+  TargetAttribute: 1
   AnimationTrigger: 2
   AnimationHitEvent: 1
-  FiringType: 2
-  ActivationType: 0
-  ActivationWeight: 100
   OriginFX: []
   HitFX: []
-  DamageType: 0
-  ProjectileType: 0
+  PrimeFX: []
+  AttackStartTargetColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartTargetColorDuration: 0
+  AttackStartTargetColorFlashType: 1
+  AttackStartSourceColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartSourceColorDuration: 0
+  AttackStartSourceColorFlashType: 1

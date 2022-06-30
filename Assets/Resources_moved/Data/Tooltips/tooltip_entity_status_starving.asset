@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_starving
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_starving
   Name: Starving (Status)
   InlineIcon: <sprite=56>
+  InlineAndName: <sprite=56> Starving (Status)
   Description: Will receive damage when Hunger reaches 0.
   Action: 
   Icon: 

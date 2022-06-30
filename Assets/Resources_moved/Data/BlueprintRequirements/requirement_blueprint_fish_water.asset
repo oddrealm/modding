@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_fish_water
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_fish_water
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 32
   BlockTagConditionType: 1
   BlockTags: []

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: block_fire
   m_EditorClassIdentifier: 
+  Key: block_fire
   Index: 11
   Tags:
   - fire
@@ -50,7 +51,7 @@ MonoBehaviour:
   Permissions: 2560
   AddSFX: sfx_fire
   RemoveSFX: 
-  InteractSFX: 
+  InteractSFX: sfx_fire
   FlammableChance: 0
   DecayBuff: 0
   Level: 1
@@ -64,4 +65,5 @@ MonoBehaviour:
   VerticalMoveRequiresClimb: 1
   ForceFocusDirection: 0
   IsObstruction: 0
+  CanHaveRoom: 1
   IsVerticalAccess: 0

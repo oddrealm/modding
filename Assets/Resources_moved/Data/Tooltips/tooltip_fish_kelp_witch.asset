@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_fish_kelp_witch
   m_EditorClassIdentifier: 
+  Key: tooltip_fish_kelp_witch
   Name: Kelp Witch
   InlineIcon: <sprite=327>
+  InlineAndName: <sprite=327> Kelp Witch
   Description: A fierce predator, the Kelp Witch has been seen ambushing animals
     drinking at the edge of bodies of water, dragging them down into the depths.
   Action: 
   Icon: sp_fish_kelp_witch_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

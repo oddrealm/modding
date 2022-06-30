@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_temperature
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_temperature
   Name: Body Temperature
   InlineIcon: <sprite=845>
+  InlineAndName: <sprite=845> Body Temperature
   Description: The current temperature of the entity. When this drops below 20*,
     they will take freezing damage.
   Action: 

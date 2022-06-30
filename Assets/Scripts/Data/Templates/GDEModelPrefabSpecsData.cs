@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/ModelPrefabSpecs")]
 public class GDEModelPrefabSpecsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string Group = "";
 	public int ClearType = 0;
 	public List<int> Corridor = new List<int>();

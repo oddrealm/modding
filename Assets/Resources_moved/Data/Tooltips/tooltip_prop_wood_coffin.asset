@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_wood_coffin
   m_EditorClassIdentifier: 
+  Key: tooltip_prop_wood_coffin
   Name: Wood Coffin
   InlineIcon: <sprite=728>
+  InlineAndName: <sprite=728> Wood Coffin
   Description: 
   Action: 
   Icon: sp_wood_coffin_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

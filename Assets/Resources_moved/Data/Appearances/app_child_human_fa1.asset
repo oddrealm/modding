@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_child_human_fa1
   m_EditorClassIdentifier: 
+  Key: app_child_human_fa1
   Gender: female
   Race: race_human
   Group: race_human_female
+  Iteration: 1
   AppearanceType: 1
   AgeType: 1
   ShadowType: 2

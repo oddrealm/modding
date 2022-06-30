@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/ToolbarMenus")]
 public class GDEToolbarMenusData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public int TabOrder = 0;
 	public ToolbarToggleTypes ToggleType = ToolbarToggleTypes.BLUEPRINT;

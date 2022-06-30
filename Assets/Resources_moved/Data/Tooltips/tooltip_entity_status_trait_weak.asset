@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_trait_weak
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_trait_weak
   Name: 'Trait: Weak Frame (Status)'
   InlineIcon: <sprite=1066>
+  InlineAndName: '<sprite=1066> Trait: Weak Frame (Status)'
   Description: Their figure evokes images of a strand of hay. Be gentle.
   Action: 
   Icon: 

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_arcanist
   m_EditorClassIdentifier: 
+  Key: tooltip_profession_arcanist
   Name: Arcanist
   InlineIcon: <sprite=569>
+  InlineAndName: <sprite=569> Arcanist
   Description: Arcanists are void-magic generalists.
   Action: 
   Icon: sp_profession_arcanist_icon
   Formatting: 
+  TextColor: {r: 0.62352943, g: 0.47058827, b: 0.7725491, a: 1}

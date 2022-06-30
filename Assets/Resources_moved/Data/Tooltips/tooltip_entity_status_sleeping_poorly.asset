@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_sleeping_poorly
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_sleeping_poorly
   Name: Sleeping Poorly (Status)
   InlineIcon: <sprite=1065>
+  InlineAndName: <sprite=1065> Sleeping Poorly (Status)
   Description: While sleeping poorly, entities will regain a small amount of health
     and energy over time.
   Action: 

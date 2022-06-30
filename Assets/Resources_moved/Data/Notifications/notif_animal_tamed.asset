@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_animal_tamed
   m_EditorClassIdentifier: 
+  Key: notif_animal_tamed
   Index: 17
   Enabled: 0
   NotificationType: 1
   Priority: 17
   FilterType: 8
   Sound: animal_arrival
-  FactionToShowPipFor: 7
+  FactionToShowPipFor: 15
   DefaultPermitted: []
   InlineIcon: <sprite=60>
   ShowInSettings: 1

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_workbench
   m_EditorClassIdentifier: 
+  Key: tooltip_tag_workbench
   Name: Workbench
   InlineIcon: <sprite=421>
+  InlineAndName: <sprite=421> Workbench
   Description: 
   Action: 
   Icon: 

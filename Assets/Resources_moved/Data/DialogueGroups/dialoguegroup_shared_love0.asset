@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_shared_love0
   m_EditorClassIdentifier: 
+  Key: dialoguegroup_shared_love0
   DialogueIDs:
   - dialogue_shared_love_companion0_d0_0
   - dialogue_shared_love_companion0_d1_0

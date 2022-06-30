@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_thaumaturge
   m_EditorClassIdentifier: 
+  Key: profession_thaumaturge
   ResearchKey: 
   TooltipID: tooltip_profession_thaumaturge
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 1087744
   SkillsToIncreaseOnLevelUp: 1048576
   ProfessionType: 65536
-  Color:
-  - 147
-  - 85
-  - 154

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_harvest_nyctoid
   m_EditorClassIdentifier: 
+  Key: tooltip_blueprint_harvest_nyctoid
   Name: Harvest Nyctoid
   InlineIcon: <sprite=1236>
+  InlineAndName: <sprite=1236> Harvest Nyctoid
   Description: Used to harvest the Nyctoid plant.
   Action: Harvesting Nyctoid
   Icon: sp_job_harvest_nyctoid_icon

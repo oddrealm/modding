@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_equipment_tomb_ancients_late
   m_EditorClassIdentifier: 
+  Key: isg_scenario_equipment_tomb_ancients_late
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_primarchs_aeternum","count":1,"spawn_rate":1000},{"item_id":"item_steel_breastplate","count":1,"spawn_rate":500},{"item_id":"item_steel_leggings","count":1,"spawn_rate":500},{"item_id":"item_steel_boots","count":1,"spawn_rate":500},{"item_id":"item_rutile_breastplate","count":1,"spawn_rate":100},{"item_id":"item_rutile_leggings","count":1,"spawn_rate":100},{"item_id":"item_rutile_boots","count":1,"spawn_rate":100},{"item_id":"item_spellbook_of_cleaving_one_hand","count":1,"spawn_rate":200},{"item_id":"item_spellbook_of_death_one_hand","count":1,"spawn_rate":200},{"item_id":"item_spellbook_of_destruction_one_hand","count":1,"spawn_rate":200},{"item_id":"item_spellbook_of_force_one_hand","count":1,"spawn_rate":200},{"item_id":"item_spellbook_of_healing_one_hand","count":1,"spawn_rate":200}]}'
   Spawns:
   - ItemID: item_primarchs_aeternum
     GenerateNameKey: 

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_boletus_mushroom
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_boletus_mushroom
   Name: Boletus Mushroom (Plant)
   InlineIcon: <sprite=178>
+  InlineAndName: <sprite=178> Boletus Mushroom (Plant)
   Description: 
   Action: 
   Icon: sp_boletus_mushroom_icon

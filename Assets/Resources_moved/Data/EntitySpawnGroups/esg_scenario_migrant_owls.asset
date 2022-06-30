@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
   m_Name: esg_scenario_migrant_owls
   m_EditorClassIdentifier: 
+  Key: esg_scenario_migrant_owls
+  FriendlyName: 'Spawns:'
   Spawns:
   - EntityId: entity_owl
     EntityTag: 

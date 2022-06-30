@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: voidwoken
   m_EditorClassIdentifier: 
+  Key: voidwoken
   Sets:
   - {fileID: 11400000, guid: efb56ee947589c54490c582bb6f558a8, type: 2}
   - {fileID: 11400000, guid: 4d2abc9ef95f7a84ba2f672866033d53, type: 2}

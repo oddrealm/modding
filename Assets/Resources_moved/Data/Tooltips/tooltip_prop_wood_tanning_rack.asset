@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_wood_tanning_rack
   m_EditorClassIdentifier: 
+  Key: tooltip_prop_wood_tanning_rack
   Name: Wood Tanning Rack
   InlineIcon: <sprite=725>
+  InlineAndName: <sprite=725> Wood Tanning Rack
   Description: 
   Action: 
   Icon: sp_wood_tanning_rack_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

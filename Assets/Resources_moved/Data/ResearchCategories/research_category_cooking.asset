@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dbdf9b21cc5294ebf461b92864882e, type: 3}
   m_Name: research_category_cooking
   m_EditorClassIdentifier: 
+  Key: research_category_cooking
   ResearchCategory: 1
   FriendlyName: Cooking

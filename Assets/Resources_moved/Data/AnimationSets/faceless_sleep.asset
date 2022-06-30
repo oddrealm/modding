@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: faceless_sleep
   m_EditorClassIdentifier: 
+  Key: faceless_sleep
   State: {fileID: 11400000, guid: 7af7740d1c2f88647ad5c759a3ad39bf, type: 2}
   UpAnimation: {fileID: 11400000, guid: 0f5436fde110f584c95358e5af78258d, type: 2}
   DownAnimation: {fileID: 11400000, guid: 2c9d2c58970b870458c801274af2aa21, type: 2}

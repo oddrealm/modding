@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: tamtallen_climb
   m_EditorClassIdentifier: 
+  Key: tamtallen_climb
   State: {fileID: 11400000, guid: 0568f5713f1565a4aa7c5e1b2f739391, type: 2}
   UpAnimation: {fileID: 11400000, guid: ec6c42dd922b1dc4caaee60461040101, type: 2}
   DownAnimation: {fileID: 11400000, guid: 2ec490fae5210c143a27bd8ac7c0ec6e, type: 2}

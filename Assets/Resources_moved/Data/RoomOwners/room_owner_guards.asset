@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eb3dca774a8382469e308aa5057244d, type: 3}
   m_Name: room_owner_guards
   m_EditorClassIdentifier: 
+  Key: room_owner_guards
   TooltipID: tooltip_room_owner_guards
   LimitToUnique: 0
   LimitByFamily: 0
@@ -23,3 +24,5 @@ MonoBehaviour:
   - skill_fight_range
   - skill_fight_magic
   DefaultProfessions: []
+  DefaultFactions:
+  - faction_player

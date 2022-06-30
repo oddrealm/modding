@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Diets")]
 public class GDEDietsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public List<string> HarmfulFoods = new List<string>();
 	public List<string> HatedFoods = new List<string>();

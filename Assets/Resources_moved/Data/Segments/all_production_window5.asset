@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_production_window5
   m_EditorClassIdentifier: 
+  Key: all_production_window5
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126
@@ -42,5 +43,6 @@ MonoBehaviour:
   ShowBackgroundMask: 1
   BackgroundMaskTarget: active_jobs
   AnimatedImage: 
-  PopUpTextBody: Active Jobs are displayed here.
+  PopUpTextBody: Active jobs for this entry are shown here. You can manually add
+    jobs to the room using the  <sprite=907>/<sprite=1003> buttons.
   NextSegment: {fileID: 11400000, guid: 1f41d60bf05106544a9b173a46543cd5, type: 2}

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_toasted_xan
   m_EditorClassIdentifier: 
+  Key: tooltip_item_toasted_xan
   Name: Toasted Xan
   InlineIcon: <sprite=623>
+  InlineAndName: <sprite=623> Toasted Xan
   Description: 
   Action: 
   Icon: sp_toasted_xan_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

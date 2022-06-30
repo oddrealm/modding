@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockPlants")]
 public class GDEBlockPlantsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int Index = 0;
 	public bool IsRoot = false;
 	public List<string> Biomes = new List<string>();

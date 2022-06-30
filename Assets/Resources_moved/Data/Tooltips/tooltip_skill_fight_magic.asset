@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_skill_fight_magic
   m_EditorClassIdentifier: 
+  Key: tooltip_skill_fight_magic
   Name: Magic Fighting Skill
   InlineIcon: <sprite=14>
+  InlineAndName: <sprite=14> Magic Fighting Skill
   Description: Used to fight other entities with void attacks.
   Action: Casting Spell
   Icon: sp_skill_fight_magic_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

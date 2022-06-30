@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5a7f670ef11be45a01a68a24f9de86, type: 3}
   m_Name: realm_names_default
   m_EditorClassIdentifier: 
+  Key: realm_names_default
   FrontCompounds:
   - Ale
   - Arke

@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/ConstructionCategories")]
 public class GDEConstructionCategoriesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string MenuKey = "";
 	public int MenuIndex = 0;
 	public string Name = "";

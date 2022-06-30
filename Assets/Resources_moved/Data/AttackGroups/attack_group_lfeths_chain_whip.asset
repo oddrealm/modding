@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4633816f5b17345921387ce966b49a, type: 3}
   m_Name: attack_group_lfeths_chain_whip
   m_EditorClassIdentifier: 
+  Key: attack_group_lfeths_chain_whip
   Attacks:
   - attack_lfeths_chain_whip_cut

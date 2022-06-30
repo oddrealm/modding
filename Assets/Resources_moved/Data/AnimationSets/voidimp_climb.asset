@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: voidimp_climb
   m_EditorClassIdentifier: 
+  Key: voidimp_climb
   State: {fileID: 11400000, guid: 0568f5713f1565a4aa7c5e1b2f739391, type: 2}
   UpAnimation: {fileID: 11400000, guid: 7334600ca3d96d142bedecc4087b55ca, type: 2}
   DownAnimation: {fileID: 11400000, guid: a40065fd0ddb44546bd9785845e7bc9c, type: 2}

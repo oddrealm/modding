@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
   m_Name: overworld_nation_ancient
   m_EditorClassIdentifier: 
+  Key: overworld_nation_ancient
   Order: 1
   TooltipID: tooltip_overworld_nation_ancient
   Unlocked: 1

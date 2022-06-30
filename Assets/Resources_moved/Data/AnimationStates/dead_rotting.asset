@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0ee651054521040a74be8bdd0a48eb, type: 3}
   m_Name: dead_rotting
   m_EditorClassIdentifier: 
+  Key: dead_rotting
   Transitions: []

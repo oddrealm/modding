@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_toughness
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_toughness
   Name: Toughness
   InlineIcon: <sprite=81>
+  InlineAndName: <sprite=81> Toughness
   Description: How much damage is reduced from incoming attacks. Damage can only
     be reduced to a minimum of 1.
   Action: 

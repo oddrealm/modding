@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_cresis
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_cresis
   Name: Cresis (Plant)
   InlineIcon: <sprite=70>
+  InlineAndName: <sprite=70> Cresis (Plant)
   Description: 
   Action: 
   Icon: sp_cresis_icon

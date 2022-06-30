@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/OverworldPartyActionGroups")]
 public class GDEOverworldPartyActionGroupsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public List<string> Actions = new List<string>();
 }

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_overworld_nation_tomek
   m_EditorClassIdentifier: 
+  Key: tooltip_overworld_nation_tomek
   Name: Tomek
   InlineIcon: <sprite=1029>
+  InlineAndName: <sprite=1029> Tomek
   Description: Covered in stone scales, the Tomek possess incredible toughness and
     have few natural predators. Unless threatened, they will rarely venture outside
     their subterranean homes. To this day, the location of their capital city, Fengold
@@ -21,3 +23,4 @@ MonoBehaviour:
   Action: 
   Icon: sp_race_tomek
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

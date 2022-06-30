@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c453d00309e21b4da02a1ce30a65700, type: 3}
   m_Name: oag_default
   m_EditorClassIdentifier: 
+  Key: oag_default
   Actions:
   - overworld_action_default_food_crate0
   - overworld_action_default_wild_fruit_found0

@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Animations")]
 public class GDEAnimationsData : ScriptableObject
 {
+    public string Key;
+
     [System.Serializable]
     public class AnimAccessories
     {

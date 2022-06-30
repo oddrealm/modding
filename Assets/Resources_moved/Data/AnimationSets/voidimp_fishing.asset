@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: voidimp_fishing
   m_EditorClassIdentifier: 
+  Key: voidimp_fishing
   State: {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
   UpAnimation: {fileID: 11400000, guid: fa14a2b2a2f7af24abba64fd09e6b64b, type: 2}
   DownAnimation: {fileID: 11400000, guid: 7f7d6d9c00359174abd2affe228c6bbd, type: 2}

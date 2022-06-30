@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_biome_barren
   m_EditorClassIdentifier: 
+  Key: tooltip_biome_barren
   Name: Voidlands
   InlineIcon: 
+  InlineAndName: Voidlands
   Description: A land shaped by void energy, many strange creatures wander its red
     soils. Expect the unexpected when venturing into this odd place.
   Action: 
   Icon: 
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

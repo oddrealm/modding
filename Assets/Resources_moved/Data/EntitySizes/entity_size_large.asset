@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a624825f59116f42b482d3ae782b976, type: 3}
   m_Name: entity_size_large
   m_EditorClassIdentifier: 
+  Key: entity_size_large
   FriendlyName: Large
   SizeType: 4

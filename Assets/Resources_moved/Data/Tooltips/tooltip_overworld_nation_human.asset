@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_overworld_nation_human
   m_EditorClassIdentifier: 
+  Key: tooltip_overworld_nation_human
   Name: Humans
   InlineIcon: <sprite=1016>
+  InlineAndName: <sprite=1016> Humans
   Description: Living in small communities since the Fracture, Humans have only recently
     started to re-form their once great kingdoms. Experts at settling in any environment
     and having exceptional diplomatic skills, the Human race has excelled in the
@@ -21,3 +23,4 @@ MonoBehaviour:
   Action: 
   Icon: sp_race_human
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

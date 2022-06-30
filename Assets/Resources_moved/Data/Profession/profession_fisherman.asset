@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_fisherman
   m_EditorClassIdentifier: 
+  Key: profession_fisherman
   ResearchKey: 
   TooltipID: tooltip_profession_fisherman
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 39200
   SkillsToIncreaseOnLevelUp: 32
   ProfessionType: 2
-  Color:
-  - 86
-  - 130
-  - 255

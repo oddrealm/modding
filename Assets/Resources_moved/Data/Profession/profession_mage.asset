@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_mage
   m_EditorClassIdentifier: 
+  Key: profession_mage
   ResearchKey: 
   TooltipID: tooltip_profession_mage
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 47360
   SkillsToIncreaseOnLevelUp: 8192
   ProfessionType: 2048
-  Color:
-  - 71
-  - 118
-  - 149

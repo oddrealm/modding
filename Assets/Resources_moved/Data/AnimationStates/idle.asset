@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0ee651054521040a74be8bdd0a48eb, type: 3}
   m_Name: idle
   m_EditorClassIdentifier: 
+  Key: idle
   Transitions:
   - NextState: {fileID: 11400000, guid: 1e6a859c913a2d940b7db7c995938744, type: 2}
     TrueFlags: 2
@@ -54,9 +55,9 @@ MonoBehaviour:
     Triggers: 128
     IsComplete: 0
   - NextState: {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
-    TrueFlags: 256
+    TrueFlags: 0
     FalseFlags: 0
-    Triggers: 0
+    Triggers: 64
     IsComplete: 0
   - NextState: {fileID: 11400000, guid: 1c4464af3af0fcc408d2be3da4077885, type: 2}
     TrueFlags: 8

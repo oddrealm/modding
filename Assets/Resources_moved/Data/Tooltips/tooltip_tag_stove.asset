@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_stove
   m_EditorClassIdentifier: 
+  Key: tooltip_tag_stove
   Name: Stove
   InlineIcon: <sprite=1103>
+  InlineAndName: <sprite=1103> Stove
   Description: 
   Action: 
   Icon: 

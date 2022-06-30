@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: cat
   m_EditorClassIdentifier: 
+  Key: cat
   Sets:
   - {fileID: 11400000, guid: f503b485d6998ff43a20594396010ee4, type: 2}
   - {fileID: 11400000, guid: 9f10dc910e16ed44b8ef95e7b7ac7704, type: 2}

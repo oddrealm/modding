@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_production_window2
   m_EditorClassIdentifier: 
+  Key: all_production_window2
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126
@@ -45,4 +46,4 @@ MonoBehaviour:
   PopUpTextBody: Rooms that have production capabilities will show up in this list.
     You can use {k#right_mouse} on an entry to jump to the <sprite=903> Room Edit
     window.
-  NextSegment: {fileID: 0}
+  NextSegment: {fileID: 11400000, guid: 7915b704068c75f4093fced3e385f7d6, type: 2}

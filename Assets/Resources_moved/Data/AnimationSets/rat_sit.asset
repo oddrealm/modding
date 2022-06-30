@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: rat_sit
   m_EditorClassIdentifier: 
+  Key: rat_sit
   State: {fileID: 11400000, guid: 1c4464af3af0fcc408d2be3da4077885, type: 2}
   UpAnimation: {fileID: 11400000, guid: 0d8ffe258ee818047a34a214a3f4249e, type: 2}
   DownAnimation: {fileID: 11400000, guid: fdf306486a1b8124b97623a157e44ecf, type: 2}

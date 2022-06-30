@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockVisuals")]
 public class GDEBlockVisualsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public bool ReceiveSkylightColor = false;
 	public bool OnlyRenderIfVisible = false;
 	public BlockRotationTypes RotationType = 0;

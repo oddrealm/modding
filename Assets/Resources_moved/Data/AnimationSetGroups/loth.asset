@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: loth
   m_EditorClassIdentifier: 
+  Key: loth
   Sets:
   - {fileID: 11400000, guid: 123e22e839350f547b8e12b7e05b4a02, type: 2}
   - {fileID: 11400000, guid: 90e5f1bf958855541b4555340dc002dd, type: 2}

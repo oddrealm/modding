@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc12d5ddb38d0440a34b97fffa8228d, type: 3}
   m_Name: mp_void_ruins2
   m_EditorClassIdentifier: 
+  Key: mp_void_ruins2
   Group: mp_void_ruins
   Width: 9
   Height: 5

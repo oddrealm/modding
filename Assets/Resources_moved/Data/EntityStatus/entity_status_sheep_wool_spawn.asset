@@ -12,13 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_sheep_wool_spawn
   m_EditorClassIdentifier: 
+  Key: entity_status_sheep_wool_spawn
   TooltipID: tooltip_entity_status_sheep_wool_spawn
-  Tag: sheep_wool_spawn
+  HasEntityInfo: 0
   ShowToPlayer: 1
   Indicator: 
   Notification: 
   BuffGroup: 
   OverworldPartyActionGroup: 
-  ExpireTimeMinutes: -1
+  ExpireTimeMinutesMin: 0
+  ExpireTimeMinutesMax: 0
   ActivateIntervals: 1440
   ActivateItems: isg_sheep_wool_spawn
+  StatusesToRemove: []
+  StatusesToAddOnExpire: []
+  PermittedGenders: []
+  CooldownMin: 0
+  CooldownMax: 0
+  EntitiesToSpawnOnExpire: 

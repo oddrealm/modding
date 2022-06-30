@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: stairs
   m_EditorClassIdentifier: 
+  Key: stairs
   TooltipID: tooltip_tag_stairs
-  Name: Stairs
-  InlineIcon: <sprite=420>

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_output_quality_max
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_output_quality_max
   Name: Profession Quality
   InlineIcon: <sprite=375>
+  InlineAndName: <sprite=375> Profession Quality
   Description: The maximum quality that the Entity can achieve when creating objects
     with their core skills.
   Action: 

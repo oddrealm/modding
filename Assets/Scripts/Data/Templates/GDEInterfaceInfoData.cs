@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/InterfaceInfo")]
 public class GDEInterfaceInfoData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string OrderKey 
 	{
 		get 

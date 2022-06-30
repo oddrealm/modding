@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_omelette
   m_EditorClassIdentifier: 
+  Key: tooltip_item_omelette
   Name: Omelette
   InlineIcon: <sprite=614>
+  InlineAndName: <sprite=614> Omelette
   Description: 
   Action: 
   Icon: sp_omelette_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

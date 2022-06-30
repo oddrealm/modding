@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_race_squeaken
   m_EditorClassIdentifier: 
+  Key: tooltip_race_squeaken
   Name: Squeaken
   InlineIcon: <sprite=27>
+  InlineAndName: <sprite=27> Squeaken
   Description: 
   Action: 
   Icon: sp_race_squeaken
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

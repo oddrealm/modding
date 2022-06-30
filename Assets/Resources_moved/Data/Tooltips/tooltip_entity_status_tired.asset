@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_tired
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_tired
   Name: Tired (Status)
   InlineIcon: <sprite=60>
+  InlineAndName: <sprite=60> Tired (Status)
   Description: Low on energy and needs to rest.
   Action: 
   Icon: 

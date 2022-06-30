@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockPlatforms")]
 public class GDEBlockPlatformsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int Index = 0;
 	public string Visuals = "";
 	public string TooltipID = "";

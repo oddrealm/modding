@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_threat_incoming
   m_EditorClassIdentifier: 
+  Key: notif_threat_incoming
   Index: 4
   Enabled: 1
   NotificationType: 15
   Priority: 4
   FilterType: 64
   Sound: hostile_incoming
-  FactionToShowPipFor: 7
+  FactionToShowPipFor: 15
   DefaultPermitted: []
   InlineIcon: <sprite=1079>
   ShowInSettings: 1

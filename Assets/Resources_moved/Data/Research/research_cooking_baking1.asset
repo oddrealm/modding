@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_cooking_baking1
   m_EditorClassIdentifier: 
+  Key: research_cooking_baking1
   Enabled: 1
   Races: []
   ResearchKey: baking1

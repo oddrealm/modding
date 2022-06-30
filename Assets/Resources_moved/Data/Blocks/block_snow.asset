@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: block_snow
   m_EditorClassIdentifier: 
+  Key: block_snow
   Index: 22
   Tags: []
   PhysicsHeatSource: 0
@@ -50,7 +51,7 @@ MonoBehaviour:
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_snow_interact
-  FlammableChance: 100
+  FlammableChance: 0
   DecayBuff: 0
   Level: 1
   RemoveItemDrops: isg_block_snow
@@ -63,5 +64,5 @@ MonoBehaviour:
   VerticalMoveRequiresClimb: 1
   ForceFocusDirection: 0
   IsObstruction: 0
-  CanHaveRoom: 0
+  CanHaveRoom: 1
   IsVerticalAccess: 0

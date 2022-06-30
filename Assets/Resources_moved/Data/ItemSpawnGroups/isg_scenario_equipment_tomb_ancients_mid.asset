@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_equipment_tomb_ancients_mid
   m_EditorClassIdentifier: 
+  Key: isg_scenario_equipment_tomb_ancients_mid
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_adepts_aeternum","count":1,"spawn_rate":1000},{"item_id":"item_medium_leather_vest","count":1,"spawn_rate":1000},{"item_id":"item_medium_leather_pants","count":1,"spawn_rate":1000},{"item_id":"item_medium_leather_boots","count":1,"spawn_rate":1000},{"item_id":"item_spellbook_of_cleaving_one_hand","count":1,"spawn_rate":100},{"item_id":"item_spellbook_of_death_one_hand","count":1,"spawn_rate":100},{"item_id":"item_spellbook_of_destruction_one_hand","count":1,"spawn_rate":100},{"item_id":"item_spellbook_of_force_one_hand","count":1,"spawn_rate":100},{"item_id":"item_spellbook_of_healing_one_hand","count":1,"spawn_rate":100}]}'
   Spawns:
   - ItemID: item_adepts_aeternum
     GenerateNameKey: 

@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_ren
   m_EditorClassIdentifier: 
+  Key: tooltip_item_ren
   Name: Ren
   InlineIcon: <sprite=698>
+  InlineAndName: <sprite=698> Ren
   Description: An enchanted, indestructible coin that reads, "Shin-Ghirinan," and
     has the portrait of a regal looking humanoid. It is the dominant form of currency
     in Odd.
   Action: 
   Icon: sp_ren_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

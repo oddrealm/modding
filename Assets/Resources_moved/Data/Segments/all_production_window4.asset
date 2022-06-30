@@ -12,17 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_production_window4
   m_EditorClassIdentifier: 
+  Key: all_production_window4
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126
-  Trigger: 0
-  PreviousSegments: []
+  Trigger: 2
+  PreviousSegments:
+  - {fileID: 11400000, guid: 6b91fa49df3a09b4b83c71ddd6c27f96, type: 2}
   MinGameMinutes: -1
-  MinPlayTime: -1
+  MinPlayTime: 5
   MinCooldown: -1
   Hooks: []
   ActiveRaces: []
-  PermittedWindows: []
+  PermittedWindows:
+  - production_overlay
   SelectionType: 0
   AttributeRaces: []
   AttributeType: 0
@@ -40,8 +43,7 @@ MonoBehaviour:
   PopUpPosition: 2
   ShowBackground: 1
   ShowBackgroundMask: 1
-  BackgroundMaskTarget: queued_jobs
+  BackgroundMaskTarget: auto_job_entry
   AnimatedImage: 
-  PopUpTextBody: Queued Jobs will become active when both a worker with the required
-    skill, and a block that permits the job become available.
-  NextSegment: {fileID: 11400000, guid: 10835fd88d8151b47bf4733e6e92146e, type: 2}
+  PopUpTextBody: This is a job entry.
+  NextSegment: {fileID: 11400000, guid: 7c897c0c0642a5d44a5fced143b52a09, type: 2}

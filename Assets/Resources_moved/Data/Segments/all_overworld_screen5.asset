@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
   m_Name: all_overworld_screen5
   m_EditorClassIdentifier: 
+  Key: all_overworld_screen5
   TutorialType: 1
   SelectTarget: 0
   InputsToLock: 126

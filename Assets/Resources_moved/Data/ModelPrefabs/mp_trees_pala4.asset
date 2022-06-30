@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc12d5ddb38d0440a34b97fffa8228d, type: 3}
   m_Name: mp_trees_pala4
   m_EditorClassIdentifier: 
+  Key: mp_trees_pala4
   Group: mp_trees_pala
   Width: 3
   Height: 3

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: nightwing
   m_EditorClassIdentifier: 
+  Key: nightwing
   Sets:
   - {fileID: 11400000, guid: cdb498d9c8340d849af2f501a54ebb5d, type: 2}
   - {fileID: 11400000, guid: 71f3d2b61e3e1904eb12b8aba164304d, type: 2}

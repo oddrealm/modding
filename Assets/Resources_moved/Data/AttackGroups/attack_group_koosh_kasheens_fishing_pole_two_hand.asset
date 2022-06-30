@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4633816f5b17345921387ce966b49a, type: 3}
   m_Name: attack_group_koosh_kasheens_fishing_pole_two_hand
   m_EditorClassIdentifier: 
+  Key: attack_group_koosh_kasheens_fishing_pole_two_hand
   Attacks:
   - attack_koosh_kasheens_fishing_pole_two_hand_strike
   - attack_koosh_kasheens_fishing_pole_two_hand_fish

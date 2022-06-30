@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_scenario_inventory_tomb_ancients_mid
   m_EditorClassIdentifier: 
+  Key: isg_scenario_inventory_tomb_ancients_mid
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_ren","count":50,"spawn_rate":100},{"item_id":"item_tome_of_industry","count":1,"spawn_rate":10},{"item_id":"item_tome_of_cooking","count":1,"spawn_rate":10},{"item_id":"item_tome_of_agriculture","count":1,"spawn_rate":10},{"item_id":"item_tome_of_arcana","count":1,"spawn_rate":10},{"item_id":"item_tome_of_war","count":1,"spawn_rate":10},{"item_id":"item_void_crystal","count":1,"spawn_rate":10},{"item_id":"item_void_shard","count":1,"spawn_rate":10},{"item_id":"item_paper","count":1,"spawn_rate":10},{"item_id":"item_ink","count":1,"spawn_rate":10}]}'
   Spawns:
   - ItemID: item_ren
     GenerateNameKey: 

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0c107347a2cce499263339e977f83c, type: 3}
   m_Name: overworld_travel_default
   m_EditorClassIdentifier: 
+  Key: overworld_travel_default
   PeacefulActionGroup: oag_default
   UntamedActionGroup: oag_default
   FerociousActionGroup: oag_default

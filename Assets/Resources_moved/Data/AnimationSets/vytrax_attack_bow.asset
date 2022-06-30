@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: vytrax_attack_bow
   m_EditorClassIdentifier: 
+  Key: vytrax_attack_bow
   State: {fileID: 11400000, guid: 73df296c004647f4a8a0bd393365cce9, type: 2}
   UpAnimation: {fileID: 11400000, guid: 19f98c71290d5494ca1504e4493086d8, type: 2}
   DownAnimation: {fileID: 11400000, guid: 0ae7c9200219ae14880a09a44617edb9, type: 2}

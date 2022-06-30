@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_dominators_aeternum
   m_EditorClassIdentifier: 
+  Key: tooltip_item_dominators_aeternum
   Name: Dominator Aeternum
   InlineIcon: <sprite=817>
+  InlineAndName: <sprite=817> Dominator Aeternum
   Description: 
   Action: 
   Icon: sp_dominators_aeternum_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

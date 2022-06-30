@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_wool_coat
   m_EditorClassIdentifier: 
+  Key: item_wool_coat
   Index: 437
   TooltipID: tooltip_item_wool_coat
   Visuals: visuals_item_wool_coat
@@ -21,6 +22,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Tags: []
   Category: 128
+  Permissions: 0
   Inventory: inventory_body
   Buffs: buffs_item_wool_coat
   AttackGroup: 
@@ -39,3 +41,4 @@ MonoBehaviour:
   LightStrength: 0
   LightSize: 0
   StackSize: 1
+  JobOutputMod: 1

@@ -20,8 +20,8 @@ public class GDEItemSpawnGroupsData : ScriptableObject
         public int TempMod;
     }
 
-	public string Key { get { return name; } }
-	public string FriendlyName = "";
+    public string Key;
+    public string FriendlyName = "";
 
     public Spawn[] Spawns;
 

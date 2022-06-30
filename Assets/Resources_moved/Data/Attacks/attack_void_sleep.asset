@@ -12,22 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
   m_Name: attack_void_sleep
   m_EditorClassIdentifier: 
+  Key: attack_void_sleep
   TooltipID: tooltip_attack_entity_sleep
   ShowOnAttacksDisplay: 1
+  ActivationWeight: 100
+  ProjectileType: 0
+  FiringType: 1
+  ActivationType: 2
+  DamageType: 0
+  SkillUsed: 32768
+  AddSkillToOutput: 1
   MinAmount: 500
   MaxAmount: 1000
-  TargetAction: 0
-  TargetAttribute: 0
+  Range: 14
   SourceAction: 2
   SourceAttribute: 4
-  SkillUsed: 32768
-  Range: 14
+  TargetAction: 0
+  TargetAttribute: 0
   AnimationTrigger: 4096
   AnimationHitEvent: 1
-  FiringType: 1
-  ActivationType: 0
-  ActivationWeight: 100
   OriginFX: []
   HitFX: []
-  DamageType: 0
-  ProjectileType: 0
+  PrimeFX: []
+  AttackStartTargetColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartTargetColorDuration: 0
+  AttackStartTargetColorFlashType: 1
+  AttackStartSourceColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartSourceColorDuration: 0
+  AttackStartSourceColorFlashType: 1

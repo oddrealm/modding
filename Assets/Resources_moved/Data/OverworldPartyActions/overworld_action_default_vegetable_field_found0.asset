@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb7b169ce826814da1c0479e771d2ac, type: 3}
   m_Name: overworld_action_default_vegetable_field_found0
   m_EditorClassIdentifier: 
+  Key: overworld_action_default_vegetable_field_found0
   Chances: 10
   TooltipID: tooltip_oag_default_vegetable_field_found0
   ActivationType: 1

@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_iron_ore
   m_EditorClassIdentifier: 
+  Key: item_iron_ore
   Index: 155
   TooltipID: tooltip_item_iron_ore
   Visuals: visuals_item_iron_ore
-  CharacterColorMask: 
-  AccessoryData: 
+  CharacterColorMask: {fileID: 0}
+  AccessoryData: {fileID: 0}
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Tags: []
   Category: 1
+  Permissions: 0
   Inventory: inventory_none
   Buffs: 
   AttackGroup: 
@@ -39,3 +41,4 @@ MonoBehaviour:
   LightStrength: 0
   LightSize: 0
   StackSize: 5
+  JobOutputMod: 1

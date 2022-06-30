@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_yield_eat
   m_EditorClassIdentifier: 
+  Key: tooltip_blueprint_yield_eat
   Name: Eat Item
   InlineIcon: <sprite=950>
+  InlineAndName: <sprite=950> Eat Item
   Description: Eating items recovers hunger and may apply other buffs to the entity.
   Action: 
   Icon: 

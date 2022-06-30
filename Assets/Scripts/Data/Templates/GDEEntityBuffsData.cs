@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/EntityBuffs")]
 public class GDEEntityBuffsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
 	public EntityBuffTypes BuffType = EntityBuffTypes.ATTRIBUTES;
 	public bool NegativeIsPositive = false;

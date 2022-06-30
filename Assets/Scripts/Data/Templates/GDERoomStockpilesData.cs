@@ -5,8 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/RoomStockpiles")]
 public class GDERoomStockpilesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string TooltipID = "";
+	public StoragePreferences StoragePreference = StoragePreferences.ALL;
 	public List<string> Items = new List<string>();
-	public List<string> Categories = new List<string>();
+	public List<ItemCategories> Categories = new List<ItemCategories>();
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592d285aa2cd8234a893d7de416c5453, type: 3}
   m_Name: bt_leather_backpack_carry
   m_EditorClassIdentifier: 
+  Key: bt_leather_backpack_carry
   BuffID: buff_skill_carry
   Amount: 0
   BaseBuff: 5

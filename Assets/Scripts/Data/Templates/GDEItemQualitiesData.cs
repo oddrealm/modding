@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/ItemQualities")]
 public class GDEItemQualitiesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string Group = "";
 	public string FriendlyName = "";
 	public int Quality = 0;

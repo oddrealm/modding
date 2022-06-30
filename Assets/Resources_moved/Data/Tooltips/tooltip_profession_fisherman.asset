@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_fisherman
   m_EditorClassIdentifier: 
+  Key: tooltip_profession_fisherman
   Name: Fisherman
   InlineIcon: <sprite=39>
+  InlineAndName: <sprite=39> Fisherman
   Description: Fishermen specialize in catching fish from bodies of water.
   Action: 
   Icon: sp_profession_fisherman_icon
   Formatting: 
+  TextColor: {r: 0.3372549, g: 0.50980395, b: 1, a: 1}

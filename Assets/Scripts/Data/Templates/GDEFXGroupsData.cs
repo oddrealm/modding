@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/FXGroups")]
 public class GDEFXGroupsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public List<string> FX = new List<string>();
 }

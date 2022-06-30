@@ -12,11 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eb3dca774a8382469e308aa5057244d, type: 3}
   m_Name: room_owner_animals
   m_EditorClassIdentifier: 
+  Key: room_owner_animals
   TooltipID: tooltip_room_owner_animals
   LimitToUnique: 0
   LimitByFamily: 0
+  LimitToRoom: 1
+  AutoPopType: -1
   MaxOwners: 9
   PermittedSapientTypes: 2
   DefaultRaces: []
   DefaultSkills: []
   DefaultProfessions: []
+  DefaultFactions:
+  - faction_captured

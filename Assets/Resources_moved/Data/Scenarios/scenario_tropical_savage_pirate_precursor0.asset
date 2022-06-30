@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
   m_Name: scenario_tropical_savage_pirate_precursor0
   m_EditorClassIdentifier: 
+  Key: scenario_tropical_savage_pirate_precursor0
   Index: 93
   ActivationType: 0
   IsThreat: 0

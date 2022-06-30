@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_tome_of_industry
   m_EditorClassIdentifier: 
+  Key: tooltip_item_tome_of_industry
   Name: Tome of Industry
   InlineIcon: <sprite=1069>
+  InlineAndName: <sprite=1069> Tome of Industry
   Description: This tome can be used to unlock new research in Industry.
   Action: 
   Icon: sp_tome_of_industry_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

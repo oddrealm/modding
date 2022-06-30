@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_chronoblast
   m_EditorClassIdentifier: 
+  Key: plant_chronoblast
   Index: 98
   IsRoot: 1
   Biomes: []
@@ -22,7 +23,7 @@ MonoBehaviour:
   PlantType: 2
   PlantPermission: 1
   Group: -1
-  IsObstruction: 1
+  IsObstruction: 0
   FertilityRequirement: 1
   PhysicsType: 66
   NaturalSpawnChance: 0
@@ -40,7 +41,7 @@ MonoBehaviour:
   MatureEntityDrops: esg_plant_chronoblast_ardyn
   MaturePrefabID: 
   NeedsSkylight: 0
-  MinTemp: -5
+  MinTemp: -10
   MaxTemp: 75
   MatureTime: 72
   MaxLifeTime: 132

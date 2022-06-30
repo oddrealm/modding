@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: koosh_attack_bow
   m_EditorClassIdentifier: 
+  Key: koosh_attack_bow
   State: {fileID: 11400000, guid: 73df296c004647f4a8a0bd393365cce9, type: 2}
   UpAnimation: {fileID: 11400000, guid: 68a70ff47285a2d4a9b395692d4f5e91, type: 2}
   DownAnimation: {fileID: 11400000, guid: 15de4874bd5a54c46be73bf4e519049c, type: 2}

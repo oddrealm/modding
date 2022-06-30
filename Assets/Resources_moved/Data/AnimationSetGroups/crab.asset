@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: crab
   m_EditorClassIdentifier: 
+  Key: crab
   Sets:
   - {fileID: 11400000, guid: ad003b2795ff0a744b1e3f4c96a6ee64, type: 2}
   - {fileID: 11400000, guid: 88bcb1d6b16b1c64199b7fe9f57f4f1e, type: 2}

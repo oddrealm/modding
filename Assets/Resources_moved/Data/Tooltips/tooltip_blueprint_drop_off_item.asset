@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_drop_off_item
   m_EditorClassIdentifier: 
+  Key: tooltip_blueprint_drop_off_item
   Name: Haul Item
   InlineIcon: <sprite=1026>
+  InlineAndName: <sprite=1026> Haul Item
   Description: 
   Action: Hauling Item
   Icon: sp_job_drop_item_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

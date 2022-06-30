@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: deer_fly
   m_EditorClassIdentifier: 
+  Key: deer_fly
   State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
   UpAnimation: {fileID: 11400000, guid: 46da1e096853c39458de05d186d0aacd, type: 2}
   DownAnimation: {fileID: 11400000, guid: f4dbce8ba5e38424ba1989726539383a, type: 2}

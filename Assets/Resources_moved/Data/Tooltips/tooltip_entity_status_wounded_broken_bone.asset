@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_wounded_broken_bone
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_wounded_broken_bone
   Name: Wounded (Broken Bone) (Status)
   InlineIcon: <sprite=78>
+  InlineAndName: <sprite=78> Wounded (Broken Bone) (Status)
   Description: Has a broken bone.
   Action: 
   Icon: 

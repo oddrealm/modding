@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_buckhorn
   m_EditorClassIdentifier: 
+  Key: tooltip_plant_buckhorn
   Name: Buckhorn (Plant)
   InlineIcon: <sprite=70>
+  InlineAndName: <sprite=70> Buckhorn (Plant)
   Description: 
   Action: 
   Icon: sp_buckhorn_icon

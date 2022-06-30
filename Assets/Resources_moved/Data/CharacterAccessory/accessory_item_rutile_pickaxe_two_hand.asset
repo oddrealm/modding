@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0213a4de9e4e74d41b330785bb4c7fff, type: 3}
   m_Name: accessory_item_rutile_pickaxe_two_hand
   m_EditorClassIdentifier: 
+  Key: accessory_item_rutile_pickaxe_two_hand
   Priority: 3
   TexX: 64
   TexY: 183

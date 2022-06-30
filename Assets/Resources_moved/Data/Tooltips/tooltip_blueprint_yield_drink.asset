@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_yield_drink
   m_EditorClassIdentifier: 
+  Key: tooltip_blueprint_yield_drink
   Name: Drink Item
   InlineIcon: <sprite=1181>
+  InlineAndName: <sprite=1181> Drink Item
   Description: Drinking items recovers thirst and may apply other buffs to the entity.
   Action: 
   Icon: 

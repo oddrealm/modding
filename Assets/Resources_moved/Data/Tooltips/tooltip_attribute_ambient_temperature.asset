@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_ambient_temperature
   m_EditorClassIdentifier: 
+  Key: tooltip_attribute_ambient_temperature
   Name: Ambient Temperature
   InlineIcon: <sprite=843>
+  InlineAndName: <sprite=843> Ambient Temperature
   Description: The temperature of the Entity's surroundings. This affects the entity's
     body temperature.
   Action: 

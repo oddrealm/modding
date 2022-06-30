@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_chirpen
   m_EditorClassIdentifier: 
+  Key: entity_tuning_chirpen
   SightRange: 128
   MinRandomSkill: 1
   MaxRandomSkill: 3
+  SkillBonuses: []
   Health: 1d3+90
   HealthChange: 0
   Toughness: 1d3

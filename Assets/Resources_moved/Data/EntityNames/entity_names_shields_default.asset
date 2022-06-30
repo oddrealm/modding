@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
   m_Name: entity_names_shields_default
   m_EditorClassIdentifier: 
+  Key: entity_names_shields_default
   FirstNameMasculinePrependChances: 0
   FirstNameMasculinePrepends: []
   MasculineFirstNames: []

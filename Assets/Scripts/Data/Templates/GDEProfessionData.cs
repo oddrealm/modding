@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Profession")]
 public class GDEProfessionData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public string ResearchKey = "";
 	public string TooltipID = "";
 	public bool VisibleToPlayer = false;
@@ -13,5 +13,4 @@ public class GDEProfessionData : ScriptableObject
 	public SkillTypes SkillsActiveByDefault;
 	public SkillTypes SkillsToIncreaseOnLevelUp;
 	public ProfessionTypes ProfessionType;
-	public List<float> Color = new List<float>();
 }

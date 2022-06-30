@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974054b8557205f4ebaa3a582db079af, type: 3}
   m_Name: interface_info_stone_hatchet_one_hand
   m_EditorClassIdentifier: 
+  Key: interface_info_stone_hatchet_one_hand
   Index: 497
   Category: Q_tools
   SubCategory: 00

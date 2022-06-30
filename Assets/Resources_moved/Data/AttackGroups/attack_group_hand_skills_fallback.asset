@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4633816f5b17345921387ce966b49a, type: 3}
   m_Name: attack_group_hand_skills_fallback
   m_EditorClassIdentifier: 
+  Key: attack_group_hand_skills_fallback
   Attacks:
   - attack_hand_log_direct
   - attack_hand_craft_wood_direct

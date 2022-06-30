@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_bronze_ingot
   m_EditorClassIdentifier: 
+  Key: tooltip_item_bronze_ingot
   Name: 'Bronze Ingot '
   InlineIcon: <sprite=193>
+  InlineAndName: '<sprite=193> Bronze Ingot '
   Description: 
   Action: 
   Icon: sp_bronze_ingot_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

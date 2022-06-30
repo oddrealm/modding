@@ -12,17 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_retroanimate_astrasome
   m_EditorClassIdentifier: 
+  Key: blueprint_retroanimate_astrasome
+  StartProgressType: 0
+  StartProgressAttribute: 0
+  StartProgressAttributePercent: 1
+  FixedProgressStart: 0
+  TargetProgressType: 0
+  TargetProgressAttribute: 0
+  TargetProgressAttributePercent: 1
+  FixedProgressTarget: 50
   DefaultAutoJobPriority: 3
-  DefaultThresholdType: 6
+  DefaultThresholdType: 0
   TimeoutTime: 300
   Requirements: requirement_blueprint_retroanimate_astrasome
   AutoJobBlockSearchType: 1
   JobBarType: 3
   InvertProgressDisplay: 0
   JobActionTextTypes: 1
-  AttributeToUseForProgress: 0
-  AttributeTargetPercentage: 1
-  ProgressMax: 25
   Toughness: 0
   XPMod: 1
   UseBlockForToughness: 0
@@ -51,3 +57,5 @@ MonoBehaviour:
   ReleaseContainedEntity: 0
   TryCaptureContainedEntity: 0
   StatusesToApply: []
+  StatusesToApplyToTarget: []
+  MarkRequirementsDiscoveredOnDiscovery: 1

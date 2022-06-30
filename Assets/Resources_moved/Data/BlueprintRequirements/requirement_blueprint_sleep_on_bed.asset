@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7176e6cadee5b24abf279de5dc07896, type: 3}
   m_Name: requirement_blueprint_sleep_on_bed
   m_EditorClassIdentifier: 
+  Key: requirement_blueprint_sleep_on_bed
   CanStackWithSameJobType: 0
-  SpecialBlockTooltipID: 
   PermissionType: 0
   BlockTagConditionType: 1
   BlockTags:
@@ -23,10 +23,13 @@ MonoBehaviour:
   WorkPointLocation: 1
   Entities:
   - RaceID: 
+    CanUseWithoutDiscovering: 0
     StatusConditionType: 0
     Statuses:
     - entity_status_tired
+    ProhibitedOwnedRooms: []
     IntelligenceType: 1
+    IsCompanion: 0
   Targets: []
   Rooms:
   - room_home

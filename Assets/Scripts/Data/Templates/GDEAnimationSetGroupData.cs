@@ -5,5 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/AnimationSetGroup")]
 public class GDEAnimationSetGroupData : ScriptableObject
 {
+    public string Key;
     public GDEAnimationSetData[] Sets;
 }

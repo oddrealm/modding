@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: temporal_displacer
   m_EditorClassIdentifier: 
+  Key: temporal_displacer
   TooltipID: tooltip_tag_temporal_displacer
-  Name: Temporal Displacer
-  InlineIcon: <sprite=578>

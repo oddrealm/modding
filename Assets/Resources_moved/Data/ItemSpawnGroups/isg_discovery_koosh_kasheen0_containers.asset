@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_discovery_koosh_kasheen0_containers
   m_EditorClassIdentifier: 
+  Key: isg_discovery_koosh_kasheen0_containers
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_darbys_pointy_stick","count":1,"spawn_rate":8},{"item_id":"item_ancient_helmet","count":1,"spawn_rate":8},{"item_id":"item_rutile_breastplate","count":1,"spawn_rate":75},{"item_id":"item_rutile_helmet","count":1,"spawn_rate":75},{"item_id":"item_rutile_leggings","count":1,"spawn_rate":75},{"item_id":"item_rutile_boots","count":1,"spawn_rate":75},{"item_id":"item_steel_war_axe_one_hand","count":1,"spawn_rate":86},{"item_id":"item_steel_fishing_pole_two_hand","count":1,"spawn_rate":95},{"item_id":"item_iron_kite_shield_one_hand","count":1,"spawn_rate":95},{"item_id":"item_iron_dagger_one_hand","count":1,"spawn_rate":95},{"item_id":"item_iron_mace_one_hand","count":1,"spawn_rate":95},{"item_id":"item_sword_of_love_one_hand","count":1,"spawn_rate":6},{"item_id":"item_sword_of_hate_one_hand","count":1,"spawn_rate":6}]}'
   Spawns:
   - ItemID: item_darbys_pointy_stick
     GenerateNameKey: 

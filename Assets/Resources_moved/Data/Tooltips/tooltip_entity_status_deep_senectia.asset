@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_deep_senectia
   m_EditorClassIdentifier: 
+  Key: tooltip_entity_status_deep_senectia
   Name: Deep Senectia (Status)
   InlineIcon: <sprite=1200>
+  InlineAndName: <sprite=1200> Deep Senectia (Status)
   Description: The late stages of time debt, which occurs when Ardyn go too long
     without siphoning life from other entities.
   Action: 

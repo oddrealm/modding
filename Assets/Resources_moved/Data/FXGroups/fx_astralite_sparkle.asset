@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ec635f4f9775e48abecd47b87e9d58, type: 3}
   m_Name: fx_astralite_sparkle
   m_EditorClassIdentifier: 
+  Key: fx_astralite_sparkle
   FX:
   - fx_item_astralite

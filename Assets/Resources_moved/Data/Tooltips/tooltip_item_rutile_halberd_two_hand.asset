@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_rutile_halberd_two_hand
   m_EditorClassIdentifier: 
+  Key: tooltip_item_rutile_halberd_two_hand
   Name: Rutile Halberd 2h
   InlineIcon: <sprite=986>
+  InlineAndName: <sprite=986> Rutile Halberd 2h
   Description: 
   Action: 
   Icon: sp_rutile_halberd_two_hand_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

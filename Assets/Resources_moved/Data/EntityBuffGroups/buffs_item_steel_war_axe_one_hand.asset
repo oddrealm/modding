@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abac97dd3fbc07b4799e0a1f2debe84e, type: 3}
   m_Name: buffs_item_steel_war_axe_one_hand
   m_EditorClassIdentifier: 
+  Key: buffs_item_steel_war_axe_one_hand
   Buffs:
   - bt_item_steel_war_axe_one_hand_evasion

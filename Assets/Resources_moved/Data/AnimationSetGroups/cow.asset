@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: cow
   m_EditorClassIdentifier: 
+  Key: cow
   Sets:
   - {fileID: 11400000, guid: 2729ecfba99bd8e4f9b57b858c3d60e2, type: 2}
   - {fileID: 11400000, guid: ec5730a29de8d2f44a2b92a6073385fd, type: 2}

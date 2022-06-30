@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_dream_pool
   m_EditorClassIdentifier: 
+  Key: tooltip_prop_dream_pool
   Name: Dream Pool
   InlineIcon: <sprite=1213>
+  InlineAndName: <sprite=1213> Dream Pool
   Description: 
   Action: 
   Icon: sp_dream_pool_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

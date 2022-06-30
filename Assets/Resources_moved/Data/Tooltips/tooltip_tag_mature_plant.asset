@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_mature_plant
   m_EditorClassIdentifier: 
+  Key: tooltip_tag_mature_plant
   Name: Mature Plant
   InlineIcon: <sprite=1227>
+  InlineAndName: <sprite=1227> Mature Plant
   Description: Is ready to harvest and/or produce crops.
   Action: 
   Icon: 

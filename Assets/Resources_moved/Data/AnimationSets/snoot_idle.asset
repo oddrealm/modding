@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: snoot_idle
   m_EditorClassIdentifier: 
+  Key: snoot_idle
   State: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
   UpAnimation: {fileID: 11400000, guid: 535d961e5ad7d0d4ebee93139cb69a7d, type: 2}
   DownAnimation: {fileID: 11400000, guid: a5a9e7f839c880942906a579f3a01542, type: 2}

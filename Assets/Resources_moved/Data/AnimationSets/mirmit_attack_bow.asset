@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: mirmit_attack_bow
   m_EditorClassIdentifier: 
+  Key: mirmit_attack_bow
   State: {fileID: 11400000, guid: 73df296c004647f4a8a0bd393365cce9, type: 2}
   UpAnimation: {fileID: 11400000, guid: f32fafb479897c645a4538e2b0ca3f72, type: 2}
   DownAnimation: {fileID: 11400000, guid: 0f572fd9dff1a334a9dd883521c63fc6, type: 2}

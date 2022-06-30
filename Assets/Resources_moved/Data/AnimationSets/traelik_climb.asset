@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: traelik_climb
   m_EditorClassIdentifier: 
+  Key: traelik_climb
   State: {fileID: 11400000, guid: 0568f5713f1565a4aa7c5e1b2f739391, type: 2}
   UpAnimation: {fileID: 11400000, guid: 7b1e03b2befb53943b3ed2935dbb800f, type: 2}
   DownAnimation: {fileID: 11400000, guid: b9a2f4d1a1794b544a4ba89a5b47ee48, type: 2}

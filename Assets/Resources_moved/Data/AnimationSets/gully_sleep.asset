@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: gully_sleep
   m_EditorClassIdentifier: 
+  Key: gully_sleep
   State: {fileID: 11400000, guid: 7af7740d1c2f88647ad5c759a3ad39bf, type: 2}
   UpAnimation: {fileID: 11400000, guid: c4efd5534a5c758479906c9d242d96e4, type: 2}
   DownAnimation: {fileID: 11400000, guid: c4efd5534a5c758479906c9d242d96e4, type: 2}

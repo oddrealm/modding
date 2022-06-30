@@ -12,17 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f66563dfb5f81c43953c223ddf50217, type: 3}
   m_Name: room_stockpiles_default
   m_EditorClassIdentifier: 
+  Key: room_stockpiles_default
   TooltipID: tooltip_room_stockpiles_default
+  StoragePreference: 3
   Items: []
-  Categories:
-  - zone_resources
-  - zone_food_raw
-  - zone_food_cooked
-  - zone_seeds
-  - zone_garbage
-  - zone_refined_materials
-  - zone_tools
-  - zone_gear
-  - zone_beverages
-  - zone_remains
-  - zone_books
+  Categories: 010000000200000004000000080000001000000020000000400000008000000000010000000200000004000000080000

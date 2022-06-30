@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/RoomTemplates")]
 public class GDERoomTemplatesData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
+	public bool UpdateEveryFrame = false;
 	public RoomActivationTypes ActivationType = RoomActivationTypes.DESIGNATION;
 	public bool CanEditOwnersAndStockpiles = true;
 	public bool Enabled = false;

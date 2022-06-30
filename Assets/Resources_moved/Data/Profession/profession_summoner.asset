@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_summoner
   m_EditorClassIdentifier: 
+  Key: profession_summoner
   ResearchKey: 
   TooltipID: tooltip_profession_summoner
   VisibleToPlayer: 1
@@ -19,7 +20,3 @@ MonoBehaviour:
   SkillsActiveByDefault: 2136320
   SkillsToIncreaseOnLevelUp: 2097152
   ProfessionType: 131072
-  Color:
-  - 164
-  - 72
-  - 77

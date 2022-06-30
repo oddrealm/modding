@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
   m_Name: ccm_chicken_ma0
   m_EditorClassIdentifier: 
+  Key: ccm_chicken_ma0
   Priority: 0
   Pairs:
   - BodyPart: 257
     Target: {r: 0.9622642, g: 0.41456035, b: 0.14070843, a: 1}
   - BodyPart: 254
-    Target: {r: 0.9528302, g: 0.8956277, b: 0.79552335, a: 1}
+    Target: {r: 0.41960785, g: 0.3019608, b: 0.2509804, a: 1}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_loth_loth_remains
   m_EditorClassIdentifier: 
+  Key: item_loth_loth_remains
   Index: 259
   TooltipID: tooltip_item_loth_loth_remains
   Visuals: visuals_item_loth_loth_remains

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cb679d16102814ebd643fd5fb2d2a3, type: 3}
   m_Name: attribute_happiness
   m_EditorClassIdentifier: 
+  Key: attribute_happiness
   TooltipID: tooltip_attribute_happiness
   DisplayOrder: 14
   StartMin: 0

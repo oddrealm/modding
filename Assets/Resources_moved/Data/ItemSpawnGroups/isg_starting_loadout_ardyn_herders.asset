@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_starting_loadout_ardyn_herders
   m_EditorClassIdentifier: 
+  Key: isg_starting_loadout_ardyn_herders
   FriendlyName: 
   Spawns:
   - ItemID: item_ren
@@ -31,6 +32,13 @@ MonoBehaviour:
   - ItemID: item_water
     GenerateNameKey: 
     Count: 10
+    SpawnRate: 1000
+    RandomizeCount: 0
+    MaxValue: 2147483647
+    RandomIDRarity: -1
+  - ItemID: item_tome_of_agriculture
+    GenerateNameKey: 
+    Count: 3
     SpawnRate: 1000
     RandomizeCount: 0
     MaxValue: 2147483647

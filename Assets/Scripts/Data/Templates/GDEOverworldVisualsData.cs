@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/OverworldVisuals")]
 public class GDEOverworldVisualsData : ScriptableObject
 {
-	public string Key { get { return name; } }
+	public string Key;
 	public int MeshIndex = 0;
 	public int TextureX = 0;
 	public int TextureY = 0;

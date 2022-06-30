@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
   m_Name: rat
   m_EditorClassIdentifier: 
+  Key: rat
   Sets:
   - {fileID: 11400000, guid: 30fe0b7516be8dc498a41609ba04daed, type: 2}
   - {fileID: 11400000, guid: 1302797996817df4eac0a1654d73b18c, type: 2}

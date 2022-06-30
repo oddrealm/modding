@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_stone_tomb
   m_EditorClassIdentifier: 
+  Key: tooltip_prop_stone_tomb
   Name: Stone Tomb
   InlineIcon: <sprite=429>
+  InlineAndName: <sprite=429> Stone Tomb
   Description: 
   Action: 
   Icon: sp_stone_tomb_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

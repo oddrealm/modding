@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_farm
   m_EditorClassIdentifier: 
+  Key: tooltip_room_farm
   Name: Farm
   InlineIcon: <sprite=1108>
+  InlineAndName: <sprite=1108> Farm
   Description: Farms are where you can grow crops.
   Action: 
   Icon: sp_room_farm_icon
   Formatting: '{2}''s {0} {1}'
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

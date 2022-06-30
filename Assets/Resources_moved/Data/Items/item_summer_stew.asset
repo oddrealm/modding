@@ -12,16 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_summer_stew
   m_EditorClassIdentifier: 
+  Key: item_summer_stew
   Index: 369
   TooltipID: tooltip_item_summer_stew
   Visuals: visuals_item_summer_stew
-  CharacterColorMask: 
-  AccessoryData: 
+  CharacterColorMask: {fileID: 0}
+  AccessoryData: {fileID: 0}
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Tags:
   - consumable_veg_cooked
   Category: 4
+  Permissions: 0
   Inventory: inventory_none
   Buffs: buffs_item_food_cooked3
   AttackGroup: 
@@ -40,3 +42,4 @@ MonoBehaviour:
   LightStrength: 0
   LightSize: 0
   StackSize: 5
+  JobOutputMod: 1

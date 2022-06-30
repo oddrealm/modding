@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: dweller_fly
   m_EditorClassIdentifier: 
+  Key: dweller_fly
   State: {fileID: 11400000, guid: 3849787c42f9d7e4bafa6e54ab878644, type: 2}
   UpAnimation: {fileID: 11400000, guid: 44df6ff0f780c704cbfb0b52d43a1871, type: 2}
   DownAnimation: {fileID: 11400000, guid: db026cf676cb7de4283f20445fb74c7f, type: 2}

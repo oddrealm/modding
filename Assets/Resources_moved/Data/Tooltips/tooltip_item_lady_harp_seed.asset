@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_lady_harp_seed
   m_EditorClassIdentifier: 
+  Key: tooltip_item_lady_harp_seed
   Name: Lady Harp (Seed)
   InlineIcon: <sprite=279>
+  InlineAndName: <sprite=279> Lady Harp (Seed)
   Description: Used to grow Lady Harp.
   Action: 
   Icon: sp_lady_harp_icon
   Formatting: 
+  TextColor: {r: 1, g: 1, b: 1, a: 1}

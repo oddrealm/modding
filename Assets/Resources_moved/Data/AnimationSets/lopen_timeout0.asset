@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
   m_Name: lopen_timeout0
   m_EditorClassIdentifier: 
+  Key: lopen_timeout0
   State: {fileID: 11400000, guid: 8a3df8281b93c11449979222e8f60cbb, type: 2}
   UpAnimation: {fileID: 11400000, guid: a5b15a793b6052041851c654587e2ccd, type: 2}
   DownAnimation: {fileID: 11400000, guid: a5b15a793b6052041851c654587e2ccd, type: 2}

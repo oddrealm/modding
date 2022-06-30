@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_fire_pit
   m_EditorClassIdentifier: 
+  Key: prop_fire_pit
   Index: 311
   Tags:
   - fire_pit
@@ -51,7 +52,7 @@ MonoBehaviour:
   Permissions: 4196352
   AddSFX: 
   RemoveSFX: 
-  InteractSFX: sfx_hammer_wood
+  InteractSFX: 
   FlammableChance: 500
   DecayBuff: 0
   Level: 1

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974054b8557205f4ebaa3a582db079af, type: 3}
   m_Name: interface_info_fiber_sleeping_mat
   m_EditorClassIdentifier: 
+  Key: interface_info_fiber_sleeping_mat
   Index: 93
   Category: E_props
   SubCategory: 00

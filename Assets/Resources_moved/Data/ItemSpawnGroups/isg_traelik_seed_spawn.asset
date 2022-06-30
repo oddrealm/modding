@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_traelik_seed_spawn
   m_EditorClassIdentifier: 
+  Key: isg_traelik_seed_spawn
   FriendlyName: 
-  Data: '{"items":[{"item_id":"item_broccoli_seed","count":1,"spawn_rate":15}, {"item_id":"item_carrot_seed","count":1,"spawn_rate":15},
-    {"item_id":"item_potato_seed","count":1,"spawn_rate":15}, {"item_id":"item_wheat_seed","count":1,"spawn_rate":15},
-    {"item_id":"item_rice_seed","count":1,"spawn_rate":15}, {"item_id":"item_cabbage_seed","count":1,"spawn_rate":15}]}'
   Spawns:
   - ItemID: item_broccoli_seed
     GenerateNameKey: 

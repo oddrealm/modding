@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afb1b83635734d4195ff0cbb3880318, type: 3}
   m_Name: isg_discovery_cave_iron_floor
   m_EditorClassIdentifier: 
+  Key: isg_discovery_cave_iron_floor
   FriendlyName: 
-  Data: '{"items":[{"generate_name_key":"","item_id":"item_stone_chunk","count":3,"spawn_rate":3},{"generate_name_key":"","item_id":"item_coal","count":3,"spawn_rate":3},{"generate_name_key":"","item_id":"item_boletus_mushroom_seed","count":1,"spawn_rate":2}]}'
   Spawns:
   - ItemID: item_stone_chunk
     GenerateNameKey: 

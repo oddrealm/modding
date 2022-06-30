@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_unstealthed_by_dog0_dog0_d0_0
   m_EditorClassIdentifier: 
+  Key: dialogue_unstealthed_by_dog0_dog0_d0_0
   AppearanceID: 
   NextDialogueID:
   - dialogue_unstealthed_by_dog0_narrator0_d0_1
