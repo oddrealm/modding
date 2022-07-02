@@ -75,7 +75,9 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     NOTE: Feel free to edit the other properties, but, for this tutorial, we'll just worry about getting the item into the game, and not about how it's fundamentally unique.  
 14. Select the new tooltip object in the Project window and set the properties to:  
     'Name' = Iron Shovel 2h  
+    </pre>
     'InlineIcon' = \*<sprite=1262>\* 
+    <pre>
     'InlineAndName' = \*<sprite=1262>\* Iron Shovel 2h  
     'Icon' = 'sp_iron_shovel_two_hand_icon'  
     These values are used to display the item in UI text fields.  
