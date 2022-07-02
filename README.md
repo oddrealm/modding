@@ -1,4 +1,5 @@
 # modding
+<pre>
 GETTING STARTED:
 
 THIS PROJECT IS NOT FOR COMMERCIAL DISTRIBUTION. IT IS ONLY A TOOL TO HELP MODDERS CREATE MODS FOR ODD REALM. 
@@ -27,7 +28,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     -[UnityEngine.Application.persistentDataPath]/Mods/MoreItems  
     -{UnityEngine.Application.persistentDataPath}/Mods/MoreItems  
     When the mod is ready to use in-game (all the data is set up), we 'build' (export the data) using these paths.  
-    IMPORTANT: Always make sure your mods are folders with the Mods folder of the Odd Realm save folder.   
+    IMPORTANT: Always make sure your mods are folders withing the Mods folder of the Odd Realm save folder.   
                If a Mods folder doesn't exist, you can create one.   
                Without the mods in this folder, the game won't be able to find them.  
 7.  Open the Addressables Groups window.   
@@ -35,7 +36,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
 8.  Create 4 new groups from the Groups window (top-left). Create>Group>Packed Assets.  
 9.  Rename each group: items, tooltips, blockvisuals, and characteraccessory.  
     If these groups already exist (which should be the case for the github default project), there's no need to create them.  
-    IMPORTANT: These names are important and must match the data being used.   
+    IMPORTANT: These names must match the data being used.   
                The name of the data type is the same as the folder which the data objects live in.   
                For example: Assets/Resources_moved/Data/Items.   
                Any data objects in here that have the GDEItemsData.cs class are going to have the group, 'items'.  
@@ -214,3 +215,4 @@ Also, we have a fantastic discord community with a dedicated modding channel.
 Here's the link: https://discord.gg/6bw3k6w   
 Please come join us and feel free to ping me there with questions or feedback.  
 
+</pre>
