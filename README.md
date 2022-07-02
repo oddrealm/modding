@@ -9,9 +9,11 @@ PART I: MAKING NEW GAME DATA OBJECTS:
 
 There are many types of data objects to edit and create using this project, but, for this example, I'll walk you through creating a new item (Iron Shovel 2h).
 This should give you a basic understanding of the modding pipeline.
+
 NOTE: The data that comes with the game in Resources_moved is what Odd Realm uses by default. 
       You do not have to include any of these in your mods. 
       They are in the project for reference and use in your mods if desired.
+      
 1.  Download the modding Unity project. (https://github.com/oddrealm/modding)
 2.  Open the Unity Project (Unity Version 2019.4.34f1).
 3.  Open the Addressables Profiles window. 
