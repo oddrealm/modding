@@ -1,5 +1,5 @@
 # modding
-<pre>
+
 GETTING STARTED:
 
 THIS PROJECT IS NOT FOR COMMERCIAL DISTRIBUTION. IT IS ONLY A TOOL TO HELP MODDERS CREATE MODS FOR ODD REALM. 
@@ -218,4 +218,4 @@ Also, we have a fantastic discord community with a dedicated modding channel.
 Here's the link: https://discord.gg/6bw3k6w   
 Please come join us and feel free to ping me there with questions or feedback.  
 
-</pre>
+
