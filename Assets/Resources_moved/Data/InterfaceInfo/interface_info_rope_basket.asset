@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_rope_basket
   m_EditorClassIdentifier: 
   Key: interface_info_rope_basket
-  Index: 148
+  Index: 151
   Category: F_containers
   SubCategory: 00
   Resource: plant_fiber

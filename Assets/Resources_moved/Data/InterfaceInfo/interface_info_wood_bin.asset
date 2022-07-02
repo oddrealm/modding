@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wood_bin
   m_EditorClassIdentifier: 
   Key: interface_info_wood_bin
-  Index: 161
+  Index: 164
   Category: F_containers
   SubCategory: 00
   Resource: wood

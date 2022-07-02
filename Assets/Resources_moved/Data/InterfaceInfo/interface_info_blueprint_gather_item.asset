@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_gather_item
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_gather_item
-  Index: 31
+  Index: 34
   Category: B_jobs
   SubCategory: 32
   Resource: item

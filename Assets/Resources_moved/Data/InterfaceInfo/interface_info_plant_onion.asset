@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_onion
   m_EditorClassIdentifier: 
   Key: interface_info_plant_onion
-  Index: 220
+  Index: 223
   Category: K_plants
   SubCategory: 00
   Resource: seed

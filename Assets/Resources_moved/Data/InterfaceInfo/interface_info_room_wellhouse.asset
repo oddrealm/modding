@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_wellhouse
   m_EditorClassIdentifier: 
   Key: interface_info_room_wellhouse
-  Index: 625
+  Index: 631
   Category: T_rooms
   SubCategory: 17
   Resource: 

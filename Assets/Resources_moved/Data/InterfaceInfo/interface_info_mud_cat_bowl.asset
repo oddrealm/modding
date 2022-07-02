@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_mud_cat_bowl
   m_EditorClassIdentifier: 
   Key: interface_info_mud_cat_bowl
-  Index: 311
+  Index: 314
   Category: O_meals
   SubCategory: 00
   Resource: fish

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wood_hatch
   m_EditorClassIdentifier: 
   Key: interface_info_wood_hatch
-  Index: 79
+  Index: 82
   Category: D_doors
   SubCategory: 00
   Resource: wood

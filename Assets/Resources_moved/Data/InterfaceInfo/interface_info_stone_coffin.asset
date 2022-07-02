@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_coffin
   m_EditorClassIdentifier: 
   Key: interface_info_stone_coffin
-  Index: 155
+  Index: 158
   Category: F_containers
   SubCategory: 00
   Resource: stone

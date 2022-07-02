@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_block_stone_ornate
   m_EditorClassIdentifier: 
   Key: interface_info_block_stone_ornate
-  Index: 65
+  Index: 68
   Category: C_blocks
   SubCategory: 00
   Resource: stone

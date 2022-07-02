@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_corn
   m_EditorClassIdentifier: 
   Key: interface_info_plant_corn
-  Index: 213
+  Index: 216
   Category: K_plants
   SubCategory: 00
   Resource: seed

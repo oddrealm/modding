@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_icebox
   m_EditorClassIdentifier: 
   Key: interface_info_stone_icebox
-  Index: 145
+  Index: 148
   Category: F_containers
   SubCategory: 00
   Resource: ice

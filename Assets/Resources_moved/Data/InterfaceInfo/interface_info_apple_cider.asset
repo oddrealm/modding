@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_apple_cider
   m_EditorClassIdentifier: 
   Key: interface_info_apple_cider
-  Index: 418
+  Index: 421
   Category: P_liquids
   SubCategory: 00
   Resource: fruit

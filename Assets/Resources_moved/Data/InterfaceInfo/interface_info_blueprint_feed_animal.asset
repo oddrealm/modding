@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_feed_animal
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_feed_animal
-  Index: 29
+  Index: 31
   Category: B_jobs
   SubCategory: 30
   Resource: animal

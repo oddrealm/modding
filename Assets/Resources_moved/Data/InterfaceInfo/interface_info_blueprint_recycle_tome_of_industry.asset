@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_recycle_tome_of_industry
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_recycle_tome_of_industry
-  Index: 40
+  Index: 43
   Category: B_jobs
   SubCategory: 41
   Resource: tome_of_indsutry

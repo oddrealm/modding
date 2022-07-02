@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_stoneleaf
   m_EditorClassIdentifier: 
   Key: interface_info_plant_stoneleaf
-  Index: 227
+  Index: 230
   Category: K_plants
   SubCategory: 00
   Resource: seed

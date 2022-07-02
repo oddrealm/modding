@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_ice_root
   m_EditorClassIdentifier: 
   Key: interface_info_plant_ice_root
-  Index: 198
+  Index: 201
   Category: K_plants
   SubCategory: 00
   Resource: ice

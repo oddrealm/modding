@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_deconstruct_block
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_deconstruct_block
-  Index: 17
+  Index: 19
   Category: B_jobs
   SubCategory: 18
   Resource: block

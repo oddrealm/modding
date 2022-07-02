@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_glass_window
   m_EditorClassIdentifier: 
   Key: interface_info_glass_window
-  Index: 50
+  Index: 53
   Category: C_blocks
   SubCategory: 00
   Resource: glass

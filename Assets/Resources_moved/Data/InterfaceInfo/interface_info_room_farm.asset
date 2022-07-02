@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_farm
   m_EditorClassIdentifier: 
   Key: interface_info_room_farm
-  Index: 615
+  Index: 621
   Category: T_rooms
   SubCategory: 07
   Resource: 

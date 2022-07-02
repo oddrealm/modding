@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blackberry_wine
   m_EditorClassIdentifier: 
   Key: interface_info_blackberry_wine
-  Index: 411
+  Index: 414
   Category: P_liquids
   SubCategory: 00
   Resource: alcohol

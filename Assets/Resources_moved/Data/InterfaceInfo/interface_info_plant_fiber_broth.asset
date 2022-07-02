@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_fiber_broth
   m_EditorClassIdentifier: 
   Key: interface_info_plant_fiber_broth
-  Index: 371
+  Index: 374
   Category: O_meals
   SubCategory: 00
   Resource: plant_fiber

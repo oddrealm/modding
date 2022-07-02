@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_train_ranged
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_train_ranged
-  Index: 35
+  Index: 38
   Category: B_jobs
   SubCategory: 36
   Resource: ranged

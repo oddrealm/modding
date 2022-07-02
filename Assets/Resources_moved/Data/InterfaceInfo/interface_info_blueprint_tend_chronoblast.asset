@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_tend_chronoblast
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_tend_chronoblast
-  Index: 23
+  Index: 25
   Category: B_jobs
   SubCategory: 24
   Resource: age

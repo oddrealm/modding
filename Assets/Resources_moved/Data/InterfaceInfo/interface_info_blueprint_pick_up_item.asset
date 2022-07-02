@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_pick_up_item
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_pick_up_item
-  Index: 32
+  Index: 35
   Category: B_jobs
   SubCategory: 33
   Resource: item

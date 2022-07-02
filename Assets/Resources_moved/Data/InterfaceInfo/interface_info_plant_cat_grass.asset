@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_cat_grass
   m_EditorClassIdentifier: 
   Key: interface_info_plant_cat_grass
-  Index: 246
+  Index: 249
   Category: N_weeds
   SubCategory: 00
   Resource: seed

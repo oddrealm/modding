@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_chicken_meat_roasted
   m_EditorClassIdentifier: 
   Key: interface_info_chicken_meat_roasted
-  Index: 350
+  Index: 353
   Category: O_meals
   SubCategory: 00
   Resource: meat

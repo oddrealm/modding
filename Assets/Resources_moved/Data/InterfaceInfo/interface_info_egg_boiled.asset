@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_egg_boiled
   m_EditorClassIdentifier: 
   Key: interface_info_egg_boiled
-  Index: 307
+  Index: 310
   Category: O_meals
   SubCategory: 00
   Resource: egg

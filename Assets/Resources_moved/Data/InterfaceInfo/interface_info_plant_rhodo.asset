@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_rhodo
   m_EditorClassIdentifier: 
   Key: interface_info_plant_rhodo
-  Index: 267
+  Index: 270
   Category: N_weeds
   SubCategory: 00
   Resource: seed

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_skyberry
   m_EditorClassIdentifier: 
   Key: interface_info_plant_skyberry
-  Index: 226
+  Index: 229
   Category: K_plants
   SubCategory: 00
   Resource: seed

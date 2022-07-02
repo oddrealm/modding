@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_light_leather_boots
   m_EditorClassIdentifier: 
   Key: interface_info_light_leather_boots
-  Index: 576
+  Index: 582
   Category: S_gear
   SubCategory: 00
   Resource: leather

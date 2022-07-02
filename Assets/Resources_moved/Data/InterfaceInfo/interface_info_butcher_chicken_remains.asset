@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_butcher_chicken_remains
   m_EditorClassIdentifier: 
   Key: interface_info_butcher_chicken_remains
-  Index: 281
+  Index: 284
   Category: O_meals
   SubCategory: 00
   Resource: butcher

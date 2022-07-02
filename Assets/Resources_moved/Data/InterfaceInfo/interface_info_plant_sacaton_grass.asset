@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_sacaton_grass
   m_EditorClassIdentifier: 
   Key: interface_info_plant_sacaton_grass
-  Index: 247
+  Index: 250
   Category: N_weeds
   SubCategory: 00
   Resource: seed

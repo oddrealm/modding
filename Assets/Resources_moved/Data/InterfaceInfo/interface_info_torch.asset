@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_torch
   m_EditorClassIdentifier: 
   Key: interface_info_torch
-  Index: 175
+  Index: 178
   Category: H_lights
   SubCategory: 00
   Resource: wood

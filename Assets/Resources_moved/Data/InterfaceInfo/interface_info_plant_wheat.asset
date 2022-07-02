@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_wheat
   m_EditorClassIdentifier: 
   Key: interface_info_plant_wheat
-  Index: 229
+  Index: 232
   Category: K_plants
   SubCategory: 00
   Resource: seed

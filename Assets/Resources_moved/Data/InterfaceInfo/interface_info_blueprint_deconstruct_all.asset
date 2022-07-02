@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_deconstruct_all
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_deconstruct_all
-  Index: 18
+  Index: 20
   Category: B_jobs
   SubCategory: 19
   Resource: all

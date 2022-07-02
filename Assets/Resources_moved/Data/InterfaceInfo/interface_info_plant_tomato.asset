@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_tomato
   m_EditorClassIdentifier: 
   Key: interface_info_plant_tomato
-  Index: 201
+  Index: 204
   Category: K_plants
   SubCategory: 00
   Resource: seed

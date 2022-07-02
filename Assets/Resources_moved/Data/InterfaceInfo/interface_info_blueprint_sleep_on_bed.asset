@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_sleep_on_bed
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_sleep_on_bed
-  Index: 20
+  Index: 22
   Category: B_jobs
   SubCategory: 21
   Resource: 

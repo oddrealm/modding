@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_goose_grass
   m_EditorClassIdentifier: 
   Key: interface_info_plant_goose_grass
-  Index: 258
+  Index: 261
   Category: N_weeds
   SubCategory: 00
   Resource: seed

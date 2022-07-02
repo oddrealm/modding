@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wheat_flour
   m_EditorClassIdentifier: 
   Key: interface_info_wheat_flour
-  Index: 384
+  Index: 387
   Category: O_meals
   SubCategory: 00
   Resource: veg

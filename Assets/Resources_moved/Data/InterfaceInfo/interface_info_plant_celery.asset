@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_celery
   m_EditorClassIdentifier: 
   Key: interface_info_plant_celery
-  Index: 211
+  Index: 214
   Category: K_plants
   SubCategory: 00
   Resource: seed

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_leather_backpack
   m_EditorClassIdentifier: 
   Key: interface_info_leather_backpack
-  Index: 573
+  Index: 579
   Category: S_gear
   SubCategory: 00
   Resource: leather

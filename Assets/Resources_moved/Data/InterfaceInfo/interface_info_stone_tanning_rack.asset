@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_tanning_rack
   m_EditorClassIdentifier: 
   Key: interface_info_stone_tanning_rack
-  Index: 107
+  Index: 110
   Category: E_props
   SubCategory: 00
   Resource: stone

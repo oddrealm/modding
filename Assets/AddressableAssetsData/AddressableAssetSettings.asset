@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
-  m_DefaultGroup: a9a6bee548cfffe41a02d962ff617987
+  m_DefaultGroup: 3cea5a7693c71b248be853cdeca4a290
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
@@ -37,7 +37,11 @@ MonoBehaviour:
   m_overridePlayerVersion: 
   m_GroupAssets:
   - {fileID: 11400000, guid: c4b75abb78ccab4449f601c1c6728fd6, type: 2}
-  - {fileID: 11400000, guid: 66a215cd99dce7d439df53be4fdc337b, type: 2}
+  - {fileID: 11400000, guid: 7048e045874594e449ea61b838566c1b, type: 2}
+  - {fileID: 11400000, guid: c505b517fbf78304eb0d0ae5937785b2, type: 2}
+  - {fileID: 11400000, guid: c9d27b58f20cee647aee7886d2b56ae0, type: 2}
+  - {fileID: 11400000, guid: 8a2f35750e986284fbd4643654b27d5c, type: 2}
+  - {fileID: 11400000, guid: 93f920b417a82be48b17824f40eb10d9, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -73,6 +77,20 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: d6f356ae13cafaf4c943978a8478c611
         m_Value: http://localhost/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: 30782f78353178948afcff6da8b35ba7
+      m_ProfileName: MoreTools
+      m_Values:
+      - m_Id: 0b7d706c5e7f80847bad8bc22a25db2a
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 8d71ce75dd861bf4fa97521c09461461
+        m_Value: '[UnityEngine.Application.persistentDataPath]/Mods/MoreItems'
+      - m_Id: 4888cea6576cd8a47aee98e8773e90e2
+        m_Value: '{UnityEngine.Application.persistentDataPath}/Mods/MoreItems'
+      - m_Id: 7914ce7b2f0249c4eb88b5c3f8e2cdf0
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: d6f356ae13cafaf4c943978a8478c611
+        m_Value: http://localhost/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: 0b7d706c5e7f80847bad8bc22a25db2a
       m_Name: BuildTarget
@@ -93,9 +111,10 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
-    - tags_cauldrons
-    - tags
-    - cauldrons
+    - items
+    - tooltips
+    - blockvisuals
+    - characteraccessory
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: a7b4ff4c0d9938e47ba58c00f547a964, type: 2}
@@ -109,7 +128,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6447d11d15cf01a4e81d3361deee5360, type: 2}
   - {fileID: 11400000, guid: 726ef96051c5a77479111327246d636c, type: 2}
   - {fileID: 11400000, guid: 8990ee48cdd7620459abbee743cff18a, type: 2}
-  m_ActiveProfileId: 52a8c7ca4b8e69a4f889dd929cfdfa00
+  m_ActiveProfileId: 30782f78353178948afcff6da8b35ba7
   m_HostingServicesManager:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}

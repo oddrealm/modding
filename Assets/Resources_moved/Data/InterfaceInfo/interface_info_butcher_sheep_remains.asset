@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_butcher_sheep_remains
   m_EditorClassIdentifier: 
   Key: interface_info_butcher_sheep_remains
-  Index: 299
+  Index: 302
   Category: O_meals
   SubCategory: 00
   Resource: butcher

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_chongo
   m_EditorClassIdentifier: 
   Key: interface_info_plant_chongo
-  Index: 250
+  Index: 253
   Category: N_weeds
   SubCategory: 00
   Resource: seed

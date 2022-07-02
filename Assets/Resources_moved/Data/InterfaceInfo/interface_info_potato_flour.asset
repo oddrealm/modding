@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_potato_flour
   m_EditorClassIdentifier: 
   Key: interface_info_potato_flour
-  Index: 382
+  Index: 385
   Category: O_meals
   SubCategory: 00
   Resource: veg

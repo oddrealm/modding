@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wood_large_cage
   m_EditorClassIdentifier: 
   Key: interface_info_wood_large_cage
-  Index: 128
+  Index: 131
   Category: E_props
   SubCategory: 00
   Resource: wood

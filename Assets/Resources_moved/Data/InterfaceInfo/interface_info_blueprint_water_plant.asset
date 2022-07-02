@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_water_plant
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_water_plant
-  Index: 42
+  Index: 45
   Category: B_jobs
   SubCategory: 43
   Resource: water

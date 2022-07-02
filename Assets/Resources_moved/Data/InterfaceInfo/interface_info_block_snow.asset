@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_block_snow
   m_EditorClassIdentifier: 
   Key: interface_info_block_snow
-  Index: 60
+  Index: 63
   Category: C_blocks
   SubCategory: 00
   Resource: snow

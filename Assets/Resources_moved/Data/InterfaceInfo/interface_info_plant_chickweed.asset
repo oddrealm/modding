@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_chickweed
   m_EditorClassIdentifier: 
   Key: interface_info_plant_chickweed
-  Index: 248
+  Index: 251
   Category: N_weeds
   SubCategory: 00
   Resource: seed

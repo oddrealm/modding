@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_elderberry
   m_EditorClassIdentifier: 
   Key: interface_info_plant_elderberry
-  Index: 214
+  Index: 217
   Category: K_plants
   SubCategory: 00
   Resource: seed

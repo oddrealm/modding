@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_nila
   m_EditorClassIdentifier: 
   Key: interface_info_plant_nila
-  Index: 235
+  Index: 238
   Category: L_trees
   SubCategory: 00
   Resource: seed

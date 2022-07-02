@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_tree_pala_sapling
   m_EditorClassIdentifier: 
   Key: interface_info_plant_tree_pala_sapling
-  Index: 221
+  Index: 224
   Category: K_plants
   SubCategory: 00
   Resource: seed

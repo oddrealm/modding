@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_prickly_bear
   m_EditorClassIdentifier: 
   Key: interface_info_plant_prickly_bear
-  Index: 265
+  Index: 268
   Category: N_weeds
   SubCategory: 00
   Resource: seed

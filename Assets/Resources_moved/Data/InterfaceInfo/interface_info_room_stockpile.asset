@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_stockpile
   m_EditorClassIdentifier: 
   Key: interface_info_room_stockpile
-  Index: 609
+  Index: 615
   Category: T_rooms
   SubCategory: 01
   Resource: 

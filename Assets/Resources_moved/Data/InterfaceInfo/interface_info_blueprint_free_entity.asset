@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_free_entity
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_free_entity
-  Index: 19
+  Index: 21
   Category: B_jobs
   SubCategory: 20
   Resource: entity

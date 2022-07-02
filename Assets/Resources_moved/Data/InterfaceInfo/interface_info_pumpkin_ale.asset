@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_pumpkin_ale
   m_EditorClassIdentifier: 
   Key: interface_info_pumpkin_ale
-  Index: 403
+  Index: 406
   Category: P_liquids
   SubCategory: 00
   Resource: alcohol

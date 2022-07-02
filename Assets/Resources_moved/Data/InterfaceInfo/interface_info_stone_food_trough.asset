@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_food_trough
   m_EditorClassIdentifier: 
   Key: interface_info_stone_food_trough
-  Index: 157
+  Index: 160
   Category: F_containers
   SubCategory: 00
   Resource: stone

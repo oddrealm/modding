@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_train_magic
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_train_magic
-  Index: 33
+  Index: 36
   Category: B_jobs
   SubCategory: 34
   Resource: magic

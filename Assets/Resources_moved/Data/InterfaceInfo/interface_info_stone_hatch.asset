@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_hatch
   m_EditorClassIdentifier: 
   Key: interface_info_stone_hatch
-  Index: 75
+  Index: 78
   Category: D_doors
   SubCategory: 00
   Resource: stone

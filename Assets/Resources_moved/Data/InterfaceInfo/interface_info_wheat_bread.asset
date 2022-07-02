@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wheat_bread
   m_EditorClassIdentifier: 
   Key: interface_info_wheat_bread
-  Index: 381
+  Index: 384
   Category: O_meals
   SubCategory: 00
   Resource: veg

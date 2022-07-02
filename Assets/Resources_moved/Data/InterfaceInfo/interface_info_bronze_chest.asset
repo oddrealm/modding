@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_bronze_chest
   m_EditorClassIdentifier: 
   Key: interface_info_bronze_chest
-  Index: 141
+  Index: 144
   Category: F_containers
   SubCategory: 00
   Resource: bronze

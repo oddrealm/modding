@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_sweet_potato
   m_EditorClassIdentifier: 
   Key: interface_info_plant_sweet_potato
-  Index: 224
+  Index: 227
   Category: K_plants
   SubCategory: 00
   Resource: seed

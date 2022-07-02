@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_bookcase
   m_EditorClassIdentifier: 
   Key: interface_info_stone_bookcase
-  Index: 100
+  Index: 103
   Category: E_props
   SubCategory: 00
   Resource: stone

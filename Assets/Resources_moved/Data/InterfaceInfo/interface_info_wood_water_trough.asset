@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wood_water_trough
   m_EditorClassIdentifier: 
   Key: interface_info_wood_water_trough
-  Index: 159
+  Index: 162
   Category: F_containers
   SubCategory: 00
   Resource: water

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_block_kalite
   m_EditorClassIdentifier: 
   Key: interface_info_block_kalite
-  Index: 52
+  Index: 55
   Category: C_blocks
   SubCategory: 00
   Resource: kalite

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_light_leather_pants
   m_EditorClassIdentifier: 
   Key: interface_info_light_leather_pants
-  Index: 579
+  Index: 585
   Category: S_gear
   SubCategory: 00
   Resource: leather

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_apple_pie
   m_EditorClassIdentifier: 
   Key: interface_info_apple_pie
-  Index: 334
+  Index: 337
   Category: O_meals
   SubCategory: 00
   Resource: fruit

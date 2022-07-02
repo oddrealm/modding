@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_sake
   m_EditorClassIdentifier: 
   Key: interface_info_sake
-  Index: 408
+  Index: 411
   Category: P_liquids
   SubCategory: 00
   Resource: alcohol

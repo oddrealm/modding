@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_boletus_mushroom_roasted
   m_EditorClassIdentifier: 
   Key: interface_info_boletus_mushroom_roasted
-  Index: 336
+  Index: 339
   Category: O_meals
   SubCategory: 00
   Resource: fungus

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wheat_yeast
   m_EditorClassIdentifier: 
   Key: interface_info_wheat_yeast
-  Index: 401
+  Index: 404
   Category: O_meals
   SubCategory: 00
   Resource: veg

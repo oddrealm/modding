@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_beef_sausage
   m_EditorClassIdentifier: 
   Key: interface_info_beef_sausage
-  Index: 366
+  Index: 369
   Category: O_meals
   SubCategory: 00
   Resource: meat

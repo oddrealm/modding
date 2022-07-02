@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_chronoblast
   m_EditorClassIdentifier: 
   Key: interface_info_plant_chronoblast
-  Index: 25
+  Index: 27
   Category: B_jobs
   SubCategory: 26
   Resource: astrasome

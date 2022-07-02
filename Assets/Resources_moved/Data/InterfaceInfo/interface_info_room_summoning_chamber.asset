@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_summoning_chamber
   m_EditorClassIdentifier: 
   Key: interface_info_room_summoning_chamber
-  Index: 640
+  Index: 646
   Category: T_rooms
   SubCategory: 33
   Resource: 

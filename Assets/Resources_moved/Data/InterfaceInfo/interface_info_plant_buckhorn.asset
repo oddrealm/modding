@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_buckhorn
   m_EditorClassIdentifier: 
   Key: interface_info_plant_buckhorn
-  Index: 244
+  Index: 247
   Category: N_weeds
   SubCategory: 00
   Resource: seed

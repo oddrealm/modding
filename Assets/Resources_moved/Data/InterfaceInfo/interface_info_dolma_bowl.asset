@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_dolma_bowl
   m_EditorClassIdentifier: 
   Key: interface_info_dolma_bowl
-  Index: 315
+  Index: 318
   Category: O_meals
   SubCategory: 00
   Resource: fish

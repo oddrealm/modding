@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_coconut_brew
   m_EditorClassIdentifier: 
   Key: interface_info_coconut_brew
-  Index: 406
+  Index: 409
   Category: P_liquids
   SubCategory: 00
   Resource: alcohol

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_brick
   m_EditorClassIdentifier: 
   Key: interface_info_stone_brick
-  Index: 557
+  Index: 560
   Category: R_materials
   SubCategory: 00
   Resource: stone

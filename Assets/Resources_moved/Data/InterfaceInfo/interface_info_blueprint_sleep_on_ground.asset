@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_sleep_on_ground
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_sleep_on_ground
-  Index: 21
+  Index: 23
   Category: B_jobs
   SubCategory: 22
   Resource: 

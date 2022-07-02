@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_rutile_ingot
   m_EditorClassIdentifier: 
   Key: interface_info_rutile_ingot
-  Index: 553
+  Index: 556
   Category: R_materials
   SubCategory: 00
   Resource: rutile

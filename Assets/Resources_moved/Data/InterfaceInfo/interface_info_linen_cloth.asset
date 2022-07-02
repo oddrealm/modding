@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_linen_cloth
   m_EditorClassIdentifier: 
   Key: interface_info_linen_cloth
-  Index: 540
+  Index: 543
   Category: R_materials
   SubCategory: 00
   Resource: cloth

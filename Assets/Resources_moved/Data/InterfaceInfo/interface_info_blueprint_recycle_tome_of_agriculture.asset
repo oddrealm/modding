@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_recycle_tome_of_agriculture
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_recycle_tome_of_agriculture
-  Index: 37
+  Index: 40
   Category: B_jobs
   SubCategory: 38
   Resource: tome_of_agriculture

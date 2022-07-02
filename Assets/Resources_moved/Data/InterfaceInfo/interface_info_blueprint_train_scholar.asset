@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_train_scholar
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_train_scholar
-  Index: 36
+  Index: 39
   Category: B_jobs
   SubCategory: 37
   Resource: scholar
