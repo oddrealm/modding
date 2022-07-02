@@ -76,10 +76,10 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
 14. Select the new tooltip object in the Project window and set the properties to:  
     'Name' = Iron Shovel 2h  
     'InlineIcon' = &lt;sprite=1262&gt;
-    'InlineAndName' = <sprite=1262> Iron Shovel 2h  
+    'InlineAndName' = &lt;sprite=1262&gt; Iron Shovel 2h  
     'Icon' = 'sp_iron_shovel_two_hand_icon'  
     These values are used to display the item in UI text fields.  
-    INLINE ICONS: What is an inline icon? <sprite=1262>? Wha? This is a graphic that is used in text strings and the number in <sprite=9999> is the index lookup for the texture.  
+    INLINE ICONS: What is an inline icon? &lt;sprite=1262&gt;? Wha? This is a graphic that is used in text strings and the number in <sprite=9999> is the index lookup for the texture.  
                   The index 1262 is pointing at the specific texture in our inline graphics atlas.  
                   Think Odd Realm emoji.  
                   You can see the default inline graphics texture in the Resources folder ('sp_textmesh_inline_graphics').  
