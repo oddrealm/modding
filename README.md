@@ -16,7 +16,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
       
 1.  Download the modding Unity project. (https://github.com/oddrealm/modding)
 2.  Open the Unity Project (Unity Version 2019.4.34f1).
-3.  Open the Addressables Profiles window. 
+3.  Open the Addressables Profiles window.  
     Window>Asset Management>Addressables>Profiles.
 4.  Create a new profile from the Profiles window (top-left). 
     Create>Profile. 
