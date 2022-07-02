@@ -49,10 +49,10 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
        'visuals_item_iron_shovel_two_hand'  
        'accessory_item_shovel_two_hand'  
     NOTE: There are lots of other data objects (too many for the scope of this tutorial) you can create that items use, but these are four to get an item started and in-game.  
-    There are two methods for creating new objects and use whichever works best for you:  
+    There are two methods for creating new objects; use whichever works best for you:  
     a. In the Project window, find a similar data object, select it, and press ctrl+d to duplicate it.   
        For example, duplicate 'item_iron_tongs_one_hand', and rename it to 'item_iron_shovel_two_hand'.  
-    b. In the Project window, Right-click the data folder (for example, Items) in Resources_moved, and create a new scriptable object.   
+    b. In the Project window, right-click the data folder (for example, Items) in Resources_moved, and create a new scriptable object.   
        Create>Scriptable Objects>Items.  
        Rename the new object to 'item_iron_shovel_two_hand'.  
     NOTE: You can rename the new object anything.   
@@ -72,9 +72,10 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     All data is ordered by index, so navigate to the bottom to find the last used index and add 1 to get your new index.  
 13. Select the new item object in the Project window and set the 'TooltipID', 'Visuals', and 'AccessoryData' properties to point to the new respective data objects.  
     For example, the 'Visuals' property should now have 'visuals_item_iron_shovel_two_hand' as the key.   
+    NOTE: Feel free to edit the other properties, but, for this tutorial, we'll just worry about getting the item into the game, and not about how it's fundamentally unique.  
 14. Select the new tooltip object in the Project window and set the properties to:  
     'Name' = Iron Shovel 2h  
-    'InlineIcon' = <sprite=1262>  
+    'InlineIcon' = "<sprite=1262>"  
     'InlineAndName' = <sprite=1262> Iron Shovel 2h  
     'Icon' = 'sp_iron_shovel_two_hand_icon'  
     These values are used to display the item in UI text fields.  
