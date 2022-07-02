@@ -15,7 +15,8 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
       You do not have to include any of these in your mods. 
       They are in the project for reference and use in your mods if desired.
       
-1.  Download the modding Unity project. (https://github.com/oddrealm/modding)
+1.  Download the modding Unity project.  
+    (https://github.com/oddrealm/modding)
 2.  Open the Unity Project (Unity Version 2019.4.34f1).
 3.  Open the Addressables Profiles window.  
     Window>Asset Management>Addressables>Profiles.
@@ -33,7 +34,8 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
                Without the mods in this folder, the game won't be able to find them.  
 7.  Open the Addressables Groups window.   
     Window>Asset Management>Addressables>Groups.  
-8.  Create 4 new groups from the Groups window (top-left). Create>Group>Packed Assets.  
+8.  Create 4 new groups from the Groups window (top-left).   
+    Create>Group>Packed Assets.  
 9.  Rename each group: items, tooltips, blockvisuals, and characteraccessory.  
     If these groups already exist (which should be the case for the github default project), there's no need to create them.  
     IMPORTANT: These names must match the data being used.   
