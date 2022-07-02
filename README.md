@@ -41,7 +41,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     IMPORTANT: These names must match the data being used.   
                The name of the data type is the same as the folder which the data objects live in.   
                For example: Assets/Resources_moved/Data/Items.   
-               Any data objects in here that have the GDEItemsData.cs class are going to have the group, 'items'.  
+                            Any data objects in here that have the GDEItemsData.cs class are going to have the group, 'items'.  
 10. Create our first 4 data objects which will be used by the game.  
     You should create:   
        'item_iron_shovel_two_hand'  
