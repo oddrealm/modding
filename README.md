@@ -91,7 +91,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     TEXTURE ATLAS: The game has one big texture atlas used for most of the visuals.  
                    Plants, items, blocks, weather fx, etc, all use this atlas.  
                    Some things like entities, UI icons, overworld map, and inline graphics do not use this atlas.  
-                   As of writing this tutorial, I still need to make the overworld map and entities moddable, but they are coming soon!  
+                   As of writing this tutorial, I still need to make the overworld map and entities textures moddable, but they are coming soon!  
                    You can see the default texture atlas in the Resources folder ('tx_terrain_atlas').  
                    See Part II: Making New Textures for more about the texture atlas.  
 16. (Optional)  
@@ -113,7 +113,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     For the default mod project, you should already see labels for these 4 groups.  
     If not, you can create these labels, by selecting the drop-down menu for the entry (in the 'Labels' column) and then clicking 'Manage Labels'.  
     Hit the + symbol to add the label and name it to match the required group.  
-    For examples 'items'.  
+    For example, 'items'.  
     IMPORTANT: Make sure the labels match the name of the group exactly.   
                Make sure the entries don't have more than one label.  
                The label is used to help find the data in-game, and if these don't have the correct naming, they won't show up.  
@@ -140,7 +140,7 @@ PART II: MAKING NEW TEXTURES:
 We are going to create all the required textures for our new Iron Shovel 2h which was created in Part I.  
 There are three types of textures to edit and mod: icon, texture atlas, and inline graphics.  
 Entity atlases, and overworld map atlases will be moddable soon!  
-As well, I still need to add logic to still multiple atlases from separate mods together.  
+As well, I still need to add logic to stitch multiple atlases from separate mods together.  
 IMPORTANT: The game uses the first mod textures it finds when a mod is enabled.  
            This means that if you have two mods that both provide their own texture atlas or inline graphics, the first one found will be used.  
            I will try to make something to make multiple texture mods possible, but it will take a bit of work.  
@@ -152,7 +152,7 @@ IMPORTANT: The game uses the first mod textures it finds when a mod is enabled.
    They aren't part of the data build pipeline and are only intended as reference for you to make new textures.  
 2. Open the File Explorer (On windows. OSX and Linux will have their respective file system navigators.) by right-clicking the Resources/Textures folder and selecting 'Show In Explorer'.  
 3. Select the 3 textures, right-click them, and select Copy.  
-4. In the File Explored window, navigate to the mods folder (MoreTools) you created in Part I. Right-click and paste the textures into this folder.  
+4. In the File Explorer window, navigate to the mods folder (MoreTools) you created in Part I. Right-click and paste the textures into this folder.  
    IMPORTANT: Be sure to not rename 'sp_textmesh_inline_graphics' or 'tx_terrain_atlas'.  
               These names are used to find these textures when you enable your mod in-game.  
    IMPORTANT: Make sure all textures are .png format.     
