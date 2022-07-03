@@ -42,6 +42,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c9d27b58f20cee647aee7886d2b56ae0, type: 2}
   - {fileID: 11400000, guid: 8a2f35750e986284fbd4643654b27d5c, type: 2}
   - {fileID: 11400000, guid: 93f920b417a82be48b17824f40eb10d9, type: 2}
+  - {fileID: 11400000, guid: 1bc4bc2995b62fc4c8a19c7386df7ff0, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -79,7 +80,7 @@ MonoBehaviour:
         m_Value: http://localhost/[BuildTarget]
     - m_InheritedParent: 
       m_Id: 30782f78353178948afcff6da8b35ba7
-      m_ProfileName: MoreTools
+      m_ProfileName: MoreItems
       m_Values:
       - m_Id: 0b7d706c5e7f80847bad8bc22a25db2a
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
@@ -115,6 +116,7 @@ MonoBehaviour:
     - tooltips
     - blockvisuals
     - characteraccessory
+    - attacks
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: a7b4ff4c0d9938e47ba58c00f547a964, type: 2}
