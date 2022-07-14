@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_sandbur
   m_EditorClassIdentifier: 
   Key: interface_info_plant_sandbur
-  Index: 244
+  Index: 241
   Category: N_weeds
   SubCategory: 00
   Resource: sand

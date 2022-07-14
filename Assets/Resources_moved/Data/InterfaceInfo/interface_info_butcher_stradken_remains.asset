@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_butcher_stradken_remains
   m_EditorClassIdentifier: 
   Key: interface_info_butcher_stradken_remains
-  Index: 305
+  Index: 302
   Category: O_meals
   SubCategory: 00
   Resource: butcher

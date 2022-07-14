@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_barracks
   m_EditorClassIdentifier: 
   Key: interface_info_room_barracks
-  Index: 634
+  Index: 628
   Category: T_rooms
   SubCategory: 20
   Resource: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wool_coat
   m_EditorClassIdentifier: 
   Key: interface_info_wool_coat
-  Index: 611
+  Index: 605
   Category: S_gear
   SubCategory: 00
   Resource: wool

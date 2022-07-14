@@ -25,6 +25,7 @@ MonoBehaviour:
   Rooms:
   - room_farm
   - room_arboretum
+  - room_hortichron
   Attacks: []
   Skill: skill_plant
   SpecialItemTooltipID: 

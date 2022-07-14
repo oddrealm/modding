@@ -22,8 +22,7 @@ MonoBehaviour:
   WorkPointLocation: 0
   Entities: []
   Targets: []
-  Rooms:
-  - room_hortichron
+  Rooms: []
   Attacks: []
   Skill: skill_time_weave
   SpecialItemTooltipID: 

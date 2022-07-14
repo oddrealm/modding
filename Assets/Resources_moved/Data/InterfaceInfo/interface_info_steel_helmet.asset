@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_steel_helmet
   m_EditorClassIdentifier: 
   Key: interface_info_steel_helmet
-  Index: 606
+  Index: 600
   Category: S_gear
   SubCategory: 00
   Resource: steel

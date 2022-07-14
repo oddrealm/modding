@@ -25,8 +25,7 @@ MonoBehaviour:
   - blueprint_tend_chronoblast
   - blueprint_plant_chronoblast
   - blueprint_plant_nyctoid
-  - blueprint_harvest_chronoblast
-  - blueprint_harvest_nyctoid
+  - blueprint_harvest_standing
   InterfaceInfo: interface_info_room_hortichron
   TooltipID: tooltip_room_hortichron
   Visuals:

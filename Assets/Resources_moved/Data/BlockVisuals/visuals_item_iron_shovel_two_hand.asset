@@ -29,7 +29,7 @@ MonoBehaviour:
   HasSeasonOffset: 0
   HasMapColor: 1
   MapColor: {r: 0.7176471, g: 0.7176471, b: 0.7176471, a: 1}
-  TextureX: 70
+  TextureX: 72
   TextureY: 128
   WeatherY: 1
   TransitionType: 0

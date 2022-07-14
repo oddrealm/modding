@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_winter_stew
   m_EditorClassIdentifier: 
   Key: interface_info_winter_stew
-  Index: 403
+  Index: 400
   Category: O_meals
   SubCategory: 00
   Resource: veg

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_train_melee
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_train_melee
-  Index: 37
+  Index: 34
   Category: B_jobs
   SubCategory: 35
   Resource: melee

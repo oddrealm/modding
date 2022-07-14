@@ -11,4 +11,5 @@ public enum AutoJobBlockSearchTypes
     FIRST_WORLD_POINT,
     FIRST_BLOCK_WITH_TAG,
     FIRST_TARGET_DIET_BLOCK,
+    ENTITY_POINT
 }

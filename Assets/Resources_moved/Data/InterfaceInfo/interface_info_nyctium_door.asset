@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_nyctium_door
   m_EditorClassIdentifier: 
   Key: interface_info_nyctium_door
-  Index: 75
+  Index: 72
   Category: D_doors
   SubCategory: 00
   Resource: nyctium

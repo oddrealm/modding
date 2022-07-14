@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_smithy
   m_EditorClassIdentifier: 
   Key: interface_info_room_smithy
-  Index: 627
+  Index: 621
   Category: T_rooms
   SubCategory: 13
   Resource: 

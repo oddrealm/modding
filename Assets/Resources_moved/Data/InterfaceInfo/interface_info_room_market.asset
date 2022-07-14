@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_market
   m_EditorClassIdentifier: 
   Key: interface_info_room_market
-  Index: 638
+  Index: 632
   Category: T_rooms
   SubCategory: 24
   Resource: 

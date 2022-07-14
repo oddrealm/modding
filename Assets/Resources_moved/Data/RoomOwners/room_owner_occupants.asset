@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_room_owner_occupants
   LimitToUnique: 1
   LimitByFamily: 1
-  MaxOwners: 9
+  LimitToRoom: 0
+  AutoPopType: 0
+  MaxOwners: 99
   PermittedSapientTypes: 1
   DefaultRaces: []
   DefaultSkills: []

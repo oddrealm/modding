@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ExampleMod1 (One Hand Shovel)
+  m_EditorClassIdentifier: 
+  m_GroupName: ExampleMod1 (One Hand Shovel)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 562400cd0d73e874588cd15bbd4809c0
+  m_SerializeEntries:
+  - m_GUID: faddf78ea9d17284e9a3abe334e9fd23
+    m_Address: Assets/Resources_moved/Data/Tooltips/tooltip_item_iron_shovel_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - tooltips
+  - m_GUID: a490c8172915bf047880c74eb399768e
+    m_Address: Assets/Resources_moved/Data/Items/item_iron_shovel_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - items
+  - m_GUID: 1952541c1781b0e4e94619d3ff56f827
+    m_Address: Assets/Resources_moved/Data/CharacterAccessory/accessory_item_iron_shovel_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - characteraccessory
+  - m_GUID: 1a383ed9da6fef941872baf4a1a6f3ec
+    m_Address: Assets/Resources_moved/Data/BlockVisuals/visuals_item_iron_shovel_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - blockvisuals
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 757288c6465130c4684a328a469fff0a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 20ef02c0632ca274d8cb2f9c54fd5789, type: 2}
+    - {fileID: 11400000, guid: a52b0bfb8efe8ca48939f0e551080b2a, type: 2}

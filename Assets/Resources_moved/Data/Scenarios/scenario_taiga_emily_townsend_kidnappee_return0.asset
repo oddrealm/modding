@@ -39,3 +39,137 @@ MonoBehaviour:
   PermittedSeasons: []
   NotificationOnActivate: notif_scenario_activated_default
   Components: '{"activate_actions":{"collect":{"block_tag":"random_map_edge_ground","block_count":1,"entity_tag":"entity_townsend_kidnapped_child0","entity_count":1,"entity_age_min":18},"spawn_entities":{"spawn_tag":"collected_blocks","group_id":"esg_scenario_emily_townsend_kidnapped_child0"},"move_camera":{"focus":"spawned_entities"},"start_dialogue":{"dialogue_id":"dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_0"}},"output0_actions":{"change_faction":{"faction":1,"focus":"spawned_entities"}},"output1_actions":{"leave_map":{"immediate":true,"focus":"spawned_entities"}}}'
+  CheckConditionActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  ActivateActions:
+    Lookups:
+    - EntityCollectTag: entity_townsend_kidnapped_child0
+      EntityID: 
+      EntityScene: -1
+      EntityAgeMin: 18
+      EntityAgeType: -1
+      MaxMinsSinceSpawn: -1
+      EntityCollectCount: 1
+      EntityCollectFaction: 0
+      ItemFindRandom: 0
+      ItemCollectTag: 
+      ItemCollectCount: 0
+      BlockCollectTag: random_map_edge_ground
+      BlockCollectCount: 1
+      MaxZ: -1
+      MinZ: -1
+    SpawnEntities:
+    - SpawnTag: collected_blocks
+      GroupID: esg_scenario_emily_townsend_kidnapped_child0
+      VarySpawnPoints: 0
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues:
+    - DialogueID: dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_0
+      DialogueGroupID: 
+      TryGetUnusedDialogue: 0
+    MoveCameras:
+    - Focus: spawned_entities
+      Immediate: 0
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  ActivateFailActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output0Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions:
+    - Focus: spawned_entities
+      Faction: 1
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output1Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps:
+    - ClosestPoint: 1
+      Immediate: 1
+      Focus: spawned_entities
+      Reason: 
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output2Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  CompletedActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []

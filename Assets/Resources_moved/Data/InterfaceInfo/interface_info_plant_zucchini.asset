@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_zucchini
   m_EditorClassIdentifier: 
   Key: interface_info_plant_zucchini
-  Index: 233
+  Index: 230
   Category: K_plants
   SubCategory: 00
   Resource: seed

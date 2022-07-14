@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_arcane_dust
   m_EditorClassIdentifier: 
   Key: interface_info_arcane_dust
-  Index: 562
+  Index: 559
   Category: R_materials
   SubCategory: 00
   Resource: void

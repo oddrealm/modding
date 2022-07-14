@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_apple
   m_EditorClassIdentifier: 
   Key: interface_info_plant_apple
-  Index: 234
+  Index: 231
   Category: L_trees
   SubCategory: 00
   Resource: seed

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wheat_ale
   m_EditorClassIdentifier: 
   Key: interface_info_wheat_ale
-  Index: 407
+  Index: 404
   Category: P_liquids
   SubCategory: 00
   Resource: alcohol

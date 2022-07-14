@@ -20,7 +20,7 @@ MonoBehaviour:
   TargetProgressType: 0
   TargetProgressAttribute: 0
   TargetProgressAttributePercent: 1
-  FixedProgressTarget: 25
+  FixedProgressTarget: 5
   DefaultAutoJobPriority: 1
   DefaultThresholdType: 4
   TimeoutTime: 300

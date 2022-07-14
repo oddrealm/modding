@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_vault
   m_EditorClassIdentifier: 
   Key: interface_info_room_vault
-  Index: 639
+  Index: 633
   Category: T_rooms
   SubCategory: 25
   Resource: 

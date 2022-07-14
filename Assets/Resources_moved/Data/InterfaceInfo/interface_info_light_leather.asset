@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_light_leather
   m_EditorClassIdentifier: 
   Key: interface_info_light_leather
-  Index: 551
+  Index: 548
   Category: R_materials
   SubCategory: 00
   Resource: leather

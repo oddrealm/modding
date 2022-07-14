@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: requirement_blueprint_drink_item
   m_EditorClassIdentifier: 
   Key: requirement_blueprint_drink_item
-  CanStackWithSameJobType: 0
+  CanStackWithSameJobType: 1
   PermissionType: 0
   BlockTagConditionType: 1
   BlockTags: []

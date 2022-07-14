@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_hook_thorn
   m_EditorClassIdentifier: 
   Key: interface_info_plant_hook_thorn
-  Index: 263
+  Index: 260
   Category: N_weeds
   SubCategory: 00
   Resource: seed

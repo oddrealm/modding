@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_beef_burger
   m_EditorClassIdentifier: 
   Key: interface_info_beef_burger
-  Index: 345
+  Index: 342
   Category: O_meals
   SubCategory: 00
   Resource: meat

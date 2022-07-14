@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_gooseberry_wine
   m_EditorClassIdentifier: 
   Key: interface_info_gooseberry_wine
-  Index: 419
+  Index: 416
   Category: P_liquids
   SubCategory: 00
   Resource: alcohol

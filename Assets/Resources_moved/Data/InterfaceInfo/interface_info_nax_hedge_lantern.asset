@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_nax_hedge_lantern
   m_EditorClassIdentifier: 
   Key: interface_info_nax_hedge_lantern
-  Index: 176
+  Index: 173
   Category: H_lights
   SubCategory: 00
   Resource: iron

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_tile_surface
   m_EditorClassIdentifier: 
   Key: interface_info_stone_tile_surface
-  Index: 186
+  Index: 183
   Category: I_floors
   SubCategory: 00
   Resource: stone

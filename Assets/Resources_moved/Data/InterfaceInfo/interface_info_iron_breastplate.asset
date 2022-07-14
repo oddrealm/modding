@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_iron_breastplate
   m_EditorClassIdentifier: 
   Key: interface_info_iron_breastplate
-  Index: 576
+  Index: 570
   Category: S_gear
   SubCategory: 00
   Resource: iron

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_prison_cell
   m_EditorClassIdentifier: 
   Key: interface_info_room_prison_cell
-  Index: 637
+  Index: 631
   Category: T_rooms
   SubCategory: 23
   Resource: 

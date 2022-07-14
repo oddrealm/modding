@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wood_crate
   m_EditorClassIdentifier: 
   Key: interface_info_wood_crate
-  Index: 168
+  Index: 165
   Category: F_containers
   SubCategory: 00
   Resource: wood

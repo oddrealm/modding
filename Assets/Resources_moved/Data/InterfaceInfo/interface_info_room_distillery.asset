@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_distillery
   m_EditorClassIdentifier: 
   Key: interface_info_room_distillery
-  Index: 630
+  Index: 624
   Category: T_rooms
   SubCategory: 16
   Resource: 

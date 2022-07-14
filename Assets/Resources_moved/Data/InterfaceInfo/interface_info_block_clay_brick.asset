@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_block_clay_brick
   m_EditorClassIdentifier: 
   Key: interface_info_block_clay_brick
-  Index: 49
+  Index: 46
   Category: C_blocks
   SubCategory: 00
   Resource: clay

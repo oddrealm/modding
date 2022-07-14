@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_gate
   m_EditorClassIdentifier: 
   Key: interface_info_stone_gate
-  Index: 77
+  Index: 74
   Category: D_doors
   SubCategory: 00
   Resource: stone

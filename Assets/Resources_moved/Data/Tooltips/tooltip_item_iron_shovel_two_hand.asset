@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: tooltip_item_iron_shovel_two_hand
   Name: Iron Shovel 2h
-  InlineIcon: <sprite=1262>
-  InlineAndName: <sprite=1262> Iron Shovel 2h
+  InlineIcon: <sprite=1263>
+  InlineAndName: <sprite=1263> Iron Shovel 2h
   Description: 
   Action: 
   Icon: sp_iron_shovel_two_hand_icon

@@ -21,12 +21,13 @@ MonoBehaviour:
   TooltipID: tooltip_prop_stone_gate
   Visuals:
   - visuals_prop_stone_gate
-  TriggerFaction: 7
+  TriggerFaction: -1
   Triggers: 1
   TriggerActions: 0
   TriggerStatuses: []
   TriggerAttacks: []
   TriggerSFX: 
+  CanHavePlatform: 1
   CanSupportWeight: 0
   CanHavePlants: 1
   IsFertile: 0

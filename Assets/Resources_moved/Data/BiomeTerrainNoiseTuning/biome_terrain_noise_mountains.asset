@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: biome_terrain_noise_mountains
   Priority: 4
-  Frequency: 0.008
+  Frequency: 0.1
   Octaves: 3
   Lacunarity: 2
   Persistence: 0.55

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_drink_item
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_drink_item
-  Index: 29
+  Index: 27
   Category: B_jobs
   SubCategory: 28
   Resource: item

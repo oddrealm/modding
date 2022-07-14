@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_fence
   m_EditorClassIdentifier: 
   Key: interface_info_stone_fence
-  Index: 105
+  Index: 102
   Category: E_props
   SubCategory: 00
   Resource: stone

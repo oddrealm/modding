@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_large_crabgrass
   m_EditorClassIdentifier: 
   Key: interface_info_plant_large_crabgrass
-  Index: 254
+  Index: 251
   Category: N_weeds
   SubCategory: 00
   Resource: seed

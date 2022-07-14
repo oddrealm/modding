@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_guard_post
   m_EditorClassIdentifier: 
   Key: interface_info_room_guard_post
-  Index: 636
+  Index: 630
   Category: T_rooms
   SubCategory: 22
   Resource: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_boletus_mushroom
   m_EditorClassIdentifier: 
   Key: interface_info_plant_boletus_mushroom
-  Index: 200
+  Index: 197
   Category: K_plants
   SubCategory: 00
   Resource: fungus

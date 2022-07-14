@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wood_fence
   m_EditorClassIdentifier: 
   Key: interface_info_wood_fence
-  Index: 135
+  Index: 132
   Category: E_props
   SubCategory: 00
   Resource: wood

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: room_owner_animals
   TooltipID: tooltip_room_owner_animals
-  LimitToUnique: 0
+  LimitToUnique: 1
   LimitByFamily: 0
   LimitToRoom: 1
   AutoPopType: -1
-  MaxOwners: 9
+  MaxOwners: 99
   PermittedSapientTypes: 2
   DefaultRaces: []
   DefaultSkills: []

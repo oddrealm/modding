@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_blackberry
   m_EditorClassIdentifier: 
   Key: interface_info_plant_blackberry
-  Index: 209
+  Index: 206
   Category: K_plants
   SubCategory: 00
   Resource: seed

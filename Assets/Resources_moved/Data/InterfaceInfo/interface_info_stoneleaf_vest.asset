@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stoneleaf_vest
   m_EditorClassIdentifier: 
   Key: interface_info_stoneleaf_vest
-  Index: 607
+  Index: 601
   Category: S_gear
   SubCategory: 00
   Resource: stone

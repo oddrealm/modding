@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_light_leather_hat
   m_EditorClassIdentifier: 
   Key: interface_info_light_leather_hat
-  Index: 583
+  Index: 577
   Category: S_gear
   SubCategory: 00
   Resource: leather

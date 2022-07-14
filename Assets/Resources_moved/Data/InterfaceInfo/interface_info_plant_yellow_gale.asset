@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_yellow_gale
   m_EditorClassIdentifier: 
   Key: interface_info_plant_yellow_gale
-  Index: 245
+  Index: 242
   Category: N_weeds
   SubCategory: 00
   Resource: seed

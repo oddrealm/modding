@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_human_mating
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_human_mating
-  Index: 12
+  Index: 10
   Category: B_jobs
   SubCategory: 11
   Resource: human

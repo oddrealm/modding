@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_deep_moss
   m_EditorClassIdentifier: 
   Key: interface_info_plant_deep_moss
-  Index: 257
+  Index: 254
   Category: N_weeds
   SubCategory: 00
   Resource: seed

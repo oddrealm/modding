@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: item_iron_shovel_two_hand
   m_EditorClassIdentifier: 
   Key: item_iron_shovel_two_hand
-  Index: 488
+  Index: 9999
   TooltipID: tooltip_item_iron_shovel_two_hand
   Visuals: visuals_item_iron_shovel_two_hand
   CharacterColorMask: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
   Tags: []
   Category: 64
   Permissions: 0
-  Inventory: inventory_one_hand
+  Inventory: inventory_two_hand
   Buffs: 
   AttackGroup: attack_group_iron_tongs_one_hand
   StartDiscovered: 0

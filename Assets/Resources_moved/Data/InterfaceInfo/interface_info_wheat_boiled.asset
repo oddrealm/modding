@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wheat_boiled
   m_EditorClassIdentifier: 
   Key: interface_info_wheat_boiled
-  Index: 382
+  Index: 379
   Category: O_meals
   SubCategory: 00
   Resource: veg

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_weep_wisp
   m_EditorClassIdentifier: 
   Key: interface_info_plant_weep_wisp
-  Index: 279
+  Index: 276
   Category: N_weeds
   SubCategory: 00
   Resource: seed

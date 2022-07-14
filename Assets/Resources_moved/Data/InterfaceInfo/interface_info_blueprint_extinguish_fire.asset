@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_extinguish_fire
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_extinguish_fire
-  Index: 14
+  Index: 12
   Category: B_jobs
   SubCategory: 13
   Resource: fire

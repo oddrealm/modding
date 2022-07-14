@@ -20,6 +20,7 @@ MonoBehaviour:
   FiringType: 1
   ActivationType: 2
   DamageType: 0
+  AttackFishInRange: 0
   SkillUsed: 65536
   AddSkillToOutput: 1
   MinAmount: 3
@@ -29,7 +30,7 @@ MonoBehaviour:
   SourceAttribute: 0
   TargetAction: 1
   TargetAttribute: 1
-  AnimationTrigger: 2
+  AnimationTrigger: 1
   AnimationHitEvent: 1
   OriginFX: []
   HitFX: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_iron_chest
   m_EditorClassIdentifier: 
   Key: interface_info_iron_chest
-  Index: 150
+  Index: 147
   Category: F_containers
   SubCategory: 00
   Resource: iron

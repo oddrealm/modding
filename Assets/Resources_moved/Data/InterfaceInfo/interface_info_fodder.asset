@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_fodder
   m_EditorClassIdentifier: 
   Key: interface_info_fodder
-  Index: 375
+  Index: 372
   Category: O_meals
   SubCategory: 00
   Resource: plant_fiber

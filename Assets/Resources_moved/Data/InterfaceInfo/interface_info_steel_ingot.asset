@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_steel_ingot
   m_EditorClassIdentifier: 
   Key: interface_info_steel_ingot
-  Index: 559
+  Index: 556
   Category: R_materials
   SubCategory: 00
   Resource: steel

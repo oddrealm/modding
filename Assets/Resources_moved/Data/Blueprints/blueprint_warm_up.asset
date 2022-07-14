@@ -23,9 +23,10 @@ MonoBehaviour:
   FixedProgressTarget: 50
   DefaultAutoJobPriority: 3
   DefaultThresholdType: 6
+  FreeIfInaccessible: 0
   TimeoutTime: 300
   Requirements: requirement_blueprint_warm_up
-  AutoJobBlockSearchType: 4
+  AutoJobBlockSearchType: 5
   JobBarType: 0
   InvertProgressDisplay: 0
   JobActionTextTypes: 0

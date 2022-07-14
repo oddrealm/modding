@@ -21,7 +21,7 @@ MonoBehaviour:
     EntityGender: random
     EntityCount: 3
     SameRoomAsPlayer: 0
-    EntityFaction: 2
+    EntityFaction: 4
     EntityTuning: 
     SpawnRate: 1000
     AgeType: 2

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_boletus_mushroom_wine
   m_EditorClassIdentifier: 
   Key: interface_info_boletus_mushroom_wine
-  Index: 416
+  Index: 413
   Category: P_liquids
   SubCategory: 00
   Resource: alcohol

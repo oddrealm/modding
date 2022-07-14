@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_block_ice
   m_EditorClassIdentifier: 
   Key: interface_info_block_ice
-  Index: 54
+  Index: 51
   Category: C_blocks
   SubCategory: 00
   Resource: ice

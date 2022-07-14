@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_tree_apple_sapling
   m_EditorClassIdentifier: 
   Key: interface_info_plant_tree_apple_sapling
-  Index: 206
+  Index: 203
   Category: K_plants
   SubCategory: 00
   Resource: seed

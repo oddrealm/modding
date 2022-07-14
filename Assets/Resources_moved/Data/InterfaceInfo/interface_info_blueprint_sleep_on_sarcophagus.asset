@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_sleep_on_sarcophagus
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_sleep_on_sarcophagus
-  Index: 24
+  Index: 22
   Category: B_jobs
   SubCategory: 23
   Resource: 

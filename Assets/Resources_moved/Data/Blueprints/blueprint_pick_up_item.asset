@@ -23,6 +23,7 @@ MonoBehaviour:
   FixedProgressTarget: 1
   DefaultAutoJobPriority: 1
   DefaultThresholdType: 6
+  FreeIfInaccessible: 1
   TimeoutTime: 300
   Requirements: requirement_blueprint_pick_up_item
   AutoJobBlockSearchType: 1

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_range
   m_EditorClassIdentifier: 
   Key: interface_info_room_range
-  Index: 635
+  Index: 629
   Category: T_rooms
   SubCategory: 21
   Resource: 

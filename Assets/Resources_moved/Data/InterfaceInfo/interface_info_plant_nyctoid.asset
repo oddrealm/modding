@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_nyctoid
   m_EditorClassIdentifier: 
   Key: interface_info_plant_nyctoid
-  Index: 28
+  Index: 26
   Category: B_jobs
   SubCategory: 27
   Resource: remains

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_ladder
   m_EditorClassIdentifier: 
   Key: interface_info_stone_ladder
-  Index: 171
+  Index: 168
   Category: G_vert_access
   SubCategory: 00
   Resource: stone

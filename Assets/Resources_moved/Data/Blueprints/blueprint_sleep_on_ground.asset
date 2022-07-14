@@ -23,9 +23,10 @@ MonoBehaviour:
   FixedProgressTarget: 100
   DefaultAutoJobPriority: 1
   DefaultThresholdType: 6
+  FreeIfInaccessible: 1
   TimeoutTime: 300
   Requirements: requirement_blueprint_sleep_on_ground
-  AutoJobBlockSearchType: 4
+  AutoJobBlockSearchType: 7
   JobBarType: 0
   InvertProgressDisplay: 0
   JobActionTextTypes: 2

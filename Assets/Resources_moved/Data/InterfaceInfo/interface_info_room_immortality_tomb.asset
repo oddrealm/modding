@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_immortality_tomb
   m_EditorClassIdentifier: 
   Key: interface_info_room_immortality_tomb
-  Index: 620
+  Index: 614
   Category: T_rooms
   SubCategory: 06
   Resource: 

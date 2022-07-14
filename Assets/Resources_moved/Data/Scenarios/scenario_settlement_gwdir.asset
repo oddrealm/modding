@@ -40,3 +40,131 @@ MonoBehaviour:
   PermittedSeasons: []
   NotificationOnActivate: notif_scenario_activated_default
   Components: '{"activate_actions":{"collect":{"block_tag":"random_surface_point","block_count":5},"spawn_entities":{"spawn_tag":"collected_blocks","group_id":"esg_scenario_settlement_gwdir0","vary_spawn_points":true},"move_camera":{"focus":"spawned_entities"},"start_dialogue":{"dialogue_id":"dialogue_settlement_gwdir_settler0_d0_0","dialogue_group_id":"","dialogue_group_try_unused_only":true}}}'
+  CheckConditionActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  ActivateActions:
+    Lookups:
+    - EntityCollectTag: 
+      EntityID: 
+      EntityScene: -1
+      EntityAgeMin: -1
+      EntityAgeType: -1
+      MaxMinsSinceSpawn: -1
+      EntityCollectCount: 0
+      EntityCollectFaction: 0
+      ItemFindRandom: 0
+      ItemCollectTag: 
+      ItemCollectCount: 0
+      BlockCollectTag: random_surface_point
+      BlockCollectCount: 5
+      MaxZ: -1
+      MinZ: -1
+    SpawnEntities:
+    - SpawnTag: collected_blocks
+      GroupID: esg_scenario_settlement_gwdir0
+      VarySpawnPoints: 1
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues:
+    - DialogueID: dialogue_settlement_gwdir_settler0_d0_0
+      DialogueGroupID: 
+      TryGetUnusedDialogue: 1
+    MoveCameras:
+    - Focus: spawned_entities
+      Immediate: 0
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  ActivateFailActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output0Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output1Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output2Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  CompletedActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_animal_mating
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_animal_mating
-  Index: 11
+  Index: 10
   Category: B_jobs
   SubCategory: 11
   Resource: animal

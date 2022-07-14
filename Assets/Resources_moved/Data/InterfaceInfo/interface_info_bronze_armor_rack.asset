@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_bronze_armor_rack
   m_EditorClassIdentifier: 
   Key: interface_info_bronze_armor_rack
-  Index: 145
+  Index: 142
   Category: F_containers
   SubCategory: 00
   Resource: bronze

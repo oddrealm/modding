@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_block_ember_rock
   m_EditorClassIdentifier: 
   Key: interface_info_block_ember_rock
-  Index: 51
+  Index: 48
   Category: C_blocks
   SubCategory: 00
   Resource: ember_rock

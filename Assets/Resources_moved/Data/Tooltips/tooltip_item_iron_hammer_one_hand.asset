@@ -18,6 +18,6 @@ MonoBehaviour:
   InlineAndName: <sprite=486> Iron Hammer 1h
   Description: 
   Action: 
-  Icon: sp_iron_hammer_one_hand_icon
+  Icon: sp_iron_shovel_two_hand_icon
   Formatting: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}

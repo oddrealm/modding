@@ -39,3 +39,148 @@ MonoBehaviour:
   PermittedSeasons: []
   NotificationOnActivate: notif_scenario_activated_default
   Components: '{"activate_actions":{"collect":{"block_tag":"random_map_edge_ground","block_count":1,"item_find_random":true,"item_count":1},"spawn_entities":{"spawn_tag":"collected_blocks","group_id":"esg_scenario_deen_and_greg0"},"move_camera":{"focus":"spawned_entities"},"start_dialogue":{"dialogue_id":"dialogue_scenario_bandit0_deen0"}},"output0_actions":{"destroy_items":{"focus":"collected_items","count":1},"leave_map":{"immediate":true,"focus":"spawned_entities"}},"output1_actions":{"leave_map":{"immediate":true,"focus":"spawned_entities"},"add_scenario_tag":{"tag":"deen_and_greg0"}},"output2_actions":{"leave_map":{"immediate":true,"focus":"spawned_entities"},"add_scenario_tag":{"tag":"deen_and_greg0"}}}'
+  CheckConditionActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  ActivateActions:
+    Lookups:
+    - EntityCollectTag: 
+      EntityID: 
+      EntityScene: -1
+      EntityAgeMin: -1
+      EntityAgeType: -1
+      MaxMinsSinceSpawn: -1
+      EntityCollectCount: 0
+      EntityCollectFaction: 0
+      ItemFindRandom: 1
+      ItemCollectTag: 
+      ItemCollectCount: 1
+      BlockCollectTag: random_map_edge_ground
+      BlockCollectCount: 1
+      MaxZ: -1
+      MinZ: -1
+    SpawnEntities:
+    - SpawnTag: collected_blocks
+      GroupID: esg_scenario_deen_and_greg0
+      VarySpawnPoints: 0
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues:
+    - DialogueID: dialogue_scenario_bandit0_deen0
+      DialogueGroupID: 
+      TryGetUnusedDialogue: 0
+    MoveCameras:
+    - Focus: spawned_entities
+      Immediate: 0
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  ActivateFailActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output0Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps:
+    - ClosestPoint: 1
+      Immediate: 1
+      Focus: spawned_entities
+      Reason: 
+    DestroyItems:
+    - Focus: collected_items
+      Count: 1
+      DestroyAll: 0
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output1Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps:
+    - ClosestPoint: 1
+      Immediate: 1
+      Focus: spawned_entities
+      Reason: 
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags:
+    - Tag: deen_and_greg0
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output2Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps:
+    - ClosestPoint: 1
+      Immediate: 1
+      Focus: spawned_entities
+      Reason: 
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags:
+    - Tag: deen_and_greg0
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  CompletedActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []

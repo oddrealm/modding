@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_room_animal_enclosure
   m_EditorClassIdentifier: 
   Key: interface_info_room_animal_enclosure
-  Index: 623
+  Index: 617
   Category: T_rooms
   SubCategory: 09
   Resource: 

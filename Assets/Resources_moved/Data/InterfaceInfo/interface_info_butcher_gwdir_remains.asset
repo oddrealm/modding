@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_butcher_gwdir_remains
   m_EditorClassIdentifier: 
   Key: interface_info_butcher_gwdir_remains
-  Index: 293
+  Index: 290
   Category: O_meals
   SubCategory: 00
   Resource: butcher

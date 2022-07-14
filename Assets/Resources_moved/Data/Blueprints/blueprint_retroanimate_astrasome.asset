@@ -23,6 +23,7 @@ MonoBehaviour:
   FixedProgressTarget: 50
   DefaultAutoJobPriority: 3
   DefaultThresholdType: 0
+  FreeIfInaccessible: 1
   TimeoutTime: 300
   Requirements: requirement_blueprint_retroanimate_astrasome
   AutoJobBlockSearchType: 1

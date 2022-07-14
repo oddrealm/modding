@@ -42,3 +42,122 @@ MonoBehaviour:
   PermittedSeasons: []
   NotificationOnActivate: notif_scenario_activated_default
   Components: '{"warmup_actions":{"spawn_entities":[{"entity_tag":"desert_ancient_merchant0","entity_id":"entity_ancient","entity_profession":"profession_random_no_children","entity_gender":"random","entity_count":1,"spawn_tag":"collected_blocks","same_room_as_player":false,"spawn_at_discovered_point":true,"entity_faction":2},{"entity_tag":"desert_ancient_traelik0","entity_id":"entity_traelik","entity_profession":"profession_random_no_children","entity_gender":"random","entity_count":8,"spawn_tag":"spawned_entity_point","same_room_as_player":false,"spawn_at_discovered_point":true,"entity_faction":2}]},"activate_actions":{"start_dialogue":{"dialogue_group_id":"dialoguegroup_desert_ancient_merchant0"}},"output0_actions":{"start_merchant":{"item_group_ids":["isg_entity_inventory_desert_ancient_merchant0"],"farewell_dialogue_id":"dialogue_desert_ancient_merchant0_farewell_merchant0_d0_0"},"leave_map":{"immediate":true,"focus":"spawned_entities"}},"output1_actions":{"leave_map":{"immediate":true,"focus":"spawned_entities"}}}'
+  CheckConditionActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  ActivateActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues:
+    - DialogueID: 
+      DialogueGroupID: dialoguegroup_desert_ancient_merchant0
+      TryGetUnusedDialogue: 0
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  ActivateFailActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output0Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps:
+    - ClosestPoint: 1
+      Immediate: 1
+      Focus: spawned_entities
+      Reason: 
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants:
+    - ItemGroupIDs:
+      - isg_entity_inventory_desert_ancient_merchant0
+      FarewellDialogueID: dialogue_desert_ancient_merchant0_farewell_merchant0_d0_0
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output1Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps:
+    - ClosestPoint: 1
+      Immediate: 1
+      Focus: spawned_entities
+      Reason: 
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  Output2Actions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []
+  CompletedActions:
+    Lookups: []
+    SpawnEntities: []
+    SpawnItems: []
+    ChangeFactions: []
+    LeaveMaps: []
+    DestroyItems: []
+    StartDialogues: []
+    MoveCameras: []
+    AddScenarioTags: []
+    StartMerchants: []
+    SetEntityTags: []
+    GenerateModelPrefabs: []
+    PlaySounds: []
+    ChangeBrightnessLevels: []

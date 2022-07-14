@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_block_stone_brick
   m_EditorClassIdentifier: 
   Key: interface_info_block_stone_brick
-  Index: 65
+  Index: 62
   Category: C_blocks
   SubCategory: 00
   Resource: stone

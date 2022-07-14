@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_cloth_pants
   m_EditorClassIdentifier: 
   Key: interface_info_cloth_pants
-  Index: 591
+  Index: 585
   Category: S_gear
   SubCategory: 00
   Resource: linen

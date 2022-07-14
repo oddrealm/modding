@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_drop_off_item
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_drop_off_item
-  Index: 30
+  Index: 28
   Category: B_jobs
   SubCategory: 29
   Resource: item

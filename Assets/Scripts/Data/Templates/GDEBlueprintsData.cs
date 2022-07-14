@@ -22,6 +22,7 @@ public class GDEBlueprintsData : ScriptableObject
 	[Header("")]
 	public int DefaultAutoJobPriority = 1;
 	public ThresholdTypes DefaultThresholdType = ThresholdTypes.AUTO;
+	public bool FreeIfInaccessible = false;
 	public float TimeoutTime = 10f;
 	public string Requirements = "";
 	public AutoJobBlockSearchTypes AutoJobBlockSearchType = AutoJobBlockSearchTypes.FIRST_ROOM_POINT;

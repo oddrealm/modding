@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_iron_carving_knife_one_hand
   m_EditorClassIdentifier: 
   Key: interface_info_iron_carving_knife_one_hand
-  Index: 448
+  Index: 445
   Category: Q_tools
   SubCategory: 00
   Resource: iron

@@ -21,11 +21,12 @@ MonoBehaviour:
   TargetProgressAttribute: 0
   TargetProgressAttributePercent: 1
   FixedProgressTarget: 1
-  DefaultAutoJobPriority: 2
+  DefaultAutoJobPriority: 3
   DefaultThresholdType: 6
+  FreeIfInaccessible: 0
   TimeoutTime: 300
   Requirements: requirement_blueprint_extinguish_fire
-  AutoJobBlockSearchType: 4
+  AutoJobBlockSearchType: 5
   JobBarType: 0
   InvertProgressDisplay: 0
   JobActionTextTypes: 2

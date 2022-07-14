@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_blueprint_recycle_tome_of_arcana
   m_EditorClassIdentifier: 
   Key: interface_info_blueprint_recycle_tome_of_arcana
-  Index: 41
+  Index: 38
   Category: B_jobs
   SubCategory: 39
   Resource: tome_of_arcana

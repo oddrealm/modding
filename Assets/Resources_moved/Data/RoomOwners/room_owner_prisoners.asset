@@ -18,7 +18,7 @@ MonoBehaviour:
   LimitByFamily: 0
   LimitToRoom: 1
   AutoPopType: -1
-  MaxOwners: 9
+  MaxOwners: 99
   PermittedSapientTypes: 1
   DefaultRaces: []
   DefaultSkills: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_plant_mirtle_grass
   m_EditorClassIdentifier: 
   Key: interface_info_plant_mirtle_grass
-  Index: 266
+  Index: 263
   Category: N_weeds
   SubCategory: 00
   Resource: seed

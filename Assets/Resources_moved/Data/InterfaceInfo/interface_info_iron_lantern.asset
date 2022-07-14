@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_iron_lantern
   m_EditorClassIdentifier: 
   Key: interface_info_iron_lantern
-  Index: 177
+  Index: 174
   Category: H_lights
   SubCategory: 00
   Resource: iron

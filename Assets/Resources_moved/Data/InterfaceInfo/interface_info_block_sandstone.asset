@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_block_sandstone
   m_EditorClassIdentifier: 
   Key: interface_info_block_sandstone
-  Index: 60
+  Index: 57
   Category: C_blocks
   SubCategory: 00
   Resource: sand

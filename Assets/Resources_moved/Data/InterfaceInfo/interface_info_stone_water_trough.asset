@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_stone_water_trough
   m_EditorClassIdentifier: 
   Key: interface_info_stone_water_trough
-  Index: 161
+  Index: 158
   Category: F_containers
   SubCategory: 00
   Resource: stone

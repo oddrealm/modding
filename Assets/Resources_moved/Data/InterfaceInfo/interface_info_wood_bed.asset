@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: interface_info_wood_bed
   m_EditorClassIdentifier: 
   Key: interface_info_wood_bed
-  Index: 129
+  Index: 126
   Category: E_props
   SubCategory: 00
   Resource: wood
