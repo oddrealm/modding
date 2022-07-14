@@ -34,14 +34,16 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
                Without the mods in this folder, the game won't be able to find them.  
 7.  Open the Addressables Groups window.   
     Window>Asset Management>Addressables>Groups.  
-8.  Create 4 new groups from the Groups window (top-left).   
+8.  Create 1 new group from the Groups window (top-left).   
     Create>Group>Packed Assets.  
-9.  Rename each group: items, tooltips, blockvisuals, and characteraccessory.  
-    If these groups already exist (which should be the case for the github default project), there's no need to create them.  
-    IMPORTANT: These names must match the data being used.   
-               The name of the data type is the same as the folder which the data objects live in.   
-               For example: Assets/Resources_moved/Data/Items.   
-                            Any data objects in here that have the GDEItemsData.cs class are going to have the group, 'items'.  
+    A group lets us build new data together.
+    So, if you had two profiles (two mod packs), you'd want two groups, one for each.
+    This way, you can assign data to each profile (mod) when building.
+    This will make it so one mod isn't taking in data from another mod.
+9.  Rename the group: 'MoreTools'.  
+    Select the new group and change these settings (found in the inspector window):
+       a. BundleMode = PackTogetherByLabel
+       b. BundleNamingMode = Filename
 10. Create our first 4 data objects which will be used by the game.  
     You should create:   
        'item_iron_shovel_two_hand'  
@@ -79,7 +81,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     'InlineAndName' = &lt;sprite=1262&gt; Iron Shovel 2h  
     'Icon' = 'sp_iron_shovel_two_hand_icon'  
     These values are used to display the item in UI text fields.  
-    INLINE ICONS: What is an inline icon? &lt;sprite=1262&gt;? Wha? This is a graphic that is used in text strings and the number in <sprite=9999> is the index lookup for the texture.  
+    INLINE ICONS: What is an inline icon? &lt;sprite=1262&gt;? Wha? This is a graphic that is used in text strings and the number in <sprite=9999> is the index lookup  for the texture.  
                   The index 1262 is pointing at the specific texture in our inline graphics atlas.  
                   Think Odd Realm emoji.  
                   You can see the default inline graphics texture in the Resources folder ('sp_textmesh_inline_graphics').  
@@ -106,15 +108,16 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     This property should be in the top-left of the Inspector window.  
     When this is toggled on, the objects are added to the Addressable Groups window.  
     Window>Asset Management>Addressables>Groups.  
-18. In the Addressables Groups window, drag each newly added object entry into their respective group.  
-    For example: drag the entry named (it should have a name somewhat like this) 'Assets/Resources_moved/Data/items/item_iron_shovel_two_hand.asset' to the 'items' group.  
-    IMPORTANT: They have to be in their correct groups for the game to properly find them.  
-19. In the Addressables Groups window, set the labels for all the new entries to match exactly the group name.  
+18. In the Addressables Groups window, drag each newly added object entry into the MoreItems group.  
+    For example: drag the entry named (it should have a name like this) 'Assets/Resources_moved/Data/items/item_iron_shovel_two_hand.asset' to the 'MoreItems' group.
+19. In the Addressables Groups window, set the labels for all the new entries to match exactly the data type name.  
     For the default mod project, you should already see labels for these 4 groups.  
     If not, you can create these labels, by selecting the drop-down menu for the entry (in the 'Labels' column) and then clicking 'Manage Labels'.  
     Hit the + symbol to add the label and name it to match the required group.  
     For example, 'items'.  
-    IMPORTANT: Make sure the labels match the name of the group exactly.   
+    IMPORTANT: Make sure the labels match the name of the data type, all lowercase, no spaces or special characters.   
+               The data type is the folder the data comes from.
+               For example, 'items' or 'blockvisuals'.
                Make sure the entries don't have more than one label.  
                The label is used to help find the data in-game, and if these don't have the correct naming, they won't show up.  
 20. Export ('build') the data.  
@@ -122,7 +125,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     Remember that build path from before? This will take all our new data and put it there with all the required formatting to import it into the game.  
     You'll see all this data in the Mods folder under the folder MoreTools (or whatever you named your mod).  
     IMPORTANT: Make sure not to change the names of any of these exported files.  
-21. Run Odd Realm (v0.11.0.3 and higher).  
+21. Run Odd Realm (v0.11.0.6 and higher).  
 22. You should see a pop-up window appear for mods.  
     The game looks for folders in the Mods folder and will display these in this window.  
 23. Enable the mod MoreTools by selecting the box.  
@@ -218,5 +221,15 @@ Also, we have a fantastic discord community with a dedicated modding channel.
 Here's the link: https://discord.gg/6bw3k6w   
 Please come join us and feel free to ping me there with questions or feedback.  
 
+PART IV: BUILDING MULTIPLE MODS SEPARATELY
+Let's say you have followed the steps in Part I for two mod packs (profiles & groups) and you want to build them out, but keep them separate so in-game you can choose between the two:
+1. With the AddressablesGroups window open, select the profile for the new mod you want to build.
+   This will determine which folder to create in the Mods folder.
+2. Select which groups are built into the mod (profile).
+   Do this by selecting the groups you don't want to build, and (in the inspector window) disable the toggle named IncludeInBuild under the Advanced Options section.
+   Then, for the groups you want to include, enable the toggle name IncludeInBuild.
+3. Follow the same build steps in Part I.
+   If you build two profiles correctly, you should see two separate mod folders in the Mods folder.
+   And, in-game, there will be two options to enable/disable in the mod pop-up window.
 
 </pre>
