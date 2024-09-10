@@ -17,20 +17,21 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
       
 1.  Download the modding Unity project.  
     (https://github.com/oddrealm/modding)
-2.  Open the Unity Project (Unity Version 2019.4.34f1).
+2.  Open the Unity Project (Unity Version 2022.3.28f1).
 3.  Open the Addressables Profiles window.  
     Window>Asset Management>Addressables>Profiles.
 4.  Create a new profile from the Profiles window (top-left).  
     Create>Profile. 
-5.  Name it 'MoreTools' or whatever you wish your mod pack to be called.  
+5.  Name it (left-click New Profile>Rename Profile) 'MoreTools' or whatever you wish your mod pack to be called.  
     Think of a Profile as a new mod pack.  
     This is what players will see when the mod screen appears in-game (more on this later). 
-6.  With the MoreTools profile selected, change the build paths.  
-    -[UnityEngine.Application.persistentDataPath]/Mods/MoreItems  
-    -{UnityEngine.Application.persistentDataPath}/Mods/MoreItems  
-    When the mod is ready to use in-game (all the data is set up), we 'build' (export the data) using these paths.  
-    IMPORTANT: Always make sure your mods are folders withing the Mods folder of the Odd Realm save folder.   
-               If a Mods folder doesn't exist, you can create one.   
+6.  With the MoreTools profile selected, change the LocalBuildPath and LocalLoadPath variables to:  
+          a. LocalBuildPath = [UnityEngine.Application.persistentDataPath]/Mods/MoreItems  
+          b. LocalLoadPath = {UnityEngine.Application.persistentDataPath}/Mods/MoreItems  
+    When the mod is ready to use in-game (all the data is set up by you), we 'build' (export the data) using these paths.  
+    IMPORTANT: Always make sure your mods are folders withing the Mods folder of the OddRealm save folder 
+               (i.e., on Windows "C:/Users/You/AppData/LocalLow/Unknown Origin Games/OddRealm/Mods/MoreTools").  
+               If a Mods folder doesn't exist in OddRealm, you can create one.   
                Without the mods in this folder, the game won't be able to find them.  
 7.  Open the Addressables Groups window.   
     Window>Asset Management>Addressables>Groups.  
@@ -40,42 +41,36 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     So, if you had two profiles (two mod packs), you'd want two groups, one for each.
     This way, you can assign data to each profile (mod) when building.
     This will make it so one mod isn't taking in data from another mod.
-9.  Rename the group: 'MoreTools'.  
-    Select the new group and change these settings (found in the inspector window):
+9.  Rename the group (right-click new Packed Assets group>Rename) to 'MoreTools'. 
+10. Select the new group and change these settings (found in the inspector window):
        a. BundleMode = PackTogetherByLabel
        b. BundleNamingMode = Filename
-10. Create our first 4 data objects which will be used by the game.  
+11. Create our first 4 data objects which will be used by the game.  
     You should create:   
        'item_iron_shovel_two_hand'  
        'tooltip_item_iron_shovel_two_hand'  
        'visuals_item_iron_shovel_two_hand'  
        'accessory_item_shovel_two_hand'  
-    NOTE: There are lots of other data objects (too many for the scope of this tutorial) you can create that items use, but these are four to get an item started and in-game.  
+    NOTE: There are lots of other data objects (too many for the scope of this tutorial) you can create that items use, but these are four to get an item started and in-game. 
+          Data objects are organized into folders by type under Assets/Resources_moved/Data/. So, items would be located in the folder Assets/Resource_moved/Data/Items/.
     There are two methods for creating new objects; use whichever works best for you:  
-    a. In the Project window, find a similar data object, select it, and press ctrl+d to duplicate it.   
-       For example, duplicate 'item_iron_tongs_one_hand', and rename it to 'item_iron_shovel_two_hand'.  
-    b. In the Project window, right-click the data folder (for example, Items) in Resources_moved, and create a new scriptable object.   
-       Create>Scriptable Objects>Items.  
-       Rename the new object to 'item_iron_shovel_two_hand'.  
-    NOTE: You can rename the new object anything.   
-          Use a naming convention which works for you.   
-11. Copy the object name and set it as the object 'Key' property.   
-    You can see the object properties by selecting it.   
-    All the properties will be displayed in the Inspector window.   
-    'Key' should be at the top.  
-    IMPORTANT: You have to name the key the same name as the object name.   
-               This key is used as a look up id in-game.  
-12. (Only applicable for items, blockmodels, blocks, and plant object types)   
-    Set the object 'Index' integer property to a unique value.   
-    This value is used to save and load the object in-game, and must be unique from other objects of the same type.  
-    You can use the DataEdit window to help find a free index for your new object.  
-    Tools>DataEdit  
-    Click the items tab at the top of the window.  
-    All data is ordered by index, so navigate to the bottom to find the last used index and add 1 to get your new index.  
-13. Select the new item object in the Project window and set the 'TooltipID', 'Visuals', and 'AccessoryData' properties to point to the new respective data objects.  
-    For example, the 'Visuals' property should now have 'visuals_item_iron_shovel_two_hand' as the key.   
-    NOTE: Feel free to edit the other properties, but, for this tutorial, we'll just worry about getting the item into the game, and not about how it's fundamentally unique.  
-14. Select the new tooltip object in the Project window and set the properties to:  
+      a. In the Project window, find a similar data object, select it, and press ctrl+d to duplicate it.
+         For example, duplicate 'item_iron_tongs_one_hand', and rename it to 'item_iron_shovel_two_hand'.
+             'item_iron_tongs_one_hand' >> 'item_iron_shovel_two_hand'  
+             'tooltip_item_iron_tongs_one_hand' >> 'tooltip_item_iron_shovel_two_hand'
+             'visuals_item_iron_tongs_one_hand' >> 'visuals_item_iron_shovel_two_hand'  
+             'accessory_item_tongs_one_hand' >> 'accessory_item_shovel_two_hand'
+      b. In the Project window, right-click the data folder (for example, Items) in Resources_moved, and create a new scriptable object.   
+         Create>Scriptable Objects>Items.  
+         Rename the new object to 'item_iron_shovel_two_hand'.
+      NOTE: You can rename the new object anything but it's best to follow the naming of what already exists for clarity.   
+          Use a naming convention which works for you.    
+12. Select the new item object (item_iron_shovel_two_hand) in the Project window and set the 'TooltipID', 'Visuals', and 'AccessoryData' properties to point to the new respective data objects.  
+      'tooltip_item_iron_tongs_one_hand' >> 'tooltip_item_iron_shovel_two_hand'
+      'visuals_item_iron_tongs_one_hand' >> 'visuals_item_iron_shovel_two_hand'
+      'accessory_item_iron_tongs_one_hand' >> 'accessory_item_iron_shovel_two_hand'
+      NOTE: Feel free to edit the other properties, but, for this tutorial, we'll just worry about getting the item into the game, and not about how it's fundamentally unique.  
+13. Select the new tooltip object (tooltip_item_iron_shovel_two_hand) in the Project window and set the properties to:  
     'Name' = Iron Shovel 2h  
     'InlineIcon' = &lt;sprite=1262&gt;
     'InlineAndName' = &lt;sprite=1262&gt; Iron Shovel 2h  
@@ -86,7 +81,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
                   Think Odd Realm emoji.  
                   You can see the default inline graphics texture in the Resources folder ('sp_textmesh_inline_graphics').  
                   See Part II: Making New Textures for more about inline graphics.  
-15. Select the new blockvisuals object in the Project window and set the properties to:  
+14. Select the new blockvisuals object in the Project window and set the properties to:  
     'TextureX' = 70  
     'TextureY' = 128  
     These coordinates are used to tell the game what visual graphic the item should use when seen lying on the ground in-game.  
@@ -96,7 +91,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
                    As of writing this tutorial, I still need to make the overworld map and entities textures moddable, but they are coming soon!  
                    You can see the default texture atlas in the Resources folder ('tx_terrain_atlas').  
                    See Part II: Making New Textures for more about the texture atlas.  
-16. (Optional)  
+15. (Optional)  
     Select the new characteraccessory object in the Project window and set the properties to what you like.  
     If you duplicated the iron tongs characteraccessory, you probably won't need to edit any of the properties as the colors will already be set for iron.  
     If not, you should set the colors to what you want for your item.   
@@ -104,13 +99,14 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     The texture coordinates, like the blockvisuals coordinates are used to look up a visual in the texture atlas.  
     NOTE: Not every item needs a characteraccessory.  
           Items like Wood Logs don't have any because they are not equipped to a character.  
-17. Select all 4 new objects and toggle the 'Addressables' property to TRUE.  
-    This property should be in the top-left of the Inspector window.  
+16. Select all 4 new objects and toggle the 'Addressables' property to TRUE.  
+    This property should be in the top-left of the Inspector window when the object is selected.  
     When this is toggled on, the objects are added to the Addressable Groups window.  
     Window>Asset Management>Addressables>Groups.  
-18. In the Addressables Groups window, drag each newly added object entry into the MoreItems group.  
+17. In the Addressables Groups window, drag each newly added object entry into the MoreItems group from Default local Group (Default).  
     For example: drag the entry named (it should have a name like this) 'Assets/Resources_moved/Data/items/item_iron_shovel_two_hand.asset' to the 'MoreItems' group.
-19. In the Addressables Groups window, set the labels for all the new entries to match exactly the data type name.  
+    You should have four entries under the MoreTools group now.
+18. In the Addressables Groups window, set the labels for all the new entries to match exactly the data type name.  
     For the default mod project, you should already see labels for these 4 groups.  
     If not, you can create these labels, by selecting the drop-down menu for the entry (in the 'Labels' column) and then clicking 'Manage Labels'.  
     Hit the + symbol to add the label and name it to match the required group.  
@@ -120,22 +116,24 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
                For example, 'items' or 'blockvisuals'.
                Make sure the entries don't have more than one label.  
                The label is used to help find the data in-game, and if these don't have the correct naming, they won't show up.  
-20. Export ('build') the data.  
-    In the Addressables Groups window, select Build>New Build>Default Build Script (top-right).  
-    Remember that build path from before? This will take all our new data and put it there with all the required formatting to import it into the game.  
+19. Export ('build') the data.  
+    In the Addressables Groups window, make sure Profile has Profile:MoreTools selected (top-left beside New button), then select Build>New Build>Default Build Script (top button to the right of Profile:MoreTool).  
+    Remember that build path from before? This will take all our new data and put it there with all the required formatting to import it into the game. 
+          Should be C:/Users/You/AppData/LocalLow/Unknown Origin Games/OddRealm/Mods/MoreTools on Windows.
     You'll see all this data in the Mods folder under the folder MoreTools (or whatever you named your mod).  
     IMPORTANT: Make sure not to change the names of any of these exported files.  
-21. Run Odd Realm (v0.11.0.6 and higher).  
-22. You should see a pop-up window appear for mods.  
+    NOTE: You might see the pop-up Addressables Build Report asking you if you want build reports turned on. You can hit no.
+20. Run Odd Realm (v1.0.30.0 and higher).  
+21. You should see a pop-up window appear for mods.  
     The game looks for folders in the Mods folder and will display these in this window.  
-23. Enable the mod MoreTools by selecting the box.  
-24. Click confirm.  
+22. Enable the mod MoreTools by selecting the box.  
+23. Click confirm.  
 
 Conclusion:  
 At this point you should be able to spawn and use an Iron Shovel 2h in-game.  
 To quickly test out whether the item was created properly, start a new settlement, open the console window (~), and type 'spawn -i item_iron_shovel_two_hand', and hit enter.  
 If everything is set up correctly, you should see your new shovel appear.  
-If you don't see the visuals for the item, it's likely you haven't done Part II yet, or you've not set up the texture coords and atlas correctly.  
+If you don't see the visuals for the item or the item shows up with visuals for iron tongs, it's because we haven't done Part II yet, or you've not set up the texture coords and atlas correctly.  
 See PART III: Troubleshooting for some tips on how to find out what's wrong.  
 
 PART II: MAKING NEW TEXTURES:  
