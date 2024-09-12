@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_oag_default_bandit_ambush1_narrator0_d0_0
   m_EditorClassIdentifier: 
-  Key: dialogue_oag_default_bandit_ambush1_narrator0_d0_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: 
@@ -20,3 +25,5 @@ MonoBehaviour:
     head is cleanly severed from their shoulders. The Party manages to fight off
     the rest and continue on their journey.{*/}'
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

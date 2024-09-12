@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f3a63260dd3054eba2ee68ee867d93, type: 3}
   m_Name: overworld_visuals_barren_mountain
   m_EditorClassIdentifier: 
-  Key: overworld_visuals_barren_mountain
-  MeshIndex: 0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0.6603774, g: 0.32084376, b: 0.6377418, a: 1}
   TextureX: 0
   TextureY: 15
+  Layer: 1
+  TransitionChannel: 2
   TransitionKey: 6
   HasTransition: 1
   TailVariantCount: 6
   Animated: 0
+  ColorMult: {r: 1, g: 1, b: 1, a: 1}

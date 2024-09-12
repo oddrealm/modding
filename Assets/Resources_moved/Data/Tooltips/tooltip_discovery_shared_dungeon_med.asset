@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_discovery_shared_dungeon_med
   m_EditorClassIdentifier: 
-  Key: tooltip_discovery_shared_dungeon_med
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Dungeons Med
   Name: Dungeons Med
+  NamePlural: 
   InlineIcon: 
-  InlineAndName: Dungeons Med
   Description: 
-  Action: 
   Icon: 
-  Formatting: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
+  Type: 
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 888

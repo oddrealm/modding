@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: smolkin_fishing
   m_EditorClassIdentifier: 
-  Key: smolkin_fishing
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
   UpAnimation: {fileID: 11400000, guid: 93d1233d9a68653439fe3a876fb6b7f7, type: 2}
   DownAnimation: {fileID: 11400000, guid: 9fc32d03edab7d34b87efb8f545913ba, type: 2}

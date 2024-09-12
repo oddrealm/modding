@@ -1,20 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.GameData;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/RoomTemplates")]
-public class GDERoomTemplatesData : ScriptableObject
+public class GDERoomTemplatesData : Scriptable
 {
-	public string Key;
-	public bool UpdateEveryFrame = false;
-	public RoomActivationTypes ActivationType = RoomActivationTypes.DESIGNATION;
-	public bool CanEditOwnersAndStockpiles = true;
-	public bool Enabled = false;
-	public string Stockpile = "";
+    [System.Serializable]
+    public struct RoomAutoJob
+    {
+        public string BlueprintID;
+        public AutoJobSettings Settings;
+        public TagObjectSetting[] ResourcePermissions;
+    }
+
+	[Header("Category")]
+	public string CategoryID = "room_category_homes";
+	
+	[Header("Research")]
 	public string ResearchKey = "";
-	public List<string> Owners = new List<string>();
-	public List<string> DefaultAutoJobBlueprints = new List<string>();
-	public string InterfaceInfo = "";
-	public string TooltipID = "";
+
+    [Header("Max rooms that can be placed in a settlement.")]
+    public int MaxRoomAmount = -1;
+
+    [Header("Occupants")]
+	public List<string> OccupantGroups = new List<string>();
+	
+	[Header("Visuals")]
 	public List<string> Visuals = new List<string>();
+
+    [Header("Jobs")]
+	public List<RoomAutoJob> DefaultAutoJobs = new List<RoomAutoJob>();
+
+    public override string ObjectTypeDisplay { get { return "Rooms"; } }
 }

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_scenario_human_settler_wave0_person2b
   m_EditorClassIdentifier: 
-  Key: dialogue_scenario_human_settler_wave0_person2b
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'
@@ -20,3 +25,5 @@ MonoBehaviour:
     the cat... ol' gran. Well, that's actually been a blessing. She was a gassy ol'
     thing. Anywho. We'll be on our way.
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

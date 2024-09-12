@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2761919d9bfd3e148a72a5ad9fa3141b, type: 3}
+  m_Name: giantspider
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Sets:
+  - {fileID: 11400000, guid: 533378219195421458b9e7ce98caccb5, type: 2}
+  - {fileID: 11400000, guid: d1e4f0c9b72090146a62cd6366eec7fe, type: 2}
+  - {fileID: 11400000, guid: e0ab4dc7f54a2b74ea86d09062639bb8, type: 2}
+  - {fileID: 11400000, guid: a50a8f4622a3a8743af8beb35e19b27b, type: 2}
+  - {fileID: 11400000, guid: bdf876cb8db424f46a520f70c3691f86, type: 2}
+  - {fileID: 11400000, guid: f148dc7a37fa6744a8604e677eb78706, type: 2}
+  - {fileID: 11400000, guid: 06ab945390f9cac45bddeffb0e2c3913, type: 2}
+  - {fileID: 11400000, guid: c16a1c1e4646df0459590aa0d73f28a8, type: 2}
+  - {fileID: 11400000, guid: 8aae89aab2abe364d8a96d909649b799, type: 2}

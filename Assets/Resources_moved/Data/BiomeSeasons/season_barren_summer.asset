@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86ebf3cf42b684cb06c9616041dc72, type: 3}
   m_Name: season_barren_summer
   m_EditorClassIdentifier: 
-  Key: season_barren_summer
   TooltipID: tooltip_season_barren_summer
-  SeasonType: 1
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeasonGroup: summer
   SeasonStart: 14
+  DefaultWeather: weather_barren_summer_calm
   Weather:
   - weather_barren_summer_calm
   - weather_barren_summer_wind

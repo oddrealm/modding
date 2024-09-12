@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_discovery_tomb_easy0_person0_d2_1
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_discovery_tomb_easy0_person0_d2_1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_shared_discovery_tomb_easy0_person0_d2_2
@@ -21,3 +26,5 @@ MonoBehaviour:
     that's what tombs are for, right? Holding the dead. Giving Spiders a nice place
     to stay.
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

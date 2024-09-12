@@ -12,48 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_block_sandstone_cobble
   m_EditorClassIdentifier: 
-  Key: visuals_block_sandstone_cobble
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0.7372549, g: 0.69411767, b: 0.654902, a: 1}
+  TextureX: 0
+  TextureY: 24
+  SecondaryTextureX: 0
+  SecondaryTextureY: 0
+  FXTextureX: 0
+  FXTextureY: 0
+  TransitionKey: 334
+  TransitionKeyDelta: 0
+  TransitionType: 1
+  CanTransitionNULL: 1
+  IsEntityShadowObstruction: 1
   ReceiveSkylightColor: 1
+  ReceiveReducedLighting: 0
   OnlyRenderIfVisible: 1
-  RotationType: 0
-  VisibilityFlag: 1
-  ShowPermissionColor: 1
   ColorAddType: 1
-  HasTriggerOffset: 0
+  VisibilityFlag: 1
+  PermissionFlags: 0
+  RotationType: 0
+  ShowPermissionColor: 1
   DepthOffset: 0.041
   HideSurfaceWhenObscuredAbove: 0
   HideSurfaceWhenSameTypeAbove: 0
   CanTransitionIfObscuredAbove: 1
-  ObscureDirectSurfaceBelow: 1
   HasSurface: 1
+  CanFade: 0
   HasSeasonOffset: 0
-  HasMapColor: 1
-  MapColor: {r: 0.7372549, g: 0.69411767, b: 0.654902, a: 1}
-  TextureX: 0
-  TextureY: 24
   WeatherY: 1
-  TransitionType: 1
-  TransitionKey: 334
-  CanTransitionNULL: 1
-  IsRotationFixture: 1
-  BlockAmbientLight: 1
   ShowAmbientLight: 1
   TailVariants: 10
   ShowTailVariant: 1
   ShowAnims: 0
-  TemperatureStrength: 0
-  TemperatureHorizontalPass: 15
-  TemperatureDownPass: 15
-  TemperatureUpPass: 15
   ShowLighting: 1
-  SpotlightStrength: 0
-  SpotlightHorizontalPass: 1
-  SpotlightDownPass: 8
-  SpotlightUpPass: 7
-  AddVFX: 
-  RemoveVFX: 
-  InteractVFX: 
-  IdleVFX: 
-  SkylightPass: 15
-  SkylightMin: 0
-  SkylightMax: 15
+  DropShadow: 1
+  LightSettings:
+    ReductionThreshold: 0
+    SkylightReduction: 7
+    SkylightPass: 0
+    BlockAmbientLight: 1

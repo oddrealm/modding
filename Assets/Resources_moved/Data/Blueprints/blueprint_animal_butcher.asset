@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
+  m_Name: blueprint_animal_butcher
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_blueprint_animal_butcher
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies:
+  - skill_animal_husbandry
+  - entity_status_intelligence_non_sapient
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: blueprint_category_none
+  ResearchKey: research_agriculture_animals0
+  Repeat: 0
+  CheckStateForTransition: 0
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  SkillLevel: 1
+  AddBlockSkillToJobSkill: 0
+  LocationID: 
+  PermissionType: 0
+  LocationPermissions: []
+  WorkerPermissions:
+  - faction_player
+  - faction_captured
+  WorkerPermissionsToLock: []
+  TargetPermissions:
+  - faction_player
+  - faction_captured
+  TargetPermissionsToLock: []
+  ResourcePool: 1
+  ShowItemTypeResourcePermissions: 0
+  ResourcePermissionsToLock: []
+  MaxWorkers: 0
+  WorkerNeedsAllRequirements: 0
+  JobActions:
+  - ActionType: 10
+    MaxWorkers: 0
+    WorkerID: skill_animal_husbandry
+    TargetID: entity_status_intelligence_non_sapient
+    ResourceID: 
+    OnJobFinishActionID: 
+    WorkPosition: 0
+    AnimationTrigger: 2
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  ProgressWorkerAttribute: 
+  ProgressMax: 1
+  ProgressBarType: 3
+  InvertProgressDisplay: 0
+  ProgressFXMaxX: 0
+  ProgressFXMinX: 0
+  ProgressFXMaxY: 0
+  ProgressFXMinY: 0
+  Clear:
+    Layer: 0
+    Params:
+      DisableRemoveSpawns: 0
+      DisposeIfNotPermitted: 0
+      DisableSpawnAtEntityOnFail: 0
+      DisableClaimCheck: 0
+      SetAsUnclaimed: 0
+      Attempts: 0
+      SeedOffset: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: 
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnFinishedResourcesActionID: 
+  SetTargetFactionTo: 
+  OnFinishWorkerBuffs: []
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves: []
+  OnFinishTargetBuffs:
+  - TargetID: attribute_health
+    Amount: -9999
+    Max: 0
+    Permanent: 1
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  CanSelectTarget: 0
+  ShowWorkOutputActionText: 1
+  OnFinishedFX: 
+  WorkFX: 
+  WorkSFX: 
+  OnFinishedSFX: 
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride: []
+  ProhibitedCursorVisualsOverride: []
+  Visuals:
+  - visuals_job_butcher
+  ShowVisualsIfStarted: 1
+  MaxAutoJobQueueCount: 9
+  DisposeIfRequirementsNotMet: 0
+  DisposeIfNoSource: 0
+  AutoJobOnCreateCooldown: 0
+  AutoJobOnFreedCooldown: 0

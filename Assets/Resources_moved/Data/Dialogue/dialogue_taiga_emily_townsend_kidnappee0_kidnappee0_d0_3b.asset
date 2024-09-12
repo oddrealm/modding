@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_3b
   m_EditorClassIdentifier: 
-  Key: dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_3b
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: 
@@ -20,3 +25,5 @@ MonoBehaviour:
     nod, they turn and disappear into the wild. You can''t help but feel that their
     plea was sincere...{*/}'
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

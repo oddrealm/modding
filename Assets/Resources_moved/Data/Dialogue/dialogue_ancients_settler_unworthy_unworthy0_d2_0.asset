@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_ancients_settler_unworthy_unworthy0_d2_0
   m_EditorClassIdentifier: 
-  Key: dialogue_ancients_settler_unworthy_unworthy0_d2_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_ancients_settler_unworthy_unworthy0_d2_1a
@@ -27,3 +32,5 @@ MonoBehaviour:
     smite you from existence
   - Your words speak truth. So be it. Join us and together we will take back this
     world and the next.
+  FocusOnSpeaker: 1
+  DialogueSequences: []

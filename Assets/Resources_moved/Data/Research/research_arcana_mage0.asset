@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_arcana_mage0
   m_EditorClassIdentifier: 
-  Key: research_arcana_mage0
-  Enabled: 1
-  Races: []
-  ResearchKey: mage0
   TooltipID: tooltip_research_arcana_mage0
-  Dependency: thaumaturgy0
-  Column: 1
-  Row: 2
-  RequiredItem: item_tome_of_arcana
-  RequiredItemCount: 3
-  ResearchCategory: 3
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Enabled: 1
+  ShowInSaga: 1
+  Races: []
+  Dependency: 
+  Column: 2
+  Row: 1
+  ResearchCategory: research_category_arcana
+  RequireItemCountOverride: 0
+  ResearchTimeStep: 60

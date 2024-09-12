@@ -6,8 +6,9 @@ using UnityEngine;
 public enum EntityScenes
 {
     NONE = 0,
-    IN_TILE = 1,
-    IN_PARTY = 2,
+    LIMBO = 1,
+    IN_TILE = 2,
+    IN_PARTY = 4,
 
     ACTIVE = IN_TILE | IN_PARTY
 }

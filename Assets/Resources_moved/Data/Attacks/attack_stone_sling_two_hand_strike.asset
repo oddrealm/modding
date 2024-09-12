@@ -12,28 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
   m_Name: attack_stone_sling_two_hand_strike
   m_EditorClassIdentifier: 
-  Key: attack_stone_sling_two_hand_strike
   TooltipID: tooltip_attack_stone_sling_two_hand_strike
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
   ProjectileType: 4
   FiringType: 2
   ActivationType: 2
   DamageType: 0
-  SkillUsed: 4096
+  AttackFishInRange: 0
+  SkillID: skill_fight_range
   AddSkillToOutput: 1
-  MinAmount: 3
-  MaxAmount: 10
-  Range: 128
-  SourceAction: 2
-  SourceAttribute: 0
+  MinAmount: 7
+  MaxAmount: 11
+  Range: 96
+  StatusesToApplyToTarget: []
+  SourceAction: 0
+  SourceAttributeID: 
   TargetAction: 1
-  TargetAttribute: 1
+  TargetAttributeID: attribute_health
+  TargetAmountMin: 0
+  TargetAmountMax: 2147483647
   AnimationTrigger: 2
   AnimationHitEvent: 1
   OriginFX: []
   HitFX: []
   PrimeFX: []
+  FiredSFX: 
+  CompletedSFX: sfx_attack_default
+  BlockedSFX: 
   AttackStartTargetColor: {r: 0, g: 0, b: 0, a: 0}
   AttackStartTargetColorDuration: 0
   AttackStartTargetColorFlashType: 1

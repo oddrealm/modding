@@ -12,22 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5fb1d1b07810e4ca30537b1d718d1f, type: 3}
   m_Name: weather_tundra_fall_rain
   m_EditorClassIdentifier: 
-  Key: weather_tundra_fall_rain
   TooltipID: tooltip_weather_tundra_fall_rain
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   UIDisplayAnimKey: raining
   FlammabilityMod: 0.25
-  ChanceToSpawnSnow: 0
   WeatherType: 2
-  NightOffset: -10
-  DayOffset: 5
-  MinTemp: 10
-  MaxTemp: 15
+  NightOffset: -2
+  DayOffset: 2
+  MinTemp: -20
+  MaxTemp: -5
   FXIndex: 1
   ChanceToStart: 100
   MinHourDuration: 12
   HourDurationVariance: 6
-  Brightness: 0.9
+  Brightness: 0.8
   AquaticAmbientSFX: sfx_aquatic
   SubterraneanAmbientSFX: sfx_subterranean
   DaytimeAmbientSFX: sfx_day_rain_forest
   NighttimeAmbientSFX: sfx_night_rain_forest
+  WatersPlants: 1
+  SkylightSpawns:
+  - SpawnID: 
+    SpawnRandomFlora: 1
+    MinTemp: -99
+    MaxTemp: 99
+    ChanceToSpawn: 1
+    ChanceToSpawnSize: 10000

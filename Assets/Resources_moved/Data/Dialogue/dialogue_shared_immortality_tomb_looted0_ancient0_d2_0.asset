@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_immortality_tomb_looted0_ancient0_d2_0
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_immortality_tomb_looted0_ancient0_d2_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'
   Message: Well it's about time. Is the world back to normal yet? Are Humans still
     a thing? A nuisance, them.
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_tropical_message_bottle_soggy_note0_d0
   m_EditorClassIdentifier: 
-  Key: dialogue_tropical_message_bottle_soggy_note0_d0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_tropical_message_bottle_soggy_note0_d1
@@ -20,3 +25,5 @@ MonoBehaviour:
   Message: '{px#message_bottle_treasure} counts by wayward jig \n{px#message_bottle_treasure}
     coins to buy a pig'
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

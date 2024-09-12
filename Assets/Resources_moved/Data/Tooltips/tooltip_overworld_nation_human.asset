@@ -12,15 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_overworld_nation_human
   m_EditorClassIdentifier: 
-  Key: tooltip_overworld_nation_human
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Humans
   Name: Humans
-  InlineIcon: <sprite=1016>
-  InlineAndName: <sprite=1016> Humans
+  NamePlural: 
+  InlineIcon: <sprite=63>
   Description: Living in small communities since the Fracture, Humans have only recently
     started to re-form their once great kingdoms. Experts at settling in any environment
     and having exceptional diplomatic skills, the Human race has excelled in the
     age of settlement.
-  Action: 
   Icon: sp_race_human
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.04705883, g: 0.47450984, b: 0.89019614, a: 1}
+  Type: Nation
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1204

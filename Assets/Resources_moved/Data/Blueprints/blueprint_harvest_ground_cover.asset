@@ -12,50 +12,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_harvest_ground_cover
   m_EditorClassIdentifier: 
-  Key: blueprint_harvest_ground_cover
-  StartProgressType: 0
-  StartProgressAttribute: 0
-  StartProgressAttributePercent: 1
-  FixedProgressStart: 0
-  TargetProgressType: 0
-  TargetProgressAttribute: 0
-  TargetProgressAttributePercent: 1
-  FixedProgressTarget: 25
-  DefaultAutoJobPriority: 1
-  DefaultThresholdType: 6
-  TimeoutTime: 300
-  Requirements: requirement_blueprint_harvest
-  AutoJobBlockSearchType: 1
-  JobBarType: 3
-  InvertProgressDisplay: 0
-  JobActionTextTypes: 1
-  Toughness: 0
-  XPMod: 1
-  UseBlockForToughness: 1
-  ToolbarMenu: toolbar_menu_jobs
-  ResearchKey: 
-  AutoPlacementClearType: 8
-  Placement: 0
-  PlacementClear: 8
-  Category: 0
   TooltipID: tooltip_blueprint_harvest
-  OnlyShowYieldTooltip: 0
-  YieldTooltipIDs: []
-  InterfaceInfo: interface_info_blueprint_harvest_ground_cover
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies:
+  - skill_misc
+  - skill_plant
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: blueprint_category_jobs
+  ResearchKey: research_industry_basics0
+  Repeat: 0
+  CheckStateForTransition: 1
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  SkillLevel: 1
+  AddBlockSkillToJobSkill: 0
+  LocationID: tag_mature_grass
+  PermissionType: 4
+  LocationPermissions:
+  - tag_mature_grass
+  WorkerPermissions:
+  - faction_player
+  - faction_captured
+  WorkerPermissionsToLock:
+  - faction_hostile
+  TargetPermissions:
+  - faction_player
+  - faction_captured
+  TargetPermissionsToLock: []
+  ResourcePool: 1
+  ShowItemTypeResourcePermissions: 0
+  ResourcePermissionsToLock: []
+  MaxWorkers: 1
+  WorkerNeedsAllRequirements: 0
+  JobActions:
+  - ActionType: 3
+    MaxWorkers: 0
+    WorkerID: skill_plant
+    TargetID: 
+    ResourceID: 
+    OnJobFinishActionID: 
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  ProgressWorkerAttribute: 
+  ProgressMax: 50
+  ProgressBarType: 2
+  InvertProgressDisplay: 0
+  ProgressFXMaxX: 0
+  ProgressFXMinX: 0
+  ProgressFXMaxY: 0
+  ProgressFXMinY: 0
+  Clear:
+    Layer: 8
+    Params:
+      DisableRemoveSpawns: 0
+      DisposeIfNotPermitted: 0
+      DisableSpawnAtEntityOnFail: 0
+      DisableClaimCheck: 0
+      SetAsUnclaimed: 0
+      Attempts: 0
+      SeedOffset: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: 
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnFinishedResourcesActionID: 
+  SetTargetFactionTo: 
+  OnFinishWorkerBuffs: []
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves: []
+  OnFinishTargetBuffs: []
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  CanSelectTarget: 0
+  ShowWorkOutputActionText: 0
+  OnFinishedFX: 
+  WorkFX: 
+  WorkSFX: 
+  OnFinishedSFX: sfx_plant_harvest
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride:
+  - visuals_job_cursor_permitted
+  ProhibitedCursorVisualsOverride:
+  - visuals_job_cursor_prohibited
   Visuals:
   - visuals_job_harvest
-  WorkFX: fx_remove_plant
-  InteractSFX: sfx_plant_interact
-  CompleteSFX: sfx_plant_harvest
-  SetLiquidMass: 0
-  LiquidMass: 1
-  ModelIndex: 0
-  ModelMultipler: 1
-  EntitiesToCreate: 
-  PickUpActionType: 0
-  ResetPlantMaintenance: 0
-  ReleaseContainedEntity: 0
-  TryCaptureContainedEntity: 0
-  StatusesToApply: []
-  StatusesToApplyToTarget: []
-  MarkRequirementsDiscoveredOnDiscovery: 1
+  ShowVisualsIfStarted: 0
+  MaxAutoJobQueueCount: 9
+  DisposeIfRequirementsNotMet: 0
+  DisposeIfNoSource: 0
+  AutoJobOnCreateCooldown: 0
+  AutoJobOnFreedCooldown: 0

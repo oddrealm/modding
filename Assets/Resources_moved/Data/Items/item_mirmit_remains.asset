@@ -12,34 +12,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_mirmit_remains
   m_EditorClassIdentifier: 
-  Key: item_mirmit_remains
-  Index: 260
   TooltipID: tooltip_item_mirmit_remains
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_can_butcher
+  - tag_item_type_remains
+  - tag_item
+  - tag_item_rarity_common
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  ItemSimulationID: simulation_item_default
+  ItemType: tag_item_type_remains
+  OnJobDisposedTagObjectID: 
+  ShowInTrackingByDefault: 0
+  IdleFX: 
+  PickUpFX: fx_block_item_picked_up
+  DropFX: fx_block_item_dropped
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_mirmit_remains
   CharacterColorMask: {fileID: 0}
   AccessoryData: {fileID: 0}
-  PickUpSFX: sfx_item_pick_up_soft
-  DropSFX: sfx_item_drop_soft
-  Tags:
-  - consumable_meat_carcass
-  Category: 2048
   Permissions: 256
-  Inventory: inventory_none
-  Buffs: 
+  Prohibited: 0
+  DietGroup: diet_group_none
+  CanStackAttacks: 1
+  FillAllSlots: 0
+  CannotBeUnequipped: 0
+  PermittedSlots: []
   AttackGroup: 
   StartDiscovered: 0
   MaxCountInMerchantList: 1
   GenerateNameKey: 
-  MerchantBuyValue: 16
+  MerchantBuyValue: 10
   MerchantSellValue: 2
   TuneRating: 0
+  ItemRarity: item_rarity_common
   RarityType: 0
   DecayRate: 48
   DecayItem: item_bone
   HasMeltThreshold: 0
   MeltThreshold: 0
   FlammableChance: 500
-  LightStrength: 0
-  LightSize: 0
   StackSize: 1
   JobOutputMod: 1
+  ArtifactID: 
+  Actions:
+  - ActionID: tag_can_butcher
+    Buff:
+      TargetID: 
+      Amount: 0
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: item_mirmit_meat_raw
+  TimedActions: []
+  StateOptions: []

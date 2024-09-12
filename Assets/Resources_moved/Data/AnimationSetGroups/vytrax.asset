@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 2761919d9bfd3e148a72a5ad9fa3141b, type: 3}
   m_Name: vytrax
   m_EditorClassIdentifier: 
-  Key: vytrax
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Sets:
   - {fileID: 11400000, guid: ed58bc832991e324790618bbf4f1bffc, type: 2}
   - {fileID: 11400000, guid: 0d9342262f997f04c89a126d5c544747, type: 2}

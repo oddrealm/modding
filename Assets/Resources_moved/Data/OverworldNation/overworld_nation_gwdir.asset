@@ -12,30 +12,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
   m_Name: overworld_nation_gwdir
   m_EditorClassIdentifier: 
-  Key: overworld_nation_gwdir
-  Order: 3
   TooltipID: tooltip_overworld_nation_gwdir
-  Unlocked: 0
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ShowOnMap: 1
+  PlayerCanChoose: 1
+  Unlocked: 1
   Banner: sp_gwdir_banner
+  BannerColor: {r: 0.5176471, g: 0.56078434, b: 0.43137258, a: 1}
+  KingdomIcon: <sprite=1694>
+  SettlementIcon: <sprite=1028>
   OverworldVisuals: overworld_visuals_gwdir
-  Color: 848f6e
-  Loadouts: []
+  BorderVisuals: overworld_visuals_nation_border
+  Loadouts:
+  - starting_loadout_gwdir_dwellers
+  - starting_loadout_gwdir_caretakers
+  - starting_loadout_gwdir_gwnvayth
+  - starting_loadout_custom
   Races:
   - race_gwdir
   DiscoveredRaces:
   - race_gwdir
-  GenerateNameKey: location_names_gwdir_settlements
-  OriginCount: 3
-  MinCount: 2
-  MaxCount: 3
-  SettlementPrefabs:
-  - mpg_gwdir_town
+  GenerateSettlementNameKey: location_names_gwdir_settlements
+  GenerateKingdomNameKey: location_names_gwdir_kingdoms
+  ChanceToSendMerchant: 50
+  MerchantPartyID: party_merchant_gwdir
+  ChanceToMigrate: 50
+  MigrantPartyID: party_migrant
+  ChanceToRaid: 50
+  RaidingPartyID: party_raiding
+  ChanceToExpandTerritory: 50
+  ColonistPartyID: party_colonist
+  NewPartyID: party_empty
+  KingdomSizeMax: 30
+  SettlementSimPopMax: 15
+  SettlementSimPopMin: 5
+  Landmarks:
+  - landmark_settlement_gwdir
   Biomes:
   - biome_taiga_forest
-  HostileTowards:
-  - race_ardyn
-  - race_ancient
-  FriendlyDiscoveryGroups:
-  - discoverygroup_shared_gwdir_settlement_friendly
-  HostileDiscoveryGroups:
-  - discoverygroup_shared_gwdir_settlement_hostile
+  DiplomaticTuning: []
+  MaxLeaders: 1
+  Leaders: []

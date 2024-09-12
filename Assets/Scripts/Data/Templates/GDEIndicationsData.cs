@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Indications")]
-public class GDEIndicationsData : ScriptableObject
+public class GDEIndicationsData : Scriptable
 {
-	public string Key;
 	public int Priority = 0;
 	public string IconID = "";
 	public float Duration = 0.0f;

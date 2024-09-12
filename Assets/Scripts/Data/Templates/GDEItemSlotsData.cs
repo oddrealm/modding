@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/ItemSlots")]
-public class GDEItemSlotsData : ScriptableObject
+public class GDEItemSlotsData : Scriptable
 {
-	public string Key;
-	public string FriendlyName = "";
 	public string EmptyIcon = "";
-	public int InventoryType = 0;
+	public int GenerateItemChances = 1000;
 }

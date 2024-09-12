@@ -9,13 +9,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0ee651054521040a74be8bdd0a48eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 90035f98adbfd5e4f9d291c55ae285f7, type: 3}
   m_Name: sit
   m_EditorClassIdentifier: 
-  Key: sit
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Transitions:
   - NextState: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
     TrueFlags: 0
     FalseFlags: 8
+    Triggers: 0
+    IsComplete: 1
+  - NextState: {fileID: 11400000, guid: 1e6a859c913a2d940b7db7c995938744, type: 2}
+    TrueFlags: 2
+    FalseFlags: 0
+    Triggers: 0
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: 08dfca07b5a89b54c9a4b1c4ad9e15ff, type: 2}
+    TrueFlags: 1
+    FalseFlags: 0
     Triggers: 0
     IsComplete: 0

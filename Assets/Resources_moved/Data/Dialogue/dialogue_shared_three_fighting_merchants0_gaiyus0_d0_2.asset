@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_three_fighting_merchants0_gaiyus0_d0_2
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_three_fighting_merchants0_gaiyus0_d0_2
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_shared_three_fighting_merchants0_popcornia0_d0_3
@@ -20,3 +25,5 @@ MonoBehaviour:
   Message: Reco, I'm tellin' ya. Everyone is going for jewels these days. Red, white,
     gold, all sorts. They love 'em.
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

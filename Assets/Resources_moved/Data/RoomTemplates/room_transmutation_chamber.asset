@@ -12,17 +12,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_transmutation_chamber
   m_EditorClassIdentifier: 
-  Key: room_transmutation_chamber
-  ActivationType: 1
-  CanEditOwnersAndStockpiles: 1
-  Enabled: 1
-  Stockpile: room_stockpiles_empty
-  ResearchKey: thaumaturgy0
-  Owners:
-  - room_owner_thaumaturges
-  DefaultAutoJobBlueprints: []
-  InterfaceInfo: interface_info_room_transmutation_chamber
   TooltipID: tooltip_room_transmutation_chamber
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_arcana
+  ResearchKey: research_ancient_crafting0
+  MaxRoomAmount: -1
+  OccupantGroups:
+  - occupant_group_transmutation_chamber
   Visuals:
   - visuals_room_display_transmutation_chamber
-  - visuals_room_display_transmutation_chamber_background
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_item_void_crystal
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_void_shard_from_dirt_clod
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_void_shard_from_plant_fiber
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_void_shard_from_stone_chunk
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_void_shard_from_tthdir_log
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_void_shard_from_waste
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_void_shard_from_wood_log
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []

@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: koosh_attack_sword
   m_EditorClassIdentifier: 
-  Key: koosh_attack_sword
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 626021479c17f12419b698d7491673b1, type: 2}
   UpAnimation: {fileID: 11400000, guid: 68a70ff47285a2d4a9b395692d4f5e91, type: 2}
   DownAnimation: {fileID: 11400000, guid: 15de4874bd5a54c46be73bf4e519049c, type: 2}

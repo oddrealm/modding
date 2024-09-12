@@ -12,21 +12,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_elder
   m_EditorClassIdentifier: 
-  Key: entity_status_elder
   TooltipID: tooltip_entity_status_elder
-  HasEntityInfo: 0
-  ShowToPlayer: 1
-  Indicator: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIconOnToolbar: 1
+  ShowIndicator: 0
   Notification: 
-  BuffGroup: buffs_status_elder
-  OverworldPartyActionGroup: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
-  ActivateIntervals: 0
-  ActivateItems: 
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
-  CooldownMin: 0
-  CooldownMax: 0
-  EntitiesToSpawnOnExpire: 
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  Actions:
+  - ConditionTarget: 
+    HideInTooltips: 1
+    Comment: Randomly kill.
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 10
+    RandomChance: 500
+    ActivationAction: 1
+    DeactivationAction: 0
+    Buffs:
+    - TargetID: attribute_health
+      Amount: -99999
+      Max: 0
+      Permanent: 1
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+  - ConditionTarget: 
+    HideInTooltips: 0
+    Comment: Move slower.
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 4
+    Buffs:
+    - TargetID: attribute_move_speed
+      Amount: -4
+      Max: 0
+      Permanent: 0
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds: []

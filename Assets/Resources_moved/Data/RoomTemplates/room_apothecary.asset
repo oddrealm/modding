@@ -12,17 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_apothecary
   m_EditorClassIdentifier: 
-  Key: room_apothecary
-  ActivationType: 1
-  CanEditOwnersAndStockpiles: 1
-  Enabled: 0
-  Stockpile: room_stockpiles_empty
-  ResearchKey: apothecary0
-  Owners:
-  - room_owner_alchemists
-  DefaultAutoJobBlueprints: []
-  InterfaceInfo: interface_info_room_apothecary
   TooltipID: tooltip_room_apothecary
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_academia
+  ResearchKey: research_cooking_alchemy0
+  MaxRoomAmount: -1
+  OccupantGroups:
+  - occupant_group_apothecary
   Visuals:
   - visuals_room_display_apothecary
-  - visuals_room_display_apothecary_background
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_heal_patient_health
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_health_potion
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_sablixian_tar
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_youth_potion
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []

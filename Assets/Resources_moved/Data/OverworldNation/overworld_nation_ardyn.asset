@@ -12,38 +12,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
   m_Name: overworld_nation_ardyn
   m_EditorClassIdentifier: 
-  Key: overworld_nation_ardyn
-  Order: 2
   TooltipID: tooltip_overworld_nation_ardyn
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ShowOnMap: 1
+  PlayerCanChoose: 1
   Unlocked: 1
   Banner: sp_ardyn_banner
+  BannerColor: {r: 0.67058825, g: 0.38823533, b: 0.43921572, a: 1}
+  KingdomIcon: <sprite=1696>
+  SettlementIcon: <sprite=1018>
   OverworldVisuals: overworld_visuals_ardyn
-  Color: ab6370
+  BorderVisuals: overworld_visuals_nation_border
   Loadouts:
   - starting_loadout_ardyn_tyrants
   - starting_loadout_ardyn_herders
   - starting_loadout_ardyn_blood_thirsty
-  - starting_loadout_ardyn_dev
   - starting_loadout_custom
   Races:
   - race_ardyn
   DiscoveredRaces:
   - race_ardyn
-  GenerateNameKey: location_names_ardyn_settlements
-  OriginCount: 3
-  MinCount: 5
-  MaxCount: 7
-  SettlementPrefabs:
-  - mpg_ardyn_town
+  GenerateSettlementNameKey: location_names_ardyn_settlements
+  GenerateKingdomNameKey: location_names_ardyn_kingdoms
+  ChanceToSendMerchant: 50
+  MerchantPartyID: party_merchant_ardyn
+  ChanceToMigrate: 50
+  MigrantPartyID: party_migrant
+  ChanceToRaid: 50
+  RaidingPartyID: party_raiding
+  ChanceToExpandTerritory: 100
+  ColonistPartyID: party_colonist
+  NewPartyID: party_empty
+  KingdomSizeMax: 70
+  SettlementSimPopMax: 36
+  SettlementSimPopMin: 5
+  Landmarks:
+  - landmark_settlement_ardyn
   Biomes:
   - biome_barren
   - biome_taiga
-  HostileTowards:
-  - race_human
-  - race_ancient
-  - race_gwdir
-  - race_tomek
-  FriendlyDiscoveryGroups:
-  - discoverygroup_shared_ardyn_settlement_friendly
-  HostileDiscoveryGroups:
-  - discoverygroup_shared_ardyn_settlement_hostile
+  DiplomaticTuning:
+  - NationID: overworld_nation_ardyn
+    Relationship: 2
+    Chances: 500
+  - NationID: overworld_natoin_ardyn
+    Relationship: 1
+    Chances: 250
+  - NationID: overworld_natoin_human
+    Relationship: 2
+    Chances: 1000
+  - NationID: overworld_natoin_gwdir
+    Relationship: 2
+    Chances: 1000
+  - NationID: overworld_natoin_tomek
+    Relationship: 2
+    Chances: 1000
+  - NationID: overworld_natoin_ancient
+    Relationship: 2
+    Chances: 1000
+  MaxLeaders: 1
+  Leaders: []

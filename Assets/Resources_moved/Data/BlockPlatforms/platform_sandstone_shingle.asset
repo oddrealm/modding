@@ -12,17 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e256d1ab8c0d2438043b751e626442, type: 3}
   m_Name: platform_sandstone_shingle
   m_EditorClassIdentifier: 
-  Key: platform_sandstone_shingle
+  TooltipID: tooltip_platform_sandstone_shingle
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Index: 6
   Visuals: visuals_platform_sandstone_shingle
-  TooltipID: tooltip_platform_sandstone_shingle
   PhysicsHeatPass: 0
   HasMeltThreshold: 0
   MeltThreshold: 0
   NeedsSupport: 0
+  PermittedPaths: 31
   Permissions: 8388608
+  Prohibited: 32
   MovementSpeedMod: 1
-  MovementCostMult: 2
+  MovementCost: 1
   IsRoof: 1
   CanGrow: 0
   GrowTime: -1
@@ -36,4 +42,4 @@ MonoBehaviour:
   BurnFuel: 0
   BaseHealth: 50
   BaseToughness: 0
-  ItemDropGroupID: isg_platform_sandstone_shingle
+  ItemDropGroupID: spawns_platform_sandstone_shingle

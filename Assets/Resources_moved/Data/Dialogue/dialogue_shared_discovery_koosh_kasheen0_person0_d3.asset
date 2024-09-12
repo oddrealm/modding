@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_discovery_koosh_kasheen0_person0_d3
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_discovery_koosh_kasheen0_person0_d3
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '#koosh_kasheen0'
   Message: Nice.
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
+  m_Name: plant_sogweed
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_plant_sogweed
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_biome_marine_plants_taiga
+  - tag_biome_marine_plants_barrens
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: 5760
+  ReproduceTimeInterval: 1440
+  MaxNaturalSpawnCount: 128
+  MaxNaturalReproduceCount: 512
+  ReproductionPlant: plant_sogweed
+  MaxDefaultSimTime: 86400
+  MatureThreshold: 0.5
+  MatureTag: tag_mature_standing
+  LimitGroupSizeThreshold: 2500
+  RemoveItemDrops: spawns_plant_remove_drops_default
+  MatureItemDrops: spawns_plant_mature_drops_sogweed
+  MatureTagObjectSpawn: 
+  AutoClearOnMature: 0
+  SpawnItemsOnAutoClear: 0
+  GrowthStages: 1
+  HealthMax: 100
+  HydrationMax: 500
+  HydrationDecay: 0
+  DehydratedTag: tag_can_be_watered
+  HydrationTooltip: tooltip_plant_hydration
+  HydrationJob: blueprint_water_plant
+  MinLight: -1
+  FillRequirement: block_fill_water
+  NeedsFertileSoil: 1
+  MaxTemp: 75
+  MinTemp: -5
+  PlantSimulationID: simulation_plant_surface_default
+  UseLocalFaunaReproduceMod: 1
+  Seasons:
+  - spring
+  - summer
+  - fall
+  - winter
+  IsObstruction: 0
+  PermittedPaths: -1
+  NeedsSupport: 1
+  FruitingTag: tag_mature_fruit
+  FruitItemDrops: 
+  FruitMaxCount: 1
+  FruitMinInterval: 64
+  FruitMaxInterval: 64
+  FruitSeasons: []
+  FruitVisuals: 
+  LayerPriority: 0
+  Layer: 32
+  ProhibitedLayers: 32
+  Permissions: 1024
+  Prohibited: 1024
+  MaturePermissions: 1048576
+  MatureProhibitions: 0
+  PlantType: 8
+  PlantPermission: 8
+  CanHaveGroup: 0
+  Visuals:
+  - visuals_plant_sogweed
+  RemoveFX: fx_remove_plant
+  Actions:
+  - Comment: 
+    ActionID: tag_can_be_watered
+    Buff:
+      TargetID: attribute_thirst
+      Amount: 999
+      Max: 0
+      Permanent: 1
+  StateOptions: []

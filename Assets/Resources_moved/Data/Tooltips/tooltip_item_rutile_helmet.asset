@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_rutile_helmet
   m_EditorClassIdentifier: 
-  Key: tooltip_item_rutile_helmet
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
+  Action: Rutile Helmet
   Name: Rutile Helmet
+  NamePlural: 
   InlineIcon: <sprite=455>
-  InlineAndName: <sprite=455> Rutile Helmet
   Description: 
-  Action: 
   Icon: sp_rutile_helmet_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.85882354, g: 0.32156864, b: 0.28235295, a: 1}
+  Type: Item
+  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
+  Order: 1992

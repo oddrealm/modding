@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_force_leave_settlement_default
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_dialogue_force_leave_settlement_default
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AppearanceID: 
+  NextDialogueID: []
+  SpeakerTarget: 
+  Message: 
+  Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences:
+  - ID: seq_leave_settlement_sapient0
+    Text: You're forcing me to leave?
+    IsStartingSequence: 1
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: action_yes
+      Text: Yes! Get lost.
+      NextSequenceID: seq_leave_settlement_sapient0_action_yes
+      ActionTrigger: 1
+      ActionDataID: force_entity_controller_leave_map
+    ActionB:
+      ID: action_no
+      Text: No. I thought you were someone else.
+      NextSequenceID: seq_leave_settlement_sapient0_action_no
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: action_idk
+      Text: I don't know what I'm doing.
+      NextSequenceID: seq_leave_settlement_sapient0_action_idk
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: action_silence
+      Text: ...
+      NextSequenceID: seq_leave_settlement_sapient0_action_silence
+      ActionTrigger: 0
+      ActionDataID: 
+  - ID: seq_leave_settlement_sapient0_action_yes
+    Text: You'll regret this!
+    IsStartingSequence: 0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionB:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+  - ID: seq_leave_settlement_sapient0_action_no
+    Text: Phew. Scared me. I wouldn't last on my own for one minute out there.
+    IsStartingSequence: 0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionB:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+  - ID: seq_leave_settlement_sapient0_action_idk
+    Text: None of us do, friend.
+    IsStartingSequence: 0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionB:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+  - ID: seq_leave_settlement_sapient0_action_silence
+    Text: Ok... I'll... get back to what I was doing then...
+    IsStartingSequence: 0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: action_jk
+      Text: Just kidding. You should leave.
+      NextSequenceID: seq_leave_settlement_sapient0_action_jk
+      ActionTrigger: 1
+      ActionDataID: force_entity_controller_leave_map
+    ActionB:
+      ID: action_continued_silence
+      Text: ...
+      NextSequenceID: seq_leave_settlement_sapient0_action_continued_silence
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+  - ID: seq_leave_settlement_sapient0_action_jk
+    Text: You're sick in the head.
+    IsStartingSequence: 0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionB:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+  - ID: seq_leave_settlement_sapient0_action_continued_silence
+    Text: Yes... well... oh! Who's that calling my name? Must be going.
+    IsStartingSequence: 0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionB:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+  - ID: seq_leave_settlement_non_sapient0
+    Text: ...
+    IsStartingSequence: 1
+    Condition:
+      TagRequirement0ID: entity_status_intelligence_non_sapient
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: action_yes
+      Text: Go on. Get!
+      NextSequenceID: 
+      ActionTrigger: 1
+      ActionDataID: force_entity_controller_leave_map
+    ActionB:
+      ID: action_no
+      Text: Ah, I can't look in those eyes and tell you to go.
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 

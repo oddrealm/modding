@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/OverworldMapGen")]
-public class GDEOverworldMapGenData : ScriptableObject
+public class GDEOverworldMapGenData : Scriptable
 {
-	public string Key;
 	public int BuildPriority = 0;
 	public int SeedOffset = 0;
 	public float Frequency = 0.0f;
@@ -16,7 +15,9 @@ public class GDEOverworldMapGenData : ScriptableObject
 	public float MaxThreshold = 0.0f;
 	public float Falloff = 0.0f;
 	public bool UseBotTopMinMax = false;
-	public float TopMax = 0.0f;
+	[Header("If true, will measure dist from avg center of bot/top boundaries and fade based on that. False is a simple clamp.")]
+	public bool FadeBotTopMinMax = true;
+    public float TopMax = 0.0f;
 	public float TopMin = 0.0f;
 	public float BotMax = 0.0f;
 	public float BotMin = 0.0f;

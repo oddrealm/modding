@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82163600dc47e5e40a4532610b261d03, type: 3}
   m_Name: nightlight_02
   m_EditorClassIdentifier: 
-  Key: nightlight_02
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   IntroID: audio_music_nightlight_02_intro
   LoopID: audio_music_nightlight_02_loop
   MinHour: 18

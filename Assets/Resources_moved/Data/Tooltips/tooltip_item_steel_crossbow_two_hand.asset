@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_steel_crossbow_two_hand
   m_EditorClassIdentifier: 
-  Key: tooltip_item_steel_crossbow_two_hand
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
+  Action: Steel Crossbow 2h
   Name: Steel Crossbow 2h
+  NamePlural: 
   InlineIcon: <sprite=976>
-  InlineAndName: <sprite=976> Steel Crossbow 2h
   Description: 
-  Action: 
   Icon: sp_steel_crossbow_two_hand_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.2901961, g: 0.57254905, b: 0.7607844, a: 1}
+  Type: Item
+  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
+  Order: 2228

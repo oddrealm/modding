@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
+  m_Name: spawns_entity_equipment_shared_baddies_easy_v0_diff3
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeedOffset: 557296
+  MaxIterations: 1
+  MinIterations: 1
+  Spawns:
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.5
+    TagObjectID: item_stoneleaf_vest
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.1
+    TagObjectID: item_stoneleaf_cap
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_stoneleaf_leggings
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.1
+    TagObjectID: item_stoneleaf_boots
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.75
+    TagObjectID: item_wood_buckler_one_hand
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.5
+    TagObjectID: item_iron_sword_one_hand
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.5
+    TagObjectID: item_iron_sword_two_hand
+    TagID: 

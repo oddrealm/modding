@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: crab_climb
   m_EditorClassIdentifier: 
-  Key: crab_climb
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 0568f5713f1565a4aa7c5e1b2f739391, type: 2}
   UpAnimation: {fileID: 11400000, guid: f82a5d6e6636813468e71b24a367636b, type: 2}
   DownAnimation: {fileID: 11400000, guid: 8177d8cf6e9487f49930664beb33c6f6, type: 2}

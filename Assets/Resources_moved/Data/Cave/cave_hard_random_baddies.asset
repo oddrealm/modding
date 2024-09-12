@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ab9f9f4e1cf71469ba836d1bd1a335, type: 3}
+  m_Name: cave_hard_random_baddies
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_cave_default
+  GroupID: 
+  DEBUG: 1
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  FillUnusedWithSurroundingBlocks: 0
+  Layers:
+  - TagID: 
+    Comment: Empty
+    Max: 1
+  - TagID: tag_spawns_caves_hard_random_baddies
+    Comment: Plants, Props, Treasure
+    Max: 0.5
+  - TagID: tag_cave_gen_water
+    Comment: Water
+    Max: 0.4
+  - TagID: tag_terrain_gen_sand
+    Comment: Sand
+    Max: 0.25

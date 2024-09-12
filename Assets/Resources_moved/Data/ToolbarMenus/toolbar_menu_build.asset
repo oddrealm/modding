@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ac1c6d5b00c5243a09b3c978f5097b, type: 3}
   m_Name: toolbar_menu_build
   m_EditorClassIdentifier: 
-  Key: toolbar_menu_build
   TooltipID: tooltip_toolbar_menu_build
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   TabOrder: 1
   ToggleType: 1
   SelectionType: 2

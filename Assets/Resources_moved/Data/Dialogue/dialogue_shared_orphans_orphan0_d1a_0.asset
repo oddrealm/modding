@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_orphans_orphan0_d1a_0
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_orphans_orphan0_d1a_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'
@@ -20,3 +25,5 @@ MonoBehaviour:
     be old and smelly. '
   Response:
   - Ha. Okay.
+  FocusOnSpeaker: 1
+  DialogueSequences: []

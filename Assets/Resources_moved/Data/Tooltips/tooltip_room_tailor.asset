@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_tailor
   m_EditorClassIdentifier: 
-  Key: tooltip_room_tailor
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Tailor
   Name: Tailor
+  NamePlural: Tailors
   InlineIcon: <sprite=712>
-  InlineAndName: <sprite=712> Tailor
   Description: The Tailor is where cloth-based materials are produced.
-  Action: 
   Icon: sp_room_tailor_icon
-  Formatting: room_names_tailor
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
+  Type: Room
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2430

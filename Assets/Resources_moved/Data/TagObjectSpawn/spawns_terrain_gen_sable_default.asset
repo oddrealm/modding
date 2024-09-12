@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
+  m_Name: spawns_terrain_gen_sable_default
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_spawns_terrain_gen_sable_default
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeedOffset: 763852
+  MaxIterations: 1
+  MinIterations: 1
+  Spawns:
+  - Comment: Sable
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.99
+    TagObjectID: block_sable
+    TagID: 
+  - Comment: Forest Emerald
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.001
+    TagObjectID: block_lode_forest_emerald
+    TagID: 
+  - Comment: Seabreeze Sapphire
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.001
+    TagObjectID: block_lode_seabreeze_sapphire
+    TagID: 
+  - Comment: Sunrise Opal
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.001
+    TagObjectID: block_lode_sunrise_opal
+    TagID: 
+  - Comment: Amber Opal
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.001
+    TagObjectID: block_lode_amber_opal
+    TagID: 
+  - Comment: Void Crystal
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.006
+    TagObjectID: block_lode_void_crystal
+    TagID: 

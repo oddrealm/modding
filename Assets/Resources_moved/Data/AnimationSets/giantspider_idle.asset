@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
+  m_Name: giantspider_idle
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  State: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
+  UpAnimation: {fileID: 11400000, guid: df8571fe3e2f9c748b85c5e21050cba7, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 81f8536e58259b7499c568f364535f5a, type: 2}
+  RightAnimation: {fileID: 11400000, guid: c99455b0c3a975c4fa1ae33683b22ade, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 4cd05b5790ac50544b95a5665ee0a112, type: 2}

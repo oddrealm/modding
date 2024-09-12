@@ -12,50 +12,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_item_steel_kukri_one_hand
   m_EditorClassIdentifier: 
-  Key: blueprint_item_steel_kukri_one_hand
-  StartProgressType: 0
-  StartProgressAttribute: 0
-  StartProgressAttributePercent: 1
-  FixedProgressStart: 0
-  TargetProgressType: 0
-  TargetProgressAttribute: 0
-  TargetProgressAttributePercent: 1
-  FixedProgressTarget: 100
-  DefaultAutoJobPriority: 1
-  DefaultThresholdType: 4
-  TimeoutTime: 300
-  Requirements: requirement_blueprint_item_steel_kukri_one_hand
-  AutoJobBlockSearchType: 1
-  JobBarType: 3
-  InvertProgressDisplay: 1
-  JobActionTextTypes: 1
-  Toughness: 0
-  XPMod: 1
-  UseBlockForToughness: 0
-  ToolbarMenu: 
-  ResearchKey: melee_steel0
-  AutoPlacementClearType: 0
-  Placement: 16
-  PlacementClear: 16
-  Category: 4
   TooltipID: tooltip_item_steel_kukri_one_hand
-  OnlyShowYieldTooltip: 0
-  YieldTooltipIDs: []
-  InterfaceInfo: interface_info_steel_kukri_one_hand
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies:
+  - item_iron_ingot
+  - skill_carry
+  - item_coal
+  - skill_craft_metal
+  - item_steel_kukri_one_hand
+  - item_steel_ingot
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: blueprint_category_none
+  ResearchKey: research_war_steel0
+  Repeat: 0
+  CheckStateForTransition: 0
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  SkillLevel: 1
+  AddBlockSkillToJobSkill: 0
+  LocationID: tag_anvil
+  PermissionType: 0
+  LocationPermissions:
+  - tag_anvil
+  WorkerPermissions:
+  - faction_player
+  - faction_captured
+  WorkerPermissionsToLock:
+  - faction_hostile
+  TargetPermissions:
+  - faction_player
+  - faction_captured
+  TargetPermissionsToLock: []
+  ResourcePool: 1
+  ShowItemTypeResourcePermissions: 0
+  ResourcePermissionsToLock: []
+  MaxWorkers: 0
+  WorkerNeedsAllRequirements: 0
+  JobActions:
+  - ActionType: 0
+    MaxWorkers: 0
+    WorkerID: skill_carry
+    TargetID: 
+    ResourceID: item_steel_ingot
+    OnJobFinishActionID: 
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 0
+    MaxWorkers: 0
+    WorkerID: skill_carry
+    TargetID: 
+    ResourceID: item_steel_ingot
+    OnJobFinishActionID: 
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 0
+    MaxWorkers: 0
+    WorkerID: skill_carry
+    TargetID: 
+    ResourceID: item_steel_ingot
+    OnJobFinishActionID: 
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 3
+    MaxWorkers: 0
+    WorkerID: skill_craft_metal
+    TargetID: 
+    ResourceID: 
+    OnJobFinishActionID: 
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  ProgressWorkerAttribute: 
+  ProgressMax: 100
+  ProgressBarType: 2
+  InvertProgressDisplay: 1
+  ProgressFXMaxX: 0
+  ProgressFXMinX: 0
+  ProgressFXMaxY: 0
+  ProgressFXMinY: 0
+  Clear:
+    Layer: 16
+    Params:
+      DisableRemoveSpawns: 0
+      DisposeIfNotPermitted: 0
+      DisableSpawnAtEntityOnFail: 0
+      DisableClaimCheck: 0
+      SetAsUnclaimed: 0
+      Attempts: 0
+      SeedOffset: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: item_steel_kukri_one_hand
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnFinishedResourcesActionID: 
+  SetTargetFactionTo: 
+  OnFinishWorkerBuffs: []
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves: []
+  OnFinishTargetBuffs: []
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  CanSelectTarget: 0
+  ShowWorkOutputActionText: 1
+  OnFinishedFX: 
+  WorkFX: fx_block_hit
+  WorkSFX: sfx_hammer_wood
+  OnFinishedSFX: 
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride: []
+  ProhibitedCursorVisualsOverride: []
   Visuals:
   - visuals_item_steel_kukri_one_hand
-  WorkFX: fx_work_add
-  InteractSFX: sfx_hammer_wood
-  CompleteSFX: 
-  SetLiquidMass: 0
-  LiquidMass: 1
-  ModelIndex: 2339
-  ModelMultipler: 1
-  EntitiesToCreate: 
-  PickUpActionType: 0
-  ResetPlantMaintenance: 0
-  ReleaseContainedEntity: 0
-  TryCaptureContainedEntity: 0
-  StatusesToApply: []
-  StatusesToApplyToTarget: []
-  MarkRequirementsDiscoveredOnDiscovery: 1
+  ShowVisualsIfStarted: 1
+  MaxAutoJobQueueCount: 9
+  DisposeIfRequirementsNotMet: 0
+  DisposeIfNoSource: 0
+  AutoJobOnCreateCooldown: 0
+  AutoJobOnFreedCooldown: 0

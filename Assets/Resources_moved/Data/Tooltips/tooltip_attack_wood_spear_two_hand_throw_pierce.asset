@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attack_wood_spear_two_hand_throw_pierce
   m_EditorClassIdentifier: 
-  Key: tooltip_attack_wood_spear_two_hand_throw_pierce
-  Name: Pierce (Thrown Spear)
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Throw
+  Name: Throw
+  NamePlural: 
   InlineIcon: <sprite=284>
-  InlineAndName: <sprite=284> Pierce (Thrown Spear)
   Description: 
-  Action: 
   Icon: 
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7411765, g: 0.5764706, b: 0.48235294, a: 1}
+  Type: 
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2473

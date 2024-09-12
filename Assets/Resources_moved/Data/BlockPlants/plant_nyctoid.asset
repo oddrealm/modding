@@ -12,48 +12,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_nyctoid
   m_EditorClassIdentifier: 
-  Key: plant_nyctoid
-  Index: 99
-  IsRoot: 1
-  Biomes: []
+  TooltipID: tooltip_plant_nyctoid
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: 7920
+  ReproduceTimeInterval: 1440
+  MaxNaturalSpawnCount: 32
+  MaxNaturalReproduceCount: 128
+  ReproductionPlant: plant_nyctoid
+  MaxDefaultSimTime: 86400
+  MatureThreshold: 0.5
+  MatureTag: tag_mature_nyctoid
+  LimitGroupSizeThreshold: 2500
+  RemoveItemDrops: 
+  MatureItemDrops: spawns_plant_mature_drops_nyctoid
+  MatureTagObjectSpawn: 
+  AutoClearOnMature: 0
+  SpawnItemsOnAutoClear: 0
+  GrowthStages: 4
+  HealthMax: 100
+  HydrationMax: 500
+  HydrationDecay: -1
+  DehydratedTag: tag_can_be_time_weaved
+  HydrationTooltip: tooltip_plant_timeblight
+  HydrationJob: blueprint_tend_chronoblast
+  MinLight: 6
+  FillRequirement: 
+  NeedsFertileSoil: 1
+  MaxTemp: 75
+  MinTemp: -5
+  PlantSimulationID: simulation_plant_surface_default
+  UseLocalFaunaReproduceMod: 1
   Seasons: []
-  NaturalSpawnBlock: 1
-  Permissions: 0
+  IsObstruction: 0
+  PermittedPaths: -1
+  NeedsSupport: 1
+  FruitingTag: tag_mature_fruit
+  FruitItemDrops: 
+  FruitMaxCount: 1
+  FruitMinInterval: 64
+  FruitMaxInterval: 64
+  FruitSeasons: []
+  FruitVisuals: 
+  LayerPriority: 0
+  Layer: 32
+  ProhibitedLayers: 32
+  Permissions: 262144
+  Prohibited: 1024
   MaturePermissions: 1048576
+  MatureProhibitions: 0
   PlantType: 2
   PlantPermission: 1
-  Group: -1
-  IsObstruction: 0
-  FertilityRequirement: 1
-  PhysicsType: 66
-  NaturalSpawnChance: 0
-  NaturalReproduceChance: 0
-  ReproducePlant: 
-  ReproduceMinDist: 0
-  ReproduceMaxDist: 0
-  ReproduceFX: 
-  ReproduceIntervals: -1
-  TooltipID: tooltip_plant_nyctoid
+  CanHaveGroup: 0
   Visuals:
   - visuals_plant_nyctoid
-  RemoveItemDrops: 
-  MatureItemDrops: isg_plant_mature_drops_nyctoid
-  MatureEntityDrops: 
-  MaturePrefabID: 
-  NeedsSkylight: 0
-  MinTemp: -5
-  MaxTemp: 75
-  MatureTime: 48
-  MaxLifeTime: 132
-  GrowthStages: 4
-  FlammableChance: 400
-  HealthMax: 100
-  HealthTooltipID: tooltip_attribute_health
-  MaintenanceDecayMin: 1
-  MaintenanceDecayMax: 10
-  MaintenanceMax: 100
-  MaintenanceTooltipID: tooltip_plant_maintenance_nyctoid
-  MaintenanceTags:
-  - needs_life_force
-  MatureTags:
-  - mature_plant
+  RemoveFX: fx_remove_plant
+  Actions:
+  - Comment: 
+    ActionID: tag_can_be_watered
+    Buff:
+      TargetID: attribute_thirst
+      Amount: 999
+      Max: 0
+      Permanent: 1
+  StateOptions: []

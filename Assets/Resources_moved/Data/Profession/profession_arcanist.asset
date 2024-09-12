@@ -12,11 +12,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_arcanist
   m_EditorClassIdentifier: 
-  Key: profession_arcanist
-  ResearchKey: 
   TooltipID: tooltip_profession_arcanist
-  VisibleToPlayer: 1
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_professions
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  EarnBonusXPInCombat: 0
+  ResearchKey: 
+  VisibleToPlayer: 0
+  CanBeAssigned: 0
+  CanBeChanged: 1
+  CanDoSupplementCarryActions: 0
+  CanLevelUp: 0
+  FavoursRangedAttackItems: 0
   GlobalIndicator: indicator_global_arcanist
-  SkillsActiveByDefault: 3193088
-  SkillsToIncreaseOnLevelUp: 0
-  ProfessionType: 262144
+  SkillsActiveByDefault:
+  - skill_craft_void
+  - skill_fight_magic
+  SkillsToIncreaseOnLevelUp:
+  - skill_summoning
+  - skill_fight_magic
+  - skill_craft_void
+  SkillPriorities:
+  - SkillID: skill_alchemy
+    Priority: 1
+  - SkillID: skill_all
+    Priority: 1
+  - SkillID: skill_animal_husbandry
+    Priority: 1
+  - SkillID: skill_carry
+    Priority: 1
+  - SkillID: skill_cook
+    Priority: 1
+  - SkillID: skill_craft_cloth
+    Priority: 1
+  - SkillID: skill_craft_leather
+    Priority: 1
+  - SkillID: skill_craft_metal
+    Priority: 1
+  - SkillID: skill_craft_stone
+    Priority: 1
+  - SkillID: skill_craft_void
+    Priority: 3
+  - SkillID: skill_craft_wood
+    Priority: 1
+  - SkillID: skill_deconstruct
+    Priority: 1
+  - SkillID: skill_fight_magic
+    Priority: 3
+  - SkillID: skill_fight_melee
+    Priority: 1
+  - SkillID: skill_fight_range
+    Priority: 1
+  - SkillID: skill_fish
+    Priority: 1
+  - SkillID: skill_log
+    Priority: 1
+  - SkillID: skill_loot
+    Priority: 1
+  - SkillID: skill_mine
+    Priority: 1
+  - SkillID: skill_misc
+    Priority: 1
+  - SkillID: skill_none
+    Priority: 1
+  - SkillID: skill_plant
+    Priority: 1
+  - SkillID: skill_summoning
+    Priority: 3
+  - SkillID: skill_survival
+    Priority: 1
+  - SkillID: skill_time_weave
+    Priority: 1
+  - SkillID: skill_unused2
+    Priority: 1
+  - SkillID: skill_unused3
+    Priority: 1
+  - SkillID: skill_unused4
+    Priority: 1
+  - SkillID: skill_unused5
+    Priority: 1
+  - SkillID: skill_unused6
+    Priority: 1
+  - SkillID: skill_writing
+    Priority: 1

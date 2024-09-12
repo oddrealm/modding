@@ -12,13 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701e5e6cf84de544cb78430a61b6eb34, type: 3}
   m_Name: skill_animal_husbandry
   m_EditorClassIdentifier: 
-  Key: skill_animal_husbandry
+  TooltipID: tooltip_skill_animal_husbandry
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_skills
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   ResearchKey: 
   LevelUpScenario: scenario_level_up_tome_of_agriculture0
-  TooltipID: tooltip_skill_animal_husbandry
   VisibleToPlayer: 1
   Priority: 3
   Index: 15
   XPMod: 20
   EnergyCost: 10
-  SkillType: 16384
+  IsCombatSkill: 0

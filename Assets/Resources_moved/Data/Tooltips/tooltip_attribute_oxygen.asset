@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_oxygen
   m_EditorClassIdentifier: 
-  Key: tooltip_attribute_oxygen
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Oxygen
   Name: Oxygen
+  NamePlural: 
   InlineIcon: <sprite=1062>
-  InlineAndName: <sprite=1062> Oxygen
-  Description: How much an Entity can go without breathing before dying.
-  Action: 
+  Description: At 0, this entity will start to lose health. Refill by getting to
+    a block with air.
   Icon: 
-  Formatting: 
   TextColor: {r: 0.09803922, g: 0.9490196, b: 0.8117647, a: 1}
+  Type: Attribute
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1688

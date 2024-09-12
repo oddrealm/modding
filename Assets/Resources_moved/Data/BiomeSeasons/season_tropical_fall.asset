@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86ebf3cf42b684cb06c9616041dc72, type: 3}
   m_Name: season_tropical_fall
   m_EditorClassIdentifier: 
-  Key: season_tropical_fall
   TooltipID: tooltip_season_tropical_fall
-  SeasonType: 2
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeasonGroup: fall
   SeasonStart: 41
+  DefaultWeather: weather_tropical_fall_calm
   Weather:
   - weather_tropical_fall_calm
   - weather_tropical_fall_wind

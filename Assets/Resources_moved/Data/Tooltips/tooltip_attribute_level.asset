@@ -12,13 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_level
   m_EditorClassIdentifier: 
-  Key: tooltip_attribute_level
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Level
   Name: Level
+  NamePlural: 
   InlineIcon: <sprite=931>
-  InlineAndName: <sprite=931> Level
   Description: Each Entity Level increases the value of the core skills related to
     their profession.
-  Action: 
   Icon: 
-  Formatting: 
-  TextColor: {r: 0.73333335, g: 0.53333336, b: 0.19607843, a: 1}
+  TextColor: {r: 0.8627451, g: 0.57254905, b: 0.078431375, a: 1}
+  Type: Attribute
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1402

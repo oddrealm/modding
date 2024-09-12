@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d36768bf959e942a0b78f315069ddc, type: 3}
   m_Name: game_tip_loading_02
   m_EditorClassIdentifier: 
-  Key: game_tip_loading_02
-  DisplayText: Hold {0} while using the Scroll Wheel to zoom the camera in.
-  HotkeyID: toggle_zoom_and_layer_change_scroll
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DisplayText: []

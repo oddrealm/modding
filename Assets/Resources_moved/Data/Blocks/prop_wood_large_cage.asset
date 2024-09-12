@@ -12,58 +12,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_wood_large_cage
   m_EditorClassIdentifier: 
-  Key: prop_wood_large_cage
-  Index: 397
-  Tags:
-  - large_cage
-  PhysicsHeatSource: 0
-  PhysicsHeatPass: 0.95
   TooltipID: tooltip_prop_wood_large_cage
-  Visuals:
-  - visuals_prop_wood_large_cage
-  TriggerFaction: 6
-  Triggers: 1
-  TriggerActions: 8
-  TriggerStatuses: []
-  TriggerAttacks: []
-  TriggerSFX: sfx_door_interact
-  CanSupportWeight: 0
-  CanHavePlants: 1
-  IsFertile: 0
-  CanHaveFish: 0
-  SoilQuality: 0
-  PhysicsTypes: 1090
-  PhysicHeatSinkTemp: 0
-  FXPhysicsTypes: 0
-  PhysicsUnstableFX: []
-  PhysicsFillFX: []
-  PhysicsClearBlock: 0
-  PhysicsSolidBlock: -1
-  PhysicsLiquidBlock: -1
-  PhysicsGasBlock: -1
-  MinTemperature: -100
-  MaxTemperature: 100
-  Toughness: 0
-  MaxItemCount: 1
-  ItemCategoryRestriction: 0
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_container
+  - tag_cage_large
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DefaultFill: block_fill_air
+  TriggerConditions:
+  - TriggerType: 1
+    HideInTooltips: 0
+    Invert: 0
+    ActivateTriggerID: tag_trigger_cage_has_entity
+    DeactivateTriggerID: 
+    SourceTagObjectRequirement0: faction_neutral
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  - TriggerType: 1
+    HideInTooltips: 0
+    Invert: 0
+    ActivateTriggerID: tag_trigger_cage_has_entity
+    DeactivateTriggerID: 
+    SourceTagObjectRequirement0: faction_hostile
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  - TriggerType: 4
+    HideInTooltips: 1
+    Invert: 0
+    ActivateTriggerID: tag_trigger_cage_entity_free
+    DeactivateTriggerID: 
+    SourceTagObjectRequirement0: entity_status_caged
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  - TriggerType: 2
+    HideInTooltips: 1
+    Invert: 0
+    ActivateTriggerID: tag_trigger_cage_entity_exit
+    DeactivateTriggerID: tag_trigger_cage_has_entity
+    SourceTagObjectRequirement0: 
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  Triggers:
+  - Comment: Capture Entity In Cage
+    TooltipID: 
+    ID: tag_trigger_cage_has_entity
+    Permissions: 24
+    Visuals: visuals_prop_wood_large_cage_has_entity
+    SFX: 
+    FX: fx_captured_large
+    Action: 6
+    ActionTagObjectID: entity_status_caged
+    DeactivateImmediate: 0
+    Buff:
+      TargetID: 
+      Amount: 0
+      Max: 0
+      Permanent: 0
+  - Comment: Remove Caged Status
+    TooltipID: 
+    ID: tag_trigger_cage_entity_exit
+    Permissions: 0
+    Visuals: 
+    SFX: 
+    FX: 
+    Action: 9
+    ActionTagObjectID: entity_status_caged
+    DeactivateImmediate: 1
+    Buff:
+      TargetID: 
+      Amount: 0
+      Max: 0
+      Permanent: 0
+  - Comment: Free Caged Entity
+    TooltipID: 
+    ID: tag_trigger_cage_entity_free
+    Permissions: 0
+    Visuals: 
+    SFX: 
+    FX: 
+    Action: 17
+    ActionTagObjectID: 
+    DeactivateImmediate: 1
+    Buff:
+      TargetID: 
+      Amount: 0
+      Max: 0
+      Permanent: 0
+  RevealDistance: 0
+  TemperatureSource: 0
+  IsRotationFixture: 0
+  SkillLevel: 0
+  MaxItemCount: 0
+  ItemTypePermissions: []
   CanShowItems: 0
   RestrictItemsToSameKey: 0
+  DecayBuff: 0
+  RemoveItemDrops: spawns_prop_wood_large_cage
+  VerticalEntityLift: 2
+  IsObstruction: 0
+  IsVerticalAccess: 0
+  PermittedPathsAbove: -1
+  PermittedPaths: -1
+  VerticalMovementMod: 1
+  HorizontalMovementMod: 1
+  MovementCost: 5
+  VerticalMoveRequiresClimb: 1
+  ForceFocusDirection: 0
   Permissions: 4196352
+  PermissionsAbove: 0
+  Prohibited: 0
+  ProhibitedAbove: 0
+  Layer: 2
+  ProhibitedLayers: 0
+  CanHaveRoom: 1
+  CanHavePlatform: 1
+  PermittedPlantTypes: 1
+  IsFertile: 0
+  CanSitAt: 0
+  IsSpotlight: 0
+  Visuals:
+  - visuals_prop_wood_large_cage
+  TriggerOffsetX: 0
+  TriggerOffsetY: 0
+  HasItemsOffsetX: 0
+  HasItemsOffsetY: 0
+  FullCapacityOffsetX: 0
+  FullCapacityOffsetY: 0
+  IdleFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood
-  FlammableChance: 500
-  DecayBuff: 0
-  Level: 1
-  RemoveItemDrops: isg_prop_wood_large_cage
-  VerticalMovementMod: 1
-  HorizontalMovementMod: 1
-  CanBeLocked: 0
-  LockedMovementFlags: 0
-  RestrictedMovementFlags: 0
-  MovementCost: 1
-  VerticalMoveRequiresClimb: 1
-  ForceFocusDirection: 0
-  IsObstruction: 0
-  CanHaveRoom: 1
-  IsVerticalAccess: 0
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  BlockimulationID: simulation_prop_default
+  StateOptions: []

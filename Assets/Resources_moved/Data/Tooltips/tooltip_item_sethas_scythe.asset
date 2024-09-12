@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_sethas_scythe
   m_EditorClassIdentifier: 
-  Key: tooltip_item_sethas_scythe
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
+  Action: Setha's Scythe 2h
   Name: Setha's Scythe 2h
+  NamePlural: 
   InlineIcon: <sprite=408>
-  InlineAndName: <sprite=408> Setha's Scythe 2h
   Description: 
-  Action: 
   Icon: sp_sethas_scythe_icon
-  Formatting: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
+  Type: Item
+  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
+  Order: 2079

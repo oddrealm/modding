@@ -12,55 +12,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_tree_apple_trunk
   m_EditorClassIdentifier: 
-  Key: plant_tree_apple_trunk
-  Index: 82
-  IsRoot: 0
-  Biomes:
-  - biome_taiga
-  - biome_taiga_hills
-  - biome_taiga_mountain
-  - biome_taiga_forest
-  Seasons:
-  - season_taiga_spring
-  - season_taiga_summer
-  - season_taiga_fall
-  NaturalSpawnBlock: 1
-  Permissions: 16386
-  MaturePermissions: 0
-  PlantType: 4
-  PlantPermission: 1
-  Group: 201
-  IsObstruction: 1
-  FertilityRequirement: 1
-  PhysicsType: 0
-  NaturalSpawnChance: 0
-  NaturalReproduceChance: 0
-  ReproducePlant: plant_tree_apple_sapling
-  ReproduceMinDist: 2
-  ReproduceMaxDist: 5
-  ReproduceFX: 
-  ReproduceIntervals: 120
   TooltipID: tooltip_plant_tree_apple_trunk
+  GroupID: 
+  DEBUG: 1
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: -1
+  ReproduceTimeInterval: 7200
+  MaxNaturalSpawnCount: 0
+  MaxNaturalReproduceCount: 0
+  ReproductionPlant: plant_tree_apple_sapling
+  MaxDefaultSimTime: 14400
+  MatureThreshold: 0.5
+  MatureTag: tag_mature_tree
+  LimitGroupSizeThreshold: 2500
+  RemoveItemDrops: spawns_tree_spring_apple_trunk
+  MatureItemDrops: 
+  MatureTagObjectSpawn: 
+  AutoClearOnMature: 0
+  SpawnItemsOnAutoClear: 0
+  GrowthStages: 1
+  HealthMax: -1
+  HydrationMax: -1
+  HydrationDecay: -1
+  DehydratedTag: tag_can_be_watered
+  HydrationTooltip: tooltip_plant_hydration
+  HydrationJob: blueprint_water_plant
+  MinLight: -1
+  FillRequirement: 
+  NeedsFertileSoil: 0
+  MaxTemp: 95
+  MinTemp: -100
+  PlantSimulationID: simulation_tree_trunk_default
+  UseLocalFaunaReproduceMod: 0
+  Seasons: []
+  IsObstruction: 1
+  PermittedPaths: 0
+  NeedsSupport: 1
+  FruitingTag: tag_mature_fruit
+  FruitItemDrops: item_apple_raw
+  FruitMaxCount: 20
+  FruitMinInterval: 4320
+  FruitMaxInterval: 7200
+  FruitSeasons:
+  - summer
+  - fall
+  FruitVisuals: 
+  LayerPriority: 0
+  Layer: 64
+  ProhibitedLayers: 0
+  Permissions: 2
+  Prohibited: 263168
+  MaturePermissions: 0
+  MatureProhibitions: 0
+  PlantType: 4
+  PlantPermission: 0
+  CanHaveGroup: 1
   Visuals:
   - visuals_plant_tree_apple_trunk
-  RemoveItemDrops: isg_tree_spring_apple_trunk_spawn
-  MatureItemDrops: 
-  MatureEntityDrops: 
-  MaturePrefabID: 
-  NeedsSkylight: 0
-  MinTemp: -100
-  MaxTemp: 95
-  MatureTime: 0
-  MaxLifeTime: -1
-  GrowthStages: 1
-  FlammableChance: 400
-  HealthMax: 100
-  HealthTooltipID: tooltip_attribute_health
-  MaintenanceDecayMin: 1
-  MaintenanceDecayMax: 2
-  MaintenanceMax: 100
-  MaintenanceTooltipID: tooltip_plant_maintenance_watering
-  MaintenanceTags:
-  - needs_watering
-  MatureTags:
-  - mature_plant
+  RemoveFX: fx_remove_tree_trunk
+  Actions: []
+  StateOptions:
+  - OptionID: tree_root
+    TagObjectID: plant_tree_apple_root
+  - OptionID: tree_branch
+    TagObjectID: plant_tree_apple_branch
+  - OptionID: tree_leaves
+    TagObjectID: plant_tree_apple_leaves
+  - OptionID: tree_sapling
+    TagObjectID: plant_tree_apple_sapling
+  - OptionID: tree_trunk
+    TagObjectID: plant_tree_apple_trunk

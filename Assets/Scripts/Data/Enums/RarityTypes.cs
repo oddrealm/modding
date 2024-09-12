@@ -5,7 +5,9 @@ using UnityEngine;
 public enum RarityTypes
 {
     COMMON = 0,
-    RARE = 1,
-    EPIC = 2,
-    LEGENDARY = 3
+    UNCOMMON = 1,
+    RARE = 2,
+    EPIC = 3,
+    LEGENDARY = 4,
+    COUNT = 5
 }

@@ -2,6 +2,5 @@
 {
     ENTITY,
     BLOCK,
-    FISH,
-    JOB
+    FISH
 }

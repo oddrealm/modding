@@ -12,15 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_unknown
   m_EditorClassIdentifier: 
-  Key: race_unknown
   TooltipID: tooltip_race_unknown
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_races
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 50
-  IntelligenceType: 1
+  Intelligence: intelligence_non_sapient
   Tags:
   - sapient
-  StartingResearchKeys: []
   DefaultEntityID: entity_unknown
-  Diet: diet_unknown
   Public: 0
-  BuffGroupID: 
   Perks: []
+  DefaultActiveResearch: []
+  Buffs: []

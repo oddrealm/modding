@@ -12,13 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_biome_tropical_forest
   m_EditorClassIdentifier: 
-  Key: tooltip_biome_tropical_forest
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Tropical (Forested)
   Name: Tropical (Forested)
-  InlineIcon: 
-  InlineAndName: Tropical (Forested)
+  NamePlural: 
+  InlineIcon: <sprite=1217>
   Description: Sandy beaches, lush jungles, pirates, treasure. What more could one
     ask for?
-  Action: 
-  Icon: 
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  Icon: sp_biome_tropical_forest_icon
+  TextColor: {r: 0.80449975, g: 0.9496855, b: 0.24787384, a: 1}
+  Type: 
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2592

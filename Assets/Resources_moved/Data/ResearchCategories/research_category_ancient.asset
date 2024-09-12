@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dbdf9b21cc5294ebf461b92864882e, type: 3}
   m_Name: research_category_ancient
   m_EditorClassIdentifier: 
-  Key: research_category_ancient
-  ResearchCategory: 5
+  TooltipID: tooltip_research_category_ancient
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   FriendlyName: Ancients
+  OrderInList: 6
+  ResearchBuffs:
+  - TagObjectID: race_ancient
+  - TagObjectID: entity_status_researching

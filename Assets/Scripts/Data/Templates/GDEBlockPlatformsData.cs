@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockPlatforms")]
-public class GDEBlockPlatformsData : ScriptableObject
+public class GDEBlockPlatformsData : Scriptable
 {
-	public string Key;
 	public int Index = 0;
 	public string Visuals = "";
-	public string TooltipID = "";
 	public float PhysicsHeatPass = 0.0f;
 	public bool HasMeltThreshold = false;
 	public int MeltThreshold = 0;
 	public bool NeedsSupport = false;
-	public BlockPermissionTypes Permissions = 0;
+    public BlockDirectionFlags PermittedPaths = BlockDirectionFlags.ALL & ~BlockDirectionFlags.DOWN;
+    public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;
+    public BlockPermissionTypes Prohibited = BlockPermissionTypes.NONE;
 	public float MovementSpeedMod = 0.0f;
-	public float MovementCostMult = 0.0f;
+	public int MovementCost = -1;
 	public bool IsRoof = false;
 	public bool CanGrow = false;
 	public int GrowTime = 0;

@@ -12,33 +12,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_sword_of_love_one_hand
   m_EditorClassIdentifier: 
-  Key: item_sword_of_love_one_hand
-  Index: 379
   TooltipID: tooltip_item_sword_of_love_one_hand
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_item_type_tool
+  - tag_can_equip
+  - tag_item
+  - tag_item_rarity_epic
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  ItemSimulationID: simulation_item_default
+  ItemType: tag_item_type_tool
+  OnJobDisposedTagObjectID: 
+  ShowInTrackingByDefault: 0
+  IdleFX: 
+  PickUpFX: fx_block_item_picked_up
+  DropFX: fx_block_item_dropped
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_sword_of_love_one_hand
   CharacterColorMask: {fileID: 0}
   AccessoryData: {fileID: 11400000, guid: 79da5c6f014a3714b813f3afb2415457, type: 2}
-  PickUpSFX: sfx_item_pick_up_soft
-  DropSFX: sfx_item_drop_soft
-  Tags: []
-  Category: 64
   Permissions: 0
-  Inventory: inventory_one_hand
-  Buffs: 
+  Prohibited: 0
+  DietGroup: diet_group_none
+  CanStackAttacks: 1
+  FillAllSlots: 0
+  CannotBeUnequipped: 0
+  PermittedSlots:
+  - item_slot_left_hand
+  - item_slot_right_hand
   AttackGroup: attack_group_sword_of_love_one_hand
   StartDiscovered: 0
   MaxCountInMerchantList: 1
   GenerateNameKey: weapon
-  MerchantBuyValue: 1510
+  MerchantBuyValue: 1505
   MerchantSellValue: 301
   TuneRating: -1
+  ItemRarity: item_rarity_epic
   RarityType: 3
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0
   MeltThreshold: 0
   FlammableChance: 100
-  LightStrength: 0
-  LightSize: 0
   StackSize: 1
   JobOutputMod: 1
+  ArtifactID: 
+  Actions:
+  - ActionID: tag_can_equip
+    Buff:
+      TargetID: attribute_health
+      Amount: 100
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: 
+  TimedActions: []
+  StateOptions: []

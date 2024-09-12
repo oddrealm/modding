@@ -12,53 +12,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_tree_pala_leaves
   m_EditorClassIdentifier: 
-  Key: plant_tree_pala_leaves
-  Index: 95
-  IsRoot: 0
-  Biomes:
-  - biome_tundra
-  - biome_tundra_mountain
-  Seasons:
-  - season_tundra_spring
-  - season_tundra_summer
-  - season_tundra_fall
-  NaturalSpawnBlock: 1
-  Permissions: 0
-  MaturePermissions: 0
-  PlantType: 4
-  PlantPermission: 1
-  Group: 206
-  IsObstruction: 1
-  FertilityRequirement: 0
-  PhysicsType: 0
-  NaturalSpawnChance: 0
-  NaturalReproduceChance: 0
-  ReproducePlant: 
-  ReproduceMinDist: 2
-  ReproduceMaxDist: 5
-  ReproduceFX: 
-  ReproduceIntervals: 120
   TooltipID: tooltip_plant_tree_pala_leaves
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: -1
+  ReproduceTimeInterval: 7200
+  MaxNaturalSpawnCount: 0
+  MaxNaturalReproduceCount: 0
+  ReproductionPlant: plant_tree_pala_sapling
+  MaxDefaultSimTime: 14400
+  MatureThreshold: 0.5
+  MatureTag: tag_mature_tree
+  LimitGroupSizeThreshold: 2500
+  RemoveItemDrops: spawns_tree_spring_pala_leaves
+  MatureItemDrops: 
+  MatureTagObjectSpawn: 
+  AutoClearOnMature: 0
+  SpawnItemsOnAutoClear: 0
+  GrowthStages: 1
+  HealthMax: -1
+  HydrationMax: -1
+  HydrationDecay: -1
+  DehydratedTag: tag_can_be_watered
+  HydrationTooltip: tooltip_plant_hydration
+  HydrationJob: blueprint_water_plant
+  MinLight: -1
+  FillRequirement: 
+  NeedsFertileSoil: 0
+  MaxTemp: 95
+  MinTemp: -100
+  PlantSimulationID: simulation_tree_static
+  UseLocalFaunaReproduceMod: 0
+  Seasons: []
+  IsObstruction: 0
+  PermittedPaths: -1
+  NeedsSupport: 0
+  FruitingTag: tag_mature_fruit
+  FruitItemDrops: 
+  FruitMaxCount: 1
+  FruitMinInterval: 64
+  FruitMaxInterval: 64
+  FruitSeasons: []
+  FruitVisuals: 
+  LayerPriority: 0
+  Layer: 64
+  ProhibitedLayers: 0
+  Permissions: 2
+  Prohibited: 263168
+  MaturePermissions: 0
+  MatureProhibitions: 0
+  PlantType: 4
+  PlantPermission: 0
+  CanHaveGroup: 1
   Visuals:
   - visuals_plant_tree_pala_leaves
-  RemoveItemDrops: isg_tree_spring_pala_leaves_spawn
-  MatureItemDrops: 
-  MatureEntityDrops: 
-  MaturePrefabID: 
-  NeedsSkylight: 0
-  MinTemp: -100
-  MaxTemp: 95
-  MatureTime: 0
-  MaxLifeTime: -1
-  GrowthStages: 1
-  FlammableChance: 400
-  HealthMax: 100
-  HealthTooltipID: tooltip_attribute_health
-  MaintenanceDecayMin: 1
-  MaintenanceDecayMax: 2
-  MaintenanceMax: 100
-  MaintenanceTooltipID: tooltip_plant_maintenance_watering
-  MaintenanceTags:
-  - needs_watering
-  MatureTags:
-  - mature_plant
+  RemoveFX: fx_remove_plant
+  Actions: []
+  StateOptions:
+  - OptionID: tree_leaves
+    TagObjectID: plant_tree_pala_leaves
+  - OptionID: tree_trunk
+    TagObjectID: plant_tree_pala_trunk

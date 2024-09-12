@@ -12,22 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5fb1d1b07810e4ca30537b1d718d1f, type: 3}
   m_Name: weather_default_snow
   m_EditorClassIdentifier: 
-  Key: weather_default_snow
   TooltipID: tooltip_weather_default_snow
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   UIDisplayAnimKey: snowing
   FlammabilityMod: 0.75
-  ChanceToSpawnSnow: 10
   WeatherType: 3
   NightOffset: -7
-  DayOffset: 5
-  MinTemp: -5
-  MaxTemp: 10
+  DayOffset: 0
+  MinTemp: -25
+  MaxTemp: -5
   FXIndex: 3
   ChanceToStart: 250
   MinHourDuration: 3
   HourDurationVariance: 1
-  Brightness: 1
+  Brightness: 0.9
   AquaticAmbientSFX: sfx_aquatic
   SubterraneanAmbientSFX: sfx_subterranean
   DaytimeAmbientSFX: sfx_day_calm_forest
   NighttimeAmbientSFX: sfx_night_calm_forest
+  WatersPlants: 0
+  SkylightSpawns:
+  - SpawnID: block_fill_snow
+    SpawnRandomFlora: 0
+    MinTemp: -99
+    MaxTemp: 0
+    ChanceToSpawn: 1
+    ChanceToSpawnSize: 100

@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
+  m_Name: prop_nyctium_furnace
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_prop_nyctium_furnace
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_furnace
+  - tag_fire
+  - tag_heat_source
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DefaultFill: block_fill_air
+  TriggerConditions:
+  - TriggerType: 3
+    HideInTooltips: 1
+    Invert: 0
+    ActivateTriggerID: tag_trigger_furnace_used
+    DeactivateTriggerID: 
+    SourceTagObjectRequirement0: 
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  - TriggerType: 4
+    HideInTooltips: 1
+    Invert: 0
+    ActivateTriggerID: 
+    DeactivateTriggerID: tag_trigger_furnace_used
+    SourceTagObjectRequirement0: 
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  Triggers:
+  - Comment: Being Used
+    TooltipID: 
+    ID: tag_trigger_furnace_used
+    Permissions: 0
+    Visuals: 
+    SFX: sfx_furnace_interact
+    FX: fx_furnace_interact
+    Action: 0
+    ActionTagObjectID: 
+    DeactivateImmediate: 0
+    Buff:
+      TargetID: 
+      Amount: 0
+      Max: 0
+      Permanent: 0
+  RevealDistance: 0
+  TemperatureSource: 50
+  IsRotationFixture: 0
+  SkillLevel: 0
+  MaxItemCount: 0
+  ItemTypePermissions: []
+  CanShowItems: 0
+  RestrictItemsToSameKey: 0
+  DecayBuff: 0
+  RemoveItemDrops: spawns_prop_nyctium_furnace
+  VerticalEntityLift: 2
+  IsObstruction: 0
+  IsVerticalAccess: 0
+  PermittedPathsAbove: -1
+  PermittedPaths: -1
+  VerticalMovementMod: 1
+  HorizontalMovementMod: 1
+  MovementCost: 5
+  VerticalMoveRequiresClimb: 1
+  ForceFocusDirection: 0
+  Permissions: 4196352
+  PermissionsAbove: 0
+  Prohibited: 0
+  ProhibitedAbove: 0
+  Layer: 2
+  ProhibitedLayers: 0
+  CanHaveRoom: 1
+  CanHavePlatform: 1
+  PermittedPlantTypes: 1
+  IsFertile: 0
+  CanSitAt: 0
+  IsSpotlight: 0
+  Visuals:
+  - visuals_prop_nyctium_furnace
+  TriggerOffsetX: 0
+  TriggerOffsetY: 1
+  HasItemsOffsetX: 0
+  HasItemsOffsetY: 0
+  FullCapacityOffsetX: 0
+  FullCapacityOffsetY: 0
+  IdleFX: 
+  AddSFX: 
+  RemoveSFX: 
+  InteractSFX: sfx_hammer_wood
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  BlockimulationID: simulation_prop_default
+  StateOptions: []

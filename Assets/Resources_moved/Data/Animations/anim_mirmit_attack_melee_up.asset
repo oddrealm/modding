@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b430687389d853f48ba3d8c7adf38bfb, type: 3}
+  m_Name: anim_mirmit_attack_melee_up
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Loop: 1
+  FramesPerSecond: 16
+  Frames:
+  - AnimSprite: {fileID: 60609119279835752, guid: 6e555d77584711f4682ae57b19343aa2,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: 1}
+  - AnimSprite: {fileID: -6158267751837012656, guid: 6e555d77584711f4682ae57b19343aa2,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: 1}
+  - AnimSprite: {fileID: -2003714360898206827, guid: 6e555d77584711f4682ae57b19343aa2,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 1
+    ShadowPosition: {x: 0, y: 0}
+  - AnimSprite: {fileID: -6692503916799612895, guid: 6e555d77584711f4682ae57b19343aa2,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: 0, y: -1}

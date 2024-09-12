@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d36768bf959e942a0b78f315069ddc, type: 3}
   m_Name: game_tip_loading_10
   m_EditorClassIdentifier: 
-  Key: game_tip_loading_10
-  DisplayText: Use {0} to see game notifications. You can also edit whether notifications
-    pause the game or focus the camera from the settings menu.
-  HotkeyID: open_notifications
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DisplayText: []

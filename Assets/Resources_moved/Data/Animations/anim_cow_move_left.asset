@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b430687389d853f48ba3d8c7adf38bfb, type: 3}
+  m_Name: anim_cow_move_left
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Loop: 1
+  FramesPerSecond: 16
+  Frames:
+  - AnimSprite: {fileID: 5533576225407934625, guid: df9c4da3747848c479af5952225f380a,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 4630781388052003395, guid: df9c4da3747848c479af5952225f380a,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 6157407657296240989, guid: df9c4da3747848c479af5952225f380a,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -4975026856194584963, guid: df9c4da3747848c479af5952225f380a,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -4022728022505676725, guid: df9c4da3747848c479af5952225f380a,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 5962467256333467523, guid: df9c4da3747848c479af5952225f380a,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 7931041249923895580, guid: df9c4da3747848c479af5952225f380a,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -4076971496695264327, guid: df9c4da3747848c479af5952225f380a,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -4076971496695264327, guid: df9c4da3747848c479af5952225f380a,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}

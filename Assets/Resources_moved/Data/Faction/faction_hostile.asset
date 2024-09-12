@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29980e1a3c779fc4b95decfe8a376f99, type: 3}
   m_Name: faction_hostile
   m_EditorClassIdentifier: 
-  Key: faction_hostile
-  FactionType: 4
-  EnemyFactionType: 9
+  TooltipID: tooltip_faction_hostile
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_factions
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  EnemyFactions:
+  - faction_player
   IsPlayerControlled: 0
   CanRespec: 0
-  TooltipID: tooltip_faction_hostile
   SelectionColor: {r: 1, g: 0, b: 0, a: 1}
   CursorHoverColor: {r: 1, g: 0, b: 0, a: 0.5019608}
-  LimitMovementToRooms: 0
+  FactionPathing: 4
+  Statuses:
+  - entity_status_faction_hostile

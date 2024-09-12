@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399dc60255f0e8e468ee5c704f7cb8d7, type: 3}
   m_Name: unhappy_threshold
   m_EditorClassIdentifier: 
-  Key: unhappy_threshold
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   StringValue: 
   IntValue: 0
   FloatValue: 0.2

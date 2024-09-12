@@ -12,13 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_home
   m_EditorClassIdentifier: 
-  Key: tooltip_room_home
-  Name: Home
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Human Home
+  Name: Human Home
+  NamePlural: Human Homes
   InlineIcon: <sprite=1014>
-  InlineAndName: <sprite=1014> Home
   Description: Homes are used by Humans for sleeping and procreation. Humans will
     move their families into a Home if it is big enough.
-  Action: 
   Icon: sp_room_home_icon
-  Formatting: '{2}''s {0} {1}'
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
+  Type: Human Room
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1194

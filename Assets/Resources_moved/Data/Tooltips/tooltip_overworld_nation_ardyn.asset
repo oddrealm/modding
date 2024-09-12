@@ -12,17 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_overworld_nation_ardyn
   m_EditorClassIdentifier: 
-  Key: tooltip_overworld_nation_ardyn
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Ardyn
   Name: Ardyn
-  InlineIcon: <sprite=1018>
-  InlineAndName: <sprite=1018> Ardyn
+  NamePlural: 
+  InlineIcon: <sprite=241>
   Description: The Ardyn are a feared and mistrusted race. Their rapid aging combined
-    the inherent ability to siphon the life-force from other entities has produced
+    with the inherent ability to siphon the life-force from other entities has produced
     a culture intent on the dominance and subjugation of others. Their profound understanding
     of void magic and the construction of beautiful works of art is often overshadowed
-    by their brutal nature. It's rare for one to escape an encounter with the Ardyn,
-    and even rarer to escape with their youth.
-  Action: 
+    by their brutal nature.
   Icon: sp_race_ardyn
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8867924, g: 0.28025985, b: 0.52310747, a: 1}
+  Type: Nation
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 177

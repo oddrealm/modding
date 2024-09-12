@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
+  m_Name: all_diets_window0
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Speaker: Darby, the Historian
+  PreviousSegment: 
+  Trigger: 3
+  MinGameMinutes: -1
+  MinScaledPlayedTime: -1
+  MinUnscaledPlayedTime: -1
+  MinCooldown: -1
+  Hooks: []
+  ActiveRaces: []
+  PermittedWindows:
+  - diets_overlay
+  SelectionType: 0
+  SelectionInputID: 
+  AttributeRaces: []
+  AttributeType: 0
+  MinAttributeAmount: -1
+  MaxAttributeAmount: -1
+  ItemIDs: []
+  ItemConditionType: 1
+  ItemMinCount: -1
+  ConstructionCategoryType: 0
+  MinRoomCount: -1
+  MinProductionRoomCount: -1
+  MinAutoJobCount: -1
+  ProfessionCount: -1
+  ProfessionID: 
+  FadeInDelay: 0
+  PopUpPosition: 2
+  ShowBackground: 1
+  ShowBackgroundMask: 1
+  BackgroundMaskTarget: diets_window
+  AnimatedImage: 
+  PopUpTextBody: This is the Diets window, where you can create custom diets for
+    each of the races in your settlement.
+  Comment: TUTORIAL
+  Icon: sp_adult_darby_ma0
+  Message: []
+  NextSegment: 

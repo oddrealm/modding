@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Animations")]
-public class GDEAnimationsData : ScriptableObject
+public class GDEAnimationsData : Scriptable
 {
-    public string Key;
-
     [System.Serializable]
     public class AnimAccessories
     {
@@ -36,6 +34,11 @@ public class GDEAnimationsData : ScriptableObject
 
         public AnimFrame() { }
         public AnimFrame(AnimFrame clone)
+        {
+            Clone(clone);
+        }
+
+        public void Clone(AnimFrame clone)
         {
             AnimSprite = clone.AnimSprite;
 

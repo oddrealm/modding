@@ -12,50 +12,108 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_item_well_water
   m_EditorClassIdentifier: 
-  Key: blueprint_item_well_water
-  StartProgressType: 0
-  StartProgressAttribute: 0
-  StartProgressAttributePercent: 1
-  FixedProgressStart: 0
-  TargetProgressType: 0
-  TargetProgressAttribute: 0
-  TargetProgressAttributePercent: 1
-  FixedProgressTarget: 5
-  DefaultAutoJobPriority: 1
-  DefaultThresholdType: 4
-  TimeoutTime: 300
-  Requirements: requirement_blueprint_item_well_water
-  AutoJobBlockSearchType: 1
-  JobBarType: 3
-  InvertProgressDisplay: 1
-  JobActionTextTypes: 1
-  Toughness: 0
-  XPMod: 1
-  UseBlockForToughness: 0
-  ToolbarMenu: 
-  ResearchKey: well0
-  AutoPlacementClearType: 0
-  Placement: 16
-  PlacementClear: 16
-  Category: 16384
   TooltipID: tooltip_item_water_from_well
-  OnlyShowYieldTooltip: 0
-  YieldTooltipIDs: []
-  InterfaceInfo: interface_info_well_water
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies:
+  - skill_misc
+  - item_water
+  - item_wood_bucket
+  - tag_item_type_container
+  - skill_carry
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: blueprint_category_none
+  ResearchKey: research_agriculture_well0
+  Repeat: 0
+  CheckStateForTransition: 0
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  SkillLevel: 1
+  AddBlockSkillToJobSkill: 0
+  LocationID: tag_trigger_well_has_water
+  PermissionType: 0
+  LocationPermissions:
+  - tag_trigger_well_has_water
+  WorkerPermissions:
+  - faction_player
+  - faction_captured
+  WorkerPermissionsToLock:
+  - faction_hostile
+  TargetPermissions:
+  - faction_player
+  - faction_captured
+  TargetPermissionsToLock: []
+  ResourcePool: 1
+  ShowItemTypeResourcePermissions: 0
+  ResourcePermissionsToLock: []
+  MaxWorkers: 0
+  WorkerNeedsAllRequirements: 0
+  JobActions:
+  - ActionType: 0
+    MaxWorkers: 0
+    WorkerID: skill_carry
+    TargetID: 
+    ResourceID: tag_item_type_container
+    OnJobFinishActionID: tag_can_fill_water
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  ProgressWorkerAttribute: 
+  ProgressMax: 1
+  ProgressBarType: 2
+  InvertProgressDisplay: 1
+  ProgressFXMaxX: 0
+  ProgressFXMinX: 0
+  ProgressFXMaxY: 0
+  ProgressFXMinY: 0
+  Clear:
+    Layer: 16
+    Params:
+      DisableRemoveSpawns: 0
+      DisposeIfNotPermitted: 0
+      DisableSpawnAtEntityOnFail: 0
+      DisableClaimCheck: 0
+      SetAsUnclaimed: 0
+      Attempts: 0
+      SeedOffset: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: 
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnFinishedResourcesActionID: 
+  SetTargetFactionTo: 
+  OnFinishWorkerBuffs: []
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves: []
+  OnFinishTargetBuffs: []
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  CanSelectTarget: 0
+  ShowWorkOutputActionText: 0
+  OnFinishedFX: 
+  WorkFX: 
+  WorkSFX: 
+  OnFinishedSFX: sfx_water_interact
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride: []
+  ProhibitedCursorVisualsOverride: []
   Visuals:
-  - visuals_item_water
-  WorkFX: fx_work_add
-  InteractSFX: sfx_hammer_wood
-  CompleteSFX: 
-  SetLiquidMass: 0
-  LiquidMass: 1
-  ModelIndex: 2397
-  ModelMultipler: 3
-  EntitiesToCreate: 
-  PickUpActionType: 0
-  ResetPlantMaintenance: 0
-  ReleaseContainedEntity: 0
-  TryCaptureContainedEntity: 0
-  StatusesToApply: []
-  StatusesToApplyToTarget: []
-  MarkRequirementsDiscoveredOnDiscovery: 1
+  - visuals_job_collect_water
+  ShowVisualsIfStarted: 0
+  MaxAutoJobQueueCount: 9
+  DisposeIfRequirementsNotMet: 0
+  DisposeIfNoSource: 0
+  AutoJobOnCreateCooldown: 0
+  AutoJobOnFreedCooldown: 0

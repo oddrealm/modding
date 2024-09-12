@@ -12,21 +12,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_farm
   m_EditorClassIdentifier: 
-  Key: room_farm
-  UpdateEveryFrame: 0
-  ActivationType: 1
-  CanEditOwnersAndStockpiles: 1
-  Enabled: 1
-  Stockpile: room_stockpiles_water
-  ResearchKey: farm0
-  Owners:
-  - room_owner_farmers
-  DefaultAutoJobBlueprints:
-  - blueprint_harvest_ground_cover
-  - blueprint_harvest_standing
-  - blueprint_water_plant
-  InterfaceInfo: interface_info_room_farm
   TooltipID: tooltip_room_farm
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_agriculture
+  ResearchKey: research_agriculture_farm0
+  MaxRoomAmount: -1
+  OccupantGroups:
+  - occupant_group_farm
   Visuals:
   - visuals_room_display_farm
-  - visuals_room_display_farm_background
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_harvest_standing
+    Settings:
+      Priority: 2
+      Enabled: 1
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_water_plant
+    Settings:
+      Priority: 3
+      Enabled: 1
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_plant_standing
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_harvest_ground_cover
+    Settings:
+      Priority: 2
+      Enabled: 1
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_till
+    Settings:
+      Priority: 2
+      Enabled: 1
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_plant_ground_cover
+    Settings:
+      Priority: 2
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []

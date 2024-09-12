@@ -12,26 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_none
   m_EditorClassIdentifier: 
-  Key: notif_none
-  Index: 0
-  Enabled: 1
-  NotificationType: 0
-  Priority: 0
-  FilterType: 0
-  Sound: pop
-  FactionToShowPipFor: 0
-  DefaultPermitted: []
-  InlineIcon: <sprite=115>
-  ShowInSettings: 0
-  FriendlyName: 
-  DescriptionDisplay: 
-  DuplicateDescriptionDisplay: 
-  UIToOpen: blueprints_overlay
-  ShowPip: 0
-  PipInterval: -1
-  PauseGameOnCreate: 0
-  PauseGameInterval: 1
-  FocusCamOnCreate: 0
-  FocusCamInterval: 1
-  CanSetFaction: 0
-  CanSetRace: 0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  FlashColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
+  SFXGroupID: sfx_notif_default
+  DefaultPermissions:
+    ShowPreview: 1
+    CanStackPreviews: 1
+    Factions:
+    - faction_player
+    - faction_captured
+    FocusCamOnCreate: 0
+    PauseGameOnCreate: 0
+    HighlightOnCreate: 0
+    HighlightText: <sprite=1654>
+  OverridePermissions: []

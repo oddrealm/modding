@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_rope_basket
   m_EditorClassIdentifier: 
-  Key: tooltip_prop_rope_basket
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Rope Basket
   Name: Rope Basket
+  NamePlural: 
   InlineIcon: <sprite=555>
-  InlineAndName: <sprite=555> Rope Basket
-  Description: 
-  Action: 
+  Description: A simple rope basket, hand-woven, durable, and perfect for everyday
+    use.
   Icon: sp_rope_basket_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7411765, g: 0.7058824, b: 0.5568628, a: 1}
+  Type: Prop
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1967

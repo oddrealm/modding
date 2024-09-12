@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
+  m_Name: overworld_nation_none
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_overworld_nation_none
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ShowOnMap: 0
+  PlayerCanChoose: 0
+  Unlocked: 0
+  Banner: 
+  BannerColor: {r: 1, g: 1, b: 1, a: 1}
+  KingdomIcon: 
+  SettlementIcon: 
+  OverworldVisuals: 
+  BorderVisuals: 
+  Loadouts: []
+  Races: []
+  DiscoveredRaces: []
+  GenerateSettlementNameKey: 
+  GenerateKingdomNameKey: 
+  ChanceToSendMerchant: 0
+  MerchantPartyID: 0
+  ChanceToMigrate: 0
+  MigrantPartyID: 0
+  ChanceToRaid: 0
+  RaidingPartyID: 0
+  ChanceToExpandTerritory: 0
+  ColonistPartyID: 0
+  NewPartyID: party_empty
+  KingdomSizeMax: 0
+  SettlementSimPopMax: 0
+  SettlementSimPopMin: 0
+  Landmarks: []
+  Biomes: []
+  DiplomaticTuning: []
+  MaxLeaders: 0
+  Leaders: []

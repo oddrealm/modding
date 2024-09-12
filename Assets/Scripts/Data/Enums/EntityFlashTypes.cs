@@ -3,4 +3,5 @@
     NONE,
     OUT,
     IN,
+    IN_OUT
 }

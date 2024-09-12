@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_three_fighting_merchants_farewell0_recondite0_d0_0
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_three_fighting_merchants_farewell0_recondite0_d0_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_shared_three_fighting_merchants_farewell0_gaiyus0_d0_1
   SpeakerTarget: '#recondite_merchant0'
   Message: Fantastic! Another happy customer.
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

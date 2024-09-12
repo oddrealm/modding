@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
+  m_Name: visuals_room_display_brood_garden
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TextureX: 0
+  TextureY: 2
+  SecondaryTextureX: 140
+  SecondaryTextureY: 39
+  FXTextureX: 0
+  FXTextureY: 0
+  TransitionKey: 1206
+  TransitionKeyDelta: 0
+  TransitionType: 1
+  CanTransitionNULL: 0
+  IsEntityShadowObstruction: 0
+  ReceiveSkylightColor: 0
+  ReceiveReducedLighting: 0
+  OnlyRenderIfVisible: 0
+  ColorAddType: 4
+  VisibilityFlag: 4
+  PermissionFlags: 0
+  RotationType: 0
+  ShowPermissionColor: 0
+  DepthOffset: 0.04
+  HideSurfaceWhenObscuredAbove: 0
+  HideSurfaceWhenSameTypeAbove: 0
+  CanTransitionIfObscuredAbove: 1
+  HasSurface: 0
+  CanFade: 0
+  HasSeasonOffset: 0
+  WeatherY: 0
+  ShowAmbientLight: 0
+  TailVariants: 0
+  ShowTailVariant: 0
+  ShowAnims: 0
+  ShowLighting: 0
+  DropShadow: 1
+  LightSettings:
+    ReductionThreshold: 0
+    SkylightReduction: 0
+    SkylightPass: 0
+    BlockAmbientLight: 0

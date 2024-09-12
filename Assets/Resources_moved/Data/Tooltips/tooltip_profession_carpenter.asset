@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_carpenter
   m_EditorClassIdentifier: 
-  Key: tooltip_profession_carpenter
-  Name: Carpenter
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Builder
+  Name: Builder
+  NamePlural: 
   InlineIcon: <sprite=35>
-  InlineAndName: <sprite=35> Carpenter
-  Description: Carpenters specialize in the production of wood-based items and materials
-  Action: 
+  Description: Builders specialize in the production of wood and thatch materials
   Icon: sp_profession_carpenter_icon
-  Formatting: 
   TextColor: {r: 0.6392157, g: 0.47058827, b: 0.4039216, a: 1}
+  Type: Profession
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 372

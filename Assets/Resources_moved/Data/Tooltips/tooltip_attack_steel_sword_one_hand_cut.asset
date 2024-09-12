@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attack_steel_sword_one_hand_cut
   m_EditorClassIdentifier: 
-  Key: tooltip_attack_steel_sword_one_hand_cut
-  Name: Cut (Sword)
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Cut
+  Name: Cut
+  NamePlural: 
   InlineIcon: <sprite=314>
-  InlineAndName: <sprite=314> Cut (Sword)
   Description: 
-  Action: 
   Icon: 
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.2901961, g: 0.57254905, b: 0.7607844, a: 1}
+  Type: 
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 741

@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5fb1d1b07810e4ca30537b1d718d1f, type: 3}
   m_Name: weather_desert_fall_dust
   m_EditorClassIdentifier: 
-  Key: weather_desert_fall_dust
   TooltipID: tooltip_weather_desert_fall_dust
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   UIDisplayAnimKey: duststorm
   FlammabilityMod: 1
-  ChanceToSpawnSnow: 0
   WeatherType: 4
-  NightOffset: -45
+  NightOffset: -5
   DayOffset: 5
-  MinTemp: 51
-  MaxTemp: 65
+  MinTemp: 18
+  MaxTemp: 30
   FXIndex: 2
   ChanceToStart: 400
   MinHourDuration: 3
@@ -31,3 +34,5 @@ MonoBehaviour:
   SubterraneanAmbientSFX: sfx_subterranean
   DaytimeAmbientSFX: sfx_day_calm_forest
   NighttimeAmbientSFX: sfx_night_calm_forest
+  WatersPlants: 0
+  SkylightSpawns: []

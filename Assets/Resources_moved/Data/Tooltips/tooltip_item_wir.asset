@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
+  m_Name: tooltip_item_wir
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
+  Action: Wir
+  Name: Wir
+  NamePlural: 
+  InlineIcon: <sprite=1450>
+  Description: Wir is a fine crystal that is created by applying intense pressure
+    to T'Thdir Seeds. It has many benefits; namely, the ability to coerce Nelescuro
+    into various forms.
+  Icon: sp_wir_icon
+  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  Type: Item
+  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
+  Order: 2802

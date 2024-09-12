@@ -12,21 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_none
   m_EditorClassIdentifier: 
-  Key: entity_status_none
-  TooltipID: tooltip_entity_status_terrified
-  HasEntityInfo: 0
-  ShowToPlayer: 0
-  Indicator: 
+  TooltipID: tooltip_entity_status_none
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIconOnToolbar: 0
+  ShowIndicator: 0
   Notification: 
-  BuffGroup: 
-  OverworldPartyActionGroup: 
   ExpireTimeMinutesMin: 1
-  ExpireTimeMinutesMax: 1
-  ActivateIntervals: 0
-  ActivateItems: 
+  ExpireTimeMinutesMax: 0
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
-  CooldownMin: 0
-  CooldownMax: 0
-  EntitiesToSpawnOnExpire: 
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  Actions: []
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds: []

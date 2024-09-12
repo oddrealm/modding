@@ -12,17 +12,185 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_kitchen
   m_EditorClassIdentifier: 
-  Key: room_kitchen
-  ActivationType: 1
-  CanEditOwnersAndStockpiles: 1
-  Enabled: 1
-  Stockpile: room_stockpiles_empty
-  ResearchKey: campfire_cook0
-  Owners:
-  - room_owner_cooks
-  DefaultAutoJobBlueprints: []
-  InterfaceInfo: interface_info_room_kitchen
   TooltipID: tooltip_room_kitchen
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_industry
+  ResearchKey: research_cooking_campfire_cook0
+  MaxRoomAmount: -1
+  OccupantGroups:
+  - occupant_group_kitchen
   Visuals:
   - visuals_room_display_kitchen
-  - visuals_room_display_kitchen_background
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_butcher_item
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_cooking_boil
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_cooking_roast
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_apple_pie
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_meat_bowl
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_meat_burger
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_meat_pie
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_fish_and_chips
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_fish_bowl
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_chicken_and_waffles
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_fall_stew
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_minamis_squeakenbabs
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_meat_sausage
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_omelette
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_plant_fiber_broth
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_potato_bread
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_pumpkin_pie
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_sleipnir_special
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_spring_stew
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_summer_stew
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_teiloc
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_toasted_xan
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_tomek_fries
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_wheat_bread
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_winter_stew
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_yellow_gale_tea
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_trailmix
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []

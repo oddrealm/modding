@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_cooking_alchemy0
   m_EditorClassIdentifier: 
-  Key: research_cooking_alchemy0
-  Enabled: 0
-  Races: []
-  ResearchKey: alchemy0
   TooltipID: tooltip_research_cooking_alchemy0
-  Dependency: campfire_cook0
-  Column: 1
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Enabled: 1
+  ShowInSaga: 1
+  Races: []
+  Dependency: 
+  Column: 2
   Row: 3
-  RequiredItem: item_tome_of_cooking
-  RequiredItemCount: 1
-  ResearchCategory: 1
+  ResearchCategory: research_category_cooking
+  RequireItemCountOverride: 0
+  ResearchTimeStep: 60

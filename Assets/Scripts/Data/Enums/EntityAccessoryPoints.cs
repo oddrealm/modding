@@ -5,5 +5,6 @@
     BACK,
     RIGHT_HIP,
     LEFT_HIP,
-    FISHING_ROD_END
+    FISHING_ROD_END,
+    CENTER
 }

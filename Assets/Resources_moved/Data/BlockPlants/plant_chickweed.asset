@@ -12,52 +12,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_chickweed
   m_EditorClassIdentifier: 
-  Key: plant_chickweed
-  Index: 16
-  IsRoot: 1
-  Biomes:
-  - biome_tropical
-  - biome_tropical_forest
-  - biome_tropical_mountain
+  TooltipID: tooltip_plant_chickweed
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_biome_plants_taiga
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: 5760
+  ReproduceTimeInterval: 1440
+  MaxNaturalSpawnCount: 32
+  MaxNaturalReproduceCount: 128
+  ReproductionPlant: plant_chickweed
+  MaxDefaultSimTime: 86400
+  MatureThreshold: 0.5
+  MatureTag: tag_mature_standing
+  LimitGroupSizeThreshold: 2500
+  RemoveItemDrops: spawns_plant_remove_drops_default
+  MatureItemDrops: spawns_plant_mature_drops_chickweed
+  MatureTagObjectSpawn: 
+  AutoClearOnMature: 0
+  SpawnItemsOnAutoClear: 0
+  GrowthStages: 4
+  HealthMax: 100
+  HydrationMax: 500
+  HydrationDecay: -1
+  DehydratedTag: tag_can_be_watered
+  HydrationTooltip: tooltip_plant_hydration
+  HydrationJob: blueprint_water_plant
+  MinLight: 6
+  FillRequirement: 
+  NeedsFertileSoil: 1
+  MaxTemp: 75
+  MinTemp: -5
+  PlantSimulationID: simulation_plant_surface_default
+  UseLocalFaunaReproduceMod: 1
   Seasons:
-  - season_tropical_spring
-  NaturalSpawnBlock: 1
-  Permissions: 0
+  - spring
+  IsObstruction: 0
+  PermittedPaths: -1
+  NeedsSupport: 1
+  FruitingTag: tag_mature_fruit
+  FruitItemDrops: 
+  FruitMaxCount: 1
+  FruitMinInterval: 64
+  FruitMaxInterval: 64
+  FruitSeasons: []
+  FruitVisuals: 
+  LayerPriority: 0
+  Layer: 32
+  ProhibitedLayers: 32
+  Permissions: 262144
+  Prohibited: 1024
   MaturePermissions: 1048576
+  MatureProhibitions: 0
   PlantType: 2
   PlantPermission: 1
-  Group: -1
-  IsObstruction: 0
-  FertilityRequirement: 1
-  PhysicsType: 66
-  NaturalSpawnChance: 15
-  NaturalReproduceChance: 150
-  ReproducePlant: plant_chickweed
-  ReproduceMinDist: 1
-  ReproduceMaxDist: 1
-  ReproduceFX: 
-  ReproduceIntervals: 12
-  TooltipID: tooltip_plant_chickweed
+  CanHaveGroup: 0
   Visuals:
   - visuals_plant_chickweed
-  RemoveItemDrops: isg_plant_remove_drops_default
-  MatureItemDrops: isg_plant_mature_drops_chickweed
-  MatureEntityDrops: 
-  MaturePrefabID: 
-  NeedsSkylight: 1
-  MinTemp: -5
-  MaxTemp: 75
-  MatureTime: 60
-  MaxLifeTime: 120
-  GrowthStages: 4
-  FlammableChance: 400
-  HealthMax: 100
-  HealthTooltipID: tooltip_attribute_health
-  MaintenanceDecayMin: 1
-  MaintenanceDecayMax: 2
-  MaintenanceMax: 100
-  MaintenanceTooltipID: tooltip_plant_maintenance_watering
-  MaintenanceTags:
-  - needs_watering
-  MatureTags:
-  - mature_plant
+  RemoveFX: fx_remove_plant
+  Actions:
+  - Comment: 
+    ActionID: tag_can_be_watered
+    Buff:
+      TargetID: attribute_thirst
+      Amount: 999
+      Max: 0
+      Permanent: 1
+  StateOptions: []

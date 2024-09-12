@@ -12,13 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_transmutation_chamber
   m_EditorClassIdentifier: 
-  Key: tooltip_room_transmutation_chamber
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Transmutation Chamber
   Name: Transmutation Chamber
+  NamePlural: Transmutation Chambers
   InlineIcon: <sprite=595>
-  InlineAndName: <sprite=595> Transmutation Chamber
   Description: The Transmuation Chamber is used to forcibly convert raw materials
     into Void Crystals and Void Shards.
-  Action: 
   Icon: sp_room_transmutation_chamber_icon
-  Formatting: '{2}''s {0} {1}'
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
+  Type: Ancient Room
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2583

@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_hunger
   m_EditorClassIdentifier: 
-  Key: tooltip_attribute_hunger
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Hunger
   Name: Hunger
+  NamePlural: 
   InlineIcon: <sprite=57>
-  InlineAndName: <sprite=57> Hunger
-  Description: How much an Entity can go without eating before dying.
-  Action: 
+  Description: At 0, this entity will start to lose health. Refill by eating food.
   Icon: 
-  Formatting: 
   TextColor: {r: 0.7921569, g: 0.49803922, b: 0.3764706, a: 1}
+  Type: Attribute
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1206

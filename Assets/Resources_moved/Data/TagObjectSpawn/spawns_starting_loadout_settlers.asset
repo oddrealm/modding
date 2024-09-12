@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
+  m_Name: spawns_starting_loadout_settlers
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeedOffset: 808216
+  MaxIterations: 1
+  MinIterations: 1
+  Spawns:
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_tome_of_war
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_tome_of_agriculture
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_tome_of_cooking
+    TagID: 
+  - Comment: 
+    MinCount: 2
+    MaxCount: 2
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_tome_of_industry
+    TagID: 
+  - Comment: 
+    MinCount: 50
+    MaxCount: 50
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_ren
+    TagID: 
+  - Comment: 
+    MinCount: 25
+    MaxCount: 25
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_water_purified
+    TagID: 
+  - Comment: 
+    MinCount: 5
+    MaxCount: 5
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_plant_fiber
+    TagID: 
+  - Comment: 
+    MinCount: 25
+    MaxCount: 25
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_wood_log
+    TagID: 
+  - Comment: 
+    MinCount: 5
+    MaxCount: 5
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_coal
+    TagID: 
+  - Comment: 
+    MinCount: 5
+    MaxCount: 5
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_wheat_flour
+    TagID: 
+  - Comment: 
+    MinCount: 5
+    MaxCount: 5
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_wheat_ale
+    TagID: 
+  - Comment: 
+    MinCount: 5
+    MaxCount: 5
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_wheat_bread
+    TagID: 
+  - Comment: 
+    MinCount: 25
+    MaxCount: 25
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_gooseberry_raw
+    TagID: 
+  - Comment: 
+    MinCount: 10
+    MaxCount: 10
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_potato_raw
+    TagID: 
+  - Comment: 
+    MinCount: 10
+    MaxCount: 10
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_carrot_raw
+    TagID: 
+  - Comment: 
+    MinCount: 10
+    MaxCount: 10
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_broccoli_raw
+    TagID: 
+  - Comment: 
+    MinCount: 10
+    MaxCount: 10
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_wheat_raw
+    TagID: 
+  - Comment: 
+    MinCount: 10
+    MaxCount: 10
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_wheat_seed
+    TagID: 
+  - Comment: 
+    MinCount: 10
+    MaxCount: 10
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_carrot_seed
+    TagID: 
+  - Comment: 
+    MinCount: 10
+    MaxCount: 10
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_cabbage_seed
+    TagID: 
+  - Comment: 
+    MinCount: 5
+    MaxCount: 5
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_cabbage_raw
+    TagID: 
+  - Comment: 
+    MinCount: 5
+    MaxCount: 5
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_wood_bucket
+    TagID: 
+  - Comment: 
+    MinCount: 5
+    MaxCount: 5
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_glass_bottle
+    TagID: 

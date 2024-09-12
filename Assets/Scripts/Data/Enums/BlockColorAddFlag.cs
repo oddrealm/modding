@@ -6,8 +6,8 @@ using UnityEngine;
 public enum BlockColorAddFlag
 {
     NONE = 0,
-    MULT = 1,
-    RED_REPLACE = 2,
-    GREEN_REPLACE = 4,
-    BLUE_REPLACE = 8,
+    MULTIPLY = 1,
+    RED_MASK = 2,
+    GREEN_MASK = 4,
+    BLUE_MASK = 8,
 }

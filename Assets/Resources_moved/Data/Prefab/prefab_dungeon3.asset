@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93411bf4023950646b46925b4de6f11a, type: 3}
+  m_Name: prefab_dungeon3
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeedOffset: 538342
+  UseRandomRotation: 1
+  Locations:
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 0
+    Y: 0
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 1
+    Y: 0
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 2
+    Y: 0
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 0
+    Y: 1
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 0
+    Y: 2
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 1
+    Y: 2
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 2
+    Y: 2
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 3
+    Y: 2
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 3
+    Y: 1
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 3
+    Y: 0
+    Z: 0
+  - TagObjectID: platform_stone_tile
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 1
+    Y: 1
+    Z: 0
+  - TagObjectID: platform_stone_tile
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 2
+    Y: 1
+    Z: 0
+  - TagObjectID: spawns_treasure_mid
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 1
+    Y: 1
+    Z: 0

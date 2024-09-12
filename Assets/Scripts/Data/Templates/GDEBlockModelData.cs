@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockModel")]
-public class GDEBlockModelData : ScriptableObject
+public class GDEBlockModelData : Scriptable
 {
-	public string Key;
 	public int ModelIndex = 0;
 	public int BlockIndex = -1;
+	public bool ReplacePreviousPlants = false;
 	public List<string> Plants = new List<string>();
 	public string ItemSpawnGroup = "";
 	public List<string> Items = new List<string>();

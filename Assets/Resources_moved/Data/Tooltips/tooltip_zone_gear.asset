@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_zone_gear
   m_EditorClassIdentifier: 
-  Key: tooltip_zone_gear
-  Name: Gear
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Gear (Item Type)
+  Name: Gear (Item Type)
+  NamePlural: 
   InlineIcon: <sprite=136>
-  InlineAndName: <sprite=136> Gear
   Description: Helmets, pants, boots, and other worn items are stored here.
-  Action: 
   Icon: sp_zone_gear_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.90196085, g: 0.6156863, b: 0.1254902, a: 1}
+  Type: 
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1029

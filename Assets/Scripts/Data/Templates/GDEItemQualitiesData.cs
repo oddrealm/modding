@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/ItemQualities")]
-public class GDEItemQualitiesData : ScriptableObject
+public class GDEItemQualitiesData : Scriptable
 {
-	public string Key;
 	public string Group = "";
 	public string FriendlyName = "";
 	public int Quality = 0;

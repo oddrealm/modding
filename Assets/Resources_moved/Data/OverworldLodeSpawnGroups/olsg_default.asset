@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914865ccb910c944599dbca02766b4f9, type: 3}
   m_Name: olsg_default
   m_EditorClassIdentifier: 
-  Key: olsg_default
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Spawns:
   - ols_default_copper_vein
   - ols_default_tin_vein

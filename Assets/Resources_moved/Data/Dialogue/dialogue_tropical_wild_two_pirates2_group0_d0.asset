@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_tropical_wild_two_pirates2_group0_d0
   m_EditorClassIdentifier: 
-  Key: dialogue_tropical_wild_two_pirates2_group0_d0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '#two_pirates_leader0'
   Message: Cap'n {#two_pirates_leader0} ain't no fool. Let's rig up these scoundrels.
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

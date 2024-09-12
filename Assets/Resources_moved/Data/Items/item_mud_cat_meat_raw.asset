@@ -12,34 +12,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_mud_cat_meat_raw
   m_EditorClassIdentifier: 
-  Key: item_mud_cat_meat_raw
-  Index: 200
   TooltipID: tooltip_item_mud_cat_meat_raw
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_item_type_fish
+  - tag_can_roast
+  - tag_can_eat
+  - tag_item
+  - tag_item_rarity_common
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  ItemSimulationID: simulation_item_default
+  ItemType: tag_item_type_fish
+  OnJobDisposedTagObjectID: 
+  ShowInTrackingByDefault: 0
+  IdleFX: 
+  PickUpFX: fx_block_item_picked_up
+  DropFX: fx_block_item_dropped
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_mud_cat_meat_raw
   CharacterColorMask: {fileID: 0}
   AccessoryData: {fileID: 0}
-  PickUpSFX: sfx_item_pick_up_soft
-  DropSFX: sfx_item_drop_soft
-  Tags:
-  - consumable_fish_raw
-  Category: 2
   Permissions: 0
-  Inventory: inventory_none
-  Buffs: buffs_item_food_raw0
+  Prohibited: 0
+  DietGroup: diet_group_none
+  CanStackAttacks: 1
+  FillAllSlots: 0
+  CannotBeUnequipped: 0
+  PermittedSlots: []
   AttackGroup: 
   StartDiscovered: 0
   MaxCountInMerchantList: 50
   GenerateNameKey: 
-  MerchantBuyValue: 46
+  MerchantBuyValue: 40
   MerchantSellValue: 8
   TuneRating: 0
+  ItemRarity: item_rarity_common
   RarityType: 0
   DecayRate: 48
   DecayItem: item_waste_rotten_food
   HasMeltThreshold: 0
   MeltThreshold: 0
   FlammableChance: 100
-  LightStrength: 0
-  LightSize: 0
   StackSize: 1
   JobOutputMod: 1
+  ArtifactID: 
+  Actions:
+  - ActionID: tag_can_eat
+    Buff:
+      TargetID: attribute_hunger
+      Amount: 17
+      Max: 0
+      Permanent: 1
+    Status: 
+    SpawnID: 
+  - ActionID: tag_can_roast
+    Buff:
+      TargetID: 
+      Amount: 0
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: item_mud_cat_meat_roasted
+  TimedActions: []
+  StateOptions: []

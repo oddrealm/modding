@@ -12,13 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701e5e6cf84de544cb78430a61b6eb34, type: 3}
   m_Name: skill_survival
   m_EditorClassIdentifier: 
-  Key: skill_survival
+  TooltipID: tooltip_skill_survival
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_skills
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   ResearchKey: 
   LevelUpScenario: 
-  TooltipID: tooltip_skill_survival
-  VisibleToPlayer: 1
+  VisibleToPlayer: 0
   Priority: 25
   Index: 16
   XPMod: 3
   EnergyCost: 3
-  SkillType: 32768
+  IsCombatSkill: 0

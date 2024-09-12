@@ -12,21 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_dead
   m_EditorClassIdentifier: 
-  Key: entity_status_dead
   TooltipID: tooltip_entity_status_dead
-  HasEntityInfo: 0
-  ShowToPlayer: 1
-  Indicator: indicator_killed
-  Notification: notif_entity_died
-  BuffGroup: 
-  OverworldPartyActionGroup: oag_entity_status_dead
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIconOnToolbar: 1
+  ShowIndicator: 0
+  Notification: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
-  ActivateIntervals: 0
-  ActivateItems: 
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
-  CooldownMin: 0
-  CooldownMax: 0
-  EntitiesToSpawnOnExpire: 
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  Actions: []
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds: []

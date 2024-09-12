@@ -12,13 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
   m_Name: overworld_nation_human
   m_EditorClassIdentifier: 
-  Key: overworld_nation_human
-  Order: 0
   TooltipID: tooltip_overworld_nation_human
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ShowOnMap: 1
+  PlayerCanChoose: 1
   Unlocked: 1
   Banner: sp_human_banner
+  BannerColor: {r: 0.21568629, g: 0.41176474, b: 0.3647059, a: 1}
+  KingdomIcon: <sprite=1700>
+  SettlementIcon: <sprite=1693>
   OverworldVisuals: overworld_visuals_human
-  Color: 37695d
+  BorderVisuals: overworld_visuals_nation_border
   Loadouts:
   - starting_loadout_human_settlers
   - starting_loadout_human_rangers
@@ -33,23 +41,31 @@ MonoBehaviour:
   - race_chicken
   - race_cow
   - race_sheep
-  GenerateNameKey: location_names_human_settlements
-  OriginCount: 3
-  MinCount: 5
-  MaxCount: 10
-  SettlementPrefabs:
-  - mpg_human_town
+  GenerateSettlementNameKey: location_names_human_settlements
+  GenerateKingdomNameKey: location_names_human_kingdoms
+  ChanceToSendMerchant: 50
+  MerchantPartyID: party_merchant_human
+  ChanceToMigrate: 50
+  MigrantPartyID: party_migrant
+  ChanceToRaid: 50
+  RaidingPartyID: party_raiding
+  ChanceToExpandTerritory: 50
+  ColonistPartyID: party_colonist
+  NewPartyID: party_empty
+  KingdomSizeMax: 100
+  SettlementSimPopMax: 50
+  SettlementSimPopMin: 5
+  Landmarks:
+  - landmark_settlement_human
   Biomes:
   - biome_taiga
   - biome_taiga_forest
+  - biome_taiga_hills
   - biome_taiga_mountain
   - biome_tropical
   - biome_tropical_forest
-  - biome_tropical_mountain
-  HostileTowards:
-  - race_ardyn
-  - race_ancient
-  FriendlyDiscoveryGroups:
-  - discoverygroup_shared_human_settlement_friendly
-  HostileDiscoveryGroups:
-  - discoverygroup_shared_human_settlement_hostile
+  DiplomaticTuning: []
+  MaxLeaders: 1
+  Leaders:
+  - leader_human_king
+  - leader_human_queen

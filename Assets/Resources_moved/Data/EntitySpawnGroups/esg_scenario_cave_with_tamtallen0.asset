@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
   m_Name: esg_scenario_cave_with_tamtallen0
   m_EditorClassIdentifier: 
-  Key: esg_scenario_cave_with_tamtallen0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   FriendlyName: 'Spawns:'
   Spawns: []

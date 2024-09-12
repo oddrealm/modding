@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_desert_shimmer_seen0_settler0_d0_0
   m_EditorClassIdentifier: 
-  Key: dialogue_desert_shimmer_seen0_settler0_d0_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_desert_shimmer_seen0_shimmer0_d0_1
@@ -20,3 +25,5 @@ MonoBehaviour:
   Message: The legends were true... The {#shimmer0} exists! To arms! Destroy it before
     it consumes us all!
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

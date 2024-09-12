@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
   m_Name: ccm_item_nyctium_boots
   m_EditorClassIdentifier: 
-  Key: ccm_item_nyctium_boots
-  Priority: 1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Priority: 10
   Pairs:
   - BodyPart: 256
     Target: {r: 0.14509805, g: 0.02745098, b: 0.30588236, a: 1}

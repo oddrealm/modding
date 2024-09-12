@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dbdf9b21cc5294ebf461b92864882e, type: 3}
   m_Name: research_category_agriculture
   m_EditorClassIdentifier: 
-  Key: research_category_agriculture
-  ResearchCategory: 2
+  TooltipID: tooltip_research_category_agriculture
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   FriendlyName: Agriculture
+  OrderInList: 1
+  ResearchBuffs:
+  - TagObjectID: item_tome_of_agriculture
+  - TagObjectID: entity_status_researching

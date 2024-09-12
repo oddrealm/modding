@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_war_barracks0
   m_EditorClassIdentifier: 
-  Key: research_war_barracks0
-  Enabled: 1
-  Races: []
-  ResearchKey: barracks0
   TooltipID: tooltip_research_war_barracks0
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Enabled: 1
+  ShowInSaga: 1
+  Races: []
   Dependency: 
-  Column: 0
+  Column: 1
   Row: 3
-  RequiredItem: item_tome_of_war
-  RequiredItemCount: 1
-  ResearchCategory: 4
+  ResearchCategory: research_category_war
+  RequireItemCountOverride: 0
+  ResearchTimeStep: 60

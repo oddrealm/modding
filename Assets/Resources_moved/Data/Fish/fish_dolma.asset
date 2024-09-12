@@ -12,14 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b82001461fc34e9d1cf053d56a7e5, type: 3}
   m_Name: fish_dolma
   m_EditorClassIdentifier: 
-  Key: fish_dolma
   TooltipID: tooltip_fish_dolma
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Level: 2
   AnimController: small_fish_animations
   IdealDepthMin: 0
   IdealDepthmax: 3
-  LureRollAdd: -50
   BaseHealth: 100
   BaseToughness: 0
   BaseEvasion: 0
-  ItemSpawnGroupID: isg_fish_dolma
+  ItemSpawnGroupID: spawns_fish_dolma
+  FishColorR: {r: 0.34656462, g: 0.5566038, b: 0.4445829, a: 1}
+  FishColorG: {r: 0.19517623, g: 0.4811321, b: 0.4229128, a: 1}
+  FishColorB: {r: 0.25490198, g: 0.5176471, b: 0.4156863, a: 1}
+  Biomes:
+  - biome_taiga
+  - biome_taiga_hills
+  - biome_taiga_forest
+  - biome_taiga_mountain
+  - biome_tundra
+  - biome_tundra_forest
+  - biome_tundra_mountain

@@ -12,13 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_happiness
   m_EditorClassIdentifier: 
-  Key: tooltip_attribute_happiness
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Will
   Name: Will
+  NamePlural: 
   InlineIcon: <sprite=506>
-  InlineAndName: <sprite=506> Will
   Description: How happy an entity is. Low Will may cause Entities to go mad or leave
     the settlement.
-  Action: 
   Icon: 
-  Formatting: 
-  TextColor: {r: 0.47058824, g: 0.32941177, b: 0.6745098, a: 1}
+  TextColor: {r: 0.39607847, g: 0.10980393, b: 0.56078434, a: 1}
+  Type: Attribute
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2765

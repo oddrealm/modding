@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_tropical_savage_pirate_precursor0
   m_EditorClassIdentifier: 
-  Key: dialoguegroup_tropical_savage_pirate_precursor0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   DialogueIDs:
   - dialogue_tropical_savage_pirate0_precursor0_d0
   - dialogue_tropical_savage_pirate0_precursor0_d1

@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_platform_sandstone_shingle
   m_EditorClassIdentifier: 
-  Key: tooltip_platform_sandstone_shingle
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Sandstone Shingle Roof
   Name: Sandstone Shingle Roof
-  InlineIcon: <sprite=1149>
-  InlineAndName: <sprite=1149> Sandstone Shingle Roof
+  NamePlural: 
+  InlineIcon: <sprite=1370>
   Description: 
-  Action: 
   Icon: sp_platform_sandstone_shingle_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7735849, g: 0.64174366, b: 0.43422925, a: 1}
+  Type: Platform
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2043

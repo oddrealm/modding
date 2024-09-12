@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2761919d9bfd3e148a72a5ad9fa3141b, type: 3}
+  m_Name: slime
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Sets:
+  - {fileID: 11400000, guid: 776ecf8fff999bb44ad7c9470137c7aa, type: 2}
+  - {fileID: 11400000, guid: b85c1460904b3a243baca882df1413ad, type: 2}
+  - {fileID: 11400000, guid: 2490e97397994b74e8d8e4a4c17cc63d, type: 2}
+  - {fileID: 11400000, guid: 935caaa9af656d04098f06c83d1497f1, type: 2}
+  - {fileID: 11400000, guid: d48725f2edc4c304f9d55f8fe74a239c, type: 2}
+  - {fileID: 11400000, guid: a63d84476406cea41b8a8872185b6060, type: 2}
+  - {fileID: 11400000, guid: a2853c78ced14fa43ae34713c06deafd, type: 2}
+  - {fileID: 11400000, guid: 07613041c7709b74aa9c00d4b1bd092e, type: 2}
+  - {fileID: 11400000, guid: 6ba602bcd3095b14b8e22046ec6e8805, type: 2}
+  - {fileID: 11400000, guid: 032918e9e0690f740b430065922cdd60, type: 2}

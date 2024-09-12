@@ -11,7 +11,6 @@ using System.Globalization;
 
 public class DataEdit : EditorWindow
 {
-    // Add menu named "My Window" to the Window menu
     [MenuItem("Tools/DataEdit")]
     static void Init()
     {
@@ -22,12 +21,20 @@ public class DataEdit : EditorWindow
 
     public void OnEnable()
     {
-        CurrentPage.OnEnable();
+        CurrentPage.OnEnable(this);
     }
 
     public void Update()
     {
+        if (CurrentPage.Window == null) CurrentPage.OnEnable(this);
         CurrentPage.Update();
+    }
+
+    public void OnDestroy()
+    {
+        CurrentPage.OnDestroy();
+
+        //Debug.LogError("Destroyed");
     }
 
     public void OnSelectionChange()
@@ -38,12 +45,7 @@ public class DataEdit : EditorWindow
 
     private DataEditPage[] _pages = new DataEditPage[]
     {
-        new DataEditSearchPage(),
-        new DataEditInterfacesPage(),
-        new DataEditItemsPage(),
-        new DataEditBlocksPage(),
-        new DataEditBlueprintsPage(),
-        new DataEditModelsPage()
+        new DataEditTagPage()
     };
 
     private int _currentPageIndex;
@@ -51,6 +53,13 @@ public class DataEdit : EditorWindow
 
     void OnGUI()
     {
+#if ODD_REALM_APP
+        if (Application.isPlaying && (Master.Instance == null || Master.Instance.GameState == Master.GameStates.LOADING))
+        {
+            return;
+        }
+#endif
+
         GUILayout.BeginHorizontal();
 
         for (int i = 0; i < _pages.Length; i++)

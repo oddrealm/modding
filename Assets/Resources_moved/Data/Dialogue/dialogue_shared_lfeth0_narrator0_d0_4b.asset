@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_lfeth0_narrator0_d0_4b
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_lfeth0_narrator0_d0_4b
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: 
   Message: '{*}Strange indeed. The figure nods gravely, turns, and leaves without
     comment.{*/}'
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

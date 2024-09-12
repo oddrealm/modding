@@ -12,12 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_block_ember_rock
   m_EditorClassIdentifier: 
-  Key: tooltip_block_ember_rock
-  Name: Ember Rock Wall
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Ember Rock Block
+  Name: Ember Rock Block
+  NamePlural: 
   InlineIcon: <sprite=1164>
-  InlineAndName: <sprite=1164> Ember Rock Wall
-  Description: 
-  Action: 
+  Description: Some think Ember Rock didn't exist before the Fracture. There are
+    no records of it, but, then again, there aren't many records from before this
+    time.
   Icon: sp_block_ember_rock_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.60784316, g: 0.42352945, b: 0.73333335, a: 1}
+  Type: Block
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 910

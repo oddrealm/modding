@@ -12,23 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_ardyn
   m_EditorClassIdentifier: 
-  Key: race_ardyn
   TooltipID: tooltip_race_ardyn
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_races
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 150
-  IntelligenceType: 1
+  Intelligence: intelligence_sapient
   Tags:
   - sapient
-  StartingResearchKeys:
-  - ardyn_astralarium0
-  - ardyn_hortichron0
-  - ardyn_somnic_pools0
-  - basics0
-  - animals0
-  - campfire_cook0
   DefaultEntityID: entity_ardyn
-  Diet: diet_ardyn
   Public: 1
-  BuffGroupID: 
   Perks:
   - '<sprite=1215> Retroanimate: An inherent ability to steal the life force from
     other living creatures to keep from aging'
@@ -37,3 +33,6 @@ MonoBehaviour:
     creatures'
   - '<sprite=376> Time Weave: The ability to build and grow objects by manipulating
     time.'
+  DefaultActiveResearch:
+  - research_agriculture_animals0
+  Buffs: []

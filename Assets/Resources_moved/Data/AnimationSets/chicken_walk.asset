@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: chicken_walk
   m_EditorClassIdentifier: 
-  Key: chicken_walk
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 08dfca07b5a89b54c9a4b1c4ad9e15ff, type: 2}
   UpAnimation: {fileID: 11400000, guid: 42a0524fca3edcb4a84f04ebfd345815, type: 2}
   DownAnimation: {fileID: 11400000, guid: f8a1861a80115f4419ef0daa4c91b89d, type: 2}

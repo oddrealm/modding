@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
+  m_Name: location_names_human_kingdoms
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Determiner: []
+  Prepends:
+  - Arch
+  - Am
+  - Al
+  - Am
+  - Bin
+  - Cran
+  - Crel
+  - Deg
+  - Eman
+  - Fin
+  - Gen
+  - Hil
+  - Jan
+  - Kin
+  - Lin
+  - Mar
+  - Ne
+  - Pas
+  - Qin
+  - Riv
+  - Sin
+  - Tar
+  - Vel
+  SpaceAfterPrepend: 0
+  Names:
+  - an
+  - ac
+  - ad
+  - ar
+  - at
+  - en
+  - el
+  - et
+  - il
+  - in
+  - on
+  - or
+  - os
+  - ot
+  - uc
+  - ud
+  - uf
+  - ur
+  - us
+  - ut
+  SpaceBeforeAppend: 0
+  Appends:
+  - ia
+  - iay
+  - io
+  - an

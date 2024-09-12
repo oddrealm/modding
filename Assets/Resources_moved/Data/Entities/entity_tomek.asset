@@ -12,55 +12,247 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_tomek
   m_EditorClassIdentifier: 
-  Key: entity_tomek
   TooltipID: tooltip_entity_tomek
-  Size: 3
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: -1
+  MaxDefaultSimTime: 14400
+  EntitySimulationID: simulation_entity_default
+  SizeTagID: tag_entity_size_medium
+  LanguagesSpoken:
+  - language_engel
+  DefaultLeaderRoles:
+  - 
   CompanionType: 2
   CompanionPermanenceType: 1
   ReproductionType: 1
+  MaxChildren: 3
+  OnMateStatus: 
+  OnMateFX: fx_entity_union
+  OnMateSFX: sfx_mate
+  CanBreathUnderWater: 0
+  TakeLastNameOfFamilyMembers: 0
   ReproductionIntervalMinutes: 2880
-  ReproductionCount: 1
-  TakeLastNameOfCompanion: 0
+  RequiredReproductionRoom: 
   GenerateNameKey: entity_names_tomek
-  InherentWorkAttacks: attack_group_hand_skills_fallback
   InherentCombatAttacks: attack_group_tomek
-  ProhibitedSkillTypes: 33554432
-  DefaultSkillTypes: 0
-  ProhibitedProfessionTypes: 2228224
-  PermittedRandomProfessions: 5814271
+  SkillPermissions:
+  - SkillID: skill_alchemy
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_all
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_animal_husbandry
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_carry
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
+  - SkillID: skill_cook
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_cloth
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_leather
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_metal
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_stone
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_void
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_wood
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_deconstruct
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_fight_magic
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_fight_melee
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
+  - SkillID: skill_fight_range
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
+  - SkillID: skill_fish
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_log
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_loot
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_mine
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_misc
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_none
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_plant
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_summoning
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_survival
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_time_weave
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_unused2
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_unused3
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_unused4
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_unused5
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_unused6
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_writing
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  ProfessionPermissions:
+  - ProfessionID: profession_thaumaturge
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_technochron
+    CanAssign: 0
+    CanSpawnWith: 0
   Race: race_tomek
-  EquippableTypes: 127
+  PermittedItemSlots:
+  - item_slot_left_hand
+  - item_slot_right_hand
+  - item_slot_head
+  - item_slot_body
+  - item_slot_legs
+  - item_slot_feet
+  - item_slot_back
   PathingType: 1
-  SleepPointTag: human_sleep_point
   DefaultTuning: entity_tuning_tomek
-  DeathItemSpawnGroup: isg_entity_death_tomek
+  DeathItemSpawnGroup: spawns_entity_death_tomek
   PreyRaces: []
-  AttributeActions: []
-  DefaultPickUpBlueprint: blueprint_pick_up_item
-  DefaultDropOffBlueprint: blueprint_drop_off_item
-  Statuses: []
-  PermittedAges:
-  - Min: 0
-    Max: 20
-    CanRespec: 0
-    AgeType: 1
+  ProhibitedStatuses: []
+  Statuses:
+  - entity_status_metabolism
+  - entity_status_aging_by_day
+  Ages:
+  - entity_age_tomek_child
+  - entity_age_tomek_adult
+  - entity_age_tomek_elder
+  Diets:
+  - TagObjectID: tag_can_eat
+    Priority: 0
+    Buffs: []
+    Statuses: []
+  - TagObjectID: tag_can_drink
+    Priority: 3
+    Buffs: []
     Statuses:
-    - entity_status_child
-    RandomStatuses: []
-  - Min: 21
-    Max: 144
-    CanRespec: 1
-    AgeType: 2
+    - entity_status_hydrated
+  - TagObjectID: tag_cooked_food
+    Priority: 0
+    Buffs: []
+    Statuses: []
+  - TagObjectID: tag_item_type_ore
+    Priority: 0
+    Buffs: []
     Statuses:
-    - entity_status_adult
-    RandomStatuses: []
-  - Min: 145
-    Max: 299
-    CanRespec: 1
-    AgeType: 4
+    - entity_status_well_fed
+  - TagObjectID: tag_item_type_ingot
+    Priority: 0
+    Buffs: []
     Statuses:
-    - entity_status_elder
-    RandomStatuses:
-    - Chances: 10
-      StatusID: entity_status_cardiac_arrest
-      AddAgeToChances: 1
+    - entity_status_well_fed
+  - TagObjectID: tag_item_type_gem
+    Priority: 3
+    Buffs: []
+    Statuses:
+    - entity_status_well_fed
+  AutoJobs:
+  - BlueprintID: blueprint_eat_item
+    Settings:
+      Priority: 4
+      Enabled: 1
+      AutoJobType: 1
+  - BlueprintID: blueprint_drink_item
+    Settings:
+      Priority: 4
+      Enabled: 1
+      AutoJobType: 1
+  - BlueprintID: blueprint_drink_from_water
+    Settings:
+      Priority: 4
+      Enabled: 1
+      AutoJobType: 1
+  - BlueprintID: blueprint_sleep_on_ground
+    Settings:
+      Priority: 3
+      Enabled: 1
+      AutoJobType: 1
+  Attributes:
+  - AttributeID: attribute_age
+    StartingBase: 1
+  - AttributeID: attribute_ambient_temperature
+    StartingBase: 50
+  - AttributeID: attribute_attack_speed_mod
+    StartingBase: 0
+  - AttributeID: attribute_climb_speed
+    StartingBase: 2
+  - AttributeID: attribute_cold_tolerance
+    StartingBase: 0
+  - AttributeID: attribute_crit_rate
+    StartingBase: 1
+  - AttributeID: attribute_damage_ignore_rate
+    StartingBase: 0
+  - AttributeID: attribute_energy
+    StartingBase: 100
+  - AttributeID: attribute_evasion
+    StartingBase: 10
+  - AttributeID: attribute_happiness
+    StartingBase: 100
+  - AttributeID: attribute_health
+    StartingBase: 90
+  - AttributeID: attribute_hunger
+    StartingBase: 100
+  - AttributeID: attribute_level
+    StartingBase: 1
+  - AttributeID: attribute_move_speed
+    StartingBase: 24
+  - AttributeID: attribute_none
+    StartingBase: 0
+  - AttributeID: attribute_oxygen
+    StartingBase: 100
+  - AttributeID: attribute_sight_range
+    StartingBase: 128
+  - AttributeID: attribute_temperature
+    StartingBase: 50
+  - AttributeID: attribute_thirst
+    StartingBase: 100
+  - AttributeID: attribute_toughness
+    StartingBase: 0
+  - AttributeID: attribute_xp
+    StartingBase: 0
+  Biomes: []
+  StateOptions: []

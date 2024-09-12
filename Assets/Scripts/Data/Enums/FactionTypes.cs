@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Flags]
-public enum FactionTypes
+public enum FactionTypes : byte
 {
     NONE = 0,
     PLAYER = 1,

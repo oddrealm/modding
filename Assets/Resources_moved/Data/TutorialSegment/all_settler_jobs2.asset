@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
+  m_Name: all_settler_jobs2
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Speaker: Darby, the Historian
+  PreviousSegment: all_settler_jobs1
+  Trigger: 12
+  MinGameMinutes: -1
+  MinScaledPlayedTime: -1
+  MinUnscaledPlayedTime: -1
+  MinCooldown: -1
+  Hooks: []
+  ActiveRaces: []
+  PermittedWindows: []
+  SelectionType: 0
+  SelectionInputID: input_command_open_jobs
+  AttributeRaces: []
+  AttributeType: 0
+  MinAttributeAmount: -1
+  MaxAttributeAmount: -1
+  ItemIDs: []
+  ItemConditionType: 1
+  ItemMinCount: -1
+  ConstructionCategoryType: 0
+  MinRoomCount: -1
+  MinProductionRoomCount: -1
+  MinAutoJobCount: -1
+  ProfessionCount: -1
+  ProfessionID: 
+  FadeInDelay: 0
+  PopUpPosition: 2
+  ShowBackground: 0
+  ShowBackgroundMask: 0
+  BackgroundMaskTarget: 
+  AnimatedImage: 
+  PopUpTextBody: Settlers will automatically start jobs you designate as long as
+    they have the required skill enabled.
+  Comment: Jobs 2
+  Icon: sp_adult_darby_ma0
+  Message:
+  - OnlyShowInputHotkey: 0
+    InputID: 
+    TagObjectID: 
+    Body: 'With a job selected, you can designate them in the world with:'
+    NewLine: 1
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
+  - OnlyShowInputHotkey: 0
+    InputID: 
+    TagObjectID: 
+    Body: 
+    NewLine: 1
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
+  - OnlyShowInputHotkey: 1
+    InputID: input_command_select_block
+    TagObjectID: 
+    Body: 
+    NewLine: 1
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
+  NextSegment: 

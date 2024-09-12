@@ -12,21 +12,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_hungry
   m_EditorClassIdentifier: 
-  Key: entity_status_hungry
   TooltipID: tooltip_entity_status_hungry
-  HasEntityInfo: 0
-  ShowToPlayer: 1
-  Indicator: indicator_hungry
-  Notification: notif_entity_hungry
-  BuffGroup: 
-  OverworldPartyActionGroup: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIconOnToolbar: 1
+  ShowIndicator: 0
+  Notification: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
-  ActivateIntervals: 0
-  ActivateItems: 
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
-  CooldownMin: 0
-  CooldownMax: 0
-  EntitiesToSpawnOnExpire: 
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  Actions:
+  - ConditionTarget: attribute_hunger
+    HideInTooltips: 0
+    Comment: Remove On Full
+    ActivationID: 
+    Conditions:
+    - rid: 8269333940184547361
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 5
+    DeactivationAction: 0
+    Buffs: []
+    Statuses:
+    - entity_status_hungry
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 8269333940184547361
+      type: {class: GreaterThanEqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 80
+        Normalized: 0

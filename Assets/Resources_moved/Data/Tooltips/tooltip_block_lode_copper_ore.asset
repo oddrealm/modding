@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_block_lode_copper_ore
   m_EditorClassIdentifier: 
-  Key: tooltip_block_lode_copper_ore
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Copper Vein
   Name: Copper Vein
+  NamePlural: 
   InlineIcon: <sprite=848>
-  InlineAndName: <sprite=848> Copper Vein
   Description: 
-  Action: 
   Icon: sp_block_copper_ore_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8588236, g: 0.46274513, b: 0.098039225, a: 1}
+  Type: Block
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 655

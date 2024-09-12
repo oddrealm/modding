@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f3a63260dd3054eba2ee68ee867d93, type: 3}
   m_Name: overworld_visuals_journey_path_completed
   m_EditorClassIdentifier: 
-  Key: overworld_visuals_journey_path_completed
-  MeshIndex: 3
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 0.70850736, b: 0, a: 1}
   TextureX: 0
   TextureY: 54
+  Layer: 8
+  TransitionChannel: 6
   TransitionKey: 16
   HasTransition: 1
   TailVariantCount: 0
   Animated: 0
+  ColorMult: {r: 1, g: 1, b: 1, a: 1}

@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: faceless_fishing
   m_EditorClassIdentifier: 
-  Key: faceless_fishing
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 3adecb3fb61e5c348917e10f7b58a6fe, type: 2}
   UpAnimation: {fileID: 11400000, guid: 0e6dba3ce93e96b4c818850f5ad41b6e, type: 2}
   DownAnimation: {fileID: 11400000, guid: a323c989cd45def45b7a3f3c6fe0eb75, type: 2}

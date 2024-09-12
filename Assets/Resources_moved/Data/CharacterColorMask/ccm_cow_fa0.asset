@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
   m_Name: ccm_cow_fa0
   m_EditorClassIdentifier: 
-  Key: ccm_cow_fa0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Priority: 0
   Pairs:
   - BodyPart: 65
     Target: {r: 0.8784314, g: 0.54901963, b: 0.53333336, a: 1}
-  - BodyPart: 8
-    Target: {r: 0.9764706, g: 0.9019608, b: 0.8980392, a: 1}
+  - BodyPart: 136
+    Target: {r: 1, g: 1, b: 1, a: 1}
   - BodyPart: 260
     Target: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
+  - BodyPart: 32
+    Target: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}

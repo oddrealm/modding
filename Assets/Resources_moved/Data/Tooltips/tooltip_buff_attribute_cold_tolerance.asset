@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_buff_attribute_cold_tolerance
   m_EditorClassIdentifier: 
-  Key: tooltip_buff_attribute_cold_tolerance
-  Name: Cold Tolerance Buff
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Cold Tolerance
+  Name: Cold Tolerance
+  NamePlural: 
   InlineIcon: <sprite=838>
-  InlineAndName: <sprite=838> Cold Tolerance Buff
   Description: 
-  Action: 
   Icon: 
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.6627451, g: 0.8235294, b: 0.90588236, a: 1}
+  Type: 
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 594

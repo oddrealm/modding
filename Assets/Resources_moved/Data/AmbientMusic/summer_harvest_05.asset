@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82163600dc47e5e40a4532610b261d03, type: 3}
   m_Name: summer_harvest_05
   m_EditorClassIdentifier: 
-  Key: summer_harvest_05
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   IntroID: audio_music_summer_harvest_05_intro
   LoopID: audio_music_summer_harvest_05_loop
   MinHour: 6

@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_tired
   m_EditorClassIdentifier: 
-  Key: tooltip_entity_status_tired
-  Name: Tired (Status)
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Tired
+  Name: Tired
+  NamePlural: 
   InlineIcon: <sprite=60>
-  InlineAndName: <sprite=60> Tired (Status)
   Description: Low on energy and needs to rest.
-  Action: 
   Icon: 
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7568628, g: 0.18039216, b: 0.18039216, a: 1}
+  Type: Status
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2482

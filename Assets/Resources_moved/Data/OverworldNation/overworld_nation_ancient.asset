@@ -12,13 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
   m_Name: overworld_nation_ancient
   m_EditorClassIdentifier: 
-  Key: overworld_nation_ancient
-  Order: 1
   TooltipID: tooltip_overworld_nation_ancient
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ShowOnMap: 1
+  PlayerCanChoose: 1
   Unlocked: 1
   Banner: sp_ancient_banner
+  BannerColor: {r: 0.49411768, g: 0.33333334, b: 0.52156866, a: 1}
+  KingdomIcon: <sprite=1695>
+  SettlementIcon: <sprite=1017>
   OverworldVisuals: overworld_visuals_ancient
-  Color: 7e5585
+  BorderVisuals: overworld_visuals_nation_border
   Loadouts:
   - starting_loadout_ancient_immortal_conquest
   - starting_loadout_ancient_void_lord
@@ -31,21 +39,34 @@ MonoBehaviour:
   - race_cat
   - race_void_woken
   - race_ancient
-  GenerateNameKey: location_names_ancient_settlements
-  OriginCount: 3
-  MinCount: 1
-  MaxCount: 2
-  SettlementPrefabs:
-  - mpg_ancient_town
+  GenerateSettlementNameKey: location_names_ancient_settlements
+  GenerateKingdomNameKey: location_names_ancient_kingdoms
+  ChanceToSendMerchant: 50
+  MerchantPartyID: party_merchant_ancient
+  ChanceToMigrate: 50
+  MigrantPartyID: party_migrant
+  ChanceToRaid: 1
+  RaidingPartyID: party_raiding
+  ChanceToExpandTerritory: 1
+  ColonistPartyID: party_colonist
+  NewPartyID: party_empty
+  KingdomSizeMax: 2
+  SettlementSimPopMax: 7
+  SettlementSimPopMin: 1
+  Landmarks:
+  - landmark_settlement_ancient
   Biomes:
   - biome_desert
+  - biome_desert_mountain
   - biome_tundra
-  HostileTowards:
-  - race_human
-  - race_ardyn
-  - race_gwdir
-  - race_tomek
-  FriendlyDiscoveryGroups:
-  - discoverygroup_shared_ancient_settlement_friendly
-  HostileDiscoveryGroups:
-  - discoverygroup_shared_ancient_settlement_hostile
+  - biome_tundra_mountain
+  DiplomaticTuning:
+  - NationID: overworld_nation_ardyn
+    Relationship: 2
+    Chances: 1000
+  - NationID: overworld_nation_ancient
+    Relationship: 1
+    Chances: 1000
+  MaxLeaders: 1
+  Leaders:
+  - leader_ancient_primarch

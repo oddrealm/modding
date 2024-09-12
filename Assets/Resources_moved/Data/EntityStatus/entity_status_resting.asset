@@ -12,21 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_resting
   m_EditorClassIdentifier: 
-  Key: entity_status_resting
   TooltipID: tooltip_entity_status_resting
-  HasEntityInfo: 0
-  ShowToPlayer: 1
-  Indicator: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIconOnToolbar: 1
+  ShowIndicator: 0
   Notification: 
-  BuffGroup: buffs_status_resting
-  OverworldPartyActionGroup: 
-  ExpireTimeMinutesMin: 0
-  ExpireTimeMinutesMax: 0
-  ActivateIntervals: 0
-  ActivateItems: 
+  ExpireTimeMinutesMin: 10
+  ExpireTimeMinutesMax: 10
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
-  CooldownMin: 0
-  CooldownMax: 0
-  EntitiesToSpawnOnExpire: 
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  Actions:
+  - ConditionTarget: attribute_health
+    HideInTooltips: 0
+    Comment: +1 Health Every Minute When Below 100%
+    ActivationID: 
+    Conditions:
+    - rid: 458055040193528201
+    TimeThresholdMinutes: 5
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 0
+    Buffs:
+    - TargetID: attribute_health
+      Amount: 1
+      Max: 0
+      Permanent: 1
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 458055040193528201
+      type: {class: LessThanCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 1
+        Normalized: 1

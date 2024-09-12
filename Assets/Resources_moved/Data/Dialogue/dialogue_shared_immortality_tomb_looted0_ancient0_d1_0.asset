@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_immortality_tomb_looted0_ancient0_d1_0
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_immortality_tomb_looted0_ancient0_d1_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_shared_immortality_tomb_looted0_ancient0_d1_1
   SpeakerTarget: '@0'
   Message: '{*}{@0} opens their... eyes...? They look (I think) at you and nod.{*/}'
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

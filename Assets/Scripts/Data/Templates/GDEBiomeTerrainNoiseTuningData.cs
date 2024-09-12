@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/BiomeTerrainNoiseTuning")]
-public class GDEBiomeTerrainNoiseTuningData : ScriptableObject
+public class GDEBiomeTerrainNoiseTuningData : Scriptable
 {
-	public string Key;
 	public int Priority = 0;
 	public float Frequency = 0.0f;
 	public int Octaves = 0;

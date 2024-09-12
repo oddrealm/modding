@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_bronze_weapon_rack
   m_EditorClassIdentifier: 
-  Key: tooltip_prop_bronze_weapon_rack
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Bronze Weapon Rack
   Name: Bronze Weapon Rack
+  NamePlural: 
   InlineIcon: <sprite=470>
-  InlineAndName: <sprite=470> Bronze Weapon Rack
   Description: 
-  Action: 
   Icon: sp_bronze_weapon_rack_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8588236, g: 0.47058827, b: 0.09411766, a: 1}
+  Type: Prop
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 359

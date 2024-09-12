@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/EntitySchema")]
-public class GDEEntitySchema : ScriptableObject
+public class GDEEntitySchema : Scriptable
 {
-    public string Key;
-
     [System.Serializable]
     public class EquipmentLoadout
     {
@@ -24,7 +22,7 @@ public class GDEEntitySchema : ScriptableObject
     [System.Serializable]
     public class AttributeOverride
     {
-        public AttributeTypes Attribute;
+        public string Attribute;
         public int Amount;
     }
 

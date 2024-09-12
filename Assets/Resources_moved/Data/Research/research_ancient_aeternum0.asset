@@ -12,15 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_ancient_aeternum0
   m_EditorClassIdentifier: 
-  Key: research_ancient_aeternum0
+  TooltipID: tooltip_research_ancient_aeternum0
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 1
+  ShowInSaga: 1
   Races:
   - race_ancient
-  ResearchKey: ancient_aeternum0
-  TooltipID: tooltip_research_ancient_aeternum0
   Dependency: 
   Column: 0
   Row: 1
-  RequiredItem: item_tome_of_arcana
-  RequiredItemCount: 1
-  ResearchCategory: 5
+  ResearchCategory: research_category_ancient
+  RequireItemCountOverride: 0
+  ResearchTimeStep: 60

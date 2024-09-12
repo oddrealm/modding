@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd0c9a4a7179de14ab865c2f2c50e906, type: 3}
   m_Name: biome_terrain_noise_beach
   m_EditorClassIdentifier: 
-  Key: biome_terrain_noise_beach
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Priority: 7
   Frequency: 0.008
   Octaves: 3

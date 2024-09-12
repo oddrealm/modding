@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8d54d958bb52746bbda34a427ca237, type: 3}
   m_Name: zone_gear
   m_EditorClassIdentifier: 
-  Key: zone_gear
   TooltipID: tooltip_zone_gear
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Visuals: visuals_zone_gear
   VisibleToPlayer: 1
-  OrderIndex: 8
+  OrderIndex: 4
   ItemPermissions: 128
+  ShowLowNotifByDefault: 0
+  HideIfZeroByDefault: 0

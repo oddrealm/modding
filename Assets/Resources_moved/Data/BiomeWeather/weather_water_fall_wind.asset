@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5fb1d1b07810e4ca30537b1d718d1f, type: 3}
   m_Name: weather_water_fall_wind
   m_EditorClassIdentifier: 
-  Key: weather_water_fall_wind
   TooltipID: tooltip_weather_water_fall_wind
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   UIDisplayAnimKey: windy
   FlammabilityMod: 1
-  ChanceToSpawnSnow: 0
   WeatherType: 1
-  NightOffset: -7
-  DayOffset: 5
-  MinTemp: 21
-  MaxTemp: 55
+  NightOffset: -2
+  DayOffset: 2
+  MinTemp: 8
+  MaxTemp: 20
   FXIndex: 0
   ChanceToStart: 250
   MinHourDuration: 3
@@ -31,3 +34,5 @@ MonoBehaviour:
   SubterraneanAmbientSFX: sfx_subterranean
   DaytimeAmbientSFX: sfx_day_ocean
   NighttimeAmbientSFX: sfx_night_ocean
+  WatersPlants: 0
+  SkylightSpawns: []

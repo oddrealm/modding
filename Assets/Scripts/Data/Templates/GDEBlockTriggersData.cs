@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockTriggers")]
-public class GDEBlockTriggersData : ScriptableObject
+public class GDEBlockTriggersData : Scriptable
 {
-	public string Key;
 	public string SpawnTag = "";
 }

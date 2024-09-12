@@ -12,13 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_senectia
   m_EditorClassIdentifier: 
-  Key: tooltip_entity_status_senectia
-  Name: Senectia (Status)
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Senectia
+  Name: Senectia
+  NamePlural: 
   InlineIcon: <sprite=1199>
-  InlineAndName: <sprite=1199> Senectia (Status)
   Description: The early stages of time debt, which occurs when Ardyn go too long
-    without siphoning life from other entities.
-  Action: 
+    without leeching life from other entities.
   Icon: 
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.83921576, g: 0.29803923, b: 0.25490198, a: 1}
+  Type: Status
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2069

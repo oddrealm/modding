@@ -12,15 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_faceless
   m_EditorClassIdentifier: 
-  Key: race_faceless
   TooltipID: tooltip_race_faceless
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_races
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 50
-  IntelligenceType: 2
+  Intelligence: intelligence_sapient
   Tags:
   - sapient
-  StartingResearchKeys: []
   DefaultEntityID: entity_faceless
-  Diet: diet_faceless
   Public: 1
-  BuffGroupID: 
   Perks: []
+  DefaultActiveResearch: []
+  Buffs: []

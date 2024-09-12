@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
+  m_Name: spawns_biome_marine_plants_taiga
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 1
+  TagIDs:
+  - tag_spawns_biome_marine_plants_taiga
+  DiscoveryDependencies: []
+  MapColor: {r: 0, g: 0.77254903, b: 0.6217862, a: 1}
+  SeedOffset: 769213
+  MaxIterations: 1
+  MinIterations: 1
+  Spawns:
+  - Comment: Plants (Ivory Coral and such)
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.05
+    TagObjectID: 
+    TagID: tag_biome_marine_plants_taiga
+  - Comment: Props (Boulders and such)
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.01
+    TagObjectID: 
+    TagID: tag_biome_marine_props_taiga
+  - Comment: Nothing
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.94
+    TagObjectID: 
+    TagID: 

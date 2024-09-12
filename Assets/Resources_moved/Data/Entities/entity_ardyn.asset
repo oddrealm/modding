@@ -12,38 +12,153 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_ardyn
   m_EditorClassIdentifier: 
-  Key: entity_ardyn
   TooltipID: tooltip_entity_ardyn
-  Size: 3
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: -1
+  MaxDefaultSimTime: 14400
+  EntitySimulationID: simulation_entity_default
+  SizeTagID: tag_entity_size_medium
+  LanguagesSpoken:
+  - language_engel
+  DefaultLeaderRoles:
+  - 
   CompanionType: 2
   CompanionPermanenceType: 1
   ReproductionType: 0
+  MaxChildren: 3
+  OnMateStatus: 
+  OnMateFX: fx_entity_union
+  OnMateSFX: sfx_mate
+  CanBreathUnderWater: 0
+  TakeLastNameOfFamilyMembers: 0
   ReproductionIntervalMinutes: 2880
-  ReproductionCount: 1
-  TakeLastNameOfCompanion: 0
+  RequiredReproductionRoom: 
   GenerateNameKey: entity_names_ardyn
-  InherentWorkAttacks: attack_group_hand_skills_fallback
   InherentCombatAttacks: attack_group_ardyn
-  ProhibitedSkillTypes: 0
-  DefaultSkillTypes: 33554432
-  ProhibitedProfessionTypes: 131072
-  PermittedRandomProfessions: 3717119
+  SkillPermissions:
+  - SkillID: skill_carry
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
+  - SkillID: skill_fight_melee
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
+  - SkillID: skill_fight_magic
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_summoning
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_craft_void
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_fight_range
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
+  ProfessionPermissions:
+  - ProfessionID: profession_thaumaturge
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_summoner
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_arcanist
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_mage
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_unassigned
+    CanAssign: 1
+    CanSpawnWith: 0
   Race: race_ardyn
-  EquippableTypes: 127
+  PermittedItemSlots:
+  - item_slot_left_hand
+  - item_slot_right_hand
+  - item_slot_head
+  - item_slot_body
+  - item_slot_legs
+  - item_slot_feet
+  - item_slot_back
   PathingType: 1
-  SleepPointTag: human_sleep_point
   DefaultTuning: entity_tuning_ardyn
-  DeathItemSpawnGroup: isg_entity_death_ardyn
+  DeathItemSpawnGroup: spawns_entity_death_ardyn
   PreyRaces: []
-  AttributeActions: []
-  DefaultPickUpBlueprint: blueprint_pick_up_item
-  DefaultDropOffBlueprint: blueprint_drop_off_item
-  Statuses: []
-  PermittedAges:
-  - Min: 16
-    Max: 60
-    CanRespec: 1
-    AgeType: 2
-    Statuses:
-    - entity_status_adult
-    RandomStatuses: []
+  ProhibitedStatuses: []
+  Statuses:
+  - entity_status_senescence
+  Ages:
+  - entity_age_ardyn_adult
+  - entity_age_ardyn_elder
+  Diets:
+  - TagObjectID: tag_can_eat
+    Priority: 0
+    Buffs: []
+    Statuses: []
+  - TagObjectID: tag_can_drink
+    Priority: 0
+    Buffs: []
+    Statuses: []
+  - TagObjectID: tag_cooked_food
+    Priority: 0
+    Buffs: []
+    Statuses: []
+  AutoJobs:
+  - BlueprintID: blueprint_retroanimate
+    Settings:
+      Priority: 4
+      Enabled: 1
+      AutoJobType: 1
+  - BlueprintID: blueprint_sleep_on_ground
+    Settings:
+      Priority: 2
+      Enabled: 1
+      AutoJobType: 1
+  Attributes:
+  - AttributeID: attribute_age
+    StartingBase: 1
+  - AttributeID: attribute_ambient_temperature
+    StartingBase: 50
+  - AttributeID: attribute_attack_speed_mod
+    StartingBase: 0
+  - AttributeID: attribute_climb_speed
+    StartingBase: 2
+  - AttributeID: attribute_cold_tolerance
+    StartingBase: 0
+  - AttributeID: attribute_crit_rate
+    StartingBase: 1
+  - AttributeID: attribute_damage_ignore_rate
+    StartingBase: 0
+  - AttributeID: attribute_energy
+    StartingBase: 100
+  - AttributeID: attribute_evasion
+    StartingBase: 10
+  - AttributeID: attribute_happiness
+    StartingBase: 100
+  - AttributeID: attribute_health
+    StartingBase: 80
+  - AttributeID: attribute_hunger
+    StartingBase: 100
+  - AttributeID: attribute_level
+    StartingBase: 1
+  - AttributeID: attribute_move_speed
+    StartingBase: 24
+  - AttributeID: attribute_none
+    StartingBase: 0
+  - AttributeID: attribute_oxygen
+    StartingBase: 100
+  - AttributeID: attribute_sight_range
+    StartingBase: 128
+  - AttributeID: attribute_temperature
+    StartingBase: 50
+  - AttributeID: attribute_thirst
+    StartingBase: 100
+  - AttributeID: attribute_toughness
+    StartingBase: 0
+  - AttributeID: attribute_xp
+    StartingBase: 0
+  Biomes: []
+  StateOptions: []

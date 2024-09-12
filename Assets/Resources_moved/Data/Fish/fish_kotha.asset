@@ -12,14 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b82001461fc34e9d1cf053d56a7e5, type: 3}
   m_Name: fish_kotha
   m_EditorClassIdentifier: 
-  Key: fish_kotha
   TooltipID: tooltip_fish_kotha
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Level: 3
   AnimController: medium_fish_animations
   IdealDepthMin: 0
   IdealDepthmax: 5
-  LureRollAdd: -200
   BaseHealth: 300
   BaseToughness: 5
   BaseEvasion: 0
-  ItemSpawnGroupID: isg_fish_kotha
+  ItemSpawnGroupID: spawns_fish_kotha
+  FishColorR: {r: 0.9490196, g: 0.92156863, b: 0.4509804, a: 1}
+  FishColorG: {r: 0.8784314, g: 0.7921569, b: 0.28235295, a: 1}
+  FishColorB: {r: 0.8392157, g: 0.6, b: 0.21960784, a: 1}
+  Biomes:
+  - biome_taiga
+  - biome_taiga_hills
+  - biome_taiga_forest
+  - biome_taiga_mountain
+  - biome_tundra
+  - biome_tundra_forest
+  - biome_tundra_mountain
+  - biome_barren
+  - biome_barren_forest
+  - biome_barren_mountain

@@ -12,26 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_entity_kidnapped
   m_EditorClassIdentifier: 
-  Key: notif_entity_kidnapped
-  Index: 2
-  Enabled: 1
-  NotificationType: 1
-  Priority: 2
-  FilterType: 4
-  Sound: bad
-  FactionToShowPipFor: 1
-  DefaultPermitted: []
-  InlineIcon: <sprite=65>
-  ShowInSettings: 1
-  FriendlyName: Entity Kidnapped
-  DescriptionDisplay: '{0} was kidnapped!'
-  DuplicateDescriptionDisplay: '{0} entities have been kidnapped.'
-  UIToOpen: 
-  ShowPip: 1
-  PipInterval: -1
-  PauseGameOnCreate: 1
-  PauseGameInterval: 1
-  FocusCamOnCreate: 1
-  FocusCamInterval: 1
-  CanSetFaction: 1
-  CanSetRace: 1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  FlashColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
+  SFXGroupID: sfx_notif_bad
+  DefaultPermissions:
+    ShowPreview: 1
+    CanStackPreviews: 1
+    Factions:
+    - faction_player
+    - faction_captured
+    FocusCamOnCreate: 0
+    PauseGameOnCreate: 0
+    HighlightOnCreate: 0
+    HighlightText: <sprite=1654>
+  OverridePermissions: []

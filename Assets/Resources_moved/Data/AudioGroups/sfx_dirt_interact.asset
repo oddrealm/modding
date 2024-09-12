@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bbd2cf8d9e60a40b72614a6e504830, type: 3}
   m_Name: sfx_dirt_interact
   m_EditorClassIdentifier: 
-  Key: sfx_dirt_interact
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   SFX:
   - audio_sfx_dirt_interact_00
   - audio_sfx_dirt_interact_01
@@ -20,8 +25,9 @@ MonoBehaviour:
   - audio_sfx_dirt_interact_03
   - audio_sfx_dirt_interact_04
   - audio_sfx_dirt_interact_05
-  - audio_sfx_dirt_interact_06
-  - audio_sfx_dirt_interact_07
-  - audio_sfx_dirt_interact_08
-  - audio_sfx_dirt_interact_09
-  - audio_sfx_dirt_interact_10
+  - audio_sfx_stone_interact_00
+  - audio_sfx_stone_interact_01
+  - audio_sfx_stone_interact_02
+  - audio_sfx_stone_interact_03
+  - audio_sfx_stone_interact_04
+  - audio_sfx_stone_interact_05

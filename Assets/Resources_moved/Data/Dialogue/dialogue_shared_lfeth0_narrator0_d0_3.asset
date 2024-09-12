@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_lfeth0_narrator0_d0_3
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_lfeth0_narrator0_d0_3
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_shared_lfeth0_narrator0_d0_4a
@@ -22,3 +27,5 @@ MonoBehaviour:
   Response:
   - That's a sick Chain Whip. We would be honoured to have you join us.
   - We are a strange society where Chain Whips are prohibited.
+  FocusOnSpeaker: 1
+  DialogueSequences: []

@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd0c9a4a7179de14ab865c2f2c50e906, type: 3}
   m_Name: biome_terrain_noise_mountains
   m_EditorClassIdentifier: 
-  Key: biome_terrain_noise_mountains
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Priority: 4
-  Frequency: 0.1
+  Frequency: 0.008
   Octaves: 3
   Lacunarity: 2
   Persistence: 0.55

@@ -12,17 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2306836ee8b4298459405f228e2dabb0, type: 3}
   m_Name: overworld_map_gen_taiga_forest
   m_EditorClassIdentifier: 
-  Key: overworld_map_gen_taiga_forest
-  BuildPriority: 2
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BuildPriority: 8
   SeedOffset: 0
   Frequency: 3
   Octaves: 4
   Persistence: 0.75
   Lacunarity: 2.25
-  MinThreshold: 0.65
+  MinThreshold: 0.6
   MaxThreshold: 1
   Falloff: 0.1
   UseBotTopMinMax: 0
+  FadeBotTopMinMax: 1
   TopMax: 0.9
   TopMin: 0.5
   BotMax: 0.5

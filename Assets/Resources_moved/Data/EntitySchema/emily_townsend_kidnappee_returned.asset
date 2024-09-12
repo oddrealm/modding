@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f7d4c45fec68640b88756eb9623c0b, type: 3}
   m_Name: emily_townsend_kidnappee_returned
   m_EditorClassIdentifier: 
-  Key: emily_townsend_kidnappee_returned
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   ProfessionID: profession_warrior
   EquippedItems:
   - ItemID: item_rutile_bfs_two_hand

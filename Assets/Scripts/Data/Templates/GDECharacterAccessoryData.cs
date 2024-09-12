@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/CharacterAccessoryData")]
-public class GDECharacterAccessoryData : ScriptableObject
+public class GDECharacterAccessoryData : Scriptable
 {
-    public string Key;
-
     public int Priority = 0;
     public int TexX = 69;
     public int TexY = 128;
@@ -18,5 +16,15 @@ public class GDECharacterAccessoryData : ScriptableObject
     public Color ColorMaskC = Color.blue;
     public EntityAccessoryPoints DefaultAccessoryPoint = EntityAccessoryPoints.BACK;
 
-    public GDEAnimationStateData[] HiddenAnimationStates;
+    public GDEAnimationStatesData[] HiddenAnimationStates;
+
+    //public void Awake()
+    //{
+    //    Debug.LogError("HELLO");
+    //}
+
+    //public void OnDestroy()
+    //{
+    //    Debug.LogError("GOODBYE");
+    //}
 }

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4633816f5b17345921387ce966b49a, type: 3}
   m_Name: attack_group_tamtallen
   m_EditorClassIdentifier: 
-  Key: attack_group_tamtallen
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Attacks:
   - attack_jab_direct_bludgeon
   - attack_stomp_direct_bludgeon

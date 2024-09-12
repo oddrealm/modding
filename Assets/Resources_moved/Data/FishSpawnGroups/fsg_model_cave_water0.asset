@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2994bc665c117944bbbf4cbb2793af9, type: 3}
   m_Name: fsg_model_cave_water0
   m_EditorClassIdentifier: 
-  Key: fsg_model_cave_water0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Data: '{"fish":[{"fish_id":"fish_night_ghost","fish_count":1,"spawn_rate":5},{"fish_id":"fish_kotha","fish_count":1,"spawn_rate":5},{"fish_id":"fish_sand_shrimp","fish_count":1,"spawn_rate":5}]}'

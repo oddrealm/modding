@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_thirsty
   m_EditorClassIdentifier: 
-  Key: tooltip_entity_status_thirsty
-  Name: Thirsty (Status)
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Thirsty
+  Name: Thirsty
+  NamePlural: 
   InlineIcon: <sprite=650>
-  InlineAndName: <sprite=650> Thirsty (Status)
-  Description: Will receive damage when Thirst reaches 0.
-  Action: 
+  Description: A parched condition that saps vitality, gradually lowering Health
+    over time until quenched by drinking.
   Icon: 
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.85882354, g: 0.47058824, b: 0.09411765, a: 1}
+  Type: Status
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2462

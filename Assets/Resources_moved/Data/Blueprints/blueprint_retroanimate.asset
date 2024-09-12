@@ -12,51 +12,116 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_retroanimate
   m_EditorClassIdentifier: 
-  Key: blueprint_retroanimate
-  StartProgressType: 0
-  StartProgressAttribute: 0
-  StartProgressAttributePercent: 1
-  FixedProgressStart: 0
-  TargetProgressType: 0
-  TargetProgressAttribute: 0
-  TargetProgressAttributePercent: 1
-  FixedProgressTarget: 100
-  DefaultAutoJobPriority: 3
-  DefaultThresholdType: 6
-  FreeIfInaccessible: 1
-  TimeoutTime: 300
-  Requirements: requirement_blueprint_retroanimate
-  AutoJobBlockSearchType: 1
-  JobBarType: 3
-  InvertProgressDisplay: 0
-  JobActionTextTypes: 1
-  Toughness: 0
-  XPMod: 1
-  UseBlockForToughness: 0
-  ToolbarMenu: 
-  ResearchKey: ardyn_somnic_pools0
-  AutoPlacementClearType: 0
-  Placement: 0
-  PlacementClear: 0
-  Category: 131072
   TooltipID: tooltip_blueprint_retroanimate
-  OnlyShowYieldTooltip: 0
-  YieldTooltipIDs: []
-  InterfaceInfo: interface_info_blueprint_retroanimate
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies:
+  - skill_misc
+  - skill_time_weave
+  - entity_status_senectia
+  - entity_status_metabolism
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: blueprint_category_none
+  ResearchKey: research_ardyn_somnic_pools0
+  Repeat: 0
+  CheckStateForTransition: 0
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  SkillLevel: 1
+  AddBlockSkillToJobSkill: 0
+  LocationID: 
+  PermissionType: 0
+  LocationPermissions: []
+  WorkerPermissions:
+  - faction_player
+  WorkerPermissionsToLock:
+  - faction_hostile
+  - faction_captured
+  TargetPermissions:
+  - faction_captured
+  TargetPermissionsToLock:
+  - faction_player
+  ResourcePool: 1
+  ShowItemTypeResourcePermissions: 0
+  ResourcePermissionsToLock: []
+  MaxWorkers: 0
+  WorkerNeedsAllRequirements: 0
+  JobActions:
+  - ActionType: 10
+    MaxWorkers: 0
+    WorkerID: entity_status_senectia
+    TargetID: entity_status_metabolism
+    ResourceID: 
+    OnJobFinishActionID: 
+    WorkPosition: 0
+    AnimationTrigger: 8192
+    AnimationHitEvent: 1
+    AnimStartFX: fx_retroanimate_channel
+    AnimStartSFX: 
+  ProgressWorkerAttribute: 
+  ProgressMax: 1
+  ProgressBarType: 2
+  InvertProgressDisplay: 0
+  ProgressFXMaxX: 0
+  ProgressFXMinX: 0
+  ProgressFXMaxY: 0
+  ProgressFXMinY: 0
+  Clear:
+    Layer: 0
+    Params:
+      DisableRemoveSpawns: 0
+      DisposeIfNotPermitted: 0
+      DisableSpawnAtEntityOnFail: 0
+      DisableClaimCheck: 0
+      SetAsUnclaimed: 0
+      Attempts: 0
+      SeedOffset: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: 
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnFinishedResourcesActionID: 
+  SetTargetFactionTo: 
+  OnFinishWorkerBuffs:
+  - TargetID: attribute_age
+    Amount: -120
+    Max: 0
+    Permanent: 1
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves: []
+  OnFinishTargetBuffs:
+  - TargetID: attribute_age
+    Amount: 5
+    Max: 0
+    Permanent: 1
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  CanSelectTarget: 0
+  ShowWorkOutputActionText: 0
+  OnFinishedFX: 
+  WorkFX: 
+  WorkSFX: 
+  OnFinishedSFX: 
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride:
+  - visuals_job_cursor_permitted
+  ProhibitedCursorVisualsOverride:
+  - visuals_job_cursor_prohibited
   Visuals:
   - visuals_job_retroanimate
-  WorkFX: 
-  InteractSFX: 
-  CompleteSFX: 
-  SetLiquidMass: 0
-  LiquidMass: 1
-  ModelIndex: 0
-  ModelMultipler: 1
-  EntitiesToCreate: 
-  PickUpActionType: 0
-  ResetPlantMaintenance: 0
-  ReleaseContainedEntity: 0
-  TryCaptureContainedEntity: 0
-  StatusesToApply: []
-  StatusesToApplyToTarget: []
-  MarkRequirementsDiscoveredOnDiscovery: 1
+  ShowVisualsIfStarted: 0
+  MaxAutoJobQueueCount: 1
+  DisposeIfRequirementsNotMet: 1
+  DisposeIfNoSource: 1
+  AutoJobOnCreateCooldown: 5
+  AutoJobOnFreedCooldown: 1

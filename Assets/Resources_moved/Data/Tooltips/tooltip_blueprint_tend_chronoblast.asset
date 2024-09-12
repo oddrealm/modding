@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_tend_chronoblast
   m_EditorClassIdentifier: 
-  Key: tooltip_blueprint_tend_chronoblast
-  Name: Animatrophize Plant
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Remove Timeblight
+  Name: Remove Timeblight
+  NamePlural: 
   InlineIcon: <sprite=1209>
-  InlineAndName: <sprite=1209> Animatrophize Plant
-  Description: Animatrophys is the process of nurturing a plant with life-force.
-  Action: Animatrophizing Plant
+  Description: 'Chronoblasts and Nyctoids can get Timeblight if they are not fed
+    with Ardyn lifeforce periodically. '
   Icon: sp_job_tend_chronoblast_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
+  Type: Job
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1888

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
   m_Name: location_names_rivers
   m_EditorClassIdentifier: 
-  Key: location_names_rivers
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Determiner:
   - The
   Prepends:
@@ -44,6 +49,7 @@ MonoBehaviour:
   - Wy
   - Xelte
   - Yotho
+  SpaceAfterPrepend: 0
   Names:
   - anth River
   - ban River
@@ -95,3 +101,5 @@ MonoBehaviour:
   - ytan River
   - ztl River
   - zod River
+  SpaceBeforeAppend: 0
+  Appends: []

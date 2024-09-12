@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2306836ee8b4298459405f228e2dabb0, type: 3}
   m_Name: overworld_map_gen_taiga_mountain
   m_EditorClassIdentifier: 
-  Key: overworld_map_gen_taiga_mountain
-  BuildPriority: 2
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BuildPriority: 6
   SeedOffset: 0
   Frequency: 3
   Octaves: 4
@@ -23,6 +28,7 @@ MonoBehaviour:
   MaxThreshold: 0.7
   Falloff: 0.1
   UseBotTopMinMax: 0
+  FadeBotTopMinMax: 1
   TopMax: 0.9
   TopMin: 0.5
   BotMax: 0.5

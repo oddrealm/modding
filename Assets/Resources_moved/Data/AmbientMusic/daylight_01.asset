@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82163600dc47e5e40a4532610b261d03, type: 3}
   m_Name: daylight_01
   m_EditorClassIdentifier: 
-  Key: daylight_01
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   IntroID: audio_music_daylight_01_intro
   LoopID: audio_music_daylight_01_loop
   MinHour: 6

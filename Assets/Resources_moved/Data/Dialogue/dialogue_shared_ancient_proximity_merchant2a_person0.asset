@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_ancient_proximity_merchant2a_person0
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_ancient_proximity_merchant2a_person0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'
   Message: Of course! Cast your face orbs on my wares and tell me they aren't the
     finest in the land!
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

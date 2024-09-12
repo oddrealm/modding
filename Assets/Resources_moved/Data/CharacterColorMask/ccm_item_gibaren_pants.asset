@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
   m_Name: ccm_item_gibaren_pants
   m_EditorClassIdentifier: 
-  Key: ccm_item_gibaren_pants
-  Priority: 1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Priority: 10
   Pairs:
   - BodyPart: 192
     Target: {r: 0.51550335, g: 0.17647056, b: 0.5647059, a: 1}

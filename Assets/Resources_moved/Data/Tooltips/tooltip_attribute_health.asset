@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_health
   m_EditorClassIdentifier: 
-  Key: tooltip_attribute_health
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Health
   Name: Health
+  NamePlural: 
   InlineIcon: <sprite=80>
-  InlineAndName: <sprite=80> Health
-  Description: How much damage the Entity can take before dying.
-  Action: 
+  Description: At 0, this entity will die.
   Icon: 
-  Formatting: 
-  TextColor: {r: 0.67058825, g: 0.20392157, b: 0.16078432, a: 1}
+  TextColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
+  Type: Attribute
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1160

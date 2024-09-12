@@ -12,30 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4633816f5b17345921387ce966b49a, type: 3}
   m_Name: attack_group_hand_skills_fallback
   m_EditorClassIdentifier: 
-  Key: attack_group_hand_skills_fallback
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Attacks:
-  - attack_hand_log_direct
-  - attack_hand_craft_wood_direct
-  - attack_hand_craft_stone_direct
-  - attack_hand_craft_metal_direct
-  - attack_hand_cook_direct
-  - attack_hand_fish_direct
-  - attack_hand_deconstruct_direct
-  - attack_hand_harvest_direct
-  - attack_hand_carry_direct
-  - attack_hand_cut_direct
-  - attack_hand_plant_direct
-  - attack_hand_fight_melee_direct
-  - attack_hand_fight_range_direct
-  - attack_hand_fight_magic_direct
-  - attack_hand_animal_husbandry_direct
-  - attack_hand_survival_direct
-  - attack_hand_mine_direct
-  - attack_hand_alchemy_direct
-  - attack_hand_loot_direct
-  - attack_hand_forestry_direct
-  - attack_hand_craft_void_direct
-  - attack_hand_summoning_direct
-  - attack_hand_craft_cloth_direct
-  - attack_hand_craft_leather_direct
-  - attack_hand_research_direct
+  - attack_hand_direct

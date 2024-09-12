@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_scenario_human_settler_wave0_person1
   m_EditorClassIdentifier: 
-  Key: dialogue_scenario_human_settler_wave0_person1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_scenario_human_settler_wave0_person2a
@@ -23,3 +28,5 @@ MonoBehaviour:
   Response:
   - Yes! Plenty of room!
   - This is awkward but, uh... no. No, we do not.
+  FocusOnSpeaker: 1
+  DialogueSequences: []

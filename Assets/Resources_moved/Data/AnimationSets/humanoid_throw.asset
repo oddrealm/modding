@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: humanoid_throw
   m_EditorClassIdentifier: 
-  Key: humanoid_throw
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 75374486d7da1134ea18a8e6edacf70d, type: 2}
   UpAnimation: {fileID: 11400000, guid: ef2acd545cc149b4694dbf0970bd0351, type: 2}
   DownAnimation: {fileID: 11400000, guid: 1bdff822a2e08204a8a5111864ad412a, type: 2}

@@ -12,17 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_town_hall
   m_EditorClassIdentifier: 
-  Key: room_town_hall
-  ActivationType: 1
-  CanEditOwnersAndStockpiles: 1
-  Enabled: 0
-  Stockpile: room_stockpiles_empty
-  ResearchKey: 
-  Owners:
-  - room_owner_lords
-  DefaultAutoJobBlueprints: []
-  InterfaceInfo: interface_info_room_town_hall
   TooltipID: tooltip_room_town_hall
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_community
+  ResearchKey: research_human_town_hall0
+  MaxRoomAmount: 1
+  OccupantGroups:
+  - occupant_group_town_hall
   Visuals:
   - visuals_room_display_town_hall
-  - visuals_room_display_town_hall_background
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_integrate_as_citizen
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []

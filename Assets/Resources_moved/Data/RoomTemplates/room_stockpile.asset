@@ -12,17 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_stockpile
   m_EditorClassIdentifier: 
-  Key: room_stockpile
-  ActivationType: 1
-  CanEditOwnersAndStockpiles: 1
-  Enabled: 1
-  Stockpile: room_stockpiles_default
-  ResearchKey: 
-  Owners:
-  - room_owner_haulers
-  DefaultAutoJobBlueprints: []
-  InterfaceInfo: interface_info_room_stockpile
   TooltipID: tooltip_room_stockpile
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_storage
+  ResearchKey: research_industry_basics0
+  MaxRoomAmount: -1
+  OccupantGroups:
+  - occupant_group_stockpile
   Visuals:
   - visuals_room_display_stockpile
-  - visuals_room_display_stockpile_background
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 1
+    ResourcePermissions: []

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_tropical_savage_pirate0_precursor0_d2
   m_EditorClassIdentifier: 
-  Key: dialogue_tropical_savage_pirate0_precursor0_d2
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: 
@@ -20,3 +25,5 @@ MonoBehaviour:
     The pirate spits, turns, and leaves. You''re pretty sure they''re not happy to
     see you.{*/}'
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

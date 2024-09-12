@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_butcher_chicken_remains
   m_EditorClassIdentifier: 
-  Key: tooltip_butcher_chicken_remains
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Butcher Chicken Remains
   Name: Butcher Chicken Remains
+  NamePlural: 
   InlineIcon: <sprite=744>
-  InlineAndName: <sprite=744> Butcher Chicken Remains
   Description: 
-  Action: 
   Icon: sp_remains_chicken_icon
-  Formatting: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
+  Type: Job
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 387

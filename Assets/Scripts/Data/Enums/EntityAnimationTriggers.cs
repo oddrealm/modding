@@ -16,5 +16,6 @@ public enum EntityAnimationTriggers
     IDLE_TIMEOUT1_START = 1024,
     IDLE_TIMEOUT2_START = 2048,
     SLEEP_START = 4096,
-    CHANNEL_START = 8192
+    CHANNEL_START = 8192,
+    SIT_START = 16384
 }

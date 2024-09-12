@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
+  m_Name: all_stockpiles1
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Speaker: Darby, the Historian
+  PreviousSegment: all_stockpiles0
+  Trigger: 0
+  MinGameMinutes: -1
+  MinScaledPlayedTime: -1
+  MinUnscaledPlayedTime: -1
+  MinCooldown: -1
+  Hooks: []
+  ActiveRaces: []
+  PermittedWindows: []
+  SelectionType: 0
+  SelectionInputID: 
+  AttributeRaces: []
+  AttributeType: 0
+  MinAttributeAmount: -1
+  MaxAttributeAmount: -1
+  ItemIDs: []
+  ItemConditionType: 1
+  ItemMinCount: -1
+  ConstructionCategoryType: 0
+  MinRoomCount: -1
+  MinProductionRoomCount: -1
+  MinAutoJobCount: -1
+  ProfessionCount: -1
+  ProfessionID: 
+  FadeInDelay: 0
+  PopUpPosition: 2
+  ShowBackground: 1
+  ShowBackgroundMask: 1
+  BackgroundMaskTarget: room_cmd_btn
+  AnimatedImage: 
+  PopUpTextBody: One way to organize your items is to designate a <sprite=1111> Stockpile
+    room. Entities with the <sprite=16> Carry skill enabled will move items into
+    this room automatically.
+  Comment: Stockpile 1
+  Icon: sp_room_stockpile_icon
+  Message:
+  - OnlyShowInputHotkey: 0
+    InputID: 
+    TagObjectID: 
+    Body: You can designate a <sprite=1111> Stockpile room where your settlers will
+      keep these new items.
+    NewLine: 1
+    UseOverrideColor: 1
+    OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
+  - OnlyShowInputHotkey: 0
+    InputID: 
+    TagObjectID: 
+    Body: 'Open the <sprite=1532> Rooms menu with:'
+    NewLine: 1
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
+  - OnlyShowInputHotkey: 0
+    InputID: 
+    TagObjectID: 
+    Body: 
+    NewLine: 1
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
+  - OnlyShowInputHotkey: 1
+    InputID: input_command_open_rooms
+    TagObjectID: 
+    Body: 
+    NewLine: 1
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
+  NextSegment: 

@@ -5,5 +5,7 @@ public enum BlockPlantTypes
     GROUND_COVER = 1,
     STANDING = 2,
     TREES = 4,
-    ALL = GROUND_COVER | STANDING | TREES
+    WATER = 8,
+    MISC = 16,
+    ALL = GROUND_COVER | STANDING | TREES | WATER | MISC
 }

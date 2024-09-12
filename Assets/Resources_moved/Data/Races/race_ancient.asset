@@ -12,23 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_ancient
   m_EditorClassIdentifier: 
-  Key: race_ancient
   TooltipID: tooltip_race_ancient
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_races
+  - tag_can_sleep_in_sarcophagus
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 300
-  IntelligenceType: 1
+  Intelligence: intelligence_sapient
   Tags:
   - sapient
   - playable
-  StartingResearchKeys:
-  - basics0
-  - thaumaturgy0
-  - ancient_immortality_tomb0
+  - playable
   DefaultEntityID: entity_ancient
-  Diet: diet_ancient
   Public: 1
-  BuffGroupID: buffs_racial_ancient
   Perks:
   - '<sprite=14> Attuned To The Void: All ancients start with higher ranks in void-based
     skills'
   - '<sprite=1062> Air Of Superiority: Having no lungs, Ancients are unaffected by
     environments without oxygen'
+  DefaultActiveResearch: []
+  Buffs: []

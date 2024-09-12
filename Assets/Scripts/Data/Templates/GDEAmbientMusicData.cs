@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/AmbientMusic")]
-public class GDEAmbientMusicData : ScriptableObject
+public class GDEAmbientMusicData : Scriptable
 {
-	public string Key;
-
 	public string IntroID = "";
 	public string LoopID = "";
 	public int MinHour = 0;

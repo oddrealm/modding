@@ -12,33 +12,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_iron_boots
   m_EditorClassIdentifier: 
-  Key: item_iron_boots
-  Index: 140
   TooltipID: tooltip_item_iron_boots
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_item_type_gear
+  - tag_can_equip
+  - tag_item
+  - tag_item_rarity_uncommon
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  ItemSimulationID: simulation_item_default
+  ItemType: tag_item_type_gear
+  OnJobDisposedTagObjectID: 
+  ShowInTrackingByDefault: 0
+  IdleFX: 
+  PickUpFX: fx_block_item_picked_up
+  DropFX: fx_block_item_dropped
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_iron_boots
   CharacterColorMask: {fileID: 11400000, guid: 339fca2600600684ab24b63fc9cc1520, type: 2}
   AccessoryData: {fileID: 0}
-  PickUpSFX: sfx_item_pick_up_soft
-  DropSFX: sfx_item_drop_soft
-  Tags: []
-  Category: 128
   Permissions: 0
-  Inventory: inventory_feet
-  Buffs: buffs_item_iron_boots
+  Prohibited: 0
+  DietGroup: diet_group_none
+  CanStackAttacks: 1
+  FillAllSlots: 0
+  CannotBeUnequipped: 0
+  PermittedSlots:
+  - item_slot_feet
   AttackGroup: 
   StartDiscovered: 0
   MaxCountInMerchantList: 1
   GenerateNameKey: 
-  MerchantBuyValue: 520
+  MerchantBuyValue: 515
   MerchantSellValue: 103
-  TuneRating: 4
+  TuneRating: 5
+  ItemRarity: item_rarity_uncommon
   RarityType: 0
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0
   MeltThreshold: 0
   FlammableChance: 100
-  LightStrength: 0
-  LightSize: 0
   StackSize: 1
   JobOutputMod: 1
+  ArtifactID: 
+  Actions:
+  - ActionID: tag_can_equip
+    Buff:
+      TargetID: attribute_cold_tolerance
+      Amount: 1
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: 
+  - ActionID: tag_can_equip
+    Buff:
+      TargetID: attribute_toughness
+      Amount: 7
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: 
+  TimedActions: []
+  StateOptions: []

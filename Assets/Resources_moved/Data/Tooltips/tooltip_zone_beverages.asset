@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_zone_beverages
   m_EditorClassIdentifier: 
-  Key: tooltip_zone_beverages
-  Name: Beverages
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Beverages (Item Type)
+  Name: Beverages (Item Type)
+  NamePlural: 
   InlineIcon: <sprite=652>
-  InlineAndName: <sprite=652> Beverages
   Description: Milk, Purified Water, Booze and other drinkable items are stored here.
-  Action: 
   Icon: sp_zone_beverages_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.14117648, g: 0.39607847, b: 0.9568628, a: 1}
+  Type: 
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 260

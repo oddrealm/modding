@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_immortality_tomb_looted0_ancient0_d1_1
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_immortality_tomb_looted0_ancient0_d1_1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'
@@ -21,3 +26,5 @@ MonoBehaviour:
     eight years to locate my arm the last time I ran into one of those fur bags.
     Never again!
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

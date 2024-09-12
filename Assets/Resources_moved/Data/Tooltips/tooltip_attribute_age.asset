@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_age
   m_EditorClassIdentifier: 
-  Key: tooltip_attribute_age
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Age
   Name: Age
+  NamePlural: 
   InlineIcon: <sprite=116>
-  InlineAndName: <sprite=116> Age
-  Description: How old the Entity is in Days.
-  Action: 
+  Description: How old the Entity is in days. Entities that get old enough will likely
+    die of Cardiac Arrest.
   Icon: 
-  Formatting: 
-  TextColor: {r: 0.81960785, g: 0.7764706, b: 0.6666667, a: 1}
+  TextColor: {r: 0.7019608, g: 0.65882355, b: 0.5568628, a: 1}
+  Type: Attribute
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 75

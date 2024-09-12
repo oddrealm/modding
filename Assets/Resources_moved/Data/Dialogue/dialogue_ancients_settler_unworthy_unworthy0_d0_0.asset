@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_ancients_settler_unworthy_unworthy0_d0_0
   m_EditorClassIdentifier: 
-  Key: dialogue_ancients_settler_unworthy_unworthy0_d0_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_ancients_settler_unworthy_unworthy0_d0_1a
@@ -24,3 +29,36 @@ MonoBehaviour:
   - Your kind is not welcome here, Unworthy!
   - Though it makes me sick to look upon you, I cannot deny we are a dying people
     that must unify to survive.
+  FocusOnSpeaker: 1
+  DialogueSequences:
+  - ID: seq_leave_settlement0
+    Text: You're forcing me to leave?
+    IsStartingSequence: 0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionB:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 

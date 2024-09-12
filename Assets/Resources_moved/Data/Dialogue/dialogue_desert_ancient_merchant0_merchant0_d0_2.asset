@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_desert_ancient_merchant0_merchant0_d0_2
   m_EditorClassIdentifier: 
-  Key: dialogue_desert_ancient_merchant0_merchant0_d0_2
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_desert_ancient_merchant0_merchant0_d0_3
   SpeakerTarget: '#desert_ancient_merchant0'
   Message: Not the most conversational creatures...
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

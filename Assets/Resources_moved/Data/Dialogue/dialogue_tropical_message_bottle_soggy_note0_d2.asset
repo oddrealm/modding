@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_tropical_message_bottle_soggy_note0_d2
   m_EditorClassIdentifier: 
-  Key: dialogue_tropical_message_bottle_soggy_note0_d2
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: $Soggy Note
   Message: '{pz#message_bottle_treasure} depths for unknown loot \n{pz#message_bottle_treasure}
     pirates under deep down root'
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

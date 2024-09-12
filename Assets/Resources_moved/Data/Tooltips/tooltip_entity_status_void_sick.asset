@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_void_sick
   m_EditorClassIdentifier: 
-  Key: tooltip_entity_status_void_sick
-  Name: Void Sick (Status)
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Void Sick
+  Name: Void Sick
+  NamePlural: 
   InlineIcon: <sprite=579>
-  InlineAndName: <sprite=579> Void Sick (Status)
-  Description: Needs to sleep in a Void Sarcophagus.
-  Action: 
+  Description: Void Sickness is a symptom of prolonged time without regenerating
+    in the Immortality Tomb. Sleep in a Voidweave Sarcophagus will remove this affect.
   Icon: 
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7803922, g: 0.13725491, b: 0.47450984, a: 1}
+  Type: Status
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2697

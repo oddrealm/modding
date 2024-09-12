@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d00b2297d00b5469484bfed9ac832d, type: 3}
+  m_Name: entity_age_dog_adult
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_entity_age_adult
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AgeType: 2
+  Max: 18
+  Min: 4
+  CanRespec: 0
+  Statuses:
+  - StatusID: entity_status_adult
+    Chances: 10000
+    AddAgeToChances: 1

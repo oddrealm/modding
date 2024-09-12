@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_dirt_clod
   m_EditorClassIdentifier: 
-  Key: tooltip_item_dirt_clod
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
+  Action: Dirt Clod
   Name: Dirt Clod
+  NamePlural: 
   InlineIcon: <sprite=149>
-  InlineAndName: <sprite=149> Dirt Clod
   Description: 
-  Action: 
   Icon: sp_dirt_clod_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.5377358, g: 0.38300994, b: 0.38300994, a: 1}
+  Type: Item
+  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
+  Order: 836

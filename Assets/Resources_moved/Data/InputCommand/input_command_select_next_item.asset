@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
+  m_Name: input_command_select_next_item
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_input_select_next_item
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Category: 5
+  InputState: 127
+  DeferTo: []
+  DefaultTriggers: []
+  ActiveUpdate: 1
+  ActiveUpdateDelaySeconds: 0
+  CanTriggerOverUI: 1
+  CanTriggerOutsideScreen: 1
+  IsToggle: 0
+  BtnsForceActive: 0
+  MaxIncrement: 1
+  PlayerCanEdit: 1
+  PrintEvents: 0

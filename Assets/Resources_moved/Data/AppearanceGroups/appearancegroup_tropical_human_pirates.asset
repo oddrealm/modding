@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73406e94010f24d46831d5550455a7b5, type: 3}
   m_Name: appearancegroup_tropical_human_pirates
   m_EditorClassIdentifier: 
-  Key: appearancegroup_tropical_human_pirates
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceIDs:
   - app_adult_human_pirate_fa0
   - app_adult_human_pirate_ma0

@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c569ac7783be4fb3bdeeb8503220d, type: 3}
   m_Name: dialoguegroup_shared_midgame_wild_two_bandits_group0_flee_return
   m_EditorClassIdentifier: 
-  Key: dialoguegroup_shared_midgame_wild_two_bandits_group0_flee_return
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   DialogueIDs:
   - dialogue_shared_midgame_wild_two_bandits_group0_flee_return0_d0

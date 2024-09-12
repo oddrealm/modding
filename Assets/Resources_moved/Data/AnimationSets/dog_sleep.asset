@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: dog_sleep
   m_EditorClassIdentifier: 
-  Key: dog_sleep
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 7af7740d1c2f88647ad5c759a3ad39bf, type: 2}
   UpAnimation: {fileID: 11400000, guid: 8397003e034844d4bbfbf0322f39192a, type: 2}
   DownAnimation: {fileID: 11400000, guid: d884d47eb34b8a040b2bac76f018ecef, type: 2}

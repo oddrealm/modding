@@ -12,58 +12,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: block_fire
   m_EditorClassIdentifier: 
-  Key: block_fire
-  Index: 11
-  Tags:
-  - fire
-  PhysicsHeatSource: 100
-  PhysicsHeatPass: 0.95
   TooltipID: tooltip_block_fire
-  Visuals:
-  - visuals_block_fire
-  TriggerFaction: 7
-  Triggers: 1
-  TriggerActions: 64
-  TriggerStatuses: []
-  TriggerAttacks: []
-  TriggerSFX: 
-  CanSupportWeight: 0
-  CanHavePlants: 0
-  IsFertile: 0
-  CanHaveFish: 0
-  SoilQuality: 0
-  PhysicsTypes: 1544
-  PhysicHeatSinkTemp: 0
-  FXPhysicsTypes: 0
-  PhysicsUnstableFX: []
-  PhysicsFillFX: []
-  PhysicsClearBlock: 0
-  PhysicsSolidBlock: -1
-  PhysicsLiquidBlock: -1
-  PhysicsGasBlock: -1
-  MinTemperature: 100
-  MaxTemperature: 100
-  Toughness: 0
-  MaxItemCount: 50
-  ItemCategoryRestriction: 0
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_block_fire
+  - tag_heat_source
+  DiscoveryDependencies:
+  - blueprint_block_fire
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DefaultFill: block_fill_air
+  TriggerConditions: []
+  Triggers: []
+  RevealDistance: 0
+  TemperatureSource: 100
+  IsRotationFixture: 0
+  SkillLevel: 0
+  MaxItemCount: 5
+  ItemTypePermissions: []
   CanShowItems: 1
   RestrictItemsToSameKey: 1
+  DecayBuff: 0
+  RemoveItemDrops: spawns_block_drop_fire
+  VerticalEntityLift: 0
+  IsObstruction: 0
+  IsVerticalAccess: 0
+  PermittedPathsAbove: -1
+  PermittedPaths: -1
+  VerticalMovementMod: 1
+  HorizontalMovementMod: 10
+  MovementCost: 3
+  VerticalMoveRequiresClimb: 1
+  ForceFocusDirection: 0
   Permissions: 2560
+  PermissionsAbove: 0
+  Prohibited: 0
+  ProhibitedAbove: 0
+  Layer: 1
+  ProhibitedLayers: 4
+  CanHaveRoom: 1
+  CanHavePlatform: 1
+  PermittedPlantTypes: 0
+  IsFertile: 0
+  CanSitAt: 0
+  IsSpotlight: 0
+  Visuals:
+  - visuals_block_fire
+  TriggerOffsetX: 0
+  TriggerOffsetY: 0
+  HasItemsOffsetX: 0
+  HasItemsOffsetY: 0
+  FullCapacityOffsetX: 0
+  FullCapacityOffsetY: 0
+  IdleFX: fx_fire_big
   AddSFX: sfx_fire
   RemoveSFX: 
   InteractSFX: sfx_fire
-  FlammableChance: 0
-  DecayBuff: 0
-  Level: 1
-  RemoveItemDrops: isg_block_drop_fire
-  VerticalMovementMod: 1
-  HorizontalMovementMod: 10
-  CanBeLocked: 0
-  LockedMovementFlags: 0
-  RestrictedMovementFlags: 0
-  MovementCost: 50
-  VerticalMoveRequiresClimb: 1
-  ForceFocusDirection: 0
-  IsObstruction: 0
-  CanHaveRoom: 1
-  IsVerticalAccess: 0
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  BlockimulationID: simulation_fire
+  StateOptions: []

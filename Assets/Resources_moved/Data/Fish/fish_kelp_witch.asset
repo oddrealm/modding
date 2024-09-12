@@ -12,14 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b82001461fc34e9d1cf053d56a7e5, type: 3}
   m_Name: fish_kelp_witch
   m_EditorClassIdentifier: 
-  Key: fish_kelp_witch
   TooltipID: tooltip_fish_kelp_witch
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Level: 4
   AnimController: large_fish_animations
   IdealDepthMin: 0
   IdealDepthmax: 15
-  LureRollAdd: -500
   BaseHealth: 1000
   BaseToughness: 50
   BaseEvasion: 0
-  ItemSpawnGroupID: isg_fish_kelp_witch
+  ItemSpawnGroupID: spawns_fish_kelp_witch
+  FishColorR: {r: 0.6132076, g: 0.046279818, b: 0.42164367, a: 1}
+  FishColorG: {r: 0.6603774, g: 0.14328942, b: 0.2541022, a: 1}
+  FishColorB: {r: 0.9150943, g: 0.5179779, b: 0.76662976, a: 1}
+  Biomes:
+  - biome_tundra
+  - biome_tundra_forest
+  - biome_tundra_mountain
+  - biome_barren
+  - biome_barren_forest
+  - biome_barren_mountain

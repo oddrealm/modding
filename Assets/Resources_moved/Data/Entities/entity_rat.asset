@@ -12,55 +12,314 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_rat
   m_EditorClassIdentifier: 
-  Key: entity_rat
   TooltipID: tooltip_entity_rat
-  Size: 2
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: -1
+  MaxDefaultSimTime: 14400
+  EntitySimulationID: simulation_entity_default
+  SizeTagID: tag_entity_size_medium
+  LanguagesSpoken: []
+  DefaultLeaderRoles:
+  - 
   CompanionType: 1
-  CompanionPermanenceType: 3
+  CompanionPermanenceType: -1
   ReproductionType: 1
+  MaxChildren: 3
+  OnMateStatus: entity_status_pregnant_rat
+  OnMateFX: fx_entity_union
+  OnMateSFX: sfx_mate
+  CanBreathUnderWater: 0
+  TakeLastNameOfFamilyMembers: 0
   ReproductionIntervalMinutes: 2880
-  ReproductionCount: 5
-  TakeLastNameOfCompanion: 0
+  RequiredReproductionRoom: room_animal_enclosure
   GenerateNameKey: 
-  InherentWorkAttacks: attack_group_hand_skills_fallback
   InherentCombatAttacks: attack_group_rat
-  ProhibitedSkillTypes: 67074047
-  DefaultSkillTypes: 0
-  ProhibitedProfessionTypes: 8372223
-  PermittedRandomProfessions: 0
+  SkillPermissions:
+  - SkillID: skill_alchemy
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_all
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_animal_husbandry
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_carry
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_cook
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_craft_cloth
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_craft_leather
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_craft_metal
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_craft_stone
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_craft_void
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_craft_wood
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_deconstruct
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_fight_magic
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_fight_melee
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
+  - SkillID: skill_fight_range
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_fish
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_log
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_loot
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_mine
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_misc
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_none
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_plant
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_summoning
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_survival
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_time_weave
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_unused2
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_unused3
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_unused4
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_unused5
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_unused6
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_writing
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  ProfessionPermissions:
+  - ProfessionID: profession_alchemist
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_arcanist
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_archer
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_blacksmith
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_carpenter
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_cook
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_farmer
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_fisherman
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_forester
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_gwnri
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_gwnvayth
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_laborer
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_leatherworker
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_mage
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_miner
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_none
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_scholar
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_shepherd
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_stone_mason
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_summoner
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_tailor
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_technochron
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_thaumaturge
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_unassigned
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_warrior
+    CanAssign: 0
+    CanSpawnWith: 0
   Race: race_rat
-  EquippableTypes: 0
+  PermittedItemSlots: []
   PathingType: 1
-  SleepPointTag: 
   DefaultTuning: entity_tuning_rat
-  DeathItemSpawnGroup: isg_entity_death_rat
+  DeathItemSpawnGroup: spawns_entity_death_rat
   PreyRaces: []
-  AttributeActions: []
-  DefaultPickUpBlueprint: blueprint_pick_up_item
-  DefaultDropOffBlueprint: blueprint_drop_off_item
-  Statuses: []
-  PermittedAges:
-  - Min: 0
-    Max: 1
-    CanRespec: 0
-    AgeType: 1
+  ProhibitedStatuses: []
+  Statuses:
+  - entity_status_metabolism
+  - entity_status_aging_by_day
+  Ages:
+  - entity_age_rat_child
+  - entity_age_rat_adult
+  - entity_age_rat_elder
+  Diets:
+  - TagObjectID: tag_cooked_food
+    Priority: 0
+    Buffs: []
+    Statuses: []
+  - TagObjectID: tag_item_type_vegetable
+    Priority: 3
+    Buffs: []
     Statuses:
-    - entity_status_child
-    RandomStatuses: []
-  - Min: 2
-    Max: 10
-    CanRespec: 1
-    AgeType: 2
+    - entity_status_well_fed
+  - TagObjectID: tag_item_type_plant_material
+    Priority: 3
+    Buffs: []
     Statuses:
-    - entity_status_adult
-    RandomStatuses: []
-  - Min: 11
-    Max: 99
-    CanRespec: 1
-    AgeType: 4
+    - entity_status_well_fed
+  - TagObjectID: tag_item_type_grain
+    Priority: 3
+    Buffs: []
     Statuses:
-    - entity_status_elder
-    RandomStatuses:
-    - Chances: 10
-      StatusID: entity_status_cardiac_arrest
-      AddAgeToChances: 1
+    - entity_status_well_fed
+  - TagObjectID: tag_item_type_water
+    Priority: 3
+    Buffs: []
+    Statuses:
+    - entity_status_hydrated
+  AutoJobs:
+  - BlueprintID: blueprint_eat_item
+    Settings:
+      Priority: 3
+      Enabled: 1
+      AutoJobType: 1
+  - BlueprintID: blueprint_drink_item
+    Settings:
+      Priority: 3
+      Enabled: 1
+      AutoJobType: 1
+  - BlueprintID: blueprint_drink_from_water
+    Settings:
+      Priority: 4
+      Enabled: 1
+      AutoJobType: 1
+  - BlueprintID: blueprint_sleep_on_ground
+    Settings:
+      Priority: 3
+      Enabled: 1
+      AutoJobType: 1
+  Attributes:
+  - AttributeID: attribute_age
+    StartingBase: 1
+  - AttributeID: attribute_ambient_temperature
+    StartingBase: 50
+  - AttributeID: attribute_attack_speed_mod
+    StartingBase: 0
+  - AttributeID: attribute_climb_speed
+    StartingBase: 2
+  - AttributeID: attribute_cold_tolerance
+    StartingBase: 0
+  - AttributeID: attribute_crit_rate
+    StartingBase: 1
+  - AttributeID: attribute_damage_ignore_rate
+    StartingBase: 0
+  - AttributeID: attribute_energy
+    StartingBase: 100
+  - AttributeID: attribute_evasion
+    StartingBase: 10
+  - AttributeID: attribute_happiness
+    StartingBase: 100
+  - AttributeID: attribute_health
+    StartingBase: 13
+  - AttributeID: attribute_hunger
+    StartingBase: 100
+  - AttributeID: attribute_level
+    StartingBase: 1
+  - AttributeID: attribute_move_speed
+    StartingBase: 24
+  - AttributeID: attribute_none
+    StartingBase: 0
+  - AttributeID: attribute_oxygen
+    StartingBase: 100
+  - AttributeID: attribute_sight_range
+    StartingBase: 128
+  - AttributeID: attribute_temperature
+    StartingBase: 50
+  - AttributeID: attribute_thirst
+    StartingBase: 100
+  - AttributeID: attribute_toughness
+    StartingBase: 0
+  - AttributeID: attribute_xp
+    StartingBase: 0
+  Biomes:
+  - biome_desert
+  - biome_desert_mountain
+  - biome_ocean
+  - biome_taiga
+  - biome_taiga_forest
+  - biome_taiga_hills
+  - biome_taiga_mountain
+  - biome_tropical
+  - biome_tropical_forest
+  - biome_tropical_mountain
+  StateOptions: []

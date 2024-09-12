@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_water_from_well
   m_EditorClassIdentifier: 
-  Key: tooltip_item_water_from_well
-  Name: Draw Water From Well
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
+  Action: Draw Well Water
+  Name: Draw Well Water
+  NamePlural: 
   InlineIcon: <sprite=653>
-  InlineAndName: <sprite=653> Draw Water From Well
-  Description: 
-  Action: 
+  Description: Wells slowly fill up with water and can be drawn from when full.
   Icon: sp_water_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.12156863, g: 0.34509805, b: 0.83137256, a: 1}
+  Type: Item
+  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
+  Order: 857

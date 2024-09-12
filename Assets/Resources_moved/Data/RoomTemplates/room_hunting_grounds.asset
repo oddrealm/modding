@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
+  m_Name: room_hunting_grounds
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_room_hunting_grounds
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_agriculture
+  ResearchKey: research_agriculture_animals1
+  MaxRoomAmount: -1
+  OccupantGroups:
+  - occupant_group_hunting_grounds
+  Visuals:
+  - visuals_room_display_hunting_grounds
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_free_entity
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_capture_entity
+    Settings:
+      Priority: 3
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []

@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_human
   m_EditorClassIdentifier: 
-  Key: race_human
   TooltipID: tooltip_race_human
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_races
+  - tag_can_sleep_in_bed
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 100
-  IntelligenceType: 1
+  Intelligence: intelligence_sapient
   Tags:
   - sapient
-  - playable
-  StartingResearchKeys:
-  - basics0
-  - farm0
-  - campfire_cook0
-  - human_home0
   DefaultEntityID: entity_human
-  Diet: diet_human
   Public: 1
-  BuffGroupID: buffs_racial_human
   Perks:
-  - '<sprite=54> Resourceful: Humans naturally find more resources.'
+  - '<sprite=54> Resourceful: Humans start with higher skills'
+  DefaultActiveResearch: []
+  Buffs: []

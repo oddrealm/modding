@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_laborer
   m_EditorClassIdentifier: 
-  Key: tooltip_profession_laborer
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Laborer
   Name: Laborer
+  NamePlural: 
   InlineIcon: <sprite=554>
-  InlineAndName: <sprite=554> Laborer
-  Description: Laborers are specialized in carrying items.
-  Action: 
+  Description: Laborers are specialized at hauling items.
   Icon: sp_profession_laborer_icon
-  Formatting: 
-  TextColor: {r: 0.5372549, g: 0.4431373, b: 0.40000004, a: 1}
+  TextColor: {r: 0.6792453, g: 0.44833255, b: 0.2979708, a: 1}
+  Type: Profession
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1366

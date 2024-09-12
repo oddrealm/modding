@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
+  m_Name: ccm_haast_fa0
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Priority: 0
+  Pairs:
+  - BodyPart: 3
+    Target: {r: 1, g: 0.8962264, b: 0.9815729, a: 1}
+  - BodyPart: 4
+    Target: {r: 0.5176471, g: 0.117647044, b: 0.26597393, a: 1}
+  - BodyPart: 8
+    Target: {r: 0.3019608, g: 0, b: 0.1924186, a: 1}
+  - BodyPart: 64
+    Target: {r: 0.74509805, g: 0.1960784, b: 0.6224025, a: 1}
+  - BodyPart: 432
+    Target: {r: 0.745283, g: 0.38670343, b: 0.52350503, a: 1}

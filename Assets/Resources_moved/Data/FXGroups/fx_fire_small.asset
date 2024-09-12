@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ec635f4f9775e48abecd47b87e9d58, type: 3}
   m_Name: fx_fire_small
   m_EditorClassIdentifier: 
-  Key: fx_fire_small
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   FX:
   - fx_block_fire_small

@@ -3,16 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Faction")]
-public class GDEFactionData : ScriptableObject
+public class GDEFactionData : Scriptable
 {
-    public string Key;
-
-    public FactionTypes FactionType = FactionTypes.NONE;
-    public FactionTypes EnemyFactionType = FactionTypes.NONE;
+    public string[] EnemyFactions;
+    public HashSet<string> EnemyFactionsHash = new HashSet<string>();
     public bool IsPlayerControlled = false;
     public bool CanRespec = false;
-    public string TooltipID = "";
     public Color SelectionColor = Color.white;
     public Color CursorHoverColor = Color.white;
-    //public bool LimitMovementToRooms = false;
+    public FactionTypes FactionPathing = FactionTypes.PLAYER;
+    public List<string> Statuses = new List<string>();
+
+#if ODD_REALM_APP
+    public override void OnLoaded()
+    {
+        base.OnLoaded();
+
+        for (int i = 0; EnemyFactions != null && i < EnemyFactions.Length; i++)
+        {
+            EnemyFactionsHash.Add(EnemyFactions[i]);
+        }
+    }
+#endif
 }

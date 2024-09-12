@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86ebf3cf42b684cb06c9616041dc72, type: 3}
   m_Name: season_tundra_winter
   m_EditorClassIdentifier: 
-  Key: season_tundra_winter
   TooltipID: tooltip_season_tundra_winter
-  SeasonType: 3
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeasonGroup: winter
   SeasonStart: 38
+  DefaultWeather: weather_tundra_winter_snow
   Weather:
   - weather_tundra_winter_calm
   - weather_tundra_winter_wind

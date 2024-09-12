@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50843e8828701a945bd755b6a21e0133, type: 3}
   m_Name: discovery_names_caves_easy
   m_EditorClassIdentifier: 
-  Key: discovery_names_caves_easy
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Determiner:
   - The
   Prepends:

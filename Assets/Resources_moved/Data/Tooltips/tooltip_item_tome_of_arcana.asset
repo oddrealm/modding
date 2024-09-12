@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_tome_of_arcana
   m_EditorClassIdentifier: 
-  Key: tooltip_item_tome_of_arcana
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
+  Action: Tome of Arcana
   Name: Tome of Arcana
+  NamePlural: 
   InlineIcon: <sprite=1072>
-  InlineAndName: <sprite=1072> Tome of Arcana
   Description: This tome can be used to unlock new research in Arcana.
-  Action: 
   Icon: sp_tome_of_arcana_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.6392157, g: 0.40000004, b: 0.7725491, a: 1}
+  Type: Item
+  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
+  Order: 2518

@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_tutorial_ancient_void_woken_death0
   m_EditorClassIdentifier: 
-  Key: dialogue_tutorial_ancient_void_woken_death0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'
   Message: It was only a matter of time before our Void Woken were dragged back to
     the Void.
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

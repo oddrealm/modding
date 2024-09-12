@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_ancient_proximity_army_leader0
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_ancient_proximity_army_leader0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'
   Message: 'You should have heeded our earlier warnings. Prepare yourselves for battle. '
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
+  m_Name: plant_tree_tthdir_root
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_plant_tree_tthdir_root
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxLifeTime: -1
+  ReproduceTimeInterval: 14400
+  MaxNaturalSpawnCount: 0
+  MaxNaturalReproduceCount: 0
+  ReproductionPlant: plant_tree_tthdir_sapling
+  MaxDefaultSimTime: 14400
+  MatureThreshold: 0.5
+  MatureTag: tag_mature_tree
+  LimitGroupSizeThreshold: 2500
+  RemoveItemDrops: spawns_tree_spring_tthdir_trunk
+  MatureItemDrops: 
+  MatureTagObjectSpawn: 
+  AutoClearOnMature: 0
+  SpawnItemsOnAutoClear: 0
+  GrowthStages: 1
+  HealthMax: -1
+  HydrationMax: -1
+  HydrationDecay: -1
+  DehydratedTag: tag_can_be_watered
+  HydrationTooltip: tooltip_plant_hydration
+  HydrationJob: blueprint_water_plant
+  MinLight: -1
+  FillRequirement: 
+  NeedsFertileSoil: 0
+  MaxTemp: 95
+  MinTemp: -100
+  PlantSimulationID: simulation_tree_root_default
+  UseLocalFaunaReproduceMod: 0
+  Seasons: []
+  IsObstruction: 1
+  PermittedPaths: 0
+  NeedsSupport: 0
+  FruitingTag: tag_mature_fruit
+  FruitItemDrops: item_tthdir_tree_seed
+  FruitMaxCount: 1
+  FruitMinInterval: 1440
+  FruitMaxInterval: 4320
+  FruitSeasons: []
+  FruitVisuals: 
+  LayerPriority: 0
+  Layer: 64
+  ProhibitedLayers: 0
+  Permissions: 2
+  Prohibited: 263168
+  MaturePermissions: 0
+  MatureProhibitions: 0
+  PlantType: 4
+  PlantPermission: 0
+  CanHaveGroup: 1
+  Visuals:
+  - visuals_plant_tree_tthdir_root
+  RemoveFX: fx_remove_tree_trunk
+  Actions: []
+  StateOptions:
+  - OptionID: tree_trunk
+    TagObjectID: plant_tree_tthdir_trunk
+  - OptionID: tree_root
+    TagObjectID: plant_tree_tthdir_root

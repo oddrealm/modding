@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2634f9e7acc089749996e3db72403e67, type: 3}
+  m_Name: block_fill_ice
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_block_fill_ice
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Permissions: 0
+  Prohibited: 0
+  PermissionsAbove: 0
+  ProhibitedAbove: 0
+  MovementCost: 0
+  FillPriority: 1
+  MaxMass: 100
+  FillNeighborBlocksOnNew: 0
+  IsObstruction: 1
+  IsVerticalAccess: 0
+  FullThreshold: 90
+  EmptyThreshold: 10
+  FreezeThreshold: 0
+  MeltThreshold: 1
+  BurnThreshold: 100
+  EmptyFill: block_fill_air
+  SettledVisuals: visuals_block_ice
+  UnsettledVisuals: visuals_block_ice
+  FillFX: 
+  EmptyFX: 
+  BackgroundIcon: sp_block_fill_ice_background_icon
+  MidgroundIcon: 
+  ForegroundIcon: sp_block_fill_ice_foreground_icon
+  MaxDefaultSimTime: 14400
+  FillSimulationID: simulation_ice_default

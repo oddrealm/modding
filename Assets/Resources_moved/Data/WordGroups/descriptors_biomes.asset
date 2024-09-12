@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f5567e91398a049bdbe2cc1baaf57e, type: 3}
   m_Name: descriptors_biomes
   m_EditorClassIdentifier: 
-  Key: descriptors_biomes
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Words:
   - Abandoned
   - Abandoned

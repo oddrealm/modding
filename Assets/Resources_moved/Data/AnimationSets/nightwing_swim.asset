@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: nightwing_swim
   m_EditorClassIdentifier: 
-  Key: nightwing_swim
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 95dd57af025d802449a75f9832bf4bd4, type: 2}
   UpAnimation: {fileID: 11400000, guid: 60d6c467f0721da47ba95b2bf21b64ca, type: 2}
   DownAnimation: {fileID: 11400000, guid: 53c4b158ab66e4a47a83bba2db3a4489, type: 2}

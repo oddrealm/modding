@@ -12,22 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2306836ee8b4298459405f228e2dabb0, type: 3}
   m_Name: overworld_map_gen_tropical
   m_EditorClassIdentifier: 
-  Key: overworld_map_gen_tropical
-  BuildPriority: 1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BuildPriority: 15
   SeedOffset: 50
-  Frequency: 20
+  Frequency: 5
   Octaves: 2
-  Persistence: 1
-  Lacunarity: 2
-  MinThreshold: 0.8
+  Persistence: 2
+  Lacunarity: 3
+  MinThreshold: 0.85
   MaxThreshold: 1
-  Falloff: 0.5
-  UseBotTopMinMax: 0
-  TopMax: 0.9
+  Falloff: 0.3
+  UseBotTopMinMax: 1
+  FadeBotTopMinMax: 0
+  TopMax: 0.85
   TopMin: 0.5
   BotMax: 0.5
-  BotMin: 0.1
-  UseLongitudinalFade: 1
+  BotMin: 0.15
+  UseLongitudinalFade: 0
   UseLateralFade: 0
   InvertLongitudinalFade: 0
   InvertLateralFade: 0

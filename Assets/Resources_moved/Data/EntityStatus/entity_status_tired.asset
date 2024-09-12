@@ -12,21 +12,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_tired
   m_EditorClassIdentifier: 
-  Key: entity_status_tired
   TooltipID: tooltip_entity_status_tired
-  HasEntityInfo: 0
-  ShowToPlayer: 1
-  Indicator: indicator_tired
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIconOnToolbar: 1
+  ShowIndicator: 0
   Notification: 
-  BuffGroup: 
-  OverworldPartyActionGroup: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
-  ActivateIntervals: 0
-  ActivateItems: 
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
-  CooldownMin: 0
-  CooldownMax: 0
-  EntitiesToSpawnOnExpire: 
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  Actions:
+  - ConditionTarget: 
+    HideInTooltips: 0
+    Comment: Slow movement
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 4
+    Buffs:
+    - TargetID: attribute_move_speed
+      Amount: -4
+      Max: 0
+      Permanent: 0
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+  - ConditionTarget: attribute_energy
+    HideInTooltips: 0
+    Comment: Remove Tired if energy is full
+    ActivationID: 
+    Conditions:
+    - rid: 8269333808373301716
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 5
+    DeactivationAction: 0
+    Buffs: []
+    Statuses:
+    - entity_status_tired
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 8269333808373301716
+      type: {class: GreaterThanEqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 100
+        Normalized: 0

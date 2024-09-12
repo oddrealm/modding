@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
+  m_Name: spawns_biome_plants_tundra
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_spawns_biome_plants_tundra
+  DiscoveryDependencies: []
+  MapColor: {r: 0.15688625, g: 0.7830189, b: 0.121885024, a: 1}
+  SeedOffset: 454131
+  MaxIterations: 1
+  MinIterations: 1
+  Spawns:
+  - Comment: Plants
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.05
+    TagObjectID: 
+    TagID: tag_biome_plants_tundra
+  - Comment: Trees
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.025
+    TagObjectID: 
+    TagID: tag_biome_trees_tundra
+  - Comment: Grass
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.5
+    TagObjectID: 
+    TagID: tag_biome_grass_tundra
+  - Comment: Props (Boulders and such)
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.025
+    TagObjectID: 
+    TagID: tag_biome_props_tundra
+  - Comment: Chance for spawning nothing
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.4
+    TagObjectID: 
+    TagID: 

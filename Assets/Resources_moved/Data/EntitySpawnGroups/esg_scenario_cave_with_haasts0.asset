@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
+  m_Name: esg_scenario_cave_with_haasts0
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  FriendlyName: 'Spawns:'
+  Spawns:
+  - EntityId: entity_haast
+    EntityTag: 
+    EntityProfession: profession_none
+    EntityGender: random
+    EntityCount: 10
+    SameRoomAsPlayer: 0
+    EntityFaction: 4
+    EntityTuning: 
+    EntityAppearance: 
+    SpawnRate: 900
+    AgeType: 2
+    ScenarioID: 
+    SchemaID: 
+    SpawnEntityFromItem: 0
+    AutoGenEquipment: 1
+    AutoGenInventory: 1
+    DisableItemEquipFromTuning: 0
+    EquippedItems: []
+    AddedStatuses: []

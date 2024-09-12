@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
+  m_Name: attack_bite_direct_venom
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_attack_bite_direct_venom
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ShowOnAttacksDisplay: 1
+  ActivationWeight: 100
+  ProjectileType: 0
+  FiringType: 1
+  ActivationType: 1
+  DamageType: 0
+  AttackFishInRange: 0
+  SkillID: skill_fight_melee
+  AddSkillToOutput: 1
+  MinAmount: 5
+  MaxAmount: 15
+  Range: 14
+  StatusesToApplyToTarget:
+  - entity_status_poisoned
+  SourceAction: 0
+  SourceAttributeID: 
+  TargetAction: 1
+  TargetAttributeID: attribute_health
+  TargetAmountMin: 0
+  TargetAmountMax: 2147483647
+  AnimationTrigger: 2
+  AnimationHitEvent: 1
+  OriginFX: []
+  HitFX: []
+  PrimeFX: []
+  FiredSFX: 
+  CompletedSFX: sfx_attack_default
+  BlockedSFX: 
+  AttackStartTargetColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartTargetColorDuration: 0
+  AttackStartTargetColorFlashType: 1
+  AttackStartSourceColor: {r: 0, g: 0, b: 0, a: 0}
+  AttackStartSourceColorDuration: 0
+  AttackStartSourceColorFlashType: 1

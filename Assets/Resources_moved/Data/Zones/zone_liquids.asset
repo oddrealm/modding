@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8d54d958bb52746bbda34a427ca237, type: 3}
   m_Name: zone_liquids
   m_EditorClassIdentifier: 
-  Key: zone_liquids
   TooltipID: tooltip_zone_liquids
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Visuals: visuals_zone_liquids
   VisibleToPlayer: 0
-  OrderIndex: 9
+  OrderIndex: 11
   ItemPermissions: 512
+  ShowLowNotifByDefault: 0
+  HideIfZeroByDefault: 0

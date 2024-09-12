@@ -12,19 +12,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_animal_enclosure
   m_EditorClassIdentifier: 
-  Key: room_animal_enclosure
-  ActivationType: 1
-  CanEditOwnersAndStockpiles: 1
-  Enabled: 1
-  Stockpile: room_stockpiles_animal_enclosure
-  ResearchKey: animals0
-  Owners:
-  - room_owner_shepherds
-  - room_owner_animals
-  DefaultAutoJobBlueprints:
-  - blueprint_animal_mating
-  InterfaceInfo: interface_info_room_animal_enclosure
   TooltipID: tooltip_room_animal_enclosure
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_agriculture
+  ResearchKey: research_agriculture_animals0
+  MaxRoomAmount: -1
+  OccupantGroups:
+  - occupant_group_animal_enclosure_shepherds
+  - occupant_group_animal_enclosure_animals
   Visuals:
   - visuals_room_display_animal_enclosure
-  - visuals_room_display_animal_enclosure_background
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_animal_milking
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_animal_sheering
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_fodder
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_tallow_grass_hay
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 1
+    ResourcePermissions:
+    - TagObjectKey: tag_item_type_water
+      Min: -1
+      Max: -1
+    - TagObjectKey: tag_item_type_egg
+      Min: -1
+      Max: -1
+  - BlueprintID: blueprint_animal_butcher
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []

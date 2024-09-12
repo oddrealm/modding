@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
   m_Name: location_names_ancient_settlements
   m_EditorClassIdentifier: 
-  Key: location_names_ancient_settlements
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Determiner: []
   Prepends:
   - Chell
@@ -22,5 +27,31 @@ MonoBehaviour:
   - Itan
   - Lan
   - Moon
+  - Max
+  - O
+  - Ot
+  - Pit
+  - Piy
+  - Q
+  - Qui
+  - Quay
+  - Qix
+  - Rix
+  - Rin
+  - Raz
+  - Sil
+  - Set
+  - Tx
+  - Tet
+  - Undel
+  - Unx
+  - Unzee
+  - Way
+  - Wex
+  - V
+  - Vaz
+  SpaceAfterPrepend: 0
   Names:
   - '''ogo'
+  SpaceBeforeAppend: 0
+  Appends: []

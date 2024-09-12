@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/CharacterColorMaskData")]
-public class GDECharacterColorMaskData : ScriptableObject
+public class GDECharacterColorMaskData : Scriptable
 {
-    public string Key;
-
     [System.Serializable]
     public class BodyPartColorPair
     {

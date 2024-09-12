@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ad05e997fe71fa44acd3baf9d3fe1ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 2761919d9bfd3e148a72a5ad9fa3141b, type: 3}
   m_Name: shimmer
   m_EditorClassIdentifier: 
-  Key: shimmer
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Sets:
   - {fileID: 11400000, guid: 0ba7fec179e2f954f99b5ad99ac6fdc7, type: 2}
   - {fileID: 11400000, guid: 085592785e017c443abfb22608afb724, type: 2}

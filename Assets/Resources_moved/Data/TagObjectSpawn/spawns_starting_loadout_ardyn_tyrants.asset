@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
+  m_Name: spawns_starting_loadout_ardyn_tyrants
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeedOffset: 344785
+  MaxIterations: 1
+  MinIterations: 1
+  Spawns:
+  - Comment: 
+    MinCount: 100
+    MaxCount: 100
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_ren
+    TagID: 
+  - Comment: 
+    MinCount: 20
+    MaxCount: 20
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_astralite
+    TagID: 
+  - Comment: 
+    MinCount: 10
+    MaxCount: 10
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_nyctium
+    TagID: 
+  - Comment: 
+    MinCount: 30
+    MaxCount: 30
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_fodder
+    TagID: 
+  - Comment: 
+    MinCount: 10
+    MaxCount: 10
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_water
+    TagID: 
+  - Comment: 
+    MinCount: 2
+    MaxCount: 2
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_tome_of_agriculture
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_tome_of_industry
+    TagID: 

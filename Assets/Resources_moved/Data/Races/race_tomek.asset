@@ -12,18 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_tomek
   m_EditorClassIdentifier: 
-  Key: race_tomek
   TooltipID: tooltip_race_tomek
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_races
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 250
-  IntelligenceType: 1
+  Intelligence: intelligence_sapient
   Tags:
   - sapient
-  StartingResearchKeys: []
   DefaultEntityID: entity_tomek
-  Diet: diet_tomek
   Public: 1
-  BuffGroupID: 
   Perks:
   - '<sprite=81> Stone Skin: Tomek have a natural toughness of +5'
   - '<sprite=10> Deep Rock Dwellers: Tomek are expert miners and get a 5 point bonus
     to mining'
+  DefaultActiveResearch: []
+  Buffs: []

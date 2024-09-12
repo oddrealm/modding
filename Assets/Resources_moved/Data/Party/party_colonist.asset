@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e5796ebfde4de42b4d2b729764e81a, type: 3}
+  m_Name: party_colonist
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_party_colonist
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ArrivalNotif: notif_overworld_party_colonists
+  MaxMemberSize: 5
+  MinMemberSize: 1
+  AutoGenMemberSize: 0
+  RandomizeMembers: 0
+  MemberTunings: []
+  FactionOverride: 

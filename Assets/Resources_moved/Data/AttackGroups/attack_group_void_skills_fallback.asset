@@ -12,30 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4633816f5b17345921387ce966b49a, type: 3}
   m_Name: attack_group_void_skills_fallback
   m_EditorClassIdentifier: 
-  Key: attack_group_void_skills_fallback
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Attacks:
-  - attack_void_log_direct
-  - attack_void_craft_wood_direct
-  - attack_void_craft_stone_direct
-  - attack_void_craft_metal_direct
-  - attack_void_cook_direct
-  - attack_void_fish_direct
-  - attack_void_deconstruct_direct
-  - attack_void_harvest_direct
-  - attack_void_carry_direct
-  - attack_void_cut_direct
-  - attack_void_plant_direct
-  - attack_void_fight_melee_direct
-  - attack_void_fight_range_direct
-  - attack_void_fight_magic_direct
-  - attack_void_animal_husbandry_direct
-  - attack_void_survival_direct
-  - attack_void_mine_direct
-  - attack_void_alchemy_direct
-  - attack_void_loot_direct
-  - attack_void_forestry_direct
-  - attack_void_craft_void_direct
-  - attack_void_summoning_direct
-  - attack_void_craft_cloth_direct
-  - attack_void_craft_leather_direct
-  - attack_void_research_direct
+  - attack_void_direct

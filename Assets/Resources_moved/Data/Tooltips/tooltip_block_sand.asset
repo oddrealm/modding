@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_block_sand
   m_EditorClassIdentifier: 
-  Key: tooltip_block_sand
-  Name: Sand Wall
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Sand Block
+  Name: Sand Block
+  NamePlural: 
   InlineIcon: <sprite=1157>
-  InlineAndName: <sprite=1157> Sand Wall
-  Description: 
-  Action: 
+  Description: It's coarse and rough and irritating and it gets everywhere!
   Icon: sp_block_sand_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7735849, g: 0.64174366, b: 0.43422925, a: 1}
+  Type: Block
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2032

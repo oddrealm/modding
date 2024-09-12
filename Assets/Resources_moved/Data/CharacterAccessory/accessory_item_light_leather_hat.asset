@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0213a4de9e4e74d41b330785bb4c7fff, type: 3}
   m_Name: accessory_item_light_leather_hat
   m_EditorClassIdentifier: 
-  Key: accessory_item_light_leather_hat
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Priority: 3
   TexX: 64
   TexY: 182

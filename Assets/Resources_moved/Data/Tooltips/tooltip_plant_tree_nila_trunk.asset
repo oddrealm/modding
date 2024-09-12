@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_tree_nila_trunk
   m_EditorClassIdentifier: 
-  Key: tooltip_plant_tree_nila_trunk
-  Name: Nila Tree (Trunk)
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Nila Trunk
+  Name: Nila Trunk
+  NamePlural: 
   InlineIcon: <sprite=253>
-  InlineAndName: <sprite=253> Nila Tree (Trunk)
   Description: 
-  Action: 
   Icon: sp_nila_tree_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
+  Type: Plant
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1607

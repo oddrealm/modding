@@ -12,13 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_harvest_plants
   m_EditorClassIdentifier: 
-  Key: tooltip_blueprint_harvest_plants
-  Name: Harvest Standing Crops
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Harvest Crop
+  Name: Harvest Crop
+  NamePlural: 
   InlineIcon: <sprite=1183>
-  InlineAndName: <sprite=1183> Harvest Standing Crops
-  Description: Used to collect food, seeds, and resources from standing plants. Only
-    mature plants will drop food.
-  Action: Harvesting Standing Crops
+  Description: Collect items from mature crop plants
   Icon: sp_job_harvest_plant_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
+  Type: Job
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1141

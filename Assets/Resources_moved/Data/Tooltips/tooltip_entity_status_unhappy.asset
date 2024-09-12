@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_unhappy
   m_EditorClassIdentifier: 
-  Key: tooltip_entity_status_unhappy
-  Name: Unhappy (Leaving) (Status)
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Unhappy
+  Name: Unhappy
+  NamePlural: 
   InlineIcon: <sprite=84>
-  InlineAndName: <sprite=84> Unhappy (Leaving) (Status)
-  Description: Is leaving the settlement due to unhappiness.
-  Action: 
+  Description: Unhappy settlers may leave the settlement or go mad. Ensure settlers
+    have beds to sleep in and Taverns to relax at to improve happiness.
   Icon: 
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Type: Status
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 2614

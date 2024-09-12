@@ -2,31 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu()]
-public class GDETutorialSegmentData : ScriptableObject
+[CreateAssetMenu(menuName = "ScriptableObjects/TutorialSegment")]
+public class GDETutorialSegmentData : Scriptable
 {
-    public string Key;
-
-    public TutorialTypes TutorialType = TutorialTypes.POPUP;
-
-    [Header("On Activate")]
-    public bool SelectTarget = false;
-
-    [Header("On Started")]
-    public InputStateTypes InputsToLock = InputStateTypes.NON_SYS;
+    public string Speaker = "Darby, the Historian";
 
     [Header("Requirements")]
+    public string PreviousSegment;
     public TutorialActivationTriggers Trigger;
-    public GDETutorialSegmentData[] PreviousSegments;
     public int MinGameMinutes = -1;
-    public float MinPlayTime = -1f;
+    public float MinScaledPlayedTime = -1f;
+    public float MinUnscaledPlayedTime = -1f;
     public float MinCooldown = -1;
     public string[] Hooks;
     public string[] ActiveRaces;
     public string[] PermittedWindows;
     public SelectionTypes SelectionType = SelectionTypes.NONE;
+    public string SelectionInputID = "";
     public string[] AttributeRaces;
-    public AttributeTypes AttributeType = AttributeTypes.NONE;
+    public string AttributeType = "";
     public int MinAttributeAmount = -1;
     public int MaxAttributeAmount = -1;
     public string[] ItemIDs;
@@ -37,9 +31,8 @@ public class GDETutorialSegmentData : ScriptableObject
     public int MinRoomCount = -1;
     public int MinProductionRoomCount = -1;
     public int MinAutoJobCount = -1;
-
-    [Header("Dialogue Settings")]
-    public GDEDialogueData Dialogue;
+    public int ProfessionCount = -1;
+    public string ProfessionID = "";
 
     [Header("Pop-Up Settings")]
     public float FadeInDelay = 0f;
@@ -50,6 +43,24 @@ public class GDETutorialSegmentData : ScriptableObject
     public string AnimatedImage;
     public string PopUpTextBody;
 
+    public string Comment = "TUTORIAL";
+    public string Icon = "sp_adult_darby_ma0";
+
+    public TutorialMessage[] Message;
+
     [Header("On Completed")]
-    public GDETutorialSegmentData NextSegment;
+    public string NextSegment;
 }
+
+[System.Serializable]
+public struct TutorialMessage
+{
+    public bool OnlyShowInputHotkey;
+    public string InputID;
+    public string TagObjectID;
+    public string Body;
+    public bool NewLine;
+    public bool UseOverrideColor;
+    public Color OverrideColor;
+}
+

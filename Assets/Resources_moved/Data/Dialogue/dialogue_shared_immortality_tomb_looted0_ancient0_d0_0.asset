@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_shared_immortality_tomb_looted0_ancient0_d0_0
   m_EditorClassIdentifier: 
-  Key: dialogue_shared_immortality_tomb_looted0_ancient0_d0_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'
   Message: I'm up! I'm up! How long was I out? Ugh. My mouth sure is dry... Well,
     thanks for waking me, friend. What does the Void require of me this day?
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

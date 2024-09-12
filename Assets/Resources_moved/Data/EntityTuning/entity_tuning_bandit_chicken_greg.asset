@@ -12,51 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_bandit_chicken_greg
   m_EditorClassIdentifier: 
-  Key: entity_tuning_bandit_chicken_greg
-  SightRange: 128
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxRandomAge: 51
+  MinRandomAge: 51
+  MaxRandomLevel: 5
+  MinRandomLevel: 1
+  RandomProfessions: []
+  MaxRandomSkill: 10
   MinRandomSkill: 1
-  MaxRandomSkill: 3
   SkillBonuses: []
-  Health: 1d6+125
-  HealthChange: 0
-  Toughness: 1d3
-  Evasion: 1d6
-  MoveSpeed: 26
-  ClimbSpeed: 6
-  Happiness: 10000
-  HappinessChange: 5
-  Hunger: 10000
-  HungerChange: -40
-  Thirst: 10000
-  ThirstChange: -50
-  Energy: 10000
-  EnergyChange: -20
-  BlockCurrentTemperature: 50
-  Temperature: 50
-  ColdTolerance: 0
-  CritRate: 2
-  DamageIgnoreRate: 0
-  Age: 0
-  XP: 0
-  Level: 0
-  AttackSpeedMod: 10000
-  OutputQualityMax: 3
-  FishLure: 0
-  FishScare: 50
-  ProjectileMultRate: 0
-  ProjectileMultMod: 0
-  UsageDecreaseRate: 0
-  UsageDecreaseMod: 0
-  ResourceFindRate: 0
-  ResourceFindMod: 0
-  BurnRate: 0
-  BurnMod: 0
-  Oxygen: 10000
-  OxygenChange: 2500
   StartingStatuses: []
   RandomStartingStatuses: []
   FirstName: Chicken Greg
   LastName: 
   Appearance: app_adult_chicken_greg_ma0
   InventoryGroupID: 
+  AutoGenerateInventory: 0
   EquipmentGroupID: 
+  AutoGenerateEquipment: 0

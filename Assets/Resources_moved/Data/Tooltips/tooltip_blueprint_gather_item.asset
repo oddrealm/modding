@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_gather_item
   m_EditorClassIdentifier: 
-  Key: tooltip_blueprint_gather_item
-  Name: Gather Required Item
-  InlineIcon: <sprite=953>
-  InlineAndName: <sprite=953> Gather Required Item
-  Description: 
-  Action: Gathering Required Item
-  Icon: sp_job_pick_up_item_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Collect Items
+  Name: Collect Items
+  NamePlural: 
+  InlineIcon: <sprite=651>
+  Description: Used to pick up all items at a location. Workers will hold the items
+    until a Deposit Item job is placed.
+  Icon: sp_job_gather_item_icon
+  TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
+  Type: Job
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 598

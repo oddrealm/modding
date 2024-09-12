@@ -12,14 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b82001461fc34e9d1cf053d56a7e5, type: 3}
   m_Name: fish_chi_chi
   m_EditorClassIdentifier: 
-  Key: fish_chi_chi
   TooltipID: tooltip_fish_chi_chi
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Level: 1
   AnimController: small_fish_animations
   IdealDepthMin: 0
   IdealDepthmax: 3
-  LureRollAdd: -50
   BaseHealth: 100
   BaseToughness: 0
   BaseEvasion: 0
-  ItemSpawnGroupID: isg_fish_chi_chi
+  ItemSpawnGroupID: spawns_fish_chi_chi
+  FishColorR: {r: 0.12224099, g: 0.5071887, b: 0.6320754, a: 1}
+  FishColorG: {r: 0, g: 0.57734424, b: 0.83137256, a: 1}
+  FishColorB: {r: 0, g: 0, b: 0, a: 0}
+  Biomes:
+  - biome_ocean
+  - biome_tropical
+  - biome_tropical_forest
+  - biome_tropical_mountain
+  - biome_desert
+  - biome_desert_mountain

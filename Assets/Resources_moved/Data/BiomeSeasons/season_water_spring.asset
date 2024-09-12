@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86ebf3cf42b684cb06c9616041dc72, type: 3}
   m_Name: season_water_spring
   m_EditorClassIdentifier: 
-  Key: season_water_spring
   TooltipID: tooltip_season_water_spring
-  SeasonType: 0
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeasonGroup: spring
   SeasonStart: 0
+  DefaultWeather: weather_water_spring_calm
   Weather:
   - weather_water_spring_calm
   - weather_water_spring_wind

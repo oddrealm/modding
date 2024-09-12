@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/FishSpawnGroups")]
-public class GDEFishSpawnGroupsData : ScriptableObject
+public class GDEFishSpawnGroupsData : Scriptable
 {
-	public string Key;
 	public string Data = "";
 }

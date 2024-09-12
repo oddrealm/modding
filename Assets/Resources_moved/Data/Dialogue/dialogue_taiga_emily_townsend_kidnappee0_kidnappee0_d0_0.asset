@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_0
   m_EditorClassIdentifier: 
-  Key: dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_taiga_emily_townsend_kidnappee0_kidnappee0_d0_1
@@ -23,3 +28,5 @@ MonoBehaviour:
     a glance and you can''t help but recognize them. Could it be? {#entity_townsend_kidnapped_child0},
     the young child Emily Townsend kidnapped so long ago?{*/}'
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

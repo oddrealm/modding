@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_tutorial_new_game_settler1
   m_EditorClassIdentifier: 
-  Key: dialogue_tutorial_new_game_settler1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: '@0'
   Message: Before long, we'll need to find some more <sprite=179> {!}food{!/} and
     <sprite=652> {!}water{!/}.
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

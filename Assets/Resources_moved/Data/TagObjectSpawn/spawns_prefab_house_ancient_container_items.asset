@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
+  m_Name: spawns_prefab_house_ancient_container_items
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeedOffset: 57699
+  MaxIterations: 1
+  MinIterations: 1
+  Spawns:
+  - Comment: 
+    MinCount: 1
+    MaxCount: 3
+    LimitMaxCountByLocationItemMax: 1
+    DisableRoll: 0
+    Weight: 1
+    TagObjectID: item_rutile_ore
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 25
+    LimitMaxCountByLocationItemMax: 1
+    DisableRoll: 0
+    Weight: 1
+    TagObjectID: item_ren
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 25
+    LimitMaxCountByLocationItemMax: 1
+    DisableRoll: 0
+    Weight: 1
+    TagObjectID: item_ren
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 1
+    DisableRoll: 0
+    Weight: 1
+    TagObjectID: item_gibaren_boots
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 1
+    DisableRoll: 0
+    Weight: 1
+    TagObjectID: item_gibaren_pants
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 1
+    DisableRoll: 0
+    Weight: 1
+    TagObjectID: item_gibaren_robe
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 1
+    DisableRoll: 0
+    Weight: 1
+    TagObjectID: item_void_shard
+    TagID: 
+  - Comment: 
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 1
+    DisableRoll: 0
+    Weight: 1
+    TagObjectID: item_void_crystal
+    TagID: 

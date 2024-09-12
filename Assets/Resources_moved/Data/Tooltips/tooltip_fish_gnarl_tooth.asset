@@ -12,14 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_fish_gnarl_tooth
   m_EditorClassIdentifier: 
-  Key: tooltip_fish_gnarl_tooth
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Gnarl Tooth
   Name: Gnarl Tooth
+  NamePlural: 
   InlineIcon: <sprite=325>
-  InlineAndName: <sprite=325> Gnarl Tooth
   Description: All that is known about the Gnarl Tooth is that it attacks its prey
     from the darkness below. It's grotesque set of teeth are the last things you
     see as you look into the deep.
-  Action: 
   Icon: sp_fish_gnarl_tooth_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0, g: 0.5647059, b: 0.9686275, a: 1}
+  Type: Fish
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1053

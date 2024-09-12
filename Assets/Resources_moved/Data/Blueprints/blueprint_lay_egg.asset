@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
+  m_Name: blueprint_lay_egg
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_blueprint_lay_egg
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies:
+  - skill_misc
+  - entity_status_lays_eggs
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: blueprint_category_none
+  ResearchKey: 
+  Repeat: 0
+  CheckStateForTransition: 0
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  SkillLevel: 1
+  AddBlockSkillToJobSkill: 0
+  LocationID: tag_roost_open
+  PermissionType: 0
+  LocationPermissions:
+  - tag_roost
+  - tag_roost_open
+  WorkerPermissions:
+  - faction_player
+  - faction_captured
+  WorkerPermissionsToLock:
+  - faction_hostile
+  TargetPermissions:
+  - faction_player
+  - faction_captured
+  TargetPermissionsToLock: []
+  ResourcePool: 1
+  ShowItemTypeResourcePermissions: 0
+  ResourcePermissionsToLock: []
+  MaxWorkers: 0
+  WorkerNeedsAllRequirements: 0
+  JobActions:
+  - ActionType: 3
+    MaxWorkers: 0
+    WorkerID: entity_status_lays_eggs
+    TargetID: 
+    ResourceID: 
+    OnJobFinishActionID: tag_can_lay_egg
+    WorkPosition: 1
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  ProgressWorkerAttribute: 
+  ProgressMax: 100
+  ProgressBarType: 2
+  InvertProgressDisplay: 1
+  ProgressFXMaxX: 0
+  ProgressFXMinX: 0
+  ProgressFXMaxY: 0
+  ProgressFXMinY: 0
+  Clear:
+    Layer: 32
+    Params:
+      DisableRemoveSpawns: 0
+      DisposeIfNotPermitted: 0
+      DisableSpawnAtEntityOnFail: 0
+      DisableClaimCheck: 0
+      SetAsUnclaimed: 0
+      Attempts: 0
+      SeedOffset: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: 
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnFinishedResourcesActionID: 
+  SetTargetFactionTo: 
+  OnFinishWorkerBuffs: []
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves:
+  - entity_status_lays_eggs
+  OnFinishTargetBuffs: []
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  CanSelectTarget: 0
+  ShowWorkOutputActionText: 0
+  OnFinishedFX: 
+  WorkFX: 
+  WorkSFX: 
+  OnFinishedSFX: 
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride:
+  - visuals_job_cursor_permitted
+  ProhibitedCursorVisualsOverride:
+  - visuals_job_cursor_prohibited
+  Visuals:
+  - visuals_job_lay_egg
+  ShowVisualsIfStarted: 0
+  MaxAutoJobQueueCount: 9
+  DisposeIfRequirementsNotMet: 1
+  DisposeIfNoSource: 1
+  AutoJobOnCreateCooldown: 0
+  AutoJobOnFreedCooldown: 0

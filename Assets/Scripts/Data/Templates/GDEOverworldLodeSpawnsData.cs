@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/OverworldLodeSpawns")]
-public class GDEOverworldLodeSpawnsData : ScriptableObject
+public class GDEOverworldLodeSpawnsData : Scriptable
 {
-	public string Key;
 	public int Shape = 0;
 	public int SpawnCount = 0;
 	public int MinZ = 0;

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
+  m_Name: entity_tuning_party_bandits_human
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxRandomAge: 100
+  MinRandomAge: 18
+  MaxRandomLevel: 5
+  MinRandomLevel: 1
+  RandomProfessions:
+  - profession_warrior
+  - profession_archer
+  MaxRandomSkill: 5
+  MinRandomSkill: 1
+  SkillBonuses: []
+  StartingStatuses: []
+  RandomStartingStatuses: []
+  FirstName: 
+  LastName: 
+  Appearance: 
+  InventoryGroupID: 
+  AutoGenerateInventory: 1
+  EquipmentGroupID: 
+  AutoGenerateEquipment: 1

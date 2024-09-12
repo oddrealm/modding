@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5fb1d1b07810e4ca30537b1d718d1f, type: 3}
   m_Name: weather_water_winter_rain
   m_EditorClassIdentifier: 
-  Key: weather_water_winter_rain
   TooltipID: tooltip_weather_water_winter_rain
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   UIDisplayAnimKey: raining
   FlammabilityMod: 0.25
-  ChanceToSpawnSnow: 0
   WeatherType: 2
-  NightOffset: -7
-  DayOffset: 5
-  MinTemp: 11
-  MaxTemp: 45
+  NightOffset: -2
+  DayOffset: 2
+  MinTemp: 5
+  MaxTemp: 18
   FXIndex: 1
   ChanceToStart: 400
   MinHourDuration: 2
@@ -31,3 +34,11 @@ MonoBehaviour:
   SubterraneanAmbientSFX: sfx_subterranean
   DaytimeAmbientSFX: sfx_day_rain_water
   NighttimeAmbientSFX: sfx_night_rain_water
+  WatersPlants: 1
+  SkylightSpawns:
+  - SpawnID: 
+    SpawnRandomFlora: 1
+    MinTemp: -99
+    MaxTemp: 99
+    ChanceToSpawn: 1
+    ChanceToSpawnSize: 10000

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef08b9ae464b074fb650ec350a98d23, type: 3}
   m_Name: xp_at_lvl_9
   m_EditorClassIdentifier: 
-  Key: xp_at_lvl_9
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Level: 9
   XPReward: 6
   XPRequireToLevel: 1312

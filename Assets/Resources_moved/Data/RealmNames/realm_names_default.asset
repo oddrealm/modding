@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5a7f670ef11be45a01a68a24f9de86, type: 3}
   m_Name: realm_names_default
   m_EditorClassIdentifier: 
-  Key: realm_names_default
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   FrontCompounds:
+  - Aano
+  - Au
   - Ale
   - Arke
   - Andi
@@ -21,6 +28,7 @@ MonoBehaviour:
   - Bea
   - Be
   - Bi
+  - Bou
   - Ca
   - Co
   - Cou
@@ -133,6 +141,7 @@ MonoBehaviour:
   - stok
   - ten
   - til
+  - timen
   - th
   - tep
   - urk
@@ -159,3 +168,4 @@ MonoBehaviour:
   - zeth
   - zi
   - zorn
+  - zoon

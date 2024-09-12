@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cb679d16102814ebd643fd5fb2d2a3, type: 3}
   m_Name: attribute_xp
   m_EditorClassIdentifier: 
-  Key: attribute_xp
   TooltipID: tooltip_attribute_xp
-  DisplayOrder: 3
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ShowInAttributeDisplay: 1
   StartMin: 0
   StartDefault: 0
   StartMax: 999999
+  StartMaxIsStartBase: 0
   ShowPositiveAndNegativeSign: 0
-  Append: 
-  SmallDisplayType: 1
-  LargeDisplayType: 3
+  DisplayType: 3
   ColorType: 1
-  AttributeType: 5
   NegativeIsPositive: 0
   OnAddIndicator: 
   OnRemoveIndicator: 
+  ShowActionText: 0

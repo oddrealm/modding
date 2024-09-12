@@ -12,59 +12,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_void_forge
   m_EditorClassIdentifier: 
-  Key: prop_void_forge
-  Index: 365
-  Tags:
-  - void_forge
-  - heat_source
-  PhysicsHeatSource: 90
-  PhysicsHeatPass: 0.95
   TooltipID: tooltip_prop_void_forge
-  Visuals:
-  - visuals_prop_void_forge
-  TriggerFaction: 0
-  Triggers: 0
-  TriggerActions: 0
-  TriggerStatuses: []
-  TriggerAttacks: []
-  TriggerSFX: 
-  CanSupportWeight: 0
-  CanHavePlants: 1
-  IsFertile: 0
-  CanHaveFish: 0
-  SoilQuality: 0
-  PhysicsTypes: 1538
-  PhysicHeatSinkTemp: 0
-  FXPhysicsTypes: 0
-  PhysicsUnstableFX: []
-  PhysicsFillFX: []
-  PhysicsClearBlock: 0
-  PhysicsSolidBlock: -1
-  PhysicsLiquidBlock: -1
-  PhysicsGasBlock: -1
-  MinTemperature: -100
-  MaxTemperature: 100
-  Toughness: 0
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DefaultFill: block_fill_air
+  TriggerConditions: []
+  Triggers: []
+  RevealDistance: 0
+  TemperatureSource: 0
+  IsRotationFixture: 0
+  SkillLevel: 0
   MaxItemCount: 0
-  ItemCategoryRestriction: 0
+  ItemTypePermissions: []
   CanShowItems: 0
   RestrictItemsToSameKey: 0
-  Permissions: 4204544
+  DecayBuff: 0
+  RemoveItemDrops: spawns_prop_void_forge
+  VerticalEntityLift: 2
+  IsObstruction: 0
+  IsVerticalAccess: 0
+  PermittedPathsAbove: -1
+  PermittedPaths: -1
+  VerticalMovementMod: 1
+  HorizontalMovementMod: 1
+  MovementCost: 5
+  VerticalMoveRequiresClimb: 1
+  ForceFocusDirection: 0
+  Permissions: 4196352
+  PermissionsAbove: 0
+  Prohibited: 0
+  ProhibitedAbove: 0
+  Layer: 2
+  ProhibitedLayers: 0
+  CanHaveRoom: 1
+  CanHavePlatform: 1
+  PermittedPlantTypes: 1
+  IsFertile: 0
+  CanSitAt: 0
+  IsSpotlight: 0
+  Visuals:
+  - visuals_prop_void_forge
+  TriggerOffsetX: 0
+  TriggerOffsetY: 0
+  HasItemsOffsetX: 0
+  HasItemsOffsetY: 0
+  FullCapacityOffsetX: 0
+  FullCapacityOffsetY: 0
+  IdleFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood
-  FlammableChance: 100
-  DecayBuff: 0
-  Level: 1
-  RemoveItemDrops: isg_prop_void_forge
-  VerticalMovementMod: 1
-  HorizontalMovementMod: 1
-  CanBeLocked: 0
-  LockedMovementFlags: 0
-  RestrictedMovementFlags: 0
-  MovementCost: 2
-  VerticalMoveRequiresClimb: 1
-  ForceFocusDirection: 0
-  IsObstruction: 1
-  CanHaveRoom: 1
-  IsVerticalAccess: 0
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  BlockimulationID: simulation_prop_default
+  StateOptions: []

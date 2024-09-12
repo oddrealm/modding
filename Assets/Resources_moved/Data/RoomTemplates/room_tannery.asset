@@ -12,17 +12,131 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_tannery
   m_EditorClassIdentifier: 
-  Key: room_tannery
-  ActivationType: 1
-  CanEditOwnersAndStockpiles: 1
-  Enabled: 1
-  Stockpile: room_stockpiles_empty
-  ResearchKey: leather0
-  Owners:
-  - room_owner_tanners
-  DefaultAutoJobBlueprints: []
-  InterfaceInfo: interface_info_room_tannery
   TooltipID: tooltip_room_tannery
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_industry
+  ResearchKey: research_industry_leather0
+  MaxRoomAmount: -1
+  OccupantGroups:
+  - occupant_group_tannery
   Visuals:
   - visuals_room_display_tannery
-  - visuals_room_display_tannery_background
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_item_light_leather_boots
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_leather_backpack
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_from_cow
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_from_deer
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_from_lopen
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_from_mirmit
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_from_rabbit
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_from_rat
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_from_snoot
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_hat
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_pants
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_light_leather_vest
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_medium_leather_boots
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_medium_leather_from_gharox
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_medium_leather_from_vytrax
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_medium_leather_hat
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_medium_leather_pants
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_medium_leather_vest
+    Settings:
+      Priority: 1
+      Enabled: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []

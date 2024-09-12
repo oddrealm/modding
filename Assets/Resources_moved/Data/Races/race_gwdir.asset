@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_gwdir
   m_EditorClassIdentifier: 
-  Key: race_gwdir
   TooltipID: tooltip_race_gwdir
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_races
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 200
-  IntelligenceType: 1
+  Intelligence: intelligence_sapient
   Tags:
   - sapient
-  StartingResearchKeys: []
   DefaultEntityID: entity_gwdir
-  Diet: diet_gwdir
   Public: 1
-  BuffGroupID: 
   Perks:
-  - '<sprite=53> One With Nature: Gwdir are able to harvest resources from plants
-    and trees without destroying them'
-  - '<sprite=4> Expert Craftsmen: Gwdir start with a 5 point bonus to Stone Work,
-    Carpentry, and Blacksmithing'
+  - '<sprite=53> One With Nature: Start with an increased farming skill.'
+  DefaultActiveResearch: []
+  Buffs: []

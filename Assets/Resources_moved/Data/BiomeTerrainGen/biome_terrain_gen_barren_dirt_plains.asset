@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f45cade355ba7c409db97bf5f5f3d2e, type: 3}
   m_Name: biome_terrain_gen_barren_dirt_plains
   m_EditorClassIdentifier: 
-  Key: biome_terrain_gen_barren_dirt_plains
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   ModelIndex: 1
   Noise: biome_terrain_noise_plains

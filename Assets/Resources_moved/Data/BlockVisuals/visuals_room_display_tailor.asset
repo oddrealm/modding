@@ -12,48 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_room_display_tailor
   m_EditorClassIdentifier: 
-  Key: visuals_room_display_tailor
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TextureX: 0
+  TextureY: 2
+  SecondaryTextureX: 140
+  SecondaryTextureY: 18
+  FXTextureX: 0
+  FXTextureY: 0
+  TransitionKey: 1230
+  TransitionKeyDelta: 0
+  TransitionType: 1
+  CanTransitionNULL: 0
+  IsEntityShadowObstruction: 0
   ReceiveSkylightColor: 0
+  ReceiveReducedLighting: 0
   OnlyRenderIfVisible: 0
-  RotationType: 0
+  ColorAddType: 4
   VisibilityFlag: 4
+  PermissionFlags: 0
+  RotationType: 0
   ShowPermissionColor: 0
-  ColorAddType: 0
-  HasTriggerOffset: 0
-  DepthOffset: 0.0511
+  DepthOffset: 0.04
   HideSurfaceWhenObscuredAbove: 0
   HideSurfaceWhenSameTypeAbove: 0
   CanTransitionIfObscuredAbove: 1
-  ObscureDirectSurfaceBelow: 0
   HasSurface: 0
+  CanFade: 0
   HasSeasonOffset: 0
-  HasMapColor: 0
-  MapColor: {r: 1, g: 1, b: 1, a: 1}
-  TextureX: 140
-  TextureY: 18
   WeatherY: 0
-  TransitionType: 0
-  TransitionKey: 0
-  CanTransitionNULL: 0
-  IsRotationFixture: 0
-  BlockAmbientLight: 0
   ShowAmbientLight: 0
   TailVariants: 0
   ShowTailVariant: 0
   ShowAnims: 0
-  TemperatureStrength: 0
-  TemperatureHorizontalPass: -1
-  TemperatureDownPass: -1
-  TemperatureUpPass: -1
   ShowLighting: 0
-  SpotlightStrength: 0
-  SpotlightHorizontalPass: -1
-  SpotlightDownPass: -1
-  SpotlightUpPass: -1
-  AddVFX: 
-  RemoveVFX: 
-  InteractVFX: 
-  IdleVFX: 
-  SkylightPass: 0
-  SkylightMin: 0
-  SkylightMax: 15
+  DropShadow: 1
+  LightSettings:
+    ReductionThreshold: 0
+    SkylightReduction: 0
+    SkylightPass: 0
+    BlockAmbientLight: 0

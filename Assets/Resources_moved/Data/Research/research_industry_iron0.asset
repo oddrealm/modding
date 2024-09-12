@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_industry_iron0
   m_EditorClassIdentifier: 
-  Key: research_industry_iron0
-  Enabled: 1
-  Races: []
-  ResearchKey: iron0
   TooltipID: tooltip_research_industry_iron0
-  Dependency: bronze0
-  Column: 4
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Enabled: 1
+  ShowInSaga: 1
+  Races: []
+  Dependency: research_industry_bronze0
+  Column: 3
   Row: 0
-  RequiredItem: item_tome_of_industry
-  RequiredItemCount: 6
-  ResearchCategory: 0
+  ResearchCategory: research_category_industry
+  RequireItemCountOverride: 0
+  ResearchTimeStep: 60

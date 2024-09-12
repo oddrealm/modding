@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
+  m_Name: room_perennium
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_room_perennium
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  CategoryID: room_category_homes
+  ResearchKey: research_gwdir_aiwir0
+  MaxRoomAmount: -1
+  OccupantGroups:
+  - occupant_group_perennium
+  Visuals:
+  - visuals_room_display_perennium
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_item_aiwir_boots
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_aiwir_coat
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_aiwir_hat
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_aiwir_pants
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_wir
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_item_thresk_one_hand
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 0
+    ResourcePermissions: []
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 1
+      Enabled: 0
+      AutoJobType: 1
+    ResourcePermissions: []
+  - BlueprintID: blueprint_sleep
+    Settings:
+      Priority: 3
+      Enabled: 1
+      AutoJobType: 1
+    ResourcePermissions: []

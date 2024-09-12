@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b430687389d853f48ba3d8c7adf38bfb, type: 3}
+  m_Name: anim_setha_timeout1
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Loop: 1
+  FramesPerSecond: 16
+  Frames:
+  - AnimSprite: {fileID: -4892012816064440179, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 3527512109836399829, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -7474328542580665421, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -210857157883122361, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -2000812091618980928, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -5665716011652738814, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 105850727109949131, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 5304360783076656326, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -7868707183999109990, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 7828868762924209878, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -7669042883474808358, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 7950753344756358157, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 489833548244829100, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 5142702444591681489, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -199996547723119725, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -8954190013023600513, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -4124403577968259849, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -3739577138669669311, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 5827118327755362861, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 5640076107711365543, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -5521727091027509582, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 1680741202333014965, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -2659091207907394936, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 4802574971559470858, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -519394734826659933, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 6127843043000140032, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -67830767521890462, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -3169476924636202300, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 1042593507019967035, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 1042593507019967035, guid: 390c46b98ac99654596573f93bccec0d,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}

@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_platform_dirt_cobble
   m_EditorClassIdentifier: 
-  Key: tooltip_platform_dirt_cobble
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Dirt Cobble Floor
   Name: Dirt Cobble Floor
-  InlineIcon: <sprite=1149>
-  InlineAndName: <sprite=1149> Dirt Cobble Floor
+  NamePlural: 
+  InlineIcon: <sprite=1380>
   Description: 
-  Action: 
   Icon: sp_platform_dirt_cobble_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.45911938, g: 0.34794894, b: 0.3873965, a: 1}
+  Type: Platform
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 837

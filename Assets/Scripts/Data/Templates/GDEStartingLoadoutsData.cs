@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/StartingLoadouts")]
-public class GDEStartingLoadoutsData : ScriptableObject
+public class GDEStartingLoadoutsData : Scriptable
 {
-	public string Key;
-	public string TooltipID = "";
 	public bool Public = false;
+	public bool CanEdit = false;
 	public string EntitySpawnGroupID = "";
 	public string Items = "";
-	public int[] ContainerModels = new int[]
-	{
-		370, // wood barrel
-		376 // wood create
-	};
+	public List<string> ContainerIDs = new List<string>();
+	public int StartingRen = 100;
 }

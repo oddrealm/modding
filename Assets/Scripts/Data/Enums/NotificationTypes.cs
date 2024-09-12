@@ -12,7 +12,7 @@ public enum NotificationTypes
     ANIMAL_MIGRANTS = 5,
     UNUSED2 = 6,
     SCENARIO = 7,
-    UNUSED3 = 8,
+    STAT_TRACKING = 8,
     UNUSED4 = 9,
     UNUSED5 = 10,
     WORK = 11,

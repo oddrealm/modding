@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f3a63260dd3054eba2ee68ee867d93, type: 3}
   m_Name: overworld_visuals_taiga_river
   m_EditorClassIdentifier: 
-  Key: overworld_visuals_taiga_river
-  MeshIndex: 1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 0, g: 0.745283, b: 0.32886258, a: 1}
   TextureX: 0
   TextureY: 43
+  Layer: 2
+  TransitionChannel: 3
   TransitionKey: 1
   HasTransition: 1
   TailVariantCount: 0
   Animated: 0
+  ColorMult: {r: 1, g: 1, b: 1, a: 1}

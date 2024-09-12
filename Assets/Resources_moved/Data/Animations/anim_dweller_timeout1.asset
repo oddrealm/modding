@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b430687389d853f48ba3d8c7adf38bfb, type: 3}
+  m_Name: anim_dweller_timeout1
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Loop: 1
+  FramesPerSecond: 16
+  Frames:
+  - AnimSprite: {fileID: 5062976710957390578, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 3282065695908899449, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -3653644643859337703, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 4142356145255964300, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 2432503239996487478, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -4987726268189175761, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 3931135421637799730, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 1825050330107224047, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -1882839734396805018, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -8912940872025948264, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -5655995842271974532, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 3794702708653277678, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 1879331444981133767, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -8457863152982531750, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: -6710502913918093205, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 5820142780983907325, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 5820142780983907325, guid: e1206ea862987c348a19f4ffc389e777,
+      type: 3}
+    Accessories: []
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}

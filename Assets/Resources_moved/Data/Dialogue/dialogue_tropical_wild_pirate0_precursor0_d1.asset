@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_tropical_wild_pirate0_precursor0_d1
   m_EditorClassIdentifier: 
-  Key: dialogue_tropical_wild_pirate0_precursor0_d1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: $pirate Scout
   Message: 'Arrr! Cap''n won''t like the sights o'' you. Better shove off ''fore
     I return, y''here. '
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_scenario_bandit1_deen0
   m_EditorClassIdentifier: 
-  Key: dialogue_scenario_bandit1_deen0
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID:
   - dialogue_scenario_bandit2a_deen0
@@ -24,3 +29,5 @@ MonoBehaviour:
   - Fine. Fine. Just leave us alone!
   - Are we supposed to fear you?
   - We need that to survive! Have mercy!
+  FocusOnSpeaker: 1
+  DialogueSequences: []

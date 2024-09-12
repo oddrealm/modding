@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cf51d1cb5147247b0d839f337337e5, type: 3}
+  m_Name: intelligence_non_sapient
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_intelligence_non_sapient
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  IntelligenceType: 2
+  Statuses:
+  - entity_status_ignorance_is_bliss
+  - entity_status_intelligence_non_sapient

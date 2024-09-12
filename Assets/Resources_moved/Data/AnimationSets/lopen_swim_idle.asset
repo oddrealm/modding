@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841b5083aba983142850700533e78a27, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: lopen_swim_idle
   m_EditorClassIdentifier: 
-  Key: lopen_swim_idle
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 52f7e62038e9f5c4bbeb2c62a88a25fb, type: 2}
   UpAnimation: {fileID: 11400000, guid: a7bd3811468db78419bcb4887abb48cb, type: 2}
   DownAnimation: {fileID: 11400000, guid: 06bd34c63957ec542b585ca8eca967ab, type: 2}

@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_unhappy_settler_goes_mad0_narrator0_d2_1
   m_EditorClassIdentifier: 
-  Key: dialogue_unhappy_settler_goes_mad0_narrator0_d2_1
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
   SpeakerTarget: 
   Message: '{*}Huh. It looks as if {#settler_mad0} couldn''t take being unhappy any
     longer.{*/}'
   Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences: []

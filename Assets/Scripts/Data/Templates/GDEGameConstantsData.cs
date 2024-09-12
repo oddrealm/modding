@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/GameConstants")]
-public class GDEGameConstantsData : ScriptableObject
+public class GDEGameConstantsData : Scriptable
 {
-	public string Key;
 	public string StringValue = "";
 	public int IntValue = 0;
 	public float FloatValue = 0.0f;

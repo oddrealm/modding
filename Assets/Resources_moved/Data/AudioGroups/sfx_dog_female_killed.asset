@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bbd2cf8d9e60a40b72614a6e504830, type: 3}
   m_Name: sfx_dog_female_killed
   m_EditorClassIdentifier: 
-  Key: sfx_dog_female_killed
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   SFX: []

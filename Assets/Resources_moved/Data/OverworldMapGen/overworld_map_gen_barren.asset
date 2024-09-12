@@ -12,17 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2306836ee8b4298459405f228e2dabb0, type: 3}
   m_Name: overworld_map_gen_barren
   m_EditorClassIdentifier: 
-  Key: overworld_map_gen_barren
-  BuildPriority: 4
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BuildPriority: 3
   SeedOffset: 0
   Frequency: 3
   Octaves: 3
   Persistence: 0.25
   Lacunarity: 2
-  MinThreshold: 0.8
+  MinThreshold: 0.72
   MaxThreshold: 1
   Falloff: 0.3
   UseBotTopMinMax: 0
+  FadeBotTopMinMax: 1
   TopMax: 0.9
   TopMin: 0.5
   BotMax: 0.5

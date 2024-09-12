@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e256d1ab8c0d2438043b751e626442, type: 3}
   m_Name: platform_wood_plank
   m_EditorClassIdentifier: 
-  Key: platform_wood_plank
+  TooltipID: tooltip_platform_wood_plank
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_settlement_start_raft
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Index: 10
   Visuals: visuals_platform_wood_plank
-  TooltipID: tooltip_platform_wood_plank
   PhysicsHeatPass: 0.05
   HasMeltThreshold: 0
   MeltThreshold: 0
   NeedsSupport: 0
+  PermittedPaths: 31
   Permissions: 8388608
+  Prohibited: 32
   MovementSpeedMod: 1.3
-  MovementCostMult: 0.1
+  MovementCost: -1
   IsRoof: 0
   CanGrow: 0
   GrowTime: -1
@@ -32,8 +39,8 @@ MonoBehaviour:
   VerticalLightPass: 8
   CanWorkThrough: 0
   CanBuildOnWater: 1
-  FlammableChance: 100
+  FlammableChance: 200
   BurnFuel: 5
   BaseHealth: 25
   BaseToughness: 0
-  ItemDropGroupID: isg_platform_wood_plank
+  ItemDropGroupID: spawns_platform_wood_plank

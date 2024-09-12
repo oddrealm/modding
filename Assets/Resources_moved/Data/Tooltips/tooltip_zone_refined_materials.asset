@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_zone_refined_materials
   m_EditorClassIdentifier: 
-  Key: tooltip_zone_refined_materials
-  Name: Refined Materials
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Action: Refined Materials (Item Type)
+  Name: Refined Materials (Item Type)
+  NamePlural: 
   InlineIcon: <sprite=134>
-  InlineAndName: <sprite=134> Refined Materials
   Description: Metal ingots, gems, and other processed materials are stored here.
-  Action: 
   Icon: sp_zone_refined_materials_icon
-  Formatting: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.87843144, g: 0.43137258, b: 0.67058825, a: 1}
+  Type: 
+  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  Order: 1875

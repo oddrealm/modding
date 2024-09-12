@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4633816f5b17345921387ce966b49a, type: 3}
   m_Name: attack_group_staff_of_focus_two_hand
   m_EditorClassIdentifier: 
-  Key: attack_group_staff_of_focus_two_hand
+  TooltipID: 
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   Attacks:
   - attack_staff_of_focus_two_hand_strike

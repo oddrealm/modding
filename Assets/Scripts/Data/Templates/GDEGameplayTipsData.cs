@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/GameplayTips")]
-public class GDEGameplayTipsData : ScriptableObject
+public class GDEGameplayTipsData : Scriptable
 {
-	public string Key;
-	public string DisplayText = "";
-	public string HotkeyID = "";
+	[System.Serializable]
+	public struct Text
+	{
+		public string TextDisplay;
+		public string InputID;
+	}
+
+	public Text[] DisplayText;
 }

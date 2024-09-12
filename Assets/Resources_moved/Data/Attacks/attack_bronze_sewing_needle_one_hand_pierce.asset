@@ -12,28 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
   m_Name: attack_bronze_sewing_needle_one_hand_pierce
   m_EditorClassIdentifier: 
-  Key: attack_bronze_sewing_needle_one_hand_pierce
   TooltipID: tooltip_attack_bronze_sewing_needle_one_hand_pierce
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
   ProjectileType: 0
   FiringType: 1
   ActivationType: 2
   DamageType: 0
-  SkillUsed: 2048
+  AttackFishInRange: 0
+  SkillID: skill_fight_melee
   AddSkillToOutput: 1
-  MinAmount: 5
-  MaxAmount: 12
+  MinAmount: 3
+  MaxAmount: 4
   Range: 14
-  SourceAction: 2
-  SourceAttribute: 0
+  StatusesToApplyToTarget: []
+  SourceAction: 0
+  SourceAttributeID: 
   TargetAction: 1
-  TargetAttribute: 1
+  TargetAttributeID: attribute_health
+  TargetAmountMin: 0
+  TargetAmountMax: 2147483647
   AnimationTrigger: 2
   AnimationHitEvent: 1
   OriginFX: []
   HitFX: []
   PrimeFX: []
+  FiredSFX: 
+  CompletedSFX: sfx_attack_default
+  BlockedSFX: 
   AttackStartTargetColor: {r: 0, g: 0, b: 0, a: 0}
   AttackStartTargetColorDuration: 0
   AttackStartTargetColorFlashType: 1

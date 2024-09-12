@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cb679d16102814ebd643fd5fb2d2a3, type: 3}
   m_Name: attribute_climb_speed
   m_EditorClassIdentifier: 
-  Key: attribute_climb_speed
   TooltipID: tooltip_attribute_climb_speed
-  DisplayOrder: 22
-  StartMin: 1
+  GroupID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ShowInAttributeDisplay: 1
+  StartMin: 0
   StartDefault: 1
-  StartMax: 999999
+  StartMax: 999
+  StartMaxIsStartBase: 0
   ShowPositiveAndNegativeSign: 0
-  Append: px
-  SmallDisplayType: 1
-  LargeDisplayType: 1
-  ColorType: 0
-  AttributeType: 32
+  DisplayType: 1
+  ColorType: 1
   NegativeIsPositive: 0
   OnAddIndicator: 
   OnRemoveIndicator: 
+  ShowActionText: 0

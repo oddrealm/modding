@@ -12,13 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701e5e6cf84de544cb78430a61b6eb34, type: 3}
   m_Name: skill_craft_void
   m_EditorClassIdentifier: 
-  Key: skill_craft_void
+  TooltipID: tooltip_skill_craft_void
+  GroupID: 
+  DEBUG: 0
+  TagIDs:
+  - tag_skills
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
   ResearchKey: 
   LevelUpScenario: scenario_level_up_tome_of_arcana0
-  TooltipID: tooltip_skill_craft_void
   VisibleToPlayer: 1
   Priority: 18
   Index: 21
   XPMod: 4
   EnergyCost: 3
-  SkillType: 1048576
+  IsCombatSkill: 0
