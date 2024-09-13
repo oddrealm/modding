@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
-  m_DefaultGroup: 3cea5a7693c71b248be853cdeca4a290
+  m_DefaultGroup: a9a6bee548cfffe41a02d962ff617987
   m_currentHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 1
+  m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   m_NonRecursiveBuilding: 0
   m_CCDEnabled: 0
   m_maxConcurrentWebRequests: 500
-  m_ContiguousBundles: 0
+  m_ContiguousBundles: 1
   m_StripUnityVersionFromBundleBuild: 0
   m_DisableVisibleSubAssetRepresentations: 0
   m_ShaderBundleNaming: 0
@@ -38,18 +38,15 @@ MonoBehaviour:
     m_Id: 8d71ce75dd861bf4fa97521c09461461
   m_RemoteCatalogLoadPath:
     m_Id: 4888cea6576cd8a47aee98e8773e90e2
-  m_ContentStateBuildPathProfileVariableName: 
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 2
   m_overridePlayerVersion: 
   m_GroupAssets:
   - {fileID: 11400000, guid: c4b75abb78ccab4449f601c1c6728fd6, type: 2}
-  - {fileID: 11400000, guid: 7048e045874594e449ea61b838566c1b, type: 2}
-  - {fileID: 11400000, guid: c505b517fbf78304eb0d0ae5937785b2, type: 2}
-  - {fileID: 11400000, guid: d28be45e9871e3146a5b9a245c1fae01, type: 2}
-  - {fileID: 11400000, guid: 7ffeb3433d9b18a488b3c5441291d3cf, type: 2}
-  - {fileID: 11400000, guid: 6a70ce8458bf6ca43929bb4fbd1460e2, type: 2}
+  - {fileID: 11400000, guid: 66a215cd99dce7d439df53be4fdc337b, type: 2}
+  - {fileID: 11400000, guid: 40039dd1f7107d744919c54e7f59f807, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -64,71 +61,9 @@ MonoBehaviour:
       - m_Id: 0b7d706c5e7f80847bad8bc22a25db2a
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: 8d71ce75dd861bf4fa97521c09461461
-        m_Value: '[UnityEngine.Application.persistentDataPath]/Mods/'
+        m_Value: '[UnityEngine.Application.streamingAssetsPath]/GameData'
       - m_Id: 4888cea6576cd8a47aee98e8773e90e2
-        m_Value: '{UnityEngine.Application.persistentDataPath}/Mods/'
-      - m_Id: 7914ce7b2f0249c4eb88b5c3f8e2cdf0
-        m_Value: ServerData/[BuildTarget]
-      - m_Id: d6f356ae13cafaf4c943978a8478c611
-        m_Value: http://localhost/[BuildTarget]
-    - m_InheritedParent: 
-      m_Id: 30782f78353178948afcff6da8b35ba7
-      m_ProfileName: ExampleMod1 (One Hand Shovel)
-      m_Values:
-      - m_Id: 0b7d706c5e7f80847bad8bc22a25db2a
-        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
-      - m_Id: 8d71ce75dd861bf4fa97521c09461461
-        m_Value: '[UnityEngine.Application.persistentDataPath]/Mods/ExampleMod1 (One
-          Hand Shovel)'
-      - m_Id: 4888cea6576cd8a47aee98e8773e90e2
-        m_Value: '{UnityEngine.Application.persistentDataPath}/Mods/ExampleMod1 (One
-          Hand Shovel)'
-      - m_Id: 7914ce7b2f0249c4eb88b5c3f8e2cdf0
-        m_Value: ServerData/[BuildTarget]
-      - m_Id: d6f356ae13cafaf4c943978a8478c611
-        m_Value: http://localhost/[BuildTarget]
-    - m_InheritedParent: 
-      m_Id: 45b417ab299c25046937ad657ff4b095
-      m_ProfileName: ExampleMod2 (Two Hand Shovel)
-      m_Values:
-      - m_Id: 0b7d706c5e7f80847bad8bc22a25db2a
-        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
-      - m_Id: 8d71ce75dd861bf4fa97521c09461461
-        m_Value: '[UnityEngine.Application.persistentDataPath]/Mods/ExampleMod2 (Two
-          Hand Shovel)'
-      - m_Id: 4888cea6576cd8a47aee98e8773e90e2
-        m_Value: '{UnityEngine.Application.persistentDataPath}/Mods/ExampleMod2 (Two
-          Hand Shovel)'
-      - m_Id: 7914ce7b2f0249c4eb88b5c3f8e2cdf0
-        m_Value: ServerData/[BuildTarget]
-      - m_Id: d6f356ae13cafaf4c943978a8478c611
-        m_Value: http://localhost/[BuildTarget]
-    - m_InheritedParent: 
-      m_Id: 33bb454b65de13a4d9783b462d51bae2
-      m_ProfileName: ExampleMod3 (Terrain Tuning)
-      m_Values:
-      - m_Id: 0b7d706c5e7f80847bad8bc22a25db2a
-        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
-      - m_Id: 8d71ce75dd861bf4fa97521c09461461
-        m_Value: '[UnityEngine.Application.persistentDataPath]/Mods/ExampleMod3 (Terrain
-          Tuning)'
-      - m_Id: 4888cea6576cd8a47aee98e8773e90e2
-        m_Value: '{UnityEngine.Application.persistentDataPath}/Mods/ExampleMod3 (Terrain
-          Tuning)'
-      - m_Id: 7914ce7b2f0249c4eb88b5c3f8e2cdf0
-        m_Value: ServerData/[BuildTarget]
-      - m_Id: d6f356ae13cafaf4c943978a8478c611
-        m_Value: http://localhost/[BuildTarget]
-    - m_InheritedParent: 
-      m_Id: fa7e1a231bc79844693a79470f94c7c7
-      m_ProfileName: MoreTools
-      m_Values:
-      - m_Id: 0b7d706c5e7f80847bad8bc22a25db2a
-        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
-      - m_Id: 8d71ce75dd861bf4fa97521c09461461
-        m_Value: '[UnityEngine.Application.persistentDataPath]/Mods/MoreTools'
-      - m_Id: 4888cea6576cd8a47aee98e8773e90e2
-        m_Value: '{UnityEngine.Application.persistentDataPath}/Mods/MoreTools'
+        m_Value: '{UnityEngine.Application.streamingAssetsPath}/GameData'
       - m_Id: 7914ce7b2f0249c4eb88b5c3f8e2cdf0
         m_Value: ServerData/[BuildTarget]
       - m_Id: d6f356ae13cafaf4c943978a8478c611
@@ -152,13 +87,114 @@ MonoBehaviour:
     m_ProfileVersion: 1
   m_LabelTable:
     m_LabelNames:
-    - default
-    - items
+    - itemaction
+    - entities
     - tooltips
-    - blockvisuals
-    - characteraccessory
+    - ambientmusic
+    - animations
+    - animationsetgroups
+    - animationsets
+    - animationstates
+    - appearancegroups
+    - appearances
+    - artifact
+    - attackgroups
     - attacks
+    - attributeactions
+    - attributes
+    - audiogroups
+    - biomenames
+    - biomes
+    - biomeseasons
+    - biometerraingen
     - biometerrainnoisetuning
+    - biomeweather
+    - blockplants
+    - blockplatforms
+    - blocks
+    - blockvisuals
+    - blueprints
+    - characteraccessory
+    - charactercolormask
+    - commandbuttons
+    - dialogue
+    - dialoguegroups
+    - diets
+    - discoverygroups
+    - discoverynames
+    - entityage
+    - entityagetype
+    - entitynames
+    - entityschema
+    - entitysizes
+    - entityspawngroups
+    - entitystatus
+    - entitytuning
+    - faction
+    - fish
+    - fishspawngroups
+    - fxgroups
+    - gameconstants
+    - gameplaytips
+    - history
+    - historytypes
+    - indications
+    - intelligence
+    - itemqualities
+    - items
+    - itemslots
+    - itemspawngroups
+    - locationnames
+    - notifications
+    - occupantgroup
+    - overworldlodespawngroups
+    - overworldlodespawns
+    - overworldmapgen
+    - overworldnation
+    - overworldpartyactiongroups
+    - overworldpartyactions
+    - overworldtravel
+    - overworldvisuals
+    - profession
+    - races
+    - realmnames
+    - research
+    - researchcategories
+    - roomnames
+    - roomtemplates
+    - scenarios
+    - tutorialsegment
+    - skills
+    - startingloadouts
+    - tags
+    - toolbarmenus
+    - wordgroups
+    - xpgrowth
+    - zones
+    - roompermission
+    - statusaction
+    - designationfilter
+    - familymember
+    - dietgroup
+    - uniformassignment
+    - controlgroup
+    - biomenoise
+    - inputcommand
+    - selection
+    - simulation
+    - blockfill
+    - cave
+    - tagobjectspawn
+    - blueprintcategory
+    - roomcategory
+    - treasure
+    - itemrarity
+    - uniform
+    - party
+    - prefab
+    - landmark
+    - entityspawn
+    - leader
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: a7b4ff4c0d9938e47ba58c00f547a964, type: 2}
@@ -172,7 +208,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6447d11d15cf01a4e81d3361deee5360, type: 2}
   - {fileID: 11400000, guid: 726ef96051c5a77479111327246d636c, type: 2}
   - {fileID: 11400000, guid: 8990ee48cdd7620459abbee743cff18a, type: 2}
-  m_ActiveProfileId: fa7e1a231bc79844693a79470f94c7c7
+  m_ActiveProfileId: 40f06d7a8350570498f2a4a0e8823911
   m_HostingServicesManager:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}
