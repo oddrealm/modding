@@ -21,7 +21,7 @@ MonoBehaviour:
   Action: Iron Shovel 2h
   Name: Iron Shovel 2h
   NamePlural: 
-  InlineIcon: <sprite=1124>
+  InlineIcon: <sprite=1784>
   Description: 
   Icon: sp_iron_shovel_two_hand_icon
   TextColor: {r: 0.06666667, g: 0.56078434, b: 0.38039216, a: 1}

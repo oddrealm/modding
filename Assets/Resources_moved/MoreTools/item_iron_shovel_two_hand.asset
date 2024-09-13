@@ -65,7 +65,7 @@ MonoBehaviour:
   Actions:
   - ActionID: tag_can_equip
     Buff:
-      TargetID: skill_craft_metal
+      TargetID: skill_mine
       Amount: 7
       Max: 0
       Permanent: 0

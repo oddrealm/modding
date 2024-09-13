@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7176471, g: 0.7176471, b: 0.7176471, a: 1}
-  TextureX: 80
-  TextureY: 125
+  TextureX: 81
+  TextureY: 101
   SecondaryTextureX: 0
   SecondaryTextureY: 0
   FXTextureX: 0

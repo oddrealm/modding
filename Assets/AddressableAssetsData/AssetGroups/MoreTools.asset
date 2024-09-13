@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: MoreTools
+  m_EditorClassIdentifier: 
+  m_GroupName: MoreTools
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ce92831bd04e1c848b09fc8b8b0e9777
+  m_SerializeEntries:
+  - m_GUID: a14d9830aa7d462458b920ce216991c1
+    m_Address: attack_iron_shovel_two_hand_strike
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - attacks
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1a19ebeaa5a34741a148475452e2e68
+    m_Address: attack_group_iron_shovel_two_hand
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - attackgroups
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96069c620369f3e4a9d255099e0dbfb8
+    m_Address: accessory_item_iron_shovel_two_hand
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - characteraccessory
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d2b8fa1aaa0acb48a5e7b9c982d1328
+    m_Address: item_iron_shovel_two_hand
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - items
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 946bb3d16285d314f91ca23cf9aa2336
+    m_Address: blueprint_item_iron_shovel_two_hand
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - blueprints
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 538100e0712b1794e983a2badbf1ab52
+    m_Address: tooltip_item_iron_shovel_two_hand
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - tooltips
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bee91bbb0820bf34c8b936b88fe81831
+    m_Address: visuals_item_iron_shovel_two_hand
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - blockvisuals
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 757288c6465130c4684a328a469fff0a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 69a33d91c04c2984cae6633865650c0d, type: 2}
+    - {fileID: 11400000, guid: 1bfb00964015b2349b12e2a0a90789e9, type: 2}
