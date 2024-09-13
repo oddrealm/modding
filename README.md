@@ -26,8 +26,8 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     Think of a Profile as a new mod pack.  
     This is what players will see when the mod screen appears in-game (more on this later). 
 6.  With the MoreTools profile selected, change the LocalBuildPath and LocalLoadPath variables to:  
-          a. LocalBuildPath = [UnityEngine.Application.persistentDataPath]/Mods/MoreItems  
-          b. LocalLoadPath = {UnityEngine.Application.persistentDataPath}/Mods/MoreItems  
+          a. LocalBuildPath = [UnityEngine.Application.persistentDataPath]/Mods/MoreTools  
+          b. LocalLoadPath = {UnityEngine.Application.persistentDataPath}/Mods/MoreTools  
     When the mod is ready to use in-game (all the data is set up by you), we 'build' (export the data) using these paths.  
     IMPORTANT: Always make sure your mods are folders withing the Mods folder of the OddRealm save folder 
                (i.e., on Windows "C:/Users/You/AppData/LocalLow/Unknown Origin Games/OddRealm/Mods/MoreTools").  
