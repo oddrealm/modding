@@ -20454,6 +20454,34 @@ MonoBehaviour:
   DefaultFloraPopulationModifiers:
   - Rating: 2
     TagObjID: plant_tree_palm_sapling
+  - Rating: 4
+    TagObjID: plant_agave
+  - Rating: 2
+    TagObjID: plant_melon
+  - Rating: 4
+    TagObjID: plant_ivory_coral
+  - Rating: 4
+    TagObjID: plant_viola
+  - Rating: 4
+    TagObjID: plant_sendalo
+  - Rating: 4
+    TagObjID: plant_sacaton_grass
+  - Rating: 4
+    TagObjID: plant_hook_thorn
+  - Rating: 4
+    TagObjID: plant_cholla
+  - Rating: 4
+    TagObjID: plant_buckhorn
+  - Rating: 4
+    TagObjID: plant_staghorn
+  - Rating: 4
+    TagObjID: plant_prickly_bear
+  - Rating: 4
+    TagObjID: plant_green_thumb
+  - Rating: 4
+    TagObjID: plant_sandbur
+  - Rating: 4
+    TagObjID: plant_alura
   OverworldMapGeneration: overworld_map_gen_desert_mountain
   OverworldUnderlayVisuals: 
   OverworldTerrainVisuals: overworld_visuals_desert_mountain

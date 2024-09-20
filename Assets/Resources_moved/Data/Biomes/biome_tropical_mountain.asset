@@ -20452,6 +20452,30 @@ MonoBehaviour:
     TagObjID: plant_tree_berara_sapling
   - Rating: 3
     TagObjID: plant_tree_palm_sapling
+  - Rating: 4
+    TagObjID: plant_buckhorn
+  - Rating: 2
+    TagObjID: plant_chaga_fruit
+  - Rating: 1
+    TagObjID: plant_cherry_corn
+  - Rating: 4
+    TagObjID: plant_chongo
+  - Rating: 4
+    TagObjID: plant_night_sleep
+  - Rating: 2
+    TagObjID: plant_pineapple
+  - Rating: 1
+    TagObjID: plant_rice
+  - Rating: 1
+    TagObjID: plant_sweet_potato
+  - Rating: 1
+    TagObjID: plant_sweet_root
+  - Rating: 4
+    TagObjID: plant_temba
+  - Rating: 4
+    TagObjID: plant_alura
+  - Rating: 4
+    TagObjID: plant_ivory_coral
   OverworldMapGeneration: overworld_map_gen_tropical_mountain
   OverworldUnderlayVisuals: overworld_visuals_ocean
   OverworldTerrainVisuals: overworld_visuals_tropical_mountain

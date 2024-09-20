@@ -18,4 +18,10 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  DisplayText: []
+  DisplayText:
+  - TextDisplay: Use
+    InputID: 
+  - TextDisplay: 
+    InputID: input_command_collapse_list
+  - TextDisplay: to collapse expanded lists.
+    InputID: 

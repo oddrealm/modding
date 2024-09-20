@@ -85,7 +85,7 @@ MonoBehaviour:
     AnimStartSFX: 
   - ActionType: 3
     MaxWorkers: 0
-    WorkerID: skill_craft_wood
+    WorkerID: skill_misc
     TargetID: 
     ResourceID: 
     OnJobFinishActionID: 

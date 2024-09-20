@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
-  m_Name: all_saga0
+  m_Name: all_settler_jobs3
   m_EditorClassIdentifier: 
   TooltipID: 
   GroupID: 
@@ -19,11 +19,11 @@ MonoBehaviour:
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Speaker: Darby, the Historian
-  PreviousSegment: 
+  PreviousSegment: all_settler_jobs2
   Trigger: 11
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
-  MinUnscaledPlayedTime: 60
+  MinUnscaledPlayedTime: 30
   MinCooldown: -1
   Hooks: []
   ActiveRaces: []
@@ -34,12 +34,7 @@ MonoBehaviour:
   AttributeType: 0
   MinAttributeAmount: -1
   MaxAttributeAmount: -1
-  ItemIDs:
-  - item_tome_of_arcana
-  - item_tome_of_industry
-  - item_tome_of_cooking
-  - item_tome_of_agriculture
-  - item_tome_of_war
+  ItemIDs: []
   ItemConditionType: 1
   ItemMinCount: -1
   ConstructionCategoryType: 0
@@ -49,23 +44,22 @@ MonoBehaviour:
   ProfessionCount: -1
   ProfessionID: 
   FadeInDelay: 0
-  PopUpPosition: 1
+  PopUpPosition: 2
   ShowBackground: 1
   ShowBackgroundMask: 1
-  BackgroundMaskTarget: saga_cmd_btn
+  BackgroundMaskTarget: build_cmd_btn
   AnimatedImage: 
   PopUpTextBody: 
-  Comment: Saga 0
+  Comment: Jobs 3
   Icon: sp_adult_darby_ma0
   Message:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: 'You can learn new technology from the <sprite=883> Saga window. Open it
-      using:'
+    Body: 'You can build props, walls, and other objects from the build menu using:'
     NewLine: 1
-    UseOverrideColor: 1
-    OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
@@ -74,7 +68,7 @@ MonoBehaviour:
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
   - OnlyShowInputHotkey: 1
-    InputID: input_command_open_saga
+    InputID: input_command_open_build
     TagObjectID: 
     Body: 
     NewLine: 1

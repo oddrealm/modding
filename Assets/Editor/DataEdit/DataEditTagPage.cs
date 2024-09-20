@@ -252,109 +252,9 @@ public class DataEditTagPage : DataEditPage
 
             MARK_DIRTY(script);
 
-            if (script is GDEItemsData data)
+            if (script is GDEBiomesData data)
             {
-                if (data.TagIDs.Contains("tag_can_eat") &&
-                    data.ItemType == "tag_item_type_seed")
-                {
-                    data.TagIDs.Remove("tag_can_eat");
-                    Debug.LogError($"{data.Key}");
-                }
-
-
-
-                //data.Diets.Clear();
-
-                ////if (data.Diets.Count == 0)
-                //{
-                //    data.Diets.Add(new GDEEntitiesData.DietSettings()
-                //    {
-                //        TagObjectID = "tag_item_type_seed",
-                //        Priority = 0
-                //    });
-
-                //    data.Diets.Add(new GDEEntitiesData.DietSettings()
-                //    {
-                //        TagObjectID = "tag_cooked_food",
-                //        Priority = 0,
-                //    });
-
-                //    data.Diets.Add(new GDEEntitiesData.DietSettings()
-                //    {
-                //        TagObjectID = "tag_item_type_remains",
-                //        Priority = 3,
-                //        Statuses = new string[] { "entity_status_well_fed" }
-                //    });
-
-                //    //data.Diets.Add(new GDEEntitiesData.DietSettings()
-                //    //{
-                //    //    TagObjectID = "tag_item_type_plant_material",
-                //    //    Priority = 3,
-                //    //    Statuses = new string[] { "entity_status_well_fed" }
-                //    //});
-
-                //    //data.Diets.Add(new GDEEntitiesData.DietSettings()
-                //    //{
-                //    //    TagObjectID = "tag_item_type_grain",
-                //    //    Priority = 3,
-                //    //    Statuses = new string[] { "entity_status_well_fed" }
-                //    //});
-
-                //    data.Diets.Add(new GDEEntitiesData.DietSettings()
-                //    {
-                //        TagObjectID = "tag_item_type_fish",
-                //        Priority = 3,
-                //        Statuses = new string[] { "entity_status_well_fed" }
-                //    });
-
-                //    data.Diets.Add(new GDEEntitiesData.DietSettings()
-                //    {
-                //        TagObjectID = "tag_item_type_meat",
-                //        Priority = 3,
-                //        Statuses = new string[] { "entity_status_well_fed" }
-                //    });
-
-                //    //data.Diets.Add(new GDEEntitiesData.DietSettings()
-                //    //{
-                //    //    TagObjectID = "tag_item_type_water",
-                //    //    Priority = 3,
-                //    //    Statuses = new string[] { "entity_status_hydrated" }
-                //    //});
-                //}
-                //data.RebuildInlineAndName();
-                //string otherItemKey = data.Key.Replace("_roasted", "_raw");
-
-                //if (TryGetDataByID<GDEItemsData>(otherItemKey, out var otherItem))
-                //{
-                //    int otherItemAmount = 0;
-
-                //    for (int i = 0; i < otherItem.Actions.Length; i++)
-                //    {
-                //        if (otherItem.Actions[i].ActionID != "tag_can_eat") { continue; }
-                //        if (otherItem.Actions[i].Buff.TargetID != "attribute_hunger") { continue; }
-                //        otherItemAmount = otherItem.Actions[i].Buff.Amount;
-                //    }
-
-                //    bool found = false;
-                //    for (int i = 0; otherItemAmount > 0 && i < data.Actions.Length; i++)
-                //    {
-                //        if (data.Actions[i].ActionID != "tag_can_eat") { continue; }
-                //        if (data.Actions[i].Buff.TargetID != "attribute_hunger") { continue; }
-                //        data.Actions[i].Buff.Amount = otherItemAmount + 20;
-                //        Debug.Log($"{otherItem.Key} ({otherItemAmount}) => {data.Key} ({data.Actions[i].Buff.Amount}))");
-                //        found = true;
-                //        break;
-                //    }
-
-                //    if (!found)
-                //    {
-                //        Debug.LogError($"{data.Key} Missing hunger version: {otherItemKey}");
-                //    }
-                //}
-                //else
-                //{
-                //    Debug.LogError($"{data.Key} Missing roasted version: {otherItemKey}");
-                //}
+                
             }
         }
 
@@ -1314,22 +1214,22 @@ public class DataEditTagPage : DataEditPage
         END_INDENT();
     }
 
-    private void RenderBiome(GDEBiomesData biomeData)
+    private void RenderBiome(GDEBiomesData data)
     {
-        if (biomeData == null) { return; }
+        if (data == null) { return; }
 
-        MARK_DIRTY(biomeData);
+        MARK_DIRTY(data);
 
-        bool showBiomeLayers = EXPAND_TOGGLE("Terrain Gen:", ColorUtility.earthBrown, -1, biomeData.Key);
+        bool showBiomeLayers = EXPAND_TOGGLE("Terrain Gen:", ColorUtility.earthBrown, -1, data.Key);
 
-        GDEBiomesData.TerrainGen terrainGen = biomeData.TerrainGenSettings;
+        GDEBiomesData.TerrainGen terrainGen = data.TerrainGenSettings;
 
         if (showBiomeLayers)
         {
             terrainGen.Layers = RenderTerrainLayers(terrainGen.Layers);
         }
 
-        bool showBiomeCaves = EXPAND_TOGGLE("Cave Gen:", ColorUtility.caveBlue, -1, biomeData.Key);
+        bool showBiomeCaves = EXPAND_TOGGLE("Cave Gen:", ColorUtility.caveBlue, -1, data.Key);
 
         // Caves.
         if (showBiomeCaves)
@@ -1356,7 +1256,7 @@ public class DataEditTagPage : DataEditPage
                 LABEL("Cave Strata");
 
 #if ODD_REALM_APP
-                if (Application.isPlaying && ActiveTile != null && ActiveTile.BiomeData == biomeData)
+                if (Application.isPlaying && ActiveTile != null && ActiveTile.BiomeData == data)
                 {
                     BTN("Find Next", () => {
                         bool found = false;
@@ -1457,7 +1357,7 @@ public class DataEditTagPage : DataEditPage
             END_INDENT();
         }
 
-        bool showBiomePlants = EXPAND_TOGGLE("Props/Plants Gen:", ColorUtility.plantGreen, -1, biomeData.Key);
+        bool showBiomePlants = EXPAND_TOGGLE("Props/Plants Gen:", ColorUtility.plantGreen, -1, data.Key);
 
         // Plants and Props.
         if (showBiomePlants)
@@ -1525,28 +1425,138 @@ public class DataEditTagPage : DataEditPage
             terrainGen.PlantsToGenerate = ARRAY_ADD_BTN<GDEBiomesData.PlantGen>(terrainGen.PlantsToGenerate, "+Plant Gen");
         }
 
-        bool showBiomeFloraPopulations = EXPAND_TOGGLE("Plant Population Limits:", ColorUtility.purple, -1, biomeData.Key);
+        bool showBiomeFloraPopulations = EXPAND_TOGGLE("Plant Population Limits:", ColorUtility.purple, -1, data.Key);
 
         // Population.
         if (showBiomeFloraPopulations)
         {
-            for (int i = 0; i < biomeData.DefaultFloraPopulationModifiers.Length; i++)
+            if (_lastBiomeSelection != data.Key)
             {
-                GDEBiomesData.DefaultPopulationRating pop = biomeData.DefaultFloraPopulationModifiers[i];
+                _lastBiomeSelection = data.Key;
+                _rebuildPlantsInBiome = true;
+            }
+
+            int popCount = data.DefaultFloraPopulationModifiers.Length;
+
+            for (int i = 0; i < data.DefaultFloraPopulationModifiers.Length; i++)
+            {
+                GDEBiomesData.DefaultPopulationRating pop = data.DefaultFloraPopulationModifiers[i];
 
                 BEGIN_HOR();
-                GDEBiomesData.DefaultPopulationRating[] arr = ARRAY_REMOVE_BTN<GDEBiomesData.DefaultPopulationRating>(biomeData.DefaultFloraPopulationModifiers, i);
+                GDEBiomesData.DefaultPopulationRating[] arr = ARRAY_REMOVE_BTN<GDEBiomesData.DefaultPopulationRating>(data.DefaultFloraPopulationModifiers, i);
                 pop.Rating = (PopulationRatings)DROP_DOWN(pop.Rating, 100);
                 pop.TagObjID = TEXT_INPUT(pop.TagObjID);
                 //FLEX_SPACE();
                 END_HOR();
-                biomeData.DefaultFloraPopulationModifiers[i] = pop;
-                biomeData.DefaultFloraPopulationModifiers = arr;
+                data.DefaultFloraPopulationModifiers[i] = pop;
+                data.DefaultFloraPopulationModifiers = arr;
             }
 
-            biomeData.DefaultFloraPopulationModifiers = ARRAY_ADD_BTN<GDEBiomesData.DefaultPopulationRating>(biomeData.DefaultFloraPopulationModifiers, "+Pop. Modifier");
+            data.DefaultFloraPopulationModifiers = ARRAY_ADD_BTN<GDEBiomesData.DefaultPopulationRating>(data.DefaultFloraPopulationModifiers, "+Pop. Modifier");
+            _rebuildPlantsInBiome |= popCount != data.DefaultFloraPopulationModifiers.Length;
+            BEGIN_CLR(Color.yellow);
+            BTN("Rebuild Plant Default Pop List", () => { _rebuildPlantsInBiome = true; });
+            END_CLR();
+
+            if (_rebuildPlantsInBiome)
+            {
+                _rebuildPlantsInBiome = false;
+                _plantsInDefaultPop.Clear();
+                _plantsNotInDefaultPop.Clear();
+
+                for (int i = 0; i < data.DefaultFloraPopulationModifiers.Length; i++)
+                {
+                    _plantsInDefaultPop.Add(data.DefaultFloraPopulationModifiers[i].TagObjID);
+                }
+
+                for (int i = 0; i < data.TerrainGenSettings.PlantsToGenerate.Length; i++)
+                {
+                    Scriptable plantSpawnTag = GetDataByID(data.TerrainGenSettings.PlantsToGenerate[i].TagID) as Scriptable;
+
+                    if (plantSpawnTag == null) { continue; }
+
+                    List<Scriptable> tagObjsByTag = GetScriptsByTag(plantSpawnTag);
+
+                    for (int n = 0; n < tagObjsByTag.Count; n++)
+                    {
+                        GDETagObjectSpawnData spawn = GetDataByID<GDETagObjectSpawnData>(tagObjsByTag[n].Key);
+
+                        if (spawn != null)
+                        {
+                            for (int l = 0; l < spawn.Spawns.Length; l++)
+                            {
+                                Scriptable spawnTag = GetDataByID(spawn.Spawns[l].TagID);
+
+                                if (spawnTag == null) { continue; }
+
+                                List<Scriptable> spawnTagObjs = GetScriptsByTag(spawnTag);
+
+                                for (int s = 0; s < spawnTagObjs.Count; s++)
+                                {
+                                    Scriptable spawnTagObj = spawnTagObjs[s];
+
+                                    // Flora.
+                                    if (spawnTagObj is GDEBlockPlantsData plantData && !_plantsInDefaultPop.Contains(plantData.Key))
+                                    {
+                                        _plantsNotInDefaultPop.Add(plantData.Key);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            LABEL("Plants With Pop Rating:");
+            BEGIN_INDENT();
+
+            foreach (string plant in _plantsInDefaultPop)
+            {
+                LABEL(plant);
+            }
+
+            END_INDENT();
+
+            LABEL("Plants Without Pop Rating:");
+            BEGIN_INDENT();
+            BEGIN_CLR(Color.yellow);
+
+            foreach (string plant in _plantsNotInDefaultPop)
+            {
+                BEGIN_HOR();
+                LABEL(plant, 180);
+
+                foreach (PopulationRatings rating in System.Enum.GetValues(typeof(PopulationRatings)))
+                {
+                    if (rating == PopulationRatings.COUNT) { continue; }
+
+                    BTN(rating.ToString(), () =>
+                    {
+                        DefaultPopulationRating r = new DefaultPopulationRating()
+                        {
+                            TagObjID = plant,
+                            Rating = rating,
+                        };
+
+                        data.DefaultFloraPopulationModifiers = AddToArray(data.DefaultFloraPopulationModifiers, r);
+                        _rebuildPlantsInBiome = true;
+                    });
+                }
+
+                END_HOR();
+            }
+
+            END_CLR();
+            END_INDENT();
         }
     }
+
+    private string _lastBiomeSelection;
+    private bool _rebuildPlantsInBiome;
+    private HashSet<string> _plantsInDefaultPop = new HashSet<string>();
+    private HashSet<string> _plantsNotInDefaultPop = new HashSet<string>();
 
     private void RenderScenario(GDEScenariosData scenariosData)
     {

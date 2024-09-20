@@ -18,4 +18,10 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  DisplayText: []
+  DisplayText:
+  - TextDisplay: Holding
+    InputID: 
+  - TextDisplay: 
+    InputID: input_command_toggle_single_layer_select
+  - TextDisplay: will hide other layers below the camera's current layer.
+    InputID: 

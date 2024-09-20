@@ -20469,6 +20469,56 @@ MonoBehaviour:
     TagObjID: plant_tree_iro_sapling
   - Rating: 2
     TagObjID: plant_tree_apple_sapling
+  - Rating: 1
+    TagObjID: plant_beetroot
+  - Rating: 2
+    TagObjID: plant_blackberry
+  - Rating: 2
+    TagObjID: plant_boletus_mushroom
+  - Rating: 1
+    TagObjID: plant_broccoli
+  - Rating: 4
+    TagObjID: plant_burclover
+  - Rating: 1
+    TagObjID: plant_cabbage
+  - Rating: 1
+    TagObjID: plant_carrot
+  - Rating: 1
+    TagObjID: plant_cauliflower
+  - Rating: 1
+    TagObjID: plant_celery
+  - Rating: 4
+    TagObjID: plant_chickweed
+  - Rating: 1
+    TagObjID: plant_corn
+  - Rating: 2
+    TagObjID: plant_elderberry
+  - Rating: 2
+    TagObjID: plant_gooseberry
+  - Rating: 4
+    TagObjID: plant_goose_grass
+  - Rating: 4
+    TagObjID: plant_lady_harp
+  - Rating: 4
+    TagObjID: plant_large_crabgrass
+  - Rating: 1
+    TagObjID: plant_onion
+  - Rating: 1
+    TagObjID: plant_potato
+  - Rating: 1
+    TagObjID: plant_pumpkin
+  - Rating: 4
+    TagObjID: plant_stoneleaf
+  - Rating: 1
+    TagObjID: plant_tomato
+  - Rating: 1
+    TagObjID: plant_wheat
+  - Rating: 4
+    TagObjID: plant_yellow_gale
+  - Rating: 1
+    TagObjID: plant_zucchini
+  - Rating: 4
+    TagObjID: plant_sogweed
   OverworldMapGeneration: overworld_map_gen_taiga_mountain
   OverworldUnderlayVisuals: 
   OverworldTerrainVisuals: overworld_visuals_taiga_mountain

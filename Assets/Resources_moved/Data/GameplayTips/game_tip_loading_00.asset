@@ -19,6 +19,8 @@ MonoBehaviour:
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   DisplayText:
+  - TextDisplay: Hold
+    InputID: 
   - TextDisplay: 
     InputID: input_command_toggle_floating_labels
   - TextDisplay: to view labels for entities and nations.

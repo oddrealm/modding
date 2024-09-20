@@ -20431,6 +20431,18 @@ MonoBehaviour:
     TagObjID: plant_tree_caelum_oscula_sapling
   - Rating: 2
     TagObjID: plant_tree_iro_sapling
+  - Rating: 3
+    TagObjID: plant_ice_root
+  - Rating: 2
+    TagObjID: plant_bronze_cap_mushroom
+  - Rating: 4
+    TagObjID: plant_sikari
+  - Rating: 4
+    TagObjID: plant_twilight
+  - Rating: 4
+    TagObjID: plant_weep_wisp
+  - Rating: 4
+    TagObjID: plant_yellow_gale
   OverworldMapGeneration: overworld_map_gen_tundra
   OverworldUnderlayVisuals: 
   OverworldTerrainVisuals: overworld_visuals_tundra

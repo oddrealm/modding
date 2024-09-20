@@ -20468,6 +20468,10 @@ MonoBehaviour:
     TagObjID: plant_tree_palm_sapling
   - Rating: 4
     TagObjID: plant_prim_grass
+  - Rating: 4
+    TagObjID: plant_alura
+  - Rating: 4
+    TagObjID: plant_ivory_coral
   OverworldMapGeneration: 
   OverworldUnderlayVisuals: overworld_visuals_ocean
   OverworldTerrainVisuals: 

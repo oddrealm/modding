@@ -15,8 +15,7 @@ MonoBehaviour:
   TooltipID: tooltip_plant_chickweed
   GroupID: 
   DEBUG: 0
-  TagIDs:
-  - tag_biome_plants_taiga
+  TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 5760

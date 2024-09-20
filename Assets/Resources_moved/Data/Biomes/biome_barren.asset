@@ -20431,6 +20431,36 @@ MonoBehaviour:
     TagObjID: plant_tree_nila_sapling
   - Rating: 2
     TagObjID: plant_tree_pala_sapling
+  - Rating: 2
+    TagObjID: plant_blood_crown_mushroom
+  - Rating: 4
+    TagObjID: plant_cresis
+  - Rating: 4
+    TagObjID: plant_dax_web
+  - Rating: 3
+    TagObjID: plant_deep_moss
+  - Rating: 4
+    TagObjID: plant_dragon_fern
+  - Rating: 4
+    TagObjID: plant_felix
+  - Rating: 4
+    TagObjID: plant_glow_light
+  - Rating: 4
+    TagObjID: plant_lirium
+  - Rating: 4
+    TagObjID: plant_rhodo
+  - Rating: 4
+    TagObjID: plant_shadow_fern
+  - Rating: 4
+    TagObjID: plant_sikari
+  - Rating: 2
+    TagObjID: plant_skyberry
+  - Rating: 4
+    TagObjID: plant_twilight
+  - Rating: 4
+    TagObjID: plant_weep_wisp
+  - Rating: 4
+    TagObjID: plant_sogweed
   OverworldMapGeneration: overworld_map_gen_barren
   OverworldUnderlayVisuals: 
   OverworldTerrainVisuals: overworld_visuals_barren

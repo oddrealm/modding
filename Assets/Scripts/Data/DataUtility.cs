@@ -83,6 +83,7 @@ public static class DataUtility
         EditorUtility.SetDirty(obj);
     }
 
+
     public static void SetAddressableGroup(this Object obj, string groupName, string labelName)
     {
         var settings = AddressableAssetSettingsDefaultObject.Settings;

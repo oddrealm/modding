@@ -21,7 +21,7 @@ MonoBehaviour:
   Action: Iron Tongs 1h
   Name: Iron Tongs 1h
   NamePlural: 
-  InlineIcon: <sprite=1124>
+  InlineIcon: <sprite=1099>
   Description: 
   Icon: sp_iron_tongs_one_hand_icon
   TextColor: {r: 0.06666667, g: 0.56078434, b: 0.38039216, a: 1}
