@@ -171,7 +171,7 @@ IMPORTANT: The game uses the first mod textures it finds when a mod is enabled.
    They aren't part of the data build pipeline and are only intended as reference for you to make new textures.  
 2. Open the File Explorer (On windows. OSX and Linux will have their respective file system navigators.) by right-clicking the Resources/Textures folder and selecting 'Show In Explorer'.  
 3. Select the 3 textures, right-click them, and select Copy.  
-4. In the File Explorer window, navigate to the mods folder (MoreTools) you created in Part I. Right-click and paste the textures into this folder.  
+4. In the File Explorer window, navigate to the mods folder (MoreTools) you created in Part I (i.e., on Windows "C:/Users/You/AppData/LocalLow/Unknown Origin Games/OddRealm/Mods/MoreTools"). Right-click and paste the textures into this folder. 
    IMPORTANT: Be sure to not rename 'sp_textmesh_inline_graphics' or 'tx_terrain_atlas'.  
               These names are used to find these textures when you enable your mod in-game.  
    IMPORTANT: Make sure all textures are .png format.     
