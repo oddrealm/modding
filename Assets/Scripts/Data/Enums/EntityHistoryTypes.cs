@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum EntityHistoryTypes
+﻿public enum EntityHistoryTypes
 {
     NONE = 0,
     WORLD_INTERACTION = 1,

@@ -54,5 +54,5 @@ MonoBehaviour:
   LightSettings:
     ReductionThreshold: 0
     SkylightReduction: 0
-    SkylightPass: 6
+    SkylightPass: 7
     BlockAmbientLight: 0

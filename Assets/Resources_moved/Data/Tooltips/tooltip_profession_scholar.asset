@@ -20,11 +20,11 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Scholar
   Name: Scholar
-  NamePlural: 
+  NamePlural: Scholars
   InlineIcon: <sprite=1203>
   Description: Scholars are specialized in the production of paper, ink, and books.
   Icon: sp_profession_scholar_icon
   TextColor: {r: 0.7725491, g: 0.58431375, b: 0.40000004, a: 1}
   Type: Profession
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2046
+  Order: 2047

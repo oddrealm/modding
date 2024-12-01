@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum RarityTypes
+﻿public enum RarityTypes
 {
     COMMON = 0,
     UNCOMMON = 1,

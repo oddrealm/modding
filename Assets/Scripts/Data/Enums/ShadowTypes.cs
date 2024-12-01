@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum ShadowTypes
+﻿public enum ShadowTypes
 {
     NONE = 0,
     SMALL = 1,

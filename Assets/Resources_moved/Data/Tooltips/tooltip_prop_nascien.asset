@@ -26,6 +26,6 @@ MonoBehaviour:
     to accommodate more items.
   Icon: sp_nascien_icon
   TextColor: {r: 0.5882353, g: 0.2901961, b: 0.43137258, a: 1}
-  Type: Prop
+  Type: Container
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Order: 1561

@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: 
   Icon: sp_steel_ladder_icon
   TextColor: {r: 0.2901961, g: 0.57254905, b: 0.7607844, a: 1}
-  Type: Prop
+  Type: Vertical Access
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2237
+  Order: 2235

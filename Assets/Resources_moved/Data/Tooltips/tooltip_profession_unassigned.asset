@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: No Profession
-  Name: No Profession
-  NamePlural: 
+  Action: Unassigned
+  Name: Unassigned
+  NamePlural: Unassigned
   InlineIcon: <sprite=1612>
   Description: Unassigned professions don't earn XP when doing jobs.
   Icon: sp_profession_none_icon
   TextColor: {r: 0.45098042, g: 0.45098042, b: 0.45098042, a: 1}
   Type: Profession
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1609
+  Order: 2612

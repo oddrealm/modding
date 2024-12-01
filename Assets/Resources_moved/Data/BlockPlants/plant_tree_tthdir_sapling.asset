@@ -26,6 +26,7 @@ MonoBehaviour:
   MaxDefaultSimTime: 864000
   MatureThreshold: 0.5
   MatureTag: tag_mature_tree
+  MatureInlineIcon: <sprite=9>
   LimitGroupSizeThreshold: 2500
   RemoveItemDrops: spawns_plant_remove_drops_default
   MatureItemDrops: 

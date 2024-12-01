@@ -20,7 +20,7 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Gwnvayth
   Name: Gwnvayth
-  NamePlural: 
+  NamePlural: Gwnvayth
   InlineIcon: <sprite=1444>
   Description: Queen of the Gwdir, the Gwnvayth is an integral role for producing
     more Gwdir offspring.
@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0.58431375, g: 0.121568635, b: 0.16862746, a: 1}
   Type: Profession
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1097
+  Order: 1098

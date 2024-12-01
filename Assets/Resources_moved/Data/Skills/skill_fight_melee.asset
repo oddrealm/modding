@@ -22,8 +22,6 @@ MonoBehaviour:
   ResearchKey: 
   LevelUpScenario: scenario_level_up_tome_of_war0
   VisibleToPlayer: 1
-  Priority: 6
-  Index: 12
   XPMod: 20
   EnergyCost: 10
   IsCombatSkill: 1

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Globalization;
+using UnityEngine;
 
 public class HSLColor
 {
@@ -95,7 +95,7 @@ public static class ColorUtility
         }
 
         image.color = new Color(c.r, c.g, c.b, 0.0f);
-        if (callback != null) { callback(); } 
+        if (callback != null) { callback(); }
     }
 
     public static Color FromFloatList(List<float> l)

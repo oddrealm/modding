@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/HistoryTypes")]
 public class GDEHistoryTypesData : Scriptable
 {
-	public EntityHistoryTypes HistoryType = EntityHistoryTypes.ENTITY_INTERACTION;
+    public EntityHistoryTypes HistoryType = EntityHistoryTypes.ENTITY_INTERACTION;
 }

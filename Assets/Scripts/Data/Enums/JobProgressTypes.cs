@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum JobProgressTypes
+﻿public enum JobProgressTypes
 {
     FIXED_AMOUNT, // Usually -> 0 (start) to 100 (target) progression.
     TARGET_ENTITY_ATTRIBUTE_PERCENT_OF_MAX, // Using a target attribute as the target progression. 

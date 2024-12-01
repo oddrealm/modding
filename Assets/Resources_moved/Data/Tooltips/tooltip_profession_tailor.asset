@@ -20,7 +20,7 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Tailor
   Name: Tailor
-  NamePlural: 
+  NamePlural: Tailors
   InlineIcon: <sprite=712>
   Description: Tailors specialized in the production of cloth and wool based items
     and materials.

@@ -19,12 +19,12 @@ MonoBehaviour:
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Glass Block
-  Name: Glass Block
+  Name: Glass
   NamePlural: 
   InlineIcon: <sprite=1155>
   Description: 
   Icon: sp_glass_window_icon
   TextColor: {r: 0, g: 0.98039216, b: 0.99215686, a: 1}
-  Type: Prop
+  Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1047
+  Order: 1044

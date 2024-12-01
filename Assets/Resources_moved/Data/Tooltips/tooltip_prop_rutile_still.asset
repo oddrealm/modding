@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: 
   Icon: sp_rutile_still_icon
   TextColor: {r: 0.85882354, g: 0.32156864, b: 0.28235295, a: 1}
-  Type: Prop
+  Type: Station
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Order: 2004

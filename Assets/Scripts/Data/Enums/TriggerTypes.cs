@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum TriggerTypes
+﻿public enum TriggerTypes
 {
     NONE = 0,
     ON_ENTITY_ENTER = 1,

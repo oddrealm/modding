@@ -20,11 +20,11 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Technochron
   Name: Technochron
-  NamePlural: 
+  NamePlural: Technochrons
   InlineIcon: <sprite=1202>
   Description: Specialists in the art of time manipulation.
   Icon: sp_profession_technochron_icon
   TextColor: {r: 0.11764707, g: 0.95294124, b: 0.37254903, a: 1}
   Type: Profession
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2445
+  Order: 2444

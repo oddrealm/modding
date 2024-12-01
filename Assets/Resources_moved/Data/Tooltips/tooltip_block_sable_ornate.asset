@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Sable Ornate Block
-  Name: Sable Ornate Block
+  Action: Sable Ornate
+  Name: Sable Ornate
   NamePlural: 
   InlineIcon: <sprite=1334>
   Description: 

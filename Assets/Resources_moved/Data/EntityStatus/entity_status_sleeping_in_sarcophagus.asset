@@ -19,7 +19,7 @@ MonoBehaviour:
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  ShowIconOnToolbar: 1
+  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
   ExpireTimeMinutesMin: 0
@@ -30,6 +30,7 @@ MonoBehaviour:
   StatusesToProhibit: []
   StatusesToDisable:
   - entity_status_void_sick
+  TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
   ColorMask: 
   Accessory: 
   IdleFXGroup: 

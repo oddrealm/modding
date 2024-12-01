@@ -20,7 +20,7 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Archer
   Name: Archer
-  NamePlural: 
+  NamePlural: Archers
   InlineIcon: <sprite=33>
   Description: Archers specialize in using Ranged Fighting in combat.
   Icon: sp_profession_archer_icon

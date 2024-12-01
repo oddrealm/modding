@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public readonly struct SimulationState
 {
     // The timestamp for when the sim obj was created.

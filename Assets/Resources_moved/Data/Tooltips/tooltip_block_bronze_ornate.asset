@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Bronze Ornate Block
-  Name: Bronze Ornate Block
+  Action: Bronze Ornate
+  Name: Bronze Ornate
   NamePlural: 
   InlineIcon: <sprite=1330>
   Description: Various designs and patterns depicting stories from legend can be

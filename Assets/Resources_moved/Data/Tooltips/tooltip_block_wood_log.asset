@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: 
   Icon: sp_block_wood_log_icon
   TextColor: {r: 0.7411765, g: 0.5764706, b: 0.48235294, a: 1}
-  Type: Fence
+  Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2837
+  Order: 2838

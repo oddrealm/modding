@@ -1,15 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Assets.GameData;
+﻿using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/OccupantGroup")]
 public class GDEOccupantGroupData : Scriptable
 {
-	public OccupantManagementTypes OccupantManageType = OccupantManagementTypes.AUTO;
+    public OccupantManagementTypes OccupantManageType = OccupantManagementTypes.AUTO;
 
     public bool OccupantsMustBePlayerControlled = true;
-	
+
     [Header("Permissions:")]
     public TagObjectSetting[] AvailableOccupantTagObjs = new TagObjectSetting[] {
         new TagObjectSetting(){ TagObjectKey = "tag_races", Max = -1, Min = -1 },

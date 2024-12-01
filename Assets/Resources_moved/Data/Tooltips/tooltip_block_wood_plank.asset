@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Wood Plank Block
-  Name: Wood Plank Block
+  Action: Wood Plank
+  Name: Wood Plank
   NamePlural: 
   InlineIcon: <sprite=1656>
   Description: 

@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/ResearchCategories")]
 public class GDEResearchCategoriesData : Scriptable
 {
-	public string FriendlyName = "";
-	public int OrderInList = 0;
+    public string FriendlyName = "";
+    public int OrderInList = 0;
 
     [System.Serializable]
     public struct ResearchBuff

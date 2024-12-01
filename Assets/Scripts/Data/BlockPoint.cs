@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -31,8 +30,8 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     public static readonly BlockPoint NULL = new BlockPoint(true);
     public static readonly BlockPoint ZERO = new BlockPoint();
     public readonly int x;
-	public readonly int y;
-	public readonly int z;
+    public readonly int y;
+    public readonly int z;
 
     public const int MAX_X = 256;
     public const int MAX_Y = 256;
@@ -47,18 +46,18 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     }
 
     public BlockPoint(int x, int y, int z)
-	{
-		this.x = x;
-		this.y = y;
-		this.z = z;
+    {
+        this.x = x;
+        this.y = y;
+        this.z = z;
         IsNULL = x == -1 && y == -1 && z == -1;
     }
 
     public BlockPoint(float x, float y, float z)
-	{
-		this.x = (int)x;
+    {
+        this.x = (int)x;
         this.y = (int)y;
-		this.z = (int)z;
+        this.z = (int)z;
         IsNULL = this.x == -1 && this.y == -1 && this.z == -1;
     }
 
@@ -240,10 +239,10 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     }
 
     public BlockPoint(Vector3 vec)
-	{
-		this.x = (int)vec.x / Master.Instance.PixelsPerBlockAxis;
+    {
+        this.x = (int)vec.x / Master.Instance.PixelsPerBlockAxis;
         this.y = (int)vec.y / Master.Instance.PixelsPerBlockAxis;
-		this.z = -(int)vec.z / Master.Instance.PixelsPerBlockAxis;
+        this.z = -(int)vec.z / Master.Instance.PixelsPerBlockAxis;
         IsNULL = this.x == -1 && this.y == -1 && this.z == -1;
     }
 
@@ -256,20 +255,20 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     }
 
     public static void Save(ES2Writer writer, BlockPoint p)
-	{
+    {
         writer.Write(p.x);
         writer.Write(p.y);
         writer.Write(p.z);
     }
 
-	public static BlockPoint Load(ES2Reader reader)
-	{
-		int x = reader.Read<int>();
-		int y = reader.Read<int>();
-		int z = reader.Read<int>();
+    public static BlockPoint Load(ES2Reader reader)
+    {
+        int x = reader.Read<int>();
+        int y = reader.Read<int>();
+        int z = reader.Read<int>();
 
-		return new BlockPoint(x, y, z);
-	}
+        return new BlockPoint(x, y, z);
+    }
 
     // TODO: Write a proper line iterator where start and end can be different in 3D space.
     public static void IterateVerticalLine(BlockPoint start, BlockPoint end, System.Action<BlockPoint> onLine)
@@ -338,34 +337,34 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     public void IterateAllNeighbors(System.Action<BlockPoint> onNeighbor)
     {
         if (this == NULL) { return; }
-        onNeighbor(new BlockPoint(x    , y + 1, z   ));
-        onNeighbor(new BlockPoint(x + 1, y + 1, z   ));
-        onNeighbor(new BlockPoint(x + 1, y    , z   ));
-        onNeighbor(new BlockPoint(x + 1, y - 1, z   ));
-        onNeighbor(new BlockPoint(x    , y - 1, z   ));
-        onNeighbor(new BlockPoint(x - 1, y - 1, z   ));
-        onNeighbor(new BlockPoint(x - 1, y    , z   ));
-        onNeighbor(new BlockPoint(x - 1, y + 1, z   ));
+        onNeighbor(new BlockPoint(x, y + 1, z));
+        onNeighbor(new BlockPoint(x + 1, y + 1, z));
+        onNeighbor(new BlockPoint(x + 1, y, z));
+        onNeighbor(new BlockPoint(x + 1, y - 1, z));
+        onNeighbor(new BlockPoint(x, y - 1, z));
+        onNeighbor(new BlockPoint(x - 1, y - 1, z));
+        onNeighbor(new BlockPoint(x - 1, y, z));
+        onNeighbor(new BlockPoint(x - 1, y + 1, z));
 
-        onNeighbor(new BlockPoint(x    , y    , z + 1));
-        onNeighbor(new BlockPoint(x    , y    , z - 1));
+        onNeighbor(new BlockPoint(x, y, z + 1));
+        onNeighbor(new BlockPoint(x, y, z - 1));
 
-        onNeighbor(new BlockPoint(x    , y + 1, z + 1));
+        onNeighbor(new BlockPoint(x, y + 1, z + 1));
         onNeighbor(new BlockPoint(x + 1, y + 1, z + 1));
-        onNeighbor(new BlockPoint(x + 1, y    , z + 1));
+        onNeighbor(new BlockPoint(x + 1, y, z + 1));
         onNeighbor(new BlockPoint(x + 1, y - 1, z + 1));
-        onNeighbor(new BlockPoint(x    , y - 1, z + 1));
+        onNeighbor(new BlockPoint(x, y - 1, z + 1));
         onNeighbor(new BlockPoint(x - 1, y - 1, z + 1));
-        onNeighbor(new BlockPoint(x - 1, y    , z + 1));
+        onNeighbor(new BlockPoint(x - 1, y, z + 1));
         onNeighbor(new BlockPoint(x - 1, y + 1, z + 1));
 
-        onNeighbor(new BlockPoint(x    , y + 1, z - 1));
+        onNeighbor(new BlockPoint(x, y + 1, z - 1));
         onNeighbor(new BlockPoint(x + 1, y + 1, z - 1));
-        onNeighbor(new BlockPoint(x + 1, y    , z - 1));
+        onNeighbor(new BlockPoint(x + 1, y, z - 1));
         onNeighbor(new BlockPoint(x + 1, y - 1, z - 1));
-        onNeighbor(new BlockPoint(x    , y - 1, z - 1));
+        onNeighbor(new BlockPoint(x, y - 1, z - 1));
         onNeighbor(new BlockPoint(x - 1, y - 1, z - 1));
-        onNeighbor(new BlockPoint(x - 1, y    , z - 1));
+        onNeighbor(new BlockPoint(x - 1, y, z - 1));
         onNeighbor(new BlockPoint(x - 1, y + 1, z - 1));
     }
 
@@ -606,7 +605,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
 
         return n;
     }
-    
+
     public BlockPoint[] IntercardinalFourNeighbors(BlockPoint[] cachedArray)
     {
         cachedArray[0] = NorthEast();
@@ -616,7 +615,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
 
         return cachedArray;
     }
-    
+
     public BlockPoint[] IntercardinalFourNeighbors()
     {
         BlockPoint[] n = new BlockPoint[4];
@@ -650,19 +649,19 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     }
 
     public BlockPoint[] CardinalEightNeighbors()
-	{
-		BlockPoint[] n = new BlockPoint[8];
-		n[0] = North();
-		n[1] = NorthEast();
-		n[2] = East();
-		n[3] = SouthEast();
-		n[4] = South();
-		n[5] = SouthWest();
-		n[6] = West();
-		n[7] = NorthWest();
+    {
+        BlockPoint[] n = new BlockPoint[8];
+        n[0] = North();
+        n[1] = NorthEast();
+        n[2] = East();
+        n[3] = SouthEast();
+        n[4] = South();
+        n[5] = SouthWest();
+        n[6] = West();
+        n[7] = NorthWest();
 
-		return n;
-	}
+        return n;
+    }
 
     public BlockPoint[] CardinalEightNeighbors(BlockPoint[] cachedArray)
     {
@@ -691,7 +690,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
         n[7] = NorthWest();
         n[8] = Up();
         n[9] = Down();
-        
+
         return n;
     }
 
@@ -746,7 +745,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
         n[23] = n[9].SouthWest();
         n[24] = n[9].West();
         n[25] = n[9].NorthWest();
-        
+
         return n;
     }
 
@@ -789,17 +788,17 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
 
     public BlockPoint[] CardinalSecondRow(BlockPoint[] cachedArray)
     {
-        cachedArray[0]  = new BlockPoint(x - 2, y + 2, z);
-        cachedArray[1]  = new BlockPoint(x - 1, y + 2, z);
-        cachedArray[2]  = new BlockPoint(x,     y + 2, z);
-        cachedArray[3]  = new BlockPoint(x + 1, y + 2, z);
-        cachedArray[4]  = new BlockPoint(x + 2, y + 2, z);
-        cachedArray[5]  = new BlockPoint(x + 2, y + 1, z);
-        cachedArray[6]  = new BlockPoint(x + 2, y, z);
-        cachedArray[7]  = new BlockPoint(x + 1, y - 1, z);
-        cachedArray[8]  = new BlockPoint(x + 2, y - 2, z);
-        cachedArray[9]  = new BlockPoint(x + 1, y - 2, z);
-        cachedArray[10] = new BlockPoint(x,     y - 2, z);
+        cachedArray[0] = new BlockPoint(x - 2, y + 2, z);
+        cachedArray[1] = new BlockPoint(x - 1, y + 2, z);
+        cachedArray[2] = new BlockPoint(x, y + 2, z);
+        cachedArray[3] = new BlockPoint(x + 1, y + 2, z);
+        cachedArray[4] = new BlockPoint(x + 2, y + 2, z);
+        cachedArray[5] = new BlockPoint(x + 2, y + 1, z);
+        cachedArray[6] = new BlockPoint(x + 2, y, z);
+        cachedArray[7] = new BlockPoint(x + 1, y - 1, z);
+        cachedArray[8] = new BlockPoint(x + 2, y - 2, z);
+        cachedArray[9] = new BlockPoint(x + 1, y - 2, z);
+        cachedArray[10] = new BlockPoint(x, y - 2, z);
         cachedArray[11] = new BlockPoint(x - 1, y - 2, z);
         cachedArray[12] = new BlockPoint(x - 2, y - 2, z);
         cachedArray[13] = new BlockPoint(x - 2, y - 1, z);
@@ -810,7 +809,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     }
 
     public BlockPoint ClosestCardinalNeighbor(BlockPoint originPoint, System.Func<BlockPoint, bool> filter)
-	{
+    {
         BlockPoint[] neighbors = CardinalEightNeighbors();
         BlockPoint closest = originPoint;
         float closestDist = float.MaxValue;
@@ -820,8 +819,8 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
 
             if (!filter(neighbors[i])) { continue; }
 
-		    BlockPoint a = new BlockPoint(neighbors[i].x, neighbors[i].y, 0);
-		    BlockPoint b = new BlockPoint(originPoint.x, originPoint.y, 0);
+            BlockPoint a = new BlockPoint(neighbors[i].x, neighbors[i].y, 0);
+            BlockPoint b = new BlockPoint(originPoint.x, originPoint.y, 0);
             float dist = BlockPoint.Distance(a, b);
 
             if (dist >= closestDist) { continue; }
@@ -829,9 +828,9 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
             closestDist = dist;
             closest = neighbors[i];
         }
-        
+
         return closest;
-	}
+    }
 
     public static BlockPoint ClosestFromList(BlockPoint origin, List<Location> blocks)
     {
@@ -853,7 +852,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
 
         return closestPoint;
     }
-    
+
     public BlockPoint IndexToAdjacentDirection(int i)
     {
         if (i > 3)
@@ -886,12 +885,12 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public Vector3 ToVector3()
     {
-		float worldX = ((float)x * Master.Instance.PixelsPerBlockAxis) + (Master.Instance.PixelsPerBlockAxisHalf);
-		float worldY = ((float)y * Master.Instance.PixelsPerBlockAxis) + (Master.Instance.PixelsPerBlockAxisHalf);
-		float worldZ = ((float)z * Master.Instance.PixelsPerBlockAxis) + (Master.Instance.PixelsPerBlockAxisHalf); // Snap to mid.
+        float worldX = ((float)x * Master.Instance.PixelsPerBlockAxis) + (Master.Instance.PixelsPerBlockAxisHalf);
+        float worldY = ((float)y * Master.Instance.PixelsPerBlockAxis) + (Master.Instance.PixelsPerBlockAxisHalf);
+        float worldZ = ((float)z * Master.Instance.PixelsPerBlockAxis) + (Master.Instance.PixelsPerBlockAxisHalf); // Snap to mid.
 
         return new Vector3(worldX, worldY, -worldZ);
-	}
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public Vector3 ToVector3Top()
@@ -970,7 +969,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
         if (dist <= float.Epsilon) { return Vector3.zero; }
 
         return DeltaVector(a, b) / dist;
-	}
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static int DistanceSquared(BlockPoint p1, BlockPoint p2)
@@ -999,16 +998,16 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static Vector3 DeltaVector(BlockPoint a, BlockPoint b)
     {
-		return new Vector3(b.x - a.x, b.y - a.y, b.z - a.z);
-	}
+        return new Vector3(b.x - a.x, b.y - a.y, b.z - a.z);
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public static float Distance(BlockPoint a, BlockPoint b)
+    public static float Distance(BlockPoint a, BlockPoint b)
     {
-		Vector3 delta = DeltaVector(a, b);
-		return Mathf.Sqrt(delta.x * delta.x + delta.y * delta.y + delta.z * delta.z);
-	}
-    
+        Vector3 delta = DeltaVector(a, b);
+        return Mathf.Sqrt(delta.x * delta.x + delta.y * delta.y + delta.z * delta.z);
+    }
+
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static int ManhattanDistance(BlockPoint a, BlockPoint b)
     {
@@ -1024,46 +1023,52 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static BlockPoint Delta(BlockPoint a, BlockPoint b)
     {
-        return new BlockPoint(Mathf.Abs(b.x - a.x), Mathf.Abs(b.y - a.y),  Mathf.Abs(b.z - a.z));
+        return new BlockPoint(Mathf.Abs(b.x - a.x), Mathf.Abs(b.y - a.y), Mathf.Abs(b.z - a.z));
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static bool InsidePoint(BlockPoint a, BlockPoint b)
     {
-		return (a.x >= b.x && a.x <= b.x + 1 && a.y >= b.y && a.y <= b.y + 1 && a.z >= b.z && a.z <= b.z + 1);
-	}
+        return (a.x >= b.x && a.x <= b.x + 1 && a.y >= b.y && a.y <= b.y + 1 && a.z >= b.z && a.z <= b.z + 1);
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public BlockPoint Clamp(int Width, int Height, int Depth)
+    public BlockPoint Clamp(int Width, int Height, int Depth)
     {
-		return new BlockPoint(Mathf.Clamp(x, 0, Width), Mathf.Clamp(y, 0, Height), Mathf.Clamp(z, 0, Depth));
-	}
+        return new BlockPoint(Mathf.Clamp(x, 0, Width), Mathf.Clamp(y, 0, Height), Mathf.Clamp(z, 0, Depth));
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public float Magnitude()
+    public float Magnitude()
     {
-		return Mathf.Sqrt(x * x + y * y + z * z);
-	}
+        return Mathf.Sqrt(x * x + y * y + z * z);
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public Vector3 Normalize()
+    public Vector3 Normalize()
     {
-		return new Vector3(x, y, z) / Magnitude();
-	}
+        return new Vector3(x, y, z) / Magnitude();
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public BlockPoint Abs()
+    public BlockPoint Abs()
     {
-		return new BlockPoint(Mathf.Abs(x), Mathf.Abs(y), Mathf.Abs(z));
-	}
+        return new BlockPoint(Mathf.Abs(x), Mathf.Abs(y), Mathf.Abs(z));
+    }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public static int GetAdjacentDist(BlockPoint a, BlockPoint b)
+    {
+        BlockPoint delta = Delta(a, b);
+        int max = Mathf.Max(delta.x, delta.y, delta.z);
+        return max;
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static bool IsAdjacent(BlockPoint a, BlockPoint b)
     {
         BlockPoint delta = Delta(a, b);
-
         int max = Mathf.Max(delta.x, delta.y, delta.z);
-
         return max <= 1;
     }
 
@@ -1071,29 +1076,27 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     public static bool IsAdjacentHorizontal(BlockPoint a, BlockPoint b)
     {
         BlockPoint delta = Delta(a, b);
-
         int max = Mathf.Max(delta.x, delta.y);
-
         return max <= 1;
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public static bool InRange(BlockPoint a, BlockPoint b, int range)
+    public static bool InRange(BlockPoint a, BlockPoint b, int range)
     {
-		return (int)BlockPoint.Distance(a, b) <= range;
-	}
+        return (int)BlockPoint.Distance(a, b) <= range;
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public static bool InPointBorder(BlockPoint a, BlockPoint b)
+    public static bool InPointBorder(BlockPoint a, BlockPoint b)
     {
-		BlockPoint delta = b - a;
-		return Mathf.Max(Mathf.Abs(delta.x), Mathf.Abs(delta.y), Mathf.Abs(delta.z)) <= 1;
-	}
+        BlockPoint delta = b - a;
+        return Mathf.Max(Mathf.Abs(delta.x), Mathf.Abs(delta.y), Mathf.Abs(delta.z)) <= 1;
+    }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static BlockPoint GetRandomSkyPoint()
     {
-        return GetRandomBlockPoint(0, _session.WorldDimensions.Width, 0, _session.WorldDimensions.Height, _session.WorldDimensions.Depth-1, _session.WorldDimensions.Depth-1);
+        return GetRandomBlockPoint(0, _session.WorldDimensions.Width, 0, _session.WorldDimensions.Height, _session.WorldDimensions.Depth - 1, _session.WorldDimensions.Depth - 1);
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -1105,10 +1108,10 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
         {
             default:
             case 0: // North.
-                return new BlockPoint(TinyBeast.Random.Range(0, _session.WorldDimensions.Width), _session.WorldDimensions.Height-1, z);
+                return new BlockPoint(TinyBeast.Random.Range(0, _session.WorldDimensions.Width), _session.WorldDimensions.Height - 1, z);
 
             case 1: // East.
-                return new BlockPoint(_session.WorldDimensions.Width-1, TinyBeast.Random.Range(0, _session.WorldDimensions.Height), z);
+                return new BlockPoint(_session.WorldDimensions.Width - 1, TinyBeast.Random.Range(0, _session.WorldDimensions.Height), z);
 
             case 2: // South.
                 return new BlockPoint(TinyBeast.Random.Range(0, _session.WorldDimensions.Width), 0, z);
@@ -1169,13 +1172,13 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static BlockPoint GetRandomOffsetFromPoint(BlockPoint origin, int minX, int maxX, int minY, int maxY, int minZ, int maxZ)
     {
-        BlockPoint bp = new BlockPoint(TinyBeast.Random.Range(minX, maxX+1),
-            TinyBeast.Random.Range(minY, maxY+1),
-            TinyBeast.Random.Range(minZ, maxZ+1));
+        BlockPoint bp = new BlockPoint(TinyBeast.Random.Range(minX, maxX + 1),
+            TinyBeast.Random.Range(minY, maxY + 1),
+            TinyBeast.Random.Range(minZ, maxZ + 1));
 
         return _session.WorldDimensions.ClampToBounds(bp + origin);
     }
-    
+
     // an example of initial movement could be the delta of b - a
     public static BlockPoint GetVariedCardinalMovement(BlockPoint initialMovement, int variance)
     {
@@ -1184,7 +1187,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
 
     public BlockPoint MirrorXY(WorldDimensions dimensions)
     {
-        return new BlockPoint(dimensions.Width-this.x, dimensions.Height- this.y, this.z);
+        return new BlockPoint(dimensions.Width - this.x, dimensions.Height - this.y, this.z);
     }
 
     public BlockPoint MirrorXYZ(WorldDimensions dimensions)
@@ -1200,27 +1203,27 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     }
 
     public void Render()
-	{
+    {
 #if DEV_TESTING
         Render(Color.cyan, 1.0f);
 #endif
     }
 
-	public void Render(Color c, float size, float dur = 0.01f, bool ignorePause = false)
-	{
+    public void Render(Color c, float size, float dur = 0.01f, bool ignorePause = false)
+    {
 #if DEV_TESTING
         if (GameManager.Instance == null) { return; }
         if (!ignorePause && _session.GameTime.Paused) { return; }
         Vector3 worldPos = ToVector3();
-		float r = (float)Master.Instance.PixelsPerBlockAxisHalf * size;
-		Vector3 tl1 = new Vector3(worldPos.x - r, worldPos.y + r, worldPos.z-r);
-		Vector3 tr1 = new Vector3(worldPos.x + r, worldPos.y + r, worldPos.z-r);
-		Vector3 br1 = new Vector3(worldPos.x + r, worldPos.y - r, worldPos.z-r);
-		Vector3 bl1 = new Vector3(worldPos.x - r, worldPos.y - r, worldPos.z-r);
-		Debug.DrawLine(tl1, tr1, c, dur);
-		Debug.DrawLine(tr1, br1, c, dur);
-		Debug.DrawLine(br1, bl1, c, dur);
-		Debug.DrawLine(bl1, tl1, c, dur);
+        float r = (float)Master.Instance.PixelsPerBlockAxisHalf * size;
+        Vector3 tl1 = new Vector3(worldPos.x - r, worldPos.y + r, worldPos.z - r);
+        Vector3 tr1 = new Vector3(worldPos.x + r, worldPos.y + r, worldPos.z - r);
+        Vector3 br1 = new Vector3(worldPos.x + r, worldPos.y - r, worldPos.z - r);
+        Vector3 bl1 = new Vector3(worldPos.x - r, worldPos.y - r, worldPos.z - r);
+        Debug.DrawLine(tl1, tr1, c, dur);
+        Debug.DrawLine(tr1, br1, c, dur);
+        Debug.DrawLine(br1, bl1, c, dur);
+        Debug.DrawLine(bl1, tl1, c, dur);
         Vector3 tl2 = new Vector3(worldPos.x - r, worldPos.y + r, worldPos.z + r);
         Vector3 tr2 = new Vector3(worldPos.x + r, worldPos.y + r, worldPos.z + r);
         Vector3 br2 = new Vector3(worldPos.x + r, worldPos.y - r, worldPos.z + r);
@@ -1305,21 +1308,21 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
 
     #region OVERRIDES
 
-    public override bool Equals(System.Object obj) 
+    public override bool Equals(System.Object obj)
     {
         return obj is BlockPoint && this == (BlockPoint)obj;
     }
 
-    public override int GetHashCode() 
+    public override int GetHashCode()
     {
         //return this.x.GetHashCode() ^ this.y.GetHashCode() << 2 ^ this.z.GetHashCode() >> 2;
         unchecked
         {
             // +1 to account for the -1, -1, -1 
             //return ((x + 1) << 18) | ((y + 1) << 9) | (z + 1);
-            int hash = x+1;
-            hash = (hash << 9) | (y+1);  // Concatenate Y to the hash
-            hash = (hash << 9) | (z+1);  // Concatenate Z to the hash
+            int hash = x + 1;
+            hash = (hash << 9) | (y + 1);  // Concatenate Y to the hash
+            hash = (hash << 9) | (z + 1);  // Concatenate Z to the hash
 
             // Mixing step (optional, depending on range and distribution)
             // hash ^= hash >> 16;
@@ -1356,7 +1359,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
         }
     }
 
-    public override string ToString ()
+    public override string ToString()
     {
         return $"{x}x, {y}y, {z}z";
         //return $"<color=#963232>{x}</color>x, <color=#32963F>{y}</color>y, <color=#0c79e3>{z}</color>z";
@@ -1375,32 +1378,32 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     #endregion
 
     #region OPERATOR OVERLOADS
-    public static bool operator ==(BlockPoint a, BlockPoint b) 
+    public static bool operator ==(BlockPoint a, BlockPoint b)
     {
         return a.x == b.x && a.y == b.y && a.z == b.z;
     }
 
-    public static bool operator !=(BlockPoint a, BlockPoint b) 
+    public static bool operator !=(BlockPoint a, BlockPoint b)
     {
         return !(a == b);
     }
 
-    public static BlockPoint operator +(BlockPoint a, BlockPoint b) 
+    public static BlockPoint operator +(BlockPoint a, BlockPoint b)
     {
         return new BlockPoint(a.x + b.x, a.y + b.y, a.z + b.z);
     }
 
-    public static BlockPoint operator -(BlockPoint a, BlockPoint b) 
+    public static BlockPoint operator -(BlockPoint a, BlockPoint b)
     {
         return new BlockPoint(a.x - b.x, a.y - b.y, a.z - b.z);
     }
 
-    public static BlockPoint operator *(BlockPoint a, float b) 
+    public static BlockPoint operator *(BlockPoint a, float b)
     {
         return new BlockPoint(a.x * b, a.y * b, a.z * b);
     }
 
-    public static BlockPoint operator /(BlockPoint a, float b) 
+    public static BlockPoint operator /(BlockPoint a, float b)
     {
         return new BlockPoint(a.x / b, a.y / b, a.z / b);
     }

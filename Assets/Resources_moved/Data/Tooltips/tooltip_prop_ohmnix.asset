@@ -26,6 +26,6 @@ MonoBehaviour:
     limbs used to create Wir and other items.
   Icon: sp_ohmnix_icon
   TextColor: {r: 0.5882353, g: 0.2901961, b: 0.43137258, a: 1}
-  Type: Prop
+  Type: Station
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1653
+  Order: 1652

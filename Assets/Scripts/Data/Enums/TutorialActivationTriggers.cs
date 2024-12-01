@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum TutorialActivationTriggers
+﻿public enum TutorialActivationTriggers
 {
     NONE,
     ELAPSED_GAME_MINUTE,

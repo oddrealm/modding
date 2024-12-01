@@ -1,13 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEditor;
 using UnityEngine;
-using UnityEditor;
-using System.Reflection;
-using System.IO;
-using UnityEngine.ResourceManagement.AsyncOperations;
-using UnityEngine.AddressableAssets;
-using System.Linq;
-using System.Globalization;
 
 public class DataEdit : EditorWindow
 {

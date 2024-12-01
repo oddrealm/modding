@@ -26,6 +26,7 @@ MonoBehaviour:
   MaxDefaultSimTime: 86400
   MatureThreshold: 0.5
   MatureTag: tag_mature_standing
+  MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 2500
   RemoveItemDrops: spawns_chicken_egg
   MatureItemDrops: 

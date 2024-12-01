@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Lights
-  Name: Lights
-  NamePlural: 
+  Action: Light
+  Name: Light
+  NamePlural: Lights
   InlineIcon: <sprite=425>
   Description: 
   Icon: sp_category_lights_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1421
+  Order: 1406

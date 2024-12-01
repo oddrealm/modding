@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Wood Block
-  Name: Wood Block
+  Action: Wood
+  Name: Wood
   NamePlural: 
   InlineIcon: <sprite=1738>
   Description: 
@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0.7411765, g: 0.5764706, b: 0.48235294, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2809
+  Order: 2805

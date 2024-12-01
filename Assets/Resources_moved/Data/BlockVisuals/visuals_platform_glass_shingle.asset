@@ -53,6 +53,6 @@ MonoBehaviour:
   DropShadow: 1
   LightSettings:
     ReductionThreshold: 0
-    SkylightReduction: 1
+    SkylightReduction: 0
     SkylightPass: 0
     BlockAmbientLight: 0

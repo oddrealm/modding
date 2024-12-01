@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Ice Block
-  Name: Ice Block
+  Action: Ice
+  Name: Ice
   NamePlural: 
   InlineIcon: <sprite=1176>
   Description: Covering much of the poles of Odd, ice walls can be used for reliable
@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0.6313726, g: 0.8117648, b: 0.9058824, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1217
+  Order: 1215

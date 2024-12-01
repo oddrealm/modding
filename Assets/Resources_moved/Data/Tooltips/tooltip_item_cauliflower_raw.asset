@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Item
   TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 477
+  Order: 475

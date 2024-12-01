@@ -20,11 +20,11 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Warrior
   Name: Warrior
-  NamePlural: 
+  NamePlural: Warriors
   InlineIcon: <sprite=46>
   Description: Warriors specialize in using Melee Fighting in combat.
   Icon: sp_profession_warrior_icon
   TextColor: {r: 0.55260885, g: 0.3329477, b: 0.8113208, a: 1}
   Type: Profession
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2732
+  Order: 2734

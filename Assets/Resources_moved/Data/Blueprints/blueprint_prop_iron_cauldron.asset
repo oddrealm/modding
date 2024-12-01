@@ -33,6 +33,7 @@ MonoBehaviour:
   SkillLevel: 1
   AddBlockSkillToJobSkill: 0
   LocationID: 
+  WorkPosition: 0
   PermissionType: 2048
   LocationPermissions: []
   WorkerPermissions:
@@ -127,13 +128,13 @@ MonoBehaviour:
   Clear:
     Layer: 0
     Params:
-      DisableRemoveSpawns: 0
-      DisposeIfNotPermitted: 0
-      DisableSpawnAtEntityOnFail: 0
-      DisableClaimCheck: 0
-      SetAsUnclaimed: 0
-      Attempts: 0
-      SeedOffset: 0
+      disableRemoveSpawns: 0
+      disposeIfNotPermitted: 0
+      disableSpawnAtEntityOnFail: 0
+      disableClaimCheck: 0
+      setAsUnclaimed: 0
+      attempts: 0
+      seedOffset: 0
   RevealDistance: 0
   SpawnCount: 1
   SpawnTagID: 

@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Stations
-  Name: Stations
-  NamePlural: 
+  Action: Station
+  Name: Station
+  NamePlural: Stations
   InlineIcon: <sprite=1765>
   Description: 
   Icon: sp_category_stations_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2212
+  Order: 2210

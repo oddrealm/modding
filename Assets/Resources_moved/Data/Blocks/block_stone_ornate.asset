@@ -34,7 +34,7 @@ MonoBehaviour:
   VerticalEntityLift: 0
   IsObstruction: 1
   IsVerticalAccess: 0
-  PermittedPathsAbove: 63
+  PermittedPathsAbove: -1
   PermittedPaths: 0
   VerticalMovementMod: 1
   HorizontalMovementMod: 1

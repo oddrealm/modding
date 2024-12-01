@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Xml.Linq;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -133,7 +131,7 @@ public static class DataUtility
 
     public static T ImportDataSingle<T>(string name) where T : ScriptableObject
     {
-        if (string.IsNullOrEmpty(name)){ return null; }
+        if (string.IsNullOrEmpty(name)) { return null; }
         string dataFolder = typeof(T).Name.Replace("GDE", "").Replace("Data", "");
         string path = "Assets/Resources_moved/Data/" + dataFolder + "\\" + name + ".asset";
         return AssetDatabase.LoadAssetAtPath<T>(path);
@@ -142,7 +140,7 @@ public static class DataUtility
     public static void ImportData<T>(List<T> l, string name, System.Action<T> onAdded = null) where T : ScriptableObject
     {
         l?.Clear();
-        
+
         string[] files = Directory.GetFiles(Application.dataPath + "/Resources_moved/Data/" + name);
 
         for (int i = 0; files != null && i < files.Length; i++)

@@ -24,7 +24,7 @@ MonoBehaviour:
   InlineIcon: 
   Description: 
   Icon: 
-  TextColor: {r: 0.6698113, g: 0.5819893, b: 0.42021182, a: 1}
+  TextColor: {r: 0.7106918, g: 0.59018457, b: 0.3508761, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 21
+  Order: 12

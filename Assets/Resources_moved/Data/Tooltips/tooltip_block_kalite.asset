@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Kalite Block
-  Name: Kalite Block
+  Action: Kalite
+  Name: Kalite
   NamePlural: 
   InlineIcon: <sprite=1159>
   Description: 'One of the most common forms of stone on Odd, this rock has been
@@ -29,4 +29,4 @@ MonoBehaviour:
   TextColor: {r: 0.5411765, g: 0.5411765, b: 0.60784316, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1341
+  Order: 1340

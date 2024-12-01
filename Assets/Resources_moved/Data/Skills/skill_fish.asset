@@ -22,8 +22,6 @@ MonoBehaviour:
   ResearchKey: 
   LevelUpScenario: scenario_level_up_tome_of_agriculture0
   VisibleToPlayer: 1
-  Priority: 13
-  Index: 6
   XPMod: 3
   EnergyCost: 3
   IsCombatSkill: 0

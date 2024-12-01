@@ -27,6 +27,7 @@ MonoBehaviour:
   MaxDefaultSimTime: 28800
   MatureThreshold: 0.5
   MatureTag: tag_mature_standing
+  MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 2500
   RemoveItemDrops: spawns_plant_remove_drops_default
   MatureItemDrops: spawns_plant_mature_drops_chaga_fruit

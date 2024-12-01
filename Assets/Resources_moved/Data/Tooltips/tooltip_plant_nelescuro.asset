@@ -26,6 +26,6 @@ MonoBehaviour:
     this tree, but a symbiotic relationship seems to be present.
   Icon: sp_nelescuro_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
-  Type: Plant
+  Type: Grass
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1576
+  Order: 1578

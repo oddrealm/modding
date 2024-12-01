@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using System;
 
 public struct InstanceUID : IEquatable<InstanceUID>
 {
@@ -43,14 +40,15 @@ public struct InstanceUID : IEquatable<InstanceUID>
     }
 
     public static uint UIDS;
-    public static InstanceUID Next() {
+    public static InstanceUID Next()
+    {
 #if DEV_TESTING
         //if (Master.IsDebugUID(UIDS+1))
         //{
         //    int j = 0;
         //}
 #endif
-        return ++UIDS; 
+        return ++UIDS;
     }
 #endif
 

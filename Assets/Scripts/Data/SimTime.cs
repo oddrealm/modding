@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public readonly struct SimTime : IEquatable<SimTime>
 {
     public readonly uint Minutes;
 
-    public uint Hours 
-    { 
+    public uint Hours
+    {
         get
         {
             return Minutes / 60;

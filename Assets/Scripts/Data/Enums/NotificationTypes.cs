@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum NotificationTypes
+﻿public enum NotificationTypes
 {
     NONE = 0,
     ENTITY = 1,

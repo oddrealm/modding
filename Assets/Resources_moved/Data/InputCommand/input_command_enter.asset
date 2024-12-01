@@ -36,3 +36,4 @@ MonoBehaviour:
   BtnsForceActive: 0
   MaxIncrement: 1
   PlayerCanEdit: 1
+  PrintEvents: 0

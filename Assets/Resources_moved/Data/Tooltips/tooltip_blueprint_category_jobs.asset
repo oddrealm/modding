@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Jobs
-  Name: Jobs
-  NamePlural: 
+  Action: Job
+  Name: Job
+  NamePlural: Jobs
   InlineIcon: <sprite=122>
   Description: 
   Icon: 
   TextColor: {r: 0, g: 0.5647059, b: 0.9686275, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1337
+  Order: 1326

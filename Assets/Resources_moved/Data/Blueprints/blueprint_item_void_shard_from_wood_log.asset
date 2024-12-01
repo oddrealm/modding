@@ -21,6 +21,7 @@ MonoBehaviour:
   - skill_carry
   - skill_craft_wood
   - item_void_shard
+  - skill_craft_void
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: blueprint_category_none
   ResearchKey: research_ancient_crafting0
@@ -32,6 +33,7 @@ MonoBehaviour:
   SkillLevel: 1
   AddBlockSkillToJobSkill: 0
   LocationID: tag_can_transmute_void
+  WorkPosition: 0
   PermissionType: 0
   LocationPermissions:
   - tag_can_transmute_void
@@ -127,13 +129,13 @@ MonoBehaviour:
   Clear:
     Layer: 16
     Params:
-      DisableRemoveSpawns: 0
-      DisposeIfNotPermitted: 0
-      DisableSpawnAtEntityOnFail: 0
-      DisableClaimCheck: 0
-      SetAsUnclaimed: 0
-      Attempts: 0
-      SeedOffset: 0
+      disableRemoveSpawns: 0
+      disposeIfNotPermitted: 0
+      disableSpawnAtEntityOnFail: 0
+      disableClaimCheck: 0
+      setAsUnclaimed: 0
+      attempts: 0
+      seedOffset: 0
   RevealDistance: 0
   SpawnCount: 3
   SpawnTagID: 

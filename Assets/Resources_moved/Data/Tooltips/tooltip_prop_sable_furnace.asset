@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: 
   Icon: sp_sable_furnace_icon
   TextColor: {r: 0.2509804, g: 0.34117648, b: 0.7019608, a: 1}
-  Type: Prop
+  Type: Station
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Order: 2016

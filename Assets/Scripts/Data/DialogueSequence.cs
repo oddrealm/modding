@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
-
-public interface IDialogueSpeaker : ITooltipContent
+﻿public interface IDialogueSpeaker : ITooltipContent
 {
     void ActivateDialogueOption(string optionID);
     void OnDialogueAction(DialogueAction action);

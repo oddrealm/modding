@@ -1,6 +1,5 @@
 ﻿#if UNITY_EDITOR
 
-using System;
 using UnityEditor;
 using UnityEngine;
 
@@ -37,7 +36,7 @@ public class EnumFlagsAttributeDrawer : PropertyDrawer
 
                 Rect buttonPos = new Rect(_position.x + EditorGUIUtility.labelWidth, _position.y + (i * buttonHeight), buttonWidth, buttonHeight);
 
-                buttonPressed[i] = GUI.Toggle(buttonPos, buttonPressed[i], _property.enumNames[i+1], "Button");
+                buttonPressed[i] = GUI.Toggle(buttonPos, buttonPressed[i], _property.enumNames[i + 1], "Button");
                 GUI.color = Color.white;
 
                 if (buttonPressed[i])
@@ -55,7 +54,7 @@ public class EnumFlagsAttributeDrawer : PropertyDrawer
 
     public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
-        return open ? (property.enumNames.Length -2) * 20 : 20;
+        return open ? (property.enumNames.Length - 2) * 20 : 20;
     }
 }
 

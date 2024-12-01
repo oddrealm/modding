@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-
-namespace Assets.GameData
+﻿namespace Assets.GameData
 {
     [System.Serializable]
     public struct AutoJobSettings

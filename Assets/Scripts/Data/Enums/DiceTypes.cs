@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum DiceTypes
+﻿public enum DiceTypes
 {
     ONE_D_TWO,
     TWO_D_TWO,

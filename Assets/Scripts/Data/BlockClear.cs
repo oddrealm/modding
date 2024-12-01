@@ -20,7 +20,7 @@ public struct BlockClear
         Layer = layer;
         Params = new NewTagObjParams()
         {
-            DisableRemoveSpawns =  !spawnClearItems
+            disableRemoveSpawns = !spawnClearItems
         };
     }
 }

@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: 
   Icon: sp_nyctium_stairs_icon
   TextColor: {r: 0.4862745, g: 0.1764706, b: 0.59607846, a: 1}
-  Type: Prop
+  Type: Vertical Access
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1640
+  Order: 1639

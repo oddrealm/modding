@@ -26,4 +26,3 @@ MonoBehaviour:
   - StatusID: entity_status_child
     Chances: 10000
     AddAgeToChances: 1
-    TimeEventTrigger: 0

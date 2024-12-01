@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum EntityBuffTypes
+﻿public enum EntityBuffTypes
 {
     NONE = 0,
     ATTRIBUTES = 1,

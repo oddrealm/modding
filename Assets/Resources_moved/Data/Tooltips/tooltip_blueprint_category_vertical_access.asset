@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Stairs/Ladders
-  Name: Stairs/Ladders
-  NamePlural: 
+  Action: Vertical Access
+  Name: Vertical Access
+  NamePlural: Vertical Access
   InlineIcon: <sprite=1766>
   Description: 
   Icon: sp_category_vertical_access_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2203
+  Order: 2632

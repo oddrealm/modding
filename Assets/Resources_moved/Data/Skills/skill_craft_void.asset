@@ -22,8 +22,6 @@ MonoBehaviour:
   ResearchKey: 
   LevelUpScenario: scenario_level_up_tome_of_arcana0
   VisibleToPlayer: 1
-  Priority: 18
-  Index: 21
   XPMod: 4
   EnergyCost: 3
   IsCombatSkill: 0

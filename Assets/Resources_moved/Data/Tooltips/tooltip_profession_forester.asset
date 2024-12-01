@@ -20,11 +20,11 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Forester
   Name: Forester
-  NamePlural: 
+  NamePlural: Foresters
   InlineIcon: <sprite=47>
   Description: Foresters specialize in cutting down trees.
   Icon: sp_profession_forester_icon
   TextColor: {r: 0.6509434, g: 0.2173223, b: 0.17501779, a: 1}
   Type: Profession
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1007
+  Order: 1005

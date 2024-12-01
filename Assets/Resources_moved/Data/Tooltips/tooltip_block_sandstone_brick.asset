@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Sandstone Brick Block
-  Name: Sandstone Brick Block
+  Action: Sandstone Brick
+  Name: Sandstone Brick
   NamePlural: 
   InlineIcon: <sprite=1175>
   Description: 

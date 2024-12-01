@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: 
   Icon: sp_bronze_anvil_icon
   TextColor: {r: 0.8588236, g: 0.47058827, b: 0.09411766, a: 1}
-  Type: Prop
+  Type: Station
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Order: 325

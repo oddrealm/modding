@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: Primarily a power source for other void magic props.
   Icon: sp_void_cell_icon
   TextColor: {r: 0.77254903, g: 0.4, b: 0.7176471, a: 1}
-  Type: Prop
+  Type: Station
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2643
+  Order: 2644

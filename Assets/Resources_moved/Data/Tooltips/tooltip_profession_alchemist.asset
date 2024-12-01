@@ -20,7 +20,7 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Alchemist
   Name: Alchemist
-  NamePlural: 
+  NamePlural: Alchemists
   InlineIcon: <sprite=902>
   Description: Alchemists specialize in the production of potions.
   Icon: sp_profession_alchemist_icon

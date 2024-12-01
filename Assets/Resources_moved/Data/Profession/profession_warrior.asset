@@ -24,6 +24,7 @@ MonoBehaviour:
   VisibleToPlayer: 1
   CanBeAssigned: 1
   CanBeChanged: 1
+  CanDoSupplementCarryActions: 0
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
   GlobalIndicator: indicator_global_warrior

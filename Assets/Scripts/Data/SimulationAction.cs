@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -125,7 +124,7 @@ public class ActivateStateSimAction : SimulationAction
 
         originInstance.ActivateState(StateID, target, newState, groupUID, OptionID);
     }
-    #endif
+#endif
 }
 
 [System.Serializable]
@@ -160,7 +159,7 @@ public class ClearSimAction : SimulationAction
     {
         base.Simulate(manager, target, originInstance, prevState, newState);
 
-        Location.ClearLocation(target.LocationUID, Clear);
+        Location.ClearLocation(target.locationUID, Clear);
     }
 #endif
 }
@@ -173,7 +172,7 @@ public class SetLocationSimAction : SimulationAction
     {
         base.Simulate(manager, target, originInstance, prevState, newState);
 
-        originInstance.MoveTo(manager.GetSimLocation(target.LocationUID));
+        originInstance.MoveTo(manager.GetSimLocation(target.locationUID));
     }
 #endif
 }
@@ -211,7 +210,7 @@ public class DuplicateInstanceSimAction : SimulationAction
             originInstance.SetGroup(groupUID);
         }
 
-        manager.SpawnSimTagObject(originInstance.TagObjectData, target.LocationUID, newState, groupUID);
+        manager.SpawnSimTagObject(originInstance.TagObjectData, target.locationUID, newState, groupUID);
     }
 #endif
 }
@@ -271,10 +270,10 @@ public class SpawnInstanceFromTagSimAction : SimulationAction
 
         for (int i = 0; i < tagObjects.Count; i++)
         {
-            manager.SpawnSimTagObject(tagObjects[i], target.LocationUID, newState, groupUID);
+            manager.SpawnSimTagObject(tagObjects[i], target.locationUID, newState, groupUID);
         }
     }
-    #endif
+#endif
 }
 
 [System.Serializable]
@@ -329,9 +328,9 @@ public class SpawnInstanceFromTagObjectSimAction : SimulationAction
         }
 
         ITagObject tagObject = DataManager.GetTagObject(TagObjectKey);
-        manager.SpawnSimTagObject(tagObject, target.LocationUID, newState, groupUID);
+        manager.SpawnSimTagObject(tagObject, target.locationUID, newState, groupUID);
     }
-    #endif
+#endif
 }
 
 [System.Serializable]
@@ -345,5 +344,5 @@ public class DisposeSimAction : SimulationAction
         // Dispose of instance
         originInstance.Dispose();
     }
-    #endif
+#endif
 }

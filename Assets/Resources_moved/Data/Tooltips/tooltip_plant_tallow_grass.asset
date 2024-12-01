@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Tallow Grass
-  Name: Tallow Grass
+  Action: Tallow
+  Name: Tallow
   NamePlural: 
   InlineIcon: <sprite=70>
   Description: Endemic to the tundra regions of Odd.
   Icon: sp_tallow_grass_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
-  Type: Plant
+  Type: Grass
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2431
+  Order: 2429

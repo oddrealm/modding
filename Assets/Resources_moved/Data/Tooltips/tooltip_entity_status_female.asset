@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0.7019608, g: 0.23921569, b: 0.3372549, a: 1}
   Type: Status
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 967
+  Order: 964

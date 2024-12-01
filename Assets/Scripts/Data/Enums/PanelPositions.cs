@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum PanelPositions
+﻿public enum PanelPositions
 {
     MIDDLE = 0,
     TOP_MID = 1,

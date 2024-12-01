@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-[System.Flags]
+﻿[System.Flags]
 public enum BlockRotationTypes
 {
     NONE = 0,               // Does not rotate

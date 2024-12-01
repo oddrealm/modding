@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -321,7 +320,7 @@ public class HasInstanceSimCondition : SimulationCondition
     {
         bool outcome = base.IsConditionMet(manager, target, origin, prevState, newState);
 
-        if (target.PackedCounts == 0) { return outcome; }
+        if (target.packedCounts == 0) { return outcome; }
 
         string key = TagObjectKey;
 
@@ -330,7 +329,7 @@ public class HasInstanceSimCondition : SimulationCondition
             key = origin.TagObjectData.Key;
         }
 
-        UintArray instances = manager.GetSimObjectsByLocation(target.LocationUID);
+        UintArray instances = manager.GetSimObjectsByLocation(target.locationUID);
 
         for (int i = 0; i < instances.Count; i++)
         {
@@ -410,7 +409,7 @@ public class HasBlockLayerSimCondition : SimulationCondition
     {
         bool outcome = base.IsConditionMet(manager, target, origin, prevState, newState);
 
-        if (target.PackedCounts == 0) { return outcome; }
+        if (target.packedCounts == 0) { return outcome; }
 
         outcome = Location.HasLayer(target, Layer);
 
@@ -433,7 +432,7 @@ public class CanPathToSimCondition : SimulationCondition
     {
         bool outcome = base.IsConditionMet(manager, target, origin, prevState, newState);
 
-        if (!target.IsObstruction)
+        if (!target.isObstruction)
         {
             outcome |= Location.CanPathTo(origin.Location, target, Entry, Exit);
         }
@@ -476,7 +475,7 @@ public class IsObstructionSimCondition : SimulationCondition
     public override bool IsConditionMet(ISimulationManager manager, Location target, ISimulationObject origin, SimulationState prevState, SimulationState newState)
     {
         bool outcome = base.IsConditionMet(manager, target, origin, prevState, newState);
-        outcome |= target.IsObstruction;
+        outcome |= target.isObstruction;
 
         return outcome;
     }

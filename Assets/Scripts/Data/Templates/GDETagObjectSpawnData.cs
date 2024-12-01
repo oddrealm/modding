@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/TagObjectSpawn")]
@@ -181,7 +180,7 @@ public class WeightedSpawns
         }
 
         // If the total weight is less than 1, fill the rest with NULL to pad the pool.
-        if (totalWeightNormal < (1f-float.Epsilon) && FillEmptyWeightWithNULL)
+        if (totalWeightNormal < (1f - float.Epsilon) && FillEmptyWeightWithNULL)
         {
             TagObjectSpawn nullSpawn = new TagObjectSpawn();
             nullSpawn.TagID = "";

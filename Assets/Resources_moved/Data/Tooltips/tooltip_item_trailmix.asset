@@ -24,7 +24,7 @@ MonoBehaviour:
   InlineIcon: <sprite=1783>
   Description: A collection of nuts and seeds that form a delicious snack.
   Icon: sp_trailmix_icon
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.654088, g: 0.53838843, b: 0.37640908, a: 1}
   Type: Item
   TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 2561
+  Order: 2560

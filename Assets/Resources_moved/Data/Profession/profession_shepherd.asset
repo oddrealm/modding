@@ -24,6 +24,7 @@ MonoBehaviour:
   VisibleToPlayer: 0
   CanBeAssigned: 0
   CanBeChanged: 1
+  CanDoSupplementCarryActions: 0
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
   GlobalIndicator: indicator_global_shepherd

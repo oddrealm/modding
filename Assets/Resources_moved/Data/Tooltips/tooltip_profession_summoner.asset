@@ -20,11 +20,11 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Summoner
   Name: Summoner
-  NamePlural: 
+  NamePlural: Summoners
   InlineIcon: <sprite=568>
   Description: Summoners are specialized in the summoning of entities from the void.
   Icon: sp_profession_summoner_icon
   TextColor: {r: 0.745283, g: 0.2917853, b: 0.316432, a: 1}
   Type: Profession
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2404
+  Order: 2403

@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Sand Block
-  Name: Sand Block
+  Action: Sand
+  Name: Sand
   NamePlural: 
   InlineIcon: <sprite=1157>
   Description: It's coarse and rough and irritating and it gets everywhere!

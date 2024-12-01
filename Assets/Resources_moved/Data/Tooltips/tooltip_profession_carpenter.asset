@@ -20,7 +20,7 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Builder
   Name: Builder
-  NamePlural: 
+  NamePlural: Builders
   InlineIcon: <sprite=35>
   Description: Builders specialize in the production of wood and thatch materials
   Icon: sp_profession_carpenter_icon

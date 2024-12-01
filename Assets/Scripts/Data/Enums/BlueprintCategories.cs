@@ -20,22 +20,22 @@ public enum BlueprintCategories
     VERT_ACCESS = 32768,
     WEEDS = 65536,
     MAINTENANCE = 131072,
-    ALL = BLOCKS | 
-          FURNITURE | 
-          TOOLS | 
-          PLANTS | 
-          FLOORS | 
-          MATERIALS | 
-          GEAR | 
-          TREES | 
-          ROOFS | 
-          DOORS | 
-          LIGHTING | 
-          MEALS | 
-          CONTAINERS | 
-          SUMMONS | 
-          BEVERAGES | 
-          VERT_ACCESS | 
-          WEEDS | 
+    ALL = BLOCKS |
+          FURNITURE |
+          TOOLS |
+          PLANTS |
+          FLOORS |
+          MATERIALS |
+          GEAR |
+          TREES |
+          ROOFS |
+          DOORS |
+          LIGHTING |
+          MEALS |
+          CONTAINERS |
+          SUMMONS |
+          BEVERAGES |
+          VERT_ACCESS |
+          WEEDS |
           MAINTENANCE
 }

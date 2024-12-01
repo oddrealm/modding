@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: 
   Icon: sp_astracube_icon
   TextColor: {r: 0.18431373, g: 0.7568628, b: 0.427451, a: 1}
-  Type: Prop
+  Type: Container
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Order: 198

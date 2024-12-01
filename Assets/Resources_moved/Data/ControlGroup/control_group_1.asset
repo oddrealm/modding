@@ -20,16 +20,3 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   KeyIndex: 1
   InputID: input_command_create_control_group1
-  DefaultPermissions:
-  - TagObjectKey: tag_races
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_professions
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_skills
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_factions
-    Min: -1
-    Max: -1

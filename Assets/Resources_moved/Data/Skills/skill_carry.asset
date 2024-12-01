@@ -22,8 +22,6 @@ MonoBehaviour:
   ResearchKey: 
   LevelUpScenario: 
   VisibleToPlayer: 1
-  Priority: 1
-  Index: 9
   XPMod: 2
   EnergyCost: 2
   IsCombatSkill: 0

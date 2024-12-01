@@ -1,7 +1,6 @@
-using System.Collections;
+using Assets.GameData;
 using System.Collections.Generic;
 using UnityEngine;
-using Assets.GameData;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Entities")]
 public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationData
@@ -10,8 +9,8 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
     public struct SkillPermission
     {
         public string SkillID;
-		public bool PlayerCanEdit;
-		public bool EnabledByDefault;
+        public bool PlayerCanEdit;
+        public bool EnabledByDefault;
     }
 
     [System.Serializable]
@@ -30,36 +29,36 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
     }
 
     [System.Serializable]
-	public struct DietSettings
-	{
-		public string TagObjectID;
-		public int Priority;
+    public struct DietSettings
+    {
+        public string TagObjectID;
+        public int Priority;
         public BuffData[] Buffs;
         public string[] Statuses;
 
-		public bool HasAffects
-		{
-			get
-			{
-				return HasBuffs || HasStatuses;
-			}
-		}
+        public bool HasAffects
+        {
+            get
+            {
+                return HasBuffs || HasStatuses;
+            }
+        }
 
-		public bool HasBuffs
-		{
-			get
-			{
-				return Buffs != null && Buffs.Length > 0;
-			}
-		}
+        public bool HasBuffs
+        {
+            get
+            {
+                return Buffs != null && Buffs.Length > 0;
+            }
+        }
 
-		public bool HasStatuses
-		{
-			get
-			{
-				return Statuses != null && Statuses.Length > 0;
-			}
-		}
+        public bool HasStatuses
+        {
+            get
+            {
+                return Statuses != null && Statuses.Length > 0;
+            }
+        }
     }
 
     [Header("Lifetime Minutes (-1 = disabled)")]
@@ -75,77 +74,77 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
 
     public GDETagsData SizeTag { get; private set; }
 
-	public string[] LanguagesSpoken = new[] { "language_engel" };
-	public string[] DefaultLeaderRoles = new[] { "" };
+    public string[] LanguagesSpoken = new[] { "language_engel" };
+    public string[] DefaultLeaderRoles = new[] { "" };
     public EntityCompanionTypes CompanionType = 0;
-	public EntityCompanionPermanenceTypes CompanionPermanenceType = 0;
-	public EntityReproductionTypes ReproductionType = 0;
-	public int MaxChildren = 3;
-	public string OnMateStatus = "";
-	public string OnMateFX = "fx_entity_union";
-	public string OnMateSFX = "sfx_mate";
-	public bool CanBreathUnderWater = false;
-	public bool TakeLastNameOfFamilyMembers = false;
-	public int ReproductionIntervalMinutes = 0;
+    public EntityCompanionPermanenceTypes CompanionPermanenceType = 0;
+    public EntityReproductionTypes ReproductionType = 0;
+    public int MaxChildren = 3;
+    public string OnMateStatus = "";
+    public string OnMateFX = "fx_entity_union";
+    public string OnMateSFX = "sfx_mate";
+    public bool CanBreathUnderWater = false;
+    public bool TakeLastNameOfFamilyMembers = false;
+    public int ReproductionIntervalMinutes = 0;
 
-	public string RequiredReproductionRoom = "";
-	public string GenerateNameKey = "";
-	public string InherentCombatAttacks = "";
+    public string RequiredReproductionRoom = "";
+    public string GenerateNameKey = "";
+    public string InherentCombatAttacks = "";
 
-	public List<SkillPermission> SkillPermissions = new List<SkillPermission>();
+    public List<SkillPermission> SkillPermissions = new List<SkillPermission>();
 
-	public Dictionary<string, SkillPermission> SkillPermissionsByID { get; private set; } = new Dictionary<string, SkillPermission>();
+    public Dictionary<string, SkillPermission> SkillPermissionsByID { get; private set; } = new Dictionary<string, SkillPermission>();
 
-	public bool TryGetSkillPermission(string skillID, out SkillPermission permission)
-	{
+    public bool TryGetSkillPermission(string skillID, out SkillPermission permission)
+    {
 #if UNITY_EDITOR
-		if (!Application.isPlaying)
-		{
-			for (int i = 0; i < SkillPermissions.Count; i++)
-			{
-				if (SkillPermissions[i].SkillID == skillID)
-				{
+        if (!Application.isPlaying)
+        {
+            for (int i = 0; i < SkillPermissions.Count; i++)
+            {
+                if (SkillPermissions[i].SkillID == skillID)
+                {
                     permission = SkillPermissions[i];
                     return true;
                 }
-			}
-		}
+            }
+        }
 #endif
-		return SkillPermissionsByID.TryGetValue(skillID, out permission);
+        return SkillPermissionsByID.TryGetValue(skillID, out permission);
     }
 
-	public void SetSkillPermission(SkillPermission permission)
-	{
-		for (int i = 0; i < SkillPermissions.Count; i++)
-		{
-			if (SkillPermissions[i].SkillID != permission.SkillID)
-			{
-				continue;
-			}
+    public void SetSkillPermission(SkillPermission permission)
+    {
+        for (int i = 0; i < SkillPermissions.Count; i++)
+        {
+            if (SkillPermissions[i].SkillID != permission.SkillID)
+            {
+                continue;
+            }
 
-			SkillPermissions[i] = permission;
+            SkillPermissions[i] = permission;
 
-			return;
-		}
+            return;
+        }
 
-		SkillPermissions.Add(permission);
+        SkillPermissions.Add(permission);
 
-		if (!SkillPermissionsByID.ContainsKey(permission.SkillID))
-		{
+        if (!SkillPermissionsByID.ContainsKey(permission.SkillID))
+        {
             SkillPermissionsByID.Add(permission.SkillID, permission);
         }
-		else
-		{
-			SkillPermissionsByID[permission.SkillID] = permission;
-		}
-	}
+        else
+        {
+            SkillPermissionsByID[permission.SkillID] = permission;
+        }
+    }
 
-	public SkillPermission GetSkillPermissionByID(string skillID)
-	{
-		if (TryGetSkillPermission(skillID, out var permission))
-		{
-			return permission;
-		}
+    public SkillPermission GetSkillPermissionByID(string skillID)
+    {
+        if (TryGetSkillPermission(skillID, out var permission))
+        {
+            return permission;
+        }
 
         SkillPermission defaultPermission = new SkillPermission()
         {
@@ -155,7 +154,7 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
         };
 
         return defaultPermission;
-	}
+    }
 
     public List<ProfessionPermission> ProfessionPermissions = new List<ProfessionPermission>();
 
@@ -223,89 +222,89 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
     }
 
     public string Race = "";
-	public string[] PermittedItemSlots;
-	public HashSet<string> PermittedItemSlotsHash = new HashSet<string>();
-	public PathingTypes PathingType = 0;
+    public string[] PermittedItemSlots;
+    public HashSet<string> PermittedItemSlotsHash = new HashSet<string>();
+    public PathingTypes PathingType = 0;
     public string DefaultTuning = "";
-	public string DeathItemSpawnGroup = "";
-	public List<string> PreyRaces = new List<string>();
-	public List<string> ProhibitedStatuses = new List<string>();
-	public List<string> Statuses = new List<string>();
-	public List<string> Ages = new List<string>();
-	public List<DietSettings> Diets = new List<DietSettings>();
+    public string DeathItemSpawnGroup = "";
+    public List<string> PreyRaces = new List<string>();
+    public List<string> ProhibitedStatuses = new List<string>();
+    public List<string> Statuses = new List<string>();
+    public List<string> Ages = new List<string>();
+    public List<DietSettings> Diets = new List<DietSettings>();
     public List<EntityAutoJob> AutoJobs = new List<EntityAutoJob>();
 
     [System.NonSerialized]
-	public Dictionary<string, DietSettings> DietByTagObjectID = new Dictionary<string, DietSettings>();
+    public Dictionary<string, DietSettings> DietByTagObjectID = new Dictionary<string, DietSettings>();
 
-	public bool TryGetDietByTagObjectID(string tagObjectID, out DietSettings diet)
-	{
+    public bool TryGetDietByTagObjectID(string tagObjectID, out DietSettings diet)
+    {
         return DietByTagObjectID.TryGetValue(tagObjectID, out diet);
     }
 
-	public List<AttributeTuning> Attributes = new List<AttributeTuning>();
+    public List<AttributeTuning> Attributes = new List<AttributeTuning>();
 
     public List<string> Biomes = new List<string>();
     public HashSet<string> BiomesHash = new HashSet<string>();
 
     public bool CanShowInProgressUI
-	{
+    {
         get
-		{
+        {
             return true;
         }
     }
 
     [System.Serializable]
-	public struct AttributeTuning
+    public struct AttributeTuning
     {
-		public string AttributeID;
-		public int StartingBase;
+        public string AttributeID;
+        public int StartingBase;
     }
 
-	[System.Serializable]
-	public class EntityStatusAction
+    [System.Serializable]
+    public class EntityStatusAction
     {
-		public enum StatusEvent
+        public enum StatusEvent
         {
-			ADDED,
-			REMOVED,
-			ACTIVATED_BY_JOB
+            ADDED,
+            REMOVED,
+            ACTIVATED_BY_JOB
         }
 
-		public enum SpawnPoint
+        public enum SpawnPoint
         {
-			ENTITY,
-			FOCUS
+            ENTITY,
+            FOCUS
         }
 
-		public string TriggerStatusID = "";
-		public StatusEvent TriggerEvent = StatusEvent.ADDED;
-		public string[] TriggerFaction;
-		public HashSet<string> TriggerFactionHash = new HashSet<string>();
+        public string TriggerStatusID = "";
+        public StatusEvent TriggerEvent = StatusEvent.ADDED;
+        public string[] TriggerFaction;
+        public HashSet<string> TriggerFactionHash = new HashSet<string>();
 
-		public string AddStatus = "";
-		public string RemoveStatus = "";
-		public int StartStatusCooldownMinutesMin = 0;
-		public int StartStatusCooldownMinutesMax = 0;
+        public string AddStatus = "";
+        public string RemoveStatus = "";
+        public int StartStatusCooldownMinutesMin = 0;
+        public int StartStatusCooldownMinutesMax = 0;
 
-		public string EntitySpawnGroupID = "";
-		public SpawnPoint EntitySpawnPoint = SpawnPoint.ENTITY;
-		public string ItemSpawnGroupID = "";
-		public SpawnPoint ItemSpawnPoint = SpawnPoint.ENTITY;
-		public int ModelSpawnIndex = 0;
-		public SpawnPoint ModelSpawnPoint = SpawnPoint.ENTITY;
+        public string EntitySpawnGroupID = "";
+        public SpawnPoint EntitySpawnPoint = SpawnPoint.ENTITY;
+        public string ItemSpawnGroupID = "";
+        public SpawnPoint ItemSpawnPoint = SpawnPoint.ENTITY;
+        public int ModelSpawnIndex = 0;
+        public SpawnPoint ModelSpawnPoint = SpawnPoint.ENTITY;
 
-		public void OnLoaded()
+        public void OnLoaded()
         {
-			TriggerFactionHash.Clear();
+            TriggerFactionHash.Clear();
 
-			for (int i = 0; TriggerFaction != null && i < TriggerFaction.Length; i++)
-			{
-				TriggerFactionHash.Add(TriggerFaction[i]);
-			}
-		}
-	}
+            for (int i = 0; TriggerFaction != null && i < TriggerFaction.Length; i++)
+            {
+                TriggerFactionHash.Add(TriggerFaction[i]);
+            }
+        }
+    }
 
     public void SetSimulationID(string simID)
     {
@@ -321,9 +320,9 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
 #if ODD_REALM_APP
     public override void Init()
     {
-        base.Init(); 
-		
-		BiomesHash.Clear();
+        base.Init();
+
+        BiomesHash.Clear();
 
         for (int i = 0; i < Biomes.Count; i++)
         {
@@ -345,14 +344,14 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
 #endif
         SkillPermissionsByID.Clear();
 
-		for (int i = 0; i < SkillPermissions.Count; i++)
-		{
+        for (int i = 0; i < SkillPermissions.Count; i++)
+        {
             if (!SkillPermissionsByID.ContainsKey(SkillPermissions[i].SkillID))
-			{
-				SkillPermissionsByID.Add(SkillPermissions[i].SkillID, SkillPermissions[i]);
+            {
+                SkillPermissionsByID.Add(SkillPermissions[i].SkillID, SkillPermissions[i]);
             }
             else
-			{
+            {
                 Debug.LogError($"Duplicate skill permission: {Key}.{SkillPermissions[i].SkillID}");
             }
         }
@@ -373,40 +372,40 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
 
         DietByTagObjectID.Clear();
 
-		for (int i = 0; i < Diets.Count; i++)
-		{
-			if (!DietByTagObjectID.ContainsKey(Diets[i].TagObjectID))
-			{
-				DietByTagObjectID.Add(Diets[i].TagObjectID, Diets[i]);
-			}
-			else
-			{
-				Debug.LogError($"Duplicate diet tag object ID: {Key}.{Diets[i].TagObjectID}");
-			}
+        for (int i = 0; i < Diets.Count; i++)
+        {
+            if (!DietByTagObjectID.ContainsKey(Diets[i].TagObjectID))
+            {
+                DietByTagObjectID.Add(Diets[i].TagObjectID, Diets[i]);
+            }
+            else
+            {
+                Debug.LogError($"Duplicate diet tag object ID: {Key}.{Diets[i].TagObjectID}");
+            }
         }
 
-		List<AttributeTuning> passed = new List<AttributeTuning>();
+        List<AttributeTuning> passed = new List<AttributeTuning>();
 
-		for (int i = 0; i < Attributes.Count; i++)
-		{
-			if (!DataManager.GetTagObject(Attributes[i].AttributeID).IsNULL)
-			{
-				passed.Add(Attributes[i]);
-			}
-		}
+        for (int i = 0; i < Attributes.Count; i++)
+        {
+            if (!DataManager.GetTagObject(Attributes[i].AttributeID).IsNULL)
+            {
+                passed.Add(Attributes[i]);
+            }
+        }
 
-		Attributes.Clear();
+        Attributes.Clear();
 
-		for (int i = 0; i < passed.Count; i++)
-		{
-			Attributes.Add(passed[i]);
-		}
+        for (int i = 0; i < passed.Count; i++)
+        {
+            Attributes.Add(passed[i]);
+        }
 
-		PermittedItemSlotsHash.Clear();
+        PermittedItemSlotsHash.Clear();
 
         for (int i = 0; i < PermittedItemSlots.Length; i++)
         {
-			PermittedItemSlotsHash.Add(PermittedItemSlots[i]);
+            PermittedItemSlotsHash.Add(PermittedItemSlots[i]);
         }
 
         if (!string.IsNullOrEmpty(EntitySimulationID))

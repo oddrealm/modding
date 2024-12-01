@@ -1,11 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/AttackGroups")]
 public class GDEAttackGroupsData : Scriptable
 {
-	public List<string> Attacks = new List<string>();
+    public List<string> Attacks = new List<string>();
 
 #if ODD_REALM_APP
     public override void OnLoaded()

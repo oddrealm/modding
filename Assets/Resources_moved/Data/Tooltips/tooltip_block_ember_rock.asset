@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Ember Rock Block
-  Name: Ember Rock Block
+  Action: Ember Rock
+  Name: Ember Rock
   NamePlural: 
   InlineIcon: <sprite=1164>
   Description: Some think Ember Rock didn't exist before the Fracture. There are
@@ -29,4 +29,4 @@ MonoBehaviour:
   TextColor: {r: 0.60784316, g: 0.42352945, b: 0.73333335, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 910
+  Order: 908

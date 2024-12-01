@@ -20,7 +20,7 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Blacksmith
   Name: Blacksmith
-  NamePlural: 
+  NamePlural: Blacksmiths
   InlineIcon: <sprite=34>
   Description: Blacksmiths specialize in the production of metal-based items and
     materials

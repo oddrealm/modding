@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: 
   Icon: sp_void_mine_icon
   TextColor: {r: 0.77254903, g: 0.4, b: 0.7176471, a: 1}
-  Type: Prop
+  Type: Traps
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2659
+  Order: 2660

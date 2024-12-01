@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0, g: 0.5647059, b: 0.9686275, a: 1}
   Type: Fish
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 509
+  Order: 507

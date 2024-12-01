@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -13,8 +12,8 @@ public struct DefaultTracking
     public string OnZeroNotif;
     public TrackingTypes TrackingType;
 
-    public bool IsNULL 
-    {         
+    public bool IsNULL
+    {
         get
         {
             return string.IsNullOrEmpty(TagID) || string.IsNullOrEmpty(TagObjectID);

@@ -1,10 +1,9 @@
 using Assets.GameData;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public enum  StatusActionActivation
+public enum StatusActionActivation
 {
     ADD = 0,
     REMOVE = 1,
@@ -73,7 +72,7 @@ public struct StatusAction
             return false;
         }
     }
-    
+
     public bool AreConditionsPassed(float current, float max)
     {
         if (Conditions == null || Conditions.Length == 0) { return true; }
@@ -143,7 +142,7 @@ public struct LessThanEqualCondition : ICondition
 
     public bool IsPassed(float current, float max)
     {
-        if (Normalized) current = (max > 0f ? (current/max) : 0f);
+        if (Normalized) current = (max > 0f ? (current / max) : 0f);
         return current <= Amount;
     }
 }
@@ -169,7 +168,7 @@ public struct GreaterThanEqualCondition : ICondition
 
     public bool IsPassed(float current, float max)
     {
-        if (Normalized) current = (max > 0f ? (current/max) : 0f);
+        if (Normalized) current = (max > 0f ? (current / max) : 0f);
         return current >= Amount;
     }
 }
@@ -178,24 +177,29 @@ public struct GreaterThanEqualCondition : ICondition
 public class GDEEntityStatusData : Scriptable
 {
     public bool TrackByDefault = false;
-    public bool ShowIconOnToolbar = false;
-	public bool ShowIndicator = false;
-	public string Notification = "";
-	public int ExpireTimeMinutesMin = 0;
-	public int ExpireTimeMinutesMax = 0;
-	public List<string> StatusesToRemove = new List<string>();
-	public List<string> StatusesToAddOnExpire = new List<string>();
-	public List<string> PermittedGenders = new List<string>();
-	public List<string> StatusesToProhibit = new List<string>();
-	public List<string> StatusesToDisable = new List<string>();
+    public bool VisibleToPlayer = true;
+    public bool ShowIndicator = false;
+    public string Notification = "";
+    public int ExpireTimeMinutesMin = 0;
+    public int ExpireTimeMinutesMax = 0;
+    public List<string> StatusesToRemove = new List<string>();
+    public List<string> StatusesToAddOnExpire = new List<string>();
+    public List<string> PermittedGenders = new List<string>();
+    public List<string> StatusesToProhibit = new List<string>();
+    public List<string> StatusesToDisable = new List<string>();
+#if ODD_REALM_APP
+    public Color TooltipBackgroundColor = UIPretty.UI_GOOD_GREEN_COLOR;
+#else
+    public Color TooltipBackgroundColor = Color.green;
+#endif
     public string ColorMask;
     public string Accessory;
-	public string IdleFXGroup = "";
-	[Header("Actions change attributes and can be set on timers.")]
-	public StatusAction[] Actions = new StatusAction[0];
+    public string IdleFXGroup = "";
+    [Header("Actions change attributes and can be set on timers.")]
+    public StatusAction[] Actions = new StatusAction[0];
     [System.NonSerialized]
     public List<int> SortedActionIndices = new List<int>();
-    
+
     public List<StatusAutoJob> AutoJobs = new List<StatusAutoJob>();
 
     public string[] DialogueOptions = new string[0];

@@ -20,7 +20,7 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Thaumaturge
   Name: Thaumaturge
-  NamePlural: 
+  NamePlural: Thaumaturges
   InlineIcon: <sprite=567>
   Description: Thaumaturges are specialized in the production of void-based items
     and materials.
@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0.7169812, g: 0.29423285, b: 0.6342696, a: 1}
   Type: Profession
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2456
+  Order: 2455

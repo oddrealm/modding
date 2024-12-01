@@ -20,7 +20,7 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Arcanist
   Name: Arcanist
-  NamePlural: 
+  NamePlural: Arcanists
   InlineIcon: <sprite=569>
   Description: Arcanists are void-magic generalists.
   Icon: sp_profession_arcanist_icon

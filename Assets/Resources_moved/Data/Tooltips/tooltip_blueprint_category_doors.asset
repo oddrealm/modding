@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Doors
-  Name: Doors
-  NamePlural: 
+  Action: Door
+  Name: Door
+  NamePlural: Doors
   InlineIcon: <sprite=1769>
   Description: 
   Icon: sp_category_doors_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 853
+  Order: 848

@@ -67,5 +67,5 @@ MonoBehaviour:
   InteractSFX: sfx_hammer_wood
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
-  BlockimulationID: simulation_prop_default
+  BlockimulationID: 
   StateOptions: []

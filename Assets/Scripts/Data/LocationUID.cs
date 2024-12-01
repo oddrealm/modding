@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using System.Runtime.CompilerServices;
-using UnityEngine;
-using System;
 
 public readonly struct LocationUID : IEquatable<LocationUID>
 {
@@ -72,16 +69,6 @@ public readonly struct LocationUID : IEquatable<LocationUID>
     public static implicit operator int(LocationUID value)
     {
         return (int)value._uid;
-    }
-
-    public static implicit operator LocationUID(byte value)
-    {
-        return new LocationUID((uint)value);
-    }
-
-    public static implicit operator byte(LocationUID value)
-    {
-        return (byte)value._uid;
     }
 
     public static bool operator ==(LocationUID left, LocationUID right)

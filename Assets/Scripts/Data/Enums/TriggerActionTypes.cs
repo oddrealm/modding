@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum TriggerActionTypes
+﻿public enum TriggerActionTypes
 {
     NONE = 0,
     DROP = 1,

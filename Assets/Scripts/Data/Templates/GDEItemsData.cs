@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -26,8 +25,8 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 {
     [Header("Lifetime Minutes (-1 = disabled)")]
     public int MaxLifeTime = 0;
-    
-	[Header("Max amount to simulate for world gen")]
+
+    [Header("Max amount to simulate for world gen")]
     public int MaxDefaultSimTime = 24 * 60 * 10;
 
     [Header("Simulation ID")]
@@ -50,44 +49,44 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public string PickUpSFX = "";
     public string DropSFX = "";
 
-	[Header("World Visuals")]
-	public string Visuals = "";
+    [Header("World Visuals")]
+    public string Visuals = "";
 
-	[Header("Entity Visuals")]
+    [Header("Entity Visuals")]
     public GDECharacterColorMaskData CharacterColorMask;
-	public GDECharacterAccessoryData AccessoryData;
+    public GDECharacterAccessoryData AccessoryData;
 
     public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;
     public BlockPermissionTypes Prohibited = BlockPermissionTypes.NONE;
     public string DietGroup = "diet_group_none";
-	[Header("Set false for 2-hand weapons so that they don't allow additional attacks from other items")]
-	public bool CanStackAttacks = true;
-	public bool FillAllSlots = false;
+    [Header("Set false for 2-hand weapons so that they don't allow additional attacks from other items")]
+    public bool CanStackAttacks = true;
+    public bool FillAllSlots = false;
     public bool CannotBeUnequipped = false;
-	public string[] PermittedSlots;
-	public HashSet<string> PermittedSlotsHash = new HashSet<string>();
-	public string AttackGroup = "";
+    public string[] PermittedSlots;
+    public HashSet<string> PermittedSlotsHash = new HashSet<string>();
+    public string AttackGroup = "";
     public bool HasRangedAttack { get; private set; }
     public bool HasAttacks { get { return !string.IsNullOrEmpty(AttackGroup); } }
     public bool StartDiscovered = false;
-	public int MaxCountInMerchantList = 0;
-	public string GenerateNameKey = "";
-	public int MerchantBuyValue = 0;
-	public int MerchantSellValue = 0;
+    public int MaxCountInMerchantList = 0;
+    public string GenerateNameKey = "";
+    public int MerchantBuyValue = 0;
+    public int MerchantSellValue = 0;
     [Header("Tuning set to < 0 will not be used for item generation. Use -1 for items meant to be unique/super rare.")]
-	public int TuneRating = 0;
+    public int TuneRating = 0;
     public string ItemRarity = "item_rarity_common";
-	public RarityTypes RarityType = RarityTypes.COMMON;
-	public int DecayRate = 0;
-	public string DecayItem = "";
+    public RarityTypes RarityType = RarityTypes.COMMON;
+    public int DecayRate = 0;
+    public string DecayItem = "";
 
     public bool HasMeltThreshold = false;
-	public int MeltThreshold = 0;
-	public int FlammableChance = 0;
-	public int StackSize = 1;
-	public int JobOutputMod = 1;
-	public string ArtifactID = "";
-	public ItemAction[] Actions = new ItemAction[0];
+    public int MeltThreshold = 0;
+    public int FlammableChance = 0;
+    public int StackSize = 1;
+    public int JobOutputMod = 1;
+    public string ArtifactID = "";
+    public ItemAction[] Actions = new ItemAction[0];
 
     public bool HasTimedActions { get { return TimedActions.Length > 0; } }
 
@@ -132,21 +131,21 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     }
 
     public override bool ShowMinimapCutoutColor { get { return false; } }
-	public override Color MinimapColor
-	{
-		get
-		{
-			if (string.IsNullOrEmpty(Visuals)) { return Color.white; }
+    public override Color MinimapColor
+    {
+        get
+        {
+            if (string.IsNullOrEmpty(Visuals)) { return Color.white; }
 
 #if ODD_REALM_APP
             GDEBlockVisualsData blockVisuals = DataManager.GetTagObject<GDEBlockVisualsData>(Visuals);
 
-			return blockVisuals.MapColor;
+            return blockVisuals.MapColor;
 #else
             return Color.white;
 #endif
         }
-	}
+    }
 
     public void SetSimulationID(string simID)
     {
@@ -187,7 +186,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
-		base.OnLoaded();
+        base.OnLoaded();
 
 
         _isNull = Key == "item_none";
@@ -256,7 +255,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         {
             string actionID = Actions[i].ActionID;
 
-            if (string.IsNullOrEmpty(actionID) || !DataManager.TryGetTagObject<GDETagsData>(actionID, out var tagObj)) 
+            if (string.IsNullOrEmpty(actionID) || !DataManager.TryGetTagObject<GDETagsData>(actionID, out var tagObj))
             {
 #if DEV_TESTING
                 Debug.LogError($"{Key} Item action ID cannot be empty!");
@@ -297,7 +296,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
             if (!Actions[i].Buff.IsNULL)
             {
                 if (!BuffsByID.TryGetValue(Actions[i].ActionID, out var buffs))
-                { 
+                {
                     buffs = new BuffData[1];
                     buffs[0] = Actions[i].Buff;
                     BuffsByID.Add(Actions[i].ActionID, buffs);
@@ -367,22 +366,22 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         ActionIDs = ActionIDs.OrderBy(a => a).ToList();
 
         if (string.IsNullOrEmpty(ItemType))
-		{
-			Debug.LogError(Key + " has no item type!");
-		}
-		else
         {
-			if (TagIDsHash.Add(ItemType))
-			{
-				TagIDs.Add(ItemType);
-			}
+            Debug.LogError(Key + " has no item type!");
+        }
+        else
+        {
+            if (TagIDsHash.Add(ItemType))
+            {
+                TagIDs.Add(ItemType);
+            }
         }
 
-		PermittedSlotsHash.Clear();
+        PermittedSlotsHash.Clear();
 
         for (int i = 0; i < PermittedSlots.Length; i++)
         {
-			PermittedSlotsHash.Add(PermittedSlots[i]);
+            PermittedSlotsHash.Add(PermittedSlots[i]);
         }
 
         if (!string.IsNullOrEmpty(ItemSimulationID))
@@ -417,7 +416,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     private string[] _simStates = new string[]
     {
         ITEM_STATE_EXPIRED,
-		ITEM_STATE_CAN_FALL
+        ITEM_STATE_CAN_FALL
     };
 
     public SimOptions[] StateOptions;

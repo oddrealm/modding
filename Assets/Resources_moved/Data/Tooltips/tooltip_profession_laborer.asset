@@ -20,7 +20,7 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Laborer
   Name: Laborer
-  NamePlural: 
+  NamePlural: Laborers
   InlineIcon: <sprite=554>
   Description: Laborers are specialized at hauling items.
   Icon: sp_profession_laborer_icon

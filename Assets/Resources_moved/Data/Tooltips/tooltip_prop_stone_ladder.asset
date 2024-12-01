@@ -25,6 +25,6 @@ MonoBehaviour:
   Description: 
   Icon: sp_stone_ladder_icon
   TextColor: {r: 0.68235296, g: 0.7294118, b: 0.7490196, a: 1}
-  Type: Prop
+  Type: Vertical Access
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2293
+  Order: 2291

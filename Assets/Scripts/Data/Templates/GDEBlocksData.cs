@@ -1,74 +1,73 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Blocks")]
 public class GDEBlocksData : Scriptable, ISimulationData
 {
-	[System.Serializable]
-	public struct Trigger
-	{
-		public string Comment;
-		public string TooltipID;
-		public string ID;
-		public BlockPermissionTypes Permissions;
+    [System.Serializable]
+    public struct Trigger
+    {
+        public string Comment;
+        public string TooltipID;
+        public string ID;
+        public BlockPermissionTypes Permissions;
         public string Visuals;
-		public string SFX;
-		public string FX;
-		public TriggerActionTypes Action;
-		public string ActionTagObjectID;
-		public bool DeactivateImmediate;
+        public string SFX;
+        public string FX;
+        public TriggerActionTypes Action;
+        public string ActionTagObjectID;
+        public bool DeactivateImmediate;
         public BuffData Buff;
     }
 
-	[System.Serializable]
-	public struct TriggerCondition
-	{
+    [System.Serializable]
+    public struct TriggerCondition
+    {
         public TriggerTypes TriggerType;
-		public bool HideInTooltips;
-		public bool Invert;
+        public bool HideInTooltips;
+        public bool Invert;
         public string ActivateTriggerID;
         public string DeactivateTriggerID;
         public string SourceTagObjectRequirement0;
         public string SourceTagObjectRequirement1;
-		public uint ElapsedTime;
+        public uint ElapsedTime;
     }
 
 
     [Header("Fill")]
-	public string DefaultFill = "block_fill_air";
-	[System.NonSerialized]
-	public GDEBlockFillData DefaultFillData;
+    public string DefaultFill = "block_fill_air";
+    [System.NonSerialized]
+    public GDEBlockFillData DefaultFillData;
 
-	[Header("Triggers")]
-	public TriggerCondition[] TriggerConditions;
-	public Trigger[] Triggers;
+    [Header("Triggers")]
+    public TriggerCondition[] TriggerConditions;
+    public Trigger[] Triggers;
 
     [Header("Hidden blocks are revealed up to this distance.")]
     public int RevealDistance = 0;
 
-	[Header("Temperature Source")]
-	public int TemperatureSource = 0;
+    [Header("Temperature Source")]
+    public int TemperatureSource = 0;
 
     public bool IsRotationFixture;
 
     [Header("Used by jobs to determine work xp reward and work progress.")]
     public int SkillLevel = 0;
 
-	[Header("Items")]
-	public int MaxItemCount = 0;
-	public string[] ItemTypePermissions;
-	[HideInInspector]
-	public HashSet<string> ItemTypePermissionsHash = new HashSet<string>();
-	public bool CanShowItems = false;
-	public bool RestrictItemsToSameKey = false;
+    [Header("Items")]
+    public int MaxItemCount = 0;
+    public string[] ItemTypePermissions;
+    [HideInInspector]
+    public HashSet<string> ItemTypePermissionsHash = new HashSet<string>();
+    public bool CanShowItems = false;
+    public bool RestrictItemsToSameKey = false;
     public int DecayBuff = 0;
     public string RemoveItemDrops = "";
 
     [Header("Pathing")]
     public int VerticalEntityLift = 0;
     public bool IsObstruction;
-	public bool IsVerticalAccess = false;
+    public bool IsVerticalAccess = false;
     public BlockDirectionFlags PermittedPathsAbove = BlockDirectionFlags.ALL;
     public BlockDirectionFlags PermittedPaths = BlockDirectionFlags.ALL;
     public float VerticalMovementMod = 1.0f;
@@ -78,8 +77,8 @@ public class GDEBlocksData : Scriptable, ISimulationData
     public bool ForceFocusDirection = false;
 
     [Header("Permissions/Prohibitions")]
-	public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;
-	public BlockPermissionTypes PermissionsAbove = BlockPermissionTypes.NONE;
+    public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;
+    public BlockPermissionTypes PermissionsAbove = BlockPermissionTypes.NONE;
     public BlockPermissionTypes Prohibited = BlockPermissionTypes.NONE;
     public BlockPermissionTypes ProhibitedAbove = BlockPermissionTypes.NONE;
 
@@ -108,10 +107,10 @@ public class GDEBlocksData : Scriptable, ISimulationData
     [Header("FX")]
     public string IdleFX = "";
 
-	[Header("SFX")]
-	public string AddSFX = "";
-	public string RemoveSFX = "";
-	public string InteractSFX = "";
+    [Header("SFX")]
+    public string AddSFX = "";
+    public string RemoveSFX = "";
+    public string InteractSFX = "";
 
     public override bool ShowMinimapCutoutColor
     {
@@ -130,42 +129,42 @@ public class GDEBlocksData : Scriptable, ISimulationData
     }
 
     public override bool ShowOnMinimap
-	{
-		get
-		{
-			return Visuals.Count > 0;
-		}
-	}
-
-	public override Color MinimapColor
     {
-		get
+        get
         {
-			if (Visuals.Count == 0) { return Color.white; }
+            return Visuals.Count > 0;
+        }
+    }
+
+    public override Color MinimapColor
+    {
+        get
+        {
+            if (Visuals.Count == 0) { return Color.white; }
 
 #if ODD_REALM_APP
             GDEBlockVisualsData blockVisuals = DataManager.GetTagObject<GDEBlockVisualsData>(Visuals[0]);
 
-			return blockVisuals.MapColor;
+            return blockVisuals.MapColor;
 #else
             return Color.white;
 #endif
         }
     }
 
-	public BlockRotationTypes RotationType { get; private set; }
+    public BlockRotationTypes RotationType { get; private set; }
 
     #region ITagObject
 
     public string TagObjectID
-	{
-		get { return Key; }
-	}
+    {
+        get { return Key; }
+    }
 
-	public string TagObjectTooltipID
-	{
-		get { return TooltipID; }
-	}
+    public string TagObjectTooltipID
+    {
+        get { return TooltipID; }
+    }
 
     [Header("Lifetime Minutes (-1 = disabled)")]
     public int MaxLifeTime = 0;

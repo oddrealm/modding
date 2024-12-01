@@ -1,5 +1,4 @@
 ﻿using Assets.GameData;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,10 +20,10 @@ public class Scriptable : ScriptableObject, ITagObject
 
     private string _key;
 
-	public string TooltipID = "";
-	public string GroupID = "";
+    public string TooltipID = "";
+    public string GroupID = "";
     public bool DEBUG;
-    
+
     public List<string> TagIDs = new List<string>();
     public List<string> DiscoveryDependencies = new List<string>();
 
@@ -151,7 +150,7 @@ public class Scriptable : ScriptableObject, ITagObject
     public static readonly List<string> NULL_ID_LIST = new List<string>();
     public static readonly List<InstanceUID> NULL_UID_LIST = new List<InstanceUID>();
 #endif
-    
+
     #region ITooltipFormat
     public virtual GDETooltipsData TooltipData
     {
@@ -217,7 +216,7 @@ public class Scriptable : ScriptableObject, ITagObject
 
     public TooltipUID TooltipUID { get { return TooltipData.TooltipUID; } }
 
-#endregion
+    #endregion
 
 #if ODD_REALM_APP
     public virtual void Init()

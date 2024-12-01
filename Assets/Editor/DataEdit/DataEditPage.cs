@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -6,14 +7,11 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using UnityEditor;
+using UnityEditor.AddressableAssets;
+using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
-
-using System;
-using UnityEditor.AddressableAssets;
-using UnityEditor.AddressableAssets.Settings;
-using System.Text.RegularExpressions;
 
 public abstract class DataEditPage
 {
@@ -136,7 +134,7 @@ public abstract class DataEditPage
         if (listCount == 0) { return; }
         //int nextModelIndex = -1;
         _indexHash.Clear();
-        int lastIndex = getIndex(listCount-1);
+        int lastIndex = getIndex(listCount - 1);
 
         for (int i = 0; i < listCount; i++)
         {
@@ -155,7 +153,7 @@ public abstract class DataEditPage
 
         int nextModelIndex = -1;
 
-        for (int i = 0; i < lastIndex+1; i++)
+        for (int i = 0; i < lastIndex + 1; i++)
         {
             if (_indexHash.Contains(i)) { continue; }
 
@@ -165,7 +163,7 @@ public abstract class DataEditPage
 
         if (nextModelIndex == -1)
         {
-            nextModelIndex = lastIndex+1;
+            nextModelIndex = lastIndex + 1;
         }
 
         GUILayout.Label("Next available Index: " + nextModelIndex);
@@ -257,7 +255,8 @@ public abstract class DataEditPage
             }
             else if (Selection.objects.Length > 0)
             {
-                BTN("Lock", Color.grey, () => {
+                BTN("Lock", Color.grey, () =>
+                {
                     _selectedIDs.Clear();
 
                     for (int i = 0; i < UnityEditor.Selection.objects.Length; i++)
@@ -518,7 +517,8 @@ public abstract class DataEditPage
                 BEGIN_HOR();
                 if (prof.SkillsActiveByDefault.Contains(_skills[i].Key))
                 {
-                    BTN("-", Color.red, () => {
+                    BTN("-", Color.red, () =>
+                    {
                         List<string> t = new List<string>(prof.SkillsActiveByDefault);
                         t.Remove(_skills[i].Key);
                         prof.SkillsActiveByDefault = t.ToArray();
@@ -526,7 +526,8 @@ public abstract class DataEditPage
                 }
                 else
                 {
-                    BTN("+", Color.green, () => {
+                    BTN("+", Color.green, () =>
+                    {
                         List<string> t = new List<string>(prof.SkillsActiveByDefault);
                         t.Add(_skills[i].Key);
                         prof.SkillsActiveByDefault = t.ToArray();
@@ -940,7 +941,8 @@ public abstract class DataEditPage
         {
             EditorUtility.DisplayProgressBar("Loading scripts", "", loaded);
 
-            DataUtility.ImportAllScriptables(_allLabels[i], (Scriptable script) => { 
+            DataUtility.ImportAllScriptables(_allLabels[i], (Scriptable script) =>
+            {
                 _allData.Add(script);
 
                 if (_scriptsByKey.TryGetValue(script.Key, out var prevScript))
@@ -961,7 +963,7 @@ public abstract class DataEditPage
                 list.Add(script);
             });
 
-            loaded = i+1 / (float)_allLabels.Length;
+            loaded = i + 1 / (float)_allLabels.Length;
         }
 
 
@@ -1000,7 +1002,7 @@ public abstract class DataEditPage
 
     private static Dictionary<string, Scriptable> _scriptsByKey = new Dictionary<string, Scriptable>();
     private static Dictionary<string, List<Scriptable>> _scriptsByTag = new Dictionary<string, List<Scriptable>>();
-    
+
     public int GetScriptsByTagCount(Scriptable tag)
     {
         if (_scriptsByTag.TryGetValue(tag.name, out var list))
@@ -1143,10 +1145,10 @@ public abstract class DataEditPage
 
     protected virtual void AddTagToScript(Scriptable script, Scriptable tag)
     {
-        if (tag == script) 
+        if (tag == script)
         {
             Debug.LogError("Cannot add tag to itself!");
-            return; 
+            return;
         }
 
         if (!_scriptsByTag.TryGetValue(tag.name, out var list))
@@ -1154,7 +1156,7 @@ public abstract class DataEditPage
             list = new List<Scriptable>();
             _scriptsByTag.Add(tag.name, list);
         }
-        
+
         if (!list.Contains(script))
         {
             list.Add(script);
@@ -1197,11 +1199,11 @@ public abstract class DataEditPage
     }
 
     protected Sprite LoadSprite(string id)
-    { 
+    {
         if (_tooltipSprites.TryGetValue(id, out Sprite sprite)) { return sprite; }
 
         sprite = Resources.Load<Sprite>("Art/Icons/" + id);
-    
+
         if (sprite != null)
         {
             _tooltipSprites.Add(id, sprite);
@@ -1231,7 +1233,8 @@ public abstract class DataEditPage
 
     public static IEnumerator LoadAddressableData<T>(List<T> l, string group, System.Action onDone) where T : ScriptableObject
     {
-        AsyncOperationHandle<IList<T>> dataHandler = Addressables.LoadAssetsAsync<T>(group, (T data) => {
+        AsyncOperationHandle<IList<T>> dataHandler = Addressables.LoadAssetsAsync<T>(group, (T data) =>
+        {
 
             if (data == null) { return; }
 
@@ -1744,7 +1747,7 @@ public abstract class DataEditPage
     {
         GUILayout.Label("", GUILayout.Width(0), GUILayout.Height(0));
         Rect pos = GUILayoutUtility.GetLastRect();
-        Rect rect = new Rect(pos.x-1, pos.y+3, width, height);
+        Rect rect = new Rect(pos.x - 1, pos.y + 3, width, height);
         EditorGUI.DrawRect(rect, clr);
     }
 
@@ -1804,7 +1807,7 @@ public abstract class DataEditPage
             e = EditorGUILayout.EnumPopup((Enum)o, GUILayout.Width(width));
         }
         else
-        { 
+        {
             e = EditorGUILayout.EnumPopup((Enum)o, GUILayout.ExpandWidth(true));
         }
 
@@ -1885,7 +1888,7 @@ public abstract class DataEditPage
         {
             saveKey += saveGroup;
         }
-        
+
         bool isExpanded = IsExpanded(saveKey);
         bool newExpanded = TOGGLE(isExpanded, "[-]", "[+]", labelTxt, txtColor, width);
 
@@ -2012,7 +2015,8 @@ public abstract class DataEditPage
 
     protected void COPY_BTN(string copyTxt)
     {
-        BTN("c", Color.yellow, () => {
+        BTN("c", Color.yellow, () =>
+        {
             _copiedText = copyTxt;
             GUIUtility.systemCopyBuffer = copyTxt;
         }, 16);
@@ -2029,7 +2033,8 @@ public abstract class DataEditPage
 
     protected void CREATE_SCRIPT_BTN<T>(string name) where T : Scriptable
     {
-        BTN($"New ({typeof(T).Name})", Color.green, () => { 
+        BTN($"New ({typeof(T).Name})", Color.green, () =>
+        {
             if (ScriptExists(name)) { return; }
             CreateScriptableObject<T>(name);
             MarkDataNeedsReload();
@@ -2043,7 +2048,8 @@ public abstract class DataEditPage
             label = $"New {typeName}";
         }
 
-        BTN(label, Color.green, () => {
+        BTN(label, Color.green, () =>
+        {
             if (ScriptExists(name)) { return; }
             CreateScriptableObject(name, typeName);
             MarkDataNeedsReload();
@@ -2062,7 +2068,7 @@ public abstract class DataEditPage
     {
         if (width != -1)
         {
-            if (GUILayout.Button(label, GUILayout.Width(width+1), GUILayout.ExpandWidth(false), GUILayout.ExpandHeight(expandHeight)))
+            if (GUILayout.Button(label, GUILayout.Width(width + 1), GUILayout.ExpandWidth(false), GUILayout.ExpandHeight(expandHeight)))
             {
                 onPress?.Invoke();
             }
@@ -2104,7 +2110,7 @@ public abstract class DataEditPage
     protected int INT_INPUT(int v, Color c, int width = -1)
     {
         BEGIN_CLR(c);
-        
+
         if (width > 0)
         {
             v = EditorGUILayout.IntField(v, GUILayout.Width(width));
@@ -2203,7 +2209,7 @@ public abstract class DataEditPage
 
         return txt;
     }
-    
+
     protected string TEXT_INPUT(string txt, int width = -1, int height = -1)
     {
         Color c = GUI.color;
@@ -2457,7 +2463,7 @@ public abstract class DataEditPage
     protected void LABEL(string label, Color c, float width = -1f)
     {
         if (string.IsNullOrEmpty(label)) { return; }
-        
+
         Color prevClr = GUI.color;
         BEGIN_CLR(c);
 
@@ -2497,8 +2503,8 @@ public abstract class DataEditPage
         GUILayout.BeginVertical(GUILayout.Width(texture.width * 3));
         GUILayout.Label("", GUILayout.Width(texture.width * 3 + 12), GUILayout.Height(texture.height * 3));
         Rect pos = GUILayoutUtility.GetLastRect();
-        Rect rect = new Rect(pos.x+16, pos.y, sprite.rect.width * 3, sprite.rect.height * 3);
-        EditorGUI.DrawRect(new Rect(pos.x+16, pos.y, rect.width, rect.height), new Color(0.1f, 0.1f, 0.1f, 1f));
+        Rect rect = new Rect(pos.x + 16, pos.y, sprite.rect.width * 3, sprite.rect.height * 3);
+        EditorGUI.DrawRect(new Rect(pos.x + 16, pos.y, rect.width, rect.height), new Color(0.1f, 0.1f, 0.1f, 1f));
         GUI.DrawTexture(rect, texture);
         GUILayout.EndVertical();
     }
@@ -2537,7 +2543,7 @@ public abstract class DataEditPage
         //EditorGUI.DrawRect(rect, bgColor);
 
         // Top-left corner
-        EditorGUI.DrawRect(new Rect(rect.xMin+8, rect.yMin, 3f, rect.height), bgColor);
+        EditorGUI.DrawRect(new Rect(rect.xMin + 8, rect.yMin, 3f, rect.height), bgColor);
 
         // Top-right corner
         //EditorGUI.DrawRect(new Rect(rect.xMax - cornerRectSize, rect.yMin, cornerRectSize, cornerRectSize), bgColor);
@@ -2646,7 +2652,7 @@ public abstract class DataEditPage
         BTN("v", () => { changed = true; shiftDownIndex = index; }, 30, false, true);
         END_DISABLED();
 
-        BTN(enabled?"E":"D", enabled ? Color.green : Color.gray, () => { changed = true; enabled = !enabled; }, 30, false, true);
+        BTN(enabled ? "E" : "D", enabled ? Color.green : Color.gray, () => { changed = true; enabled = !enabled; }, 30, false, true);
 
 
         BTN(name, expanded ? clr : clr * Color.gray, () => { changed = true; expanded = !expanded; }, -1, true, true);
@@ -2874,7 +2880,8 @@ public abstract class DataEditPage
                     bool isMatch = simStates[i] == hasSimStateCondition.StateID;
                     Color c = isMatch ? Color.green : Color.grey;
 
-                    BTN(simStates[i], c, () => {
+                    BTN(simStates[i], c, () =>
+                    {
                         if (hasSimStateCondition.StateID == simStates[i])
                         {
                             hasSimStateCondition.StateID = "";
@@ -2900,7 +2907,8 @@ public abstract class DataEditPage
                                 cc = Color.red;
                             }
 
-                            BTN(simOptions[n].OptionID + "->" + simOptions[n].TagObjectID, cc, () => {
+                            BTN(simOptions[n].OptionID + "->" + simOptions[n].TagObjectID, cc, () =>
+                            {
                                 if (hasSimStateCondition.OptionID == simOptions[n].OptionID)
                                 {
                                     hasSimStateCondition.OptionID = "";
@@ -2978,7 +2986,8 @@ public abstract class DataEditPage
                     bool isMatch = simStates[i] == hasInstanceCondition.StateID;
                     Color c = isMatch ? Color.green : Color.grey;
 
-                    BTN(simStates[i], c, () => {
+                    BTN(simStates[i], c, () =>
+                    {
                         if (hasInstanceCondition.StateID == simStates[i])
                         {
                             hasInstanceCondition.StateID = "";
@@ -3004,7 +3013,8 @@ public abstract class DataEditPage
                                 cc = Color.red;
                             }
 
-                            BTN(simOptions[n].OptionID + "->" + simOptions[n].TagObjectID, cc, () => {
+                            BTN(simOptions[n].OptionID + "->" + simOptions[n].TagObjectID, cc, () =>
+                            {
                                 if (hasInstanceCondition.OptionID == simOptions[n].OptionID)
                                 {
                                     hasInstanceCondition.OptionID = "";
@@ -3166,7 +3176,8 @@ public abstract class DataEditPage
                 {
                     bool isMatch = simStates[i] == activateStateSimAction.StateID;
                     Color c = isMatch ? Color.green : Color.grey;
-                    BTN(simStates[i], c, () => {
+                    BTN(simStates[i], c, () =>
+                    {
                         if (activateStateSimAction.StateID == simStates[i])
                         {
                             activateStateSimAction.StateID = "";
@@ -3192,7 +3203,8 @@ public abstract class DataEditPage
                                 cc = Color.red;
                             }
 
-                            BTN(simOptions[n].OptionID + "->" + simOptions[n].TagObjectID, cc, () => {
+                            BTN(simOptions[n].OptionID + "->" + simOptions[n].TagObjectID, cc, () =>
+                            {
                                 if (activateStateSimAction.OptionID == simOptions[n].OptionID)
                                 {
                                     activateStateSimAction.OptionID = "";
@@ -3242,7 +3254,7 @@ public abstract class DataEditPage
                 LABEL("Layers To Clear");
                 clearSimAction.Clear.Layer = (BlockLayers)DROP_DOWN_MASK(clearSimAction.Clear.Layer);
 
-                clearSimAction.Clear.Params.DisableRemoveSpawns = TOGGLE(clearSimAction.Clear.Params.DisableRemoveSpawns, "Disable Remove Drops");
+                clearSimAction.Clear.Params.disableRemoveSpawns = TOGGLE(clearSimAction.Clear.Params.disableRemoveSpawns, "Disable Remove Drops");
             }
 
             SPACE(10);
@@ -3282,7 +3294,8 @@ public abstract class DataEditPage
         bool deleted = false;
 
         LABEL(entryIndex, Color.grey);
-        BTN("x", Color.red, () => {
+        BTN("x", Color.red, () =>
+        {
             deleted = true;
             l.RemoveAt(entryIndex);
         }, 16, false, false);
@@ -3310,7 +3323,8 @@ public abstract class DataEditPage
 
         bool deleted = false;
 
-        BTN("D", Color.yellow, () => {
+        BTN("D", Color.yellow, () =>
+        {
             deleted = true;
             arr = DuplicateArrayEntry(arr, entryIndex);
         }, 18, false, false);
@@ -3328,9 +3342,10 @@ public abstract class DataEditPage
         bool deleted = false;
 
         LABEL(entryIndex, Color.grey);
-        BTN("x", Color.red, () => {
+        BTN("x", Color.red, () =>
+        {
             deleted = true;
-            arr = RemoveFromArray(arr, entryIndex); 
+            arr = RemoveFromArray(arr, entryIndex);
         }, 16, false, false);
 
         newArr = arr;
@@ -3344,7 +3359,8 @@ public abstract class DataEditPage
 
         bool canMoveUp = entryIndex > 0;
         Color c = GUI.color;
-        BTN("^", canMoveUp ? Color.cyan : Color.grey, () => { 
+        BTN("^", canMoveUp ? Color.cyan : Color.grey, () =>
+        {
             if (canMoveUp)
             {
                 arr = MoveUpInArray(arr, entryIndex);
@@ -3358,9 +3374,10 @@ public abstract class DataEditPage
     {
         if (arr == null) { return arr; }
 
-        bool canMoveDown = entryIndex < arr.Length-1;
+        bool canMoveDown = entryIndex < arr.Length - 1;
         Color c = GUI.color;
-        BTN("v", canMoveDown ? Color.cyan : Color.grey, () => {
+        BTN("v", canMoveDown ? Color.cyan : Color.grey, () =>
+        {
             if (canMoveDown)
             {
                 arr = MoveDownInArray(arr, entryIndex);
@@ -3393,7 +3410,7 @@ public abstract class DataEditPage
             arr[i] = prevArr[i];
         }
 
-        arr[arr.Length-1] = entry;
+        arr[arr.Length - 1] = entry;
 
         return arr;
     }
@@ -3440,7 +3457,7 @@ public abstract class DataEditPage
 
         for (int i = 0; i < stringValues.Count; i++)
         {
-            SAVE(key+i, stringValues[i]);
+            SAVE(key + i, stringValues[i]);
         }
     }
 

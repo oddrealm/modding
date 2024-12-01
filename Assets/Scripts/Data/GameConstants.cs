@@ -1,5 +1,4 @@
-﻿using System.Text;
-using UnityEngine;
+﻿using UnityEngine;
 
 public static class GameConstants
 {
@@ -7,7 +6,7 @@ public static class GameConstants
 
     public const string AUDIO_MUSIC_BATTLE_INTRO = "audio_music_battle_intro";
     public const string AUDIO_MUSIC_BATTLE_LOOP = "audio_music_battle_loop";
-    
+
     public const string AUDIO_MUSIC_OVERWORLD_THEME_INTRO = "audio_music_overworld_intro";
     public const string AUDIO_MUSIC_OVERWORLD_THEME_LOOP = "audio_music_overworld_loop";
 
@@ -253,7 +252,7 @@ public static class GameConstants
     // STARVED BEHAVIOUR
     public const int BEHAVIOUR_ALIVE_MIN_HOURS_TO_DIE = 24;
     public const int BEHAVIOUR_ALIVE_CHANCE_TO_DIE = 100; // x / 1000
-    
+
     // WOUNDED BLEEDING BEHAVIOUR
     public const int BEHAVIOUR_WOUNDED_BLEEDING_CHANCE_TO_DIE_BY_HOUR = 20; // +2% chance to die
     public const int BEHAVIOUR_WOUNDED_BLEEDING_BASE_KILL_CHANCE = 200; // +20% chance to die
@@ -278,8 +277,8 @@ public static class GameConstants
 
     // BLUNT
     public const int COMBAT_BLUNT_WEAPON_CHANCE_TO_WOUND_BY_STRENGTH = 5; // +10% chance to wound per weapon strength
-    //public const int COMBAT_BLUNT_WEAPON_CHANCE_TO_WOUND_BASE = 100; // +10% chance to wound per weapon strength
-    
+                                                                          //public const int COMBAT_BLUNT_WEAPON_CHANCE_TO_WOUND_BASE = 100; // +10% chance to wound per weapon strength
+
     // PIERCING
     public const int COMBAT_PIERCING_WEAPON_CHANCE_TO_WOUND_BY_STRENGTH = 10; // +10% chance to wound per weapon strength
     //public const int COMBAT_PIERCING_WEAPON_CHANCE_TO_WOUND_BASE = 600; // +60% chance to wound per weapon strength
@@ -358,7 +357,7 @@ public static class GameConstants
 
     #region ANIM
 
-    
+
 
     #endregion ANIM
 
@@ -580,7 +579,7 @@ public static class GameConstants
     public const string UI_CONFIRMATION_POPUP_ARE_YOU_SURE = "Are you sure?";
     public const string UI_CHOOSE_PROF_POPUP_TITLE = "choose a profession";
     public const string UI_CHOOSE_PROF_POPUP_MESSAGE = "Choosing a new profession will give a bonus to favored skills and reset the rest.";
-    
+
     public const int UI_TOOLTIP_CURSOR_OFFSET_X = 18;
     public const int UI_TOOLTIP_CURSOR_OFFSET_Y_HIGH = -18;
     public const int UI_TOOLTIP_CURSOR_OFFSET_Y_LOW = 48;

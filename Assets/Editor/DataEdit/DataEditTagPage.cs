@@ -1,13 +1,10 @@
-﻿using UnityEditor;
-using System.Collections;
+﻿using Assets.GameData;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
 using System.Text;
-using UnityEngine.EventSystems;
+using UnityEditor;
+using UnityEngine;
 using static GDEBiomesData;
-using Assets.GameData;
-using NUnit.Framework.Interfaces;
 
 public class DataEditTagPage : DataEditPage
 {
@@ -252,9 +249,14 @@ public class DataEditTagPage : DataEditPage
 
             MARK_DIRTY(script);
 
-            if (script is GDEBiomesData data)
+            if (script is GDEBlocksData data)
             {
-                
+                if (data.Key.Contains("_ladder") ||
+                    data.Key.Contains("_stairs"))
+                {
+                    data.SetSimulationID("");
+                    Debug.Log(data.Key);
+                }
             }
         }
 
@@ -307,7 +309,7 @@ public class DataEditTagPage : DataEditPage
 
         _scriptsRendering = 0;
 
-        if (_allData == null || _allData.Count  == 0)
+        if (_allData == null || _allData.Count == 0)
         {
             BTN("LOAD TAG DATA", LoadAllData);
         }
@@ -434,7 +436,7 @@ public class DataEditTagPage : DataEditPage
             int prevSize = _visibleScripts.Count;
             _visibleScripts.Clear();
 
-            for (int i  = 0; i < _allData.Count; i++)
+            for (int i = 0; i < _allData.Count; i++)
             {
                 Scriptable script = _allData[i];
 
@@ -465,17 +467,19 @@ public class DataEditTagPage : DataEditPage
         if (totalPages > 0)
         {
             BEGIN_HOR(32);
-            System.Action movePageLeft = () => {
-                _dataPageIndex = Mathf.Clamp(_dataPageIndex - 1, 0, totalPages - 1); 
+            System.Action movePageLeft = () =>
+            {
+                _dataPageIndex = Mathf.Clamp(_dataPageIndex - 1, 0, totalPages - 1);
             };
-            System.Action movePageRight = () => { 
-                _dataPageIndex = Mathf.Clamp(_dataPageIndex + 1, 0, totalPages - 1); 
+            System.Action movePageRight = () =>
+            {
+                _dataPageIndex = Mathf.Clamp(_dataPageIndex + 1, 0, totalPages - 1);
             };
             BTN("<", movePageLeft, -1, true, true);
             READ_KEY_UP(KeyCode.PageUp, movePageLeft);
             LABEL(_dataPageIndex);
             LABEL("/");
-            LABEL(totalPages-1);
+            LABEL(totalPages - 1);
             LABEL("(");
             LABEL(_visibleScripts.Count);
             LABEL(")");
@@ -483,7 +487,8 @@ public class DataEditTagPage : DataEditPage
             READ_KEY_UP(KeyCode.PageDown, movePageRight);
             END_HOR();
 
-            System.Action moveUp = () => {
+            System.Action moveUp = () =>
+            {
                 for (int i = 0; Selection.objects.Length > 0 && i < _visibleScripts.Count; i++)
                 {
                     if (_visibleScripts[i] == Selection.objects[0])
@@ -494,12 +499,13 @@ public class DataEditTagPage : DataEditPage
                 }
             };
 
-            System.Action moveDown = () => {
+            System.Action moveDown = () =>
+            {
                 for (int i = 0; Selection.objects.Length > 0 && i < _visibleScripts.Count; i++)
                 {
                     if (_visibleScripts[i] == Selection.objects[0])
                     {
-                        SELECT(_visibleScripts[Mathf.Min(_visibleScripts.Count-1, i + 1)]);
+                        SELECT(_visibleScripts[Mathf.Min(_visibleScripts.Count - 1, i + 1)]);
                         break;
                     }
                 }
@@ -542,14 +548,16 @@ public class DataEditTagPage : DataEditPage
 
             if (!string.IsNullOrEmpty(_copiedText) && !ScriptExists(_copiedText))
             {
-                BTN($"D:", ColorUtility.purple, () => {
+                BTN($"D:", ColorUtility.purple, () =>
+                {
                     CreateScriptableObject(_copiedText, script.ObjectType);
                     MarkDataNeedsReload();
                 }, 32);
             }
 
             Color selectedColor = isSelected ? ColorUtility.voidPurple : Color.white;
-            BTN(script.Key, selectedColor, () => {
+            BTN(script.Key, selectedColor, () =>
+            {
                 if (isSelected) DESELECT(script);
                 else SELECT(script);
             });
@@ -595,7 +603,8 @@ public class DataEditTagPage : DataEditPage
     private void RenderTagList()
     {
         // Hide / Show Tags.
-        BTN(_editingTags ? "Hide Tags" : "Show Tags", _editingTags ? Color.magenta : Color.gray, () => {
+        BTN(_editingTags ? "Hide Tags" : "Show Tags", _editingTags ? Color.magenta : Color.gray, () =>
+        {
             _editingTags = !_editingTags;
         });
 
@@ -606,7 +615,8 @@ public class DataEditTagPage : DataEditPage
             BEGIN_HOR();
 
             BEGIN_DISABLED(string.IsNullOrEmpty(_newTagName) || ScriptExists(_newTagName));
-            BTN($"Create Tag: {_newTagName}", Color.green, () => {
+            BTN($"Create Tag: {_newTagName}", Color.green, () =>
+            {
                 if (!_newTagName.Contains("tag_")) { return; }
                 SELECT(CreateScriptableObject<GDETagsData>(_newTagName));
                 MarkDataNeedsReload();
@@ -629,9 +639,10 @@ public class DataEditTagPage : DataEditPage
 
             List<Scriptable> tags = GetDataByType<GDETagsData>();
 
-            BTN("Clear Unused Tags", Color.red, () => {
+            BTN("Clear Unused Tags", Color.red, () =>
+            {
                 List<Scriptable> unusedTags = new List<Scriptable>();
-                
+
                 for (int i = 0; i < tags.Count; i++)
                 {
                     if (GetScriptsByTagCount(tags[i]) > 0 ||
@@ -711,7 +722,8 @@ public class DataEditTagPage : DataEditPage
                 MarkVisibleDirty();
             }, 160);
         }
-        BTN(_editingScriptTypes ? "Hide Script Types" : "Show Script Types", _editingScriptTypes ? Color.magenta : Color.gray, () => {
+        BTN(_editingScriptTypes ? "Hide Script Types" : "Show Script Types", _editingScriptTypes ? Color.magenta : Color.gray, () =>
+        {
             _editingScriptTypes = !_editingScriptTypes;
         });
         END_HOR();
@@ -733,7 +745,8 @@ public class DataEditTagPage : DataEditPage
                 bool isVisible = _visibleScriptTypes.Contains(_scriptTypes[i]);
                 Color btnColor = isVisible ? Color.green : Color.gray;
 
-                BTN(_scriptTypes[i], btnColor, () => {
+                BTN(_scriptTypes[i], btnColor, () =>
+                {
                     if (isVisible)
                         _visibleScriptTypes.Remove(_scriptTypes[i]);
                     else
@@ -779,7 +792,6 @@ public class DataEditTagPage : DataEditPage
         LABEL(tooltip.Key, tooltip.TooltipTextColor);
         LABEL(tooltip.TooltipName, tooltip.TooltipTextColor);
         tooltip.TextColor = COLOR_INPUT(tooltip.TooltipTextColor);
-        //LABEL(tooltip.TooltipDescription, tooltip.TooltipTextColor);
 
         BEGIN_HOR();
         tooltip.TooltipData.Icon = TEXT_INPUT(tooltip.TooltipData.Icon, "Icon");
@@ -798,8 +810,12 @@ public class DataEditTagPage : DataEditPage
         END_HOR();
 
         BEGIN_HOR();
+        tooltip.TooltipData.Type = TEXT_INPUT(tooltip.TooltipData.Type, "Type");
+        END_HOR();
+
+        BEGIN_HOR();
         LABEL("Description");
-        tooltip.TooltipData.Description = GUILayout.TextField(tooltip.TooltipData.Description, GUILayout.MaxWidth(WINDOW_WIDTH()*0.75f));
+        tooltip.TooltipData.Description = GUILayout.TextField(tooltip.TooltipData.Description, GUILayout.MaxWidth(WINDOW_WIDTH() * 0.75f));
         END_HOR();
     }
 
@@ -990,7 +1006,7 @@ public class DataEditTagPage : DataEditPage
         }
         else
         {
-            
+
         }
 
         if (script is ISimulationData simData)
@@ -1028,10 +1044,12 @@ public class DataEditTagPage : DataEditPage
             Scriptable tagChild = scriptsByTag[n];
 
             BEGIN_HOR();
-            DELETE_BTN (() => {
+            DELETE_BTN(() =>
+            {
                 remove = tagChild;
             });
-            BTN(tagChild.Key, Color.yellow, () => {
+            BTN(tagChild.Key, Color.yellow, () =>
+            {
                 SELECT(tagChild);
                 ClearScriptSearch();
             });
@@ -1051,7 +1069,8 @@ public class DataEditTagPage : DataEditPage
 
         BEGIN_HOR();
         BEGIN_DISABLED(string.IsNullOrEmpty(_newTagObjSpawnName) || ScriptExists(_newTagObjSpawnName));
-        BTN("Create New Tag Obj Spawn", Color.green, () => { 
+        BTN("Create New Tag Obj Spawn", Color.green, () =>
+        {
             if (!_newTagObjSpawnName.Contains("spawns")) { return; }
             GDETagObjectSpawnData newTagObjSpawn = CreateScriptableObject<GDETagObjectSpawnData>(_newTagObjSpawnName);
             GDETagsData newTagObjSpawnTag = CreateScriptableObject<GDETagsData>("tag_" + _newTagObjSpawnName);
@@ -1086,8 +1105,9 @@ public class DataEditTagPage : DataEditPage
             TagObjectSpawn spawn = spawnData.Spawns[i];
             BEGIN_HOR();
             LABEL(i, Color.gray);
-            DELETE_BTN (() => { 
-                removeIndex = i; 
+            DELETE_BTN(() =>
+            {
+                removeIndex = i;
             });
             LABEL("Spawn");
             END_HOR();
@@ -1136,13 +1156,14 @@ public class DataEditTagPage : DataEditPage
                 END_DISABLED();
                 END_HOR();
             }
-            
+
             // Tag.
             GDETagsData tagData = GetDataByID<GDETagsData>(spawn.TagID);
             BEGIN_HOR();
             LABEL("Tag", Color.cyan);
             bool spawnTagExists = ScriptExists(spawn.TagID);
-            BEGIN_CLR(Color.cyan, Color.red, () => { 
+            BEGIN_CLR(Color.cyan, Color.red, () =>
+            {
                 return spawnTagExists;
             });
             spawn.TagID = TEXT_INPUT(spawn.TagID);
@@ -1154,7 +1175,8 @@ public class DataEditTagPage : DataEditPage
             BEGIN_HOR();
             LABEL("Tag Object ID", Color.cyan);
             bool spawnTagObjExists = ScriptExists(spawn.TagObjectID);
-            BEGIN_CLR(Color.cyan, Color.red, () => {
+            BEGIN_CLR(Color.cyan, Color.red, () =>
+            {
                 return spawnTagObjExists;
             });
             spawn.TagObjectID = TEXT_INPUT(spawn.TagObjectID);
@@ -1178,7 +1200,8 @@ public class DataEditTagPage : DataEditPage
 
         BEGIN_HOR();
         LABEL(spawnData.Spawns.Length, Color.gray);
-        BTN("Add Spawn", Color.green, () => {
+        BTN("Add Spawn", Color.green, () =>
+        {
             if (spawnData.Spawns == null) spawnData.Spawns = new TagObjectSpawn[0];
             List<TagObjectSpawn> spawns = new List<TagObjectSpawn>(spawnData.Spawns);
 
@@ -1258,7 +1281,8 @@ public class DataEditTagPage : DataEditPage
 #if ODD_REALM_APP
                 if (Application.isPlaying && ActiveTile != null && ActiveTile.BiomeData == data)
                 {
-                    BTN("Find Next", () => {
+                    BTN("Find Next", () =>
+                    {
                         bool found = false;
                         for (int z = maxZ; !found && z >= minZ; z--)
                         {
@@ -1271,7 +1295,7 @@ public class DataEditTagPage : DataEditPage
                                     TerrainBuildOutput terrainData = TerrainBuilder.GetTerrainAtPoint(l.x, l.y, l.z, Session.Realm.Seed, ActiveTile.TerrainGen);
                                     TagUID prototype = (uint)(terrainData.TagUID > 0 ? terrainData.TagUID : 1);
                                     if (prototype != TerrainBuilder.CAVE_TERRAIN) { continue; }
-                                    Session.World.MarkLocationVisible(l.LocationUID);
+                                    Session.World.MarkLocationVisible(l.locationUID);
                                     found = true;
                                     l.Point.RenderPlus(Color.magenta, 1f, 1f, true);
                                     Session.Selections.CurrentSelection.FocusPoint(l.Point);
@@ -1365,7 +1389,7 @@ public class DataEditTagPage : DataEditPage
             for (int i = 0; terrainGen.PlantsToGenerate != null && i < terrainGen.PlantsToGenerate.Length; i++)
             {
                 GDEBiomesData.PlantGen plantGen = terrainGen.PlantsToGenerate[i];
-                
+
                 if (plantGen == null)
                 {
                     plantGen = new PlantGen();
@@ -1570,7 +1594,7 @@ public class DataEditTagPage : DataEditPage
         if (caveData == null) { return; }
 
         MARK_DIRTY(caveData);
-        
+
         caveData.Layers = RenderTerrainLayers(caveData.Layers);
     }
 
@@ -1663,7 +1687,7 @@ public class DataEditTagPage : DataEditPage
         }
 
         simData.SetSimulationID(DATA_ID_INPUT<GDESimulationData>(simData.SimulationID, "Simulation ID (GDESimulationData)", out var simScriptObj));
-        
+
         if (simScriptObj != null)
         {
 
@@ -1831,7 +1855,7 @@ public class DataEditTagPage : DataEditPage
                 BEGIN_INDENT();
 
                 itemData.Actions[i].ActionID = DATA_ID_INPUT<GDETagsData>(itemData.Actions[i].ActionID, "Action ID", out var actionTagData);
-                
+
                 if (actionTagData == null)
                 {
                     WARNING("Action ID must be a valid tag!");
@@ -1850,7 +1874,7 @@ public class DataEditTagPage : DataEditPage
 
                 // Item Spawn.
                 itemData.Actions[i].SpawnID = DATA_ID_INPUT<Scriptable>(itemData.Actions[i].SpawnID, "Spawn", out var spawnData);
-                
+
                 END_INDENT();
                 END_INDENT();
             }
@@ -1873,7 +1897,7 @@ public class DataEditTagPage : DataEditPage
         for (int n = 0; n < fishData.Biomes.Count; n++)
         {
             BEGIN_HOR();
-            
+
             if (TRY_LIST_REMOVE_BTN<string>(fishData.Biomes, n, out var newList))
             {
                 fishData.Biomes = newList;
@@ -1908,7 +1932,7 @@ public class DataEditTagPage : DataEditPage
             BEGIN_HOR();
             buffs = ARRAY_REMOVE_BTN<BuffData>(buffs, n);
 
-            if (n < buffs.Length) 
+            if (n < buffs.Length)
             {
                 buffs[n] = RenderBuffData(script, buffs[n]);
             }
@@ -2032,7 +2056,7 @@ public class DataEditTagPage : DataEditPage
                 Sprite s = paintData.TooltipIconSprite;
                 float w = s.rect.width * 2;
                 float h = s.rect.height * 2;
-                GUILayout.Label("", GUILayout.Width(w+16), GUILayout.Height(h+16));
+                GUILayout.Label("", GUILayout.Width(w + 16), GUILayout.Height(h + 16));
                 Rect pos = GUILayoutUtility.GetLastRect();
                 Texture2D texture = s.texture;
 
@@ -2077,7 +2101,7 @@ public class DataEditTagPage : DataEditPage
         LABEL("z");
 
         BEGIN_VERT();
-        BTN("^", () => { if (_editZ < maxDim-1) _editZ++; });
+        BTN("^", () => { if (_editZ < maxDim - 1) _editZ++; });
         BTN("v", () => { if (_editZ > 0) _editZ--; });
         END_VERT();
 
@@ -2110,8 +2134,9 @@ public class DataEditTagPage : DataEditPage
                         GDEPrefabData.LocationData locationData = prefabData.Locations[locationIndex];
                         BEGIN_HOR();
                         //SPACE(6);
-                        
-                        RenderPrefabLocationLayerBtn(locationData.TagObjectID, btnCount, (string output) => {
+
+                        RenderPrefabLocationLayerBtn(locationData.TagObjectID, btnCount, (string output) =>
+                        {
 
                             if (_paintingPrefab)
                             {
@@ -2132,7 +2157,8 @@ public class DataEditTagPage : DataEditPage
                     }
                 }
 
-                RenderPrefabLocationLayerBtn((_paintingPrefab && !string.IsNullOrEmpty(_copiedText)) ? "+" : "", btnCount, (string output) => {
+                RenderPrefabLocationLayerBtn((_paintingPrefab && !string.IsNullOrEmpty(_copiedText)) ? "+" : "", btnCount, (string output) =>
+                {
                     if (_paintingPrefab)
                     {
                         newLocation = new BlockPoint(x, y, _editZ);
@@ -2437,8 +2463,8 @@ public class DataEditTagPage : DataEditPage
         {
             label = "X " + tagObjID;
         }
-        
-        if (GUILayout.Button(label, buttonStyle, GUILayout.Width(60*3), GUILayout.Height(((60*3) - ((count*2))) / count), GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(false)))
+
+        if (GUILayout.Button(label, buttonStyle, GUILayout.Width(60 * 3), GUILayout.Height(((60 * 3) - ((count * 2))) / count), GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(false)))
         {
             //string output = tagObjID;
 
@@ -2506,7 +2532,7 @@ public class DataEditTagPage : DataEditPage
     {
         memberData.EntityID = DATA_ID_INPUT<GDEEntitiesData>(memberData.EntityID, "Entity ID", out var entityData);
         memberData.TuningID = DATA_ID_INPUT<GDEEntityTuningData>(memberData.TuningID, "Entity Tuning", out var additionalMemberTuning);
-        
+
         if (additionalMemberTuning != null)
         {
             RenderEntityTuningData(script, additionalMemberTuning);
@@ -2603,7 +2629,7 @@ public class DataEditTagPage : DataEditPage
             END_HOR();
 
         }
-        
+
         sfxGroup.SFX = LIST_ADD_BTN<string>(sfxGroup.SFX, "+SFX");
 
         BEGIN_INDENT();
@@ -2710,7 +2736,7 @@ public class DataEditTagPage : DataEditPage
         statusData.ExpireTimeMinutesMax = INT_INPUT(statusData.ExpireTimeMinutesMax, "Expire Time Max (Mins)");
         statusData.ExpireTimeMinutesMin = INT_INPUT(statusData.ExpireTimeMinutesMin, "Expire Time Min (Mins)");
 
-        statusData.ShowIconOnToolbar = TOGGLE(statusData.ShowIconOnToolbar, "Show Icon On Toolbar");
+        statusData.VisibleToPlayer = TOGGLE(statusData.VisibleToPlayer, "Show Icon On Toolbar");
 
         statusData.Notification = DATA_ID_INPUT<GDENotificationsData>(statusData.Notification, "Notification", out var notificationData);
 
@@ -2869,7 +2895,7 @@ public class DataEditTagPage : DataEditPage
             for (int i = 0; i < statusData.AutoJobs.Count; i++)
             {
                 BEGIN_HOR();
-                
+
                 if (TRY_LIST_REMOVE_BTN<GDEEntityStatusData.StatusAutoJob>(statusData.AutoJobs, i, out var newList))
                 {
                     statusData.AutoJobs = newList;
@@ -2893,7 +2919,7 @@ public class DataEditTagPage : DataEditPage
                 END_HOR();
             }
 
-             LIST_ADD_BTN<GDEEntityStatusData.StatusAutoJob>(statusData.AutoJobs, "+Auto Job");
+            LIST_ADD_BTN<GDEEntityStatusData.StatusAutoJob>(statusData.AutoJobs, "+Auto Job");
         }
     }
 
@@ -2957,7 +2983,7 @@ public class DataEditTagPage : DataEditPage
         {
             BEGIN_INDENT();
             List<Scriptable> biomes = GetDataByType<GDEBiomesData>();
-            entityData.Biomes = TOGGLE_LIST<string>("", entityData.Biomes, biomes.Count, 
+            entityData.Biomes = TOGGLE_LIST<string>("", entityData.Biomes, biomes.Count,
                 (int i) => { return biomes[i].Key; },
                 (int i) => { return biomes[i].Key; });
 
@@ -3358,7 +3384,7 @@ public class DataEditTagPage : DataEditPage
             }
 
             roomData.OccupantGroups[i] = DATA_ID_INPUT<GDEOccupantGroupData>(roomData.OccupantGroups[i], "Occupant Group ID", out var occupantGroupData);
-            
+
             END_HOR();
 
             BEGIN_INDENT();
@@ -3418,7 +3444,8 @@ public class DataEditTagPage : DataEditPage
                 {
                     BEGIN_HOR();
                     BEGIN_SPRITE(blueprint.TooltipIconSprite);
-                    BTN(blueprint.TooltipName, Color.green, () => {
+                    BTN(blueprint.TooltipName, Color.green, () =>
+                    {
                         GDERoomTemplatesData.RoomAutoJob autoJob = new GDERoomTemplatesData.RoomAutoJob()
                         {
                             BlueprintID = blueprint.Key,
@@ -3492,7 +3519,8 @@ public class DataEditTagPage : DataEditPage
                 {
                     bool hasSeason = plantData.Seasons.Contains(seasonData.SeasonGroup);
                     BEGIN_CLR(hasSeason ? Color.green : Color.grey);
-                    BTN($"{seasonData.SeasonGroup} - {seasons[i].Key}", () => {
+                    BTN($"{seasonData.SeasonGroup} - {seasons[i].Key}", () =>
+                    {
                         if (hasSeason)
                         {
                             plantData.Seasons.Remove(seasonData.SeasonGroup);
@@ -3569,8 +3597,11 @@ public class DataEditTagPage : DataEditPage
 
             BEGIN_INDENT();
 
-            BEGIN_CLR(Color.red, Color.white, () => { return string.IsNullOrEmpty(blockData.TriggerConditions[i].ActivateTriggerID) && 
-                                                             string.IsNullOrEmpty(blockData.TriggerConditions[i].DeactivateTriggerID); });
+            BEGIN_CLR(Color.red, Color.white, () =>
+            {
+                return string.IsNullOrEmpty(blockData.TriggerConditions[i].ActivateTriggerID) &&
+                                                             string.IsNullOrEmpty(blockData.TriggerConditions[i].DeactivateTriggerID);
+            });
 
             blockData.TriggerConditions[i].TriggerType = (TriggerTypes)DROP_DOWN(blockData.TriggerConditions[i].TriggerType, "Trigger Type");
             blockData.TriggerConditions[i].ActivateTriggerID = DATA_ID_INPUT<GDETagsData>(blockData.TriggerConditions[i].ActivateTriggerID, "Trigger To Activate", out var activateTriggerData);
@@ -3763,7 +3794,6 @@ public class DataEditTagPage : DataEditPage
         typeof(GDEBiomeTerrainNoiseTuningData).Name,
         typeof(GDEBiomeWeatherData).Name,
         typeof(GDEBlockFillData).Name,
-        typeof(GDEBlockModelData).Name,
         typeof(GDEBlockPlantsData).Name,
         typeof(GDEBlockPlatformsData).Name,
         typeof(GDEBlocksData).Name,

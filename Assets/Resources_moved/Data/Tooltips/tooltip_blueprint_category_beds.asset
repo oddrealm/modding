@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Beds
-  Name: Beds
-  NamePlural: 
+  Action: Bed
+  Name: Bed
+  NamePlural: Beds
   InlineIcon: <sprite=1771>
   Description: 
   Icon: sp_category_beds_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 249
+  Order: 247

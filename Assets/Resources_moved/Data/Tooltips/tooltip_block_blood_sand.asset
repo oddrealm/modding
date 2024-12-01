@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Blood Sand Block
-  Name: Blood Sand Block
+  Action: Blood Sand
+  Name: Blood Sand
   NamePlural: 
   InlineIcon: <sprite=1163>
   Description: It is said Blood Sand was created when a god was killed by a long

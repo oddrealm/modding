@@ -172,13 +172,13 @@ MonoBehaviour:
         Clear:
           Layer: -1
           Params:
-            DisableRemoveSpawns: 1
-            DisposeIfNotPermitted: 0
-            DisableSpawnAtEntityOnFail: 0
-            DisableClaimCheck: 0
-            SetAsUnclaimed: 0
-            Attempts: 0
-            SeedOffset: 0
+            disableRemoveSpawns: 1
+            disposeIfNotPermitted: 0
+            disableSpawnAtEntityOnFail: 0
+            disableClaimCheck: 0
+            setAsUnclaimed: 0
+            attempts: 0
+            seedOffset: 0
     - rid: 14
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -218,13 +218,13 @@ MonoBehaviour:
         Clear:
           Layer: -1
           Params:
-            DisableRemoveSpawns: 1
-            DisposeIfNotPermitted: 0
-            DisableSpawnAtEntityOnFail: 0
-            DisableClaimCheck: 0
-            SetAsUnclaimed: 0
-            Attempts: 0
-            SeedOffset: 0
+            disableRemoveSpawns: 1
+            disposeIfNotPermitted: 0
+            disableSpawnAtEntityOnFail: 0
+            disableClaimCheck: 0
+            setAsUnclaimed: 0
+            attempts: 0
+            seedOffset: 0
     - rid: 21
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -362,13 +362,13 @@ MonoBehaviour:
         Clear:
           Layer: -1
           Params:
-            DisableRemoveSpawns: 1
-            DisposeIfNotPermitted: 0
-            DisableSpawnAtEntityOnFail: 0
-            DisableClaimCheck: 0
-            SetAsUnclaimed: 0
-            Attempts: 0
-            SeedOffset: 0
+            disableRemoveSpawns: 1
+            disposeIfNotPermitted: 0
+            disableSpawnAtEntityOnFail: 0
+            disableClaimCheck: 0
+            setAsUnclaimed: 0
+            attempts: 0
+            seedOffset: 0
     - rid: 45
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:

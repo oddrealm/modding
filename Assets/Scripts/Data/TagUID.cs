@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using System;
 
 // This gets generated on data load
 public struct TagUID : IEquatable<TagUID>
