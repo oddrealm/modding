@@ -12,7 +12,7 @@ In the tutorial you'll cover:
       PART 3: Uploading the mod to steam workshop.
       PART 4: Troubleshooting.
 
-PART 1: CREATING A MOD:
+PART 1: CREATING A MOD
 
 There are many types of data objects to edit and create using this project, but, for this example, I'll walk you through creating a new item (Iron Shovel 2h).
 This should give you a basic understanding of the modding pipeline.
@@ -24,6 +24,13 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
 1.  Download the modding Unity project.  
     (https://github.com/oddrealm/modding)
 2.  Open the Unity Project (Unity Version 2022.3.28f1).
+      You can find unity downloads here: https://unity.com/releases/editor/archive
+      You'll also want to download the Unity HUB Here: https://unity.com/download
+            The Unity Hub is a dashboard app that manages projects and unity version.
+      With the HUB and editor downloaded, open the HUB. 
+            Under installs, add the unity version you installed if it's not already listed.
+            Under Projects, add the modding project you downloaded from git.
+                  Make sure the correct unity version is selected in the dropdown, then click the project to open it.
 3.  Open the Addressables Profiles window.  
     Window>Asset Management>Addressables>Profiles.
 4.  Create a new profile from the Profiles window (top-left).  
@@ -147,7 +154,7 @@ If everything is set up correctly, you should see your new shovel appear.
 If you don't see the visuals for the item or the item shows up with visuals for iron tongs, it's because we haven't done Part II yet, or you've not set up the texture coords and atlas correctly.  
 See PART III: Troubleshooting for some tips on how to find out what's wrong.  
 
-PART 2: MAKING NEW TEXTURES:  
+PART 2: MAKING NEW TEXTURES  
 
 We are going to create all the required textures for our new Iron Shovel 2h which was created in Part I.  
 There are three types of textures to edit and mod: icon, texture atlas, and inline graphics.  
@@ -164,7 +171,7 @@ IMPORTANT: The game uses the first mod textures it finds when a mod is enabled.
    They aren't part of the data build pipeline and are only intended as reference for you to make new textures.  
 2. Open the File Explorer (On windows. OSX and Linux will have their respective file system navigators.) by right-clicking the Resources/Textures folder and selecting 'Show In Explorer'.  
 3. Select the 3 textures, right-click them, and select Copy.  
-4. In the File Explorer window, navigate to the mods folder (MoreTools) you created in Part I. Right-click and paste the textures into this folder.  
+4. In the File Explorer window, navigate to the mods folder (MoreTools) you created in Part I (i.e., on Windows "C:/Users/You/AppData/LocalLow/Unknown Origin Games/OddRealm/Mods/MoreTools"). Right-click and paste the textures into this folder. 
    IMPORTANT: Be sure to not rename 'sp_textmesh_inline_graphics' or 'tx_terrain_atlas'.  
               These names are used to find these textures when you enable your mod in-game.  
    IMPORTANT: Make sure all textures are .png format.     
@@ -224,7 +231,11 @@ The modding project comes with the ModUploader app that players can use to uploa
 2. Open Steam. The Steam client needs to be running for the mod uploader to know your steam workshop profile to upload to. So be sure to also be signed into the correct account.
 3. Open the OddRealm.exe. 
 4. You might first see a page asking you to sign Steam's EULA. This is required by steam to make mods. Re-open the OddRealm.exe after signing it.
+          Note: You might also see this if the steam client isn't open and connected. Open the steam client then re-open the uploader.
 5. You'll now see data fields:
+          Published File ID: Keep this empty if you are creating a new mod. Otherwise, enter the id for your previous mod and hit the "Find item" button. This will auto-fill the title and description if it successfully finds the previous mod.
+                Note: When creating a new mod, the id will be shown in the logs. Keep track of that for future use. If you lose the id, you can see it by going to your mod steamworks page. The id will be present in the url.
+                i.e., 3329860605 in the url: https://steamcommunity.com/sharedfiles/filedetails/?id=3329860605
           Mod Name: Try to give it a unique name to separate it from other mods.
           Mod Description: Detail what is in the mod.
           Patch Notes: Detail what has changed since the last mod or if it's the first version. I would suggest including the game's version that the mod is up-to-date with.
@@ -232,7 +243,10 @@ The modding project comes with the ModUploader app that players can use to uploa
           Mod Preview Image: The image players see on the steam workshop page, representing your mod.
 6. With all that filled out, the Upload Mod button should be green. Click it.
 7. The logs should tell you whether the item was created and uploaded successfully.
-          
+
+Conclusion:
+When going to the steamworks page, you should now see your mod in your list of steamworks items. Subscribing to the item will ensure Odd Realm downloads it the next time the Odd Realm app is run from Steam. You should then be able to see the steam mod in the pop-up when the game first launches and shows you available mods.
+
 PART 4: TROUBLESHOOTING      
 
 You will likely encounter lots of annoying issues as you try to create mods, especially because modding Odd Realm is so new.  
