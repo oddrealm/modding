@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/ResearchCategories")]
+[CreateAssetMenu(menuName = "OddRealm/Kingdom/ResearchCategories", order = 29)]
 public class GDEResearchCategoriesData : Scriptable
 {
     public string FriendlyName = "";

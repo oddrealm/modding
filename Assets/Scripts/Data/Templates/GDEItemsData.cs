@@ -20,7 +20,7 @@ public struct AutomatedItemActionActivation
     public bool DisposeItem;
 }
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Items")]
+[CreateAssetMenu(menuName = "OddRealm/Item/Items", order = 21)]
 public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 {
     [Header("Lifetime Minutes (-1 = disabled)")]

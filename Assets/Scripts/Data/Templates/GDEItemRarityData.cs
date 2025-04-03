@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/ItemRarity")]
+[CreateAssetMenu(menuName = "OddRealm/Item/ItemRarity", order = 23)]
 public class GDEItemRarityData : Scriptable
 {
 

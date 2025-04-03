@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/XPGrowth")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/Humanoid/XPGrowth", order = 19)]
 public class GDEXPGrowthData : Scriptable
 {
     public int Level = 0;

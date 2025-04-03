@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/RealmNames")]
+[CreateAssetMenu(menuName = "OddRealm/Realm/RealmNames", order = 39)]
 public class GDERealmNamesData : Scriptable
 {
     public List<string> FrontCompounds = new List<string>();

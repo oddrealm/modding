@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Zones")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Zones", order = 0)]
 public class GDEZonesData : Scriptable
 {
     public string Visuals = "";

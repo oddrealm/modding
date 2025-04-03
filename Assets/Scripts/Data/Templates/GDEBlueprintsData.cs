@@ -53,7 +53,7 @@ public enum JobPoolTypes
     WORKER_INVENTORY // Get resources from the worker's inventory.
 }
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Blueprints")]
+[CreateAssetMenu(menuName = "OddRealm/Blueprint/Blueprints", order = 12)]
 public class GDEBlueprintsData : Scriptable, IProgressionObject
 {
     public string CategoryID = "blueprint_category_jobs";

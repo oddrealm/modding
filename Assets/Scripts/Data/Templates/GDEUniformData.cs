@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Uniform")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/Humanoid/Uniform", order = 18)]
 public class GDEUniformData : Scriptable
 {
 

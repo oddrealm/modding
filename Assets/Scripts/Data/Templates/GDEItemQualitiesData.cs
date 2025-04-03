@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/ItemQualities")]
+[CreateAssetMenu(menuName = "OddRealm/Item/ItemQualities", order = 22)]
 public class GDEItemQualitiesData : Scriptable
 {
     public string Group = "";

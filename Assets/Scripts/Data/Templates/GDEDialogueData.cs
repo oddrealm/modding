@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Dialogue")]
+[CreateAssetMenu(menuName = "OddRealm/Event/Dialogue", order = 15)]
 public class GDEDialogueData : Scriptable
 {
     public string AppearanceID = "";

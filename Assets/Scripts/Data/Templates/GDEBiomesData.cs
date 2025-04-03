@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Biomes")]
+[CreateAssetMenu(menuName = "OddRealm/Biome/Biomes", order = 6)]
 public class GDEBiomesData : Scriptable
 {
     public enum PopulationRatings

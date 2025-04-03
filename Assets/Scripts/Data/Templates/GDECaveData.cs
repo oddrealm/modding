@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Cave")]
+[CreateAssetMenu(menuName = "OddRealm/Biome/Cave", order = 13)]
 public class GDECaveData : Scriptable
 {
     public bool FillUnusedWithSurroundingBlocks;

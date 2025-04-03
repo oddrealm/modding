@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BlockModel")]
+[CreateAssetMenu(menuName = "OddRealm/Block/BlockModel", order = 21)]
 public class GDEBlockModelData : Scriptable
 {
 	public int ModelIndex = 0;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/OverworldVisuals")]
+[CreateAssetMenu(menuName = "OddRealm/Realm/OverworldVisuals", order = 37)]
 public class GDEOverworldVisualsData : Scriptable
 {
     public int TextureX = 0;

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Fish")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/Animal/Fish", order = 15)]
 public class GDEFishData : Scriptable
 {
     public int Level = 0;

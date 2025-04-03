@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BlockVisuals")]
+[CreateAssetMenu(menuName = "OddRealm/Block/BlockVisuals", order = 25)]
 public class GDEBlockVisualsData : Scriptable
 {
     [System.Serializable]

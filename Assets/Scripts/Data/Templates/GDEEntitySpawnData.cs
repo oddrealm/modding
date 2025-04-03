@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/EntitySpawn")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/EntitySpawn", order = 23)]
 public class GDEEntitySpawnData : Scriptable
 {
     [System.Serializable]

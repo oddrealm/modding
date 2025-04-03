@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/StartingLoadouts")]
+[CreateAssetMenu(menuName = "ScriptableObjects/StartingLoadouts", order = 0)]
 public class GDEStartingLoadoutsData : Scriptable
 {
     public bool Public = false;

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Attacks")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Attacks", order = 0)]
 public class GDEAttacksData : Scriptable
 {
     public bool ShowOnAttacksDisplay = false;

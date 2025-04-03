@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Profession")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/Humanoid/Profession", order = 17)]
 public class GDEProfessionData : Scriptable
 {
     [System.Serializable]

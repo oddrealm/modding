@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BiomeSeasons")]
+[CreateAssetMenu(menuName = "OddRealm/Biome/BiomeSeasons", order = 11)]
 public class GDEBiomeSeasonsData : Scriptable
 {
     public string SeasonGroup = "spring";

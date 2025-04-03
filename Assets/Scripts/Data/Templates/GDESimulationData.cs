@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Simulation")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Simulation", order = 0)]
 public class GDESimulationData : Scriptable
 {
     [SerializeReference]

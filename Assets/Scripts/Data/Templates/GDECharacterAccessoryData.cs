@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/CharacterAccessoryData")]
+[CreateAssetMenu(menuName = "ScriptableObjects/CharacterAccessoryData", order = 0)]
 public class GDECharacterAccessoryData : Scriptable
 {
     public int Priority = 0;

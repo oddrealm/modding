@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/OverworldLodeSpawns")]
+[CreateAssetMenu(menuName = "OddRealm/Realm/OverworldLodeSpawns", order = 34)]
 public class GDEOverworldLodeSpawnsData : Scriptable
 {
     public int Shape = 0;

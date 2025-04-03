@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BiomeNames")]
+[CreateAssetMenu(menuName = "OddRealm/Biome/BiomeNames", order = 7)]
 public class GDEBiomeNamesData : Scriptable
 {
     public List<string> Determiner = new List<string>();

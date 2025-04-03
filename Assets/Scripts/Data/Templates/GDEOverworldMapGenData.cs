@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/OverworldMapGen")]
+[CreateAssetMenu(menuName = "OddRealm/Realm/OverworldMapGen", order = 35)]
 public class GDEOverworldMapGenData : Scriptable
 {
     public int BuildPriority = 0;

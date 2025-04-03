@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Scenarios")]
+[CreateAssetMenu(menuName = "OddRealm/Event/Scenarios", order = 20)]
 public class GDEScenariosData : Scriptable
 {
 

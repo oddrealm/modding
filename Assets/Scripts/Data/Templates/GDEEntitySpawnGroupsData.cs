@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/EntitySpawnGroups")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/EntitySpawnGroups", order = 24)]
 public class GDEEntitySpawnGroupsData : Scriptable
 {
     public string FriendlyName = "Spawns:";

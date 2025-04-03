@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/CharacterColorMaskData")]
+[CreateAssetMenu(menuName = "ScriptableObjects/CharacterColorMaskData", order = 0)]
 public class GDECharacterColorMaskData : Scriptable
 {
     [System.Serializable]

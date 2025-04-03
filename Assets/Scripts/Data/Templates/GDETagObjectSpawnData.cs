@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/TagObjectSpawn")]
+[CreateAssetMenu(menuName = "ScriptableObjects/TagObjectSpawn", order = 0)]
 public class GDETagObjectSpawnData : Scriptable
 {
     public int SeedOffset;

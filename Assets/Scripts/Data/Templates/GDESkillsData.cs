@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Skills")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Skills", order = 0)]
 public class GDESkillsData : Scriptable
 {
     public string ResearchKey = "";

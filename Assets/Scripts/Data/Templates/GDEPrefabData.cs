@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Prefab")]
+[CreateAssetMenu(menuName = "OddRealm/Realm/Prefab", order = 38)]
 public class GDEPrefabData : Scriptable
 {
     public struct PrefabPaint

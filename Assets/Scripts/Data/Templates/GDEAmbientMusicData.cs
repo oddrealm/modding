@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/AmbientMusic")]
+[CreateAssetMenu(menuName = "OddRealm/Sound/AmbientMusic", order = 36)]
 public class GDEAmbientMusicData : Scriptable
 {
     public string IntroID = "";

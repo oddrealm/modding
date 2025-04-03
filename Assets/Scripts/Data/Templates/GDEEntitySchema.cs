@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/EntitySchema")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/EntitySchema", order = 21)]
 public class GDEEntitySchema : Scriptable
 {
     [System.Serializable]

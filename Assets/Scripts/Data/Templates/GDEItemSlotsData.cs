@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/ItemSlots")]
+[CreateAssetMenu(menuName = "OddRealm/Item/ItemSlots", order = 24)]
 public class GDEItemSlotsData : Scriptable
 {
     public string EmptyIcon = "";
