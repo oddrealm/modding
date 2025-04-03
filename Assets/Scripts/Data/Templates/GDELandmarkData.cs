@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Landmark")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Landmark", order = 0)]
 public class GDELandmarkData : Scriptable
 {
     [System.Serializable]

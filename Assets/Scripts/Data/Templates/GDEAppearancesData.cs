@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Appearances")]
+[CreateAssetMenu(menuName = "OddRealm/Appearance/Appearances", order = 3)]
 public class GDEAppearancesData : Scriptable
 {
     public string Gender = "";

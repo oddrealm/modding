@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/AttackGroups")]
+[CreateAssetMenu(menuName = "ScriptableObjects/AttackGroups", order = 0)]
 public class GDEAttackGroupsData : Scriptable
 {
     public List<string> Attacks = new List<string>();

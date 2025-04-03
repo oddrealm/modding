@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Party")]
+[CreateAssetMenu(menuName = "OddRealm/Event/Party", order = 19)]
 public class GDEPartyData : Scriptable
 {
     [System.Serializable]

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Notifications")]
+[CreateAssetMenu(menuName = "OddRealm/UI/Notifications", order = 39)]
 public class GDENotificationsData : Scriptable
 {
     [System.Serializable]

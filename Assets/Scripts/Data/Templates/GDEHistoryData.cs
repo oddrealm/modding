@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/History")]
+[CreateAssetMenu(menuName = "OddRealm/Realm/History", order = 30)]
 public class GDEHistoryData : Scriptable
 {
     public bool CanBeRandomHistory = false;

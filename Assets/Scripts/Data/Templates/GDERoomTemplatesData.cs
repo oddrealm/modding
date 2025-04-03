@@ -2,7 +2,7 @@ using Assets.GameData;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/RoomTemplates")]
+[CreateAssetMenu(menuName = "OddRealm/Room/RoomTemplates", order = 36)]
 public class GDERoomTemplatesData : Scriptable
 {
     [System.Serializable]

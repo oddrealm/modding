@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BiomeTerrainNoiseTuning")]
+[CreateAssetMenu(menuName = "OddRealm/Biome/BiomeTerrainNoiseTuning", order = 10)]
 public class GDEBiomeTerrainNoiseTuningData : Scriptable
 {
     public int Priority = 0;

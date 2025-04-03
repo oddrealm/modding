@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BlueprintCategory")]
+[CreateAssetMenu(menuName = "OddRealm/Blueprint/BlueprintCategory", order = 13)]
 public class GDEBlueprintCategoryData : Scriptable
 {
     public SelectionTypes VisibleSelectionList = SelectionTypes.BUILD;

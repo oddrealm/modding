@@ -2,7 +2,7 @@ using Assets.GameData;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Entities")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/Entities", order = 17)]
 public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationData
 {
     [System.Serializable]

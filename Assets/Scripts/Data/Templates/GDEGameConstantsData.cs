@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/GameConstants")]
+[CreateAssetMenu(menuName = "ScriptableObjects/GameConstants", order = 0)]
 public class GDEGameConstantsData : Scriptable
 {
     public string StringValue = "";

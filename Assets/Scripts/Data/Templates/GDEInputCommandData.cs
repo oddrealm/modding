@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/InputCommand")]
+[CreateAssetMenu(menuName = "OddRealm/Input/InputCommand", order = 21)]
 public class GDEInputCommandData : Scriptable
 {
     public enum InputCategories

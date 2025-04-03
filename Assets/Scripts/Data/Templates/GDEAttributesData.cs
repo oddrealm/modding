@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Attributes")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Attributes", order = 0)]
 public class GDEAttributesData : Scriptable
 {
     public bool ShowInAttributeDisplay = true;

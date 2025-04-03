@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/HistoryTypes")]
+[CreateAssetMenu(menuName = "OddRealm/Realm/HistoryTypes", order = 31)]
 public class GDEHistoryTypesData : Scriptable
 {
     public EntityHistoryTypes HistoryType = EntityHistoryTypes.ENTITY_INTERACTION;

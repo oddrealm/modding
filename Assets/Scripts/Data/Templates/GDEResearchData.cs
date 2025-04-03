@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Research")]
+[CreateAssetMenu(menuName = "OddRealm/Kingdom/Research", order = 30)]
 public class GDEResearchData : Scriptable
 {
     public bool Enabled = false;

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Tags")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Tags", order = 0)]
 public class GDETagsData : Scriptable, ITag
 {
     public bool TrackByDefault = false;

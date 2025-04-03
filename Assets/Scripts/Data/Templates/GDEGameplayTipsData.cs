@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/GameplayTips")]
+[CreateAssetMenu(menuName = "ScriptableObjects/GameplayTips", order = 0)]
 public class GDEGameplayTipsData : Scriptable
 {
     [System.Serializable]

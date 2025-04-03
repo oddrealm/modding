@@ -8,7 +8,7 @@ public enum TrackingTypes
     NATION
 }
 
-[CreateAssetMenu(menuName = "ScriptableObjects/OverworldNation")]
+[CreateAssetMenu(menuName = "OddRealm/Realm/OverworldNation", order = 36)]
 public class GDEOverworldNationData : Scriptable
 {
     [System.Serializable]

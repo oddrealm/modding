@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BiomeWeather")]
+[CreateAssetMenu(menuName = "OddRealm/Biome/BiomeWeather", order = 12)]
 public class GDEBiomeWeatherData : Scriptable
 {
     [System.Serializable]

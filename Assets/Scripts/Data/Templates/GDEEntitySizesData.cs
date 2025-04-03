@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/EntitySizes")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/EntitySizes", order = 22)]
 public class GDEEntitySizesData : Scriptable
 {
     public string FriendlyName = "";

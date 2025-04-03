@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Indications")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Indications", order = 0)]
 public class GDEIndicationsData : Scriptable
 {
     public int Priority = 0;

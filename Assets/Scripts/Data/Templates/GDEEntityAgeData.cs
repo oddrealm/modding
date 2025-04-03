@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/EntityAge")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/EntityAge", order = 18)]
 public class GDEEntityAgeData : Scriptable
 {
     public EntityAgeTypes AgeType;

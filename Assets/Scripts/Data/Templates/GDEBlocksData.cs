@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Blocks")]
+[CreateAssetMenu(menuName = "OddRealm/Block/Blocks", order = 9)]
 public class GDEBlocksData : Scriptable, ISimulationData
 {
     [System.Serializable]

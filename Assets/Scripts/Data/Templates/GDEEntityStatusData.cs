@@ -173,7 +173,7 @@ public struct GreaterThanEqualCondition : ICondition
     }
 }
 
-[CreateAssetMenu(menuName = "ScriptableObjects/EntityStatus")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/EntityStatus", order = 25)]
 public class GDEEntityStatusData : Scriptable
 {
     public bool TrackByDefault = false;

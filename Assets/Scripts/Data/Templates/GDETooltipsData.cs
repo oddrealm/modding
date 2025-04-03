@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Tooltips")]
+[CreateAssetMenu(menuName = "OddRealm/UI/Tooltips", order = 41)]
 public class GDETooltipsData : Scriptable
 {
     public override GDETooltipsData TooltipData { get { return this; } }

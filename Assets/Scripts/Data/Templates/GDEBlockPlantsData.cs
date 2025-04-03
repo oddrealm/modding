@@ -12,7 +12,7 @@ public struct PlantAction
     public BuffData Buff;
 }
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BlockPlants")]
+[CreateAssetMenu(menuName = "OddRealm/Block/BlockPlants", order = 22)]
 public class GDEBlockPlantsData : Scriptable, ISimulationData
 {
     [Header("Lifetime Minutes (-1 = disabled)")]

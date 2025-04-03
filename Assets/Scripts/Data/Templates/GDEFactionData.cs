@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Faction")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Faction", order = 0)]
 public class GDEFactionData : Scriptable
 {
     public string[] EnemyFactions;

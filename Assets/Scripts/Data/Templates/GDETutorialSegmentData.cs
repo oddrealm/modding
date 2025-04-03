@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/TutorialSegment")]
+[CreateAssetMenu(menuName = "ScriptableObjects/TutorialSegment", order = 0)]
 public class GDETutorialSegmentData : Scriptable
 {
     public string Speaker = "Darby, the Historian";

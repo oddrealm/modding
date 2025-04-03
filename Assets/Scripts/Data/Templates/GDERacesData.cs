@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Races")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/Races", order = 27)]
 public class GDERacesData : Scriptable, IProgressionObject
 {
     public int MerchantValue = 0;

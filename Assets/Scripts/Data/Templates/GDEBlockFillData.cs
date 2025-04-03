@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BlockFill")]
+[CreateAssetMenu(menuName = "OddRealm/Block/BlockFill", order = 20)]
 public class GDEBlockFillData : Scriptable, ISimulationData
 {
     public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Names")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/EntityNames", order = 20)]
 public class GDEEntityNamesData : Scriptable
 {
     public int FirstNameMasculinePrependChances = 0;

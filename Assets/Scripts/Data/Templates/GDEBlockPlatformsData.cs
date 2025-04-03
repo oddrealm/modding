@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BlockPlatforms")]
+[CreateAssetMenu(menuName = "OddRealm/Block/BlockPlatforms", order = 23)]
 public class GDEBlockPlatformsData : Scriptable
 {
     public int Index = 0;

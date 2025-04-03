@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/ToolbarMenus")]
+[CreateAssetMenu(menuName = "OddRealm/UI/ToolbarMenus", order = 40)]
 public class GDEToolbarMenusData : Scriptable
 {
     public int TabOrder = 0;

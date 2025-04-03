@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/OccupantGroup")]
+[CreateAssetMenu(menuName = "OddRealm/Room/OccupantGroup", order = 33)]
 public class GDEOccupantGroupData : Scriptable
 {
     public OccupantManagementTypes OccupantManageType = OccupantManagementTypes.AUTO;

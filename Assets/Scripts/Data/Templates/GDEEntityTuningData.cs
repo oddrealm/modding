@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/EntityTuning")]
+[CreateAssetMenu(menuName = "OddRealm/Entity/EntityTuning", order = 26)]
 public class GDEEntityTuningData : Scriptable
 {
     [Header("AGES:")]

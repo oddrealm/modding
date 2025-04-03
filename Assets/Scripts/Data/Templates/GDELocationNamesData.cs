@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/LocationNames")]
+[CreateAssetMenu(menuName = "OddRealm/Realm/LocationNames", order = 32)]
 public class GDELocationNamesData : Scriptable
 {
     public List<string> Determiner = new List<string>();

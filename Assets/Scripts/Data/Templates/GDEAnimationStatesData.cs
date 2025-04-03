@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/AnimationStates")]
+[CreateAssetMenu(menuName = "OddRealm/Animation/AnimationStates", order = 3)]
 public class GDEAnimationStatesData : Scriptable
 {
     [System.Serializable]

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Animations")]
+[CreateAssetMenu(menuName = "OddRealm/Animation/Animations", order = 0)]
 public class GDEAnimationsData : Scriptable
 {
     [System.Serializable]

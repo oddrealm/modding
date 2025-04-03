@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/RoomCategory")]
+[CreateAssetMenu(menuName = "OddRealm/Room/RoomCategory", order = 34)]
 public class GDERoomCategoryData : Scriptable
 {
     public bool ShowInSelectionList = true;

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/BiomeTerrainNoiseTuning")]
+[CreateAssetMenu(menuName = "OddRealm/Biome/BiomeTerrainNoise", order = 9)]
 public class GDEBiomeNoiseData : Scriptable
 {
     [Header("The closeness or distance of the terrain's hills and valleys")]
