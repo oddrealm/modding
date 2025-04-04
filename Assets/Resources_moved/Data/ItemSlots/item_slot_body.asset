@@ -20,3 +20,4 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   EmptyIcon: sp_empty_body_slot_icon
   GenerateItemChances: 1000
+  ListOrder: 3

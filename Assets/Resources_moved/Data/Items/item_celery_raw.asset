@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_celery_raw
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_celery_raw
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_vegetable
@@ -52,8 +51,7 @@ MonoBehaviour:
   MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_common
-  RarityType: 0
-  DecayRate: 120
+  DecayRate: 7200
   DecayItem: item_waste_rotten_food
   HasMeltThreshold: 0
   MeltThreshold: 0

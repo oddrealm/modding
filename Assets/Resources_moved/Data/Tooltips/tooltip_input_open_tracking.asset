@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Open Tracking & Control Groups
-  Name: Tracking & Control Groups
+  Action: Open Tracking Settings
+  Name: Tracking Settings
   NamePlural: 
   InlineIcon: 
   Description: Create and manage groups of settlers, and edit the visible items on
@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Input
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2549
+  Order: 3000

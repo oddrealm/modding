@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: attack_steel_war_axe_one_hand_cut
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attack_steel_war_axe_one_hand_cut
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -28,7 +27,7 @@ MonoBehaviour:
   SkillID: skill_fight_melee
   AddSkillToOutput: 1
   MinAmount: 32
-  MaxAmount: 38
+  MaxAmount: 40
   Range: 14
   StatusesToApplyToTarget: []
   SourceAction: 0

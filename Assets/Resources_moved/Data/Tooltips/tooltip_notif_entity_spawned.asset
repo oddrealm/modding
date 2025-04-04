@@ -19,12 +19,12 @@ MonoBehaviour:
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Entity
-  Name: Entity
-  NamePlural: New Entities
+  Name: New Entity!
+  NamePlural: New Entities!
   InlineIcon: <sprite=1040>
   Description: An entity has spawned in the area
   Icon: 
   TextColor: {r: 0.10588236, g: 0.6666667, b: 0.28235295, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 920
+  Order: 1796

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: attribute_xp
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attribute_xp
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  IsMainAttribute: 0
   ShowInAttributeDisplay: 1
   StartMin: 0
   StartDefault: 0

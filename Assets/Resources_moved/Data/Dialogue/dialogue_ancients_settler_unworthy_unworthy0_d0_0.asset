@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: dialogue_ancients_settler_unworthy_unworthy0_d0_0
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,11 +28,12 @@ MonoBehaviour:
   - Your kind is not welcome here, Unworthy!
   - Though it makes me sick to look upon you, I cannot deny we are a dying people
     that must unify to survive.
-  FocusOnSpeaker: 1
+  ShowOnce: 0
   DialogueSequences:
   - ID: seq_leave_settlement0
     Text: You're forcing me to leave?
-    IsStartingSequence: 0
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
     Condition:
       TagRequirement0ID: 
       TagRequirement1ID: 

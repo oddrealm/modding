@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_gather_item
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Collect Items
+  Action: 
   Name: Collect Items
   NamePlural: 
   InlineIcon: <sprite=651>
@@ -28,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 596
+  Order: 684

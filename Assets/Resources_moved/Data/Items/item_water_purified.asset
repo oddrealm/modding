@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_water_purified
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_water_purified
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_water
@@ -21,8 +20,8 @@ MonoBehaviour:
   - tag_item
   - tag_can_use_to_water_plant
   - tag_can_fill_ink
-  - tag_can_boil
   - tag_item_rarity_common
+  - tag_can_boil
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 0
@@ -54,7 +53,6 @@ MonoBehaviour:
   MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_common
-  RarityType: 0
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0
@@ -70,22 +68,6 @@ MonoBehaviour:
       Amount: 80
       Max: 0
       Permanent: 1
-    Status: 
-    SpawnID: 
-  - ActionID: tag_can_use_to_water_plant
-    Buff:
-      TargetID: 
-      Amount: 0
-      Max: 0
-      Permanent: 0
-    Status: 
-    SpawnID: 
-  - ActionID: tag_can_boil
-    Buff:
-      TargetID: 
-      Amount: 0
-      Max: 0
-      Permanent: 0
     Status: 
     SpawnID: 
   - ActionID: tag_can_fill_ink

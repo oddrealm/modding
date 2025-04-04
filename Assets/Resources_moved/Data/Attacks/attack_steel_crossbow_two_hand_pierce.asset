@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: attack_steel_crossbow_two_hand_pierce
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attack_steel_crossbow_two_hand_pierce
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,8 +26,8 @@ MonoBehaviour:
   AttackFishInRange: 0
   SkillID: skill_fight_range
   AddSkillToOutput: 1
-  MinAmount: 19
-  MaxAmount: 21
+  MinAmount: 22
+  MaxAmount: 24
   Range: 128
   StatusesToApplyToTarget: []
   SourceAction: 0

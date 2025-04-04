@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: attribute_level
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attribute_level
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  IsMainAttribute: 0
   ShowInAttributeDisplay: 1
   StartMin: 1
   StartDefault: 1
@@ -25,7 +25,8 @@ MonoBehaviour:
   StartMaxIsStartBase: 0
   ShowPositiveAndNegativeSign: 0
   DisplayType: 1
-  ColorType: 1
+  ColorType: 7
+  MaxColorOverride: {r: 0.5686275, g: 0.101960786, b: 0.77254903, a: 1}
   NegativeIsPositive: 0
   OnAddIndicator: 
   OnRemoveIndicator: 

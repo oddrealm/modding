@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: attack_entity_warm_up
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attack_entity_warm_up
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

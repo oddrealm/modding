@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: overworld_nation_gwdir
   m_EditorClassIdentifier: 
   TooltipID: tooltip_overworld_nation_gwdir
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -38,6 +37,9 @@ MonoBehaviour:
   - race_gwdir
   GenerateSettlementNameKey: location_names_gwdir_settlements
   GenerateKingdomNameKey: location_names_gwdir_kingdoms
+  GameOverScenarios:
+  - scenario_game_over_settler_wave_gwdir0
+  - scenario_game_over_settler_wave_gwdir1
   ChanceToSendMerchant: 50
   MerchantPartyID: party_merchant_gwdir
   ChanceToMigrate: 50

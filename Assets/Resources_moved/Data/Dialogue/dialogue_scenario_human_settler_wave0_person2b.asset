@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: dialogue_scenario_human_settler_wave0_person2b
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

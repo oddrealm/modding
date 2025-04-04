@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: spawns_starting_loadout_gwdir_dwellers
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

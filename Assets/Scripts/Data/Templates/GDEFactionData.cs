@@ -12,8 +12,14 @@ public class GDEFactionData : Scriptable
     public Color CursorHoverColor = Color.white;
     public FactionTypes FactionPathing = FactionTypes.PLAYER;
     public List<string> Statuses = new List<string>();
+    public int Order = 0;
 
 #if ODD_REALM_APP
+    public override void SetOrderKey(string orderKey)
+    {
+        base.SetOrderKey(Order.ToString());
+    }
+
     public override void OnLoaded()
     {
         base.OnLoaded();

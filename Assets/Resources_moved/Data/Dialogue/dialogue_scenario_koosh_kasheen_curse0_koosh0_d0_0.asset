@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: dialogue_scenario_koosh_kasheen_curse0_koosh0_d0_0
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

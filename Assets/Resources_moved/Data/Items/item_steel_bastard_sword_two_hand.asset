@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_steel_bastard_sword_two_hand
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_steel_bastard_sword_two_hand
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_tool
@@ -53,7 +52,6 @@ MonoBehaviour:
   MerchantSellValue: 110
   TuneRating: 4
   ItemRarity: item_rarity_uncommon
-  RarityType: 1
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0
@@ -62,6 +60,14 @@ MonoBehaviour:
   StackSize: 1
   JobOutputMod: 1
   ArtifactID: 
-  Actions: []
+  Actions:
+  - ActionID: tag_can_equip
+    Buff:
+      TargetID: attribute_toughness
+      Amount: 1
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: 
   TimedActions: []
   StateOptions: []

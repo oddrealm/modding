@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: faction_hostile
   m_EditorClassIdentifier: 
   TooltipID: tooltip_faction_hostile
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_factions
@@ -24,7 +23,8 @@ MonoBehaviour:
   IsPlayerControlled: 0
   CanRespec: 0
   SelectionColor: {r: 1, g: 0, b: 0, a: 1}
-  CursorHoverColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+  CursorHoverColor: {r: 1, g: 0, b: 0, a: 0.2509804}
   FactionPathing: 4
   Statuses:
   - entity_status_faction_hostile
+  Order: 2

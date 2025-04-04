@@ -5,7 +5,8 @@ public enum TrackingTypes
 {
     ENTITY,
     ITEM,
-    NATION
+    NATION,
+    ROOM,
 }
 
 [CreateAssetMenu(menuName = "ScriptableObjects/OverworldNation")]
@@ -34,6 +35,10 @@ public class GDEOverworldNationData : Scriptable
     public List<string> DiscoveredRaces = new List<string>();
     public string GenerateSettlementNameKey = "";
     public string GenerateKingdomNameKey = "";
+    public string[] GameOverScenarios = new string[]
+    {
+        "scenario_settler_wave"
+    };
 
     [Header("Chances: 1/1000")]
     public int ChanceToSendMerchant = 50;

@@ -27,7 +27,6 @@ public interface ITagObject : ITooltipContent
     string Key { get; }
     string ObjectType { get; }
     string ObjectTypeDisplay { get; }
-    string ObjectGroup { get; }
     int ObjectIndex { get; set; }
     string OrderKey { get; }
     int TagCount { get; }

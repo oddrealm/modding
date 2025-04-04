@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_tag_block_none
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Empty Block
-  Name: Empty Block
+  Action: Open Locations
+  Name: Open Locations
   NamePlural: 
-  InlineIcon: <sprite=1639>
-  Description: 
+  InlineIcon: <sprite=1672>
+  Description: Locations that have no objects filling them.
   Icon: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: 
-  TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 912
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 2143

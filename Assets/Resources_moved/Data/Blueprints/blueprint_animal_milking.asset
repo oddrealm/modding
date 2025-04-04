@@ -13,13 +13,17 @@ MonoBehaviour:
   m_Name: blueprint_animal_milking
   m_EditorClassIdentifier: 
   TooltipID: tooltip_blueprint_animal_milking
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies:
   - skill_misc
   - skill_animal_husbandry
+  - entity_status_has_milk
+  - item_milk_raw
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SkillPriorityOverride: -1
+  XP: 50
+  AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   ResearchKey: research_agriculture_animals0
   Repeat: 0
@@ -27,7 +31,6 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  SkillLevel: 1
   AddBlockSkillToJobSkill: 0
   LocationID: 
   WorkPosition: 0
@@ -42,24 +45,25 @@ MonoBehaviour:
   - faction_player
   - faction_captured
   TargetPermissionsToLock: []
+  OnlyUseResourcesAtJobLocation: 0
   ResourcePool: 1
   ShowItemTypeResourcePermissions: 0
   ResourcePermissionsToLock: []
   MaxWorkers: 0
-  WorkerNeedsAllRequirements: 0
   JobActions:
-  - ActionType: 3
+  - ActionType: 10
     MaxWorkers: 0
     WorkerID: skill_animal_husbandry
-    TargetID: 
+    TargetID: entity_status_has_milk
     ResourceID: 
     OnJobFinishActionID: 
     WorkPosition: 0
-    AnimationTrigger: 1
-    AnimationHitEvent: 1
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
+  AddedProgressPerAction: 0
   ProgressMax: 100
   ProgressBarType: 2
   InvertProgressDisplay: 0
@@ -78,9 +82,11 @@ MonoBehaviour:
       attempts: 0
       seedOffset: 0
   RevealDistance: 0
-  SpawnCount: 1
+  SpawnCount: 3
   SpawnTagID: 
-  SpawnTagObjectID: 
+  SpawnTagObjectID: item_milk_raw
+  ChangeFillMass: 0
+  SetMass: 0
   TriggerActivationID: 
   ActiveWorkerStatus: 
   OnJobStartActionID: 
@@ -92,14 +98,15 @@ MonoBehaviour:
   OnFinishWorkerStatusRemoves: []
   OnFinishTargetBuffs: []
   OnFinishTargetStatusAdds: []
-  OnFinishTargetStatusRemoves: []
+  OnFinishTargetStatusRemoves:
+  - entity_status_has_milk
   TryCatchFish: 0
   TryHarvestFruit: 0
   CanSelectTarget: 0
-  ShowWorkOutputActionText: 1
+  ShowWorkOutputActionText: 0
   OnFinishedFX: 
-  WorkFX: fx_block_hit
-  WorkSFX: sfx_hammer_wood
+  WorkFX: 
+  WorkSFX: 
   OnFinishedSFX: 
   ShowVisualsOnCursor: 1
   ClearJobCursorVisuals:
@@ -110,9 +117,10 @@ MonoBehaviour:
   - visuals_job_cursor_prohibited
   Visuals:
   - visuals_job_animal_milking
-  ShowVisualsIfStarted: 0
+  ShowVisualsIfStarted: 1
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
   DisposeIfNoSource: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
+  WorkerID: skill_animal_husbandry

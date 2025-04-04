@@ -21,11 +21,11 @@ MonoBehaviour:
   Action: Craft-Work
   Name: Craft-Work
   NamePlural: 
-  InlineIcon: <sprite=1663>
+  InlineIcon: <sprite=1790>
   Description: Used to do jobs involving clay, glass, weaving, and other menial jobs
     done by hand.
   Icon: sp_skill_misc_icon
   TextColor: {r: 0.9372549, g: 0.69411767, b: 0.12941177, a: 1}
   Type: Skill
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 703
+  Order: 791

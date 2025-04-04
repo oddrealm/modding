@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_distillery
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_distillery
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,90 +28,79 @@ MonoBehaviour:
   - BlueprintID: blueprint_item_apple_cider
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_blackberry_wine
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_mushroom_wine
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_coconut_brew
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_elderberry_wine
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_gooseberry_wine
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_pineapple_brew
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wheat_ale
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_whiskey
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_pumpkin_ale
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_sake
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_skyberry_wine
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_sweet_root_brew
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_vodka
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

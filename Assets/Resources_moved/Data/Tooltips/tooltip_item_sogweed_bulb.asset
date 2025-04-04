@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_item_sogweed_bulb
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Sogweed Bulb
+  Action: 
   Name: Sogweed Bulb
   NamePlural: Sogweed Bulbs
   InlineIcon: <sprite=1747>
   Description: 
   Icon: sp_sogweed_bulb_icon
   TextColor: {r: 0.058823533, g: 0.85098046, b: 0.909804, a: 1}
-  Type: 
-  TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2162
+  Type: Item
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 2727

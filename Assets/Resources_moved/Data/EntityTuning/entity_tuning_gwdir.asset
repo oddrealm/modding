@@ -33,5 +33,5 @@ MonoBehaviour:
   Appearance: 
   InventoryGroupID: 
   AutoGenerateInventory: 0
-  EquipmentGroupID: spawns_equipment_gwdir
+  EquipmentGroupID: 
   AutoGenerateEquipment: 1

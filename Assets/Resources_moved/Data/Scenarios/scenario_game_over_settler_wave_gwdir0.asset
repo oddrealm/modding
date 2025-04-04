@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
+  m_Name: scenario_game_over_settler_wave_gwdir0
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  IsThreat: 0
+  NotifOnActivate: 
+  EntitySpawns:
+  - SpawnPointType: 2
+    OverrideEntityWithNation: 0
+    OverrideEntityWithFauna: 0
+    AutoGenEntityCount: 0
+    SpawnData:
+      EntityID: entity_gwdir
+      ProfessionID: profession_random
+      FactionID: faction_player
+      GenderID: female
+      TuningID: 
+      AppearanceID: 
+      AgeType: 2
+      StartingAgeMins: -1
+      Tag: 
+      Count: 1
+      Chance:
+        Chance: 0
+        SampleSize: 0
+      SpawnScenario: 
+      AutoGenEquipment: 1
+      AutoGenInventory: 0
+      DisableItemEquipFromTuning: 0
+      EquippedItems:
+      - ItemID: item_rose_crown
+        SlotID: item_slot_head
+      InventoryItems:
+      - ItemID: item_tthdir_tree_seed
+        MaxCount: 1
+        MinCount: 1
+      AddedStatuses: []
+  Dialogues:
+  - DialogueID: dialogue_scenario_settler_wave_gwdir0
+  Conditions: []
+  PartyID: 
+  IsScheduled: 0
+  ActivationChance:
+    Chance: 0
+    SampleSize: 0
+  MaxActivations: 0
+  MinKingdomLevel: 1
+  MinMinutesSinceSettlementStart: 1440
+  MinMinutesSinceLastScenario: 1440
+  MinMinutesSinceLastSameScenario: 1440

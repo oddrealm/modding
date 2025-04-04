@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Blocks")]
-public class GDEBlocksData : Scriptable, ISimulationData
+public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
 {
     [System.Serializable]
     public struct Trigger
@@ -111,6 +111,8 @@ public class GDEBlocksData : Scriptable, ISimulationData
     public string AddSFX = "";
     public string RemoveSFX = "";
     public string InteractSFX = "";
+
+    public bool CanShowInProgressUI { get { return true; } }
 
     public override bool ShowMinimapCutoutColor
     {

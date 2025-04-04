@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_item_stoneleaf_bag
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
-  Action: Stoneleaf Bag
+  Action: 
   Name: Stoneleaf Bag
   NamePlural: 
   InlineIcon: <sprite=1144>
@@ -26,5 +25,5 @@ MonoBehaviour:
   Icon: sp_stoneleaf_bag_icon
   TextColor: {r: 0.4901961, g: 0.29803923, b: 0.29803923, a: 1}
   Type: Item
-  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 2325
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 2889

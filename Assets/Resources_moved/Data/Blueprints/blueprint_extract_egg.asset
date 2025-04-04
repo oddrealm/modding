@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: blueprint_extract_egg
   m_EditorClassIdentifier: 
   TooltipID: tooltip_blueprint_extract_egg
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies:
   - skill_misc
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SkillPriorityOverride: -1
+  XP: 50
+  AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   ResearchKey: 
   Repeat: 0
@@ -26,7 +28,6 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  SkillLevel: 1
   AddBlockSkillToJobSkill: 0
   LocationID: 
   WorkPosition: 0
@@ -41,11 +42,11 @@ MonoBehaviour:
   - faction_player
   - faction_captured
   TargetPermissionsToLock: []
+  OnlyUseResourcesAtJobLocation: 0
   ResourcePool: 1
   ShowItemTypeResourcePermissions: 0
   ResourcePermissionsToLock: []
   MaxWorkers: 0
-  WorkerNeedsAllRequirements: 0
   JobActions:
   - ActionType: 3
     MaxWorkers: 0
@@ -59,6 +60,7 @@ MonoBehaviour:
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
+  AddedProgressPerAction: 0
   ProgressMax: 100
   ProgressBarType: 2
   InvertProgressDisplay: 0
@@ -80,6 +82,8 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: 
+  ChangeFillMass: 0
+  SetMass: 0
   TriggerActivationID: 
   ActiveWorkerStatus: 
   OnJobStartActionID: 
@@ -115,3 +119,4 @@ MonoBehaviour:
   DisposeIfNoSource: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
+  WorkerID: skill_misc

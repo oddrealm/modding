@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_none
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_coal
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_ore
@@ -51,7 +50,6 @@ MonoBehaviour:
   MerchantSellValue: 3
   TuneRating: 0
   ItemRarity: item_rarity_common
-  RarityType: 0
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0
@@ -60,14 +58,6 @@ MonoBehaviour:
   StackSize: 5
   JobOutputMod: 1
   ArtifactID: 
-  Actions:
-  - ActionID: tag_can_equip
-    Buff:
-      TargetID: 
-      Amount: 0
-      Max: 0
-      Permanent: 0
-    Status: 
-    SpawnID: 
+  Actions: []
   TimedActions: []
   StateOptions: []

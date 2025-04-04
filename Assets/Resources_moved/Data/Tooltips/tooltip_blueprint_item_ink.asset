@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_item_ink
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Ink
-  Name: Ink
+  Action: 
+  Name: Build Ink
   NamePlural: 
   InlineIcon: <sprite=1074>
   Description: Used to create books, tomes, journals, and other written works.
@@ -27,4 +26,4 @@ MonoBehaviour:
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1253
+  Order: 1392

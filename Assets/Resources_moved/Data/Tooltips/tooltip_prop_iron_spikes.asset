@@ -18,7 +18,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Iron Spikes
+  Action: 
   Name: Iron Spikes
   NamePlural: 
   InlineIcon: <sprite=691>
@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0.06666667, g: 0.56078434, b: 0.38039216, a: 1}
   Type: Traps
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1297
+  Order: 1462

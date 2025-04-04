@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: dialogue_scenario_ardyn_settler_wave0_d2b
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

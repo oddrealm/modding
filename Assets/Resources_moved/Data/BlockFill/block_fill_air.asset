@@ -28,6 +28,7 @@ MonoBehaviour:
   FillNeighborBlocksOnNew: 0
   IsObstruction: 0
   IsVerticalAccess: 0
+  CanLoseMass: 0
   FullThreshold: 0
   EmptyThreshold: 0
   FreezeThreshold: 0

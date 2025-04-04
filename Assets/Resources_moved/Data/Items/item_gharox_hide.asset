@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_gharox_hide
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_gharox_hide
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_animal_byproduct
@@ -50,7 +49,6 @@ MonoBehaviour:
   MerchantSellValue: 17
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
-  RarityType: 1
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

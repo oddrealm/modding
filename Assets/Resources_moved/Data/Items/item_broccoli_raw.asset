@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_broccoli_raw
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_broccoli_raw
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_vegetable
@@ -51,9 +50,8 @@ MonoBehaviour:
   MerchantBuyValue: 5
   MerchantSellValue: 1
   TuneRating: 0
-  ItemRarity: item_rarity_uncommon
-  RarityType: 0
-  DecayRate: 120
+  ItemRarity: item_rarity_common
+  DecayRate: 7200
   DecayItem: item_waste_rotten_food
   HasMeltThreshold: 0
   MeltThreshold: 0

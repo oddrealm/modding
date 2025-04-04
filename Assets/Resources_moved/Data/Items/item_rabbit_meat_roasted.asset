@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_rabbit_meat_roasted
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_rabbit_meat_roasted
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_can_eat
@@ -52,8 +51,7 @@ MonoBehaviour:
   MerchantSellValue: 10
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
-  RarityType: 1
-  DecayRate: 120
+  DecayRate: 7200
   DecayItem: item_waste_rotten_food
   HasMeltThreshold: 0
   MeltThreshold: 0

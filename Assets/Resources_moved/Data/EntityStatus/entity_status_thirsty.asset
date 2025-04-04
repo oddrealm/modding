@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: entity_status_thirsty
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_status_thirsty
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  TrackByDefault: 0
+  TrackByDefault: 1
   VisibleToPlayer: 1
-  ShowIndicator: 0
+  ShowIndicator: 1
   Notification: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
@@ -35,9 +34,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: attribute_thirst
+  - Comment: Remove On Full
+    ConditionTarget: attribute_thirst
     HideInTooltips: 0
-    Comment: Remove On Full
     ActivationID: 
     Conditions:
     - rid: 8269333808373301733
@@ -59,5 +58,5 @@ MonoBehaviour:
     - rid: 8269333808373301733
       type: {class: GreaterThanEqualCondition, ns: , asm: Assembly-CSharp}
       data:
-        Amount: 80
+        Amount: 50
         Normalized: 0

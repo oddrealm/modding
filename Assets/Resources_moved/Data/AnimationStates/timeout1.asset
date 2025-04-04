@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: timeout1
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -24,3 +23,8 @@ MonoBehaviour:
     FalseFlags: 0
     Triggers: 0
     IsComplete: 1
+  - NextState: {fileID: 11400000, guid: a15763010e6ab194095630d51608c9df, type: 2}
+    TrueFlags: 2
+    FalseFlags: 0
+    Triggers: 0
+    IsComplete: 0

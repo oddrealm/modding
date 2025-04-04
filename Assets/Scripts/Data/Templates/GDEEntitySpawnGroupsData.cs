@@ -4,7 +4,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/EntitySpawnGroups")]
 public class GDEEntitySpawnGroupsData : Scriptable
 {
-    public string FriendlyName = "Spawns:";
     public Spawn[] Spawns;
 
     [System.Serializable]
@@ -15,7 +14,6 @@ public class GDEEntitySpawnGroupsData : Scriptable
         public string EntityProfession = "profession_random";
         public string EntityGender = "priority";
         public int EntityCount = 1;
-        public bool SameRoomAsPlayer;
         public string EntityFaction = "faction_player";
         public string EntityTuning = "";
         public string EntityAppearance = "";
@@ -24,12 +22,12 @@ public class GDEEntitySpawnGroupsData : Scriptable
         public int SpawnRate = 1000;
         public EntityAgeTypes AgeType = EntityAgeTypes.ADULT;
         public string ScenarioID = "";
-        public string SchemaID = "";
         public bool SpawnEntityFromItem = false;
         public bool AutoGenEquipment = true;
         public bool AutoGenInventory = true;
         public bool DisableItemEquipFromTuning = false;
-        public List<string> EquippedItems = new List<string>();
+        public List<EntitySpawnEquippedItem> EquippedItems = new List<EntitySpawnEquippedItem>();
+        public List<EntitySpawnInventoryItem> InventoryItems = new List<EntitySpawnInventoryItem>();
         public List<string> AddedStatuses = new List<string>();
     }
 }

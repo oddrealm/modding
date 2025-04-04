@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: occupant_group_vault
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_occupant_group_occupants
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

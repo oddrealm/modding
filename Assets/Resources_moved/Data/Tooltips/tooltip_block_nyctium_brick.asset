@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_block_nyctium_brick
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Nyctium Brick
+  Action: 
   Name: Nyctium Brick
   NamePlural: 
   InlineIcon: <sprite=1240>
@@ -27,4 +26,4 @@ MonoBehaviour:
   TextColor: {r: 0.4862745, g: 0.1764706, b: 0.59607846, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1630
+  Order: 2133

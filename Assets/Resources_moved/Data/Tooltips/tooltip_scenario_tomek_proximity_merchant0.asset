@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_scenario_tomek_proximity_merchant0
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

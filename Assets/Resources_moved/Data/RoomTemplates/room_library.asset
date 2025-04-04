@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_library
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_library
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -26,51 +25,46 @@ MonoBehaviour:
   Visuals:
   - visuals_room_display_library
   DefaultAutoJobs:
-  - BlueprintID: blueprint_study_artifact
-    Settings:
-      Priority: 1
-      Enabled: 0
-      AutoJobType: 0
-    ResourcePermissions: []
   - BlueprintID: blueprint_item_tome_of_agriculture
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_tome_of_arcana
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_tome_of_cooking
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_tome_of_industry
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_tome_of_war
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 2
       AutoJobType: 1
-    ResourcePermissions: []
-  - BlueprintID: blueprint_train_scholar
-    Settings:
-      Priority: 1
-      Enabled: 1
-      AutoJobType: 0
-    ResourcePermissions: []
+    ResourcePermissions:
+    - TagObjectKey: item_paper
+      Min: 0
+      Max: 0
+    - TagObjectKey: item_ink
+      Min: 0
+      Max: 0
+    - TagObjectKey: tag_item_type_book
+      Min: 0
+      Max: 0
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_arcane_study
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_arcane_study
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,54 +28,49 @@ MonoBehaviour:
   - BlueprintID: blueprint_item_ice_chunk
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_spellbook_of_cleaving_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_spellbook_of_death_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_spellbook_of_destruction_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_spellbook_of_force_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_spellbook_of_healing_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_staff_of_focus_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_resurrect
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

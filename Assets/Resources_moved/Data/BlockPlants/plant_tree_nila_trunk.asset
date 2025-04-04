@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: plant_tree_nila_trunk
   m_EditorClassIdentifier: 
   TooltipID: tooltip_plant_tree_nila_trunk
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

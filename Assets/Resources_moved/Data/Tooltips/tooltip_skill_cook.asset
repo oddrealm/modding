@@ -21,10 +21,10 @@ MonoBehaviour:
   Action: Cook
   Name: Cook
   NamePlural: 
-  InlineIcon: <sprite=37>
+  InlineIcon: <sprite=15>
   Description: Used to prepare cooked meals.
   Icon: sp_skill_cook_icon
   TextColor: {r: 0.9372549, g: 0.69411767, b: 0.12941177, a: 1}
   Type: Skill
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 643
+  Order: 731

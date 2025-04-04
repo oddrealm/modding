@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_entity_state_combat
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -24,7 +23,7 @@ MonoBehaviour:
   InlineIcon: <sprite=7>
   Description: 
   Icon: 
-  TextColor: {r: 0.6313726, g: 0.08235294, b: 0.08235294, a: 1}
+  TextColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
   Type: Entity State
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1242
+  Order: 1751

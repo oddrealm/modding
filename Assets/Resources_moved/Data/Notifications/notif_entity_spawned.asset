@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_entity_spawned
   m_EditorClassIdentifier: 
   TooltipID: tooltip_notif_entity_spawned
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -22,7 +21,7 @@ MonoBehaviour:
   SFXGroupID: sfx_notif_default
   DefaultPermissions:
     ShowPreview: 1
-    CanStackPreviews: 0
+    CanStackPreviews: 1
     Factions:
     - faction_player
     - faction_captured

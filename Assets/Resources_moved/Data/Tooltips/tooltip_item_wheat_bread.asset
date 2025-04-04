@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_item_wheat_bread
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
-  Action: Wheat Bread
+  Action: 
   Name: Wheat Bread
   NamePlural: 
   InlineIcon: <sprite=498>
-  Description: 
+  Description: Plain. Boring. Dependable.
   Icon: sp_wheat_bread_icon
   TextColor: {r: 0.81568635, g: 0.5921569, b: 0.37254903, a: 1}
   Type: Item
-  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 2761
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 3333

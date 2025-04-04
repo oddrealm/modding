@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_item_rarity_common
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -25,7 +24,7 @@ MonoBehaviour:
   Description: As plentiful as the leaves in the forest, these items are the foundation
     upon which greater things are built.
   Icon: 
-  TextColor: {r: 0.5754717, g: 0.55267, b: 0.5184674, a: 1}
+  TextColor: {r: 0.69182384, g: 0.6387405, b: 0.55911547, a: 1}
   Type: 
-  TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 600
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1089

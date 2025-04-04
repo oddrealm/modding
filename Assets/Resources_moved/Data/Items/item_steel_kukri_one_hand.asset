@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: item_steel_kukri_one_hand
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_steel_kukri_one_hand
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_tool
   - tag_item
   - tag_item_rarity_common
+  - tag_can_equip
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 0
@@ -52,7 +52,6 @@ MonoBehaviour:
   MerchantSellValue: 109
   TuneRating: 4
   ItemRarity: item_rarity_common
-  RarityType: 0
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0
@@ -61,6 +60,14 @@ MonoBehaviour:
   StackSize: 1
   JobOutputMod: 1
   ArtifactID: 
-  Actions: []
+  Actions:
+  - ActionID: tag_can_equip
+    Buff:
+      TargetID: attribute_evasion
+      Amount: 1
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: 
   TimedActions: []
   StateOptions: []

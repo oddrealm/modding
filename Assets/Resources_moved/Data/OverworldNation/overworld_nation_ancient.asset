@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: overworld_nation_ancient
   m_EditorClassIdentifier: 
   TooltipID: tooltip_overworld_nation_ancient
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -41,6 +40,8 @@ MonoBehaviour:
   - race_ancient
   GenerateSettlementNameKey: location_names_ancient_settlements
   GenerateKingdomNameKey: location_names_ancient_kingdoms
+  GameOverScenarios:
+  - scenario_game_over_settler_wave_ancients0
   ChanceToSendMerchant: 50
   MerchantPartyID: party_merchant_ancient
   ChanceToMigrate: 50

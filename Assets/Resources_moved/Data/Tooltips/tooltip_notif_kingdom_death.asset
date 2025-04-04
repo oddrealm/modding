@@ -19,12 +19,12 @@ MonoBehaviour:
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Kingdom Conquered
-  Name: Kingdom Conquered
-  NamePlural: Kingdoms Conquered
+  Name: Kingdom Conquered!
+  NamePlural: Kingdoms Conquered!
   InlineIcon: <sprite=1698>
   Description: 
   Icon: 
   TextColor: {r: 0.7568628, g: 0.18039216, b: 0.18039216, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1349
+  Order: 1522

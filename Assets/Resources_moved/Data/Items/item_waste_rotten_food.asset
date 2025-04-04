@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_waste_rotten_food
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_waste_rotten_food
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_garbage
@@ -50,8 +49,7 @@ MonoBehaviour:
   MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_common
-  RarityType: 0
-  DecayRate: 48
+  DecayRate: 2880
   DecayItem: 
   HasMeltThreshold: 0
   MeltThreshold: 0

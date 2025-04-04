@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_input_open_game_settings
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Open Game Settings
-  Name: Game Settings
+  Name: General
   NamePlural: 
   InlineIcon: 
   Description: 
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Type: Input
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1019
+  Order: 1493

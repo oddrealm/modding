@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_void_woken
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_void_woken
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -44,16 +43,16 @@ MonoBehaviour:
     EnabledByDefault: 1
   - SkillID: skill_fight_melee
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   - SkillID: skill_time_weave
     PlayerCanEdit: 0
     EnabledByDefault: 0
   - SkillID: skill_fight_range
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   - SkillID: skill_fight_magic
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   ProfessionPermissions:
   - ProfessionID: profession_alchemist
     CanAssign: 0
@@ -130,6 +129,9 @@ MonoBehaviour:
   - ProfessionID: profession_warrior
     CanAssign: 0
     CanSpawnWith: 0
+  - ProfessionID: profession_animal
+    CanAssign: 0
+    CanSpawnWith: 0
   Race: race_void_woken
   PermittedItemSlots:
   - item_slot_left_hand
@@ -182,7 +184,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 128
+    StartingBase: 32
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

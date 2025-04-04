@@ -7,30 +7,25 @@ public class GDEResearchData : Scriptable
 {
     public bool Enabled = false;
     public bool ShowInSaga = true;
-    public List<string> Races = new List<string>();
     public string Dependency = "";
     [Header("Column")]
     public int Column = 0;
     [Header("Row")]
     public int Row = 0;
     public string ResearchCategory = "";
-
     public int RequireItemCountOverride = 0;
-
+    public List<GlobalBuff> GlobalBuffs = new List<GlobalBuff>();
     [System.NonSerialized]
     public List<string> Dependencies = new List<string>();
-
-    [Header("Research Time in in-game minutes. The step is multiplied by the column")]
-    public int ResearchTimeStep = 60;
-
     [System.NonSerialized]
     public List<string> TagObjectTypesUnlocked = new List<string>();
-
     [System.NonSerialized]
     public Dictionary<string, List<string>> TagObjectsByTypeUnlocked = new Dictionary<string, List<string>>();
-
     [System.NonSerialized]
     public List<string> TagObjectsUnlocked = new List<string>();
+    public string RequiredDiscovery = "";
+
+    public int ResearchCost { get { return 1; } }
 
 #if ODD_REALM_APP
     public override void OnLoaded()

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_entity_died
   m_EditorClassIdentifier: 
   TooltipID: tooltip_notif_entity_died
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -26,6 +25,8 @@ MonoBehaviour:
     Factions:
     - faction_player
     - faction_captured
+    - faction_neutral
+    - faction_hostile
     FocusCamOnCreate: 0
     PauseGameOnCreate: 0
     HighlightOnCreate: 0

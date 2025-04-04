@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: attack_steel_round_shield_one_hand_slam
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attack_steel_round_shield_one_hand_slam
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,8 +26,8 @@ MonoBehaviour:
   AttackFishInRange: 0
   SkillID: skill_fight_melee
   AddSkillToOutput: 1
-  MinAmount: 5
-  MaxAmount: 8
+  MinAmount: 8
+  MaxAmount: 11
   Range: 14
   StatusesToApplyToTarget: []
   SourceAction: 0

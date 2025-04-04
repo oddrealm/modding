@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
+  m_Name: research_war_barracks1
+  m_EditorClassIdentifier: 
+  TooltipID: tooltip_research_war_barracks1
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Enabled: 1
+  ShowInSaga: 1
+  Dependency: research_war_barracks0
+  Column: 3
+  Row: 6
+  ResearchCategory: research_category_industry
+  RequireItemCountOverride: 0
+  GlobalBuffs:
+  - ID: 
+    RequiredTargetTagObjectID: 
+    Buff:
+      TargetID: attribute_toughness
+      Amount: 1
+      Max: 0
+      Permanent: 0
+  - ID: 
+    RequiredTargetTagObjectID: 
+    Buff:
+      TargetID: attribute_evasion
+      Amount: 1
+      Max: 0
+      Permanent: 0
+  RequiredDiscovery: 

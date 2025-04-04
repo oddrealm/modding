@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: input_command_navigate_ui_right
   m_EditorClassIdentifier: 
   TooltipID: tooltip_input_navigate_ui_right
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 2
-  InputState: 32
+  InputState: 33
   DeferTo: []
   DefaultTriggers:
   - Hotkeys:

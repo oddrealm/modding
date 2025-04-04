@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_chirpen
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_chirpen
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -36,7 +35,7 @@ MonoBehaviour:
   TakeLastNameOfFamilyMembers: 0
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: room_animal_enclosure
-  GenerateNameKey: 
+  GenerateNameKey: entity_names_chirpen
   InherentCombatAttacks: attack_group_chirpen
   SkillPermissions:
   - SkillID: skill_alchemy
@@ -80,7 +79,7 @@ MonoBehaviour:
     EnabledByDefault: 0
   - SkillID: skill_fight_melee
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   - SkillID: skill_fight_range
     PlayerCanEdit: 0
     EnabledByDefault: 0
@@ -208,6 +207,9 @@ MonoBehaviour:
   - ProfessionID: profession_warrior
     CanAssign: 0
     CanSpawnWith: 0
+  - ProfessionID: profession_animal
+    CanAssign: 1
+    CanSpawnWith: 1
   Race: race_chirpen
   PermittedItemSlots: []
   PathingType: 2
@@ -246,22 +248,18 @@ MonoBehaviour:
   - BlueprintID: blueprint_eat_item
     Settings:
       Priority: 3
-      Enabled: 1
       AutoJobType: 1
   - BlueprintID: blueprint_drink_item
     Settings:
       Priority: 3
-      Enabled: 1
       AutoJobType: 1
   - BlueprintID: blueprint_drink_from_water
     Settings:
       Priority: 4
-      Enabled: 1
       AutoJobType: 1
   - BlueprintID: blueprint_sleep_on_ground
     Settings:
       Priority: 3
-      Enabled: 1
       AutoJobType: 1
   Attributes:
   - AttributeID: attribute_age
@@ -297,7 +295,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 128
+    StartingBase: 32
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

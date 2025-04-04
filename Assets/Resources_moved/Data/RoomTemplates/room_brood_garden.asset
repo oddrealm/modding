@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_brood_garden
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_brood_garden
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,36 +28,34 @@ MonoBehaviour:
   - BlueprintID: blueprint_gwnri
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_gwnvayth
     Settings:
       Priority: 2
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_mosskuplin
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_plant_tree_tthdir_sapling
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_harvest_fruit
     Settings:
       Priority: 2
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

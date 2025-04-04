@@ -94,6 +94,11 @@ public struct Hotkey
 
                 float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
+                if (SaveLoadManager.Instance.PlayerSettings.InvertScrollWheelDir)
+                {
+                    scrollInput = -scrollInput;
+                }
+
                 if (scrollInput >= -float.Epsilon && Mouse == MouseTypes.SCROLL_UP)
                 {
                     return false;

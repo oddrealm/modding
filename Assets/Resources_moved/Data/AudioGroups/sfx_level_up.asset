@@ -19,5 +19,7 @@ MonoBehaviour:
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SFX:
-  - audio_sfx_level_up_00
-  - audio_sfx_level_up_01
+  - audio_sfx_gui_notification_a_01
+  - audio_sfx_gui_notification_b_01
+  - audio_sfx_gui_notification_c_01
+  - audio_sfx_gui_notification_d_01

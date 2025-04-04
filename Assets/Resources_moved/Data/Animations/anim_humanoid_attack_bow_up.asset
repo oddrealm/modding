@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: anim_humanoid_attack_bow_up
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

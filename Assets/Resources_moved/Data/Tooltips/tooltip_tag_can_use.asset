@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_tag_can_use
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -25,6 +24,6 @@ MonoBehaviour:
   Description: 
   Icon: 
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.4509804, a: 1}
-  Type: 
-  TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 452
+  Type: Type
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 910

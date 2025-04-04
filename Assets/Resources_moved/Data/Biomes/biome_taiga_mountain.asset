@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: biome_taiga_mountain
   m_EditorClassIdentifier: 
   TooltipID: tooltip_biome_taiga_mountain
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

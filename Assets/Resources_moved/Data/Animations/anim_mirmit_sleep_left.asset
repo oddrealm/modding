@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: anim_mirmit_sleep_left
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

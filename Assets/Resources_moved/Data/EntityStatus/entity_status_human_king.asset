@@ -19,7 +19,7 @@ MonoBehaviour:
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 0
+  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
   ExpireTimeMinutesMin: 0

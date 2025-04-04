@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
+  m_Name: entity_names_cat
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeparateFirstNamePrepends: 1
+  FirstNameNeutralPrependChances: 300
+  FirstNameNeutralPrepends:
+  - Ol
+  - Lil
+  - The
+  - Big
+  - Huge
+  - Sleepy
+  - Baby
+  - Old
+  NeutralFirstNames:
+  - Creature
+  - Meow
+  - KitKat
+  - Killer
+  - Fuz
+  - Hairball
+  - Tuna
+  - Banjo
+  - Soldier
+  - Scar
+  - General
+  - Sergeant
+  - Whisker
+  - Wizard
+  FirstNameMasculinePrependChances: 300
+  FirstNameMasculinePrepends:
+  - Mr
+  - His
+  - Lord
+  MasculineFirstNames:
+  - Cat
+  - Man
+  - Kitty
+  - Dude
+  - Fang
+  - Fish Breath
+  - Fish
+  - Felix
+  - Cid
+  - King
+  FirstNameFemininePrependChances: 300
+  FirstNameFemininePrepends:
+  - Miss
+  - Mrs
+  - Her
+  FeminineFirstNames:
+  - Cat
+  - Girl
+  - Dutchess
+  - Lady
+  - Mouser
+  - Mouse Breath
+  - Charm
+  - Flower
+  - Princess
+  - Queen
+  SeparateLastNamePrepends: 0
+  LastNamePrependChances: 0
+  LastNamePrepends: []
+  LastNames: []

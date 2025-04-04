@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_item_tome_of_cooking
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
-  Action: Tome of Cooking
+  Action: 
   Name: Tome of Cooking
   NamePlural: 
   InlineIcon: <sprite=1070>
-  Description: This tome can be used to unlock new research in Cooking.
+  Description: 
   Icon: sp_tome_of_cooking_icon
   TextColor: {r: 0.48235297, g: 0.40000004, b: 0.7725491, a: 1}
   Type: Item
-  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 2519
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 3089

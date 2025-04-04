@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_rutile_ingot
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_rutile_ingot
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_ingot
@@ -50,7 +49,6 @@ MonoBehaviour:
   MerchantSellValue: 100
   TuneRating: 6
   ItemRarity: item_rarity_rare
-  RarityType: 2
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

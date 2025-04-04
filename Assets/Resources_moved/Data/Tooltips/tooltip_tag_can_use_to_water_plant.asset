@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_tag_can_use_to_water_plant
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Can Use To Water Plant
-  Name: Can Use To Water Plant
+  Action: Water
+  Name: Water
   NamePlural: 
-  InlineIcon: 
+  InlineIcon: <sprite=1426>
   Description: 
   Icon: 
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.4509804, a: 1}
-  Type: 
-  TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 453
+  Type: Type
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 3302

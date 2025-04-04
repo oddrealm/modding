@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: tooltip_input_toggle_overwrite_control_group
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Overwrite Control Group
-  Name: Overwrite Control Group
+  Action: 
+  Name: Toggle Group Overwrite
   NamePlural: 
   InlineIcon: 
-  Description: 
+  Description: This + #(0-9) will create a world marker or, if entities are selected,
+    create an entity group.
   Icon: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Input
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1682
+  Order: 3091

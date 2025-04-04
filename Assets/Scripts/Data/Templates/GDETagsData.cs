@@ -9,7 +9,12 @@ public class GDETagsData : Scriptable, ITag
 
     public TagUID TagUID { get; private set; }
     public string TagID { get { return Key; } }
-    public string TagGroup { get { return GroupID; } }
+    public string[] TagGroups;
+
+    public string[] GetTagGroups()
+    {
+        return TagGroups;
+    }
 
     public override bool TryGetDefaultTracking(out DefaultTracking tracking)
     {
@@ -35,12 +40,6 @@ public class GDETagsData : Scriptable, ITag
 
     public override void OnLoaded()
     {
-        if (TagIDs.Count > 0)
-        {
-            Debug.LogError(Key + " Cannot have tags!");
-            TagIDs.Clear();
-        }
-
         base.OnLoaded();
     }
 #endif

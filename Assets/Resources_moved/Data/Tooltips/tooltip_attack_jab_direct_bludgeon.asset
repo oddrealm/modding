@@ -22,9 +22,9 @@ MonoBehaviour:
   Name: Jab
   NamePlural: 
   InlineIcon: <sprite=315>
-  Description: Swift, targeted strikes for effective combat engagement.
+  Description: A swift hit with the fist.
   Icon: 
   TextColor: {r: 0.7725491, g: 0.6313726, b: 0.62352943, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1325
+  Order: 1498

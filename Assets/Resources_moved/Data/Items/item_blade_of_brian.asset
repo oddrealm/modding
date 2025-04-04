@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_blade_of_brian
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_blade_of_brian
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_tool
@@ -53,7 +52,6 @@ MonoBehaviour:
   MerchantSellValue: 1000
   TuneRating: -1
   ItemRarity: item_rarity_epic
-  RarityType: 3
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

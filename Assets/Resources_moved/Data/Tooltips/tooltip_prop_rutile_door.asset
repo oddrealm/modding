@@ -18,7 +18,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Rutile Door
+  Action: 
   Name: Rutile Door
   NamePlural: 
   InlineIcon: <sprite=1323>
@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0.85882354, g: 0.32156864, b: 0.28235295, a: 1}
   Type: Door
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1985
+  Order: 2255

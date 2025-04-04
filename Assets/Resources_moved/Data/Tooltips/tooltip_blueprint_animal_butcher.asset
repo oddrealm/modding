@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_animal_butcher
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Butcher Animal
+  Action: 
   Name: Butcher Animal
   NamePlural: 
   InlineIcon: <sprite=1760>
   Description: Butcher animal for their meat, skins, or fur.
   Icon: sp_job_animal_butcher_icon
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  Type: 
+  Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 384
+  Order: 449

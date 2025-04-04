@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: attack_attribute_hunger_direct_starving
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attack_attribute_hunger_direct_starving
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

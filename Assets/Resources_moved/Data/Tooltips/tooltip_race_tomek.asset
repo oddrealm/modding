@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_race_tomek
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Tomek
+  Action: 
   Name: Tomek
   NamePlural: Tomeks
   InlineIcon: <sprite=243>
@@ -29,5 +28,5 @@ MonoBehaviour:
   Icon: sp_race_tomek
   TextColor: {r: 0.21568629, g: 0.34509805, b: 0.41176474, a: 1}
   Type: Race
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2525
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 3092

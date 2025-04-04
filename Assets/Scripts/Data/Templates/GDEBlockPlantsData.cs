@@ -13,7 +13,7 @@ public struct PlantAction
 }
 
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockPlants")]
-public class GDEBlockPlantsData : Scriptable, ISimulationData
+public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObject
 {
     [Header("Lifetime Minutes (-1 = disabled)")]
     public int MaxLifeTime = 0;
@@ -130,6 +130,7 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData
     private bool _isNull;
     public override bool IsNULL { get { return _isNull; } }
 
+    public bool CanShowInProgressUI { get { return true; } }
 
     public override bool ShowMinimapCutoutColor
     {

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_age_cow_adult
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_age_adult
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,5 +26,8 @@ MonoBehaviour:
     Chances: 10000
     AddAgeToChances: 0
   - StatusID: entity_status_adult
+    Chances: 10000
+    AddAgeToChances: 1
+  - StatusID: entity_status_produces_milk
     Chances: 10000
     AddAgeToChances: 1

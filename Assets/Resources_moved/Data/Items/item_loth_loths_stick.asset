@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_loth_loths_stick
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_loth_loths_stick
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_tool
@@ -52,7 +51,6 @@ MonoBehaviour:
   MerchantSellValue: 1029
   TuneRating: -1
   ItemRarity: item_rarity_epic
-  RarityType: 3
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

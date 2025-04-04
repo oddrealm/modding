@@ -13,17 +13,16 @@ MonoBehaviour:
   m_Name: research_cooking_alcohol1
   m_EditorClassIdentifier: 
   TooltipID: tooltip_research_cooking_alcohol1
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 1
   ShowInSaga: 1
-  Races: []
   Dependency: research_cooking_tavern0
-  Column: 3
-  Row: 2
-  ResearchCategory: research_category_cooking
+  Column: 2
+  Row: 6
+  ResearchCategory: research_category_agriculture
   RequireItemCountOverride: 0
-  ResearchTimeStep: 60
+  GlobalBuffs: []
+  RequiredDiscovery: 

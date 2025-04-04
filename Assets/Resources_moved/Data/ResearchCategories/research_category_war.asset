@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: research_category_war
   m_EditorClassIdentifier: 
   TooltipID: tooltip_research_category_war
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Hide: 1
   FriendlyName: Warfare
   OrderInList: 3
+  RaceRequirements: []
   ResearchBuffs:
   - TagObjectID: item_tome_of_war
   - TagObjectID: entity_status_researching

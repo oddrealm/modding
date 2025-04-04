@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_drink_from_water
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Drink From Water
+  Action: 
   Name: Drink From Water
   NamePlural: 
   InlineIcon: <sprite=951>
   Description: Will move to closest water block to drink from.
   Icon: sp_job_drink_from_water_icon
   TextColor: {r: 1, g: 1, b: 1, a: 1}
-  Type: 
+  Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 861
+  Order: 1356

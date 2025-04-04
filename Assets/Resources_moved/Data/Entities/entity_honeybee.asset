@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_honeybee
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_honeybee
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -25,10 +24,10 @@ MonoBehaviour:
   LanguagesSpoken: []
   DefaultLeaderRoles:
   - 
-  CompanionType: 1
+  CompanionType: 0
   CompanionPermanenceType: -1
-  ReproductionType: 2
-  MaxChildren: 3
+  ReproductionType: 0
+  MaxChildren: 0
   OnMateStatus: 
   OnMateFX: fx_entity_union
   OnMateSFX: sfx_mate
@@ -36,7 +35,7 @@ MonoBehaviour:
   TakeLastNameOfFamilyMembers: 0
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: 
-  GenerateNameKey: 
+  GenerateNameKey: entity_names_honeybee
   InherentCombatAttacks: attack_group_honeybee
   SkillPermissions:
   - SkillID: skill_alchemy
@@ -80,7 +79,7 @@ MonoBehaviour:
     EnabledByDefault: 0
   - SkillID: skill_fight_melee
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   - SkillID: skill_fight_range
     PlayerCanEdit: 0
     EnabledByDefault: 0
@@ -208,6 +207,9 @@ MonoBehaviour:
   - ProfessionID: profession_warrior
     CanAssign: 0
     CanSpawnWith: 0
+  - ProfessionID: profession_animal
+    CanAssign: 1
+    CanSpawnWith: 1
   Race: race_honeybee
   PermittedItemSlots: []
   PathingType: 2
@@ -270,7 +272,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 128
+    StartingBase: 32
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

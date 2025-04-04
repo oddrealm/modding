@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_integrate_as_citizen
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Integrate As Citizen
+  Action: 
   Name: Integrate As Citizen
   NamePlural: 
   InlineIcon: <sprite=1277>
@@ -28,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1255
+  Order: 1394

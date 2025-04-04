@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_tag_item_type_container
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Container
-  Name: Container
+  Action: Containers
+  Name: Containers
   NamePlural: 
   InlineIcon: <sprite=1661>
   Description: 
   Icon: 
   TextColor: {r: 0.48989856, g: 0.9528302, b: 0.86509323, a: 1}
   Type: Type
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 609
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1070

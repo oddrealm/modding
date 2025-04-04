@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_entity_capture_success
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
+  TooltipID: tooltip_notif_entity_capture_success
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -26,6 +25,8 @@ MonoBehaviour:
     Factions:
     - faction_player
     - faction_captured
+    - faction_neutral
+    - faction_hostile
     FocusCamOnCreate: 0
     PauseGameOnCreate: 0
     HighlightOnCreate: 0

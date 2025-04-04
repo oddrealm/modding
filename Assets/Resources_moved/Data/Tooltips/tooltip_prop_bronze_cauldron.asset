@@ -18,7 +18,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Bronze Cauldron
+  Action: 
   Name: Bronze Cauldron
   NamePlural: 
   InlineIcon: <sprite=495>
@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0.8588236, g: 0.47058827, b: 0.09411766, a: 1}
   Type: Station
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 334
+  Order: 371

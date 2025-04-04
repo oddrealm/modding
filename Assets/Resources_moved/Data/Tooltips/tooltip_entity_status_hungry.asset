@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_entity_status_hungry
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,5 +26,5 @@ MonoBehaviour:
   Icon: 
   TextColor: {r: 0.85882354, g: 0.47058824, b: 0.09411765, a: 1}
   Type: Status
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1207
+  TypeColor: {r: 0.42138356, g: 0.20671648, b: 0, a: 1}
+  Order: 1714

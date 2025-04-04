@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_wool
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_wool
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_animal_byproduct
@@ -51,7 +50,6 @@ MonoBehaviour:
   MerchantSellValue: 3
   TuneRating: 0
   ItemRarity: item_rarity_common
-  RarityType: 0
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

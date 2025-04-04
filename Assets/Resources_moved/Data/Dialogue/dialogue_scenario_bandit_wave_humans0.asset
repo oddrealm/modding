@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_scenario_bandit_wave_humans0
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AppearanceID: 
+  NextDialogueID: []
+  SpeakerTarget: 
+  Message: 
+  Response: []
+  ShowOnce: 1
+  DialogueSequences:
+  - ID: intro
+    Text: A rough looking figure steps forward.
+    OverrideSpeaker: 1
+    OverrideSpeakerID: 
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: bandit0
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+  - ID: bandit0
+    Text: Well, well, well... What do we have here?
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 

@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: simulation_item_default
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Simulations:
   - rid: 3977580206250000384
+  - rid: 5668703833841467455
   references:
     version: 2
     RefIds:
@@ -54,6 +54,45 @@ MonoBehaviour:
         OptionID: 
         UseGroupUID: 0
     - rid: 3977580206250000388
+      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
+      data:
+        Positions:
+        - {x: 0, y: 0, z: 0}
+        MaxDistance: 1
+        MinDistance: 1
+        IterateToEnd: 0
+        CheckAll: 0
+    - rid: 5668703833841467455
+      type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
+      data:
+        Comment: Expire
+        IsEnabled: 1
+        Target:
+          rid: 5668703833841467456
+        RequireAllConditionsToBeMet: 1
+        Conditions:
+        - rid: 5668703833841467457
+        Actions:
+        - rid: 5668703833841467458
+    - rid: 5668703833841467456
+      type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
+      data:
+        TargetPositions:
+          rid: 5668703833841467459
+    - rid: 5668703833841467457
+      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Outcome: 1
+        StateID: item_state_expired
+        OptionID: 
+    - rid: 5668703833841467458
+      type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
+      data:
+        DebugBreakpoint: 0
+        StateID: item_state_expired
+        OptionID: 
+        UseGroupUID: 0
+    - rid: 5668703833841467459
       type: {class: SimPositions, ns: , asm: Assembly-CSharp}
       data:
         Positions:

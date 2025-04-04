@@ -18,8 +18,8 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Rutile Ornate
-  Name: Rutile Ornate
+  Action: 
+  Name: Ornate Rutile
   NamePlural: 
   InlineIcon: <sprite=1333>
   Description: 
@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0.85882354, g: 0.32156864, b: 0.28235295, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1997
+  Order: 2279

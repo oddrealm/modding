@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: anim_humanoid_idle_up
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

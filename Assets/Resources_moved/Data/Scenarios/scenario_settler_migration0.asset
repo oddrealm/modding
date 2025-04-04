@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
+  m_Name: scenario_settler_migration0
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  NotifOnActivate: notif_settler_migration
+  EntitySpawns:
+  - SpawnPointType: 2
+    OverrideEntityWithNation: 1
+    OverrideEntityWithFauna: 0
+    AutoGenEntityCount: 0
+    SpawnData:
+      EntityID: 
+      ProfessionID: profession_random
+      FactionID: faction_neutral
+      GenderID: priority
+      TuningID: 
+      AppearanceID: 
+      AgeType: 2
+      StartingAgeMins: 0
+      Tag: 
+      Count: 5
+      Chance:
+        Chance: 3
+        SampleSize: 4
+      SpawnScenario: 
+      AutoGenEquipment: 1
+      AutoGenInventory: 1
+      DisableItemEquipFromTuning: 0
+      EquippedItems: []
+      InventoryItems: []
+      AddedStatuses: []
+  Dialogues:
+  - DialogueID: dialogue_scenario_settler_migration0
+  Conditions:
+  - ConditionType: 1
+    TagObjectRequirement:
+      TagObjectID: race_ancient
+      Count: 0
+      Comparison: 1
+    MustFail: 0
+  PartyID: 
+  IsScheduled: 1
+  ActivationChance:
+    Chance: 1
+    SampleSize: 3
+  MaxActivations: 1
+  MinKingdomLevel: 3
+  MinMinutesSinceSettlementStart: 4320
+  MinMinutesSinceLastScenario: 1440
+  MinMinutesSinceLastSameScenario: 1440

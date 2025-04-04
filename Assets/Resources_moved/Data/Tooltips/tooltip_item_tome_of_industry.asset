@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: tooltip_item_tome_of_industry
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
-  Action: Tome of Industry
+  Action: 
   Name: Tome of Industry
   NamePlural: 
   InlineIcon: <sprite=1069>
-  Description: This tome can be used to unlock new research in Industry.
+  Description: A detailed account of craftsmanship, engineering, and the rise of
+    industry, exploring tools, techniques, and mechanical innovations.
   Icon: sp_tome_of_industry_icon
   TextColor: {r: 0.7725491, g: 0.60784316, b: 0.40000004, a: 1}
   Type: Item
-  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 2521
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 3091

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: platform_dirt_tilled
   m_EditorClassIdentifier: 
   TooltipID: tooltip_platform_dirt_tilled
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -28,7 +27,7 @@ MonoBehaviour:
   Permissions: 8389632
   Prohibited: 131072
   MovementSpeedMod: 1
-  MovementCost: 3
+  MovementCost: 1
   IsRoof: 0
   CanGrow: 0
   GrowTime: -1

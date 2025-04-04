@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_animal_enclosure
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_animal_enclosure
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -30,31 +29,29 @@ MonoBehaviour:
   - BlueprintID: blueprint_animal_milking
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
-  - BlueprintID: blueprint_animal_sheering
+  - BlueprintID: blueprint_animal_shearing
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
-    ResourcePermissions: []
+    ResourcePermissions:
+    - TagObjectKey: tag_item_type_water
+      Min: 0
+      Max: 0
   - BlueprintID: blueprint_item_fodder
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_tallow_grass_hay
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions:
     - TagObjectKey: tag_item_type_water
@@ -66,6 +63,9 @@ MonoBehaviour:
   - BlueprintID: blueprint_animal_butcher
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

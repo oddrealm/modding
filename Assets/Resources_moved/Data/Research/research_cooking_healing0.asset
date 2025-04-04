@@ -13,17 +13,16 @@ MonoBehaviour:
   m_Name: research_cooking_healing0
   m_EditorClassIdentifier: 
   TooltipID: tooltip_research_cooking_healing0
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 1
   ShowInSaga: 1
-  Races: []
   Dependency: research_cooking_alchemy0
-  Column: 3
-  Row: 3
-  ResearchCategory: research_category_cooking
+  Column: 1
+  Row: 2
+  ResearchCategory: research_category_arcana
   RequireItemCountOverride: 0
-  ResearchTimeStep: 60
+  GlobalBuffs: []
+  RequiredDiscovery: 

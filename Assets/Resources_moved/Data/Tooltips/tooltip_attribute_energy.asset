@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_attribute_energy
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -22,10 +21,10 @@ MonoBehaviour:
   Name: Energy
   NamePlural: 
   InlineIcon: <sprite=83>
-  Description: How much an Entity can do without sleep. Tired Entities will work
-    less effectively.
+  Description: Entities move slower when they are low on Energy. Sleeping restores
+    Energy.
   Icon: 
   TextColor: {r: 0.8392157, g: 0.6666667, b: 0.42745098, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 916
+  Order: 1383

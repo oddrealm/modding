@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: prop_workbench
   m_EditorClassIdentifier: 
   TooltipID: tooltip_prop_workbench
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_workbench
+  - tag_table
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   DefaultFill: block_fill_air

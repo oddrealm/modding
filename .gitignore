@@ -3,6 +3,8 @@
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
 /Assets/AssetStoreTools*
 /Temp/UnityLockfile
 steam_sdk/tools/ContentBuilder/content/*

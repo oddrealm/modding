@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_summoning_chamber
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_summoning_chamber
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,24 +28,24 @@ MonoBehaviour:
   - BlueprintID: blueprint_archenthrall
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_void_imp
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_void_woken
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

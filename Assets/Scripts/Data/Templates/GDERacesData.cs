@@ -11,8 +11,9 @@ public class GDERacesData : Scriptable, IProgressionObject
     public bool Public = false;
     public List<string> Perks = new List<string>();
     public List<string> DefaultActiveResearch = new List<string>();
-
+    public RandomEquipmentItem[] StartingItems = new RandomEquipmentItem[] { };
     public BuffData[] Buffs;
+    public bool AutoCreateUniform = true;
 
     public bool CanShowInProgressUI
     {

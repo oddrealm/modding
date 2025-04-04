@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: biome_desert_mountain
   m_EditorClassIdentifier: 
   TooltipID: tooltip_biome_desert_mountain
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

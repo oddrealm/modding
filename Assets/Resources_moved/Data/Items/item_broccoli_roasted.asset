@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: item_broccoli_roasted
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_broccoli_roasted
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_can_eat
   - tag_item
   - tag_cooked_food
   - tag_item_type_meal
-  - tag_item_rarity_common
+  - tag_item_rarity_uncommon
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 0
@@ -51,9 +50,8 @@ MonoBehaviour:
   MerchantBuyValue: 10
   MerchantSellValue: 2
   TuneRating: 0
-  ItemRarity: item_rarity_common
-  RarityType: 1
-  DecayRate: 96
+  ItemRarity: item_rarity_uncommon
+  DecayRate: 5760
   DecayItem: item_waste_rotten_food
   HasMeltThreshold: 0
   MeltThreshold: 0

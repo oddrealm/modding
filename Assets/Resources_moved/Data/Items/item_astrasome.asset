@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: item_astrasome
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_astrasome
-  GroupID: 
   DEBUG: 0
   TagIDs:
-  - tag_item_type_plant_material
+  - tag_item_type_refined_material
   - tag_item
   - tag_item_rarity_rare
   DiscoveryDependencies: []
@@ -24,7 +23,7 @@ MonoBehaviour:
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
-  ItemType: tag_item_type_plant_material
+  ItemType: tag_item_type_refined_material
   OnJobDisposedTagObjectID: 
   ShowInTrackingByDefault: 0
   IdleFX: 
@@ -50,8 +49,7 @@ MonoBehaviour:
   MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_rare
-  RarityType: 0
-  DecayRate: 96
+  DecayRate: 5760
   DecayItem: 
   HasMeltThreshold: 0
   MeltThreshold: 0

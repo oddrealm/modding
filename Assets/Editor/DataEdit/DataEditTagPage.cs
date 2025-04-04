@@ -1,8 +1,11 @@
 ﻿using Assets.GameData;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using UnityEditor;
+using UnityEditor.AddressableAssets;
+using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
 using static GDEBiomesData;
 
@@ -24,6 +27,7 @@ public class DataEditTagPage : DataEditPage
     private Object[] _lockedSelections;
     private int _dataPageIndex;
     private int _dataPerPage = 30;
+    private bool _showUtilities = false;
     private bool _hideScriptsWithNoChildren;
     private bool _hideScriptsWithNoTag;
     private bool _hideScriptsWithNoIssue;
@@ -71,8 +75,17 @@ public class DataEditTagPage : DataEditPage
         _hideScriptsWithNoIssue = LOAD_INT(SAVE_KEY_HIDE_SCRIPT_NO_ISSUE) == 1;
         _hideUnselected = LOAD_INT(SAVE_KEY_HIDE_SCRIPT_UNSELECTED) == 1;
         _scriptKeyFilter = LOAD_STRING(SAVE_KEY_SCRIPT_KEY_FILTER);
+        _scriptKeyFilterWords = _scriptKeyFilter.Split(' ');
         _tagKeyFilter = LOAD_STRING(SAVE_KEY_TAG_KEY_FILTER);
+        _tagKeyFilterWords = _tagKeyFilter.Split(' ');
         _invertTagFilterResults = LOAD_INT(SAVE_KEY_INVERT_TAG_FILTER_RESULTS) == 1;
+        LoadAllData();
+        RebuildVisibleScripts();
+    }
+
+    public override void OnDisable()
+    {
+        base.OnDisable();
     }
 
     protected override void SAVE()
@@ -88,7 +101,6 @@ public class DataEditTagPage : DataEditPage
         SAVE(SAVE_KEY_INVERT_TAG_FILTER_RESULTS, _invertTagFilterResults ? 1 : 0);
         base.SAVE();
     }
-
 
     public override void OnDestroy()
     {
@@ -241,26 +253,114 @@ public class DataEditTagPage : DataEditPage
         {
             Scriptable script = _visibleScripts[t];
 
-
             if (script == null) { continue; }
             if (!FOO_FILTER(script)) { continue; }
 
             EditorUtility.DisplayProgressBar("FOO", "", t / (float)_visibleScripts.Count);
 
-            MARK_DIRTY(script);
-
-            if (script is GDEBlocksData data)
+            if (script is GDEScenariosData data)
             {
-                if (data.Key.Contains("_ladder") ||
-                    data.Key.Contains("_stairs"))
-                {
-                    data.SetSimulationID("");
-                    Debug.Log(data.Key);
-                }
+                MARK_DIRTY(script);
+
+                //for (int i = 0; i < data.EntitySpawns.Length; i++)
+                //{
+                //    data.EntitySpawns[i].SpawnData = EntitySpawnData.NewFromSpawn(data.EntitySpawns[i].EntitySpawn);
+                //}
             }
         }
 
         EditorUtility.ClearProgressBar();
+    }
+
+    //private void ReplaceTmp()
+    //{
+    //    if (Selection.objects.Length == 0) { return; }
+
+    //    GameObject go = Selection.objects[0] as GameObject;
+    //    TMPro.TextMeshProUGUI tmp = go.GetComponent<TMPro.TextMeshProUGUI>();
+    //    Undo.RecordObject(go, "Replace TMP Component");
+
+    //    // Copy all serialized properties before destroying
+    //    SerializedObject oldSerializedObject = new SerializedObject(tmp);
+    //    oldSerializedObject.Update();
+
+    //    // Destroy old component
+    //    Object.DestroyImmediate(tmp);
+
+    //    // Add new component
+    //    TextMeshController newTMP = go.AddComponent<TextMeshController>();
+
+    //    // Copy old properties to new component
+    //    SerializedObject newSerializedObject = new SerializedObject(newTMP);
+    //    SerializedProperty prop = oldSerializedObject.GetIterator();
+    //    while (prop.NextVisible(true))
+    //    {
+    //        newSerializedObject.CopyFromSerializedProperty(prop);
+    //    }
+
+    //    newSerializedObject.ApplyModifiedProperties();
+    //    Debug.Log($"Replaced TMP Component on {go.name}");
+    //}
+
+
+    private void MakeFolderSelectionAddressable()
+    {
+        // Get Addressable settings
+        AddressableAssetSettings settings = AddressableAssetSettingsDefaultObject.Settings;
+
+        if (settings == null)
+        {
+            Debug.LogError("Addressables settings not found. Ensure Addressables are set up in the project.");
+            return;
+        }
+
+        List<string> labels = settings.GetLabels();
+
+        // Get selected folders
+        foreach (Object obj in Selection.objects)
+        {
+            string assetPath = AssetDatabase.GetAssetPath(obj);
+
+            if (!AssetDatabase.IsValidFolder(assetPath))
+            {
+                Debug.LogWarning($"Skipping {assetPath}, not a folder.");
+                continue;
+            }
+
+            // Get folder name as label (lowercase)
+            string folderName = Path.GetFileName(assetPath).ToLower();
+
+            // Create or find existing addressable entry
+            var guid = AssetDatabase.AssetPathToGUID(assetPath);
+            var entry = settings.FindAssetEntry(guid);
+
+            if (entry == null)
+            {
+                entry = settings.CreateOrMoveEntry(guid, settings.DefaultGroup);
+            }
+
+            if (!labels.Contains(folderName))
+            {
+                Debug.LogError($"label doesn't exists: {folderName}");
+                continue;
+            }
+
+            // Assign label
+            if (!entry.labels.Contains(folderName))
+            {
+                entry.SetLabel(folderName, true);
+                Debug.Log($"Marked {assetPath} as addressable with label '{folderName}'.");
+            }
+            else
+            {
+                Debug.LogError($"label already set: {folderName}");
+            }
+        }
+
+        // Save Addressable settings
+        settings.SetDirty(AddressableAssetSettings.ModificationEvent.EntryMoved, null, true);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
     }
 
     private void AddActionBuff(GDEItemsData itemData, string targetID, int amount)
@@ -303,10 +403,40 @@ public class DataEditTagPage : DataEditPage
         }
     }
 
+    private void RebuildVisibleScripts()
+    {
+        _visibleDirty = false;
+        int prevSize = _visibleScripts.Count;
+        _visibleScripts.Clear();
+
+        for (int i = 0; i < _allData.Count; i++)
+        {
+            Scriptable script = _allData[i];
+
+            if (script == null) { continue; }
+            if (!IsScriptVisible(script)) { continue; }
+
+            _visibleScripts.Add(script);
+        }
+
+        if (prevSize != _visibleScripts.Count)
+        {
+            _dataPageIndex = 0;
+        }
+
+        for (int i = 0; Selection.objects.Length > 0 && i < _visibleScripts.Count; i++)
+        {
+            if (_visibleScripts[i] == Selection.objects[0])
+            {
+                _dataPageIndex = Mathf.FloorToInt((float)i / (float)_dataPerPage);
+                break;
+            }
+        }
+    }
+
     public override void RenderGUI()
     {
         base.RenderGUI();
-
         _scriptsRendering = 0;
 
         if (_allData == null || _allData.Count == 0)
@@ -315,152 +445,46 @@ public class DataEditTagPage : DataEditPage
         }
 
         BEGIN_HOR();
-
-        string scriptKeyFilter = _scriptKeyFilter;
-        LABEL("Search");
-        _scriptKeyFilter = TEXT_INPUT(_scriptKeyFilter);
-
-        if (scriptKeyFilter != _scriptKeyFilter || _scriptKeyFilterWords == null)
+        if (_visibleScriptTypes.Count > 0)
         {
-            _scriptKeyFilterWords = _scriptKeyFilter.Split(' ');
-            MARK_NEEDS_SAVE();
-            MarkVisibleDirty();
+            BTN($"Clear Filters ({_visibleScriptTypes.Count})", Color.red, () =>
+            {
+                _visibleScriptTypes.Clear();
+                MarkVisibleDirty();
+            }, 160);
         }
-
-        //END_HOR();
-
-
-        //BEGIN_HOR();
-
-        string tagFilter = _tagKeyFilter;
-        BEGIN_CLR(Color.cyan);
-        LABEL("Tag");
-        _tagKeyFilter = TEXT_INPUT(_tagKeyFilter);
-
-        if (!string.IsNullOrEmpty(_tagKeyFilter) && !ScriptExists(_tagKeyFilter))
+        BTN(_editingScriptTypes ? "Hide Script Types" : "Show Script Types", _editingScriptTypes ? Color.magenta : Color.gray, () =>
         {
-            CREATE_SCRIPT_BTN<GDETagsData>(_tagKeyFilter);
-            WARNING("Tag does not exist!");
-        }
-
-        END_CLR();
-
-        if (tagFilter != _tagKeyFilter || _tagKeyFilterWords == null)
+            _editingScriptTypes = !_editingScriptTypes;
+        });
+        // Hide / Show Tags.
+        BTN(_editingTags ? "Hide Tags" : "Show Tags", _editingTags ? Color.magenta : Color.gray, () =>
         {
-            _tagKeyFilterWords = _tagKeyFilter.Split(' ');
-            MARK_NEEDS_SAVE();
-            MarkVisibleDirty();
-        }
-
+            _editingTags = !_editingTags;
+        });
+        // Hide / Show Utilities.
+        BTN(_showUtilities ? "Hide Utilities" : "Show Utilities", _showUtilities ? Color.magenta : Color.gray, () =>
+        {
+            _showUtilities = !_showUtilities;
+        });
         END_HOR();
-
         // Script type filter.
         RenderScriptTypesFilter();
-
-
         // Tag list.
         RenderTagList();
 
-        //if (!string.IsNullOrEmpty(_copiedText))
+        if (_showUtilities)
         {
-            BEGIN_HOR();
-            DELETE_BTN(CLEAR_COPY);
-            BEGIN_CLR(ColorUtility.purple);
-            _copiedText = TEXT_INPUT(_copiedText);
-            END_CLR();
-            END_HOR();
+            RenderUtilities();
         }
-
-        BEGIN_HOR();
-
-        bool invertTagFilterResults = _invertTagFilterResults;
-        _invertTagFilterResults = TOGGLE(_invertTagFilterResults, "Show Results Without Tag Filter");
-
-        if (invertTagFilterResults != _invertTagFilterResults)
-        {
-            MARK_NEEDS_SAVE();
-            MarkVisibleDirty();
-        }
-
-        bool hideScriptsWithNoChildren = _hideScriptsWithNoChildren;
-        _hideScriptsWithNoChildren = TOGGLE(_hideScriptsWithNoChildren, "Hide Without Children");
-
-        if (hideScriptsWithNoChildren != _hideScriptsWithNoChildren)
-        {
-            MARK_NEEDS_SAVE();
-            MarkVisibleDirty();
-        }
-
-        bool hideScriptsWithNoTag = _hideScriptsWithNoTag;
-        _hideScriptsWithNoTag = TOGGLE(_hideScriptsWithNoTag, "Hide Without Tag");
-
-        if (hideScriptsWithNoTag != _hideScriptsWithNoTag)
-        {
-            MARK_NEEDS_SAVE();
-            MarkVisibleDirty();
-        }
-
-        bool hideScriptsWithoutIssue = _hideScriptsWithNoIssue;
-        _hideScriptsWithNoIssue = TOGGLE(_hideScriptsWithNoIssue, "Hide Without Issue");
-
-        if (hideScriptsWithoutIssue != _hideScriptsWithNoIssue)
-        {
-            MARK_NEEDS_SAVE();
-            MarkVisibleDirty();
-        }
-
-        bool hideUnselected = _hideUnselected;
-        _hideUnselected = TOGGLE(_hideUnselected, "Hide Unselected");
-
-        if (hideUnselected != _hideUnselected)
-        {
-            MARK_NEEDS_SAVE();
-            MarkVisibleDirty();
-        }
-        END_HOR();
-
-        BEGIN_HOR();
-        LABEL("Scripts Per Page:");
-        int prevDataPerPage = _dataPerPage;
-        _dataPerPage = INT_INPUT(_dataPerPage);
-        if (prevDataPerPage != _dataPerPage)
-        {
-            MARK_NEEDS_SAVE();
-            MarkVisibleDirty();
-        }
-        END_HOR();
 
         if (_visibleDirty)
         {
             _visibleDirty = false;
-            int prevSize = _visibleScripts.Count;
-            _visibleScripts.Clear();
-
-            for (int i = 0; i < _allData.Count; i++)
-            {
-                Scriptable script = _allData[i];
-
-                if (script == null) { continue; }
-                if (!IsScriptVisible(script)) { continue; }
-
-                _visibleScripts.Add(script);
-            }
-
-            if (prevSize != _visibleScripts.Count)
-            {
-                _dataPageIndex = 0;
-            }
-
-            for (int i = 0; Selection.objects.Length > 0 && i < _visibleScripts.Count; i++)
-            {
-                if (_visibleScripts[i] == Selection.objects[0])
-                {
-                    _dataPageIndex = Mathf.FloorToInt((float)i / (float)_dataPerPage);
-                    break;
-                }
-            }
+            RebuildVisibleScripts();
         }
 
+        SPACE(8);
         _dataPerPage = Mathf.Max(1, _dataPerPage);
         int totalPages = Mathf.CeilToInt((float)_visibleScripts.Count / (float)_dataPerPage);
 
@@ -516,7 +540,61 @@ public class DataEditTagPage : DataEditPage
 
         }
 
-        //_dataPerPage = Mathf.Min(_dataPerPage, _visibleScripts.Count);
+        SPACE(8);
+        BEGIN_HOR();
+        string scriptKeyFilter = _scriptKeyFilter;
+        LABEL("Search");
+        _scriptKeyFilter = TEXT_INPUT(_scriptKeyFilter);
+
+        if (scriptKeyFilter != _scriptKeyFilter)
+        {
+            _scriptKeyFilterWords = _scriptKeyFilter.Split(' ');
+            MARK_NEEDS_SAVE();
+            MarkVisibleDirty();
+        }
+
+        END_HOR();
+        BEGIN_HOR();
+        string tagFilter = _tagKeyFilter;
+        BEGIN_CLR(Color.cyan);
+        LABEL("Tag");
+        _tagKeyFilter = TEXT_INPUT(_tagKeyFilter);
+
+        if (!string.IsNullOrEmpty(_tagKeyFilter) && !ScriptExists(_tagKeyFilter))
+        {
+            CREATE_SCRIPT_BTN<GDETagsData>(_tagKeyFilter);
+            WARNING("Tag does not exist!");
+        }
+
+        END_CLR();
+
+        if (tagFilter != _tagKeyFilter)
+        {
+            _tagKeyFilterWords = _tagKeyFilter.Split(' ');
+            MARK_NEEDS_SAVE();
+            MarkVisibleDirty();
+        }
+
+
+        END_HOR();
+        // Copied text field.
+        BEGIN_HOR();
+        DELETE_BTN(CLEAR_COPY);
+        BEGIN_CLR(ColorUtility.purple);
+        _copiedText = TEXT_INPUT(_copiedText);
+        END_CLR();
+        END_HOR();
+
+        if (Selection.activeObject != null)
+        {
+            LABEL(Selection.activeObject.name, Color.yellow);
+        }
+        else
+        {
+            LABEL("Nothing selected.", Color.grey);
+        }
+
+        SPACE(8);
         int dataStart = _dataPageIndex * _dataPerPage;
         int dataEnd = Mathf.Min(dataStart + _dataPerPage, _visibleScripts.Count);
         BEGIN_SCROLL("script_scroll");
@@ -530,21 +608,16 @@ public class DataEditTagPage : DataEditPage
         for (int i = dataStart; i >= 0 && i < dataEnd; i++)
         {
             if (i >= _visibleScripts.Count) { break; }
+
             Scriptable script = _visibleScripts[i];
 
             if (script == null) { continue; }
 
             BEGIN_HOR();
-
             int tagObjCount = GetScriptsByTagCount(script);
             bool isSelected = IS_SELECTED(script);
-
             LABEL(i, isSelected ? ColorUtility.voidPurple : Color.gray);
-
-            //if (isSelected)
-            {
-                COPY_BTN(script.Key);
-            }
+            COPY_BTN(script.Key);
 
             if (!string.IsNullOrEmpty(_copiedText) && !ScriptExists(_copiedText))
             {
@@ -555,16 +628,17 @@ public class DataEditTagPage : DataEditPage
                 }, 32);
             }
 
+
             Color selectedColor = isSelected ? ColorUtility.voidPurple : Color.white;
             BTN(script.Key, selectedColor, () =>
             {
                 if (isSelected) DESELECT(script);
                 else SELECT(script);
             });
-
             LABEL("(");
             LABEL(script.ObjectType, selectedColor);
             LABEL(")");
+
             if (script.TagCount > 0)
             {
                 LABEL(script.TagCount, Color.cyan);
@@ -580,13 +654,9 @@ public class DataEditTagPage : DataEditPage
             FLEX_SPACE();
             END_HOR();
 
-            // If selected.
             if (isSelected)
             {
-                //BEGIN_HOR();
-                //TAB(1);
                 RenderScript(script);
-                //END_HOR();
             }
         }
 
@@ -596,169 +666,210 @@ public class DataEditTagPage : DataEditPage
         }
 
         END_SCROLL();
+        FLEX_SPACE();
+        SPACE(8);
+        BEGIN_HOR();
+        LABEL("Scripts Per Page:");
+        int prevDataPerPage = _dataPerPage;
+        _dataPerPage = INT_INPUT(_dataPerPage, 48);
 
-        //FLEX_SPACE();
+        if (prevDataPerPage != _dataPerPage)
+        {
+            MARK_NEEDS_SAVE();
+            MarkVisibleDirty();
+        }
+
+        END_HOR();
+    }
+
+    private void RenderUtilities()
+    {
+        bool invertTagFilterResults = _invertTagFilterResults;
+        _invertTagFilterResults = TOGGLE(_invertTagFilterResults, "Show Results w/o Tag Filter");
+
+        if (invertTagFilterResults != _invertTagFilterResults)
+        {
+            MARK_NEEDS_SAVE();
+            MarkVisibleDirty();
+        }
+
+        bool hideScriptsWithNoChildren = _hideScriptsWithNoChildren;
+        _hideScriptsWithNoChildren = TOGGLE(_hideScriptsWithNoChildren, "Hide w/o Children");
+
+        if (hideScriptsWithNoChildren != _hideScriptsWithNoChildren)
+        {
+            MARK_NEEDS_SAVE();
+            MarkVisibleDirty();
+        }
+
+        bool hideScriptsWithNoTag = _hideScriptsWithNoTag;
+        _hideScriptsWithNoTag = TOGGLE(_hideScriptsWithNoTag, "Hide w/o Tag");
+
+        if (hideScriptsWithNoTag != _hideScriptsWithNoTag)
+        {
+            MARK_NEEDS_SAVE();
+            MarkVisibleDirty();
+        }
+
+        bool hideScriptsWithoutIssue = _hideScriptsWithNoIssue;
+        _hideScriptsWithNoIssue = TOGGLE(_hideScriptsWithNoIssue, "Hide w/o Issue");
+
+        if (hideScriptsWithoutIssue != _hideScriptsWithNoIssue)
+        {
+            MARK_NEEDS_SAVE();
+            MarkVisibleDirty();
+        }
+
+        bool hideUnselected = _hideUnselected;
+        _hideUnselected = TOGGLE(_hideUnselected, "Hide Unselected");
+
+        if (hideUnselected != _hideUnselected)
+        {
+            MARK_NEEDS_SAVE();
+            MarkVisibleDirty();
+        }
     }
 
     private void RenderTagList()
     {
-        // Hide / Show Tags.
-        BTN(_editingTags ? "Hide Tags" : "Show Tags", _editingTags ? Color.magenta : Color.gray, () =>
+        if (!_editingTags)
         {
-            _editingTags = !_editingTags;
+            return;
+        }
+
+        // Create new tag?
+        BEGIN_HOR();
+
+        BEGIN_DISABLED(string.IsNullOrEmpty(_newTagName) || ScriptExists(_newTagName));
+        BTN($"Create Tag: {_newTagName}", Color.green, () =>
+        {
+            if (!_newTagName.Contains("tag_")) { return; }
+            SELECT(CreateScriptableObject<GDETagsData>(_newTagName));
+            MarkDataNeedsReload();
         });
+        END_DISABLED();
+        _newTagName = TEXT_INPUT(_newTagName);
+        END_HOR();
 
-        // Tags.
-        if (_editingTags)
+        BEGIN_HOR();
+        string tagKeyFilter = _tagKeyFilter;
+        LABEL("Search");
+        _tagKeyFilter = TEXT_INPUT(_tagKeyFilter);
+        END_HOR();
+
+        if (tagKeyFilter != _tagKeyFilter)
         {
-            // Create new tag?
-            BEGIN_HOR();
+            _tagKeyFilterWords = _tagKeyFilter.Split(' ');
+            MarkVisibleDirty();
+        }
 
-            BEGIN_DISABLED(string.IsNullOrEmpty(_newTagName) || ScriptExists(_newTagName));
-            BTN($"Create Tag: {_newTagName}", Color.green, () =>
-            {
-                if (!_newTagName.Contains("tag_")) { return; }
-                SELECT(CreateScriptableObject<GDETagsData>(_newTagName));
-                MarkDataNeedsReload();
-            });
-            END_DISABLED();
-            _newTagName = TEXT_INPUT(_newTagName);
-            END_HOR();
+        List<Scriptable> tags = GetDataByType<GDETagsData>();
 
-            BEGIN_HOR();
-            string tagKeyFilter = _tagKeyFilter;
-            LABEL("Search");
-            _tagKeyFilter = TEXT_INPUT(_tagKeyFilter);
-            END_HOR();
-
-            if (tagKeyFilter != _tagKeyFilter)
-            {
-                _tagKeyFilterWords = _tagKeyFilter.Split(' ');
-                MarkVisibleDirty();
-            }
-
-            List<Scriptable> tags = GetDataByType<GDETagsData>();
-
-            BTN("Clear Unused Tags", Color.red, () =>
-            {
-                List<Scriptable> unusedTags = new List<Scriptable>();
-
-                for (int i = 0; i < tags.Count; i++)
-                {
-                    if (GetScriptsByTagCount(tags[i]) > 0 ||
-                        tags[i].Key == "tag_missing")
-                    {
-                        continue;
-                    }
-
-                    unusedTags.Add(tags[i]);
-                }
-
-                for (int i = 0; i < unusedTags.Count; i++)
-                {
-                    string path = AssetDatabase.GetAssetPath(unusedTags[i]);
-                    AssetDatabase.DeleteAsset(path);
-                    Debug.LogError($"Deleted: {path}");
-                }
-
-                MarkDataNeedsReload();
-            });
-
-            BEGIN_SCROLL("tag_scroll");
+        BTN("Clear Unused Tags", Color.red, () =>
+        {
+            List<Scriptable> unusedTags = new List<Scriptable>();
 
             for (int i = 0; i < tags.Count; i++)
             {
-                if (tags[i] == null) { continue; }
-
-                int addCount = 0;
-
-                bool isSelected = IS_SELECTED(tags[i]);
-
-                for (int n = 0; n < Selection.objects.Length; n++)
+                if (GetScriptsByTagCount(tags[i]) > 0 ||
+                    tags[i].Key == "tag_missing")
                 {
-                    if (Selection.objects[n] is Scriptable scriptObj)
-                    {
-                        if (scriptObj.TagIDs.Contains(tags[i].Key)) { continue; }
-
-                        addCount++;
-                    }
+                    continue;
                 }
 
-                if (!HasFilter(tags[i].Key, _tagKeyFilterWords)) { continue; }
-
-                BEGIN_HOR();
-                TAB(2);
-                LABEL("Tag: ");
-                BEGIN_DISABLED(addCount == 0);
-                BTN($"Add Tag To: {addCount}", Color.green, () =>
-                {
-                    AddTagToScripts(Selection.objects, tags[i]);
-                }, 128);
-                END_DISABLED();
-                COPY_BTN(tags[i].Key);
-                BTN(tags[i].Key, isSelected ? ColorUtility.selectedGold : Color.white, () =>
-                {
-                    SELECT(tags[i]);
-                    ClearScriptSearch();
-                });
-                LABEL(GetScriptsByTagCount(tags[i]), Color.yellow);
-                LABEL("Children", Color.yellow);
-                END_HOR();
+                unusedTags.Add(tags[i]);
             }
 
-            END_SCROLL();
+            for (int i = 0; i < unusedTags.Count; i++)
+            {
+                string path = AssetDatabase.GetAssetPath(unusedTags[i]);
+                AssetDatabase.DeleteAsset(path);
+                Debug.LogError($"Deleted: {path}");
+            }
+
+            MarkDataNeedsReload();
+        });
+
+        BEGIN_SCROLL("tag_scroll");
+
+        for (int i = 0; i < tags.Count; i++)
+        {
+            if (tags[i] == null) { continue; }
+
+            int addCount = 0;
+
+            bool isSelected = IS_SELECTED(tags[i]);
+
+            for (int n = 0; n < Selection.objects.Length; n++)
+            {
+                if (Selection.objects[n] is Scriptable scriptObj)
+                {
+                    if (scriptObj.TagIDs.Contains(tags[i].Key)) { continue; }
+
+                    addCount++;
+                }
+            }
+
+            if (!HasFilter(tags[i].Key, _tagKeyFilterWords)) { continue; }
+
+            BEGIN_HOR();
+            TAB(2);
+            LABEL("Tag: ");
+            BEGIN_DISABLED(addCount == 0);
+            BTN($"Add Tag To: {addCount}", Color.green, () =>
+            {
+                AddTagToScripts(Selection.objects, tags[i]);
+            }, 128);
+            END_DISABLED();
+            COPY_BTN(tags[i].Key);
+            BTN(tags[i].Key, isSelected ? ColorUtility.selectedGold : Color.white, () =>
+            {
+                SELECT(tags[i]);
+                ClearScriptSearch();
+            });
+            LABEL(GetScriptsByTagCount(tags[i]), Color.yellow);
+            LABEL("Children", Color.yellow);
+            END_HOR();
         }
 
+        END_SCROLL();
     }
 
     private void RenderScriptTypesFilter()
     {
-        BEGIN_HOR();
-        if (_visibleScriptTypes.Count > 0)
+        // Script types
+        if (!_editingScriptTypes)
         {
-            BTN($"Clear Script Type Filters ({_visibleScriptTypes.Count})", Color.red, () =>
-            {
-                _visibleScriptTypes.Clear();
-                MarkVisibleDirty();
-            }, 160);
+            return;
         }
-        BTN(_editingScriptTypes ? "Hide Script Types" : "Show Script Types", _editingScriptTypes ? Color.magenta : Color.gray, () =>
-        {
-            _editingScriptTypes = !_editingScriptTypes;
-        });
+
+        BEGIN_HOR();
+        LABEL($"Visible Scripts: {(_visibleScriptTypes.Count == 0 ? _scriptTypes.Count : _visibleScriptTypes.Count)}");
+        _scriptTypeFilter = TEXT_INPUT(_scriptTypeFilter);
         END_HOR();
 
-        // Script types
-        if (_editingScriptTypes)
+        BEGIN_SCROLL("script_type_scroll");
+
+        for (int i = 0; i < _scriptTypes.Count; i++)
         {
-            BEGIN_HOR();
-            LABEL($"Visible Scripts: {(_visibleScriptTypes.Count == 0 ? _scriptTypes.Count : _visibleScriptTypes.Count)}");
-            _scriptTypeFilter = TEXT_INPUT(_scriptTypeFilter);
-            END_HOR();
+            if (!string.IsNullOrEmpty(_scriptTypeFilter) && !_scriptTypes[i].ToLower().Contains(_scriptTypeFilter)) { continue; }
 
-            BEGIN_SCROLL("script_type_scroll");
+            bool isVisible = _visibleScriptTypes.Contains(_scriptTypes[i]);
+            Color btnColor = isVisible ? Color.green : Color.gray;
 
-            for (int i = 0; i < _scriptTypes.Count; i++)
+            BTN(_scriptTypes[i], btnColor, () =>
             {
-                if (!string.IsNullOrEmpty(_scriptTypeFilter) && !_scriptTypes[i].ToLower().Contains(_scriptTypeFilter)) { continue; }
+                if (isVisible)
+                    _visibleScriptTypes.Remove(_scriptTypes[i]);
+                else
+                    _visibleScriptTypes.Add(_scriptTypes[i]);
 
-                bool isVisible = _visibleScriptTypes.Contains(_scriptTypes[i]);
-                Color btnColor = isVisible ? Color.green : Color.gray;
-
-                BTN(_scriptTypes[i], btnColor, () =>
-                {
-                    if (isVisible)
-                        _visibleScriptTypes.Remove(_scriptTypes[i]);
-                    else
-                        _visibleScriptTypes.Add(_scriptTypes[i]);
-
-                    MARK_NEEDS_SAVE();
-                    MarkVisibleDirty();
-                });
-            }
-
-            END_SCROLL();
+                MARK_NEEDS_SAVE();
+                MarkVisibleDirty();
+            });
         }
+
+        END_SCROLL();
     }
 
     private int _scriptsRendering;
@@ -792,31 +903,14 @@ public class DataEditTagPage : DataEditPage
         LABEL(tooltip.Key, tooltip.TooltipTextColor);
         LABEL(tooltip.TooltipName, tooltip.TooltipTextColor);
         tooltip.TextColor = COLOR_INPUT(tooltip.TooltipTextColor);
-
-        BEGIN_HOR();
         tooltip.TooltipData.Icon = TEXT_INPUT(tooltip.TooltipData.Icon, "Icon");
-        END_HOR();
-
-        BEGIN_HOR();
         tooltip.TooltipData.InlineIcon = TEXT_INPUT(tooltip.TooltipData.InlineIcon, "Inline Icon");
-        END_HOR();
-
-        BEGIN_HOR();
         tooltip.TooltipData.Name = TEXT_INPUT(tooltip.TooltipData.Name, "Name");
-        END_HOR();
-
-        BEGIN_HOR();
+        tooltip.TooltipData.NamePlural = TEXT_INPUT(tooltip.TooltipData.NamePlural, "Name Plural");
         tooltip.TooltipData.Action = TEXT_INPUT(tooltip.TooltipData.Action, "Action");
-        END_HOR();
-
-        BEGIN_HOR();
         tooltip.TooltipData.Type = TEXT_INPUT(tooltip.TooltipData.Type, "Type");
-        END_HOR();
-
-        BEGIN_HOR();
         LABEL("Description");
         tooltip.TooltipData.Description = GUILayout.TextField(tooltip.TooltipData.Description, GUILayout.MaxWidth(WINDOW_WIDTH() * 0.75f));
-        END_HOR();
     }
 
     private void RenderScript(Scriptable script)
@@ -824,11 +918,9 @@ public class DataEditTagPage : DataEditPage
         if (script == null) { return; }
         if (_scriptsRendering > 1) { return; }
 
+        _scriptsRendering++;
         MARK_DIRTY(script);
         MARK_DIRTY(script.TooltipData);
-
-        _scriptsRendering++;
-
         LABEL(script.ObjectType, ColorUtility.voidPurple);
         BEGIN_INDENT();
         LABEL("Core Script Data:", Color.grey);
@@ -849,9 +941,8 @@ public class DataEditTagPage : DataEditPage
             END_HOR();
         }
 
-        script.TagIDs = LIST_ADD_BTN<string>(script.TagIDs, "+Add Tag");
+        script.TagIDs = LIST_ADD_VALUE_BTN<string>(script.TagIDs, "+Add Tag");
         END_INDENT();
-
         // List/Edit tag IDs for script.
         LABEL("Discovery Children:", Color.cyan);
         BEGIN_INDENT();
@@ -860,15 +951,16 @@ public class DataEditTagPage : DataEditPage
         {
             BEGIN_HOR();
             script.DiscoveryDependencies = LIST_REMOVE_BTN<string>(script.DiscoveryDependencies, n);
+
             if (n < script.DiscoveryDependencies.Count)
             {
                 script.DiscoveryDependencies[n] = DATA_ID_INPUT<Scriptable>(script.DiscoveryDependencies[n], "Tag Object ID", out var t);
             }
+
             END_HOR();
         }
 
-        script.DiscoveryDependencies = LIST_ADD_BTN<string>(script.DiscoveryDependencies, "+Add Discovery Child");
-        END_INDENT();
+        script.DiscoveryDependencies = LIST_ADD_VALUE_BTN<string>(script.DiscoveryDependencies, "+Add Discovery Child");
         END_INDENT();
 
         // Tag.
@@ -900,6 +992,12 @@ public class DataEditTagPage : DataEditPage
         {
             LABEL("Scenario Data:", Color.grey);
             RenderScenario(scenarioData);
+        }
+        // Dialogue.
+        else if (script is GDEDialogueData dialogueData)
+        {
+            LABEL("Dialogue Data:", Color.grey);
+            RenderDialogue(dialogueData);
         }
         // Item.
         else if (script is GDEItemsData itemData)
@@ -1006,8 +1104,13 @@ public class DataEditTagPage : DataEditPage
         }
         else
         {
-
+            LABEL("Default Inspector:", Color.grey);
+            BEGIN_INDENT();
+            RenderDefaultInspector(script);
+            END_INDENT();
         }
+
+        END_INDENT();
 
         if (script is ISimulationData simData)
         {
@@ -1020,11 +1123,30 @@ public class DataEditTagPage : DataEditPage
             END_HOR();
         }
 
-        //END_VERT();
-        //END_HOR();
         _scriptsRendering--;
+    }
 
-        DRAW_BACKGROUND(ColorUtility.voidPurple);
+    private Dictionary<string, SerializedObject> _cachedSerializedObjects = new(512);
+
+    private void RenderDefaultInspector(Scriptable script)
+    {
+        if (!_cachedSerializedObjects.TryGetValue(script.Key, out SerializedObject serializedObject) || serializedObject.targetObject != script)
+        {
+            serializedObject = new SerializedObject(script);
+            _cachedSerializedObjects[script.Key] = serializedObject;
+        }
+
+        serializedObject.Update();
+
+        SerializedProperty property = serializedObject.GetIterator();
+        property.NextVisible(true); // Move to the first property
+
+        while (property.NextVisible(false)) // Iterate through all properties
+        {
+            EditorGUILayout.PropertyField(property, true);
+        }
+
+        serializedObject.ApplyModifiedProperties();
     }
 
     private void RenderTagObj(ITagObject tagObj)
@@ -1368,7 +1490,7 @@ public class DataEditTagPage : DataEditPage
                         END_INDENT();
                     }
 
-                    cave.InteriorSpawnTags = ARRAY_ADD_BTN<string>(cave.InteriorSpawnTags, "+Spawn");
+                    cave.InteriorSpawnTags = ARRAY_ADD_VALUE_BTN<string>(cave.InteriorSpawnTags, "+Spawn");
 
                     terrainGen.Caves = arr;
                     END_INDENT(ColorUtility.caveBlue);
@@ -1377,7 +1499,7 @@ public class DataEditTagPage : DataEditPage
                 END_INDENT();
             }
 
-            terrainGen.Caves = ARRAY_ADD_BTN<GDEBiomesData.CaveLayer>(terrainGen.Caves, "+Cave");
+            terrainGen.Caves = ARRAY_ADD_VALUE_BTN<GDEBiomesData.CaveLayer>(terrainGen.Caves, "+Cave");
             END_INDENT();
         }
 
@@ -1438,7 +1560,9 @@ public class DataEditTagPage : DataEditPage
                     {
                         BEGIN_HOR();
                         TAB(1);
+                        BEGIN_VERT();
                         RenderScript(tagObjs[n]);
+                        END_VERT();
                         END_HOR();
                     }
                 }
@@ -1446,7 +1570,7 @@ public class DataEditTagPage : DataEditPage
                 terrainGen.PlantsToGenerate = arr;
             }
 
-            terrainGen.PlantsToGenerate = ARRAY_ADD_BTN<GDEBiomesData.PlantGen>(terrainGen.PlantsToGenerate, "+Plant Gen");
+            terrainGen.PlantsToGenerate = ARRAY_ADD_VALUE_BTN<GDEBiomesData.PlantGen>(terrainGen.PlantsToGenerate, "+Plant Gen");
         }
 
         bool showBiomeFloraPopulations = EXPAND_TOGGLE("Plant Population Limits:", ColorUtility.purple, -1, data.Key);
@@ -1476,7 +1600,7 @@ public class DataEditTagPage : DataEditPage
                 data.DefaultFloraPopulationModifiers = arr;
             }
 
-            data.DefaultFloraPopulationModifiers = ARRAY_ADD_BTN<GDEBiomesData.DefaultPopulationRating>(data.DefaultFloraPopulationModifiers, "+Pop. Modifier");
+            data.DefaultFloraPopulationModifiers = ARRAY_ADD_VALUE_BTN<GDEBiomesData.DefaultPopulationRating>(data.DefaultFloraPopulationModifiers, "+Pop. Modifier");
             _rebuildPlantsInBiome |= popCount != data.DefaultFloraPopulationModifiers.Length;
             BEGIN_CLR(Color.yellow);
             BTN("Rebuild Plant Default Pop List", () => { _rebuildPlantsInBiome = true; });
@@ -1587,7 +1711,226 @@ public class DataEditTagPage : DataEditPage
         if (scenariosData == null) { return; }
 
         MARK_DIRTY(scenariosData);
+        scenariosData.PartyID = DATA_ID_INPUT<GDEPartyData>(scenariosData.PartyID, "Party ID", out var _);
+        scenariosData.NotifOnActivate = DATA_ID_INPUT<GDENotificationsData>(scenariosData.NotifOnActivate, "Notif On Activate", out var _);
+        scenariosData.IsScheduled = TOGGLE(scenariosData.IsScheduled, "Is Scheduled");
+
+        if (scenariosData.IsScheduled)
+        {
+            LABEL("Schedule Requirements:", Color.cyan);
+            BEGIN_INDENT();
+            scenariosData.ActivationChance = RANDOM_CHANCE_INPUT(scenariosData.ActivationChance, "Activation Chance");
+            scenariosData.MaxActivations = INT_INPUT(scenariosData.MaxActivations, "Max Activations", 64);
+            scenariosData.MinKingdomLevel = (uint)INT_INPUT((int)scenariosData.MinKingdomLevel, "Min Kingdom Level", 64);
+            scenariosData.MinMinutesSinceSettlementStart = TIME_INPUT(scenariosData.MinMinutesSinceSettlementStart, "Min Minutes Since Settlement Start");
+            scenariosData.MinMinutesSinceLastScenario = TIME_INPUT(scenariosData.MinMinutesSinceLastScenario, "Min Minutes Since Last Scenario");
+            scenariosData.MinMinutesSinceLastSameScenario = TIME_INPUT(scenariosData.MinMinutesSinceLastSameScenario, "Min Minutes Since Last Same Scenario");
+            scenariosData.Conditions = RENDER_REF_ARRAY<GDEScenariosData.Condition>(scenariosData.Conditions, "Conditions", (req) =>
+            {
+                req.ConditionType = (ConditionTypes)DROP_DOWN(req.ConditionType);
+                req.MustFail = TOGGLE(req.MustFail, "Must Fail");
+                req.TagObjectRequirement.TagObjectID = DATA_ID_INPUT<Scriptable>(req.TagObjectRequirement.TagObjectID, "Tag Object ID", out var tagObjData);
+                req.TagObjectRequirement.Count = INT_INPUT(req.TagObjectRequirement.Count, "Count");
+                req.TagObjectRequirement.Comparison = (ThresholdConditionTypes)DROP_DOWN(req.TagObjectRequirement.Comparison);
+            });
+            END_INDENT();
+        }
+
+        if (scenariosData.EntitySpawns != null)
+        {
+            scenariosData.EntitySpawns = RENDER_REF_ARRAY(scenariosData.EntitySpawns, "Entity Spawns", RenderScenarioEntitySpawn);
+        }
+
+        if (scenariosData.Dialogues != null)
+        {
+            scenariosData.Dialogues = RENDER_REF_ARRAY(scenariosData.Dialogues, "Dialogues", RenderScenarioDialogue);
+        }
     }
+
+    private void RenderScenarioEntitySpawn(GDEScenariosData.ScenarioEntitySpawn entitySpawn)
+    {
+        if (entitySpawn == null) { return; }
+
+        entitySpawn.SpawnPointType = (SpawnPointTypes)DROP_DOWN(entitySpawn.SpawnPointType);
+        entitySpawn.OverrideEntityWithNation = TOGGLE(entitySpawn.OverrideEntityWithNation, "Override Entity With Nation");
+        entitySpawn.OverrideEntityWithFauna = TOGGLE(entitySpawn.OverrideEntityWithFauna, "Override Entity With Fauna");
+        entitySpawn.AutoGenEntityCount = TOGGLE(entitySpawn.AutoGenEntityCount, "Auto Gen Entity Count");
+        entitySpawn.SpawnData = RenderEntitySpawn(entitySpawn.SpawnData);
+    }
+
+    private EntitySpawnData RenderEntitySpawn(EntitySpawnData spawn)
+    {
+        spawn.EntityID = DATA_ID_INPUT<GDEEntitiesData>(spawn.EntityID, "Entity ID", out var entityData);
+        spawn.ProfessionID = DATA_ID_INPUT<GDEProfessionData>(spawn.ProfessionID, "Entity Profession", out var professionData);
+        spawn.GenderID = TEXT_INPUT(spawn.GenderID, "Gender ID");
+        spawn.FactionID = DATA_ID_INPUT<GDEFactionData>(spawn.FactionID, "Entity Faction", out var factionData);
+        spawn.AppearanceID = DATA_ID_INPUT<GDEAppearancesData>(spawn.AppearanceID, "Entity Appearance", out var appearancesData);
+        spawn.SpawnScenario = DATA_ID_INPUT<GDEScenariosData>(spawn.SpawnScenario, "Scenario ID", out var scenarioData);
+        spawn.Tag = TEXT_INPUT(spawn.Tag, "Entity Tag");
+        spawn.Count = INT_INPUT(spawn.Count, "Entity Count");
+        
+        if (spawn.Count > 1)
+        {
+            spawn.Chance = RANDOM_CHANCE_INPUT(spawn.Chance, "Spawn Chance");
+        }
+
+        spawn.TuningID = DATA_ID_INPUT<GDEEntityTuningData>(spawn.TuningID, "Entity Tuning", out var tuningData);
+        spawn.AgeType = (EntityAgeTypes)DROP_DOWN(spawn.AgeType);
+        spawn.StartingAgeMins = (int)TIME_INPUT((uint)spawn.StartingAgeMins, "Starting Age Mins");
+        spawn.StartingSimTime = TIME_INPUT(spawn.StartingSimTime, "Starting Sim Time");
+        spawn.AutoGenEquipment = TOGGLE(spawn.AutoGenEquipment, "Auto Gen Equipment");
+        spawn.AutoGenInventory = TOGGLE(spawn.AutoGenInventory, "Auto Gen Inventory");
+        spawn.DisableItemEquipFromTuning = TOGGLE(spawn.DisableItemEquipFromTuning, "Disable Item Equip From Tuning");
+
+        spawn.EquippedItems = RENDER_REF_LIST<EntitySpawnEquippedItem>(spawn.EquippedItems, "Equipped Items", (item) =>
+        {
+            item.ItemID = DATA_ID_INPUT<GDEItemsData>(item.ItemID, "Item", out var itemData);
+            item.SlotID = DATA_ID_INPUT<GDEItemSlotsData>(item.SlotID, "Slot", out var slotData);
+        });
+
+        spawn.InventoryItems = RENDER_REF_LIST<EntitySpawnInventoryItem>(spawn.InventoryItems, "Inventory Items", (item) =>
+        {
+            item.ItemID = DATA_ID_INPUT<GDEItemsData>(item.ItemID, "Item", out var itemData);
+            item.MaxCount = INT_INPUT(item.MaxCount, "Max");
+            item.MinCount = Mathf.Min(item.MaxCount, INT_INPUT(item.MinCount, "Min"));
+        });
+
+        spawn.AddedStatuses = RENDER_VALUE_LIST<string>(spawn.AddedStatuses, "Added Statuses", (status) =>
+        {
+            return DATA_ID_INPUT<GDEEntityStatusData>(status, "Status", out var entityStatusData);
+        });
+
+        return spawn;
+    }
+
+    private void RenderEntitySpawn(GDEEntitySpawnGroupsData.Spawn spawn)
+    {
+        if (spawn == null) { return; }
+
+        spawn.EntityId = DATA_ID_INPUT<GDEEntitiesData>(spawn.EntityId, "Entity ID", out var entityData);
+        spawn.EntityProfession = DATA_ID_INPUT<GDEProfessionData>(spawn.EntityProfession, "Entity Profession", out var professionData);
+        spawn.EntityGender = TEXT_INPUT(spawn.EntityGender, "Gender ID");
+        spawn.EntityFaction = DATA_ID_INPUT<GDEFactionData>(spawn.EntityFaction, "Entity Faction", out var factionData);
+        spawn.EntityAppearance = DATA_ID_INPUT<GDEAppearancesData>(spawn.EntityAppearance, "Entity Appearance", out var appearancesData);
+        spawn.ScenarioID = DATA_ID_INPUT<GDEScenariosData>(spawn.ScenarioID, "Scenario ID", out var scenarioData);
+        spawn.EntityTag = TEXT_INPUT(spawn.EntityTag, "Entity Tag");
+        spawn.EntityCount = INT_INPUT(spawn.EntityCount, "Entity Count");
+        spawn.EntityTuning = DATA_ID_INPUT<GDEEntityTuningData>(spawn.EntityTuning, "Entity Tuning", out var tuningData);
+        spawn.SpawnRate = INT_INPUT(spawn.SpawnRate, "Spawn Rate");
+        spawn.AgeType = (EntityAgeTypes)DROP_DOWN(spawn.AgeType);
+        spawn.SpawnEntityFromItem = TOGGLE(spawn.SpawnEntityFromItem, "Spawn Entity From Item");
+        spawn.AutoGenEquipment = TOGGLE(spawn.AutoGenEquipment, "Auto Gen Equipment");
+        spawn.AutoGenInventory = TOGGLE(spawn.AutoGenInventory, "Auto Gen Inventory");
+        spawn.DisableItemEquipFromTuning = TOGGLE(spawn.DisableItemEquipFromTuning, "Disable Item Equip From Tuning");
+
+        spawn.EquippedItems = RENDER_REF_LIST<EntitySpawnEquippedItem>(spawn.EquippedItems, "Equipped Items", (item) =>
+        {
+            item.ItemID = DATA_ID_INPUT<GDEItemsData>(item.ItemID, "Item", out var itemData);
+            item.SlotID = DATA_ID_INPUT<GDEItemSlotsData>(item.SlotID, "Slot", out var slotData);
+        });
+
+        spawn.InventoryItems = RENDER_REF_LIST<EntitySpawnInventoryItem>(spawn.InventoryItems, "Inventory Items", (item) =>
+        {
+            item.ItemID = DATA_ID_INPUT<GDEItemsData>(item.ItemID, "Item", out var itemData);
+            item.MaxCount = INT_INPUT(item.MaxCount);
+            item.MinCount = Mathf.Min(item.MaxCount, INT_INPUT(item.MinCount));
+        });
+
+        spawn.AddedStatuses = RENDER_VALUE_LIST<string>(spawn.AddedStatuses, "Added Statuses", (status) =>
+        {
+            return DATA_ID_INPUT<GDEEntityStatusData>(status, "Status", out var entityStatusData);
+        });
+    }
+
+    private void RenderScenarioDialogue(GDEScenariosData.ScenarioDialogue dialogue)
+    {
+        if (dialogue == null) { return; }
+
+        dialogue.DialogueID = DATA_ID_INPUT<GDEDialogueData>(dialogue.DialogueID, "Dialogue ID", out var dialogueData);
+
+        if (dialogueData != null)
+        {
+            RenderDialogue(dialogueData);
+        }
+    }
+
+    private void RenderDialogue(GDEDialogueData dialogueData)
+    {
+        if (dialogueData == null) { return; }
+
+        MARK_DIRTY(dialogueData);
+
+        dialogueData.ShowOnce = TOGGLE(dialogueData.ShowOnce, "Show Once");
+        dialogueData.DialogueSequences = RENDER_REF_LIST<DialogueSequence>(dialogueData.DialogueSequences, "Sequences", RenderDialogueSequence);
+    }
+
+    private void RenderDialogueSequence(DialogueSequence sequence)
+    {
+        if (sequence == null) { return; }
+
+        sequence.ID = TEXT_INPUT(sequence.ID, "ID");
+        BEGIN_CLR(Color.cyan);
+        sequence.Text = TEXT_INPUT(sequence.Text, "Text");
+        END_CLR();
+        sequence.OverrideSpeaker = TOGGLE(sequence.OverrideSpeaker, "Override Speaker");
+        sequence.OverrideSpeakerID = TEXT_INPUT(sequence.OverrideSpeakerID, "Override Speaker ID");
+        sequence.ActionA = RenderDialogueAction("Action A", sequence.ActionA);
+
+        if (sequence.ActionA.IsValid)
+        {
+            sequence.ActionB = RenderDialogueAction("Action B", sequence.ActionB);
+        }
+
+        if (sequence.ActionB.IsValid)
+        {
+            sequence.ActionC = RenderDialogueAction("Action C", sequence.ActionC);
+        }
+
+        if (sequence.ActionC.IsValid)
+        {
+            sequence.ActionD = RenderDialogueAction("Action D", sequence.ActionD);
+        }
+    }
+
+    private DialogueAction RenderDialogueAction(string label, DialogueAction dialogueAction)
+    {
+        LABEL(label, Color.cyan);
+        BEGIN_INDENT();
+        dialogueAction.Text = TEXT_INPUT(dialogueAction.Text, "Text");
+        dialogueAction.NextSequenceID = TEXT_INPUT(dialogueAction.NextSequenceID, "Next Sequence ID");
+        dialogueAction.ActionType = DROP_DOWN(dialogueAction.ActionType, "Action Type");
+
+        switch (dialogueAction.ActionType)
+        {
+            case DialogueActionTypes.SPEAKER_ACTION:
+            case DialogueActionTypes.ALL_SPEAKERS_ACTION:
+                {
+                    BEGIN_INDENT();
+                    dialogueAction.SpeakerAction = DROP_DOWN(dialogueAction.SpeakerAction, "Speaker Action");
+
+                    if (dialogueAction.SpeakerAction == SpeakerActionTypes.SET_FACTION)
+                    {
+                        dialogueAction.ActionDataID = TEXT_INPUT(dialogueAction.ActionDataID, "Action Data ID");
+                    }
+
+                    END_INDENT();
+                }
+                break;
+
+            case DialogueActionTypes.ACTIVATE_SCENARIO:
+                {
+                    BEGIN_INDENT();
+                    dialogueAction.ScenarioID = DATA_ID_INPUT<GDEScenariosData>(dialogueAction.ScenarioID, "Scenario ID", out var _);
+                    END_INDENT();
+                }
+                break;
+        }
+
+        END_INDENT();
+
+        return dialogueAction;
+    }
+
 
     private void RenderCave(GDECaveData caveData)
     {
@@ -1660,7 +2003,7 @@ public class DataEditTagPage : DataEditPage
             END_INDENT(ColorUtility.earthBrown);
         }
 
-        layers = ARRAY_ADD_BTN<GDEBiomesData.TerrainLayer>(layers, "+Terrain Layer");
+        layers = ARRAY_ADD_VALUE_BTN<GDEBiomesData.TerrainLayer>(layers, "+Terrain Layer");
 
         return layers;
     }
@@ -1737,7 +2080,7 @@ public class DataEditTagPage : DataEditPage
 
             }
 
-            simScriptObj.Simulations = ARRAY_ADD_BTN<InstanceSimulation>(simScriptObj.Simulations, "+Simulation");
+            simScriptObj.Simulations = ARRAY_ADD_VALUE_BTN<InstanceSimulation>(simScriptObj.Simulations, "+Simulation");
             //if (_selectedSim != null)
             {
             }
@@ -1832,7 +2175,7 @@ public class DataEditTagPage : DataEditPage
                 END_INDENT();
             }
 
-            itemData.TimedActions = ARRAY_ADD_BTN<AutomatedItemActionActivation>(itemData.TimedActions, "+Timed Item Action Activators");
+            itemData.TimedActions = ARRAY_ADD_VALUE_BTN<AutomatedItemActionActivation>(itemData.TimedActions, "+Timed Item Action Activators");
 
             LABEL("Actions:");
 
@@ -1879,7 +2222,7 @@ public class DataEditTagPage : DataEditPage
                 END_INDENT();
             }
 
-            itemData.Actions = ARRAY_ADD_BTN<ItemAction>(itemData.Actions, "+Item Action");
+            itemData.Actions = ARRAY_ADD_VALUE_BTN<ItemAction>(itemData.Actions, "+Item Action");
             END_INDENT();
         }
     }
@@ -1910,7 +2253,7 @@ public class DataEditTagPage : DataEditPage
             END_HOR();
         }
 
-        fishData.Biomes = LIST_ADD_BTN<string>(fishData.Biomes, "+Biome");
+        fishData.Biomes = LIST_ADD_VALUE_BTN<string>(fishData.Biomes, "+Biome");
         END_INDENT();
     }
 
@@ -1940,7 +2283,7 @@ public class DataEditTagPage : DataEditPage
             END_HOR();
         }
 
-        buffs = ARRAY_ADD_BTN<BuffData>(buffs, "+Buff");
+        buffs = ARRAY_ADD_VALUE_BTN<BuffData>(buffs, "+Buff");
         //buffs[buffs.Length - 1].Permanent = true;
         //END_VERT();
         END_INDENT();
@@ -1992,7 +2335,7 @@ public class DataEditTagPage : DataEditPage
             END_INDENT();
         }
 
-        attackGroupData.Attacks = LIST_ADD_BTN<string>(attackGroupData.Attacks, "+Attack");
+        attackGroupData.Attacks = LIST_ADD_VALUE_BTN<string>(attackGroupData.Attacks, "+Attack");
         END_INDENT();
     }
 
@@ -2024,7 +2367,7 @@ public class DataEditTagPage : DataEditPage
             END_INDENT();
         }
 
-        landmarkData.Prefabs = ARRAY_ADD_BTN<GDELandmarkData.PrefabSettings>(landmarkData.Prefabs, "+Prefab");
+        landmarkData.Prefabs = ARRAY_ADD_VALUE_BTN<GDELandmarkData.PrefabSettings>(landmarkData.Prefabs, "+Prefab");
 
         END_INDENT();
     }
@@ -2405,7 +2748,7 @@ public class DataEditTagPage : DataEditPage
             tutorialData.Message = arr;
         }
 
-        tutorialData.Message = ARRAY_ADD_BTN<TutorialMessage>(tutorialData.Message, "+Add Tutorial Message");
+        tutorialData.Message = ARRAY_ADD_VALUE_BTN<TutorialMessage>(tutorialData.Message, "+Add Tutorial Message");
 
         END_INDENT();
         END_INDENT();
@@ -2500,11 +2843,17 @@ public class DataEditTagPage : DataEditPage
 
         MARK_DIRTY(partyData);
         BEGIN_INDENT();
+        partyData.ArrivalNotif = DATA_ID_INPUT<GDENotificationsData>(partyData.ArrivalNotif, "Arrival Notif", out var _);
+        LABEL("Member Tuning:");
+        partyData.AutoGenMemberSize = TOGGLE(partyData.AutoGenMemberSize, "Auto Generate Member Size");
 
-        LABEL("Member Tuning");
+        if (!partyData.AutoGenMemberSize)
+        {
+            partyData.MinMemberSize = INT_INPUT(partyData.MinMemberSize, "Min Member Size");
+            partyData.MaxMemberSize = INT_INPUT(partyData.MaxMemberSize, "Max Member Size");
+        }
 
-        partyData.RandomizeMembers = TOGGLE(partyData.RandomizeMembers, "Randomize Members");
-
+        partyData.RandomizeMembers = TOGGLE(partyData.RandomizeMembers, "Assign Random Tuning To Members");
         BEGIN_INDENT();
 
         for (int i = 0; i < partyData.MemberTunings.Count; i++)
@@ -2523,7 +2872,7 @@ public class DataEditTagPage : DataEditPage
 
         }
 
-        partyData.MemberTunings = LIST_ADD_BTN<GDEPartyData.MemberTuning>(partyData.MemberTunings, "+Additional Member Tuning");
+        partyData.MemberTunings = LIST_ADD_VALUE_BTN<GDEPartyData.MemberTuning>(partyData.MemberTunings, "+Additional Member Tuning");
         END_INDENT();
         END_INDENT();
     }
@@ -2630,7 +2979,7 @@ public class DataEditTagPage : DataEditPage
 
         }
 
-        sfxGroup.SFX = LIST_ADD_BTN<string>(sfxGroup.SFX, "+SFX");
+        sfxGroup.SFX = LIST_ADD_VALUE_BTN<string>(sfxGroup.SFX, "+SFX");
 
         BEGIN_INDENT();
         bool showSFXList = EXPAND_TOGGLE("All SFX List", ColorUtility.plantGreen, -1, sfxGroup.Key);
@@ -2643,22 +2992,24 @@ public class DataEditTagPage : DataEditPage
 
             for (int i = 0; clips != null && i < clips.Length; i++)
             {
-                if (!clips[i].name.Contains("sfx")) { continue; }
-                if (!string.IsNullOrEmpty(_audioSearch) && !clips[i].name.Contains(_audioSearch)) { continue; }
+                string clipName = clips[i].name;
+
+                if (!clipName.Contains("sfx")) { continue; }
+                if (!string.IsNullOrEmpty(_audioSearch) && !clipName.Contains(_audioSearch)) { continue; }
 
                 BEGIN_HOR();
                 BTN("+", Color.green, () =>
                 {
-                    if (!sfxGroup.SFX.Contains(clips[i].name))
+                    if (!sfxGroup.SFX.Contains(clipName))
                     {
-                        sfxGroup.SFX.Add(clips[i].name);
+                        sfxGroup.SFX.Add(clipName);
                     }
                 }, 32);
                 BTN("Play", Color.green, () =>
                 {
-                    PlayClip(clips[i].name);
+                    PlayClip(clipName);
                 }, 48);
-                LABEL(clips[i].name, true);
+                LABEL(clipName, true);
                 END_HOR();
             }
         }
@@ -2717,7 +3068,7 @@ public class DataEditTagPage : DataEditPage
             END_HOR();
         }
 
-        statuses = ARRAY_ADD_BTN<string>(statuses, "+Status");
+        statuses = ARRAY_ADD_VALUE_BTN<string>(statuses, "+Status");
         END_VERT();
         END_HOR();
 
@@ -2798,7 +3149,7 @@ public class DataEditTagPage : DataEditPage
                 BEGIN_CLR(GUI.color, Color.red, () => { return string.IsNullOrEmpty(statusAction.ConditionTarget) || target != null; });
                 statusAction.ConditionTarget = TEXT_INPUT(statusAction.ConditionTarget, "Condition Target");
                 END_CLR();
-                ASSERT_WARNING(string.IsNullOrEmpty(statusAction.ConditionTarget) || target != null, "Does not exists!");
+                //ASSERT_WARNING(string.IsNullOrEmpty(statusAction.ConditionTarget) || target != null, "Does not exists!");
                 END_HOR();
 
                 if (target != null)
@@ -2880,7 +3231,7 @@ public class DataEditTagPage : DataEditPage
                 END_INDENT();
             }
 
-            statusData.Actions = ARRAY_ADD_BTN<StatusAction>(statusData.Actions, "+Status Action");
+            statusData.Actions = ARRAY_ADD_VALUE_BTN<StatusAction>(statusData.Actions, "+Status Action");
             END_VERT();
         }
 
@@ -2919,7 +3270,7 @@ public class DataEditTagPage : DataEditPage
                 END_HOR();
             }
 
-            LIST_ADD_BTN<GDEEntityStatusData.StatusAutoJob>(statusData.AutoJobs, "+Auto Job");
+            LIST_ADD_VALUE_BTN<GDEEntityStatusData.StatusAutoJob>(statusData.AutoJobs, "+Auto Job");
         }
     }
 
@@ -2971,7 +3322,7 @@ public class DataEditTagPage : DataEditPage
                 END_HOR();
             }
 
-            entityData.Diets = LIST_ADD_BTN<GDEEntitiesData.DietSettings>(entityData.Diets, "+Add Diet");
+            entityData.Diets = LIST_ADD_VALUE_BTN<GDEEntitiesData.DietSettings>(entityData.Diets, "+Add Diet");
 
             END_INDENT();
         }
@@ -3015,7 +3366,7 @@ public class DataEditTagPage : DataEditPage
                 END_INDENT();
             }
 
-            entityData.Statuses = LIST_ADD_BTN<string>(entityData.Statuses, "+Add Default Status");
+            entityData.Statuses = LIST_ADD_VALUE_BTN<string>(entityData.Statuses, "+Add Default Status");
             END_INDENT();
         }
 
@@ -3186,7 +3537,6 @@ public class DataEditTagPage : DataEditPage
         MARK_DIRTY(blueprintData);
 
         blueprintData.ProgressMax = INT_INPUT(blueprintData.ProgressMax, "Progress Max", ColorUtility.blueprintBlue);
-        blueprintData.SkillLevel = INT_INPUT(blueprintData.SkillLevel, "Skill Level", ColorUtility.blueprintBlue);
         blueprintData.AddBlockSkillToJobSkill = TOGGLE(blueprintData.AddBlockSkillToJobSkill, "Add Block Skill To Job Skill", ColorUtility.blueprintBlue);
         blueprintData.ResearchKey = DATA_ID_INPUT<GDEResearchData>(blueprintData.ResearchKey, "Research ID", out var researchData);
         blueprintData.CategoryID = DATA_ID_INPUT<GDEBlueprintCategoryData>(blueprintData.CategoryID, "Category ID", out var categoryData);
@@ -3222,7 +3572,7 @@ public class DataEditTagPage : DataEditPage
             END_HOR();
         }
 
-        blueprintData.Visuals = LIST_ADD_BTN<string>(blueprintData.Visuals, "+Job Visuals");
+        blueprintData.Visuals = LIST_ADD_VALUE_BTN<string>(blueprintData.Visuals, "+Job Visuals");
         END_INDENT();
 
         LABEL("Location Requirements:", ColorUtility.blueprintBlue);
@@ -3359,7 +3709,7 @@ public class DataEditTagPage : DataEditPage
             blueprintData.JobActions[i] = req;
         }
 
-        blueprintData.JobActions = ARRAY_ADD_BTN<JobActionRequirement>(blueprintData.JobActions, "+Job Action");
+        blueprintData.JobActions = ARRAY_ADD_VALUE_BTN<JobActionRequirement>(blueprintData.JobActions, "+Job Action");
         END_INDENT(ColorUtility.selectedGold);
     }
 
@@ -3392,7 +3742,7 @@ public class DataEditTagPage : DataEditPage
             END_INDENT();
         }
 
-        roomData.OccupantGroups = LIST_ADD_BTN<string>(roomData.OccupantGroups, "+Occupant Group");
+        roomData.OccupantGroups = LIST_ADD_VALUE_BTN<string>(roomData.OccupantGroups, "+Occupant Group");
 
         END_INDENT();
 
@@ -3428,7 +3778,7 @@ public class DataEditTagPage : DataEditPage
             END_INDENT();
         }
 
-        roomData.DefaultAutoJobs = LIST_ADD_BTN<GDERoomTemplatesData.RoomAutoJob>(roomData.DefaultAutoJobs, "+Default Auto Jobs");
+        roomData.DefaultAutoJobs = LIST_ADD_VALUE_BTN<GDERoomTemplatesData.RoomAutoJob>(roomData.DefaultAutoJobs, "+Default Auto Jobs");
 
         bool showBlueprints = EXPAND_TOGGLE("Blueprints", ColorUtility.blueprintBlue, -1, roomData.Key);
 
@@ -3490,7 +3840,7 @@ public class DataEditTagPage : DataEditPage
             END_HOR();
         }
 
-        occupantGroupData.RequiredOccupantTagObjs = ARRAY_ADD_BTN<TagObjectSetting>(occupantGroupData.RequiredOccupantTagObjs, "+Default Occupant Tag Object");
+        occupantGroupData.RequiredOccupantTagObjs = ARRAY_ADD_VALUE_BTN<TagObjectSetting>(occupantGroupData.RequiredOccupantTagObjs, "+Default Occupant Tag Object");
     }
 
     private void RenderPlantData(Scriptable script, GDEBlockPlantsData plantData)
@@ -3568,7 +3918,7 @@ public class DataEditTagPage : DataEditPage
                 END_INDENT();
             }
 
-            plantData.Actions = ARRAY_ADD_BTN<PlantAction>(plantData.Actions, "+Plant Action");
+            plantData.Actions = ARRAY_ADD_VALUE_BTN<PlantAction>(plantData.Actions, "+Plant Action");
             END_INDENT();
         }
     }
@@ -3615,7 +3965,7 @@ public class DataEditTagPage : DataEditPage
             END_INDENT();
         }
 
-        blockData.TriggerConditions = ARRAY_ADD_BTN<GDEBlocksData.TriggerCondition>(blockData.TriggerConditions, "+Trigger Condition");
+        blockData.TriggerConditions = ARRAY_ADD_VALUE_BTN<GDEBlocksData.TriggerCondition>(blockData.TriggerConditions, "+Trigger Condition");
         END_INDENT();
 
         LABEL("Triggers:");
@@ -3674,7 +4024,7 @@ public class DataEditTagPage : DataEditPage
             END_INDENT();
         }
 
-        blockData.Triggers = ARRAY_ADD_BTN<GDEBlocksData.Trigger>(blockData.Triggers, "+Trigger");
+        blockData.Triggers = ARRAY_ADD_VALUE_BTN<GDEBlocksData.Trigger>(blockData.Triggers, "+Trigger");
         END_INDENT();
     }
 
@@ -3709,7 +4059,6 @@ public class DataEditTagPage : DataEditPage
         MARK_DIRTY(script);
 
         settings.AutoJobType = (AutoJobTypes)DROP_DOWN(settings.AutoJobType, "Auto Job Type");
-        settings.Enabled = TOGGLE(settings.Enabled, "Start Enabled In Room");
         settings.Priority = INT_INPUT(settings.Priority, "Priority");
         return settings;
     }
@@ -3771,103 +4120,8 @@ public class DataEditTagPage : DataEditPage
         return condition;
     }
 
-    private List<string> _scriptTypes = new List<string>()
-    {
-        typeof(GDEAmbientMusicData).Name,
-        typeof(GDEAnimationsData).Name,
-        typeof(GDEAnimationSetGroupsData).Name,
-        typeof(GDEAnimationSetsData).Name,
-        typeof(GDEAnimationStatesData).Name,
-        typeof(GDEAppearanceGroupsData).Name,
-        typeof(GDEAppearancesData).Name,
-        typeof(GDEArtifactData).Name,
-        typeof(GDEAttackGroupsData).Name,
-        typeof(GDEAttacksData).Name,
-        typeof(GDEAttributesData).Name,
-        typeof(GDEAudioGroupsData).Name,
-        typeof(GDEAutoJobEntityPoolData).Name,
-        typeof(GDEBiomeNamesData).Name,
-        typeof(GDEBiomeNoiseData).Name,
-        typeof(GDEBiomesData).Name,
-        typeof(GDEBiomeSeasonsData).Name,
-        typeof(GDEBiomeTerrainGenData).Name,
-        typeof(GDEBiomeTerrainNoiseTuningData).Name,
-        typeof(GDEBiomeWeatherData).Name,
-        typeof(GDEBlockFillData).Name,
-        typeof(GDEBlockPlantsData).Name,
-        typeof(GDEBlockPlatformsData).Name,
-        typeof(GDEBlocksData).Name,
-        typeof(GDEBlockTriggersData).Name,
-        typeof(GDEBlockVisualsData).Name,
-        typeof(GDEBlueprintCategoryData).Name,
-        typeof(GDEBlueprintsData).Name,
-        typeof(GDECaveData).Name,
-        typeof(GDECharacterAccessoryData).Name,
-        typeof(GDECharacterColorMaskData).Name,
-        typeof(GDEControlGroupData).Name,
-        typeof(GDEDesignationFilterData).Name,
-        typeof(GDEDialogueData).Name,
-        typeof(GDEDialogueGroupsData).Name,
-        typeof(GDEDiscoveryGroupsData).Name,
-        typeof(GDEDiscoveryNamesData).Name,
-        typeof(GDEEntitiesData).Name,
-        typeof(GDEEntityAgeData).Name,
-        typeof(GDEEntityAgeTypeData).Name,
-        typeof(GDEEntityNamesData).Name,
-        typeof(GDEEntitySchema).Name,
-        typeof(GDEEntitySizesData).Name,
-        typeof(GDEEntitySpawnGroupsData).Name,
-        typeof(GDEEntityStatusData).Name,
-        typeof(GDEEntityTuningData).Name,
-        typeof(GDEFactionData).Name,
-        typeof(GDEFamilyMemberData).Name,
-        typeof(GDEFishData).Name,
-        typeof(GDEFishSpawnGroupsData).Name,
-        typeof(GDEFXGroupsData).Name,
-        typeof(GDEGameConstantsData).Name,
-        typeof(GDEGameplayTipsData).Name,
-        typeof(GDEHistoryData).Name,
-        typeof(GDEHistoryTypesData).Name,
-        typeof(GDEIndicationsData).Name,
-        typeof(GDEInputCommandData).Name,
-        typeof(GDEIntelligenceData).Name,
-        typeof(GDEItemQualitiesData).Name,
-        typeof(GDEItemsData).Name,
-        typeof(GDEItemSlotsData).Name,
-        typeof(GDELocationNamesData).Name,
-        typeof(GDENotificationsData).Name,
-        typeof(GDEOccupantGroupData).Name,
-        typeof(GDEOverworldLodeSpawnGroupsData).Name,
-        typeof(GDEOverworldLodeSpawnsData).Name,
-        typeof(GDEOverworldMapGenData).Name,
-        typeof(GDEOverworldNationData).Name,
-        typeof(GDEOverworldVisualsData).Name,
-        typeof(GDEProfessionData).Name,
-        typeof(GDERacesData).Name,
-        typeof(GDERealmNamesData).Name,
-        typeof(GDEResearchCategoriesData).Name,
-        typeof(GDEResearchData).Name,
-        typeof(GDERoomCategoryData).Name,
-        typeof(GDERoomNamesData).Name,
-        typeof(GDERoomPermissionData).Name,
-        typeof(GDERoomTemplatesData).Name,
-        typeof(GDEScenariosData).Name,
-        typeof(GDESelectionData).Name,
-        typeof(GDESimulationData).Name,
-        typeof(GDESkillsData).Name,
-        typeof(GDEStartingLoadoutsData).Name,
-        typeof(GDETagObjectSpawnData).Name,
-        typeof(GDETagsData).Name,
-        typeof(GDEToolbarMenusData).Name,
-        typeof(GDETooltipsData).Name,
-        typeof(GDETutorialSegmentData).Name,
-        typeof(GDEUniformData).Name,
-        typeof(GDEWordGroupsData).Name,
-        typeof(GDEXPGrowthData).Name,
-        typeof(GDEZonesData).Name,
-    };
 
-    [MenuItem("Tools/Print Scriptable.cs Types")]
+    [MenuItem("TinyBeast/Print Scriptable.cs Types")]
     public static void FindScriptableInheritors()
     {
         // First, find the type of your Scriptable class

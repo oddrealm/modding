@@ -18,7 +18,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Kwlix
+  Action: 
   Name: Kwlix
   NamePlural: 
   InlineIcon: <sprite=1735>
@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0.22352943, g: 0.7137255, b: 0.7411765, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1364
+  Order: 1545

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_attribute_level
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -22,10 +21,10 @@ MonoBehaviour:
   Name: Level
   NamePlural: 
   InlineIcon: <sprite=931>
-  Description: Each Entity Level increases the value of the core skills related to
-    their profession.
+  Description: Each entity level enhances the core skills relevant to their profession.
+    The maximum entity level is determined by the kingdom's level.
   Icon: 
   TextColor: {r: 0.8627451, g: 0.57254905, b: 0.078431375, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1401
+  Order: 1909

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_entity_cannot_reach_job
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

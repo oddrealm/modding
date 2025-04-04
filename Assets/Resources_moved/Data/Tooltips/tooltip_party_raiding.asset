@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_party_raiding
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -24,7 +23,7 @@ MonoBehaviour:
   InlineIcon: <sprite=1095>
   Description: 
   Icon: 
-  TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  TextColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
   Type: Party
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1830
+  Order: 2423

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_room_transmutation_chamber
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -26,6 +25,6 @@ MonoBehaviour:
     into Void Crystals and Void Shards.
   Icon: sp_room_transmutation_chamber_icon
   TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
-  Type: Ancient Room
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2582
+  Type: Room
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 3180

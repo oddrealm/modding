@@ -18,5 +18,6 @@ public enum AttributeColorTypes
     GREEN_TO_RED = 3,
     RED_TO_GREEN = 4,
     GREEN_POS_RED_NEG = 5,
-    RED_POS_GREEN_NEG = 6
+    RED_POS_GREEN_NEG = 6,
+    MAX_COLOR_OVERRIDE = 7
 }

@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: blueprint_eat_item
   m_EditorClassIdentifier: 
   TooltipID: tooltip_blueprint_eat_item
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies:
   - tag_can_eat
   - entity_status_hungry
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SkillPriorityOverride: 99
+  XP: 1
+  AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   ResearchKey: research_industry_basics0
   Repeat: 0
@@ -27,7 +29,6 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  SkillLevel: 1
   AddBlockSkillToJobSkill: 0
   LocationID: 
   WorkPosition: 0
@@ -42,11 +43,11 @@ MonoBehaviour:
   - faction_player
   - faction_captured
   TargetPermissionsToLock: []
+  OnlyUseResourcesAtJobLocation: 0
   ResourcePool: 1
   ShowItemTypeResourcePermissions: 0
   ResourcePermissionsToLock: []
   MaxWorkers: 0
-  WorkerNeedsAllRequirements: 0
   JobActions:
   - ActionType: 2
     MaxWorkers: 0
@@ -60,6 +61,7 @@ MonoBehaviour:
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
+  AddedProgressPerAction: 0
   ProgressMax: 1
   ProgressBarType: 2
   InvertProgressDisplay: 0
@@ -81,6 +83,8 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: 
+  ChangeFillMass: 0
+  SetMass: 0
   TriggerActivationID: 
   ActiveWorkerStatus: 
   OnJobStartActionID: 
@@ -116,3 +120,4 @@ MonoBehaviour:
   DisposeIfNoSource: 1
   AutoJobOnCreateCooldown: 5
   AutoJobOnFreedCooldown: 1
+  WorkerID: entity_status_hungry

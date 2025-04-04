@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_tag_item_type_stone
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -26,5 +25,5 @@ MonoBehaviour:
   Icon: sp_comp_stone_icon
   TextColor: {r: 0.68235296, g: 0.7294118, b: 0.7490196, a: 1}
   Type: Type
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2332
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 2893

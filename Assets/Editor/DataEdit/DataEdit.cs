@@ -3,7 +3,10 @@ using UnityEngine;
 
 public class DataEdit : EditorWindow
 {
-    [MenuItem("Tools/DataEdit")]
+    private static bool _shouldBlockGUI = false;
+    private int _currentPageIndex;
+
+    [MenuItem("TinyBeast/DataEdit")]
     static void Init()
     {
         // Get existing open window or if none, make a new one:
@@ -14,19 +17,38 @@ public class DataEdit : EditorWindow
     public void OnEnable()
     {
         CurrentPage.OnEnable(this);
+        EditorApplication.playModeStateChanged -= OnPlayModeChanged;
+        EditorApplication.playModeStateChanged += OnPlayModeChanged;
+        EditorApplication.update -= OnUpdate;
+        EditorApplication.update += OnUpdate;
     }
 
-    public void Update()
+    private void OnDisable()
+    {
+        EditorApplication.playModeStateChanged -= OnPlayModeChanged;
+        EditorApplication.update -= OnUpdate;
+    }
+
+    private static void OnPlayModeChanged(PlayModeStateChange state)
+    {
+        _shouldBlockGUI = state == PlayModeStateChange.ExitingEditMode || state == PlayModeStateChange.EnteredPlayMode;
+    }
+
+    public void OnUpdate()
     {
         if (CurrentPage.Window == null) CurrentPage.OnEnable(this);
         CurrentPage.Update();
+
+        if (EditorApplication.isPlaying)
+        {
+            Repaint();
+        }
     }
 
     public void OnDestroy()
     {
+        if (CurrentPage == null) { return; }
         CurrentPage.OnDestroy();
-
-        //Debug.LogError("Destroyed");
     }
 
     public void OnSelectionChange()
@@ -40,7 +62,6 @@ public class DataEdit : EditorWindow
         new DataEditTagPage()
     };
 
-    private int _currentPageIndex;
     public DataEditPage CurrentPage { get { return _pages[_currentPageIndex]; } }
 
     void OnGUI()
@@ -52,16 +73,13 @@ public class DataEdit : EditorWindow
         }
 #endif
 
-        GUILayout.BeginHorizontal();
-
-        for (int i = 0; i < _pages.Length; i++)
+        if (_shouldBlockGUI)
         {
-            GUI.color = _currentPageIndex == i ? Color.cyan : Color.gray;
-            if (GUILayout.Button(_pages[i].PageName)) _currentPageIndex = i;
+#if ODD_REALM_APP
+            CurrentPage.RenderMaster();
+#endif
+            return;
         }
-
-        GUI.color = Color.white;
-        GUILayout.EndHorizontal();
 
         CurrentPage.RenderGUI();
     }

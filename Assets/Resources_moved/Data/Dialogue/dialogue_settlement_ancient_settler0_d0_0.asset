@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: dialogue_settlement_ancient_settler0_d0_0
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

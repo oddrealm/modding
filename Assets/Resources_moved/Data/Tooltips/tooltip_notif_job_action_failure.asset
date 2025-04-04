@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Job Action Failed
-  Name: Job Action Failed
-  NamePlural: Job Actions Failed
+  Action: 
+  Name: Job Failed
+  NamePlural: Jobs Failed!
   InlineIcon: <sprite=1649>
   Description: A worker was unable to do a job action.
   Icon: 
   TextColor: {r: 0.7568628, g: 0.18039216, b: 0.18039216, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1327
+  Order: 1499

@@ -20,6 +20,14 @@ public struct AutomatedItemActionActivation
     public bool DisposeItem;
 }
 
+[System.Serializable]
+public struct RandomEquipmentItem
+{
+    public string ItemID;
+    public int ChanceToEquip; // i.e., ChanceToEquip / 1000; 0 = guaranteed
+    public int ChanceToEquipMaxRoll; // i.e., 1 / MaxRoll
+}
+
 [CreateAssetMenu(menuName = "ScriptableObjects/Items")]
 public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 {
@@ -76,7 +84,6 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     [Header("Tuning set to < 0 will not be used for item generation. Use -1 for items meant to be unique/super rare.")]
     public int TuneRating = 0;
     public string ItemRarity = "item_rarity_common";
-    public RarityTypes RarityType = RarityTypes.COMMON;
     public int DecayRate = 0;
     public string DecayItem = "";
 
@@ -89,10 +96,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public ItemAction[] Actions = new ItemAction[0];
 
     public bool HasTimedActions { get { return TimedActions.Length > 0; } }
-
     public AutomatedItemActionActivation[] TimedActions = new AutomatedItemActionActivation[0];
-
-
     public Dictionary<string, AutomatedItemActionActivation[]> TimedActivatorsByActionID { get; private set; } = new Dictionary<string, AutomatedItemActionActivation[]>();
     public List<string> ActionIDs { get; private set; } = new List<string>();
     public Dictionary<string, ItemAction[]> ActionsByID { get; private set; } = new Dictionary<string, ItemAction[]>();
@@ -184,6 +188,14 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public override bool IsNULL { get { return _isNull; } }
 
 #if ODD_REALM_APP
+    public bool IsHigherRarityThanOtherItem(GDEItemsData otherItem)
+    {
+        GDEItemRarityData ourRarity = DataManager.GetTagObject<GDEItemRarityData>(ItemRarity);
+        GDEItemRarityData theirRarity = DataManager.GetTagObject<GDEItemRarityData>(otherItem.ItemRarity);
+
+        return ourRarity.RarityScore > theirRarity.RarityScore;
+    }
+
     public override void OnLoaded()
     {
         base.OnLoaded();
@@ -263,6 +275,8 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
                 continue;
             }
 
+            bool hasOutput = false;
+
             if (TagIDsHash.Add(Actions[i].ActionID))
             {
                 TagIDs.Add(Actions[i].ActionID);
@@ -295,6 +309,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 
             if (!Actions[i].Buff.IsNULL)
             {
+                hasOutput = true;
                 if (!BuffsByID.TryGetValue(Actions[i].ActionID, out var buffs))
                 {
                     buffs = new BuffData[1];
@@ -318,6 +333,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 
             if (!string.IsNullOrEmpty(Actions[i].Status))
             {
+                hasOutput = true;
                 if (!StatusesByID.TryGetValue(Actions[i].ActionID, out var statuses))
                 {
                     statuses = new string[1];
@@ -341,6 +357,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 
             if (!string.IsNullOrEmpty(Actions[i].SpawnID))
             {
+                hasOutput = true;
                 if (!SpawnsByID.TryGetValue(Actions[i].ActionID, out var spawns))
                 {
                     spawns = new ITagObject[1];
@@ -361,6 +378,13 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
                     SpawnsByID[Actions[i].ActionID] = spawns;
                 }
             }
+
+#if DEV_TESTING
+            if (!hasOutput)
+            {
+                Debug.LogError($"{Key} Item action {actionID} has no output!");
+            }
+#endif
         }
 
         ActionIDs = ActionIDs.OrderBy(a => a).ToList();

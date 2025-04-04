@@ -18,7 +18,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: T'Thdir Log
+  Action: 
   Name: T'Thdir Log
   NamePlural: 
   InlineIcon: <sprite=1191>
@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0.50980395, g: 0.23137257, b: 0.3921569, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2599
+  Order: 3051

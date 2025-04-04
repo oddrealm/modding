@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_somnic_pools
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_somnic_pools
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,18 +28,19 @@ MonoBehaviour:
   - BlueprintID: blueprint_retroanimate_astrasome
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_sleep
     Settings:
       Priority: 3
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

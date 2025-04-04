@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_category_roofs
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Roofs
+  Action: 
   Name: Roofs
-  NamePlural: 
+  NamePlural: Roofs
   InlineIcon: <sprite=1377>
   Description: 
   Icon: sp_category_roofs_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1955
+  Order: 2226

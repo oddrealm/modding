@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_research_category_tomek
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Tomek
-  Name: Tomek
+  Action: Tomek Technology
+  Name: Tomek Technology
   NamePlural: 
-  InlineIcon: 
+  InlineIcon: <sprite=243>
   Description: 
   Icon: 
   TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2526
+  Order: 3128

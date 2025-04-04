@@ -221,6 +221,16 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
         return defaultPermission;
     }
 
+    public bool IsPermittedProfession(string professionID)
+    {
+        if (ProfessionPermissionsByID.TryGetValue(professionID, out var permission))
+        {
+            return permission.CanSpawnWith;
+        }
+
+        return false;
+    }
+
     public string Race = "";
     public string[] PermittedItemSlots;
     public HashSet<string> PermittedItemSlotsHash = new HashSet<string>();
@@ -260,50 +270,6 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
     {
         public string AttributeID;
         public int StartingBase;
-    }
-
-    [System.Serializable]
-    public class EntityStatusAction
-    {
-        public enum StatusEvent
-        {
-            ADDED,
-            REMOVED,
-            ACTIVATED_BY_JOB
-        }
-
-        public enum SpawnPoint
-        {
-            ENTITY,
-            FOCUS
-        }
-
-        public string TriggerStatusID = "";
-        public StatusEvent TriggerEvent = StatusEvent.ADDED;
-        public string[] TriggerFaction;
-        public HashSet<string> TriggerFactionHash = new HashSet<string>();
-
-        public string AddStatus = "";
-        public string RemoveStatus = "";
-        public int StartStatusCooldownMinutesMin = 0;
-        public int StartStatusCooldownMinutesMax = 0;
-
-        public string EntitySpawnGroupID = "";
-        public SpawnPoint EntitySpawnPoint = SpawnPoint.ENTITY;
-        public string ItemSpawnGroupID = "";
-        public SpawnPoint ItemSpawnPoint = SpawnPoint.ENTITY;
-        public int ModelSpawnIndex = 0;
-        public SpawnPoint ModelSpawnPoint = SpawnPoint.ENTITY;
-
-        public void OnLoaded()
-        {
-            TriggerFactionHash.Clear();
-
-            for (int i = 0; TriggerFaction != null && i < TriggerFaction.Length; i++)
-            {
-                TriggerFactionHash.Add(TriggerFaction[i]);
-            }
-        }
     }
 
     public void SetSimulationID(string simID)
@@ -357,6 +323,57 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
         }
 
         ProfessionPermissionsByID.Clear();
+
+#if DEV_TESTING
+        List<ITagObject> professions = DataManager.GetTagObjects<GDEProfessionData>();
+
+        for (int i = 0; i < professions.Count; i++)
+        {
+            bool hasProfession = false;
+
+            for (int j = 0; j < ProfessionPermissions.Count; j++)
+            {
+                if (ProfessionPermissions[j].ProfessionID == professions[i].Key)
+                {
+                    hasProfession = true;
+                    break;
+                }
+            }
+
+            if (!hasProfession)
+            {
+                Debug.LogError($"Adding profession permission: {Key}.{professions[i].Key}");
+                ProfessionPermissions.Add(new ProfessionPermission()
+                {
+                    ProfessionID = professions[i].Key,
+                    CanAssign = true,
+                    CanSpawnWith = true
+                });
+            }
+        }
+
+        //GDERacesData race = DataManager.GetTagObject<GDERacesData>(Race);
+
+        //if (race.Intelligence == "intelligence_non_sapient")
+        //{
+        //    // Disable all professions but animal
+        //    for (int i = 0; i < professions.Count; i++)
+        //    {
+        //        if (professions[i].Key != "profession_animal")
+        //        {
+        //            ProfessionPermission permission = new ProfessionPermission()
+        //            {
+        //                ProfessionID = professions[i].Key,
+        //                CanAssign = false,
+        //                CanSpawnWith = false
+        //            };
+
+        //            SetProfessionPermission(permission);
+        //            Debug.LogError($"Disabling profession permission: {Key}.{professions[i].Key}");
+        //        }
+        //    }
+        //}
+#endif
 
         for (int i = 0; i < ProfessionPermissions.Count; i++)
         {

@@ -12,6 +12,8 @@ using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public abstract class DataEditPage
 {
@@ -21,41 +23,28 @@ public abstract class DataEditPage
     protected string _listFilter = "";
     protected List<AsyncOperationHandle<IList<UnityEngine.Object>>> _activeLoads = new List<AsyncOperationHandle<IList<UnityEngine.Object>>>();
     protected List<UnityEngine.Object> _searchedObjects = new List<UnityEngine.Object>();
-    protected List<GDEEntitiesData> _entities = new List<GDEEntitiesData>();
-    protected List<GDEAttributesData> _attributes = new List<GDEAttributesData>();
-    protected List<GDEScenariosData> _scenarios = new List<GDEScenariosData>();
-    protected List<GDEItemsData> _items = new List<GDEItemsData>();
-    protected List<GDETagsData> _tags = new List<GDETagsData>();
-    protected List<GDETagObjectSpawnData> _tagObjSpawns = new List<GDETagObjectSpawnData>();
     protected Dictionary<string, Sprite> _tooltipSprites = new Dictionary<string, Sprite>();
-    protected List<GDEBlocksData> _blocks = new List<GDEBlocksData>();
-    protected List<GDEBlueprintsData> _blueprints = new List<GDEBlueprintsData>();
-    protected List<GDEAttackGroupsData> _attackGroups = new List<GDEAttackGroupsData>();
-    protected Dictionary<string, GDEAttackGroupsData> _attackGroupssByKey = new Dictionary<string, GDEAttackGroupsData>();
-    protected List<GDEAttacksData> _attacks = new List<GDEAttacksData>();
-    protected Dictionary<string, GDEAttacksData> _attacksByKey = new Dictionary<string, GDEAttacksData>();
-    protected List<GDESkillsData> _skills = new List<GDESkillsData>();
-    protected List<string> _skillKeys = new List<string>();
-    protected List<GDEBlockVisualsData> _blockVisuals = new List<GDEBlockVisualsData>();
-    protected List<GDEBlockPlantsData> _blockPlants = new List<GDEBlockPlantsData>();
-    protected List<GDERoomTemplatesData> _rooms = new List<GDERoomTemplatesData>();
     protected static List<Scriptable> _allData = new List<Scriptable>();
     protected static Dictionary<string, List<Scriptable>> _allDataByType = new Dictionary<string, List<Scriptable>>();
     protected static readonly TextInfo _textInfo = new CultureInfo("en-US", false).TextInfo;
-
+    private Dictionary<string, List<string>> _dataKeysByType = new();
+    private HashSet<string> _expandedKeys = new HashSet<string>();
     protected DataEdit _window;
-
     protected List<TuningKeyWordHelper> _helpers = new List<TuningKeyWordHelper>();
     protected bool _useHelpers = false;
     protected bool _showHelpers = true;
     protected Vector2 _helpersScroll;
     protected bool _disableHelperMismatchGUI = true;
+    protected List<string> _scriptTypes = new List<string>();
+    private List<string> ids = new List<string>();
+    private int _unusedTransitionKey = 1;
+    private HashSet<int> _indexHash = new HashSet<int>();
 
     public abstract string PageName { get; }
     public DataEdit Window { get { return _window; } }
 
-    private HashSet<string> _expandedKeys = new HashSet<string>();
     private const string SAVE_KEY_EXPANDED_KEYS = "save_key_expanded_keys";
+    private readonly Color COLOR_PURPLE = new Color(0.7f, 0f, 0.7f, 1f);
 
     private bool IsExpanded(string key)
     {
@@ -86,6 +75,11 @@ public abstract class DataEditPage
         {
             _expandedKeys.Clear();
         }
+    }
+
+    public virtual void OnDisable()
+    {
+
     }
 
     public virtual void OnDestroy()
@@ -124,10 +118,6 @@ public abstract class DataEditPage
     {
 
     }
-
-    private List<string> ids = new List<string>();
-    private int _unusedTransitionKey = 1;
-    private HashSet<int> _indexHash = new HashSet<int>();
 
     protected void RenderNextAvailableIndex(int listCount, System.Func<int, int> getIndex, System.Action<int> onIndexAlreadyUsed)
     {
@@ -178,7 +168,10 @@ public abstract class DataEditPage
     private Vector2 _unassignedBlueprintScroll;
     private List<string> _selectedIDs = new List<string>();
     protected string _copiedText;
-    //private List<GDEBlockModelData> _models = new List<GDEBlockModelData>();
+    private GameObject _masterObj;
+#if ODD_REALM_APP
+    private Master _master;
+#endif
 
     protected virtual void MarkDataNeedsReload()
     {
@@ -192,389 +185,150 @@ public abstract class DataEditPage
 
     public virtual void RenderGUI()
     {
-
         if (_dataNeedsReload)
         {
             LoadAllData();
             _dataNeedsReload = false;
         }
 
-        //if (_models.Count == 0)
-        //{
-        //    //DataUtility.ImportData<GDEBlockModelData>(_models, "blockmodel");
-        //}
-
         if (Event.current.keyCode == KeyCode.Escape)
         {
             GUI.FocusControl(null);
         }
 
-        //if (UnityEditor.Selection.objects.Length > 0)
+#if ODD_REALM_APP
+        RenderMaster();
+#endif
+        BEGIN_HOR();
+
+        if (GUILayout.Button("Reload Data"))
         {
+            LoadAllData();
+        }
 
-            BEGIN_HOR();
-
-            if (GUILayout.Button("Reload Data"))
+        GUI.color = Color.yellow;
+        if (GUILayout.Button("SAVE ALL"))
+        {
+            if (EditorUtility.DisplayDialog("Save All Data?", "", "OK", "Cancel"))
             {
-                //SetDataDirty();
-                LoadAllData();
-            }
-
-            GUI.color = Color.yellow;
-            if (GUILayout.Button("SAVE ALL"))
-            {
-                for (int i = 0; i < _allLabels.Length; i++)
+                for (int i = 0; i < DataLabels.AllLabels.Length; i++)
                 {
-                    DataUtility.ImportAllScriptables(_allLabels[i], EditorUtility.SetDirty);
+                    DataUtility.ImportAllScriptables(DataLabels.AllLabels[i], EditorUtility.SetDirty);
                 }
 
                 AssetDatabase.SaveAssets();
             }
+        }
 
-            GUI.color = Color.magenta;
+        GUI.color = Color.magenta;
 
-            if (GUILayout.Button("FOO"))
+        if (GUILayout.Button("FOO"))
+        {
+            FOO(_fooTxt, _fooInt);
+        }
+
+
+        _fooTxt = TEXT_INPUT(_fooTxt);
+        _fooInt = INT_INPUT(_fooInt);
+        GUI.color = Color.white;
+
+        if (Selection.objects != null && Selection.objects.Length > 0)
+        {
+            DELETE_BTN(CLEAR_SELECT);
+            BTN($"{Selection.objects.Length} Selected", () => { });
+        }
+
+        END_HOR();
+    }
+
+#if ODD_REALM_APP
+    public virtual void RenderMaster()
+    {
+        if (_masterObj == null || _master == null)
+        {
+            _masterObj = GameObject.Find("master");
+
+            if (_masterObj != null)
             {
-                FOO(_fooTxt, _fooInt);
+                _master = _masterObj.GetComponent<Master>();
             }
+        }
 
-
-            _fooTxt = TEXT_INPUT(_fooTxt);
-            _fooInt = INT_INPUT(_fooInt);
-            GUI.color = Color.white;
-
-            if (Selection.objects != null && Selection.objects.Length > 0)
+        if (_master == null) { return; }
+        
+        if (!Application.isPlaying)
+        {
+            BEGIN_HOR();
+            BTN("SPLASH", Color.white, () =>
             {
-                DELETE_BTN(CLEAR_SELECT);
-                BTN($"{Selection.objects.Length} Selected", () => { });
-            }
-
-            if (_selectedIDs.Count > 0)
+                _master.LoadType = Master.QuickLoadTypes.SPLASH_SCREEN;
+                EditorApplication.isPlaying = true;
+            }, GUILayout.Height(24));
+            BTN("LAST SAVE", Color.white, () =>
             {
-                BTN("Unlock " + _selectedIDs.Count, Color.grey, () => { _selectedIDs.Clear(); });
-            }
-            else if (Selection.objects.Length > 0)
+                _master.LoadType = Master.QuickLoadTypes.LAST_SAVE;
+                EditorApplication.isPlaying = true;
+            }, GUILayout.Height(24));
+            BTN("OVERWORLD", Color.white, () =>
             {
-                BTN("Lock", Color.grey, () =>
-                {
-                    _selectedIDs.Clear();
-
-                    for (int i = 0; i < UnityEditor.Selection.objects.Length; i++)
-                    {
-                        _selectedIDs.Add(UnityEditor.Selection.objects[i].name);
-                    }
-                });
-            }
-
+                _master.LoadType = Master.QuickLoadTypes.INTO_OVERWORLD_MAP;
+                EditorApplication.isPlaying = true;
+            }, GUILayout.Height(24));
+            BTN("GAME", Color.green, () =>
+            {
+                _master.LoadType = Master.QuickLoadTypes.INTO_GAME;
+                EditorApplication.isPlaying = true;
+            }, GUILayout.Height(24));
             END_HOR();
         }
 
-        //if (_unassignedBlueprints.Count > 0)
-        //{
-        //    _unassignedBlueprintScroll = GUILayout.BeginScrollView(_unassignedBlueprintScroll);
-        //    GUI.color = Color.yellow;
-        //    bool rebuild = false;
-        //    for (int i = 0; i < _unassignedBlueprints.Count; i++)
-        //    {
-        //        if (_ignoredBlueprints.Contains(_unassignedBlueprints[i])) { continue; }
+        bool showSettings = EXPAND_TOGGLE("Settings", Color.white, 32, "master_settings");
 
-        //        GUILayout.BeginHorizontal();
+        if (showSettings)
+        {
+            List<string> loadoutKeys = GetDataKeysByType<GDEStartingLoadoutsData>();
+            List<string> nationKeys = GetDataKeysByType<GDEOverworldNationData>();
+            List<string> biomeKeys = GetDataKeysByType<GDEBiomesData>();
+            EditorGUI.BeginChangeCheck();
+            BEGIN_INDENT();
+            LABEL("New Game:", Color.grey);
+            _master.LoadoutID = DROP_DOWN("Loadout", _master.LoadoutID, loadoutKeys);
+            _master.NationID = DROP_DOWN("Nation", _master.NationID, nationKeys);
+            _master.BiomeID = DROP_DOWN("Biome", _master.BiomeID, biomeKeys);
+            LABEL("GUI:", Color.grey);
+            _master.ShowGUIStats = GUILayout.Toggle(_master.ShowGUIStats, "Show GUI Stats");
+            _master.ShowTutorialStats = GUILayout.Toggle(_master.ShowTutorialStats, "Show Tutorial Stats");
+            _master.ShowSaveLoadTimesGUI = GUILayout.Toggle(_master.ShowSaveLoadTimesGUI, "Show Save Load Times");
+            _master.ShowJobGUI = GUILayout.Toggle(_master.ShowJobGUI, "Show Job GUI");
+            _master.ShowWorldGUI = GUILayout.Toggle(_master.ShowWorldGUI, "Show World GUI");
+            _master.ShowProgressGUI = GUILayout.Toggle(_master.ShowProgressGUI, "Show Progress GUI");
+            _master.ShowAllInstanceTags = GUILayout.Toggle(_master.ShowAllInstanceTags, "Show All Instance Tags");
+            LABEL("Misc:", Color.grey);
+            _master.UnlockAllTech = GUILayout.Toggle(_master.UnlockAllTech, "Unlock All Tech");
+            END_INDENT();
 
-        //        if (GUILayout.Button("x", GUILayout.Width(16)))
-        //        {
-        //            _ignoredBlueprints.Add(_unassignedBlueprints[i]);
-        //        }
+            if (EditorGUI.EndChangeCheck())
+            {
+                if (!Application.isPlaying)
+                {
+                    EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+                }
+            }
+        }
 
-        //        if (UnityEditor.Selection.objects.Length > 0)
-        //        {
-        //            //GDERoomTemplatesData room = Selection.objects[0] as GDERoomTemplatesData;
+        SPACE(8);
 
-        //            //if (room != null && GUILayout.Button("Add To " + room.Key, GUILayout.Width(120)))
-        //            //{
-        //            //    bool inRoom = false;
+        if (EditorApplication.isPlaying)
+        {
+            _master.RenderGUI();
+        }
 
-        //            //    for (int n = 0; n < room.DefaultAutoJobs.Count; n++)
-        //            //    {
-        //            //        if (room.DefaultAutoJobs[n].BlueprintID != _unassignedBlueprints[i]) { continue; }
-
-        //            //        inRoom = true;
-        //            //        break;
-        //            //    }
-
-        //            //    if (!inRoom)
-        //            //    {
-        //            //        room.DefaultAutoJobs.Add(new GDERoomTemplatesData.DefaultJob()
-        //            //        {
-        //            //            BlueprintID = _unassignedBlueprints[i]
-        //            //        });
-
-        //            //        EditorUtility.SetDirty(room);
-        //            //        rebuild = true;
-        //            //    }
-        //            //}
-        //        }
-
-        //        GUILayout.Label(_unassignedBlueprints[i]);
-
-
-        //        GUILayout.EndHorizontal();
-        //    }
-
-        //    if (rebuild)
-        //    {
-        //        RebuildUnassignedBlueprintsList();
-        //    }
-
-        //    GUI.color = Color.white;
-        //    GUILayout.EndScrollView();
-        //}
-
-        //if (UnityEditor.Selection.objects != null)
-        //{
-        //    if (GUILayout.Button("Clear Selections"))
-        //    {
-        //        ClearLockedSelections();
-        //    }
-
-        //    GUILayout.BeginHorizontal();
-        //    GUILayout.Label("Prev Name", GUILayout.Width(128));
-        //    _prevName = GUILayout.TextField(_prevName);
-        //    GUILayout.EndHorizontal();
-
-        //    if (_lockedSelections.Count > 0)
-        //    {
-
-        //        GUILayout.BeginHorizontal();
-        //        GUILayout.Label("Name Token", GUILayout.Width(128));
-        //        _token = GUILayout.TextField(_token);
-        //        GUILayout.EndHorizontal();
-        //        GUI.color = Color.yellow;
-
-        //        GUILayout.BeginHorizontal();
-        //        GUILayout.Label("Append", GUILayout.Width(128));
-        //        _append = GUILayout.TextField(_append);
-        //        GUILayout.EndHorizontal();
-        //        GUI.color = Color.yellow;
-
-        //        string selectionName = UnityEditor.Selection.objects[0].name;
-
-        //        if (GUILayout.Button(string.Format("Duplicate {0} x {1} Times (Locked Selections)", selectionName, _lockedSelections.Count)))
-        //        {
-        //            DuplicateSelectionAndUseLockNames(_prevName, _token);
-        //        }
-
-        //        GUI.color = Color.grey;
-        //        string newName = UnityEditor.Selection.objects[0].name;
-
-        //        if (!string.IsNullOrEmpty(_token))
-        //        {
-        //            newName = newName.Replace(_token, "") + _append;
-        //        }
-
-        //        if (!string.IsNullOrEmpty(_prevName))
-        //        {
-        //            newName = _lockedSelections[0].name.Replace(_prevName, newName);
-        //            GUILayout.Label(_lockedSelections[0].name + " -> " + newName);
-        //        }
-
-        //        //if (!string.IsNullOrEmpty(_prevName))
-        //        //{
-        //        //    for (int i = 0; Selection.objects.Length > 0 && i < _lockedSelections.Count; i++)
-        //        //    {
-        //        //        if (_lockedSelections[i] == null) { continue; }
-        //        //        string newName = Selection.objects[0].name;
-
-        //        //        if (!string.IsNullOrEmpty(_token))
-        //        //        {
-        //        //            newName = newName.Replace(_token, "") + _append;
-        //        //        }
-
-        //        //        newName = _lockedSelections[i].name.Replace(_prevName, newName);
-        //        //        GUILayout.Label(_lockedSelections[i].name + " -> " + newName);
-        //        //    }
-        //        //}
-
-        //    }
-        //    else
-        //    {
-
-        //        GUILayout.BeginHorizontal();
-        //        GUILayout.Label("New Name", GUILayout.Width(128));
-        //        _newName = GUILayout.TextField(_newName);
-        //        GUILayout.EndHorizontal();
-        //        GUI.color = Color.yellow;
-
-
-        //        if (GUILayout.Button("Duplicate Selections " + UnityEditor.Selection.objects.Length))
-        //        {
-        //            DuplicateSelections(_prevName, _newName);
-        //        }
-
-        //        GUI.color = Color.grey;
-
-        //        if (GUILayout.Button("Lock Selections"))
-        //        {
-        //            LockSelections();
-        //        }
-        //    }
-
-        //    GUI.color = Color.white;
-        //}
-
-        //GUILayout.BeginHorizontal();
-        //if (GUILayout.Button("Store Unused Transition Key (" + _unusedTransitionKey + ")"))
-        //{
-        //    _unusedTransitionKey = 1;
-
-
-        //    for (int i = 0; i < UnityEditor.Selection.objects.Length; i++)
-        //    {
-        //        GDEBlockVisualsData app = UnityEditor.Selection.objects[i] as GDEBlockVisualsData;
-
-        //        if (app == null) { continue; }
-        //        if (app.TransitionKey < _unusedTransitionKey) { continue; }
-
-        //        _unusedTransitionKey = app.TransitionKey + 1;
-        //    }
-
-        //    for (int i = 0; i < UnityEditor.Selection.objects.Length; i++)
-        //    {
-        //        GDEBlockVisualsData app = UnityEditor.Selection.objects[i] as GDEBlockVisualsData;
-
-        //        if (app == null) { continue; }
-        //        if (app.TransitionKey == _unusedTransitionKey)
-        //        {
-        //            _unusedTransitionKey = 0;
-        //        }
-        //    }
-        //}
-
-        //if (GUILayout.Button("Set Keys By name"))
-        //{
-        //    for (int n = 0; n < UnityEditor.Selection.objects.Length; n++)
-        //    {
-        //        UnityEngine.Object o = UnityEditor.Selection.objects[n];
-
-        //        if (o == null) { continue; }
-
-        //        FieldInfo fi = o.GetType().GetField("Key");
-
-        //        if (fi == null || fi.IsPrivate) { Debug.LogError("No key found for: " + o.name); continue; }
-
-        //        Debug.Log("Key = " + o.name);
-        //        fi.SetValue(o, o.name);
-        //        EditorUtility.SetDirty(o);
-        //    }
-        //}
-
-        //if (GUILayout.Button("Store IDs"))
-        //{
-        //    ids.Clear();
-
-        //    for (int i = 0; i < UnityEditor.Selection.objects.Length; i++)
-        //    {
-        //        ids.Add(UnityEditor.Selection.objects[i].name);
-        //    }
-        //}
-
-        //if (GUILayout.Button("Clear IDs"))
-        //{
-        //    ids.Clear();
-        //}
-        //GUILayout.EndHorizontal();
-
-        //for (int i = 0; i < ids.Count; i++)
-        //{
-        //    GUILayout.Label(ids[i]);
-        //}
-
-        //GUILayout.BeginHorizontal();
-        //GUILayout.Label("List Filter");
-        //_listFilter = GUILayout.TextField(_listFilter);
-        //GUILayout.EndHorizontal();
-
-
-        //BEGIN_HOR();
-        //BTN("Load Editor", Color.magenta, LoadTuning);
-        //BTN("Save Editor", Color.magenta, SaveTuning);
-        //END_HOR();
-
-        //RenderTuningHelpers();
     }
+#endif
 
     protected virtual void FOO(string fooTxt, int fooInt)
     {
 
-    }
-
-    protected void RenderProfessionSkills(GDEProfessionData prof)
-    {
-        if (prof != null)
-        {
-            LABEL(prof.Key);
-            for (int i = 0; i < _skills.Count; i++)
-            {
-                BEGIN_HOR();
-                if (prof.SkillsActiveByDefault.Contains(_skills[i].Key))
-                {
-                    BTN("-", Color.red, () =>
-                    {
-                        List<string> t = new List<string>(prof.SkillsActiveByDefault);
-                        t.Remove(_skills[i].Key);
-                        prof.SkillsActiveByDefault = t.ToArray();
-                    }, 24);
-                }
-                else
-                {
-                    BTN("+", Color.green, () =>
-                    {
-                        List<string> t = new List<string>(prof.SkillsActiveByDefault);
-                        t.Add(_skills[i].Key);
-                        prof.SkillsActiveByDefault = t.ToArray();
-                    }, 24);
-                }
-                LABEL(_skills[i].Key);
-                END_HOR();
-            }
-
-            MARK_DIRTY(prof);
-        }
-    }
-
-    private void RebuildUnassignedBlueprintsList()
-    {
-        _unassignedBlueprints.Clear();
-        HashSet<string> blueprintsInRoom = new HashSet<string>();
-
-        for (int i = 0; i < _rooms.Count; i++)
-        {
-            //for (int n = 0; n < _blueprints.Count; n++)
-            //{
-            //    if (blueprintsInRoom.Contains(_blueprints[n].Key)) { continue; }
-
-            //    bool inRoom = false;
-
-            //    for (int j = 0; j < _rooms[i].DefaultAutoJobs.Count; j++)
-            //    {
-            //        if (_rooms[i].DefaultAutoJobs[j].BlueprintID != _blueprints[n].Key) { continue; }
-
-            //        inRoom = true;
-            //        break;
-            //    }
-
-            //    if (!inRoom) { continue; }
-
-            //    blueprintsInRoom.Add(_blueprints[n].Key);
-            //}
-        }
-
-        for (int i = 0; i < _blueprints.Count; i++)
-        {
-            if (blueprintsInRoom.Contains(_blueprints[i].Key)) { continue; }
-
-            _unassignedBlueprints.Add(_blueprints[i].Key);
-
-        }
     }
 
     private void OverwriteFields(object a, object b)
@@ -808,142 +562,27 @@ public abstract class DataEditPage
         _dataNeedsReload = true;
     }
 
-    private string[] _allLabels = new string[] {"ambientmusic",
-                                                "animations",
-                                                "animationsetgroups",
-                                                "animationsets",
-                                                "animationstates",
-                                                "appearancegroups",
-                                                "appearances",
-                                                "artifact",
-                                                "attackgroups",
-                                                "attacks",
-                                                "attributes",
-                                                "audiogroups",
-                                                "biomenames",
-                                                "biomenoise",
-                                                "biomes",
-                                                "biomeseasons",
-                                                "biometerraingen",
-                                                "biomeweather",
-                                                "blockplants",
-                                                "blockplatforms",
-                                                "blocks",
-                                                "blockvisuals",
-                                                "blueprints",
-                                                "blueprintcategory",
-                                                "characteraccessory",
-                                                "charactercolormask",
-                                                "controlgroup",
-                                                "dialogue",
-                                                "dialoguegroups",
-                                                "discoverygroups",
-                                                "discoverynames",
-                                                "entities",
-                                                "entityage",
-                                                "entityagetype",
-                                                "entitynames",
-                                                "entityschema",
-                                                "entitysizes",
-                                                "entityspawngroups",
-                                                "entitystatus",
-                                                "entitytuning",
-                                                "faction",
-                                                "familymember",
-                                                "fish",
-                                                "fishspawngroups",
-                                                "fxgroups",
-                                                "gameconstants",
-                                                "gameplaytips",
-                                                "history",
-                                                "historytypes",
-                                                "indications",
-                                                "inputcommand",
-                                                "intelligence",
-                                                "itemqualities",
-                                                "items",
-                                                "itemslots",
-                                                "itemrarity",
-                                                "locationnames",
-                                                "notifications",
-                                                "occupantgroup",
-                                                "overworldlodespawngroups",
-                                                "overworldlodespawns",
-                                                "overworldmapgen",
-                                                "overworldnation",
-                                                "overworldvisuals",
-                                                "profession",
-                                                "races",
-                                                "realmnames",
-                                                "research",
-                                                "researchcategories",
-                                                "roomnames",
-                                                "roompermission",
-                                                "roomtemplates",
-                                                "roomcategory",
-                                                "scenarios",
-                                                "tutorialsegment",
-                                                "skills",
-                                                "startingloadouts",
-                                                "tags",
-                                                "toolbarmenus",
-                                                "tooltips",
-                                                "wordgroups",
-                                                "xpgrowth",
-                                                "zones",
-                                                "selection",
-                                                "designationfilter",
-                                                "simulation",
-                                                "blockfill",
-                                                "cave",
-                                                "tagobjectspawn",
-                                                "uniform",
-                                                "party",
-                                                "prefab",
-                                                "landmark",
-                                                "entityspawn",
-                                                "leader"
-    };
-
     protected virtual void LoadAllData()
     {
         _dataNeedsReload = false;
-        //LoadAttributes();
-        //LoadEntities();
-        //LoadBlocks();
-        //LoadBlueprints();
-        ////LoadModels();
-        //LoadItems();
-        //LoadScenarios();
-        //LoadEntityBuffGroups();
-        //LoadEntityBuffTuning();
-        //LoadEntityBuffs();
-        //LoadAttackGroups();
-        //LoadAttacks();
-        //LoadSkills();
-        //LoadBlockVisuals();
-        //LoadBlockPlants();
-        //LoadTags();
-        //LoadRooms();
-        //_tooltipSprites.Clear();
-
-
         _allData.Clear();
         _allDataByType.Clear();
         _scriptsByTag.Clear();
         _scriptsByKey.Clear();
+        _scriptTypes.Clear();
+        _dataKeysByType.Clear();
 
         // Load all labels.
         float loaded = 0f;
 
-
-        for (int i = 0; i < _allLabels.Length; i++)
+        for (int i = 0; i < DataLabels.AllLabels.Length; i++)
         {
             EditorUtility.DisplayProgressBar("Loading scripts", "", loaded);
 
-            DataUtility.ImportAllScriptables(_allLabels[i], (Scriptable script) =>
+            DataUtility.ImportAllScriptables(DataLabels.AllLabels[i], (Scriptable script) =>
             {
                 _allData.Add(script);
+                script.UpdateKey();
 
                 if (_scriptsByKey.TryGetValue(script.Key, out var prevScript))
                 {
@@ -957,13 +596,15 @@ public abstract class DataEditPage
                 if (!_allDataByType.TryGetValue(script.GetType().Name, out List<Scriptable> list))
                 {
                     list = new List<Scriptable>();
-                    _allDataByType.Add(script.GetType().Name, list);
+                    string scriptType = script.GetType().Name;
+                    _allDataByType.Add(scriptType, list);
+                    _scriptTypes.Add(scriptType);
                 }
 
                 list.Add(script);
             });
 
-            loaded = i + 1 / (float)_allLabels.Length;
+            loaded = i + 1 / (float)DataLabels.AllLabels.Length;
         }
 
 
@@ -998,6 +639,29 @@ public abstract class DataEditPage
         }
 
         return null;
+    }
+
+    public List<string> GetDataKeysByType<T>() where T : Scriptable
+    {
+        string typeName = typeof(T).Name;
+
+        if (_dataKeysByType.TryGetValue(typeName, out var list))
+        {
+            return list;
+        }
+
+        list = new List<string>();
+
+        List<Scriptable> data = GetDataByType<T>();
+
+        for (int i = 0; data != null && i < data.Count; i++)
+        {
+            list.Add(data[i].Key);
+        }
+
+        _dataKeysByType.Add(typeName, list);
+
+        return list;
     }
 
     private static Dictionary<string, Scriptable> _scriptsByKey = new Dictionary<string, Scriptable>();
@@ -1751,9 +1415,8 @@ public abstract class DataEditPage
         EditorGUI.DrawRect(rect, clr);
     }
 
-    protected Enum DROP_DOWN_MASK(object o, string label, int width = -1)
+    protected T DROP_DOWN_MASK<T>(T o, string label, int width = -1) where T : Enum
     {
-        Enum e = o as Enum;
         BEGIN_HOR();
 
         if (!string.IsNullOrEmpty(label))
@@ -1761,28 +1424,25 @@ public abstract class DataEditPage
             LABEL(label);
         }
 
-        e = DROP_DOWN_MASK(o, width);
-
+        o = DROP_DOWN_MASK<T>(o, width);
         END_HOR();
-
-        return e;
+        return o;
     }
 
-    protected Enum DROP_DOWN_MASK(object o, int width = -1)
+    protected T DROP_DOWN_MASK<T>(T o, int width = -1) where T : Enum
     {
         if (width > 0)
         {
-            return EditorGUILayout.EnumFlagsField((Enum)o, GUILayout.Width(width));
+            return (T)(object)EditorGUILayout.EnumFlagsField(o, GUILayout.Width(width));
         }
         else
         {
-            return EditorGUILayout.EnumFlagsField((Enum)o);
+            return (T)(object)EditorGUILayout.EnumFlagsField(o);
         }
     }
 
-    protected Enum DROP_DOWN(object o, string label, int width = -1)
+    protected T DROP_DOWN<T>(T o, string label, int width = -1) where T : Enum
     {
-        Enum e = o as Enum;
         BEGIN_HOR();
 
         if (!string.IsNullOrEmpty(label))
@@ -1790,33 +1450,26 @@ public abstract class DataEditPage
             LABEL(label);
         }
 
-        e = DROP_DOWN(o, width);
-
+        T e = (T)DROP_DOWN(o, width);
         END_HOR();
-
         return e;
     }
 
-    protected Enum DROP_DOWN(object o, int width = -1)
+    protected T DROP_DOWN<T>(T o, int width = -1) where T : Enum
     {
-        Enum e = o as Enum;
-        //BEGIN_HOR();
-
         if (width > 0)
         {
-            e = EditorGUILayout.EnumPopup((Enum)o, GUILayout.Width(width));
+            o = (T)(object)EditorGUILayout.EnumPopup(o, GUILayout.Width(width));
         }
         else
         {
-            e = EditorGUILayout.EnumPopup((Enum)o, GUILayout.ExpandWidth(true));
+            o = (T)(object)EditorGUILayout.EnumPopup(o, GUILayout.ExpandWidth(true));
         }
 
-        //END_HOR();
-
-        return e;
+        return o;
     }
 
-    protected string DROP_DOWN(string selectionID, List<string> keys, int width = -1)
+    protected string DROP_DOWN(string label, string selectionID, List<string> keys, int width = -1)
     {
         int index = 0;
 
@@ -1827,6 +1480,9 @@ public abstract class DataEditPage
             break;
         }
 
+        BEGIN_HOR();
+        LABEL(label);
+
         if (width > 0)
         {
             index = EditorGUILayout.Popup(index, keys.ToArray(), GUILayout.Width(width));
@@ -1835,6 +1491,8 @@ public abstract class DataEditPage
         {
             index = EditorGUILayout.Popup(index, keys.ToArray());
         }
+
+        END_HOR();
 
         if (index >= keys.Count) { return selectionID; }
 
@@ -1879,6 +1537,7 @@ public abstract class DataEditPage
     }
 
     private Dictionary<string, int> _expandedCounts = new Dictionary<string, int>();
+    private Dictionary<string, Dictionary<string, string>> _saveKeys = new();
 
     protected bool EXPAND_TOGGLE(string labelTxt, Color txtColor, int width = -1, string saveGroup = "")
     {
@@ -1886,11 +1545,21 @@ public abstract class DataEditPage
 
         if (!string.IsNullOrEmpty(saveGroup))
         {
-            saveKey += saveGroup;
+            if (!_saveKeys.TryGetValue(labelTxt, out var keys))
+            {
+                keys = new Dictionary<string, string>();
+                _saveKeys.Add(labelTxt, keys);
+            }
+
+            if (!keys.TryGetValue(saveGroup, out saveKey))
+            {
+                saveKey = labelTxt + "_" + saveGroup;
+                keys.Add(saveGroup, saveKey);
+            }
         }
 
         bool isExpanded = IsExpanded(saveKey);
-        bool newExpanded = TOGGLE(isExpanded, "[-]", "[+]", labelTxt, txtColor, width);
+        bool newExpanded = TOGGLE(isExpanded, "[-]", "[+]", labelTxt, Color.white, txtColor, width);
 
         if (newExpanded != isExpanded)
         {
@@ -1916,6 +1585,17 @@ public abstract class DataEditPage
         Color c = (v ? txtColor : Color.grey);
         BEGIN_HOR();
         BTN(v ? onTxt : offTxt, c, () => { v = !v; }, width == -1 ? TOGGLE_BTN_SIZE : width, false, false);
+        LABEL(labelTxt, txtColor);
+        END_HOR();
+
+        return v;
+    }
+
+    protected bool TOGGLE(bool v, string onTxt, string offTxt, string labelTxt, Color btnColor, Color txtColor, int width = -1)
+    {
+        btnColor = (v ? btnColor : Color.grey);
+        BEGIN_HOR();
+        BTN(v ? onTxt : offTxt, btnColor, () => { v = !v; }, width == -1 ? TOGGLE_BTN_SIZE : width, false, false);
         LABEL(labelTxt, txtColor);
         END_HOR();
 
@@ -2002,7 +1682,7 @@ public abstract class DataEditPage
         BTN("p", Color.yellow, () =>
         {
             txt = _copiedText;
-        }, 16);
+        }, 18);
 
         return txt;
     }
@@ -2082,14 +1762,20 @@ public abstract class DataEditPage
         }
     }
 
-    protected int INT_INPUT(int v, string label, Color clr, int width = -1)
+    protected void BTN(string label, Color c, System.Action onPress, GUILayoutOption option)
     {
-        BEGIN_HOR();
-        LABEL(label, clr);
-        v = INT_INPUT(v, clr, width);
-        END_HOR();
+        Color clr = GUI.color;
+        BEGIN_CLR(c);
+        BTN(label, onPress, option);
+        BEGIN_CLR(clr);
+    }
 
-        return v;
+    protected void BTN(string label, System.Action onPress, GUILayoutOption option)
+    {
+        if (GUILayout.Button(label, option))
+        {
+            onPress?.Invoke();
+        }
     }
 
     protected int INT_INPUT(int v, string label, int width = -1)
@@ -2097,6 +1783,17 @@ public abstract class DataEditPage
         BEGIN_HOR();
         LABEL(label);
         v = INT_INPUT(v, width);
+        END_HOR();
+
+        return v;
+    }
+
+
+    protected int INT_INPUT(int v, string label, Color clr, int width = -1)
+    {
+        BEGIN_HOR();
+        LABEL(label, clr);
+        v = INT_INPUT(v, clr, width);
         END_HOR();
 
         return v;
@@ -2175,7 +1872,7 @@ public abstract class DataEditPage
         BEGIN_CLR(clr, Color.Lerp(clr, Color.black, 0.4f), () => { return !isEmpty; });
         BEGIN_CLR(GUI.color, Color.red, () => { return isEmpty || dataFound; });
         dataID = TEXT_INPUT(dataID, label);
-        ASSERT_WARNING(isEmpty || data != null, "Does not exists!");
+        //ASSERT_WARNING(isEmpty || data != null, "Does not exists!");
 
         if (!isEmpty && data == null)
         {
@@ -2191,7 +1888,7 @@ public abstract class DataEditPage
 
         if (data != null && data is Scriptable s)
         {
-            BTN("[]", ColorUtility.selectedGold, () => { SELECT(s); }, 16);
+            BTN("[]", ColorUtility.selectedGold, () => { SELECT(s); }, 18);
         }
         END_HOR();
 
@@ -2233,7 +1930,7 @@ public abstract class DataEditPage
             END_DISABLED();
 
             BEGIN_DISABLED(string.IsNullOrEmpty(txt));
-            BTN("clr", () => { txt = ""; }, 24);
+            BTN("clr", Color.white, () => { txt = ""; }, 24);
             END_DISABLED();
         }
 
@@ -2613,6 +2310,8 @@ public abstract class DataEditPage
 
     protected void MARK_DIRTY(UnityEngine.Object o)
     {
+        if (EditorApplication.isUpdating || EditorApplication.isCompiling) { return; }
+
         EditorUtility.SetDirty(o);
     }
 
@@ -3265,7 +2964,191 @@ public abstract class DataEditPage
         return output;
     }
 
-    protected List<T> LIST_ADD_BTN<T>(List<T> l, string label = "")
+    protected uint TIME_INPUT(uint minutes, string label)
+    {
+        BEGIN_HOR();
+        LABEL(label);
+        minutes = (uint)INT_INPUT((int)minutes, 80);
+        LABEL("(");
+        LABEL(minutes / (60));
+        LABEL("hrs,");
+        LABEL(minutes / (60*24));
+        LABEL("days)");
+        END_HOR();
+        return minutes;
+    }
+
+    protected RandomChance RANDOM_CHANCE_INPUT(RandomChance randomChance, string label)
+    {
+        BEGIN_HOR();
+        LABEL(label);
+        randomChance.Chance = (uint)INT_INPUT((int)randomChance.Chance, 48);
+        LABEL("in", 18);
+        randomChance.SampleSize = (uint)INT_INPUT((int)randomChance.SampleSize, 48);
+        LABEL("(");
+        LABEL(randomChance.Percentage*100);
+        LABEL("%)");
+        END_HOR();
+
+        return randomChance;
+    }
+
+    protected List<T> RENDER_VALUE_LIST<T>(List<T> l, string label, Func<T, T> renderFunc)
+    {
+        if (l == null) { return l; }
+
+        BEGIN_HOR();
+        LABEL(label);
+        LABEL(l.Count);
+        END_HOR();
+        BEGIN_INDENT();
+
+        for (int i = 0; i < l.Count; i++)
+        {
+            BEGIN_HOR();
+            l = LIST_REMOVE_BTN<T>(l, i);
+            END_HOR();
+
+            if (i >= l.Count)
+            {
+                break;
+            }
+
+            BEGIN_INDENT();
+            l[i] = renderFunc(l[i]);
+            END_INDENT();
+        }
+
+        l = LIST_ADD_VALUE_BTN<T>(l);
+        END_INDENT();
+
+        return l;
+    }
+
+    protected List<T> RENDER_REF_LIST<T>(List<T> l, string label, Action<T> renderFunc) where T : new()
+    {
+        if (l == null) { l = new List<T>(); }
+
+        BEGIN_HOR();
+        LABEL(label);
+        LABEL(l.Count);
+        END_HOR();
+        BEGIN_INDENT();
+
+        for (int i = 0; i < l.Count; i++)
+        {
+            BEGIN_HOR();
+            l = LIST_REMOVE_BTN<T>(l, i);
+            END_HOR();
+
+            if (i >= l.Count)
+            {
+                break;
+            }
+
+            BEGIN_INDENT();
+            renderFunc(l[i]);
+            END_INDENT();
+        }
+
+        l = LIST_ADD_REF_BTN<T>(l);
+        END_INDENT();
+
+        return l;
+    }
+
+    protected T[] RENDER_VALUE_ARRAY<T>(T[] arr, string label, Func<T, T> renderFunc)
+    {
+        if (arr == null) { return arr; }
+
+        BEGIN_HOR();
+        BEGIN_CLR(arr.Length == 0 ? Color.grey : Color.white);
+        bool showArray = EXPAND_TOGGLE(label, GUI.color, 32, "render_value_array");
+        LABEL(arr.Length);
+        END_CLR();
+        FLEX_SPACE();
+        END_HOR();
+
+        if (showArray)
+        {
+            BEGIN_INDENT();
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                BEGIN_HOR();
+                arr = ARRAY_REMOVE_BTN<T>(arr, i);
+                END_HOR();
+
+                if (i >= arr.Length)
+                {
+                    break;
+                }
+
+                BEGIN_INDENT();
+                renderFunc(arr[i]);
+                END_INDENT();
+            }
+
+            arr = ARRAY_ADD_VALUE_BTN(arr);
+            END_INDENT();
+        }
+
+        return arr;
+    }
+
+    protected T[] RENDER_REF_ARRAY<T>(T[] arr, string label, Action<T> renderFunc) where T : new()
+    {
+        if (arr == null) { return arr; }
+
+        BEGIN_HOR();
+        BEGIN_CLR(arr.Length == 0 ? Color.grey : Color.white);
+        bool showArray = EXPAND_TOGGLE(label, GUI.color, 32, "render_ref_array");
+        LABEL(arr.Length);
+        END_CLR();
+        FLEX_SPACE();
+        END_HOR();
+
+        if (showArray)
+        {
+            BEGIN_INDENT();
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                BEGIN_HOR();
+                arr = ARRAY_REMOVE_BTN<T>(arr, i);
+                END_HOR();
+
+                if (i >= arr.Length) 
+                { 
+                    break; 
+                }
+
+                BEGIN_INDENT();
+                renderFunc(arr[i]);
+                END_INDENT();
+            }
+
+            arr = ARRAY_ADD_REF_BTN(arr);
+            END_INDENT();
+        }
+
+        return arr;
+    }
+
+    protected List<T> LIST_ADD_REF_BTN<T>(List<T> l, string label = "") where T : new()
+    {
+        BEGIN_HOR();
+        LABEL(l == null ? 0 : l.Count, Color.grey);
+        BTN(string.IsNullOrEmpty(label) ? "+" : label, Color.green, () => {
+            T entry = new();
+            l.Add(entry); 
+        });
+        END_HOR();
+
+        return l;
+    }
+
+    protected List<T> LIST_ADD_VALUE_BTN<T>(List<T> l, string label = "")
     {
         BEGIN_HOR();
         LABEL(l == null ? 0 : l.Count, Color.grey);
@@ -3305,11 +3188,25 @@ public abstract class DataEditPage
         return deleted;
     }
 
-    protected T[] ARRAY_ADD_BTN<T>(T[] arr, string label = "")
+    protected T[] ARRAY_ADD_REF_BTN<T>(T[] arr, string label = "") where T : new()
     {
         BEGIN_HOR();
         LABEL(arr == null ? 0 : arr.Length, Color.grey);
-        BTN(string.IsNullOrEmpty(label) ? "+" : label, Color.green, () => { arr = AddToArray(arr, default(T)); });
+        BTN(string.IsNullOrEmpty(label) ? "+" : label, Color.green, () => {
+            arr = AddNonNullToArray(arr, default(T));
+        });
+        END_HOR();
+
+        return arr;
+    }
+
+    protected T[] ARRAY_ADD_VALUE_BTN<T>(T[] arr, string label = "")
+    {
+        BEGIN_HOR();
+        LABEL(arr == null ? 0 : arr.Length, Color.grey);
+        BTN(string.IsNullOrEmpty(label) ? "+" : label, Color.green, () => { 
+            arr = AddToArray(arr, default(T)); 
+        });
         END_HOR();
 
         return arr;
@@ -3395,6 +3292,28 @@ public abstract class DataEditPage
         LABEL(entryIndex, Color.grey);
         BTN("x", Color.red, () => { arr = RemoveFromArray(arr, entryIndex); }, 16, false, false);
         GUI.color = c;
+        return arr;
+    }
+
+    protected T[] AddNonNullToArray<T>(T[] arr, T entry) where T : new()
+    {
+        if (entry == null)
+        {
+            entry = new();
+        }
+
+        if (arr == null) return new T[] { entry };
+
+        T[] prevArr = arr;
+        arr = new T[prevArr.Length + 1];
+
+        for (int i = 0; i < prevArr.Length; i++)
+        {
+            arr[i] = prevArr[i];
+        }
+
+        arr[arr.Length - 1] = entry;
+
         return arr;
     }
 

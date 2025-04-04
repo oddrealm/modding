@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: simulation_tree_sapling_default
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

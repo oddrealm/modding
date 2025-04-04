@@ -48,6 +48,24 @@ public class GDETutorialSegmentData : Scriptable
 
     [Header("On Completed")]
     public string NextSegment;
+
+    public bool IsValid { get; private set; }
+
+#if ODD_REALM_APP
+    public override void OnLoaded()
+    {
+        if (Message != null && Message.Length > 0)
+        {
+            for (int i = 0; i < Message.Length; i++)
+            {
+                if (string.IsNullOrEmpty(Message[i].Body)) { continue; }
+                IsValid = true;
+            }
+        }
+
+        base.OnLoaded();
+    }
+#endif
 }
 
 [System.Serializable]

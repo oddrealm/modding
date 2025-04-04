@@ -6,7 +6,7 @@ public class GDEBlockVisualsData : Scriptable
     [System.Serializable]
     public struct Light
     {
-        public byte ReductionThreshold;
+        public byte MinReductionThreshold;
         public byte SkylightReduction;
         public byte SkylightPass;
         public bool BlockAmbientLight;

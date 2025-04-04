@@ -7,6 +7,7 @@ public class GDEEntityAgeData : Scriptable
     public EntityAgeTypes AgeType;
     public int Max = int.MaxValue;
     public int Min = 0;
+    public bool CanEarnXP = true;
     public bool CanRespec = true;
     public List<AgeStatuses> Statuses = new List<AgeStatuses>();
 

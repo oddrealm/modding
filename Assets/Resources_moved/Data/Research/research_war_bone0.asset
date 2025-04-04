@@ -13,17 +13,16 @@ MonoBehaviour:
   m_Name: research_war_bone0
   m_EditorClassIdentifier: 
   TooltipID: tooltip_research_war_bone0
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 1
   ShowInSaga: 1
-  Races: []
   Dependency: 
   Column: 1
-  Row: 2
-  ResearchCategory: research_category_war
+  Row: 6
+  ResearchCategory: research_category_industry
   RequireItemCountOverride: 0
-  ResearchTimeStep: 60
+  GlobalBuffs: []
+  RequiredDiscovery: 

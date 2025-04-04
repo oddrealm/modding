@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_stone_spear_two_hand
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_stone_spear_two_hand
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_tool
@@ -53,7 +52,6 @@ MonoBehaviour:
   MerchantSellValue: 23
   TuneRating: 2
   ItemRarity: item_rarity_common
-  RarityType: 0
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: race_human
   m_EditorClassIdentifier: 
   TooltipID: tooltip_race_human
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_races
@@ -28,5 +27,17 @@ MonoBehaviour:
   Public: 1
   Perks:
   - '<sprite=54> Resourceful: Humans start with higher skills'
-  DefaultActiveResearch: []
+  DefaultActiveResearch:
+  - research_human_home0
+  StartingItems:
+  - ItemID: item_cloth_vest
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_cloth_boots
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_cloth_pants
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
   Buffs: []
+  AutoCreateUniform: 1

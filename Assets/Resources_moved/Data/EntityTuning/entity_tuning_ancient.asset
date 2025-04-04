@@ -51,5 +51,5 @@ MonoBehaviour:
   Appearance: 
   InventoryGroupID: 
   AutoGenerateInventory: 0
-  EquipmentGroupID: spawns_ancient_equipment_default
+  EquipmentGroupID: 
   AutoGenerateEquipment: 1

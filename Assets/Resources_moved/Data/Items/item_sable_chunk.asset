@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_sable_chunk
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_sable_chunk
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_stone
@@ -50,7 +49,6 @@ MonoBehaviour:
   MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_rare
-  RarityType: 2
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

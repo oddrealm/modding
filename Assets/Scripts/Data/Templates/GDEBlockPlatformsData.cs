@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockPlatforms")]
-public class GDEBlockPlatformsData : Scriptable
+public class GDEBlockPlatformsData : Scriptable, IProgressionObject
 {
     public int Index = 0;
     public string Visuals = "";
@@ -28,4 +28,6 @@ public class GDEBlockPlatformsData : Scriptable
     public int BaseHealth = 0;
     public int BaseToughness = 0;
     public string ItemDropGroupID = "";
+
+    public bool CanShowInProgressUI { get { return true; } }
 }

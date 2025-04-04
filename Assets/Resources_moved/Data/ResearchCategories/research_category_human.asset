@@ -20,6 +20,8 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   FriendlyName: Humans
   OrderInList: 5
+  RaceRequirements:
+  - race_human
   ResearchBuffs:
   - TagObjectID: race_human
   - TagObjectID: entity_status_researching

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: xp_at_lvl_1
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

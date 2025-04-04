@@ -33,5 +33,26 @@ MonoBehaviour:
     skills'
   - '<sprite=1062> Air Of Superiority: Having no lungs, Ancients are unaffected by
     environments without oxygen'
-  DefaultActiveResearch: []
+  DefaultActiveResearch:
+  - research_ancient_immortality_tomb0
+  StartingItems:
+  - ItemID: item_gibaren_robe
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_gibaren_pants
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_gibaren_boots
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_gibaren_boots
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_fledgling_aeternum
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_adepts_aeternum
+    ChanceToEquip: 1
+    ChanceToEquipMaxRoll: 20
   Buffs: []
+  AutoCreateUniform: 1

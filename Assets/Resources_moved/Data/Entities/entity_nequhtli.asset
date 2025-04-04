@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_nequhtli
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_nequhtli
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -77,6 +76,69 @@ MonoBehaviour:
   - ProfessionID: profession_mage
     CanAssign: 0
     CanSpawnWith: 0
+  - ProfessionID: profession_animal
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_miner
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_warrior
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_stone_mason
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_archer
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_tailor
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_unassigned
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_laborer
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_fisherman
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_shepherd
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_scholar
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_forester
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_gwnri
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_none
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_alchemist
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_gwnvayth
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_cook
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_leatherworker
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_carpenter
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_farmer
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_blacksmith
+    CanAssign: 1
+    CanSpawnWith: 1
   Race: race_nequhtli
   PermittedItemSlots:
   - item_slot_left_hand
@@ -117,22 +179,18 @@ MonoBehaviour:
   - BlueprintID: blueprint_eat_item
     Settings:
       Priority: 4
-      Enabled: 1
       AutoJobType: 1
   - BlueprintID: blueprint_drink_item
     Settings:
       Priority: 4
-      Enabled: 1
       AutoJobType: 1
   - BlueprintID: blueprint_drink_from_water
     Settings:
       Priority: 4
-      Enabled: 1
       AutoJobType: 1
   - BlueprintID: blueprint_sleep_on_ground
     Settings:
       Priority: 3
-      Enabled: 1
       AutoJobType: 1
   Attributes:
   - AttributeID: attribute_age
@@ -168,7 +226,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 128
+    StartingBase: 32
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

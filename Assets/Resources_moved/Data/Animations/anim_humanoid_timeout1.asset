@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: anim_humanoid_timeout1
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -21,6 +20,28 @@ MonoBehaviour:
   Loop: 1
   FramesPerSecond: 16
   Frames:
+  - AnimSprite: {fileID: 2632152457248734280, guid: 407c2f3ec5149cf4c827fa43d521f272,
+      type: 3}
+    Accessories:
+    - Point: 2
+      Position: {x: -1, y: 1, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 1
+      Position: {x: -1, y: 3, z: 0}
+      TextureOffset: {x: 2, y: 0}
+      Rotation: 0
+    - Point: 4
+      Position: {x: 2, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 3
+      Position: {x: -1, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
   - AnimSprite: {fileID: 2632152457248734280, guid: 407c2f3ec5149cf4c827fa43d521f272,
       type: 3}
     Accessories:
@@ -532,6 +553,28 @@ MonoBehaviour:
     Accessories:
     - Point: 2
       Position: {x: -1, y: 0, z: 1}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 1
+      Position: {x: -1, y: 3, z: 0}
+      TextureOffset: {x: 1, y: 0}
+      Rotation: 0
+    - Point: 4
+      Position: {x: 2, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    - Point: 3
+      Position: {x: -1, y: 0, z: 0}
+      TextureOffset: {x: 0, y: 0}
+      Rotation: 0
+    Triggers: 0
+    Events: 0
+    ShadowPosition: {x: -1, y: -1}
+  - AnimSprite: {fileID: 73521456275337384, guid: 407c2f3ec5149cf4c827fa43d521f272,
+      type: 3}
+    Accessories:
+    - Point: 2
+      Position: {x: -1, y: 1, z: 1}
       TextureOffset: {x: 0, y: 0}
       Rotation: 0
     - Point: 1

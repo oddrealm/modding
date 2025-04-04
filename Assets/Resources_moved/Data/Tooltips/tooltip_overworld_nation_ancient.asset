@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_overworld_nation_ancient
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0.6459604, g: 0.2004717, b: 0.8018868, a: 1}
   Type: Nation
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 138
+  Order: 167

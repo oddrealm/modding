@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: blueprint_water_plant
   m_EditorClassIdentifier: 
   TooltipID: tooltip_blueprint_water_plant
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies:
@@ -23,6 +22,9 @@ MonoBehaviour:
   - tag_can_be_watered
   - tag_can_use_to_water_plant
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SkillPriorityOverride: -1
+  XP: 1
+  AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   ResearchKey: research_industry_basics0
   Repeat: 0
@@ -30,7 +32,6 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  SkillLevel: 1
   AddBlockSkillToJobSkill: 0
   LocationID: tag_can_be_watered
   WorkPosition: 0
@@ -46,18 +47,18 @@ MonoBehaviour:
   - faction_player
   - faction_captured
   TargetPermissionsToLock: []
+  OnlyUseResourcesAtJobLocation: 0
   ResourcePool: 1
   ShowItemTypeResourcePermissions: 0
   ResourcePermissionsToLock: []
   MaxWorkers: 1
-  WorkerNeedsAllRequirements: 0
   JobActions:
   - ActionType: 0
     MaxWorkers: 0
     WorkerID: skill_carry
     TargetID: 
     ResourceID: tag_can_use_to_water_plant
-    OnJobFinishActionID: tag_can_use_to_water_plant
+    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
@@ -75,6 +76,7 @@ MonoBehaviour:
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
+  AddedProgressPerAction: 0
   ProgressMax: 1
   ProgressBarType: 2
   InvertProgressDisplay: 1
@@ -96,11 +98,13 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: 
+  ChangeFillMass: 0
+  SetMass: 0
   TriggerActivationID: 
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnFinishedResourcesActionID: tag_can_use_to_water_plant
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
@@ -131,3 +135,4 @@ MonoBehaviour:
   DisposeIfNoSource: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
+  WorkerID: skill_plant

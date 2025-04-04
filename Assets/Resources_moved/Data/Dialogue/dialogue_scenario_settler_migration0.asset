@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_scenario_settler_migration0
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AppearanceID: 
+  NextDialogueID: []
+  SpeakerTarget: 
+  Message: 
+  Response: []
+  ShowOnce: 0
+  DialogueSequences:
+  - ID: narrator0
+    Text: A group of settlers arrives at the edge of the map.
+    OverrideSpeaker: 1
+    OverrideSpeakerID: 
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: speaker0
+      ActionType: 0
+      SpeakerAction: 1
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+  - ID: speaker0
+    Text: We have traveled far and wide. Will you take us into your settlement?
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: Of course! All are welcome.
+      NextSequenceID: action_yes
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionB:
+      Text: Absolutely not.
+      NextSequenceID: action_no
+      ActionType: 0
+      SpeakerAction: 1
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+  - ID: action_yes
+    Text: Oh, thank you! We were just about to lose hope.
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: 
+      ActionType: 2
+      SpeakerAction: 2
+      ActionDataID: faction_player
+      ActionCount: 0
+      ScenarioID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+  - ID: action_no
+    Text: Fine! We'll just take the settlement then!
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: 
+      ActionType: 2
+      SpeakerAction: 2
+      ActionDataID: faction_hostile
+      ActionCount: 0
+      ScenarioID: scenario_settler_migration0
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 

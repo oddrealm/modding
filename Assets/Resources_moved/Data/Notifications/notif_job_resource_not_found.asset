@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_job_resource_not_found
   m_EditorClassIdentifier: 
   TooltipID: tooltip_notif_job_resource_not_found
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

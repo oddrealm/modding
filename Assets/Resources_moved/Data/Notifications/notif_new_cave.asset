@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: notif_new_cave
   m_EditorClassIdentifier: 
   TooltipID: tooltip_notif_new_cave
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  FlashColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
+  FlashColor: {r: 0.5686275, g: 0.10196079, b: 0.77254903, a: 1}
   SFXGroupID: sfx_notif_cave
   DefaultPermissions:
     ShowPreview: 1

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: spawns_biome_plants_taiga
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_spawns_biome_plants_taiga

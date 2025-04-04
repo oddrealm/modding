@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_overworld_nation_ardyn
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -31,4 +30,4 @@ MonoBehaviour:
   TextColor: {r: 0.8867924, g: 0.28025985, b: 0.52310747, a: 1}
   Type: Nation
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 178
+  Order: 204

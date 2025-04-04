@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
+  m_Name: entity_names_dog
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeparateFirstNamePrepends: 1
+  FirstNameNeutralPrependChances: 500
+  FirstNameNeutralPrepends:
+  - Ol
+  - Master
+  - Old
+  NeutralFirstNames:
+  - Bark
+  - Bork
+  - Dag
+  - Dago
+  - Dogwell
+  - Pup
+  - Pip
+  - Pomp
+  - Ruff
+  - Sniff
+  FirstNameMasculinePrependChances: 200
+  FirstNameMasculinePrepends:
+  - Mr
+  - Sir
+  - Lord
+  MasculineFirstNames:
+  - Archie
+  - Bill
+  - Ben
+  - Bormir
+  - Cash
+  - Doug
+  - Folger
+  - Farly
+  - Folly
+  - Gruff
+  - Grim
+  - Hue
+  - Lou
+  - Murph
+  - Oz
+  - Pete
+  - Reginald
+  - Steve
+  FirstNameFemininePrependChances: 200
+  FirstNameFemininePrepends:
+  - Ms
+  - Mrs
+  - Queen
+  FeminineFirstNames:
+  - Able
+  - Cali
+  - Lady
+  - Mable
+  - Maple
+  - Milly
+  - Nel
+  - Pepper
+  - Poppy
+  - Rudy
+  - Sandy
+  - Su
+  - Tilly
+  - Willow
+  SeparateLastNamePrepends: 0
+  LastNamePrependChances: 0
+  LastNamePrepends: []
+  LastNames: []

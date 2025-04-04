@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_wood_mill
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_wood_mill
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,132 +28,127 @@ MonoBehaviour:
   - BlueprintID: blueprint_item_wood_atlatl_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_bolas_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_bow_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_carving_knife_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_chisel_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_club_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_crossbow_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_cudgel_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_fishing_pole_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_hammer_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_heater_shield_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_pickaxe_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_plank
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_practice_dagger_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_practice_sword_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_sewing_needle_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_sling_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_spear_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_spoon_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_tongs_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wood_war_hammer_two_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 1
+    ResourcePermissions:
+    - TagObjectKey: tag_item_type_wood
+      Min: 0
+      Max: 0
+  - BlueprintID: blueprint_item_wood_bucket
+    Settings:
+      Priority: 1
+      AutoJobType: 0
     ResourcePermissions: []
+  - BlueprintID: blueprint_item_wood_pointy_stick_two_hand
+    Settings:
+      Priority: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

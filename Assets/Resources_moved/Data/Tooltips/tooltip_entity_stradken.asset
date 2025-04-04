@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_entity_stradken
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,4 +26,4 @@ MonoBehaviour:
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2343
+  Order: 2935

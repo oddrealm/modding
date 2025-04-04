@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: all_inventory_window2
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

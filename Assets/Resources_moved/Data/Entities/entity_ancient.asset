@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_ancient
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_ancient
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -95,6 +94,45 @@ MonoBehaviour:
   - ProfessionID: profession_archer
     CanAssign: 1
     CanSpawnWith: 0
+  - ProfessionID: profession_animal
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_summoner
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_stone_mason
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_thaumaturge
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_shepherd
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_scholar
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_mage
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_forester
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_gwnri
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_none
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_alchemist
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_gwnvayth
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_arcanist
+    CanAssign: 1
+    CanSpawnWith: 1
   Race: race_ancient
   PermittedItemSlots:
   - item_slot_left_hand
@@ -153,7 +191,7 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 110
+    StartingBase: 250
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level
@@ -165,7 +203,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 128
+    StartingBase: 32
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

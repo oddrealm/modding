@@ -19,6 +19,7 @@ MonoBehaviour:
   - tag_professions
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AutoCreateUniform: 0
   EarnBonusXPInCombat: 0
   ResearchKey: 
   VisibleToPlayer: 0
@@ -27,6 +28,8 @@ MonoBehaviour:
   CanDoSupplementCarryActions: 0
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
+  DefaultItems: []
+  StartingItems: []
   GlobalIndicator: indicator_global_none
   SkillsActiveByDefault:
   - skill_carry

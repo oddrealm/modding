@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_recycle_tome_of_war
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Recycle Tome Of War
+  Action: 
   Name: Recycle Tome Of War
   NamePlural: 
   InlineIcon: <sprite=1073>
-  Description: 
+  Description: A tattered book filled with pages about battle strategy.
   Icon: sp_recycle_tome_of_war_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1872
+  Order: 2436

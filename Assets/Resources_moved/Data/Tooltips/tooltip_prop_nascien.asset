@@ -18,7 +18,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Nascien
+  Action: 
   Name: Nascien
   NamePlural: 
   InlineIcon: <sprite=1443>
@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0.5882353, g: 0.2901961, b: 0.43137258, a: 1}
   Type: Container
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1561
+  Order: 1766

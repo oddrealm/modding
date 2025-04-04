@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_teiloc
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_teiloc
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_grain
@@ -51,8 +50,7 @@ MonoBehaviour:
   MerchantSellValue: 5
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
-  RarityType: 1
-  DecayRate: 240
+  DecayRate: 14400
   DecayItem: item_waste_rotten_food
   HasMeltThreshold: 0
   MeltThreshold: 0

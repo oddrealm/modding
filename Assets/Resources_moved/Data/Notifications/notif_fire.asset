@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_fire
   m_EditorClassIdentifier: 
   TooltipID: tooltip_notif_path_not_found
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

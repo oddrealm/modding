@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: '{0} has died {1}.'
-  Name: '{0} has died {1}.'
-  NamePlural: 
+  Action: 
+  Name: Entity has died!
+  NamePlural: Entities have died!
   InlineIcon: 
   Description: 
   Icon: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 34
+  Order: 1022

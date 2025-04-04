@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: party_raiding
   m_EditorClassIdentifier: 
   TooltipID: tooltip_party_raiding
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

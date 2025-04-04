@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_age_vytrax_elder
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_age_elder
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -21,6 +20,7 @@ MonoBehaviour:
   AgeType: 4
   Max: 2147483647
   Min: 67
+  CanEarnXP: 1
   CanRespec: 0
   Statuses:
   - StatusID: entity_status_elder

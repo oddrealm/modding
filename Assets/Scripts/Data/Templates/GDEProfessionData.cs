@@ -11,6 +11,8 @@ public class GDEProfessionData : Scriptable
         public int Priority;
     }
 
+    public int OrderGroup = 0;
+    public bool AutoCreateUniform = true;
     public bool EarnBonusXPInCombat = false;
     public string ResearchKey = "";
     public bool VisibleToPlayer = false;
@@ -19,6 +21,7 @@ public class GDEProfessionData : Scriptable
     public bool CanDoSupplementCarryActions = false;
     public bool CanLevelUp;
     public bool FavoursRangedAttackItems = false;
+    public RandomEquipmentItem[] StartingItems = new RandomEquipmentItem[] { };
     public string GlobalIndicator = "";
     public string[] SkillsActiveByDefault;
     public HashSet<string> SkillsActiveByDefaultHash = new HashSet<string>();
@@ -58,6 +61,17 @@ public class GDEProfessionData : Scriptable
     }
 
 #if ODD_REALM_APP
+    public override void OnReordered(int dataIndex)
+    {
+        base.OnReordered(dataIndex);
+    }
+
+    public override void SetOrderKey(string orderKey)
+    {
+        base.SetOrderKey(OrderGroup + orderKey);
+    }
+
+
     public override void OnLoaded()
     {
         base.OnLoaded();

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TooltipID: tooltip_tag_can_summon_from_void
   GroupID: 
+  GroupIDs: []
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -21,3 +22,4 @@ MonoBehaviour:
   TrackByDefault: 0
   TrackPlayerCanEdit: 0
   TrackingTypes: 1
+  TagGroups: []

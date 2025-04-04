@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_foundry
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_foundry
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,30 +28,32 @@ MonoBehaviour:
   - BlueprintID: blueprint_iron_ingot
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_bronze_ingot
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_steel_ingot
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_rutile_ingot
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 0
-      Enabled: 0
+      Priority: 2
       AutoJobType: 0
-    ResourcePermissions: []
+    ResourcePermissions:
+    - TagObjectKey: tag_item_type_ore
+      Min: 0
+      Max: 0
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

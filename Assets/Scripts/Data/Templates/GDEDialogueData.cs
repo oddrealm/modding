@@ -9,7 +9,7 @@ public class GDEDialogueData : Scriptable
     public string SpeakerTarget = "";
     public string Message = "";
     public List<string> Response = new List<string>();
-    public bool FocusOnSpeaker = true;
 
+    public bool ShowOnce = false;
     public List<DialogueSequence> DialogueSequences = new List<DialogueSequence>();
 }

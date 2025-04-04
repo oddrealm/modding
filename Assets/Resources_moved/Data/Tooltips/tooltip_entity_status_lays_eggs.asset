@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_entity_status_lays_eggs
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -22,9 +21,9 @@ MonoBehaviour:
   Name: Lays Eggs
   NamePlural: 
   InlineIcon: <sprite=191>
-  Description: Female chickens get this status after mating with male chickens.
+  Description: After mating, Female chickens can lay an egg in a Roost.
   Icon: 
   TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Type: Status
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1382
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1891

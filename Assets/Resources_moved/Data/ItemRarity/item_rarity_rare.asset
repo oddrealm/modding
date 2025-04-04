@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: item_rarity_rare
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_rarity_rare
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RarityScore: 2
+  DisposeIfCannotSpawn: 0

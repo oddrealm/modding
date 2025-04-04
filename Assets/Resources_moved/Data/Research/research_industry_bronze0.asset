@@ -13,17 +13,16 @@ MonoBehaviour:
   m_Name: research_industry_bronze0
   m_EditorClassIdentifier: 
   TooltipID: tooltip_research_industry_bronze0
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 1
   ShowInSaga: 1
-  Races: []
   Dependency: 
-  Column: 2
+  Column: 1
   Row: 0
   ResearchCategory: research_category_industry
   RequireItemCountOverride: 0
-  ResearchTimeStep: 60
+  GlobalBuffs: []
+  RequiredDiscovery: item_copper_ore

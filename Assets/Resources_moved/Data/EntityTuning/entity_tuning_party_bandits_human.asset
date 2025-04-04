@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_tuning_party_bandits_human
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

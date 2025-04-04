@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: occupant_group_animal_enclosure_animals
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_occupant_group_animals
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -37,6 +36,6 @@ MonoBehaviour:
     Min: -1
     Max: -1
   RequiredOccupantTagObjs:
-  - TagObjectKey: entity_status_intelligence_non_sapient
+  - TagObjectKey: profession_animal
     Min: -1
     Max: -1

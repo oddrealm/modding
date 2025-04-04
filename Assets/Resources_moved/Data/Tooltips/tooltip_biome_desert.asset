@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_biome_desert
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0.8313726, g: 0.7803922, b: 0.5647059, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 814
+  Order: 1306

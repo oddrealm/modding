@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: entity_names_archenthrall
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeparateFirstNamePrepends: 0
+  FirstNameNeutralPrependChances: 0
+  FirstNameNeutralPrepends: []
+  NeutralFirstNames: []
   FirstNameMasculinePrependChances: 0
   FirstNameMasculinePrepends: []
   MasculineFirstNames:
@@ -63,6 +66,7 @@ MonoBehaviour:
   - Orax
   - Pamzellan
   - Qiazax
+  SeparateLastNamePrepends: 0
   LastNamePrependChances: 0
   LastNamePrepends: []
   LastNames:

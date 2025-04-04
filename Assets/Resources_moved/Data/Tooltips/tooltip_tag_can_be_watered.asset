@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_tag_can_be_watered
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Is Dehydrated Plant
-  Name: Is Dehydrated Plant
+  Action: Dehydrated Plant
+  Name: Dehydrated Plant
   NamePlural: 
   InlineIcon: <sprite=1208>
   Description: 
   Icon: 
   TextColor: {r: 0.14117648, g: 0.39607847, b: 0.9568628, a: 1}
-  Type: 
-  TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1307
+  Type: Type
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1274

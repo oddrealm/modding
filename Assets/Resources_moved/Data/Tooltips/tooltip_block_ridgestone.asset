@@ -18,7 +18,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Ridgestone
+  Action: 
   Name: Ridgestone
   NamePlural: 
   InlineIcon: <sprite=1161>
@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0.5529412, g: 0.43137258, b: 0.48235297, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1907
+  Order: 2162

@@ -13,36 +13,56 @@ MonoBehaviour:
   m_Name: entity_names_ancient
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeparateFirstNamePrepends: 0
+  FirstNameNeutralPrependChances: 0
+  FirstNameNeutralPrepends: []
+  NeutralFirstNames: []
   FirstNameMasculinePrependChances: 0
   FirstNameMasculinePrepends: []
   MasculineFirstNames:
   - Amrax
   - Ankelix
   - Apthelax
+  - Axqez
+  - Axzeq
   - Baal
   - Beovax
+  - Boxrex
+  - Balex
   - Caylaq
+  - Cuiliq
+  - Cyrex
   - Davrax
+  - Dexwyq
   - Endero
+  - Endex
   - Faynecotan
+  - Farwex
   - Garax
+  - Gexquix
   - Heliax
+  - Hirax
+  - Helquix
   - Irdaq
+  - Irax
   - Jalex
+  - Jax
   - Korkot
   - Lemveer
   - Rebus
+  - Riquix
   - Xanjro
+  - Xax
   - Yxparaban
   - Yemxat
   - Zelket
   - Zilnitak
   - Zulvar
+  - Zynaxis
   FirstNameFemininePrependChances: 0
   FirstNameFemininePrepends: []
   FeminineFirstNames:
@@ -60,43 +80,76 @@ MonoBehaviour:
   - Kryx
   - Lathilaq
   - Mazaqin
+  - Mintrax
+  - Minzil
+  - Nexla
   - Orax
   - Pamzellan
   - Qiazax
-  LastNamePrependChances: 0
-  LastNamePrepends: []
+  - Leizquin
+  - Zeinex
+  SeparateLastNamePrepends: 1
+  LastNamePrependChances: 1000
+  LastNamePrepends:
+  - The
   LastNames:
-  - The Awakened
-  - The Bold
-  - The Cold
-  - The Divined
-  - The Ender
-  - The Elder
-  - The Ephemeral
-  - The First
-  - The Fast
-  - The Forgotten
-  - The Famous
-  - The Gaunt
-  - The Hallowed
-  - The Ignoble
-  - The Just
-  - The Jester
-  - The Juggler
-  - The Killer
-  - The Lost
-  - The Moody
-  - The Noble
-  - The Oaf
-  - The Old
-  - The Proud
-  - The Quiet
-  - The Red
-  - The Stoned
-  - The Trickster
-  - The Undone
-  - The Vicious
-  - The Wild
-  - The Xenophobic
-  - The Young
-  - The Zealot
+  - Awakened
+  - Bold
+  - Cold
+  - Divined
+  - Ender
+  - Elder
+  - Eldest
+  - Ephemeral
+  - Fast
+  - Forgotten
+  - Famous
+  - First
+  - Fist
+  - Funny
+  - Gaunt
+  - Great
+  - Giant
+  - Hallowed
+  - Highborn
+  - Ignoble
+  - Insane
+  - Immortal
+  - Just
+  - Jester
+  - Juggler
+  - Killer
+  - Kind
+  - Last
+  - Liar
+  - Lost
+  - Mild
+  - Mighty
+  - Moody
+  - Noble
+  - Oaf
+  - Old
+  - Proud
+  - Quiet
+  - Red
+  - Righteous
+  - Rhyme
+  - Stoned
+  - Stoic
+  - Senile
+  - Tall
+  - Tame
+  - Timeless
+  - Trickster
+  - Undone
+  - Undying
+  - Vicious
+  - Vengeful
+  - Vicious
+  - Valiant
+  - Wild
+  - Widow
+  - Xenophobic
+  - Young
+  - Youthful
+  - Zealot

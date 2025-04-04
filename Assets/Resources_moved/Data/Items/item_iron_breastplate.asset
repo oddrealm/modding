@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_iron_breastplate
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_iron_breastplate
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_gear
@@ -52,7 +51,6 @@ MonoBehaviour:
   MerchantSellValue: 109
   TuneRating: 5
   ItemRarity: item_rarity_uncommon
-  RarityType: 1
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

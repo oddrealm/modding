@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_koosh_kasheen
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_koosh_kasheen
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -37,7 +36,7 @@ MonoBehaviour:
   TakeLastNameOfFamilyMembers: 0
   ReproductionIntervalMinutes: 0
   RequiredReproductionRoom: 
-  GenerateNameKey: 
+  GenerateNameKey: entity_names_koosh_kasheen
   InherentCombatAttacks: attack_group_koosh_kasheen
   SkillPermissions:
   - SkillID: skill_alchemy
@@ -209,6 +208,9 @@ MonoBehaviour:
   - ProfessionID: profession_warrior
     CanAssign: 0
     CanSpawnWith: 0
+  - ProfessionID: profession_animal
+    CanAssign: 0
+    CanSpawnWith: 0
   Race: race_unknown
   PermittedItemSlots:
   - item_slot_left_hand
@@ -277,7 +279,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 128
+    StartingBase: 32
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

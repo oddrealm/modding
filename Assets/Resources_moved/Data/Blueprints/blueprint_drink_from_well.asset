@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: blueprint_drink_from_well
   m_EditorClassIdentifier: 
   TooltipID: tooltip_blueprint_drink_from_well
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies:
@@ -21,6 +20,10 @@ MonoBehaviour:
   - entity_status_thirsty
   - entity_status_dehydrated
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  WorkerID: entity_status_thirsty
+  SkillPriorityOverride: 99
+  XP: 12
+  AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   ResearchKey: research_industry_basics0
   Repeat: 0
@@ -28,7 +31,6 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  SkillLevel: 1
   AddBlockSkillToJobSkill: 0
   LocationID: tag_trigger_well_has_water
   WorkPosition: 0
@@ -44,11 +46,11 @@ MonoBehaviour:
   - faction_player
   - faction_captured
   TargetPermissionsToLock: []
+  OnlyUseResourcesAtJobLocation: 0
   ResourcePool: 1
   ShowItemTypeResourcePermissions: 0
   ResourcePermissionsToLock: []
   MaxWorkers: 0
-  WorkerNeedsAllRequirements: 0
   JobActions:
   - ActionType: 3
     MaxWorkers: 0
@@ -62,6 +64,7 @@ MonoBehaviour:
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
+  AddedProgressPerAction: 0
   ProgressMax: 25
   ProgressBarType: 2
   InvertProgressDisplay: 0
@@ -83,6 +86,8 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: 
+  ChangeFillMass: 0
+  SetMass: 0
   TriggerActivationID: 
   ActiveWorkerStatus: 
   OnJobStartActionID: 
@@ -119,6 +124,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 1
-  DisposeIfNoSource: 0
+  DisposeIfNoSource: 1
   AutoJobOnCreateCooldown: 5
   AutoJobOnFreedCooldown: 1

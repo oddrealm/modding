@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: input_command_toggle_add_to_control_group
   m_EditorClassIdentifier: 
   TooltipID: tooltip_input_toggle_add_to_control_group
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -21,13 +20,7 @@ MonoBehaviour:
   Category: 2
   InputState: 5
   DeferTo: []
-  DefaultTriggers:
-  - Hotkeys:
-    - Down: 0
-      Hold: 1
-      Up: 0
-      Key: 308
-      Mouse: 0
+  DefaultTriggers: []
   ActiveUpdate: 1
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1
@@ -35,4 +28,5 @@ MonoBehaviour:
   IsToggle: 0
   BtnsForceActive: 1
   MaxIncrement: 1
-  PlayerCanEdit: 1
+  PlayerCanEdit: 0
+  PrintEvents: 0

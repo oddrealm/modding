@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_egg_raw
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_egg_raw
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_egg
@@ -54,8 +53,7 @@ MonoBehaviour:
   MerchantSellValue: 2
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
-  RarityType: 1
-  DecayRate: 48
+  DecayRate: 14400
   DecayItem: item_waste_rotten_food
   HasMeltThreshold: 0
   MeltThreshold: 0

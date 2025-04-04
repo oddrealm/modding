@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_party_bandits
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,4 +26,4 @@ MonoBehaviour:
   TextColor: {r: 0.7568628, g: 0.18039216, b: 0.18039216, a: 1}
   Type: Party
   TypeColor: {r: 0.7568628, g: 0.18039216, b: 0.18039216, a: 1}
-  Order: 223
+  Order: 249

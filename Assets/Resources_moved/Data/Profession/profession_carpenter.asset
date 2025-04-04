@@ -19,6 +19,7 @@ MonoBehaviour:
   - tag_professions
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AutoCreateUniform: 1
   EarnBonusXPInCombat: 0
   ResearchKey: 
   VisibleToPlayer: 1
@@ -27,14 +28,22 @@ MonoBehaviour:
   CanDoSupplementCarryActions: 0
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
+  DefaultItems:
+  - item_wood_hammer_one_hand
+  StartingItems:
+  - ItemID: item_wood_hammer_one_hand
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
   GlobalIndicator: indicator_global_carpenter
   SkillsActiveByDefault:
   - skill_carry
   - skill_craft_wood
   - skill_misc
+  - skill_craft_stone
   SkillsToIncreaseOnLevelUp:
   - skill_craft_wood
   - skill_misc
+  - skill_craft_stone
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1
@@ -53,7 +62,7 @@ MonoBehaviour:
   - SkillID: skill_craft_metal
     Priority: 1
   - SkillID: skill_craft_stone
-    Priority: 1
+    Priority: 3
   - SkillID: skill_craft_void
     Priority: 1
   - SkillID: skill_craft_wood

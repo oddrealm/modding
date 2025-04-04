@@ -20,6 +20,8 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   FriendlyName: Gwdir
   OrderInList: 8
+  RaceRequirements:
+  - race_gwdir
   ResearchBuffs:
   - TagObjectID: race_gwdir
   - TagObjectID: entity_status_researching

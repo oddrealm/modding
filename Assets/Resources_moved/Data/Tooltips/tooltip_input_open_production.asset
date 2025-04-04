@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Open Room Production
-  Name: Room Production
+  Action: Open Room Management
+  Name: Room Management
   NamePlural: 
   InlineIcon: 
-  Description: Monitor and control the output of resources and goods from each room.
+  Description: Manage room occupants, items, and jobs.
   Icon: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Input
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1960
+  Order: 2223

@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_sell_item
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Sell Item
+  Action: 
   Name: Sell Item
   NamePlural: 
   InlineIcon: <sprite=1714>
   Description: Sell items to merchants at the market.
   Icon: sp_job_sell_item_icon
   TextColor: {r: 0.85098046, g: 0.6156863, b: 0.2509804, a: 1}
-  Type: 
+  Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2065
+  Order: 2655

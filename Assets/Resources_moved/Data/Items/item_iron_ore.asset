@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_iron_ore
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_iron_ore
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_can_smelt
@@ -51,7 +50,6 @@ MonoBehaviour:
   MerchantSellValue: 25
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
-  RarityType: 1
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

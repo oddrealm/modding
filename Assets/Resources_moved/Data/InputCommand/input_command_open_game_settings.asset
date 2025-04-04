@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: input_command_open_game_settings
   m_EditorClassIdentifier: 
   TooltipID: tooltip_input_open_game_settings
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

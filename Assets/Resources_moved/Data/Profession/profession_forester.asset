@@ -19,6 +19,7 @@ MonoBehaviour:
   - tag_professions
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AutoCreateUniform: 1
   EarnBonusXPInCombat: 0
   ResearchKey: 
   VisibleToPlayer: 1
@@ -27,6 +28,12 @@ MonoBehaviour:
   CanDoSupplementCarryActions: 0
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
+  DefaultItems:
+  - item_stone_hatchet_one_hand
+  StartingItems:
+  - ItemID: item_stone_hatchet_one_hand
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
   GlobalIndicator: indicator_global_forester
   SkillsActiveByDefault:
   - skill_carry

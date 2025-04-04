@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: block_sandstone
   m_EditorClassIdentifier: 
   TooltipID: tooltip_block_sandstone
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_terrain_gen_sandstone

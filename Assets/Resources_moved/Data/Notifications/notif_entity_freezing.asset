@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_entity_freezing
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

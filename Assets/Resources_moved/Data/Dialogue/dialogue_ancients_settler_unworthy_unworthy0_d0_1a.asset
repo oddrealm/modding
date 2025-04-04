@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: dialogue_ancients_settler_unworthy_unworthy0_d0_1a
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -23,5 +22,5 @@ MonoBehaviour:
   SpeakerTarget: '@0'
   Message: 'So be it. '
   Response: []
-  FocusOnSpeaker: 1
+  ShowOnce: 0
   DialogueSequences: []

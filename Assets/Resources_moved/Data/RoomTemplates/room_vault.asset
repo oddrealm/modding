@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_vault
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_vault
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -28,7 +27,13 @@ MonoBehaviour:
   DefaultAutoJobs:
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 2
       AutoJobType: 1
-    ResourcePermissions: []
+    ResourcePermissions:
+    - TagObjectKey: item_ren
+      Min: 0
+      Max: 0
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

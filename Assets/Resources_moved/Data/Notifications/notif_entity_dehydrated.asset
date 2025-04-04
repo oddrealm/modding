@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_entity_dehydrated
   m_EditorClassIdentifier: 
   TooltipID: tooltip_notif_entity_dehydrated
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

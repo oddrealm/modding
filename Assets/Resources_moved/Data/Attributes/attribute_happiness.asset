@@ -18,7 +18,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowInAttributeDisplay: 1
+  ShowInAttributeDisplay: 0
   StartMin: 0
   StartDefault: 1
   StartMax: 100

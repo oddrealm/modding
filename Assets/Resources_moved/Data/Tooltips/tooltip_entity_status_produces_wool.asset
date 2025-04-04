@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_entity_status_produces_wool
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Produces Wool
-  Name: Produces Wool
+  Action: Can Be Sheared
+  Name: Can Be Sheared
   NamePlural: 
   InlineIcon: <sprite=225>
-  Description: Grows wool over time and can be sheered when fully grown.
+  Description: Grows wool over time and can be sheared when fully grown.
   Icon: 
   TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Type: Status
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1808
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 920

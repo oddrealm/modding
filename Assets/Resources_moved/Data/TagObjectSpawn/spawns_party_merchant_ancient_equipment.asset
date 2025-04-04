@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: spawns_party_merchant_ancient_equipment
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  SeedOffset: 0
+  SeedOffset: 63836
   MaxIterations: 1
   MinIterations: 1
   Spawns:

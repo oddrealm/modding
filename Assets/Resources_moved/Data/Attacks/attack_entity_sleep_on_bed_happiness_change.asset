@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: attack_entity_sleep_on_bed_happiness_change
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attack_entity_sleep_on_bed_happiness_change
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

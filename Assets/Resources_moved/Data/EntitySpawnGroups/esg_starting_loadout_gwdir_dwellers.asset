@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: esg_starting_loadout_gwdir_dwellers
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -32,7 +31,6 @@ MonoBehaviour:
     SpawnRate: 1000
     AgeType: 2
     ScenarioID: 
-    SchemaID: 
     SpawnEntityFromItem: 0
     AutoGenEquipment: 1
     AutoGenInventory: 0
@@ -51,7 +49,6 @@ MonoBehaviour:
     SpawnRate: 1000
     AgeType: 2
     ScenarioID: 
-    SchemaID: 
     SpawnEntityFromItem: 0
     AutoGenEquipment: 1
     AutoGenInventory: 0
@@ -70,7 +67,6 @@ MonoBehaviour:
     SpawnRate: 1000
     AgeType: 2
     ScenarioID: 
-    SchemaID: 
     SpawnEntityFromItem: 0
     AutoGenEquipment: 1
     AutoGenInventory: 0

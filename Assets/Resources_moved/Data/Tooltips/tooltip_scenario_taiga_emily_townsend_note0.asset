@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_scenario_taiga_emily_townsend_note0
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

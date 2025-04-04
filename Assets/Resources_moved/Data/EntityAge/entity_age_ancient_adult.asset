@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_age_ancient_adult
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_age_adult
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

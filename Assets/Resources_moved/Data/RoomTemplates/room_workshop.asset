@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_workshop
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_workshop
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,60 +28,44 @@ MonoBehaviour:
   - BlueprintID: blueprint_item_coal
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_sand_clod
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_paper
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_ink
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_item_glass_bottle
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_glass_pane
     Settings:
       Priority: 1
-      Enabled: 0
-      AutoJobType: 0
-    ResourcePermissions: []
-  - BlueprintID: blueprint_item_wood_bucket
-    Settings:
-      Priority: 1
-      Enabled: 0
-      AutoJobType: 0
-    ResourcePermissions: []
-  - BlueprintID: blueprint_item_wood_pointy_stick_two_hand
-    Settings:
-      Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_clay_brick
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

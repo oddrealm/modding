@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: party_bandits_human
   m_EditorClassIdentifier: 
   TooltipID: tooltip_party_bandits
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  ArrivalNotif: notif_overworld_party_bandits
+  ArrivalNotif: 
   MaxMemberSize: 1
   MinMemberSize: 1
   AutoGenMemberSize: 1

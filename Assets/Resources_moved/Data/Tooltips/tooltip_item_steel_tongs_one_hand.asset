@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_item_steel_tongs_one_hand
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
-  Action: Steel Tongs 1h
+  Action: 
   Name: Steel Tongs 1h
   NamePlural: 
   InlineIcon: <sprite=1126>
@@ -26,5 +25,5 @@ MonoBehaviour:
   Icon: sp_steel_tongs_one_hand_icon
   TextColor: {r: 0.2901961, g: 0.57254905, b: 0.7607844, a: 1}
   Type: Item
-  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 2248
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 2812

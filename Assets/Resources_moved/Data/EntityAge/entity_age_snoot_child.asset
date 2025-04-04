@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_age_snoot_child
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_age_child
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -21,6 +20,7 @@ MonoBehaviour:
   AgeType: 1
   Max: 2
   Min: 0
+  CanEarnXP: 0
   CanRespec: 0
   Statuses:
   - StatusID: entity_status_child

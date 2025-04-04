@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_tracked_stat_low
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

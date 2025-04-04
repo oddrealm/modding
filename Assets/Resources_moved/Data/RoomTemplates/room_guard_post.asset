@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_guard_post
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_guard_post
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -28,7 +27,10 @@ MonoBehaviour:
   DefaultAutoJobs:
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

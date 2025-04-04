@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: biome_tropical_forest
   m_EditorClassIdentifier: 
   TooltipID: tooltip_biome_tropical_forest
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

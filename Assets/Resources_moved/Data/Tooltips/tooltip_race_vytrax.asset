@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_race_vytrax
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Vytrax
+  Action: 
   Name: Vytrax
   NamePlural: Vytrax
   InlineIcon: <sprite=236>
   Description: 
-  Icon: sp_race_vytrax_icon
+  Icon: sp_race_vytrax
   TextColor: {r: 0.49701598, g: 0.8773585, b: 0.17381631, a: 1}
   Type: Race
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2720
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 3286

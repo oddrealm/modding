@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_staghorn_seed
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_staghorn_seed
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_seed
@@ -52,7 +51,6 @@ MonoBehaviour:
   MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_common
-  RarityType: 0
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

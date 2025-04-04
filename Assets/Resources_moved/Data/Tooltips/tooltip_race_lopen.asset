@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_race_lopen
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Lopen
+  Action: 
   Name: Lopen
   NamePlural: Lopens
   InlineIcon: <sprite=237>
@@ -26,5 +25,5 @@ MonoBehaviour:
   Icon: sp_race_lopen
   TextColor: {r: 0.49701598, g: 0.8773585, b: 0.17381631, a: 1}
   Type: Race
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1445
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1915

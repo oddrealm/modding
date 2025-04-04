@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: dialogue_force_leave_settlement_default
   m_EditorClassIdentifier: 
   TooltipID: tooltip_dialogue_force_leave_settlement_default
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

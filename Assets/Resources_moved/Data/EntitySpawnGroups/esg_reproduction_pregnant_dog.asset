@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: esg_reproduction_pregnant_dog
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

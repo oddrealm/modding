@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: attack_entity_relax_with_drink
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attack_entity_relax_with_drink
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

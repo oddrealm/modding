@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tag_item_rarity_common
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -21,3 +20,4 @@ MonoBehaviour:
   TrackByDefault: 0
   TrackPlayerCanEdit: 0
   TrackingTypes: 1
+  TagGroups: []

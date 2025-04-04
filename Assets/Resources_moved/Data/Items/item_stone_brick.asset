@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_stone_brick
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_stone_brick
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_refined_material
@@ -50,7 +49,6 @@ MonoBehaviour:
   MerchantSellValue: 5
   TuneRating: 0
   ItemRarity: item_rarity_common
-  RarityType: 0
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_wellhouse
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_wellhouse
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,18 +28,22 @@ MonoBehaviour:
   - BlueprintID: blueprint_item_well_water
     Settings:
       Priority: 2
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 1
-    ResourcePermissions: []
+    ResourcePermissions:
+    - TagObjectKey: tag_item_type_container
+      Min: 0
+      Max: 0
   - BlueprintID: blueprint_drink_from_well
     Settings:
       Priority: 3
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

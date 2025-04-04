@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: tag_item_type_meal
   m_EditorClassIdentifier: 
   TooltipID: tooltip_tag_item_type_meal
-  GroupID: item_type
   DEBUG: 0
-  TagIDs: []
+  TagIDs:
+  - tag_item_group_food
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 1
   TrackPlayerCanEdit: 1
   TrackingTypes: 1
+  TagGroups:
+  - item_type

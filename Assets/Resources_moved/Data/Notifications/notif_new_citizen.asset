@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_new_citizen
   m_EditorClassIdentifier: 
   TooltipID: tooltip_notif_new_citizen
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

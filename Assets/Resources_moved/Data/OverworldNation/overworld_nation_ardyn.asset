@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: overworld_nation_ardyn
   m_EditorClassIdentifier: 
   TooltipID: tooltip_overworld_nation_ardyn
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -38,6 +37,8 @@ MonoBehaviour:
   - race_ardyn
   GenerateSettlementNameKey: location_names_ardyn_settlements
   GenerateKingdomNameKey: location_names_ardyn_kingdoms
+  GameOverScenarios:
+  - scenario_game_over_settler_wave_ardyn0
   ChanceToSendMerchant: 50
   MerchantPartyID: party_merchant_ardyn
   ChanceToMigrate: 50

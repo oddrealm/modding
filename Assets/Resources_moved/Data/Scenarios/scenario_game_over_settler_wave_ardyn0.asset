@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
+  m_Name: scenario_game_over_settler_wave_ardyn0
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  EntitySpawns:
+  - SpawnPointType: 1
+    OverrideEntityWithNation: 0
+    OverrideEntityWithFauna: 0
+    EntitySpawn:
+      EntityId: entity_ardyn
+      EntityTag: 
+      EntityProfession: profession_random
+      EntityGender: priority
+      EntityCount: 3
+      EntityFaction: faction_player
+      EntityTuning: 
+      EntityAppearance: 
+      SpawnRate: 1000
+      AgeType: 2
+      ScenarioID: 
+      SpawnEntityFromItem: 0
+      AutoGenEquipment: 1
+      AutoGenInventory: 1
+      DisableItemEquipFromTuning: 0
+      EquippedItems: []
+      InventoryItems: []
+      AddedStatuses: []
+    SpawnData:
+      EntityID: entity_ardyn
+      ProfessionID: profession_random
+      FactionID: faction_player
+      GenderID: priority
+      TuningID: 
+      AppearanceID: 
+      AgeType: 2
+      StartingAgeMins: -1
+      Tag: 
+      Count: 3
+      Chance:
+        Chance: 0
+        SampleSize: 0
+      SpawnScenario: 
+      AutoGenEquipment: 1
+      AutoGenInventory: 1
+      DisableItemEquipFromTuning: 0
+      EquippedItems: []
+      InventoryItems: []
+      AddedStatuses: []
+  - SpawnPointType: 0
+    OverrideEntityWithNation: 0
+    OverrideEntityWithFauna: 0
+    EntitySpawn:
+      EntityId: entity_chicken
+      EntityTag: 
+      EntityProfession: profession_animal
+      EntityGender: priority
+      EntityCount: 10
+      EntityFaction: faction_captured
+      EntityTuning: 
+      EntityAppearance: 
+      SpawnRate: 800
+      AgeType: 2
+      ScenarioID: 
+      SpawnEntityFromItem: 0
+      AutoGenEquipment: 0
+      AutoGenInventory: 0
+      DisableItemEquipFromTuning: 0
+      EquippedItems: []
+      InventoryItems: []
+      AddedStatuses: []
+    SpawnData:
+      EntityID: entity_chicken
+      ProfessionID: profession_animal
+      FactionID: faction_captured
+      GenderID: priority
+      TuningID: 
+      AppearanceID: 
+      AgeType: 2
+      StartingAgeMins: -1
+      Tag: 
+      Count: 10
+      Chance:
+        Chance: 800
+        SampleSize: 1000
+      SpawnScenario: 
+      AutoGenEquipment: 0
+      AutoGenInventory: 0
+      DisableItemEquipFromTuning: 0
+      EquippedItems: []
+      InventoryItems: []
+      AddedStatuses: []
+  Dialogues:
+  - DialogueID: dialogue_scenario_settler_wave_ardyn0
+  Conditions: []
+  PartyID: 
+  IsScheduled: 0
+  ActivationChance:
+    Chance: 0
+    SampleSize: 0
+  MaxActivations: 0
+  MinKingdomLevel: 1
+  MinMinutesSinceSettlementStart: 1440
+  MinMinutesSinceLastScenario: 1440
+  MinMinutesSinceLastSameScenario: 1440

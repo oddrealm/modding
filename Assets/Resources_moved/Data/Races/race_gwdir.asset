@@ -28,4 +28,18 @@ MonoBehaviour:
   Perks:
   - '<sprite=53> One With Nature: Start with an increased farming skill.'
   DefaultActiveResearch: []
+  StartingItems:
+  - ItemID: item_aiwir_hat
+    ChanceToEquip: 1
+    ChanceToEquipMaxRoll: 10
+  - ItemID: item_aiwir_coat
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_aiwir_pants
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_aiwir_boots
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
   Buffs: []
+  AutoCreateUniform: 1

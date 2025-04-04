@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_notif_new_discovery
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: New
-  Name: New
-  NamePlural: New Discoveries
-  InlineIcon: <sprite=883>
+  Name: New Discovery!
+  NamePlural: New Discoveries!
+  InlineIcon: <sprite=1805>
   Description: 
   Icon: 
-  TextColor: {r: 0.16862746, g: 0.7490196, b: 0.5058824, a: 1}
+  TextColor: {r: 0.5686275, g: 0.101960786, b: 0.77254903, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1586
+  Order: 2092

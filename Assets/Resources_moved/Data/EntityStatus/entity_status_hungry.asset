@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: entity_status_hungry
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_status_hungry
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  TrackByDefault: 0
+  TrackByDefault: 1
   VisibleToPlayer: 1
-  ShowIndicator: 0
+  ShowIndicator: 1
   Notification: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
@@ -35,12 +34,12 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: attribute_hunger
+  - Comment: Remove On Full
+    ConditionTarget: attribute_hunger
     HideInTooltips: 0
-    Comment: Remove On Full
     ActivationID: 
     Conditions:
-    - rid: 8269333940184547361
+    - rid: 5668703803381907515
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 5
@@ -56,8 +55,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 8269333940184547361
+    - rid: 5668703803381907515
       type: {class: GreaterThanEqualCondition, ns: , asm: Assembly-CSharp}
       data:
-        Amount: 80
+        Amount: 50
         Normalized: 0

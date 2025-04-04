@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: plant_tree_oak_leaves
   m_EditorClassIdentifier: 
   TooltipID: tooltip_plant_tree_oak_leaves
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

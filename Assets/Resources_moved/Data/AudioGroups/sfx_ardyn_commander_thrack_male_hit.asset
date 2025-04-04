@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: sfx_ardyn_commander_thrack_male_hit
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

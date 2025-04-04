@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: input_command_toggle_claim
   m_EditorClassIdentifier: 
   TooltipID: tooltip_input_toggle_claim
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -21,8 +20,7 @@ MonoBehaviour:
   Category: 2
   InputState: 4
   DeferTo: []
-  DefaultTriggers:
-  - Hotkeys: []
+  DefaultTriggers: []
   ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1

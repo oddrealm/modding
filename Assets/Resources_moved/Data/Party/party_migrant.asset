@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: party_migrant
   m_EditorClassIdentifier: 
   TooltipID: tooltip_party_migrant
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

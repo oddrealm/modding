@@ -52,7 +52,7 @@ MonoBehaviour:
   ShowLighting: 1
   DropShadow: 1
   LightSettings:
-    ReductionThreshold: 1
+    MinReductionThreshold: 2
     SkylightReduction: 1
     SkylightPass: 1
     BlockAmbientLight: 0

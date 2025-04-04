@@ -64,7 +64,9 @@ public class GDEPrefabData : Scriptable
         if (SeedOffset == 0)
         {
             SeedOffset = Random.Range(0, 1000000);
+#if UNITY_EDITOR
             UnityEditor.EditorUtility.SetDirty(this);
+#endif
         }
 #endif
         int minX = 8;

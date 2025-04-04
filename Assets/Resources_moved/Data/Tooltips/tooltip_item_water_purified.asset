@@ -13,19 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_item_water_purified
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
-  Action: Bottled Water
+  Action: 
   Name: Bottled Water
   NamePlural: 
   InlineIcon: <sprite=652>
-  Description: A crystal-clear liquid, cleansed of all impurities, safe for drinking
-    and alchemy.
+  Description: Water in a crystal bottle.
   Icon: sp_purified_water_icon
   TextColor: {r: 0.12156863, g: 0.34509805, b: 0.83137256, a: 1}
   Type: Item
-  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 317
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 318

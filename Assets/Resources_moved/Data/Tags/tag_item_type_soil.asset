@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: tag_item_type_soil
   m_EditorClassIdentifier: 
   TooltipID: tooltip_tag_item_type_soil
-  GroupID: item_type
   DEBUG: 0
-  TagIDs: []
+  TagIDs:
+  - tag_item_group_resources
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
   TrackPlayerCanEdit: 1
   TrackingTypes: 1
+  TagGroups:
+  - item_type

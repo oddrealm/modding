@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_astralarium
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_astralarium
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,48 +28,44 @@ MonoBehaviour:
   - BlueprintID: blueprint_item_astralite
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_astrasome
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_nyctium_boots
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_nyctium_breastplate
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_nyctium_brick
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_nyctium_helmet
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_nyctium_leggings
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

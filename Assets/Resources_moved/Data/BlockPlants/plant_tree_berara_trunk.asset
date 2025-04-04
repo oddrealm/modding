@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: plant_tree_berara_trunk
   m_EditorClassIdentifier: 
   TooltipID: tooltip_plant_tree_berara_trunk
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,7 +26,7 @@ MonoBehaviour:
   MatureThreshold: 0.5
   MatureTag: tag_mature_tree
   MatureInlineIcon: <sprite=9>
-  LimitGroupSizeThreshold: 2500
+  LimitGroupSizeThreshold: 1000
   RemoveItemDrops: spawns_tree_spring_berara_trunk
   MatureItemDrops: 
   MatureTagObjectSpawn: 

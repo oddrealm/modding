@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: attack_steel_sword_one_hand_cut
   m_EditorClassIdentifier: 
   TooltipID: tooltip_attack_steel_sword_one_hand_cut
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,7 +26,7 @@ MonoBehaviour:
   AttackFishInRange: 0
   SkillID: skill_fight_melee
   AddSkillToOutput: 1
-  MinAmount: 33
+  MinAmount: 34
   MaxAmount: 38
   Range: 14
   StatusesToApplyToTarget: []

@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_block_sandstone
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Sandstone
+  Action: 
   Name: Sandstone
   NamePlural: 
   InlineIcon: <sprite=1162>
@@ -27,4 +26,4 @@ MonoBehaviour:
   TextColor: {r: 0.7735849, g: 0.64174366, b: 0.43422925, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2038
+  Order: 2345

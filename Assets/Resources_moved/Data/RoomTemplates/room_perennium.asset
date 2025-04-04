@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_perennium
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_perennium
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,48 +28,49 @@ MonoBehaviour:
   - BlueprintID: blueprint_item_aiwir_boots
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_aiwir_coat
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_aiwir_hat
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_aiwir_pants
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wir
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_thresk_one_hand
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_sleep
     Settings:
       Priority: 3
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
+  - BlueprintID: blueprint_item_wir
+    Settings:
+      Priority: 1
+      AutoJobType: 0
+    ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

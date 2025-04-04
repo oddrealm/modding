@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_tin_ingot
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_tin_ingot
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_ingot
@@ -50,7 +49,6 @@ MonoBehaviour:
   MerchantSellValue: 30
   TuneRating: 3
   ItemRarity: item_rarity_uncommon
-  RarityType: 1
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

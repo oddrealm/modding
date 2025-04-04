@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_scenario_activated_no_pip
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

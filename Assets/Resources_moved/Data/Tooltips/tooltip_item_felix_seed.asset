@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_item_felix_seed
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
-  Action: Felix Seed
+  Action: 
   Name: Felix Seed
   NamePlural: 
   InlineIcon: <sprite=279>
@@ -26,5 +25,5 @@ MonoBehaviour:
   Icon: sp_felix_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Item
-  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 963
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1437

@@ -56,25 +56,19 @@ public enum JobPoolTypes
 [CreateAssetMenu(menuName = "ScriptableObjects/Blueprints")]
 public class GDEBlueprintsData : Scriptable, IProgressionObject
 {
+    public string WorkerID = "";
+    [Header("Used to force jobs to be done. i.e., blueprint_eat_item = 99")]
+    public int SkillPriorityOverride = -1;
+    public int XP = 10;
+    public bool AwardXPForEachAction = false;
     public string CategoryID = "blueprint_category_jobs";
-
-    public GDEBlueprintCategoryData Category { get; private set; }
-
     public string ResearchKey = "";
-
     public bool Repeat = false;
     public bool CheckStateForTransition = false;
-
-
     public bool MarkItemsAtLocationClaimed = false;
     public bool MarkItemsAtLocationUnclaimed = false;
-
     public int SimTime = 0;
-
-    [Header("Determines XP gained.")]
-    public int SkillLevel = 1;
     public bool AddBlockSkillToJobSkill = false;
-
     [Header("Location Permissions:")]
     public string LocationID = "";
     public WorkPositionTypes WorkPosition;
@@ -82,7 +76,6 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     public List<string> LocationPermissions = new List<string>()
     {
     };
-
     [Header("Worker Permissions:")]
     public List<string> WorkerPermissions = new List<string>()
     {
@@ -90,9 +83,6 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
         "faction_captured"
     };
     public List<string> WorkerPermissionsToLock = new List<string>();
-    [System.NonSerialized]
-    public HashSet<string> WorkerPermissionsToLockHash = new HashSet<string>();
-
     [Header("Target Permissions:")]
     public List<string> TargetPermissions = new List<string>()
     {
@@ -100,23 +90,13 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
         "faction_captured"
     };
     public List<string> TargetPermissionsToLock = new List<string>();
-    [System.NonSerialized]
-    public HashSet<string> TargetPermissionsToLockHash = new HashSet<string>();
-
     [Header("Resource Permissions:")]
+    public bool OnlyUseResourcesAtJobLocation = false;
     public JobPoolTypes ResourcePool = JobPoolTypes.WORLD;
     public bool ShowItemTypeResourcePermissions = false;
     public List<string> ResourcePermissionsToLock = new List<string>();
-    [System.NonSerialized]
-    public HashSet<string> ResourcePermissionsToLockHash = new HashSet<string>();
-    [System.NonSerialized]
-    public List<string> ResourcesPermissionKeys = new List<string>();
-    [System.NonSerialized]
-    public HashSet<string> ResourcesPermissionKeysHash = new HashSet<string>();
-
     [Header("Actions:")]
     public int MaxWorkers = 0;
-    public bool WorkerNeedsAllRequirements = false;
     public JobActionRequirement[] JobActions = new JobActionRequirement[]
     {
         new JobActionRequirement()
@@ -124,80 +104,51 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
             ActionType = JobActionTypes.WORK
         }
     };
-
-    [System.NonSerialized]
-    public List<string> JobActionResourceIDs = new List<string>();
-    [System.NonSerialized]
-    public Dictionary<string, int> JobActionResourceIDsAndCount = new Dictionary<string, int>();
-
-    [System.NonSerialized]
-    public string CoreWorkerID = "";
-
-    [System.NonSerialized]
-    public List<string> JobActionTargetIDs = new List<string>();
-    [System.NonSerialized]
-    public Dictionary<string, int> JobActionTargetIDsAndCount = new Dictionary<string, int>();
-
     [Header("Progress:")]
     public string ProgressWorkerAttribute = "";
+    public int AddedProgressPerAction = 0;
     public int ProgressMax = 100;
     public ProgressBarTypes ProgressBarType = ProgressBarTypes.CIRCLE;
     public bool InvertProgressDisplay = false;
-
     [Header("Progress FX X:")]
     public int ProgressFXMaxX = 0;
     public int ProgressFXMinX = 0;
-
     [Header("Progress FX Y:")]
     public int ProgressFXMaxY = 0;
     public int ProgressFXMinY = 0;
-
     [Header("On Finish:")]
     public BlockClear Clear;
     public int RevealDistance = 0;
     public int SpawnCount = 1;
     public string SpawnTagID;
     public string SpawnTagObjectID;
-
+    [Header("Mass")]
+    public bool ChangeFillMass = false;
+    public int SetMass = 0;
     public string TriggerActivationID = "";
-
     public string ActiveWorkerStatus = "";
     public string OnJobStartActionID = "";
     public string OnJobQuitActionID = "";
     public string OnFinishedResourcesActionID = "";
-
     public string SetTargetFactionTo = "";
-
-    public bool HasWorkerBuffOrStatus { get { return OnFinishWorkerBuffs.Length > 0 || OnFinishWorkerStatusAdds.Length > 0; } }
     public BuffData[] OnFinishWorkerBuffs = new BuffData[] { };
     public string[] OnFinishWorkerStatusAdds = new string[] { };
     public string[] OnFinishWorkerStatusRemoves = new string[] { };
-
-    public bool HasTargetBuffOrStatus { get { return OnFinishTargetBuffs.Length > 0 || OnFinishTargetStatusAdds.Length > 0; } }
     public BuffData[] OnFinishTargetBuffs = new BuffData[] { };
     public string[] OnFinishTargetStatusAdds = new string[] { };
     public string[] OnFinishTargetStatusRemoves = new string[] { };
-
     [Header("Hack")]
     public bool TryCatchFish = false;
     public bool TryHarvestFruit = false;
-
     public bool CanSelectTarget = false;
-
-    [System.NonSerialized]
-    public BlockLayers RequiredLayerPermissions = BlockLayers.NONE;
-
     [Header("Action Text:")]
     public bool ShowWorkOutputActionText = true;
-
     [Header("FX:")]
     public string OnFinishedFX = "";
     public string WorkFX = "fx_block_hit";
-
     [Header("SFX:")]
     public string WorkSFX = "sfx_hammer_wood";
     public string OnFinishedSFX = "";
-
     [Header("Tile Visuals:")]
     public bool ShowVisualsOnCursor = true;
     public List<string> ClearJobCursorVisuals = new List<string>() { "visuals_job_cursor_clear" };
@@ -205,7 +156,6 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     public List<string> ProhibitedCursorVisualsOverride = new List<string>();
     public List<string> Visuals = new List<string>();
     public bool ShowVisualsIfStarted = true;
-
     [Header("Auto-Job Settings")]
     public int MaxAutoJobQueueCount = 9;
     public bool DisposeIfRequirementsNotMet;
@@ -214,11 +164,36 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     public int AutoJobOnFreedCooldown = 0;
 
     public bool CanShowInProgressUI { get { return true; } }
-
-    [System.NonSerialized]
-    public bool HasRotationFixture;
-
+    public bool HasRotationFixture { get; private set; }
     public override string ObjectTypeDisplay { get { return "Blueprints"; } }
+    public GDEBlueprintCategoryData CategoryData { get; private set; }
+    public BlockLayers RequiredLayerPermissions { get; private set; } = BlockLayers.NONE;
+    public bool HasWorkerBuffOrStatus { get { return OnFinishWorkerBuffs.Length > 0 || OnFinishWorkerStatusAdds.Length > 0; } }
+    public bool HasTargetBuffOrStatus { get { return OnFinishTargetBuffs.Length > 0 || OnFinishTargetStatusAdds.Length > 0; } }
+    public List<string> JobActionResourceIDs { get; private set; } = new List<string>();
+    public Dictionary<string, int> JobActionResourceIDsAndCount { get; private set; } = new Dictionary<string, int>();
+    public List<string> JobActionTargetIDs { get; private set; } = new List<string>();
+    public Dictionary<string, int> JobActionTargetIDsAndCount { get; private set; } = new Dictionary<string, int>();
+    public HashSet<string> ResourcePermissionsToLockHash { get; private set; } = new HashSet<string>();
+    public List<string> ResourcesPermissionKeys { get; private set; } = new List<string>();
+    public HashSet<string> ResourcesPermissionKeysHash { get; private set; } = new HashSet<string>();
+    public HashSet<string> TargetPermissionsToLockHash { get; private set; } = new HashSet<string>();
+    public HashSet<string> WorkerPermissionsToLockHash { get; private set; } = new HashSet<string>();
+
+    public bool HasOutput
+    {
+        get
+        {
+            if (!string.IsNullOrEmpty(SpawnTagID)) { return true; }
+            if (!string.IsNullOrEmpty(SpawnTagObjectID)) { return true; }
+            if (HasWorkerBuffOrStatus) { return true; }
+            if (OnFinishWorkerStatusRemoves.Length > 0) { return true; }
+            if (HasTargetBuffOrStatus) { return true; }
+            if (OnFinishTargetStatusRemoves.Length > 0) { return true; }
+
+            return false;
+        }
+    }
 
 #if ODD_REALM_APP
     public override void SetOrderKey(string orderKey)
@@ -230,11 +205,6 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     public override void OnLoaded()
     {
         base.OnLoaded();
-
-        if (WorkerNeedsAllRequirements)
-        {
-            Debug.LogError(Key);
-        }
 
         if (!string.IsNullOrEmpty(LocationID) && !LocationPermissions.Contains(LocationID))
         {
@@ -259,9 +229,14 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
             WorkerPermissionsToLockHash.UnionWith(WorkerPermissionsToLock);
         }
 
-        Category = DataManager.GetTagObject<GDEBlueprintCategoryData>(CategoryID);
+        CategoryData = DataManager.GetTagObject<GDEBlueprintCategoryData>(CategoryID);
 
 #if DEV_TESTING
+        if (!string.IsNullOrEmpty(ResearchKey) && !DataManager.TagObjectExists(ResearchKey))
+        {
+            Debug.LogError("No ResearchKey data found for: " + ResearchKey + " blueprint: " + Key);
+        }
+
         if (!string.IsNullOrEmpty(SpawnTagObjectID) && DataManager.GetTagObject(SpawnTagObjectID).IsNULL)
         {
             Debug.LogError("No SpawnTagObjectID data found for: " + Key);
@@ -313,8 +288,22 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
             if (!test)
             {
             }
-
 #endif
+
+//#if UNITY_EDITOR
+//            if (!string.IsNullOrEmpty(JobActions[i].OnJobFinishActionID))
+//            {
+//                Debug.LogError(Key + " has OnJobFinishActionID set: " + JobActions[i].OnJobFinishActionID);
+//            }
+
+//            if (!string.IsNullOrEmpty(OnFinishedResourcesActionID))
+//            {
+//                Debug.Log(Key + " has OnFinishedResourcesActionID set: " + OnFinishedResourcesActionID);
+//            }
+//#endif
+
+
+
             if (!string.IsNullOrEmpty(JobActions[i].ResourceID))
             {
                 if (DiscoveryDependenciesHash.Add(JobActions[i].ResourceID))
@@ -336,11 +325,6 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
 
             if (!string.IsNullOrEmpty(JobActions[i].WorkerID))
             {
-                if (string.IsNullOrEmpty(CoreWorkerID) || JobActions[i].ActionType == JobActionTypes.WORK)
-                {
-                    CoreWorkerID = JobActions[i].WorkerID;
-                }
-
                 if (DiscoveryDependenciesHash.Add(JobActions[i].WorkerID))
                 {
                     DiscoveryDependencies.Add(JobActions[i].WorkerID);
@@ -371,6 +355,11 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
             }
         }
 
+        if (string.IsNullOrEmpty(WorkerID))
+        {
+            Debug.LogError("Worker ID is not set for: " + Key);
+        }
+
         if (!string.IsNullOrEmpty(SpawnTagObjectID))
         {
             if (DiscoveryDependenciesHash.Add(SpawnTagObjectID))
@@ -381,7 +370,7 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
         }
 
 #if DEV_TESTING
-        if (string.IsNullOrEmpty(CoreWorkerID))
+        if (string.IsNullOrEmpty(WorkerID))
         {
             Debug.LogError($"{Key} is missing core worker id!");
         }

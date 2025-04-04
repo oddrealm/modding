@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Open
+  Action: 
   Name: Open
   NamePlural: 
-  InlineIcon: <sprite=1639>
-  Description: 
+  InlineIcon: <sprite=1672>
+  Description: No objects fill this space.
   Icon: sp_block_none_icon
-  TextColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Type: Block
+  TextColor: {r: 0.60223085, g: 0.93313545, b: 0.9433962, a: 1}
+  Type: Location
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1663
+  Order: 1895

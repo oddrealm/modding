@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_attribute_thirst
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -22,9 +21,9 @@ MonoBehaviour:
   Name: Thirst
   NamePlural: 
   InlineIcon: <sprite=654>
-  Description: At 0, this entity will start to lose health. Refill by drinking beverages.
+  Description: Will start to lose Health when Thirst reaches 0.
   Icon: 
   TextColor: {r: 0.121395506, g: 0.34569693, b: 0.8301887, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2458
+  Order: 3025

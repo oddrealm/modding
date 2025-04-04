@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_status_lays_eggs
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_status_lays_eggs
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_statuses
@@ -36,9 +35,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: 
+  - Comment: Lay Egg
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: Lay Egg
     ActivationID: tag_can_lay_egg
     Conditions: []
     TimeThresholdMinutes: 0

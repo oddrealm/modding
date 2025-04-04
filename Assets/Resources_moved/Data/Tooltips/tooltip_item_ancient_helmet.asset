@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: tooltip_item_ancient_helmet
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
-  Action: Ancient Helmet
+  Action: 
   Name: Ancient Helmet
   NamePlural: 
   InlineIcon: <sprite=458>
@@ -27,5 +26,5 @@ MonoBehaviour:
   Icon: sp_ancient_helmet_icon
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Item
-  TypeColor: {r: 0.475, g: 0.44551042, b: 0.404225, a: 1}
-  Order: 125
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 126

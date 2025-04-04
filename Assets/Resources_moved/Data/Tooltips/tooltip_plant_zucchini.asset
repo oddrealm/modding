@@ -18,7 +18,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Zucchini
+  Action: 
   Name: Zucchini
   NamePlural: 
   InlineIcon: <sprite=181>
@@ -27,4 +27,4 @@ MonoBehaviour:
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2911
+  Order: 3466

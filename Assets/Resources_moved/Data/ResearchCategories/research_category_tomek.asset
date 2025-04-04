@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: research_category_tomek
   m_EditorClassIdentifier: 
   TooltipID: tooltip_research_category_tomek
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Hide: 0
   FriendlyName: 
   OrderInList: 9
+  RaceRequirements:
+  - race_tomek
   ResearchBuffs:
   - TagObjectID: race_tomek
   - TagObjectID: entity_status_researching

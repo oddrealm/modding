@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: simulation_tree_leaves_default
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -49,7 +48,7 @@ MonoBehaviour:
         Conditions:
         - rid: 8
         Actions:
-        - rid: 9
+        - rid: 2025174578694979643
     - rid: 2
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
@@ -103,10 +102,6 @@ MonoBehaviour:
         Outcome: 1
         StateID: plant_state_expired
         OptionID: 
-    - rid: 9
-      type: {class: DisposeSimAction, ns: , asm: Assembly-CSharp}
-      data:
-        DebugBreakpoint: 0
     - rid: 10
       type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
       data:
@@ -238,3 +233,17 @@ MonoBehaviour:
         TagObjectKey: 
         StateID: plant_has_tag_object_ID
         OptionID: tree_trunk
+    - rid: 2025174578694979643
+      type: {class: ClearSimAction, ns: , asm: Assembly-CSharp}
+      data:
+        DebugBreakpoint: 0
+        Clear:
+          Layer: 64
+          Params:
+            disableRemoveSpawns: 1
+            disposeIfNotPermitted: 0
+            disableSpawnAtEntityOnFail: 0
+            disableClaimCheck: 0
+            setAsUnclaimed: 0
+            attempts: 0
+            seedOffset: 0

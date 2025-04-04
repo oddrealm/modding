@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_status_starving
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_status_starving
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -34,9 +33,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: 
+  - Comment: Lower Health over time.
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: Lower Health over time.
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 30

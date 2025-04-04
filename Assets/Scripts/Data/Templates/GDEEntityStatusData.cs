@@ -30,25 +30,18 @@ public enum StatusActionTypes
 [System.Serializable]
 public struct StatusAction
 {
+    public string Comment;
     [Header("Skill, Attribute, Etc. - Leave empty if there is no condition requirement.")]
     public string ConditionTarget;
-
     public bool HideInTooltips;
-
-    public string Comment;
-
     [Header("Used to activate from external sources (Optional). i.e., sleep job activates 'tag_can_sleep_in_bed' status action.")]
     public string ActivationID;
-
     [SerializeReference]
     public ICondition[] Conditions;
-
     [Header("Min Amount Of Elapsed Time To Activate (in minutes). i.e., Every 60 minutes.")]
     public uint TimeThresholdMinutes;
-
     [Header("Leave 0 to ignore. (1/100,000 roll)")]
     public uint RandomChance;
-
     public StatusActionTypes ActivationAction;
     public StatusActionTypes DeactivationAction;
     public BuffData[] Buffs;
@@ -185,6 +178,13 @@ public class GDEEntityStatusData : Scriptable
     public List<string> StatusesToRemove = new List<string>();
     public List<string> StatusesToAddOnExpire = new List<string>();
     public List<string> PermittedGenders = new List<string>();
+    public List<string> PermittedFactions = new List<string>()
+    {
+        "faction_player",
+        "faction_neutral",
+        "faction_hostile",
+        "faction_captured"
+    };
     public List<string> StatusesToProhibit = new List<string>();
     public List<string> StatusesToDisable = new List<string>();
 #if ODD_REALM_APP
@@ -205,6 +205,8 @@ public class GDEEntityStatusData : Scriptable
     public string[] DialogueOptions = new string[0];
 
     public bool CanExpire { get { return ExpireTimeMinutesMax > 0; } }
+    public HashSet<string> PermittedGendersHash { get; private set; }
+    public HashSet<string> PermittedFactionsHash { get; private set; }
 
     public override bool TryGetDefaultTracking(out DefaultTracking tracking)
     {
@@ -230,6 +232,8 @@ public class GDEEntityStatusData : Scriptable
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
+        PermittedGendersHash = new HashSet<string>(PermittedGenders);
+        PermittedFactionsHash = new HashSet<string>(PermittedFactions);
         SortedActionIndices.Clear();
 
         if (Actions != null && Actions.Length > 0)

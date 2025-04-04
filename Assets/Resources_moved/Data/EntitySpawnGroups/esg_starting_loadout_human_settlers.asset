@@ -136,7 +136,7 @@ MonoBehaviour:
     AddedStatuses: []
   - EntityId: entity_human
     EntityTag: 
-    EntityProfession: profession_stone_mason
+    EntityProfession: profession_carpenter
     EntityGender: priority
     EntityCount: 1
     SameRoomAsPlayer: 0

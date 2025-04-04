@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: overworld_nation_human
   m_EditorClassIdentifier: 
   TooltipID: tooltip_overworld_nation_human
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -43,6 +42,10 @@ MonoBehaviour:
   - race_sheep
   GenerateSettlementNameKey: location_names_human_settlements
   GenerateKingdomNameKey: location_names_human_kingdoms
+  GameOverScenarios:
+  - scenario_game_over_settler_wave_humans0
+  - scenario_game_over_settler_wave_humans1
+  - scenario_game_over_settler_wave_humans2
   ChanceToSendMerchant: 50
   MerchantPartyID: party_merchant_human
   ChanceToMigrate: 50

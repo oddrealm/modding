@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_attribute_xp
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -22,10 +21,10 @@ MonoBehaviour:
   Name: XP
   NamePlural: 
   InlineIcon: <sprite=1002>
-  Description: XP determines when a Entity levels up. XP is earned when Entities
-    do jobs, fight, and tame animals.
+  Description: XP is earned by completing jobs and defeating enemies in combat, allowing
+    the entity to level up.
   Icon: 
-  TextColor: {r: 0.16509432, g: 0.8634437, b: 1, a: 1}
+  TextColor: {r: 0.24213827, g: 0.7359945, b: 1, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2898
+  Order: 3460

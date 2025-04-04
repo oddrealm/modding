@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_room_home
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -22,10 +21,10 @@ MonoBehaviour:
   Name: Human Home
   NamePlural: Human Homes
   InlineIcon: <sprite=1014>
-  Description: Homes are used by Humans for sleeping and procreation. Humans will
-    move their families into a Home if it is big enough.
+  Description: Humans will only have children if they have a Home. They will also
+    sleep in them.
   Icon: sp_room_home_icon
   TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
-  Type: Human Room
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1192
+  Type: Room
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1701

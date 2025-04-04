@@ -9,7 +9,7 @@ public class Scriptable : ScriptableObject, ITagObject
         get
         {
 #if UNITY_EDITOR
-            if (_key != name)
+            if (string.IsNullOrEmpty(_key))
             {
                 _key = name;
             }
@@ -21,7 +21,6 @@ public class Scriptable : ScriptableObject, ITagObject
     private string _key;
 
     public string TooltipID = "";
-    public string GroupID = "";
     public bool DEBUG;
 
     public List<string> TagIDs = new List<string>();
@@ -123,11 +122,6 @@ public class Scriptable : ScriptableObject, ITagObject
         get { return ObjectType; }
     }
 
-    public string ObjectGroup
-    {
-        get { return GroupID; }
-    }
-
     // Used to determine ObjectIndex when loading game data
     public virtual string OrderKey { get; private set; }
     // Set on game data load based on tooltip name and groups
@@ -148,6 +142,7 @@ public class Scriptable : ScriptableObject, ITagObject
     public static readonly NullTagObject NULL_TAG_OBJECT = new NullTagObject();
     public static readonly NullTagObjectInstance NULL_TAG_OBJECT_INSTANCE = new NullTagObjectInstance();
     public static readonly List<string> NULL_ID_LIST = new List<string>();
+    public static readonly HashSet<string> NULL_ID_SET = new HashSet<string>();
     public static readonly List<InstanceUID> NULL_UID_LIST = new List<InstanceUID>();
 #endif
 
@@ -218,10 +213,15 @@ public class Scriptable : ScriptableObject, ITagObject
 
     #endregion
 
+    public void UpdateKey()
+    {
+        _key = name;
+    }
+
 #if ODD_REALM_APP
     public virtual void Init()
     {
-        _key = name;
+        UpdateKey();
     }
 
     public virtual void SetOrderKey(string orderKey)

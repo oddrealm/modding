@@ -22,9 +22,9 @@ MonoBehaviour:
   Name: Builder
   NamePlural: Builders
   InlineIcon: <sprite=35>
-  Description: Builders specialize in the production of wood and thatch materials
+  Description: Builders specialize in the production of wood, stone, and thatch materials
   Icon: sp_profession_carpenter_icon
   TextColor: {r: 0.6392157, g: 0.47058827, b: 0.4039216, a: 1}
   Type: Profession
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 372
+  Order: 436

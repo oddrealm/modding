@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_scenario_ancient_settler_unworthy_0
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,4 +26,4 @@ MonoBehaviour:
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2624
+  Order: 3079

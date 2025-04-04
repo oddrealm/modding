@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_tag_can_plant_water
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Plant Item
-  Name: Can Plant
+  Name: Marine Seed
   NamePlural: 
   InlineIcon: <sprite=1491>
   Description: This item can be planted to create a water crop.
   Icon: 
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.4509804, a: 1}
-  Type: Property
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 447
+  Type: Type
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1950

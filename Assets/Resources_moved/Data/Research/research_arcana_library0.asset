@@ -13,17 +13,15 @@ MonoBehaviour:
   m_Name: research_arcana_library0
   m_EditorClassIdentifier: 
   TooltipID: tooltip_research_arcana_library0
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 1
   ShowInSaga: 1
-  Races: []
   Dependency: 
-  Column: 1
+  Column: 0
   Row: 0
   ResearchCategory: research_category_arcana
   RequireItemCountOverride: 0
-  ResearchTimeStep: 60
+  GlobalBuffs: []

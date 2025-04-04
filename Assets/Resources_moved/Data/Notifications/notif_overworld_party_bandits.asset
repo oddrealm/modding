@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_overworld_party_bandits
   m_EditorClassIdentifier: 
   TooltipID: tooltip_notif_overworld_party_bandits
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

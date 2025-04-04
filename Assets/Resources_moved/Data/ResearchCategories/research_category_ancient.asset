@@ -20,6 +20,8 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   FriendlyName: Ancients
   OrderInList: 6
+  RaceRequirements:
+  - race_ancient
   ResearchBuffs:
   - TagObjectID: race_ancient
   - TagObjectID: entity_status_researching

@@ -20,6 +20,8 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   FriendlyName: Ardyn
   OrderInList: 7
+  RaceRequirements:
+  - race_ardyn
   ResearchBuffs:
   - TagObjectID: race_ardyn
   - TagObjectID: entity_status_researching

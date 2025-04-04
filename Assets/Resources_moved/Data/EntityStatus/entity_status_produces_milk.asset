@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_status_produces_milk
   m_EditorClassIdentifier: 
   TooltipID: tooltip_entity_status_produces_milk
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_statuses
@@ -35,7 +34,22 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
-  Actions: []
+  Actions:
+  - Comment: Produce milk over time.
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 1440
+    RandomChance: 0
+    ActivationAction: 2
+    DeactivationAction: 0
+    Buffs: []
+    Statuses:
+    - entity_status_has_milk
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
   AutoJobs: []
   DialogueOptions: []
   references:

@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_scenario_game_over_settler_wave_humans1
+  m_EditorClassIdentifier: 
+  TooltipID: 
+  DEBUG: 0
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AppearanceID: 
+  NextDialogueID: []
+  SpeakerTarget: 
+  Message: 
+  Response: []
+  FocusOnSpeaker: 1
+  DialogueSequences:
+  - ID: seq_appear
+    Text: Two grim bandits emerge from the mist.
+    OverrideSpeaker: 1
+    OverrideSpeakerID: 
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: 
+      Text: 
+      NextSequenceID: seq_bandit0
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionB:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+  - ID: seq_bandit0
+    Text: Look at this dump!
+    OverrideSpeaker: 0
+    OverrideSpeakerID: 
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: 
+      Text: 
+      NextSequenceID: seq_bandit1
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionB:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+  - ID: seq_bandit1
+    Text: It's perfect.
+    OverrideSpeaker: 0
+    OverrideSpeakerID: 
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionB:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionC:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 
+    ActionD:
+      ID: 
+      Text: 
+      NextSequenceID: 
+      ActionTrigger: 0
+      ActionDataID: 

@@ -19,6 +19,7 @@ public class GDEBlockFillData : Scriptable, ISimulationData
     public bool FillNeighborBlocksOnNew = false;
     public bool IsObstruction = false;
     public bool IsVerticalAccess = false;
+    public bool CanLoseMass = false;
     public int FullThreshold = 90;
     public int EmptyThreshold = 10;
     public int FreezeThreshold = 0;

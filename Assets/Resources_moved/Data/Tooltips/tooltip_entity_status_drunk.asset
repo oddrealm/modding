@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_entity_status_drunk
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,5 +26,5 @@ MonoBehaviour:
   Icon: 
   TextColor: {r: 0.21586864, g: 0.7264151, b: 0.693827, a: 1}
   Type: Status
-  TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 869
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1337

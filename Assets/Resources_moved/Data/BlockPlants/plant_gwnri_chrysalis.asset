@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: plant_gwnri_chrysalis
   m_EditorClassIdentifier: 
   TooltipID: tooltip_plant_gwnri_chrysalis
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -60,9 +59,9 @@ MonoBehaviour:
   FruitVisuals: 
   LayerPriority: 0
   Layer: 32
-  ProhibitedLayers: 32
+  ProhibitedLayers: 96
   Permissions: 262144
-  Prohibited: 1024
+  Prohibited: 525312
   MaturePermissions: 0
   MatureProhibitions: 0
   PlantType: 2

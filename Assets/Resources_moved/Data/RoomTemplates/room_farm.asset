@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_farm
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_farm
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,42 +28,42 @@ MonoBehaviour:
   - BlueprintID: blueprint_harvest_standing
     Settings:
       Priority: 2
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_water_plant
     Settings:
       Priority: 3
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_plant_standing
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_harvest_ground_cover
     Settings:
       Priority: 2
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_till
     Settings:
       Priority: 2
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 2
       AutoJobType: 1
-    ResourcePermissions: []
+    ResourcePermissions:
+    - TagObjectKey: tag_item_type_seed
+      Min: 0
+      Max: 0
   - BlueprintID: blueprint_plant_ground_cover
     Settings:
-      Priority: 2
-      Enabled: 0
+      Priority: 1
       AutoJobType: 0
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

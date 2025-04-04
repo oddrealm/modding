@@ -32,7 +32,7 @@ MonoBehaviour:
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
-  IsToggle: 1
+  IsToggle: 0
   BtnsForceActive: 1
   MaxIncrement: 1
   PlayerCanEdit: 1

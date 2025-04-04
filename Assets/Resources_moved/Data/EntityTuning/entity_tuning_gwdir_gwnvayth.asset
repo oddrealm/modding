@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: entity_tuning_gwdir_gwnvayth
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

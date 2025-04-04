@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_recycle_tome_of_cooking
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Recycle Tome Of Cooking
+  Action: 
   Name: Recycle Tome Of Cooking
   NamePlural: 
   InlineIcon: <sprite=1070>
-  Description: 
+  Description: A masterwork of culinary tradition, exploring ingredients, techniques,
+    and the evolution of gastronomy across cultures.
   Icon: sp_recycle_tome_of_cooking_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1870
+  Order: 2434

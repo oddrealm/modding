@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: room_hunting_grounds
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_hunting_grounds
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_agriculture
-  ResearchKey: research_agriculture_animals1
+  ResearchKey: research_agriculture_hunting0
   MaxRoomAmount: -1
   OccupantGroups:
   - occupant_group_hunting_grounds
@@ -29,18 +28,19 @@ MonoBehaviour:
   - BlueprintID: blueprint_free_entity
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_capture_entity
     Settings:
-      Priority: 3
-      Enabled: 0
+      Priority: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

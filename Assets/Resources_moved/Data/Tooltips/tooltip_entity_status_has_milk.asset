@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_entity_status_has_milk
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -24,7 +23,7 @@ MonoBehaviour:
   InlineIcon: <sprite=192>
   Description: Milk can be extracted from this animal.
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.6313726, g: 0.56078434, b: 0.4862745, a: 1}
   Type: 
-  TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1147
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1654

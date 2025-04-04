@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_deens_fishing_pole_two_hand
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_deens_fishing_pole_two_hand
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_tool
@@ -54,7 +53,6 @@ MonoBehaviour:
   MerchantSellValue: 1009
   TuneRating: -1
   ItemRarity: item_rarity_epic
-  RarityType: 3
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

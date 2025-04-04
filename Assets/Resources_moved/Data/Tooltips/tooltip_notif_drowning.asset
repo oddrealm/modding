@@ -18,13 +18,13 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: '{0} is drowning.'
-  Name: '{0} is drowning.'
-  NamePlural: 
+  Action: 
+  Name: Entity is drowning!
+  NamePlural: Entities are drowning!
   InlineIcon: 
   Description: 
   Icon: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 36
+  Order: 1024

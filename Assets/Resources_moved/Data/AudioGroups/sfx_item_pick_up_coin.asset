@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: sfx_item_pick_up_coin
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

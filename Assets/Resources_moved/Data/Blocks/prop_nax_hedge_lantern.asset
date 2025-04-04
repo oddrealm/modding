@@ -15,14 +15,15 @@ MonoBehaviour:
   TooltipID: tooltip_prop_nax_hedge_lantern
   GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TagIDs:
+  - tag_heat_source
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   DefaultFill: block_fill_air
   TriggerConditions: []
   Triggers: []
-  RevealDistance: 0
-  TemperatureSource: 0
+  RevealDistance: 7
+  TemperatureSource: 65
   IsRotationFixture: 0
   SkillLevel: 0
   MaxItemCount: 0
@@ -52,7 +53,7 @@ MonoBehaviour:
   PermittedPlantTypes: 1
   IsFertile: 0
   CanSitAt: 0
-  IsSpotlight: 0
+  IsSpotlight: 1
   Visuals:
   - visuals_prop_nax_hedge_lantern
   TriggerOffsetX: 0

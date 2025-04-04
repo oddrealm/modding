@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_attribute_health
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -22,9 +21,9 @@ MonoBehaviour:
   Name: Health
   NamePlural: 
   InlineIcon: <sprite=80>
-  Description: At 0, this entity will die.
+  Description: Will die when Health reaches 0. Health is restored when entities rest.
   Icon: 
   TextColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1160
+  Order: 1636

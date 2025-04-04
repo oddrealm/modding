@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_faceless_remains
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_faceless_remains
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_can_butcher
@@ -51,8 +50,7 @@ MonoBehaviour:
   MerchantSellValue: 10
   TuneRating: 0
   ItemRarity: item_rarity_common
-  RarityType: 0
-  DecayRate: 48
+  DecayRate: 2880
   DecayItem: item_bone
   HasMeltThreshold: 0
   MeltThreshold: 0
@@ -60,6 +58,14 @@ MonoBehaviour:
   StackSize: 1
   JobOutputMod: 3
   ArtifactID: 
-  Actions: []
+  Actions:
+  - ActionID: tag_can_butcher
+    Buff:
+      TargetID: 
+      Amount: 0
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: item_bone
   TimedActions: []
   StateOptions: []

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_room_prison_cell
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -27,5 +26,5 @@ MonoBehaviour:
   Icon: sp_room_prison_icon
   TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
   Type: Room
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1806
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 2402

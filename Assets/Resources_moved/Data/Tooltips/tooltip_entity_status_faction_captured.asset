@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: tooltip_entity_status_faction_captured
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -26,5 +25,5 @@ MonoBehaviour:
   Icon: 
   TextColor: {r: 1, g: 0.5423229, b: 0, a: 1}
   Type: Status
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 455
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 913

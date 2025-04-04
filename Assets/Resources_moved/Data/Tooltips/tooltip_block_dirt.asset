@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_block_dirt
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Dirt
+  Action: 
   Name: Dirt
   NamePlural: 
   InlineIcon: <sprite=849>
-  Description: Dirt provides furtile soil for growing crops.
+  Description: Dirt provides fertile soil for growing crops.
   Icon: sp_block_dirt_icon
   TextColor: {r: 0.5377358, g: 0.38300994, b: 0.38300994, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 833
+  Order: 1330

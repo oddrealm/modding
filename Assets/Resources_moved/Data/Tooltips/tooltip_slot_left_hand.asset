@@ -23,8 +23,8 @@ MonoBehaviour:
   NamePlural: 
   InlineIcon: <sprite=1395>
   Description: 
-  Icon: sp_empty_left_hand_slot_icon
+  Icon: sp_empty_hand_slot_icon
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  Type: 
+  Type: Slot
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1398
+  Order: 1581

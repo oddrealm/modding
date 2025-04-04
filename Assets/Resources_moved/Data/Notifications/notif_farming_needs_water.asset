@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: notif_farming_needs_water
   m_EditorClassIdentifier: 
   TooltipID: tooltip_notif_farming_needs_water
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

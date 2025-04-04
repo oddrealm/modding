@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_grain_mill
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_grain_mill
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -29,36 +28,37 @@ MonoBehaviour:
   - BlueprintID: blueprint_item_potato_flour
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_lady_harp_flour
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wheat_yeast
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_wheat_flour
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_item_sweet_potato_flour
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 2
       AutoJobType: 1
-    ResourcePermissions: []
+    ResourcePermissions:
+    - TagObjectKey: tag_item_type_grain
+      Min: 0
+      Max: 0
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0

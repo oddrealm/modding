@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: plant_tree_apple_sapling
   m_EditorClassIdentifier: 
   TooltipID: tooltip_plant_tree_apple_sapling
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_biome_trees_taiga
@@ -28,7 +27,7 @@ MonoBehaviour:
   MatureThreshold: 0.5
   MatureTag: tag_mature_tree
   MatureInlineIcon: <sprite=9>
-  LimitGroupSizeThreshold: 2500
+  LimitGroupSizeThreshold: 500
   RemoveItemDrops: spawns_plant_remove_drops_default
   MatureItemDrops: 
   MatureTagObjectSpawn: 

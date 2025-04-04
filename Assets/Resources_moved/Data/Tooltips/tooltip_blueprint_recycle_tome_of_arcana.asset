@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_blueprint_recycle_tome_of_arcana
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Recycle Tome Of Arcana
+  Action: 
   Name: Recycle Tome Of Arcana
   NamePlural: 
   InlineIcon: <sprite=1072>
-  Description: 
+  Description: Magic! Maybe. Hard to tell based on the symbols.
   Icon: sp_recycle_tome_of_arcana_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1869
+  Order: 2433

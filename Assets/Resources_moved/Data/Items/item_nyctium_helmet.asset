@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: item_nyctium_helmet
   m_EditorClassIdentifier: 
   TooltipID: tooltip_item_nyctium_helmet
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_item_type_gear
@@ -52,7 +51,6 @@ MonoBehaviour:
   MerchantSellValue: 92
   TuneRating: 3
   ItemRarity: item_rarity_uncommon
-  RarityType: 1
   DecayRate: -1
   DecayItem: 
   HasMeltThreshold: 0

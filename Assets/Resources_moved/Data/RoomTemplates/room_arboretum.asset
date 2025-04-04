@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: room_arboretum
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_arboretum
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -28,49 +27,45 @@ MonoBehaviour:
   DefaultAutoJobs:
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
-      Enabled: 0
+      Priority: 0
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_log
     Settings:
       Priority: 1
-      Enabled: 0
       AutoJobType: 0
     ResourcePermissions: []
   - BlueprintID: blueprint_plant_tree
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_harvest_fruit
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_harvest_ground_cover
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_harvest_standing
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_till
     Settings:
       Priority: 1
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
   - BlueprintID: blueprint_water_plant
     Settings:
       Priority: 2
-      Enabled: 1
       AutoJobType: 1
     ResourcePermissions: []
+  ShowProduction: 1
+  ShowStockpile: 1
+  ShowOccupants: 1
+  ShowMarket: 0
