@@ -14,6 +14,8 @@ In the tutorial you'll cover:
 
 PART 1: CREATING A MOD
 
+NOTE: There is a tool to help view and edit data under TinyBeast > DataEdit. It isn't required to make mods, but it is useful for viewing and editing data in a more organized manner.
+
 There are many types of data objects to edit and create using this project, but, for this example, I'll walk you through creating a new item (Iron Shovel 2h).
 This should give you a basic understanding of the modding pipeline.
 
