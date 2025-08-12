@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_senescence
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_senescence
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_entity_status_senescence
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -27,6 +26,11 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
@@ -34,9 +38,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: 
+  - Comment: Lower energy over time.
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: Lower energy over time.
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 15
@@ -52,9 +56,9 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
-  - ConditionTarget: attribute_age
+  - Comment: Aging by hour.
+    ConditionTarget: attribute_age
     HideInTooltips: 0
-    Comment: Aging by hour.
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 60
@@ -70,9 +74,9 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
-  - ConditionTarget: attribute_age
+  - Comment: Add senectia when old.
+    ConditionTarget: attribute_age
     HideInTooltips: 0
-    Comment: Add senectia when old.
     ActivationID: 
     Conditions:
     - rid: 3062664794478477354
@@ -86,9 +90,9 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
-  - ConditionTarget: attribute_energy
+  - Comment: Add tired status if energy is low.
+    ConditionTarget: attribute_energy
     HideInTooltips: 0
-    Comment: Add tired status if energy is low.
     ActivationID: 
     Conditions:
     - rid: 3062664794478477355

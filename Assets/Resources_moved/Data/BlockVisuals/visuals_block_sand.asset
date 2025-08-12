@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_block_sand
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.9882353, g: 0.89411765, b: 0.5803922, a: 1}
@@ -52,7 +51,7 @@ MonoBehaviour:
   ShowLighting: 1
   DropShadow: 1
   LightSettings:
-    ReductionThreshold: 0
+    MinReductionThreshold: 0
     SkylightReduction: 7
     SkylightPass: 0
     BlockAmbientLight: 1

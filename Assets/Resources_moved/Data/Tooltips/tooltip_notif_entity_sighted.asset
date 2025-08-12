@@ -12,19 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_notif_entity_sighted
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Stealthed {0} has been sighted!
-  Name: Stealthed {0} has been sighted!
+  Action: Sneaking entity sighted!
+  Name: Sneaking Entity sighted!
   NamePlural: 
-  InlineIcon: 
+  InlineIcon: <sprite=954>
   Description: 
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.44205475, g: 0.36320752, b: 1, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2547
+  Order: 2723

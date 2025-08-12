@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29980e1a3c779fc4b95decfe8a376f99, type: 3}
   m_Name: faction_captured
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_faction_captured
   DEBUG: 0
+  TooltipID: tooltip_faction_captured
   TagIDs:
   - tag_factions
   DiscoveryDependencies: []
@@ -24,6 +24,7 @@ MonoBehaviour:
   CanRespec: 0
   SelectionColor: {r: 1, g: 0.5411765, b: 0, a: 1}
   CursorHoverColor: {r: 1, g: 0.5411765, b: 0, a: 0.2509804}
+  HighlightColor: {r: 1, g: 1, b: 1, a: 1}
   FactionPathing: 8
   Statuses:
   - entity_status_faction_captured

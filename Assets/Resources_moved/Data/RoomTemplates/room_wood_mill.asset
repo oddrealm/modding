@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_wood_mill
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_wood_mill
   DEBUG: 0
+  TooltipID: tooltip_room_wood_mill
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -29,125 +29,197 @@ MonoBehaviour:
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_bolas_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_bow_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_carving_knife_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_chisel_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_club_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_crossbow_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_cudgel_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_fishing_pole_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_hammer_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_heater_shield_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_pickaxe_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_plank
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_practice_dagger_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_practice_sword_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_sewing_needle_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_sling_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_spear_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_spoon_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_tongs_one_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_war_hammer_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
       Priority: 1
       AutoJobType: 1
-    ResourcePermissions:
-    - TagObjectKey: tag_item_type_wood
-      Min: 0
-      Max: 0
+    ProhibitedResources:
+    - item_type
+    PermittedResources:
+    - tag_item_type_wood
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_bucket
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_wood_pointy_stick_two_hand
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

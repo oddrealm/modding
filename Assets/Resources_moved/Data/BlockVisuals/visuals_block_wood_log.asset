@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: visuals_block_wood_log
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -52,7 +51,7 @@ MonoBehaviour:
   ShowLighting: 0
   DropShadow: 1
   LightSettings:
-    ReductionThreshold: 0
+    MinReductionThreshold: 0
     SkylightReduction: 7
     SkylightPass: 0
     BlockAmbientLight: 0

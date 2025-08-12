@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_grain_mill
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Grain Mill
   Name: Grain Mill
   NamePlural: Grain Mills
-  InlineIcon: <sprite=1105>
+  InlineIcon: <sprite=1815>
   Description: The Grain Mill is where grain items can be processed into food components
     such as Flour.
   Icon: sp_room_grain_mill_icon

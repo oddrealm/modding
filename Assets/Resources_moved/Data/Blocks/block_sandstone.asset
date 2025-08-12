@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: block_sandstone
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_block_sandstone
   DEBUG: 0
+  TooltipID: tooltip_block_sandstone
   TagIDs:
   - tag_terrain_gen_sandstone
   DiscoveryDependencies:
   - blueprint_block_sandstone
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   DefaultFill: block_fill_solid
   TriggerConditions: []
   Triggers: []

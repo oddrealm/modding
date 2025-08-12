@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2761919d9bfd3e148a72a5ad9fa3141b, type: 3}
   m_Name: humanoid
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -42,3 +41,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a1b2d270350fd7948aa21a97e46a7cb2, type: 2}
   - {fileID: 11400000, guid: fadc3394ddff2ed47ba164f6a4735900, type: 2}
   - {fileID: 11400000, guid: 7973c0f4e830b8d4282d3bac566fe650, type: 2}
+  - {fileID: 11400000, guid: 5695208d48dc5bf41886f5b308365d90, type: 2}

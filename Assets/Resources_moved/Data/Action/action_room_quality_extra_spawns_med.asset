@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e7e33cc9ddd31458dc95415430f63a, type: 3}
+  m_Name: action_room_quality_extra_spawns_med
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_action_room_quality_extra_spawns_med
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  ActivationChance:
+    Chance: 5
+    SampleSize: 100
+  Buffs: []
+  Statuses: []
+  Spawns: []
+  Duplicate: 1

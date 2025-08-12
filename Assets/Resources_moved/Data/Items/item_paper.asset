@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_paper
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_paper
   DEBUG: 0
+  TooltipID: tooltip_item_paper
   TagIDs:
   - tag_item_type_refined_material
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -36,27 +37,19 @@ MonoBehaviour:
   AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
-  DietGroup: diet_group_none
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
   PermittedSlots: []
   AttackGroup: 
-  StartDiscovered: 1
-  MaxCountInMerchantList: 20
-  GenerateNameKey: 
   MerchantBuyValue: 45
   MerchantSellValue: 9
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
   DecayItem: 
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 5000
   StackSize: 5
-  JobOutputMod: 1
-  ArtifactID: 
   Actions: []
-  TimedActions: []
   StateOptions: []
+  TimedActions: []

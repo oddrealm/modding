@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_lays_eggs
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_lays_eggs
   DEBUG: 0
+  TooltipID: tooltip_entity_status_lays_eggs
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
@@ -28,6 +28,11 @@ MonoBehaviour:
   StatusesToAddOnExpire: []
   PermittedGenders:
   - female
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.105882354, g: 0.47219813, b: 0.6666667, a: 1}

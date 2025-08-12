@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_block_bedrock
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.078431375, g: 0, b: 0.10588236, a: 1}
@@ -27,4 +26,4 @@ MonoBehaviour:
   TextColor: {r: 0.4901961, g: 0.2901961, b: 0.34901962, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 266
+  Order: 282

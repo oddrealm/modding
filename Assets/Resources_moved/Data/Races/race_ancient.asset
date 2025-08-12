@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_ancient
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_race_ancient
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_race_ancient
   TagIDs:
   - tag_races
   - tag_can_sleep_in_sarcophagus
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  MerchantValue: 300
+  MerchantValue: 1000
   Intelligence: intelligence_sapient
   Tags:
   - sapient

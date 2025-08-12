@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: tag_cage_large
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
-  GroupIDs: []
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

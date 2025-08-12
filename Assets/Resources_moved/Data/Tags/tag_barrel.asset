@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: tag_barrel
   m_EditorClassIdentifier: 
   TooltipID: tooltip_tag_barrel
-  GroupID: 
-  GroupIDs: []
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

@@ -12,30 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 632786be8b6c58c4bb860c8f91a6bbfb, type: 3}
   m_Name: occupant_group_farm
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_occupant_group_occupants
   DEBUG: 0
+  TooltipID: tooltip_room_occupant_group_occupants
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   OccupantManageType: 1
   OccupantsMustBePlayerControlled: 1
-  AvailableOccupantTagObjs:
-  - TagObjectKey: tag_races
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_professions
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_skills
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_factions
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_statuses
-    Min: -1
-    Max: -1
   RequiredOccupantTagObjs:
-  - TagObjectKey: skill_plant
-    Min: -1
-    Max: -1
+  - TagID: tag_skills
+    TagObjectKey: skill_plant
+    Prohibit: 0

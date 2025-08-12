@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: tooltip_skill_log
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Log
-  Name: Log
+  Action: Forestry
+  Name: Forestry
   NamePlural: 
   InlineIcon: <sprite=9>
-  Description: Used to cut down trees to collect wood and seeds.
+  Description: Used to cut down, plant, and grow trees.
   Icon: sp_skill_log_icon
   TextColor: {r: 0.9372549, g: 0.69411767, b: 0.12941177, a: 1}
   Type: Skill
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1622
+  Order: 1928

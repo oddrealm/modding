@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_guard_post
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_guard_post
   DEBUG: 0
+  TooltipID: tooltip_room_guard_post
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -27,9 +27,14 @@ MonoBehaviour:
   DefaultAutoJobs:
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 0
+      Priority: 1
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources:
+    - item_type
+    PermittedResources: []
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

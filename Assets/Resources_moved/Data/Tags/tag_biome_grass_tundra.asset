@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: tag_biome_grass_tundra
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
-  GroupIDs: []
+  TooltipID: tooltip_tag_biome_grass_tundra
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

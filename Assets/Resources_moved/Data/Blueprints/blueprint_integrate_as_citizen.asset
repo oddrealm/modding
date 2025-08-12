@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_integrate_as_citizen
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_integrate_as_citizen
   DEBUG: 0
+  TooltipID: tooltip_blueprint_integrate_as_citizen
   TagIDs: []
   DiscoveryDependencies:
   - item_ink
@@ -29,6 +29,7 @@ MonoBehaviour:
   XP: 50
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
+  DesignationListOrder: -1
   ResearchKey: research_human_town_hall0
   Repeat: 0
   CheckStateForTransition: 0
@@ -36,54 +37,31 @@ MonoBehaviour:
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
   AddBlockSkillToJobSkill: 0
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 0
   LocationID: tag_table
   WorkPosition: 0
   PermissionType: 0
-  LocationPermissions:
-  - tag_table
-  WorkerPermissions:
-  - faction_player
-  WorkerPermissionsToLock:
-  - faction_hostile
-  - faction_captured
-  TargetPermissions:
-  - faction_captured
-  TargetPermissionsToLock:
-  - faction_player
-  OnlyUseResourcesAtJobLocation: 0
-  ResourcePool: 1
-  ShowItemTypeResourcePermissions: 0
-  ResourcePermissionsToLock: []
-  MaxWorkers: 0
+  CanSitDuringJob: 0
+  WorkerID: skill_writing
+  TargetID: entity_status_faction_captured
   JobActions:
   - ActionType: 0
-    MaxWorkers: 0
-    WorkerID: skill_writing
-    TargetID: 
-    ResourceID: tag_ink
-    OnJobFinishActionID: 
+    ResourceID: item_ink
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
     AnimStartFX: 
     AnimStartSFX: 
   - ActionType: 0
-    MaxWorkers: 0
-    WorkerID: skill_writing
-    TargetID: 
     ResourceID: item_paper
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
     AnimStartFX: 
     AnimStartSFX: 
   - ActionType: 10
-    MaxWorkers: 0
-    WorkerID: skill_writing
-    TargetID: faction_captured
     ResourceID: 
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
@@ -93,21 +71,13 @@ MonoBehaviour:
   AddedProgressPerAction: 0
   ProgressMax: 100
   ProgressBarType: 2
-  InvertProgressDisplay: 0
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
     Layer: 0
-    Params:
-      disableRemoveSpawns: 0
-      disposeIfNotPermitted: 0
-      disableSpawnAtEntityOnFail: 0
-      disableClaimCheck: 0
-      setAsUnclaimed: 0
-      attempts: 0
-      seedOffset: 0
+    DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 0
   SpawnTagID: 
@@ -118,7 +88,9 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: faction_player
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
@@ -144,7 +116,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
-  WorkerID: skill_writing

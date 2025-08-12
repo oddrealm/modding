@@ -33,11 +33,6 @@ public readonly struct SimTime : IEquatable<SimTime>
         Minutes = minutes;
     }
 
-    //public static implicit operator SimTime(float value)
-    //{
-    //    return new SimTime((uint)value);
-    //}
-
     public static implicit operator SimTime(int value)
     {
         if (value < 0) value = 0;

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_retroanimate
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_retroanimate
   DEBUG: 0
+  TooltipID: tooltip_blueprint_retroanimate
   TagIDs: []
   DiscoveryDependencies:
   - skill_misc
@@ -25,6 +25,7 @@ MonoBehaviour:
   XP: 1
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
+  DesignationListOrder: -1
   ResearchKey: research_ardyn_somnic_pools0
   Repeat: 0
   CheckStateForTransition: 0
@@ -32,31 +33,16 @@ MonoBehaviour:
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
   AddBlockSkillToJobSkill: 0
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 0
   LocationID: 
   WorkPosition: 0
   PermissionType: 0
-  LocationPermissions: []
-  WorkerPermissions:
-  - faction_player
-  WorkerPermissionsToLock:
-  - faction_hostile
-  - faction_captured
-  TargetPermissions:
-  - faction_captured
-  TargetPermissionsToLock:
-  - faction_player
-  OnlyUseResourcesAtJobLocation: 0
-  ResourcePool: 1
-  ShowItemTypeResourcePermissions: 0
-  ResourcePermissionsToLock: []
-  MaxWorkers: 0
+  WorkerID: entity_status_senectia
+  TargetID: entity_status_metabolism
   JobActions:
   - ActionType: 10
-    MaxWorkers: 0
-    WorkerID: entity_status_senectia
-    TargetID: entity_status_metabolism
     ResourceID: 
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 8192
     AnimationHitEvent: 1
@@ -66,21 +52,13 @@ MonoBehaviour:
   AddedProgressPerAction: 0
   ProgressMax: 1
   ProgressBarType: 2
-  InvertProgressDisplay: 0
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
     Layer: 0
-    Params:
-      disableRemoveSpawns: 0
-      disposeIfNotPermitted: 0
-      disableSpawnAtEntityOnFail: 0
-      disableClaimCheck: 0
-      setAsUnclaimed: 0
-      attempts: 0
-      seedOffset: 0
+    DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 1
   SpawnTagID: 
@@ -91,7 +69,8 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
   SetTargetFactionTo: 
   OnFinishWorkerBuffs:
   - TargetID: attribute_age
@@ -127,7 +106,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 1
   DisposeIfRequirementsNotMet: 1
-  DisposeIfNoSource: 1
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 5
   AutoJobOnFreedCooldown: 1
-  WorkerID: entity_status_senectia

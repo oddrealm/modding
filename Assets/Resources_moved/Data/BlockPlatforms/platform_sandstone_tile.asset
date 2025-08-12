@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e256d1ab8c0d2438043b751e626442, type: 3}
   m_Name: platform_sandstone_tile
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_platform_sandstone_tile
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_platform_sandstone_tile
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -23,14 +22,13 @@ MonoBehaviour:
   PhysicsHeatPass: 0.05
   HasMeltThreshold: 0
   MeltThreshold: 0
-  NeedsSupport: 0
   PermittedPaths: 31
   Permissions: 8388608
   Prohibited: 32
   MovementSpeedMod: 1.3
   MovementCost: -1
   IsRoof: 0
-  CanGrow: 0
+  CanGrowPlants: 0
   GrowTime: -1
   GrowLightReq: -1
   BlocksCursorRaycast: 1

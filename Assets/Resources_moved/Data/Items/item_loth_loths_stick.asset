@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_loth_loths_stick
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_loth_loths_stick
   DEBUG: 0
+  TooltipID: tooltip_item_loth_loths_stick
   TagIDs:
   - tag_item_type_tool
   - tag_item_rarity_epic
   - tag_item
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -36,7 +37,6 @@ MonoBehaviour:
   AccessoryData: {fileID: 11400000, guid: 26e798f5247dbdb438fa3f37665bb702, type: 2}
   Permissions: 0
   Prohibited: 0
-  DietGroup: diet_group_none
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
@@ -44,21 +44,14 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_loth_loths_stick
-  StartDiscovered: 0
-  MaxCountInMerchantList: 0
-  GenerateNameKey: weapon
   MerchantBuyValue: 5145
   MerchantSellValue: 1029
   TuneRating: -1
   ItemRarity: item_rarity_epic
   DecayRate: -1
   DecayItem: 
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 100
   StackSize: 1
-  JobOutputMod: 1
-  ArtifactID: 
   Actions: []
-  TimedActions: []
   StateOptions: []
+  TimedActions: []

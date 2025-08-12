@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: tag_factions
   m_EditorClassIdentifier: 
   TooltipID: tooltip_tag_factions
-  GroupID: 
-  GroupIDs: []
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
@@ -22,4 +20,5 @@ MonoBehaviour:
   TrackByDefault: 0
   TrackPlayerCanEdit: 0
   TrackingTypes: 1
-  TagGroups: []
+  TagGroups:
+  - entity_profile

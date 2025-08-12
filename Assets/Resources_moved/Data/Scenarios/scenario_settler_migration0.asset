@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
   m_Name: scenario_settler_migration0
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  IsThreat: 1
   NotifOnActivate: notif_settler_migration
   EntitySpawns:
   - SpawnPointType: 2
@@ -58,8 +59,10 @@ MonoBehaviour:
   ActivationChance:
     Chance: 1
     SampleSize: 3
-  MaxActivations: 1
+  MaxActivations: 3
   MinKingdomLevel: 3
   MinMinutesSinceSettlementStart: 4320
   MinMinutesSinceLastScenario: 1440
-  MinMinutesSinceLastSameScenario: 1440
+  MinMinutesSinceLastSameScenario: 14400
+  MinTimeOfDay: 0
+  MaxTimeOfDay: 1440

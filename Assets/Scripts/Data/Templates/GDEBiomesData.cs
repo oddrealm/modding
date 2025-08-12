@@ -323,7 +323,7 @@ public class GDEBiomesData : Scriptable
 
         if (DEBUG)
         {
-            int j = 0;
+            // Breakpoint.
         }
 
         TerrainGenSettings.OnLoaded();

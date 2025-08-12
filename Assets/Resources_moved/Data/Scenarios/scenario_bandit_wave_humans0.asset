@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
   m_Name: scenario_bandit_wave_humans0
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  IsThreat: 1
   NotifOnActivate: notif_overworld_party_bandits
   EntitySpawns: []
   Dialogues:
@@ -32,3 +33,5 @@ MonoBehaviour:
   MinMinutesSinceSettlementStart: 1440
   MinMinutesSinceLastScenario: 1440
   MinMinutesSinceLastSameScenario: 4320
+  MinTimeOfDay: 0
+  MaxTimeOfDay: 1440

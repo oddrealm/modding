@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_summoning_chamber
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_summoning_chamber
   DEBUG: 0
+  TooltipID: tooltip_room_summoning_chamber
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -25,26 +25,32 @@ MonoBehaviour:
   Visuals:
   - visuals_room_display_summoning_chamber
   DefaultAutoJobs:
-  - BlueprintID: blueprint_archenthrall
-    Settings:
-      Priority: 1
-      AutoJobType: 0
-    ResourcePermissions: []
   - BlueprintID: blueprint_void_imp
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_void_woken
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 0
+      Priority: 1
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources:
+    - item_type
+    PermittedResources: []
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

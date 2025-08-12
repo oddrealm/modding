@@ -12,21 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
   m_Name: input_command_toggle_add_to_control_group
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_input_toggle_add_to_control_group
   DEBUG: 0
+  TooltipID: tooltip_input_toggle_add_to_control_group
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 2
   InputState: 5
   DeferTo: []
-  DefaultTriggers: []
-  ActiveUpdate: 1
+  DefaultTriggers:
+  - Hotkeys:
+    - Down: 0
+      Hold: 1
+      Up: 0
+      Key: 304
+      Mouse: 0
+  ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
   IsToggle: 0
   BtnsForceActive: 1
   MaxIncrement: 1
-  PlayerCanEdit: 0
+  PlayerCanEdit: 1
   PrintEvents: 0

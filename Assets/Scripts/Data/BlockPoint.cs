@@ -10,7 +10,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
 {
     // Y offset from blockpoint floor.
     public const float CAM_Z = 0.99f;
-    public const float SELECTION_Z = 0.095f;
+    public const float SURFACE_Z = 0.095f;
     public const float EMPTY_BLOCK_MESH_Z = 0.08f;
     public const float FX_Z = 0.07f;
     public const float ENTITY_Z = 0.062f;
@@ -920,10 +920,10 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public Vector3 ToSelectionVector3()
+    public Vector3 ToSurfaceVector3()
     {
         Vector3 v = ToVector3Bot();
-        return new Vector3((int)v.x, (int)v.y, (int)v.z - SELECTION_Z * Master.Instance.PixelsPerBlockAxis);
+        return new Vector3((int)v.x, (int)v.y, (int)v.z - SURFACE_Z * Master.Instance.PixelsPerBlockAxis);
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -1213,7 +1213,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     {
 #if DEV_TESTING
         if (GameManager.Instance == null) { return; }
-        if (!ignorePause && _session.GameTime.Paused) { return; }
+        if (!ignorePause && _session.GameTime.IsPaused) { return; }
         Vector3 worldPos = ToVector3();
         float r = (float)Master.Instance.PixelsPerBlockAxisHalf * size;
         Vector3 tl1 = new Vector3(worldPos.x - r, worldPos.y + r, worldPos.z - r);
@@ -1245,7 +1245,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     {
 #if DEV_TESTING
         if (GameManager.Instance == null) { return; }
-        if (!ignorePause && _session.GameTime.Paused) { return; }
+        if (!ignorePause && _session.GameTime.IsPaused) { return; }
         Vector3 worldPos = ToVector3();
         float r = (float)Master.Instance.PixelsPerBlockAxisHalf * size;
         Vector3 tl1 = new Vector3(worldPos.x - r, worldPos.y + r, worldPos.z - r);
@@ -1268,7 +1268,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     {
 #if DEV_TESTING
         if (GameManager.Instance == null) { return; }
-        if (!ignorePause && _session.GameTime.Paused) { return; }
+        if (!ignorePause && _session.GameTime.IsPaused) { return; }
         Vector3 worldPos = ToVector3();
         float r = (float)Master.Instance.PixelsPerBlockAxisHalf * size;
         Vector3 n = new Vector3(worldPos.x, worldPos.y + r, worldPos.z);
@@ -1288,7 +1288,7 @@ public struct BlockPoint : IEqualityComparer<BlockPoint>
     {
 #if DEV_TESTING
         if (GameManager.Instance == null) { return; }
-        if (!ignorePause && _session.GameTime.Paused) { return; }
+        if (!ignorePause && _session.GameTime.IsPaused) { return; }
         Vector3 worldPos = ToVector3();
         float r = (float)Master.Instance.PixelsPerBlockAxisHalf * size;
         Vector3 n = new Vector3(worldPos.x, worldPos.y + r, worldPos.z);

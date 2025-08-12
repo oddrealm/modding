@@ -7,18 +7,18 @@ public class GDENotificationsData : Scriptable
     [System.Serializable]
     public class NotificationPermissionSettings
     {
-        public bool Save { get; private set; } = true;
-        public void SetNeedsSave(bool save) { Save = save; }
-
         public bool ShowPreview = true;
         public bool CanStackPreviews = true;
         public List<string> Factions = new List<string>();
-        [System.NonSerialized]
-        public HashSet<string> FactionsHash = new HashSet<string>();
         public bool FocusCamOnCreate = false;
         public bool PauseGameOnCreate = false;
         public bool HighlightOnCreate = false;
         public string HighlightText = "<sprite=1654>";
+
+        public HashSet<string> FactionsHash { get; private set; } = new HashSet<string>();
+        public bool Save { get; private set; } = true;
+
+        public void SetNeedsSave(bool save) { Save = save; }
 
         public void AddFaction(string faction)
         {
@@ -45,31 +45,30 @@ public class GDENotificationsData : Scriptable
         }
     }
 
-    [System.Serializable]
-    public class NotificationPermission
-    {
-        public string GroupID = "";
-        public NotificationPermissionSettings Settings = new NotificationPermissionSettings();
-    }
-
-    public Color FlashColor = Color.white;
-    public string SFXGroupID = "";
-
+    public string NotifGroup = string.Empty;
+    public string SFXGroupID = string.Empty;
     public NotificationPermissionSettings DefaultPermissions;
+    public const string NOTIF_GROUP_ALL = "tag_notif_group_all";
 
-    public NotificationPermission[] OverridePermissions;
+    public GDETagsData NotifGroupData { get; private set; }
+    public GDETagsData NotifGroupAllData { get; private set; }
 
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
         base.OnLoaded();
+        NotifGroupData = DataManager.GetTagObject<GDETagsData>(NotifGroup);
+        NotifGroupAllData = DataManager.GetTagObject<GDETagsData>(NOTIF_GROUP_ALL);
+
+        if (TagIDsHash.Add(NotifGroup))
+        {
+            TagIDs.Add(NotifGroup);
+#if UNITY_EDITOR
+            UnityEditor.EditorUtility.SetDirty(this);
+#endif
+        }
 
         DefaultPermissions.OnLoaded();
-
-        for (int i = 0; OverridePermissions != null && i < OverridePermissions.Length; i++)
-        {
-            OverridePermissions[i].Settings.OnLoaded();
-        }
     }
 #endif
 }

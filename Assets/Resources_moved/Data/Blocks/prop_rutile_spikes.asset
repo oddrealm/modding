@@ -12,43 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_rutile_spikes
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_rutile_spikes
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_prop_rutile_spikes
+  TagIDs:
+  - tag_trigger_damage_entity
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
-  - TriggerType: 1
+  - ActivateTriggerID: tag_trigger_damage_entity
+    DeactivateTriggerID: 
+    TriggerType: 1
     HideInTooltips: 0
     Invert: 0
-    ActivateTriggerID: tag_trigger_damage_entity
-    DeactivateTriggerID: 
     SourceTagObjectRequirement0: faction_hostile
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  - ActivateTriggerID: 
+    DeactivateTriggerID: tag_trigger_damage_entity
+    TriggerType: 4
+    HideInTooltips: 0
+    Invert: 0
+    SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
   Triggers:
   - Comment: Damage on enter
-    TooltipID: 
     ID: tag_trigger_damage_entity
-    Permissions: 0
+    ActiveTooltipID: tooltip_tag_trigger_damaged
+    InactiveTooltipID: tooltip_tag_trigger_damage_entity
+    Permissions: 536870912
     Visuals: 
-    SFX: 
+    SFX: sfx_hammer_metal
     FX: 
     Action: 7
     ActionTagObjectID: 
-    DeactivateImmediate: 1
+    DeactivateImmediate: 0
     Buff:
       TargetID: attribute_health
-      Amount: -25
+      Amount: -75
       Max: 0
       Permanent: 1
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
-  MaxItemCount: 0
+  MaxItemCount: 1
   ItemTypePermissions: []
   CanShowItems: 0
   RestrictItemsToSameKey: 0
@@ -79,7 +90,7 @@ MonoBehaviour:
   Visuals:
   - visuals_prop_rutile_spikes
   TriggerOffsetX: 0
-  TriggerOffsetY: 0
+  TriggerOffsetY: 1
   HasItemsOffsetX: 0
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0

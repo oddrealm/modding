@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_wellhouse
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_wellhouse
   DEBUG: 0
+  TooltipID: tooltip_room_wellhouse
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -29,20 +29,22 @@ MonoBehaviour:
     Settings:
       Priority: 2
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
       Priority: 1
       AutoJobType: 1
-    ResourcePermissions:
-    - TagObjectKey: tag_item_type_container
-      Min: 0
-      Max: 0
-  - BlueprintID: blueprint_drink_from_well
-    Settings:
-      Priority: 3
-      AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources:
+    - item_type
+    PermittedResources:
+    - tag_item_type_container
+    - tag_item_type_water
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

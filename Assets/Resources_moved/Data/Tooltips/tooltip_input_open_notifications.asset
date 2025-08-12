@@ -12,20 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_input_open_notifications
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Open Notifications
-  Name: Notifications
+  Action: Open Log
+  Name: Log
   NamePlural: 
   InlineIcon: 
-  Description: Stay informed with alerts and updates about critical events in your
-    settlement.
+  Description: Event, work, and combat logs are shown here.
   Icon: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Input
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1839
+  Order: 2131

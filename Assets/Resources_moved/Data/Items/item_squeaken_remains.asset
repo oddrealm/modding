@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_squeaken_remains
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_squeaken_remains
   DEBUG: 0
+  TooltipID: tooltip_item_squeaken_remains
   TagIDs:
   - tag_can_butcher
   - tag_item_type_remains
@@ -21,6 +21,8 @@ MonoBehaviour:
   - tag_item_rarity_common
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_can_butcher
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -37,27 +39,19 @@ MonoBehaviour:
   AccessoryData: {fileID: 0}
   Permissions: 256
   Prohibited: 0
-  DietGroup: diet_group_none
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
   PermittedSlots: []
   AttackGroup: 
-  StartDiscovered: 0
-  MaxCountInMerchantList: 1
-  GenerateNameKey: 
   MerchantBuyValue: 5
   MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_common
   DecayRate: 2880
   DecayItem: item_bone
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 500
   StackSize: 1
-  JobOutputMod: 1
-  ArtifactID: 
   Actions:
   - ActionID: tag_can_butcher
     Buff:
@@ -75,5 +69,5 @@ MonoBehaviour:
       Permanent: 0
     Status: 
     SpawnID: item_bone
-  TimedActions: []
   StateOptions: []
+  TimedActions: []

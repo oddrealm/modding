@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_sleep_on_sarcophagus
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_sleep_on_sarcophagus
   DEBUG: 0
+  TooltipID: tooltip_blueprint_sleep_on_sarcophagus
   TagIDs: []
   DiscoveryDependencies:
   - skill_craft_void
@@ -24,6 +24,7 @@ MonoBehaviour:
   XP: 25
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
+  DesignationListOrder: -1
   ResearchKey: research_ancient_immortality_tomb0
   Repeat: 0
   CheckStateForTransition: 0
@@ -31,32 +32,17 @@ MonoBehaviour:
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
   AddBlockSkillToJobSkill: 0
-  LocationID: prop_voidweave_sarcophagus
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 0
+  LocationID: tag_voidweave_sarcophagus_powered
   WorkPosition: 1
   PermissionType: 0
-  LocationPermissions:
-  - prop_voidweave_sarcophagus
-  WorkerPermissions:
-  - faction_player
-  - faction_captured
-  WorkerPermissionsToLock:
-  - faction_hostile
-  TargetPermissions:
-  - faction_player
-  - faction_captured
-  TargetPermissionsToLock: []
-  OnlyUseResourcesAtJobLocation: 0
-  ResourcePool: 1
-  ShowItemTypeResourcePermissions: 0
-  ResourcePermissionsToLock: []
-  MaxWorkers: 1
+  CanSitDuringJob: 0
+  WorkerID: entity_status_void_sick
+  TargetID: 
   JobActions:
   - ActionType: 3
-    MaxWorkers: 0
-    WorkerID: entity_status_void_sick
-    TargetID: 
     ResourceID: 
-    OnJobFinishActionID: tag_can_sleep_in_sarcophagus
     WorkPosition: 1
     AnimationTrigger: 4096
     AnimationHitEvent: 1
@@ -66,21 +52,13 @@ MonoBehaviour:
   AddedProgressPerAction: 0
   ProgressMax: 50
   ProgressBarType: 2
-  InvertProgressDisplay: 0
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
     Layer: 0
-    Params:
-      disableRemoveSpawns: 0
-      disposeIfNotPermitted: 0
-      disableSpawnAtEntityOnFail: 0
-      disableClaimCheck: 0
-      setAsUnclaimed: 0
-      attempts: 0
-      seedOffset: 0
+    DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 1
   SpawnTagID: 
@@ -91,7 +69,9 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: tag_sleeping_start
   OnJobQuitActionID: tag_sleeping_end
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: tag_can_sleep_in_sarcophagus
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
@@ -119,7 +99,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 1
   DisposeIfRequirementsNotMet: 1
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 5
   AutoJobOnFreedCooldown: 1
-  WorkerID: entity_status_void_sick

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_pumpkin_seed
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_pumpkin_seed
   DEBUG: 0
+  TooltipID: tooltip_item_pumpkin_seed
   TagIDs:
   - tag_item_type_seed
   - tag_can_plant_seed
@@ -22,6 +22,8 @@ MonoBehaviour:
   DiscoveryDependencies:
   - blueprint_plant_pumpkin
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_can_plant_seed
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -38,27 +40,19 @@ MonoBehaviour:
   AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
-  DietGroup: diet_group_none
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
   PermittedSlots: []
   AttackGroup: 
-  StartDiscovered: 0
-  MaxCountInMerchantList: 50
-  GenerateNameKey: 
   MerchantBuyValue: 5
   MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_common
   DecayRate: -1
   DecayItem: 
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 500
   StackSize: 5
-  JobOutputMod: 1
-  ArtifactID: 
   Actions:
   - ActionID: tag_can_plant_seed
     Buff:
@@ -68,5 +62,5 @@ MonoBehaviour:
       Permanent: 0
     Status: 
     SpawnID: plant_pumpkin
-  TimedActions: []
   StateOptions: []
+  TimedActions: []

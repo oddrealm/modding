@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_loth_loth
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_loth_loth
   DEBUG: 0
+  TooltipID: tooltip_entity_loth_loth
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -44,7 +44,7 @@ MonoBehaviour:
     EnabledByDefault: 1
   - SkillID: skill_fight_melee
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   - SkillID: skill_time_weave
     PlayerCanEdit: 0
     EnabledByDefault: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   - item_slot_legs
   - item_slot_feet
   - item_slot_back
+  - item_slot_utility
   PathingType: 1
   DefaultTuning: entity_tuning_loth_loth
   DeathItemSpawnGroup: spawns_entity_death_loth_loth
@@ -217,7 +218,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 32
+    StartingBase: 10
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

@@ -89,7 +89,7 @@ public class GDETooltipsData : Scriptable
 #if ODD_REALM_APP
     public override void OnReordered(int dataIndex)
     {
-        Order = ObjectIndex;
+        Order = OrderIndex;
 
         base.OnReordered(dataIndex);
     }

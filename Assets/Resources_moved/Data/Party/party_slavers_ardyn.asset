@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e5796ebfde4de42b4d2b729764e81a, type: 3}
   m_Name: party_slavers_ardyn
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_party_raiders
   DEBUG: 0
+  TooltipID: tooltip_party_raiders
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -22,5 +22,7 @@ MonoBehaviour:
   MinMemberSize: 1
   AutoGenMemberSize: 1
   RandomizeMembers: 0
-  MemberTunings: []
-  FactionOverride: 
+  MemberTunings:
+  - EntityID: entity_ardyn
+    TuningID: 
+  FactionOverride: faction_hostile

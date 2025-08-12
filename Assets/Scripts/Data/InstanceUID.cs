@@ -45,7 +45,7 @@ public struct InstanceUID : IEquatable<InstanceUID>
 #if DEV_TESTING
         //if (Master.IsDebugUID(UIDS+1))
         //{
-        //    int j = 0;
+        //    // Breakpoint.
         //}
 #endif
         return ++UIDS;

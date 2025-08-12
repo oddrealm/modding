@@ -12,27 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2634f9e7acc089749996e3db72403e67, type: 3}
   m_Name: block_fill_ice
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_block_fill_ice
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_block_fill_ice
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Permissions: 0
+  Permissions: 2049
   Prohibited: 0
   PermissionsAbove: 0
   ProhibitedAbove: 0
   MovementCost: 0
-  FillPriority: 1
-  MaxMass: 100
+  FillPriority: 3
+  MaxMass: 5
   FillNeighborBlocksOnNew: 0
   IsObstruction: 1
   IsVerticalAccess: 0
-  CanLoseMass: 0
-  FullThreshold: 90
-  EmptyThreshold: 10
+  EmptyThreshold: 0
   FreezeThreshold: 0
-  MeltThreshold: 1
+  MeltThreshold: 5
   BurnThreshold: 100
   EmptyFill: block_fill_air
   SettledVisuals: visuals_block_ice

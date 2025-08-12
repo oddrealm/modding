@@ -122,7 +122,7 @@ public class ActivateStateSimAction : SimulationAction
             }
         }
 
-        originInstance.ActivateState(StateID, target, newState, groupUID, OptionID);
+        originInstance.ActivateState(StateID, target, prevState, newState, groupUID, OptionID);
     }
 #endif
 }
@@ -135,7 +135,7 @@ public class MoveInstanceSimAction : SimulationAction
     {
         base.Simulate(manager, target, originInstance, prevState, newState);
 
-        originInstance.MoveTo(target);
+        originInstance.MoveTo(target, prevState, newState);
     }
 #endif
 }
@@ -172,7 +172,7 @@ public class SetLocationSimAction : SimulationAction
     {
         base.Simulate(manager, target, originInstance, prevState, newState);
 
-        originInstance.MoveTo(manager.GetSimLocation(target.locationUID));
+        originInstance.MoveTo(manager.GetSimLocation(target.locationUID), prevState, newState);
     }
 #endif
 }
@@ -342,7 +342,7 @@ public class DisposeSimAction : SimulationAction
         base.Simulate(manager, target, originInstance, prevState, newState);
 
         // Dispose of instance
-        originInstance.Dispose();
+        originInstance.Dispose(prevState, newState);
     }
 #endif
 }

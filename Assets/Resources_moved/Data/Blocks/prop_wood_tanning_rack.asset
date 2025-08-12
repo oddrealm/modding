@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_wood_tanning_rack
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_wood_tanning_rack
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_prop_wood_tanning_rack
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions: []
   Triggers: []

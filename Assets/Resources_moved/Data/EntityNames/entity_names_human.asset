@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
   m_Name: entity_names_human
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeparateFirstNamePrepends: 0
+  FirstNameNeutralPrependChances: 0
+  FirstNameNeutralPrepends: []
+  NeutralFirstNames: []
   FirstNameMasculinePrependChances: 0
   FirstNameMasculinePrepends: []
   MasculineFirstNames:
@@ -180,6 +183,7 @@ MonoBehaviour:
   - Yilliny
   - Zara
   - Zia
+  SeparateLastNamePrepends: 0
   LastNamePrependChances: 50
   LastNamePrepends:
   - Ye'

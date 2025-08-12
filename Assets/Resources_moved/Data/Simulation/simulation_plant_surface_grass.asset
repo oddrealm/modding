@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 842b8eea7ddea9440ab5a3a9f6389156, type: 3}
+  m_Name: simulation_plant_surface_grass
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Simulations:
+  - rid: 0
+  - rid: 2
+  - rid: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
+      data:
+        Comment: 'Plant: Fall If Not Supported'
+        IsEnabled: 1
+        Target:
+          rid: 3
+        RequireAllConditionsToBeMet: 1
+        Conditions:
+        - rid: 4
+        Actions:
+        - rid: 5
+    - rid: 1
+      type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
+      data:
+        Comment: 'Plant: Dispose If Expired'
+        IsEnabled: 1
+        Target:
+          rid: 6
+        RequireAllConditionsToBeMet: 1
+        Conditions:
+        - rid: 7
+        Actions:
+        - rid: 8
+    - rid: 2
+      type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
+      data:
+        Comment: 'Plant: Reproduce'
+        IsEnabled: 1
+        Target:
+          rid: 9
+        RequireAllConditionsToBeMet: 1
+        Conditions:
+        - rid: 10
+        - rid: 11
+        Actions:
+        - rid: 12
+    - rid: 3
+      type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
+      data:
+        TargetPositions:
+          rid: 13
+    - rid: 4
+      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Outcome: 1
+        StateID: plant_state_can_move_to_target
+        OptionID: 
+    - rid: 5
+      type: {class: MoveInstanceSimAction, ns: , asm: Assembly-CSharp}
+      data:
+        DebugBreakpoint: 0
+    - rid: 6
+      type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
+      data:
+        TargetPositions:
+          rid: 14
+    - rid: 7
+      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Outcome: 1
+        StateID: plant_state_expired
+        OptionID: 
+    - rid: 8
+      type: {class: DisposeSimAction, ns: , asm: Assembly-CSharp}
+      data:
+        DebugBreakpoint: 0
+    - rid: 9
+      type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
+      data:
+        TargetPositions:
+          rid: 15
+    - rid: 10
+      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Outcome: 1
+        StateID: plant_is_permitted
+        OptionID: 
+    - rid: 11
+      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Outcome: 1
+        StateID: plant_state_can_reproduce
+        OptionID: 
+    - rid: 12
+      type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
+      data:
+        DebugBreakpoint: 0
+        StateID: plant_spawn
+        OptionID: 
+        UseGroupUID: 0
+    - rid: 13
+      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
+      data:
+        Positions:
+        - {x: 0, y: 0, z: -1}
+        MaxDistance: 255
+        MinDistance: 1
+        IterateToEnd: 1
+        CheckAll: 0
+    - rid: 14
+      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
+      data:
+        Positions:
+        - {x: 0, y: 0, z: 0}
+        MaxDistance: 1
+        MinDistance: 1
+        IterateToEnd: 0
+        CheckAll: 0
+    - rid: 15
+      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
+      data:
+        Positions:
+        - {x: -1, y: 0, z: 0}
+        - {x: 0, y: -1, z: 0}
+        - {x: 1, y: 0, z: 0}
+        - {x: 0, y: 1, z: 0}
+        MaxDistance: 1
+        MinDistance: 1
+        IterateToEnd: 0
+        CheckAll: 0

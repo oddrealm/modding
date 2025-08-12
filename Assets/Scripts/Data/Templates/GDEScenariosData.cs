@@ -7,7 +7,7 @@ public class GDEScenariosData : Scriptable
     [System.Serializable]
     public class ScenarioEntitySpawn
     {
-        public SpawnPointTypes SpawnPointType = SpawnPointTypes.RANDOM_BORDER_GROUND;
+        public SpawnPointTypes SpawnPointType = SpawnPointTypes.RANDOM_BORDER_GROUND_FALLBACK_WATER;
         public bool OverrideEntityWithNation = false;
         public bool OverrideEntityWithFauna = false;
         public bool AutoGenEntityCount = false;
@@ -49,4 +49,20 @@ public class GDEScenariosData : Scriptable
     public uint MinMinutesSinceSettlementStart = 1440;
     public uint MinMinutesSinceLastScenario = 1440;
     public uint MinMinutesSinceLastSameScenario = 1440;
+    public uint MinTimeOfDay = 0;
+    public uint MaxTimeOfDay = 1440;
+
+#if ODD_REALM_APP
+    public override void OnLoaded()
+    {
+        for (int i = 0; i < Dialogues.Length; i++)
+        {
+            if (string.IsNullOrEmpty(Dialogues[i].DialogueID) || !DataManager.TagObjectExists(Dialogues[i].DialogueID))
+            {
+                Debug.LogError($"Scenario {name} has a missing dialogue data object!");
+            }
+        }
+        base.OnLoaded();
+    }
+#endif
 }

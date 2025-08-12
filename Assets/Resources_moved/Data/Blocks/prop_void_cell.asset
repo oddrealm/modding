@@ -12,50 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_void_cell
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_void_cell
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_prop_void_cell
   TagIDs:
   - tag_heat_source
+  - tag_can_power_void_prop
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_heat_source
   DefaultFill: block_fill_air
-  TriggerConditions:
-  - TriggerType: 5
-    HideInTooltips: 0
-    Invert: 0
-    ActivateTriggerID: tag_can_power_void_prop
-    DeactivateTriggerID: 
-    SourceTagObjectRequirement0: tag_void_prop
-    SourceTagObjectRequirement1: 
-    ElapsedTime: 0
-  - TriggerType: 6
-    HideInTooltips: 0
-    Invert: 0
-    ActivateTriggerID: 
-    DeactivateTriggerID: tag_can_power_void_prop
-    SourceTagObjectRequirement0: 
-    SourceTagObjectRequirement1: 
-    ElapsedTime: 0
-  Triggers:
-  - Comment: Powering A Prop
-    TooltipID: 
-    ID: tag_can_power_void_prop
-    Permissions: 0
-    Visuals: 
-    SFX: 
-    FX: fx_void_cell_powering_prop
-    Action: 0
-    ActionTagObjectID: 
-    DeactivateImmediate: 0
-    Buff:
-      TargetID: 
-      Amount: 0
-      Max: 0
-      Permanent: 0
+  TriggerConditions: []
+  Triggers: []
   RevealDistance: 0
   TemperatureSource: 50
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
   MaxItemCount: 0
   ItemTypePermissions: []

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_retroanimate_astrasome
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_retroanimate_astrasome
   DEBUG: 0
+  TooltipID: tooltip_blueprint_retroanimate_astrasome
   TagIDs: []
   DiscoveryDependencies:
   - item_astrasome
@@ -26,6 +26,7 @@ MonoBehaviour:
   XP: 1
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
+  DesignationListOrder: -1
   ResearchKey: research_ardyn_somnic_pools0
   Repeat: 0
   CheckStateForTransition: 0
@@ -33,30 +34,16 @@ MonoBehaviour:
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
   AddBlockSkillToJobSkill: 0
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 0
   LocationID: prop_dream_pool
   WorkPosition: 0
   PermissionType: 0
-  LocationPermissions:
-  - prop_dream_pool
-  WorkerPermissions:
-  - faction_player
-  - faction_captured
-  WorkerPermissionsToLock:
-  - faction_hostile
-  TargetPermissions:
-  - faction_player
-  - faction_captured
-  TargetPermissionsToLock: []
-  OnlyUseResourcesAtJobLocation: 0
-  ResourcePool: 1
-  ShowItemTypeResourcePermissions: 0
-  ResourcePermissionsToLock: []
-  MaxWorkers: 0
+  WorkerID: entity_status_senectia
+  TargetID: 
   JobActions:
   - ActionType: 0
     MaxWorkers: 0
-    WorkerID: skill_carry
-    TargetID: 
     ResourceID: item_astrasome
     OnJobFinishActionID: 
     WorkPosition: 0
@@ -66,8 +53,6 @@ MonoBehaviour:
     AnimStartSFX: 
   - ActionType: 3
     MaxWorkers: 0
-    WorkerID: entity_status_senectia
-    TargetID: 
     ResourceID: 
     OnJobFinishActionID: 
     WorkPosition: 0
@@ -79,21 +64,13 @@ MonoBehaviour:
   AddedProgressPerAction: 0
   ProgressMax: 1
   ProgressBarType: 2
-  InvertProgressDisplay: 0
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
     Layer: 0
-    Params:
-      disableRemoveSpawns: 0
-      disposeIfNotPermitted: 0
-      disableSpawnAtEntityOnFail: 0
-      disableClaimCheck: 0
-      setAsUnclaimed: 0
-      attempts: 0
-      seedOffset: 0
+    DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 1
   SpawnTagID: 
@@ -139,4 +116,3 @@ MonoBehaviour:
   DisposeIfNoSource: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
-  WorkerID: entity_status_senectia

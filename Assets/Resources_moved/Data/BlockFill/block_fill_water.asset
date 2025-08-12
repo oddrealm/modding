@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2634f9e7acc089749996e3db72403e67, type: 3}
   m_Name: block_fill_water
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_block_fill_water
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_block_fill_water
   TagIDs:
   - tag_terrain_gen_water
   - tag_cave_gen_water
@@ -27,12 +26,10 @@ MonoBehaviour:
   ProhibitedAbove: 0
   MovementCost: 3
   FillPriority: 2
-  MaxMass: 100
+  MaxMass: 5
   FillNeighborBlocksOnNew: 1
   IsObstruction: 0
   IsVerticalAccess: 1
-  CanLoseMass: 0
-  FullThreshold: 90
   EmptyThreshold: 0
   FreezeThreshold: 0
   MeltThreshold: 100

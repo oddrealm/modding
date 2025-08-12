@@ -20,4 +20,5 @@ MonoBehaviour:
   TrackByDefault: 0
   TrackPlayerCanEdit: 0
   TrackingTypes: 1
-  TagGroups: []
+  TagGroups:
+  - location_spec

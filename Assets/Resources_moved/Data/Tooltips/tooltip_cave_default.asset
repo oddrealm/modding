@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_cave_default
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -24,7 +23,7 @@ MonoBehaviour:
   InlineIcon: 
   Description: 
   Icon: 
-  TextColor: {r: 0.454902, g: 0.53333336, b: 0.5921569, a: 1}
+  TextColor: {r: 0.39607844, g: 0.29803923, b: 0.8509804, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 552
+  Order: 969

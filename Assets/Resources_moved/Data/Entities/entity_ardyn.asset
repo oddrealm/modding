@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_ardyn
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_ardyn
   DEBUG: 0
+  TooltipID: tooltip_entity_ardyn
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -44,7 +44,7 @@ MonoBehaviour:
     EnabledByDefault: 1
   - SkillID: skill_fight_melee
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   - SkillID: skill_fight_magic
     PlayerCanEdit: 0
     EnabledByDefault: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     EnabledByDefault: 0
   - SkillID: skill_fight_range
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   ProfessionPermissions:
   - ProfessionID: profession_thaumaturge
     CanAssign: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   - item_slot_legs
   - item_slot_feet
   - item_slot_back
+  - item_slot_utility
   PathingType: 1
   DefaultTuning: entity_tuning_ardyn
   DeathItemSpawnGroup: spawns_entity_death_ardyn
@@ -169,10 +170,6 @@ MonoBehaviour:
     Buffs: []
     Statuses: []
   AutoJobs:
-  - BlueprintID: blueprint_retroanimate
-    Settings:
-      Priority: 4
-      AutoJobType: 1
   - BlueprintID: blueprint_sleep_on_ground
     Settings:
       Priority: 2
@@ -211,7 +208,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 32
+    StartingBase: 10
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

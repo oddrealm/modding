@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
+  m_Name: blueprint_research
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_blueprint_research
+  TagIDs: []
+  DiscoveryDependencies:
+  - tag_can_be_studied
+  - skill_carry
+  - skill_misc
+  - item_ink
+  - item_paper
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SkillPriorityOverride: -1
+  XP: 100
+  AwardXPForEachAction: 0
+  CategoryID: blueprint_category_none
+  DesignationListOrder: -1
+  ResearchKey: research_arcana_library0
+  Repeat: 0
+  CheckStateForTransition: 0
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  AddBlockSkillToJobSkill: 0
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 0
+  LocationID: tag_table
+  WorkPosition: 0
+  PermissionType: 0
+  CanSitDuringJob: 1
+  WorkerID: skill_writing
+  TargetID: 
+  JobActions:
+  - ActionType: 0
+    ResourceID: item_ink
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 0
+    ResourceID: item_paper
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 3
+    ResourceID: 
+    WorkPosition: 0
+    AnimationTrigger: 32768
+    AnimationHitEvent: 1
+    AnimStartFX: 
+    AnimStartSFX: 
+  ProgressWorkerAttribute: 
+  AddedProgressPerAction: 0
+  ProgressMax: 100
+  ProgressBarType: 2
+  ProgressFXMaxX: 0
+  ProgressFXMinX: 0
+  ProgressFXMaxY: 0
+  ProgressFXMinY: 0
+  Clear:
+    Layer: 0
+    DisableRemoveSpawns: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: 
+  ChangeFillMass: 0
+  SetMass: 0
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
+  SetTargetFactionTo: 
+  OnFinishWorkerBuffs: []
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves: []
+  OnFinishTargetBuffs: []
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  CanSelectTarget: 0
+  ShowWorkOutputActionText: 1
+  OnFinishedFX: 
+  WorkFX: 
+  WorkSFX: sfx_pen_paper
+  OnFinishedSFX: 
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride:
+  - visuals_job_cursor_permitted
+  ProhibitedCursorVisualsOverride:
+  - visuals_job_cursor_prohibited
+  Visuals:
+  - visuals_job_study_artifact
+  ShowVisualsIfStarted: 0
+  MaxAutoJobQueueCount: 9
+  DisposeIfRequirementsNotMet: 0
+  DisposeIfNoSourceEntity: 0
+  AutoJobOnCreateCooldown: 0
+  AutoJobOnFreedCooldown: 0

@@ -8,14 +8,13 @@ public class GDEBlockPlatformsData : Scriptable, IProgressionObject
     public float PhysicsHeatPass = 0.0f;
     public bool HasMeltThreshold = false;
     public int MeltThreshold = 0;
-    public bool NeedsSupport = false;
     public BlockDirectionFlags PermittedPaths = BlockDirectionFlags.ALL & ~BlockDirectionFlags.DOWN;
     public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;
     public BlockPermissionTypes Prohibited = BlockPermissionTypes.NONE;
     public float MovementSpeedMod = 0.0f;
     public int MovementCost = -1;
     public bool IsRoof = false;
-    public bool CanGrow = false;
+    public bool CanGrowPlants = false;
     public int GrowTime = 0;
     public int GrowLightReq = 0;
     public bool BlocksCursorRaycast = false;

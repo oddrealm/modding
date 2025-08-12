@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842b8eea7ddea9440ab5a3a9f6389156, type: 3}
   m_Name: simulation_tree_sapling_default
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -78,7 +78,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
-        StateID: plant_state_can_reproduce
+        StateID: plant_state_mature
         OptionID: tree_trunk
     - rid: 6
       type: {class: HasNeighborSimCondition, ns: , asm: Assembly-CSharp}

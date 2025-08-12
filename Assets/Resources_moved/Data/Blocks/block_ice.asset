@@ -12,20 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: block_ice
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_block_ice
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_block_ice
   TagIDs:
   - tag_block_ice
   DiscoveryDependencies:
   - blueprint_block_ice
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_block_ice
   DefaultFill: block_fill_solid
   TriggerConditions: []
   Triggers: []
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 1
+  RotationFixtureKey: 
   SkillLevel: 1
   MaxItemCount: 0
   ItemTypePermissions: []

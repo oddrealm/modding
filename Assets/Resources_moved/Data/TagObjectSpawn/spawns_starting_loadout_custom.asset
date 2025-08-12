@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
   m_Name: spawns_starting_loadout_custom
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -23,8 +22,8 @@ MonoBehaviour:
   MinIterations: 1
   Spawns:
   - Comment: 
-    MinCount: 1000
-    MaxCount: 1000
+    MinCount: 4800
+    MaxCount: 4800
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 1

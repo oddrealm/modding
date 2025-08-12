@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_arboretum
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_arboretum
   DEBUG: 0
+  TooltipID: tooltip_room_arboretum
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -27,44 +27,39 @@ MonoBehaviour:
   DefaultAutoJobs:
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 0
+      Priority: 2
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources:
+    - item_type
+    PermittedResources:
+    - tag_can_plant_tree
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
   - BlueprintID: blueprint_log
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_plant_tree
     Settings:
       Priority: 1
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_harvest_fruit
     Settings:
       Priority: 1
       AutoJobType: 1
-    ResourcePermissions: []
-  - BlueprintID: blueprint_harvest_ground_cover
-    Settings:
-      Priority: 1
-      AutoJobType: 1
-    ResourcePermissions: []
-  - BlueprintID: blueprint_harvest_standing
-    Settings:
-      Priority: 1
-      AutoJobType: 1
-    ResourcePermissions: []
-  - BlueprintID: blueprint_till
-    Settings:
-      Priority: 1
-      AutoJobType: 1
-    ResourcePermissions: []
-  - BlueprintID: blueprint_water_plant
-    Settings:
-      Priority: 2
-      AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

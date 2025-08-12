@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_caged
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_caged
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_entity_status_caged
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -27,6 +26,11 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
@@ -34,9 +38,9 @@ MonoBehaviour:
   Accessory: accessory_status_caged_large
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: 
+  - Comment: Remove All Move Speed
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: Remove All Move Speed
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 0

@@ -20,10 +20,10 @@ MonoBehaviour:
   Action: Factions
   Name: Factions
   NamePlural: 
-  InlineIcon: <sprite=1701>
+  InlineIcon: <sprite=1806>
   Description: 
   Icon: 
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.4509804, a: 1}
   Type: Object
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1414
+  Order: 1441

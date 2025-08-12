@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_animal_milking
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_animal_milking
   DEBUG: 0
+  TooltipID: tooltip_blueprint_animal_milking
   TagIDs: []
   DiscoveryDependencies:
   - skill_misc
@@ -25,6 +25,7 @@ MonoBehaviour:
   XP: 50
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
+  DesignationListOrder: -1
   ResearchKey: research_agriculture_animals0
   Repeat: 0
   CheckStateForTransition: 0
@@ -32,55 +33,33 @@ MonoBehaviour:
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
   AddBlockSkillToJobSkill: 0
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 0
   LocationID: 
   WorkPosition: 0
   PermissionType: 0
-  LocationPermissions: []
-  WorkerPermissions:
-  - faction_player
-  - faction_captured
-  WorkerPermissionsToLock:
-  - faction_hostile
-  TargetPermissions:
-  - faction_player
-  - faction_captured
-  TargetPermissionsToLock: []
-  OnlyUseResourcesAtJobLocation: 0
-  ResourcePool: 1
-  ShowItemTypeResourcePermissions: 0
-  ResourcePermissionsToLock: []
-  MaxWorkers: 0
+  CanSitDuringJob: 0
+  WorkerID: skill_animal_husbandry
+  TargetID: entity_status_has_milk
   JobActions:
   - ActionType: 10
-    MaxWorkers: 0
-    WorkerID: skill_animal_husbandry
-    TargetID: entity_status_has_milk
     ResourceID: 
-    OnJobFinishActionID: 
     WorkPosition: 0
-    AnimationTrigger: 0
-    AnimationHitEvent: 0
+    AnimationTrigger: 32768
+    AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
   AddedProgressPerAction: 0
-  ProgressMax: 100
+  ProgressMax: 1
   ProgressBarType: 2
-  InvertProgressDisplay: 0
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
     Layer: 0
-    Params:
-      disableRemoveSpawns: 0
-      disposeIfNotPermitted: 0
-      disableSpawnAtEntityOnFail: 0
-      disableClaimCheck: 0
-      setAsUnclaimed: 0
-      attempts: 0
-      seedOffset: 0
+    DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 3
   SpawnTagID: 
@@ -91,7 +70,9 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
@@ -120,7 +101,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 1
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
-  WorkerID: skill_animal_husbandry

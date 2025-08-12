@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
   m_Name: input_command_toggle_add_or_remove_entity_selection
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_input_toggle_add_or_remove_entity_selection
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_input_toggle_add_or_remove_entity_selection
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 2
-  InputState: -1
+  InputState: 5
   DeferTo: []
   DefaultTriggers:
   - Hotkeys:

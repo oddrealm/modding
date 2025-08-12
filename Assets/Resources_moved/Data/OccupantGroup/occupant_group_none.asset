@@ -13,39 +13,18 @@ MonoBehaviour:
   m_Name: occupant_group_none
   m_EditorClassIdentifier: 
   TooltipID: tooltip_room_occupant_group_occupants
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   OccupantManageType: 1
   OccupantsMustBePlayerControlled: 1
-  AvailableOccupantTagObjs:
-  - TagObjectKey: tag_races
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_professions
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_skills
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_factions
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_statuses
-    Min: -1
-    Max: -1
   RequiredOccupantTagObjs:
-  - TagObjectKey: tag_races
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_professions
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_skills
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_factions
-    Min: -1
-    Max: -1
+  - TagID: tag_races
+    TagObjectKey: 
+  - TagID: tag_professions
+    TagObjectKey: 
+  - TagID: tag_skills
+    TagObjectKey: 
+  - TagID: tag_factions
+    TagObjectKey: 

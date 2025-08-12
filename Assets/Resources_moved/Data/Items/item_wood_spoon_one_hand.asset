@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_wood_spoon_one_hand
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_wood_spoon_one_hand
   DEBUG: 0
+  TooltipID: tooltip_item_wood_spoon_one_hand
   TagIDs:
   - tag_item_type_tool
   - tag_item
@@ -21,6 +21,8 @@ MonoBehaviour:
   - tag_item_rarity_common
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_can_equip
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -37,7 +39,6 @@ MonoBehaviour:
   AccessoryData: {fileID: 11400000, guid: d51f8e3e7c897584ebc908488ba27bd3, type: 2}
   Permissions: 0
   Prohibited: 0
-  DietGroup: diet_group_none
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
@@ -45,21 +46,14 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_wood_spoon_one_hand
-  StartDiscovered: 1
-  MaxCountInMerchantList: 1
-  GenerateNameKey: weapon
   MerchantBuyValue: 65
   MerchantSellValue: 13
   TuneRating: 1
   ItemRarity: item_rarity_common
   DecayRate: -1
   DecayItem: 
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 500
   StackSize: 1
-  JobOutputMod: 1
-  ArtifactID: 
   Actions:
   - ActionID: tag_can_equip
     Buff:
@@ -69,5 +63,5 @@ MonoBehaviour:
       Permanent: 0
     Status: 
     SpawnID: 
-  TimedActions: []
   StateOptions: []
+  TimedActions: []

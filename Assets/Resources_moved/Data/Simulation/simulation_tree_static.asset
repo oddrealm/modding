@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842b8eea7ddea9440ab5a3a9f6389156, type: 3}
   m_Name: simulation_tree_static
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Simulations:
   - rid: 0
-  - rid: 5
   references:
     version: 2
     RefIds:
@@ -35,21 +34,6 @@ MonoBehaviour:
         - rid: 8
         Actions:
         - rid: 9
-    - rid: 5
-      type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
-      data:
-        Comment: 'Trunk: Spawn Sapling'
-        IsEnabled: 0
-        Target:
-          rid: 34
-        RequireAllConditionsToBeMet: 1
-        Conditions:
-        - rid: 35
-        - rid: 36
-        - rid: 37
-        - rid: 38
-        Actions:
-        - rid: 39
     - rid: 7
       type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
       data:
@@ -65,39 +49,6 @@ MonoBehaviour:
       type: {class: DisposeSimAction, ns: , asm: Assembly-CSharp}
       data:
         DebugBreakpoint: 0
-    - rid: 34
-      type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
-      data:
-        TargetPositions:
-          rid: 53
-    - rid: 35
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: plant_is_permitted
-        OptionID: tree_sapling
-    - rid: 36
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: plant_state_can_reproduce
-        OptionID: tree_sapling
-    - rid: 37
-      type: {class: RandomChanceSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        MaxRange: 86400
-    - rid: 38
-      type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 0
-    - rid: 39
-      type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
-      data:
-        DebugBreakpoint: 0
-        StateID: plant_spawn
-        OptionID: tree_sapling
-        UseGroupUID: 0
     - rid: 46
       type: {class: SimPositions, ns: , asm: Assembly-CSharp}
       data:
@@ -105,17 +56,5 @@ MonoBehaviour:
         - {x: 0, y: 0, z: 0}
         MaxDistance: 1
         MinDistance: 1
-        IterateToEnd: 0
-        CheckAll: 0
-    - rid: 53
-      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
-      data:
-        Positions:
-        - {x: 0, y: 1, z: 0}
-        - {x: -1, y: 0, z: 0}
-        - {x: 0, y: -1, z: 0}
-        - {x: 1, y: 0, z: 0}
-        MaxDistance: 5
-        MinDistance: 2
         IterateToEnd: 0
         CheckAll: 0

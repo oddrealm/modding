@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_wyrm_narrator0_d0_0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -29,5 +28,5 @@ MonoBehaviour:
     the Wyrm passes and, with each breath, the chaos gradually eases. A tremendous
     scar traces the earth, marking the creature''s path.{*/}'
   Response: []
-  FocusOnSpeaker: 1
+  ShowOnce: 0
   DialogueSequences: []

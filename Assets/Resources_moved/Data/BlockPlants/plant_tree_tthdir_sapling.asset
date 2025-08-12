@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_tree_tthdir_sapling
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_plant_tree_tthdir_sapling
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_plant_tree_tthdir_sapling
+  TagIDs:
+  - tag_mature_tree
+  - tag_mature_fruit
+  - tag_can_be_watered
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 7200
   ReproduceTimeInterval: 1440
   MaxNaturalSpawnCount: 8
   MaxNaturalReproduceCount: 32
-  ReproductionPlant: plant_tree_tthdir_sapling
+  ReproductionPlant: 
   MaxDefaultSimTime: 864000
   MatureThreshold: 0.5
   MatureTag: tag_mature_tree
@@ -59,8 +61,8 @@ MonoBehaviour:
   FruitSeasons: []
   FruitVisuals: 
   LayerPriority: 0
-  Layer: 0
-  ProhibitedLayers: 0
+  Layer: 32
+  ProhibitedLayers: 32
   Permissions: 0
   Prohibited: 263168
   MaturePermissions: 0

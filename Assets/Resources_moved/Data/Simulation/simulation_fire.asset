@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842b8eea7ddea9440ab5a3a9f6389156, type: 3}
   m_Name: simulation_fire
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -159,11 +158,4 @@ MonoBehaviour:
         DebugBreakpoint: 0
         Clear:
           Layer: -1
-          Params:
-            disableRemoveSpawns: 0
-            disposeIfNotPermitted: 0
-            disableSpawnAtEntityOnFail: 0
-            disableClaimCheck: 0
-            setAsUnclaimed: 0
-            attempts: 0
-            seedOffset: 0
+          DisableRemoveSpawns: 0

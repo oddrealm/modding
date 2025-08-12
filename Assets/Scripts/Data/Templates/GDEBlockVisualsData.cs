@@ -39,6 +39,7 @@ public class GDEBlockVisualsData : Scriptable
     public bool HideSurfaceWhenObscuredAbove = false;
     public bool HideSurfaceWhenSameTypeAbove = false;
     public bool CanTransitionIfObscuredAbove = false;
+    public bool CanTransitionIfTargetCovered = true;
     public bool HasSurface = false;
     public bool CanFade = false;
     public bool HasSeasonOffset = false;
@@ -49,7 +50,6 @@ public class GDEBlockVisualsData : Scriptable
     public bool ShowAnims = false;
     public bool ShowLighting = false;
     public float DropShadow = 1f;
-
 
     public Light LightSettings;
     public override bool ShowMinimapCutoutColor { get { return HasSurface; } }
@@ -79,6 +79,7 @@ public class GDEBlockVisualsData : Scriptable
         uvs.CanTransitionIfObscuredAbove = this.CanTransitionIfObscuredAbove;
         uvs.HideSurfaceWhenObscuredAbove = this.HideSurfaceWhenObscuredAbove;
         uvs.HideSurfaceWhenSameTypeAbove = this.HideSurfaceWhenSameTypeAbove;
+        uvs.CanTransitionIfTargetCovered = this.CanTransitionIfTargetCovered;
         uvs.HasSurface = this.HasSurface;
         uvs.TailVariants = this.TailVariants;
         uvs.ShowAnims = this.ShowAnims;

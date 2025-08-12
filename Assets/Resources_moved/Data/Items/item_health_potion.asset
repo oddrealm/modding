@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_health_potion
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_health_potion
   DEBUG: 0
+  TooltipID: tooltip_item_health_potion
   TagIDs:
   - tag_item_type_potion
   - tag_can_equip
   - tag_item
   - tag_item_rarity_uncommon
+  - tag_can_use
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_can_equip
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -37,27 +40,28 @@ MonoBehaviour:
   AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
-  DietGroup: diet_group_none
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
-  PermittedSlots: []
+  PermittedSlots:
+  - item_slot_utility
   AttackGroup: 
-  StartDiscovered: 1
-  MaxCountInMerchantList: 2
-  GenerateNameKey: 
   MerchantBuyValue: 100
   MerchantSellValue: 20
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
   DecayItem: 
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 100
   StackSize: 5
-  JobOutputMod: 1
-  ArtifactID: 
-  Actions: []
-  TimedActions: []
+  Actions:
+  - ActionID: tag_can_use
+    Buff:
+      TargetID: attribute_health
+      Amount: 100
+      Max: 0
+      Permanent: 1
+    Status: 
+    SpawnID: 
   StateOptions: []
+  TimedActions: []

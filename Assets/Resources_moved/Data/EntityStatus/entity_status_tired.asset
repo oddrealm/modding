@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_tired
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_tired
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_entity_status_tired
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
@@ -28,6 +27,11 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.7803922, g: 0.33333334, b: 0.21176472, a: 1}
@@ -35,9 +39,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: 
+  - Comment: Slow movement
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: Slow movement
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 0
@@ -53,9 +57,9 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
-  - ConditionTarget: attribute_energy
+  - Comment: Remove Tired if energy is full
+    ConditionTarget: attribute_energy
     HideInTooltips: 0
-    Comment: Remove Tired if energy is full
     ActivationID: 
     Conditions:
     - rid: 8269333808373301716

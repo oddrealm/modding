@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
   m_Name: scenario_insane_ancient0
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  IsThreat: 0
+  IsThreat: 1
   NotifOnActivate: notif_insane_ancient
   EntitySpawns:
   - SpawnPointType: 2
@@ -59,7 +59,9 @@ MonoBehaviour:
     Chance: 1
     SampleSize: 20
   MaxActivations: 1
-  MinKingdomLevel: 6
+  MinKingdomLevel: 12
   MinMinutesSinceSettlementStart: 1440
   MinMinutesSinceLastScenario: 1440
   MinMinutesSinceLastSameScenario: 1440
+  MinTimeOfDay: 0
+  MaxTimeOfDay: 1440

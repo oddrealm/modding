@@ -12,33 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842b8eea7ddea9440ab5a3a9f6389156, type: 3}
   m_Name: simulation_liquid_default
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Simulations:
-  - rid: 0
   - rid: 1
   - rid: 2
   - rid: 2072088653822427138
   references:
     version: 2
     RefIds:
-    - rid: 0
-      type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
-      data:
-        Comment: 'Liquid: Drop Downwards'
-        IsEnabled: 1
-        Target:
-          rid: 3
-        RequireAllConditionsToBeMet: 1
-        Conditions:
-        - rid: 4
-        - rid: 5
-        Actions:
-        - rid: 6
     - rid: 1
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
@@ -64,25 +49,6 @@ MonoBehaviour:
         - rid: 12
         Actions:
         - rid: 13
-    - rid: 3
-      type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
-      data:
-        TargetPositions:
-          rid: 14
-    - rid: 4
-      type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 0
-    - rid: 5
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: block_fill_state_fill_target
-        OptionID: 
-    - rid: 6
-      type: {class: MoveInstanceSimAction, ns: , asm: Assembly-CSharp}
-      data:
-        DebugBreakpoint: 0
     - rid: 7
       type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
       data:
@@ -123,15 +89,6 @@ MonoBehaviour:
         StateID: block_fill_state_empty
         OptionID: 
         UseGroupUID: 0
-    - rid: 14
-      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
-      data:
-        Positions:
-        - {x: 0, y: 0, z: -1}
-        MaxDistance: 1
-        MinDistance: 1
-        IterateToEnd: 0
-        CheckAll: 0
     - rid: 15
       type: {class: SimPositions, ns: , asm: Assembly-CSharp}
       data:
@@ -140,6 +97,7 @@ MonoBehaviour:
         - {x: -1, y: 0, z: 0}
         - {x: 0, y: -1, z: 0}
         - {x: 1, y: 0, z: 0}
+        - {x: 0, y: 0, z: -1}
         MaxDistance: 1
         MinDistance: 1
         IterateToEnd: 0

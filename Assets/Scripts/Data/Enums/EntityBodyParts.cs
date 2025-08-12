@@ -11,6 +11,7 @@ public enum EntityBodyParts
     GROIN = 64,
     LEGS = 128,
     FEET = 256,
+    ACCESSORIES = 512,
 
-    ALL = HEAD | NECK | SHOULDERS | TORSO | ARMS | HANDS | GROIN | LEGS | FEET
+    ALL = HEAD | NECK | SHOULDERS | TORSO | ARMS | HANDS | GROIN | LEGS | FEET | ACCESSORIES,
 }

@@ -24,7 +24,6 @@ public class DataEditTagPage : DataEditPage
     public OverworldTile ActiveTile { get { return World != null ? Session.World.ActiveTile : null; } }
 #endif
 
-    private Object[] _lockedSelections;
     private int _dataPageIndex;
     private int _dataPerPage = 30;
     private bool _showUtilities = false;
@@ -39,16 +38,12 @@ public class DataEditTagPage : DataEditPage
     private string[] _tagKeyFilterWords;
     private string _scriptTypeFilter = "";
     private List<Scriptable> _visibleScripts = new List<Scriptable>();
-    //private string _selectedScript;
-    //private List<Scriptable> _scriptCache = new List<Scriptable>();
     private bool _visibleDirty;
     private bool _editingTags;
     private bool _editingScriptTypes;
     private string _newTagName;
     private string _newTagObjSpawnName;
     private string _simToAddToSelections;
-    private string _newSimDataID;
-    private bool _chooseSimFromList;
 
     private HashSet<string> _visibleScriptTypes = new HashSet<string>()
     {
@@ -258,14 +253,13 @@ public class DataEditTagPage : DataEditPage
 
             EditorUtility.DisplayProgressBar("FOO", "", t / (float)_visibleScripts.Count);
 
-            if (script is GDEScenariosData data)
+            if (script is GDEXPGrowthData data)
             {
+                float n = data.Level / 99f;
+                float growth = 1 - Mathf.Exp(-2 * n);
+                data.KingdomXPRequiredToLevel = 51 + (int)Mathf.Lerp(0, 5000, growth);
+                Debug.LogError($"XP {data.Level}: {data.KingdomXPRequiredToLevel}");
                 MARK_DIRTY(script);
-
-                //for (int i = 0; i < data.EntitySpawns.Length; i++)
-                //{
-                //    data.EntitySpawns[i].SpawnData = EntitySpawnData.NewFromSpawn(data.EntitySpawns[i].EntitySpawn);
-                //}
             }
         }
 
@@ -767,27 +761,30 @@ public class DataEditTagPage : DataEditPage
 
         BTN("Clear Unused Tags", Color.red, () =>
         {
-            List<Scriptable> unusedTags = new List<Scriptable>();
-
-            for (int i = 0; i < tags.Count; i++)
+            if (EditorUtility.DisplayDialog("Delete unused tags?", "", "OK", "Cancel"))
             {
-                if (GetScriptsByTagCount(tags[i]) > 0 ||
-                    tags[i].Key == "tag_missing")
+                List<Scriptable> unusedTags = new List<Scriptable>();
+
+                for (int i = 0; i < tags.Count; i++)
                 {
-                    continue;
+                    if (GetScriptsByTagCount(tags[i]) > 0 ||
+                        tags[i].Key == "tag_missing")
+                    {
+                        continue;
+                    }
+
+                    unusedTags.Add(tags[i]);
                 }
 
-                unusedTags.Add(tags[i]);
-            }
+                for (int i = 0; i < unusedTags.Count; i++)
+                {
+                    string path = AssetDatabase.GetAssetPath(unusedTags[i]);
+                    AssetDatabase.DeleteAsset(path);
+                    Debug.LogError($"Deleted: {path}");
+                }
 
-            for (int i = 0; i < unusedTags.Count; i++)
-            {
-                string path = AssetDatabase.GetAssetPath(unusedTags[i]);
-                AssetDatabase.DeleteAsset(path);
-                Debug.LogError($"Deleted: {path}");
+                MarkDataNeedsReload();
             }
-
-            MarkDataNeedsReload();
         });
 
         BEGIN_SCROLL("tag_scroll");
@@ -1725,6 +1722,8 @@ public class DataEditTagPage : DataEditPage
             scenariosData.MinMinutesSinceSettlementStart = TIME_INPUT(scenariosData.MinMinutesSinceSettlementStart, "Min Minutes Since Settlement Start");
             scenariosData.MinMinutesSinceLastScenario = TIME_INPUT(scenariosData.MinMinutesSinceLastScenario, "Min Minutes Since Last Scenario");
             scenariosData.MinMinutesSinceLastSameScenario = TIME_INPUT(scenariosData.MinMinutesSinceLastSameScenario, "Min Minutes Since Last Same Scenario");
+            scenariosData.MinTimeOfDay = CLOCK_INPUT(scenariosData.MinTimeOfDay, "Min Time Of Day");
+            scenariosData.MaxTimeOfDay = CLOCK_INPUT(scenariosData.MaxTimeOfDay, "Max Time Of Day");
             scenariosData.Conditions = RENDER_REF_ARRAY<GDEScenariosData.Condition>(scenariosData.Conditions, "Conditions", (req) =>
             {
                 req.ConditionType = (ConditionTypes)DROP_DOWN(req.ConditionType);
@@ -1768,7 +1767,7 @@ public class DataEditTagPage : DataEditPage
         spawn.SpawnScenario = DATA_ID_INPUT<GDEScenariosData>(spawn.SpawnScenario, "Scenario ID", out var scenarioData);
         spawn.Tag = TEXT_INPUT(spawn.Tag, "Entity Tag");
         spawn.Count = INT_INPUT(spawn.Count, "Entity Count");
-        
+
         if (spawn.Count > 1)
         {
             spawn.Chance = RANDOM_CHANCE_INPUT(spawn.Chance, "Spawn Chance");
@@ -2115,6 +2114,7 @@ public class DataEditTagPage : DataEditPage
 
         MARK_DIRTY(itemData);
 
+        itemData.StackSize = INT_INPUT(itemData.StackSize, "Stack Size");
         itemData.ItemType = DATA_ID_INPUT<GDETagsData>(itemData.ItemType, "Item Type", out var itemType);
         itemData.ItemRarity = DATA_ID_INPUT<GDEItemRarityData>(itemData.ItemRarity, "Rarity ID", out var rarityData);
 
@@ -3113,7 +3113,8 @@ public class DataEditTagPage : DataEditPage
                     statusData.Actions = arr;
                     END_HOR();
                     continue;
-                };
+                }
+                ;
 
                 StatusAction statusAction = arr[i];
                 statusAction.ActivationID = DATA_ID_INPUT<GDETagsData>(statusAction.ActivationID, "Activation ID (Optional)", out var actionData);
@@ -3296,9 +3297,10 @@ public class DataEditTagPage : DataEditPage
         BEGIN_VERT();
 
         entityData.Race = DATA_ID_INPUT<GDERacesData>(entityData.Race, "Race", out var raceData);
+        const string saveGroup = "entity";
 
         // Entity diet.
-        bool showDiets = EXPAND_TOGGLE("Diets:", ColorUtility.purple, -1, entityData.Key);
+        bool showDiets = EXPAND_TOGGLE("Diets:", ColorUtility.purple, -1, saveGroup);
 
         if (showDiets)
         {
@@ -3328,7 +3330,7 @@ public class DataEditTagPage : DataEditPage
         }
 
         // Entity biomes.
-        bool showBiomes = EXPAND_TOGGLE("Biomes:", ColorUtility.plantGreen, -1, entityData.Key);
+        bool showBiomes = EXPAND_TOGGLE("Biomes:", ColorUtility.plantGreen, -1, saveGroup);
 
         if (showBiomes)
         {
@@ -3342,7 +3344,7 @@ public class DataEditTagPage : DataEditPage
         }
 
         // Entity default statuses.
-        bool showStatuses = EXPAND_TOGGLE("Default Statuses:", ColorUtility.plantGreen, -1, entityData.Key);
+        bool showStatuses = EXPAND_TOGGLE("Default Statuses:", ColorUtility.plantGreen, -1, saveGroup);
 
         if (showStatuses)
         {
@@ -3370,8 +3372,42 @@ public class DataEditTagPage : DataEditPage
             END_INDENT();
         }
 
+
+        // Slot Permissions.
+        bool showSlotPermissions = EXPAND_TOGGLE("Slot Permissions:", Color.yellow, -1, saveGroup);
+
+        if (showSlotPermissions)
+        {
+            BEGIN_INDENT();
+            List<Scriptable> itemSlots = GetDataByType<GDEItemSlotsData>();
+
+            for (int i = 0; i < itemSlots.Count; i++)
+            {
+                bool isPermitted = entityData.PermittedItemSlots.Contains(itemSlots[i].Key);
+                bool newPermitted = TOGGLE(isPermitted, itemSlots[i].TooltipName);
+
+                if (newPermitted != isPermitted)
+                {
+                    List<string> temp = new List<string>(entityData.PermittedItemSlots);
+
+                    if (newPermitted)
+                    {
+                        temp.Add(itemSlots[i].Key);
+                    }
+                    else
+                    {
+                        temp.Remove(itemSlots[i].Key);
+                    }
+
+                    entityData.PermittedItemSlots = temp.ToArray();
+                }
+            }
+
+            END_INDENT();
+        }
+
         // Skill Permissions.
-        bool showProhibitedSkills = EXPAND_TOGGLE("Skill Permissions:", Color.yellow, -1, entityData.Key);
+        bool showProhibitedSkills = EXPAND_TOGGLE("Skill Permissions:", Color.yellow, -1, saveGroup);
 
         if (showProhibitedSkills)
         {
@@ -3445,7 +3481,7 @@ public class DataEditTagPage : DataEditPage
 
 
         // Profession Permissions.
-        bool showProhibitedProfessions = EXPAND_TOGGLE("Profession Permissions:", Color.yellow, -1, entityData.Key);
+        bool showProhibitedProfessions = EXPAND_TOGGLE("Profession Permissions:", Color.yellow, -1, saveGroup);
 
         if (showProhibitedProfessions)
         {
@@ -3602,7 +3638,7 @@ public class DataEditTagPage : DataEditPage
         // On Finish resource action.
         LABEL("On Finish Resource:", ColorUtility.green);
         BEGIN_INDENT();
-        blueprintData.OnFinishedResourcesActionID = DATA_ID_INPUT<Scriptable>(blueprintData.OnFinishedResourcesActionID, "On Finished Resources Action ID", out var onFinishResourceActionTagObjData);
+        blueprintData.OnItemConsumeActionID = DATA_ID_INPUT<Scriptable>(blueprintData.OnItemConsumeActionID, "On Item Consumed Action ID", out var onFinishResourceActionTagObjData);
         END_INDENT();
 
         // Worker Buffs.
@@ -3677,23 +3713,8 @@ public class DataEditTagPage : DataEditPage
             //Action Type.
             req.ActionType = (JobActionTypes)DROP_DOWN(req.ActionType, "Action Type");
 
-            // Worker.
-            req.WorkerID = DATA_ID_INPUT<Scriptable>(req.WorkerID, "Worker ID (i.e., \"entity_status_hungry\")", out var workerData);
-
-            // Target.
-            req.TargetID = DATA_ID_INPUT<Scriptable>(req.TargetID, "Target ID (i.e., \"entity_rat\")", out var targetData);
-
             // Resource.
             req.ResourceID = DATA_ID_INPUT<Scriptable>(req.ResourceID, "Resource ID (i.e., \"item_wood_log\" or \"tag_item_type_wood\")", out var resourceData);
-
-            //// On Start action.
-            //req.OnJobStartActionID = DATA_ID_INPUT<GDETagsData>(req.OnJobStartActionID, "On Start Action (i.e., \"tag_can_eat\")", out var onStartData);
-
-            //// On Quit action.
-            //req.OnJobQuitActionID = DATA_ID_INPUT<GDETagsData>(req.OnJobQuitActionID, "On Quit Action (i.e., \"tag_can_eat\")", out var onQuitData);
-
-            // On Finish action.
-            req.OnJobFinishActionID = DATA_ID_INPUT<GDETagsData>(req.OnJobFinishActionID, "On Finish Action (i.e., \"tag_can_eat\")", out var onFinishData);
 
             // Animations.
             req.AnimationTrigger = (EntityAnimationTriggers)DROP_DOWN(req.AnimationTrigger, "Anim Trigger");
@@ -3713,6 +3734,8 @@ public class DataEditTagPage : DataEditPage
         END_INDENT(ColorUtility.selectedGold);
     }
 
+    private string _autoJobFilterID = string.Empty;
+
     private void RenderRoomData(Scriptable script, GDERoomTemplatesData roomData)
     {
         if (roomData == null) { return; }
@@ -3720,67 +3743,134 @@ public class DataEditTagPage : DataEditPage
         MARK_DIRTY(roomData);
 
         roomData.CategoryID = DATA_ID_INPUT<GDERoomCategoryData>(roomData.CategoryID, "Category ID", out var categoryData);
-        LABEL("Occupant Groups:", ColorUtility.blueprintBlue);
-        BEGIN_INDENT();
 
-        for (int i = 0; i < roomData.OccupantGroups.Count; i++)
+        bool showQualities = EXPAND_TOGGLE("Qualities", ColorUtility.blueprintBlue, -1, string.Empty);
+
+        if (showQualities)
         {
-            BEGIN_HOR();
-            if (TRY_LIST_REMOVE_BTN<string>(roomData.OccupantGroups, i, out var newList))
-            {
-                roomData.OccupantGroups = newList;
-                END_HOR();
-                continue;
-            }
-
-            roomData.OccupantGroups[i] = DATA_ID_INPUT<GDEOccupantGroupData>(roomData.OccupantGroups[i], "Occupant Group ID", out var occupantGroupData);
-
-            END_HOR();
-
             BEGIN_INDENT();
-            RenderOccupantGrouptData(script, occupantGroupData);
+
+            roomData.RoomQualities = RENDER_VALUE_LIST<GDERoomTemplatesData.RoomQuality>(roomData.RoomQualities, "Room Qualities", (GDERoomTemplatesData.RoomQuality quality) =>
+            {
+                BEGIN_VERT();
+                quality.level = INT_INPUT(quality.level, "Level");
+                quality.jobFinishWorkerAction = DATA_ID_INPUT<GDEActionData>(quality.jobFinishWorkerAction, "Worker Action ID", out var workerAction);
+
+                if (!string.IsNullOrEmpty(quality.jobFinishWorkerAction))
+                {
+                    BEGIN_INDENT();
+                    RenderActionData(script, workerAction);
+                    END_INDENT();
+                }
+
+                quality.jobFinishItemAction = DATA_ID_INPUT<GDEActionData>(quality.jobFinishItemAction, "Item Action ID", out var itemAction);
+
+                if (!string.IsNullOrEmpty(quality.jobFinishItemAction))
+                {
+                    BEGIN_INDENT();
+                    RenderActionData(script, itemAction);
+                    END_INDENT();
+                }
+
+                END_VERT();
+                return quality;
+            });
+
             END_INDENT();
         }
 
-        roomData.OccupantGroups = LIST_ADD_VALUE_BTN<string>(roomData.OccupantGroups, "+Occupant Group");
+        bool showOccupantGroups = EXPAND_TOGGLE("Occupant Groups", ColorUtility.blueprintBlue, -1, string.Empty);
 
-        END_INDENT();
-
-        LABEL("Default Auto Jobs:", ColorUtility.blueprintBlue);
-        BEGIN_INDENT();
-
-        for (int i = 0; i < roomData.DefaultAutoJobs.Count; i++)
+        if (showOccupantGroups)
         {
-            BEGIN_HOR();
-            if (TRY_LIST_REMOVE_BTN<GDERoomTemplatesData.RoomAutoJob>(roomData.DefaultAutoJobs, i, out var newList))
+            BEGIN_INDENT();
+
+            for (int i = 0; i < roomData.OccupantGroups.Count; i++)
             {
-                roomData.DefaultAutoJobs = newList;
+                BEGIN_HOR();
+                if (TRY_LIST_REMOVE_BTN<string>(roomData.OccupantGroups, i, out var newList))
+                {
+                    roomData.OccupantGroups = newList;
+                    END_HOR();
+                    continue;
+                }
+
+                roomData.OccupantGroups[i] = DATA_ID_INPUT<GDEOccupantGroupData>(roomData.OccupantGroups[i], "Occupant Group ID", out var occupantGroupData);
+
                 END_HOR();
-                continue;
+
+                BEGIN_INDENT();
+                RenderOccupantGrouptData(script, occupantGroupData);
+                END_INDENT();
             }
 
-            LABEL("Auto Job");
-            END_HOR();
+            roomData.OccupantGroups = LIST_ADD_VALUE_BTN<string>(roomData.OccupantGroups, "+Occupant Group");
 
-            GDERoomTemplatesData.RoomAutoJob roomAutoJob = roomData.DefaultAutoJobs[i];
-
-            BEGIN_INDENT();
-            roomAutoJob.BlueprintID = DATA_ID_INPUT<GDEBlueprintsData>(roomAutoJob.BlueprintID, "Blueprint ID", out var blueprintData);
-
-            BEGIN_HOR();
-            BEGIN_SPRITE(blueprintData == null ? null : blueprintData.TooltipIconSprite);
-            SPACE(4);
-            BEGIN_VERT();
-            roomAutoJob.Settings = RenderAutoJobSettings(script, roomAutoJob.Settings);
-            END_VERT();
-            END_HOR();
-            roomData.DefaultAutoJobs[i] = roomAutoJob;
             END_INDENT();
         }
 
-        roomData.DefaultAutoJobs = LIST_ADD_VALUE_BTN<GDERoomTemplatesData.RoomAutoJob>(roomData.DefaultAutoJobs, "+Default Auto Jobs");
+        bool showDefaultAutoJobs = EXPAND_TOGGLE("Default Auto Jobs", ColorUtility.blueprintBlue, -1, string.Empty);
 
-        bool showBlueprints = EXPAND_TOGGLE("Blueprints", ColorUtility.blueprintBlue, -1, roomData.Key);
+        if (showDefaultAutoJobs)
+        {
+            BEGIN_INDENT();
+            _autoJobFilterID = TEXT_INPUT(_autoJobFilterID, "Auto Job Filter ID");
+
+            for (int i = 0; i < roomData.DefaultAutoJobs.Count; i++)
+            {
+                BEGIN_HOR();
+                if (TRY_LIST_REMOVE_BTN<GDERoomTemplatesData.RoomAutoJob>(roomData.DefaultAutoJobs, i, out var newList))
+                {
+                    roomData.DefaultAutoJobs = newList;
+                    END_HOR();
+                    continue;
+                }
+
+                LABEL("Auto Job");
+                END_HOR();
+
+                GDERoomTemplatesData.RoomAutoJob roomAutoJob = roomData.DefaultAutoJobs[i];
+
+                if (!string.IsNullOrEmpty(_autoJobFilterID) && !roomAutoJob.BlueprintID.Contains(_autoJobFilterID))
+                {
+                    continue;
+                }
+
+                BEGIN_INDENT();
+                roomAutoJob.BlueprintID = DATA_ID_INPUT<GDEBlueprintsData>(roomAutoJob.BlueprintID, "Blueprint ID", out var blueprintData);
+
+                BEGIN_HOR();
+                BEGIN_SPRITE(blueprintData == null ? null : blueprintData.TooltipIconSprite);
+                SPACE(4);
+                BEGIN_VERT();
+                roomAutoJob.Settings = RenderAutoJobSettings(script, roomAutoJob.Settings);
+                roomAutoJob.ProhibitedLocations = RENDER_VALUE_ARRAY<string>(roomAutoJob.ProhibitedLocations, "Prohibited Locations", (string id) =>
+                {
+                    return DATA_ID_INPUT<Scriptable>(id, "Location ID", out var locationData);
+                });
+                roomAutoJob.PermittedLocations = RENDER_VALUE_ARRAY<string>(roomAutoJob.PermittedLocations, "Permitted Locations", (string id) =>
+                {
+                    return DATA_ID_INPUT<Scriptable>(id, "Location ID", out var locationData);
+                });
+                roomAutoJob.ProhibitedResources = RENDER_VALUE_ARRAY<string>(roomAutoJob.ProhibitedResources, "Prohibited Resources", (string id) =>
+                {
+                    return DATA_ID_INPUT<Scriptable>(id, "Resource ID", out var resourceData);
+                });
+                roomAutoJob.PermittedResources = RENDER_VALUE_ARRAY<string>(roomAutoJob.PermittedResources, "Permitted Resources", (string id) =>
+                {
+                    return DATA_ID_INPUT<Scriptable>(id, "Resource ID", out var resourceData);
+                });
+                END_VERT();
+                END_HOR();
+                roomData.DefaultAutoJobs[i] = roomAutoJob;
+                END_INDENT();
+            }
+
+            roomData.DefaultAutoJobs = LIST_ADD_VALUE_BTN<GDERoomTemplatesData.RoomAutoJob>(roomData.DefaultAutoJobs, "+Default Auto Jobs");
+            END_INDENT();
+        }
+
+        bool showBlueprints = EXPAND_TOGGLE("Blueprints", ColorUtility.blueprintBlue, -1, string.Empty);
 
         if (showBlueprints)
         {
@@ -3814,8 +3904,32 @@ public class DataEditTagPage : DataEditPage
 
             END_INDENT();
         }
+    }
 
-        END_INDENT();
+    private void RenderActionData(Scriptable script, GDEActionData actionData)
+    {
+        if (actionData == null) { return; }
+
+        MARK_DIRTY(actionData);
+        RenderTooltip(actionData);
+
+        // Chances.
+        actionData.ActivationChance = RANDOM_CHANCE_INPUT(actionData.ActivationChance, "Activation Chance");
+
+        // Buffs.
+        actionData.Buffs = RenderBuffs(script, actionData.Buffs);
+
+        // Statuses.
+        actionData.Statuses = RenderEntityStatuses(script, actionData.Statuses);
+
+        // Spawns.
+        actionData.Spawns = RENDER_VALUE_ARRAY<string>(actionData.Spawns, "Spawns", (string spawnID) =>
+        {
+            return DATA_ID_INPUT<Scriptable>(spawnID, "Spawn ID", out var spawnData);
+        });
+
+        // Duplicate.
+        actionData.Duplicate = INT_INPUT(actionData.Duplicate, "Duplicate", ColorUtility.blueprintBlue);
     }
 
     private void RenderOccupantGrouptData(Scriptable script, GDEOccupantGroupData occupantGroupData)
@@ -3823,7 +3937,6 @@ public class DataEditTagPage : DataEditPage
         if (occupantGroupData == null) { return; }
 
         MARK_DIRTY(occupantGroupData);
-
         occupantGroupData.OccupantsMustBePlayerControlled = TOGGLE(occupantGroupData.OccupantsMustBePlayerControlled, "Occupants Must Be Player Controlled");
 
         for (int i = 0; i < occupantGroupData.RequiredOccupantTagObjs.Length; i++)
@@ -3848,13 +3961,13 @@ public class DataEditTagPage : DataEditPage
         if (plantData == null) { return; }
 
         MARK_DIRTY(plantData);
-
+        plantData.Layer = (BlockLayers)DROP_DOWN(plantData.Layer, "Layer");
+        plantData.ProhibitedLayers = (BlockLayers)DROP_DOWN_MASK(plantData.ProhibitedLayers, "Prohibited Layers");
         plantData.Permissions = (BlockPermissionTypes)DROP_DOWN_MASK(plantData.Permissions, "Block Permissions");
         plantData.Prohibited = (BlockPermissionTypes)DROP_DOWN_MASK(plantData.Prohibited, "Block Prohibitions");
         plantData.MaturePermissions = (BlockPermissionTypes)DROP_DOWN_MASK(plantData.MaturePermissions, "Mature Block Permissions");
         plantData.MatureProhibitions = (BlockPermissionTypes)DROP_DOWN_MASK(plantData.MatureProhibitions, "Mature Block Prohibitions");
         plantData.MatureTag = DATA_ID_INPUT<GDETagsData>(plantData.MatureTag, "Mature Tag", out var matureTagData);
-
         bool showSeasons = EXPAND_TOGGLE("Seasons:", ColorUtility.blueprintBlue, -1, plantData.Key);
 
         if (showSeasons)
@@ -3987,12 +4100,21 @@ public class DataEditTagPage : DataEditPage
             BEGIN_INDENT();
 
             blockData.Triggers[i].Comment = COMMENT(blockData.Triggers[i].Comment);
-            blockData.Triggers[i].TooltipID = DATA_ID_INPUT<GDETooltipsData>(blockData.Triggers[i].TooltipID, "Tooltip ID", out var tooltipData);
+            blockData.Triggers[i].ActiveTooltipID = DATA_ID_INPUT<GDETooltipsData>(blockData.Triggers[i].ActiveTooltipID, "Active Tooltip ID", out var activeTooltipData);
 
-            if (tooltipData != null)
+            if (activeTooltipData != null)
             {
                 BEGIN_INDENT();
-                RenderTooltip(tooltipData);
+                RenderTooltip(activeTooltipData);
+                END_INDENT();
+            }
+
+            blockData.Triggers[i].InactiveTooltipID = DATA_ID_INPUT<GDETooltipsData>(blockData.Triggers[i].InactiveTooltipID, "Inactive Tooltip ID", out var inActiveTooltipData);
+
+            if (inActiveTooltipData != null)
+            {
+                BEGIN_INDENT();
+                RenderTooltip(inActiveTooltipData);
                 END_INDENT();
             }
 
@@ -4060,6 +4182,7 @@ public class DataEditTagPage : DataEditPage
 
         settings.AutoJobType = (AutoJobTypes)DROP_DOWN(settings.AutoJobType, "Auto Job Type");
         settings.Priority = INT_INPUT(settings.Priority, "Priority");
+
         return settings;
     }
 

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842b8eea7ddea9440ab5a3a9f6389156, type: 3}
   m_Name: simulation_tree_trunk_default
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -23,7 +23,6 @@ MonoBehaviour:
   - rid: 2
   - rid: 3
   - rid: 4
-  - rid: 5
   - rid: 6
   references:
     version: 2
@@ -100,21 +99,6 @@ MonoBehaviour:
         - rid: 32
         Actions:
         - rid: 33
-    - rid: 5
-      type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
-      data:
-        Comment: 'Trunk: Spawn Sapling'
-        IsEnabled: 0
-        Target:
-          rid: 34
-        RequireAllConditionsToBeMet: 1
-        Conditions:
-        - rid: 35
-        - rid: 36
-        - rid: 37
-        - rid: 38
-        Actions:
-        - rid: 39
     - rid: 6
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
@@ -166,14 +150,7 @@ MonoBehaviour:
         DebugBreakpoint: 0
         Clear:
           Layer: -1
-          Params:
-            disableRemoveSpawns: 1
-            disposeIfNotPermitted: 0
-            disableSpawnAtEntityOnFail: 0
-            disableClaimCheck: 0
-            setAsUnclaimed: 0
-            attempts: 0
-            seedOffset: 0
+          DisableRemoveSpawns: 1
     - rid: 14
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -212,14 +189,7 @@ MonoBehaviour:
         DebugBreakpoint: 0
         Clear:
           Layer: -1
-          Params:
-            disableRemoveSpawns: 1
-            disposeIfNotPermitted: 0
-            disableSpawnAtEntityOnFail: 0
-            disableClaimCheck: 0
-            setAsUnclaimed: 0
-            attempts: 0
-            seedOffset: 0
+          DisableRemoveSpawns: 1
     - rid: 21
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -292,39 +262,6 @@ MonoBehaviour:
         StateID: plant_spawn
         OptionID: tree_branch
         UseGroupUID: 1
-    - rid: 34
-      type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
-      data:
-        TargetPositions:
-          rid: 53
-    - rid: 35
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: plant_is_permitted
-        OptionID: tree_sapling
-    - rid: 36
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: plant_state_can_reproduce
-        OptionID: tree_sapling
-    - rid: 37
-      type: {class: RandomChanceSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        MaxRange: 86400
-    - rid: 38
-      type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 0
-    - rid: 39
-      type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
-      data:
-        DebugBreakpoint: 0
-        StateID: plant_spawn
-        OptionID: tree_sapling
-        UseGroupUID: 0
     - rid: 40
       type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
       data:
@@ -356,14 +293,7 @@ MonoBehaviour:
         DebugBreakpoint: 0
         Clear:
           Layer: -1
-          Params:
-            disableRemoveSpawns: 1
-            disposeIfNotPermitted: 0
-            disableSpawnAtEntityOnFail: 0
-            disableClaimCheck: 0
-            setAsUnclaimed: 0
-            attempts: 0
-            seedOffset: 0
+          DisableRemoveSpawns: 1
     - rid: 45
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -438,18 +368,6 @@ MonoBehaviour:
         MinDistance: 1
         IterateToEnd: 0
         CheckAll: 0
-    - rid: 53
-      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
-      data:
-        Positions:
-        - {x: 0, y: 1, z: 0}
-        - {x: -1, y: 0, z: 0}
-        - {x: 0, y: -1, z: 0}
-        - {x: 1, y: 0, z: 0}
-        MaxDistance: 5
-        MinDistance: 2
-        IterateToEnd: 0
-        CheckAll: 0
     - rid: 54
       type: {class: SimPositions, ns: , asm: Assembly-CSharp}
       data:
@@ -484,11 +402,4 @@ MonoBehaviour:
         DebugBreakpoint: 0
         Clear:
           Layer: 64
-          Params:
-            disableRemoveSpawns: 1
-            disposeIfNotPermitted: 0
-            disableSpawnAtEntityOnFail: 0
-            disableClaimCheck: 0
-            setAsUnclaimed: 0
-            attempts: 0
-            seedOffset: 0
+          DisableRemoveSpawns: 0

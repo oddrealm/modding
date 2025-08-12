@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_ancient
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_ancient
   DEBUG: 0
+  TooltipID: tooltip_entity_ancient
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -44,16 +44,16 @@ MonoBehaviour:
     EnabledByDefault: 1
   - SkillID: skill_fight_melee
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   - SkillID: skill_time_weave
     PlayerCanEdit: 0
     EnabledByDefault: 0
   - SkillID: skill_fight_range
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   - SkillID: skill_fight_magic
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   ProfessionPermissions:
   - ProfessionID: profession_technochron
     CanAssign: 0
@@ -142,6 +142,7 @@ MonoBehaviour:
   - item_slot_legs
   - item_slot_feet
   - item_slot_back
+  - item_slot_utility
   PathingType: 1
   DefaultTuning: entity_tuning_ancient
   DeathItemSpawnGroup: spawns_entity_death_ancient
@@ -153,6 +154,7 @@ MonoBehaviour:
   - entity_status_aeternus
   - entity_status_aging_by_day
   - entity_status_ancient_buffs
+  - entity_status_can_be_archenthrall
   Ages:
   - entity_age_ancient_adult
   Diets:
@@ -203,7 +205,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 32
+    StartingBase: 10
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

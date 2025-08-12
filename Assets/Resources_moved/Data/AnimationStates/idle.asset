@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90035f98adbfd5e4f9d291c55ae285f7, type: 3}
   m_Name: idle
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -123,4 +122,9 @@ MonoBehaviour:
     TrueFlags: 0
     FalseFlags: 0
     Triggers: 16384
+    IsComplete: 0
+  - NextState: {fileID: 11400000, guid: 46ad95c8280c5194bb925a80ff02118b, type: 2}
+    TrueFlags: 0
+    FalseFlags: 0
+    Triggers: 32768
     IsComplete: 0

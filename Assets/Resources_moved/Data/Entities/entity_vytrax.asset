@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_vytrax
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_vytrax
   DEBUG: 0
+  TooltipID: tooltip_entity_vytrax
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -255,6 +255,7 @@ MonoBehaviour:
   Statuses:
   - entity_status_metabolism
   - entity_status_aging_by_day
+  - entity_status_can_butcher
   Ages:
   - entity_age_vytrax_child
   - entity_age_vytrax_adult
@@ -345,7 +346,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 32
+    StartingBase: 10
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

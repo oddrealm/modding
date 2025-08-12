@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_stock_room
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_stock_room
   DEBUG: 0
+  TooltipID: tooltip_blueprint_stock_room
   TagIDs: []
   DiscoveryDependencies:
   - skill_carry
@@ -23,6 +23,7 @@ MonoBehaviour:
   XP: 1
   AwardXPForEachAction: 1
   CategoryID: blueprint_category_none
+  DesignationListOrder: -1
   ResearchKey: research_industry_basics0
   Repeat: 0
   CheckStateForTransition: 0
@@ -30,34 +31,16 @@ MonoBehaviour:
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
   AddBlockSkillToJobSkill: 0
-  LocationID: 
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 1
+  LocationID: tag_container
   WorkPosition: 0
   PermissionType: 65536
-  LocationPermissions:
-  - tag_block_none
-  - tag_container
-  WorkerPermissions:
-  - faction_player
-  - faction_captured
-  WorkerPermissionsToLock:
-  - faction_hostile
-  - faction_neutral
-  TargetPermissions:
-  - faction_player
-  - faction_captured
-  TargetPermissionsToLock: []
-  OnlyUseResourcesAtJobLocation: 0
-  ResourcePool: 1
-  ShowItemTypeResourcePermissions: 1
-  ResourcePermissionsToLock: []
-  MaxWorkers: 1
+  WorkerID: skill_carry
+  TargetID: 
   JobActions:
   - ActionType: 1
-    MaxWorkers: 1
-    WorkerID: skill_carry
-    TargetID: 
     ResourceID: tag_item
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
@@ -67,21 +50,13 @@ MonoBehaviour:
   AddedProgressPerAction: 0
   ProgressMax: 1
   ProgressBarType: 2
-  InvertProgressDisplay: 0
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
     Layer: 0
-    Params:
-      disableRemoveSpawns: 0
-      disposeIfNotPermitted: 0
-      disableSpawnAtEntityOnFail: 0
-      disableClaimCheck: 0
-      setAsUnclaimed: 0
-      attempts: 0
-      seedOffset: 0
+    DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 1
   SpawnTagID: 
@@ -123,4 +98,3 @@ MonoBehaviour:
   DisposeIfNoSource: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
-  WorkerID: skill_carry

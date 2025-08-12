@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: block_lode_coal_ore
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_block_lode_coal_ore
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_block_lode_coal_ore
   TagIDs:
   - tag_terrain_gen_coal_ore
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   DefaultFill: block_fill_solid
   TriggerConditions: []
   Triggers: []

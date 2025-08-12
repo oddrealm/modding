@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: visuals_item_dirt_clod
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7176471, g: 0.7176471, b: 0.7176471, a: 1}
-  TextureX: 69
-  TextureY: 89
+  TextureX: 70
+  TextureY: 139
   SecondaryTextureX: 0
   SecondaryTextureY: 0
   FXTextureX: 0
@@ -52,7 +51,7 @@ MonoBehaviour:
   ShowLighting: 1
   DropShadow: 1
   LightSettings:
-    ReductionThreshold: 0
+    MinReductionThreshold: 0
     SkylightReduction: 0
     SkylightPass: 0
     BlockAmbientLight: 0

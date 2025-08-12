@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_ancient_prop_powered_on
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Powered On
+  Name: Powered
   NamePlural: 
   InlineIcon: <sprite=1743>
   Description: 
@@ -27,4 +26,4 @@ MonoBehaviour:
   TextColor: {r: 0.7725491, g: 0.40000004, b: 0.7176471, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2033
+  Order: 2365

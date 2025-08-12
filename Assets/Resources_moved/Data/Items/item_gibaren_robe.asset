@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_gibaren_robe
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_gibaren_robe
   DEBUG: 0
+  TooltipID: tooltip_item_gibaren_robe
   TagIDs:
   - tag_item_type_gear
   - tag_can_equip
@@ -21,6 +21,8 @@ MonoBehaviour:
   - tag_item_rarity_rare
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_can_equip
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -37,28 +39,20 @@ MonoBehaviour:
   AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
-  DietGroup: diet_group_none
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_body
   AttackGroup: 
-  StartDiscovered: 0
-  MaxCountInMerchantList: 0
-  GenerateNameKey: 
   MerchantBuyValue: 600
   MerchantSellValue: 120
   TuneRating: 1
   ItemRarity: item_rarity_rare
   DecayRate: -1
   DecayItem: 
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 500
   StackSize: 1
-  JobOutputMod: 1
-  ArtifactID: 
   Actions:
   - ActionID: tag_can_equip
     Buff:
@@ -76,5 +70,5 @@ MonoBehaviour:
       Permanent: 0
     Status: 
     SpawnID: 
-  TimedActions: []
   StateOptions: []
+  TimedActions: []

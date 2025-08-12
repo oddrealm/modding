@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
+  m_Name: humanoid_inspect
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  State: {fileID: 11400000, guid: 46ad95c8280c5194bb925a80ff02118b, type: 2}
+  UpAnimation: {fileID: 11400000, guid: 76dea7c162dc357449f9b131e421b5f2, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 791887a0581355b42800b3e41546cdd2, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 181f545694bb3cc46996b95f6dd7872e, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 74383c1d810beaa47a5c64341c595c43, type: 2}

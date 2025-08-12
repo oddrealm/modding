@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fab8304633950245b84e6e86a481a77, type: 3}
   m_Name: room_category_none
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_category_none
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_room_category_none
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}

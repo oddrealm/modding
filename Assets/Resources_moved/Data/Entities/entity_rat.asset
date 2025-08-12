@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1fb646739a06b45a6b93dc36f5d584, type: 3}
   m_Name: entity_rat
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_rat
   DEBUG: 0
+  TooltipID: tooltip_entity_rat
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -220,6 +220,7 @@ MonoBehaviour:
   Statuses:
   - entity_status_metabolism
   - entity_status_aging_by_day
+  - entity_status_can_butcher
   Ages:
   - entity_age_rat_child
   - entity_age_rat_adult
@@ -276,7 +277,7 @@ MonoBehaviour:
   - AttributeID: attribute_climb_speed
     StartingBase: 2
   - AttributeID: attribute_cold_tolerance
-    StartingBase: 0
+    StartingBase: 5
   - AttributeID: attribute_crit_rate
     StartingBase: 1
   - AttributeID: attribute_damage_ignore_rate
@@ -300,7 +301,7 @@ MonoBehaviour:
   - AttributeID: attribute_oxygen
     StartingBase: 100
   - AttributeID: attribute_sight_range
-    StartingBase: 32
+    StartingBase: 10
   - AttributeID: attribute_temperature
     StartingBase: 50
   - AttributeID: attribute_thirst

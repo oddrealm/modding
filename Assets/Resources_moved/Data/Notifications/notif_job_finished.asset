@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_job_finished
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_notif_job_finished
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_notif_job_finished
+  TagIDs:
+  - tag_notif_group_work
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  FlashColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
+  NotifGroup: tag_notif_group_work
   SFXGroupID: sfx_notif_default
   DefaultPermissions:
     ShowPreview: 0
@@ -29,4 +30,3 @@ MonoBehaviour:
     PauseGameOnCreate: 0
     HighlightOnCreate: 0
     HighlightText: <sprite=1654>
-  OverridePermissions: []

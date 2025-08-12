@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: biome_tundra_forest
   m_EditorClassIdentifier: 
   TooltipID: tooltip_biome_tundra_forest
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

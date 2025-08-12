@@ -12,18 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_arcana_arcanist0
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_research_arcana_arcanist0
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_research_arcana_arcanist0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 0
   ShowInSaga: 1
-  Races: []
   Dependency: 
   Column: 4
   Row: 3
   ResearchCategory: research_category_arcana
   RequireItemCountOverride: 0
-  ResearchTimeStep: 60
+  GlobalBuffs: []
+  RequiredDiscovery: 

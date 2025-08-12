@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_ai_thief
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_ai_thief
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_entity_status_ai_thief
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
@@ -28,13 +27,36 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
-  Actions: []
+  Actions:
+  - Comment: 
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 4
+    Buffs:
+    - TargetID: skill_carry
+      Amount: 50
+      Max: 0
+      Permanent: 0
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
   AutoJobs: []
   DialogueOptions: []
   references:

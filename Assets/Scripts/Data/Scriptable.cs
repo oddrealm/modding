@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Scriptable : ScriptableObject, ITagObject
 {
+    public bool DEBUG;
+    public string TooltipID = "";
+    public List<string> TagIDs = new List<string>();
+    public List<string> DiscoveryDependencies = new List<string>();
+
+    public HashSet<string> TagIDsHash { get; private set; } = new HashSet<string>();
+    public HashSet<string> DiscoveryDependenciesHash { get; private set; } = new HashSet<string>();
+    public int TagCount { get { return TagIDs.Count; } }
     public string Key
     {
         get
@@ -20,25 +28,11 @@ public class Scriptable : ScriptableObject, ITagObject
 
     private string _key;
 
-    public string TooltipID = "";
-    public bool DEBUG;
-
-    public List<string> TagIDs = new List<string>();
-    public List<string> DiscoveryDependencies = new List<string>();
-
-    [System.NonSerialized]
-    public HashSet<string> TagIDsHash = new HashSet<string>();
-
-    [System.NonSerialized]
-    public HashSet<string> DiscoveryDependenciesHash = new HashSet<string>();
-
     public virtual bool TryGetDefaultTracking(out DefaultTracking tracking)
     {
         tracking = new DefaultTracking();
         return false;
     }
-
-    public int TagCount { get { return TagIDs.Count; } }
 
     public bool HasTag(string tagID)
     {
@@ -53,6 +47,7 @@ public class Scriptable : ScriptableObject, ITagObject
 
     public void AddTag(string tag)
     {
+        if (string.IsNullOrEmpty(tag)) { return; }
         if (TagIDs.Contains(tag)) { return; }
         TagIDs.Add(tag);
     }
@@ -125,11 +120,9 @@ public class Scriptable : ScriptableObject, ITagObject
     // Used to determine ObjectIndex when loading game data
     public virtual string OrderKey { get; private set; }
     // Set on game data load based on tooltip name and groups
-    public int ObjectIndex { get; set; }
+    public int OrderIndex { get; set; }
     public int DataIndex { get; set; }
-
     public Color MapColor = Color.white;
-
     public virtual Color MinimapColor { get { return MapColor; } }
     public virtual bool ShowOnMinimap { get { return true; } }
     public virtual bool ShowMinimapCutoutColor { get { return false; } }
@@ -190,7 +183,6 @@ public class Scriptable : ScriptableObject, ITagObject
         }
     }
 
-
     public string TooltipInlineAndName { get { return TooltipData.InlineAndName; } }
     public string TooltipInlineIcon { get { return TooltipData.InlineIcon; } }
     public string TooltipName { get { return TooltipData.Name; } }
@@ -207,10 +199,7 @@ public class Scriptable : ScriptableObject, ITagObject
     public Color TooltipTextColor { get { return TooltipData.TextColor; } }
     public Color TooltipTypeColor { get { return TooltipData.TypeColor; } }
     public int TooltipOrder { get { return TooltipData.Order; } }
-
-
     public TooltipUID TooltipUID { get { return TooltipData.TooltipUID; } }
-
     #endregion
 
     public void UpdateKey()

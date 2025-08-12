@@ -12,36 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
   m_Name: scenario_game_over_settler_wave_ancients0
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  IsThreat: 0
+  NotifOnActivate: 
   EntitySpawns:
   - SpawnPointType: 2
     OverrideEntityWithNation: 0
     OverrideEntityWithFauna: 0
-    EntitySpawn:
-      EntityId: 
-      EntityTag: 
-      EntityProfession: profession_random
-      EntityGender: priority
-      EntityCount: 1
-      EntityFaction: faction_player
-      EntityTuning: 
-      EntityAppearance: 
-      SpawnRate: 1000
-      AgeType: 2
-      ScenarioID: 
-      SpawnEntityFromItem: 0
-      AutoGenEquipment: 1
-      AutoGenInventory: 1
-      DisableItemEquipFromTuning: 0
-      EquippedItems: []
-      InventoryItems: []
-      AddedStatuses: []
+    AutoGenEntityCount: 0
     SpawnData:
-      EntityID: 
+      EntityID: entity_ancient
       ProfessionID: profession_random
       FactionID: faction_player
       GenderID: priority
@@ -62,7 +46,7 @@ MonoBehaviour:
       InventoryItems: []
       AddedStatuses: []
   Dialogues:
-  - DialogueID: dialogue_scenario_settler_wave_ancients0
+  - DialogueID: dialogue_scenario_game_over_settler_wave_ancients0
   Conditions: []
   PartyID: 
   IsScheduled: 0
@@ -74,3 +58,5 @@ MonoBehaviour:
   MinMinutesSinceSettlementStart: 1440
   MinMinutesSinceLastScenario: 1440
   MinMinutesSinceLastSameScenario: 1440
+  MinTimeOfDay: 0
+  MaxTimeOfDay: 1440

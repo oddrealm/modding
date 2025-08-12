@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_animal_enclosure
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_animal_enclosure
   DEBUG: 0
+  TooltipID: tooltip_room_animal_enclosure
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -30,41 +30,48 @@ MonoBehaviour:
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_animal_shearing
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions:
-    - TagObjectKey: tag_item_type_water
-      Min: 0
-      Max: 0
-  - BlueprintID: blueprint_item_fodder
-    Settings:
-      Priority: 1
-      AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_tallow_grass_hay
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 3
       AutoJobType: 1
-    ResourcePermissions:
-    - TagObjectKey: tag_item_type_water
-      Min: -1
-      Max: -1
-    - TagObjectKey: tag_item_type_egg
-      Min: -1
-      Max: -1
+    ProhibitedResources:
+    - item_type
+    PermittedResources:
+    - item_fodder
+    - tag_item_type_water
+    - item_egg_raw
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
   - BlueprintID: blueprint_animal_butcher
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  RoomQualities: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_train_scholar
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_train_scholar
   DEBUG: 0
+  TooltipID: tooltip_blueprint_train_scholar
   TagIDs: []
   DiscoveryDependencies:
   - skill_misc
@@ -23,39 +23,24 @@ MonoBehaviour:
   XP: 10000
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
-  ResearchKey: research_arcana_library0
+  DesignationListOrder: -1
+  ResearchKey: 
   Repeat: 0
   CheckStateForTransition: 0
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
   AddBlockSkillToJobSkill: 0
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 0
   LocationID: tag_workbench
   WorkPosition: 0
   PermissionType: 0
-  LocationPermissions:
-  - tag_workbench
-  WorkerPermissions:
-  - faction_player
-  - faction_captured
-  WorkerPermissionsToLock:
-  - faction_hostile
-  TargetPermissions:
-  - faction_player
-  - faction_captured
-  TargetPermissionsToLock: []
-  OnlyUseResourcesAtJobLocation: 0
-  ResourcePool: 1
-  ShowItemTypeResourcePermissions: 0
-  ResourcePermissionsToLock: []
-  MaxWorkers: 0
+  WorkerID: skill_writing
+  TargetID: 
   JobActions:
   - ActionType: 3
-    MaxWorkers: 0
-    WorkerID: skill_writing
-    TargetID: 
     ResourceID: 
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
@@ -65,21 +50,13 @@ MonoBehaviour:
   AddedProgressPerAction: 0
   ProgressMax: 20000
   ProgressBarType: 2
-  InvertProgressDisplay: 0
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
     Layer: 0
-    Params:
-      disableRemoveSpawns: 0
-      disposeIfNotPermitted: 0
-      disableSpawnAtEntityOnFail: 0
-      disableClaimCheck: 0
-      setAsUnclaimed: 0
-      attempts: 0
-      seedOffset: 0
+    DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 1
   SpawnTagID: 
@@ -90,7 +67,8 @@ MonoBehaviour:
   ActiveWorkerStatus: entity_status_researching
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
@@ -118,7 +96,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
-  WorkerID: skill_writing

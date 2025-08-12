@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: spawns_biome_plants_barrens
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_spawns_biome_plants_barrens
@@ -24,40 +23,40 @@ MonoBehaviour:
   MinIterations: 1
   Spawns:
   - Comment: Plants
-    MinCount: 0
-    MaxCount: 0
+    MinCount: 1
+    MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.05
     TagObjectID: 
     TagID: tag_biome_plants_barrens
   - Comment: Trees
-    MinCount: 0
-    MaxCount: 0
+    MinCount: 1
+    MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
-    Weight: 0.025
+    Weight: 0.02
     TagObjectID: 
     TagID: tag_biome_trees_barrens
   - Comment: Grass
-    MinCount: 0
-    MaxCount: 0
+    MinCount: 1
+    MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.5
     TagObjectID: 
     TagID: tag_biome_grass_barrens
   - Comment: Props (Boulders and such)
-    MinCount: 0
-    MaxCount: 0
+    MinCount: 1
+    MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.025
     TagObjectID: 
     TagID: tag_biome_props_barrens
   - Comment: Chance for spawning nothing
-    MinCount: 0
-    MaxCount: 0
+    MinCount: 1
+    MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.4

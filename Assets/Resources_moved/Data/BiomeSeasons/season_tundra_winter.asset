@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86ebf3cf42b684cb06c9616041dc72, type: 3}
   m_Name: season_tundra_winter
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_season_tundra_winter
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_season_tundra_winter
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}

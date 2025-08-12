@@ -31,54 +31,40 @@ public struct RandomEquipmentItem
 [CreateAssetMenu(menuName = "ScriptableObjects/Items")]
 public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 {
+    [Header("Usage Tags")]
+    public string[] UsageTags = new string[0];
     [Header("Lifetime Minutes (-1 = disabled)")]
     public int MaxLifeTime = 0;
-
     [Header("Max amount to simulate for world gen")]
     public int MaxDefaultSimTime = 24 * 60 * 10;
-
     [Header("Simulation ID")]
     public string ItemSimulationID = "";
-
     [Header("Item Type (Tag)")]
     public string ItemType = "";
-
     public string OnJobDisposedTagObjectID = "";
-
     [Header("Tracking")]
     public bool ShowInTrackingByDefault = false;
-
     [Header("FX")]
     public string IdleFX = "";
     public string PickUpFX = "fx_block_item_picked_up";
     public string DropFX = "fx_block_item_dropped";
-
     [Header("SFX")]
     public string PickUpSFX = "";
     public string DropSFX = "";
-
     [Header("World Visuals")]
     public string Visuals = "";
-
     [Header("Entity Visuals")]
     public GDECharacterColorMaskData CharacterColorMask;
     public GDECharacterAccessoryData AccessoryData;
-
     public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;
     public BlockPermissionTypes Prohibited = BlockPermissionTypes.NONE;
-    public string DietGroup = "diet_group_none";
-    [Header("Set false for 2-hand weapons so that they don't allow additional attacks from other items")]
+    [Header("Set false for 2-hand weapons so that they don't allow additional attacks from other items.")]
     public bool CanStackAttacks = true;
     public bool FillAllSlots = false;
     public bool CannotBeUnequipped = false;
     public string[] PermittedSlots;
     public HashSet<string> PermittedSlotsHash = new HashSet<string>();
     public string AttackGroup = "";
-    public bool HasRangedAttack { get; private set; }
-    public bool HasAttacks { get { return !string.IsNullOrEmpty(AttackGroup); } }
-    public bool StartDiscovered = false;
-    public int MaxCountInMerchantList = 0;
-    public string GenerateNameKey = "";
     public int MerchantBuyValue = 0;
     public int MerchantSellValue = 0;
     [Header("Tuning set to < 0 will not be used for item generation. Use -1 for items meant to be unique/super rare.")]
@@ -86,15 +72,15 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public string ItemRarity = "item_rarity_common";
     public int DecayRate = 0;
     public string DecayItem = "";
-
-    public bool HasMeltThreshold = false;
-    public int MeltThreshold = 0;
     public int FlammableChance = 0;
     public int StackSize = 1;
-    public int JobOutputMod = 1;
-    public string ArtifactID = "";
     public ItemAction[] Actions = new ItemAction[0];
+    public SimOptions[] StateOptions;
+    public bool IsAvailableInCustomLoadout = false;
 
+    public bool HasRangedAttack { get; private set; }
+    public bool HasAttacks { get { return !string.IsNullOrEmpty(AttackGroup); } }
+    public int MaxGlobalCount { get; private set; }
     public bool HasTimedActions { get { return TimedActions.Length > 0; } }
     public AutomatedItemActionActivation[] TimedActions = new AutomatedItemActionActivation[0];
     public Dictionary<string, AutomatedItemActionActivation[]> TimedActivatorsByActionID { get; private set; } = new Dictionary<string, AutomatedItemActionActivation[]>();
@@ -103,6 +89,57 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public Dictionary<string, BuffData[]> BuffsByID { get; private set; } = new Dictionary<string, BuffData[]>();
     public Dictionary<string, string[]> StatusesByID { get; private set; } = new Dictionary<string, string[]>();
     public Dictionary<string, ITagObject[]> SpawnsByID { get; private set; } = new Dictionary<string, ITagObject[]>();
+    public GDETagsData ItemTypeData { get; private set; }
+    public GDETagsData ItemTagData { get; private set; }
+    public GDEItemRarityData ItemRarityData { get; private set; }
+    public GDETagsData[] UsageTagsData { get; private set; } = new GDETagsData[0];
+    public override bool ShowMinimapCutoutColor { get { return false; } }
+    public override Color MinimapColor
+    {
+        get
+        {
+            if (string.IsNullOrEmpty(Visuals)) { return Color.white; }
+
+#if ODD_REALM_APP
+            GDEBlockVisualsData blockVisuals = DataManager.GetTagObject<GDEBlockVisualsData>(Visuals);
+
+            return blockVisuals.MapColor;
+#else
+            return Color.white;
+#endif
+        }
+    }
+    public string SimulationID { get { return ItemSimulationID; } }
+    public GDESimulationData Simulation { get { return _simData; } }
+    public SimTime MaxSimTime { get { return MaxDefaultSimTime; } }
+    public bool CanShowInProgressUI
+    {
+        get
+        {
+            return true;
+        }
+    }
+    public override bool IsNULL { get { return _isNull; } }
+    public bool HasUtilityAction { get { return UtilityActions.Count > 0; } }
+    public static HashSet<string> GlobalUtilityActionIDs { get; private set; } = new HashSet<string>()
+    {
+        "tag_can_use",
+        "tag_can_drink",
+        "tag_can_eat",
+    };
+    public List<string> UtilityActions { get; private set; } = new List<string>();
+    public HashSet<string> UtilityActionsHash { get; private set; } = new HashSet<string>();
+
+    private GDESimulationData _simData;
+    private string[] _simStates = new string[]
+    {
+        ITEM_STATE_EXPIRED,
+        ITEM_STATE_CAN_FALL
+    };
+    private bool _isNull = false;
+
+    public const string ITEM_STATE_EXPIRED = "item_state_expired";
+    public const string ITEM_STATE_CAN_FALL = "item_state_can_fall";
 
     public BuffData[] GetActionBuffs(string actionID)
     {
@@ -134,40 +171,9 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         return spawns;
     }
 
-    public override bool ShowMinimapCutoutColor { get { return false; } }
-    public override Color MinimapColor
-    {
-        get
-        {
-            if (string.IsNullOrEmpty(Visuals)) { return Color.white; }
-
-#if ODD_REALM_APP
-            GDEBlockVisualsData blockVisuals = DataManager.GetTagObject<GDEBlockVisualsData>(Visuals);
-
-            return blockVisuals.MapColor;
-#else
-            return Color.white;
-#endif
-        }
-    }
-
     public void SetSimulationID(string simID)
     {
         ItemSimulationID = simID;
-    }
-
-    public string SimulationID { get { return ItemSimulationID; } }
-    private GDESimulationData _simData;
-    public GDESimulationData Simulation { get { return _simData; } }
-
-    public SimTime MaxSimTime { get { return MaxDefaultSimTime; } }
-
-    public bool CanShowInProgressUI
-    {
-        get
-        {
-            return true;
-        }
     }
 
     public override bool TryGetDefaultTracking(out DefaultTracking tracking)
@@ -184,10 +190,27 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         return true;
     }
 
-    private bool _isNull = false;
-    public override bool IsNULL { get { return _isNull; } }
-
 #if ODD_REALM_APP
+
+    public string GetFirstUtilityActionText()
+    {
+        if (!HasUtilityAction) { return string.Empty; }
+
+        for (int i = 0; i < UtilityActions.Count; i++)
+        {
+            string actionID = UtilityActions[i];
+
+            if (string.IsNullOrEmpty(actionID)) { continue; }
+
+            if (DataManager.TryGetTagObject(actionID, out var tagObj) && !string.IsNullOrEmpty(tagObj.TooltipAction))
+            {
+                return tagObj.TooltipAction;
+            }
+        }
+
+        return string.Empty;
+    }
+
     public bool IsHigherRarityThanOtherItem(GDEItemsData otherItem)
     {
         GDEItemRarityData ourRarity = DataManager.GetTagObject<GDEItemRarityData>(ItemRarity);
@@ -200,36 +223,60 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     {
         base.OnLoaded();
 
+        if (!string.IsNullOrEmpty(ItemType))
+        {
+            ItemTypeData = DataManager.GetTagObject<GDETagsData>(ItemType);
+        }
 
+        ItemTagData = DataManager.GetTagObject<GDETagsData>("tag_item");
+        ItemRarityData = DataManager.GetTagObject<GDEItemRarityData>(ItemRarity);
         _isNull = Key == "item_none";
+        IsAvailableInCustomLoadout = ItemRarityData.IsAvailableInCustomLoadout;
+        MaxGlobalCount = -1;
 
-        //SortedActionIndices.Clear();
+        switch (ItemRarity)
+        {
+            case "item_rarity_legendary":
+                MaxGlobalCount = 1;
+                break;
 
-        //if (Actions != null && Actions.Length > 0)
-        //{
-        //    for (int i = 0; i < Actions.Length; i++)
-        //    {
-        //        SortedActionIndices.Add(i);
-        //    }
+            default:
+                MaxGlobalCount = 5_000;
+                break;
+        }
 
-        //    // Sort actions by activation ID.
-        //    SortedActionIndices = SortedActionIndices.OrderBy(a => Actions[a].ActionID).ToList();
-        //}
+        if (Key == "item_ren")
+        {
+            MaxGlobalCount = -1;
+        }
 
 #if DEV_TESTING
         if (string.IsNullOrEmpty(Visuals))
         {
             Debug.LogError($"Visuals Key is empty for {Key}!");
         }
-#endif
 
-        if (TagIDsHash.Add("tag_item"))
+        if (CanStackAttacks && Key.Contains("two_hand"))
         {
-            TagIDs.Add("tag_item");
-
-#if DEV_TESTING && UNITY_EDITOR
+            Debug.LogError($"{Key} is a two-hand item but CanStackAttacks is true!");
+            CanStackAttacks = false;
             UnityEditor.EditorUtility.SetDirty(this);
+        }
 #endif
+
+        if (UsageTags.Length > 0)
+        {
+            UsageTagsData = new GDETagsData[UsageTags.Length];
+
+            for (int i = 0; UsageTags != null && i < UsageTags.Length; i++)
+            {
+                if (string.IsNullOrEmpty(UsageTags[i]))
+                {
+                    continue;
+                }
+
+                UsageTagsData[i] = DataManager.GetTagObject<GDETagsData>(UsageTags[i]);
+            }
         }
 
         ActionIDs.Clear();
@@ -237,6 +284,8 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         BuffsByID.Clear();
         StatusesByID.Clear();
         SpawnsByID.Clear();
+        UtilityActions.Clear();
+        UtilityActionsHash.Clear();
         TimedActivatorsByActionID.Clear();
 
         for (int i = 0; i < TimedActions.Length; i++)
@@ -260,7 +309,6 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
                 activators[activators.Length - 1] = TimedActions[i];
                 TimedActivatorsByActionID[TimedActions[i].ActionID] = activators;
             }
-
         }
 
         for (int i = 0; i < Actions.Length; i++)
@@ -273,6 +321,11 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
                 Debug.LogError($"{Key} Item action ID cannot be empty!");
 #endif
                 continue;
+            }
+
+            if (GlobalUtilityActionIDs.Contains(actionID) && UtilityActionsHash.Add(actionID))
+            {
+                UtilityActions.Add(actionID);
             }
 
             bool hasOutput = false;
@@ -389,16 +442,9 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 
         ActionIDs = ActionIDs.OrderBy(a => a).ToList();
 
-        if (string.IsNullOrEmpty(ItemType))
+        if (string.IsNullOrEmpty(ItemType) && Key != "item_none")
         {
             Debug.LogError(Key + " has no item type!");
-        }
-        else
-        {
-            if (TagIDsHash.Add(ItemType))
-            {
-                TagIDs.Add(ItemType);
-            }
         }
 
         PermittedSlotsHash.Clear();
@@ -406,6 +452,29 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         for (int i = 0; i < PermittedSlots.Length; i++)
         {
             PermittedSlotsHash.Add(PermittedSlots[i]);
+        }
+
+        if (!HasUtilityAction && PermittedSlotsHash.Contains("item_slot_utility"))
+        {
+            List<string> permittedSlots = new List<string>(PermittedSlots);
+            permittedSlots.Remove("item_slot_utility");
+            PermittedSlotsHash.Remove("item_slot_utility");
+            PermittedSlots = permittedSlots.ToArray();
+#if UNITY_EDITOR
+            Debug.LogError($"{Key} has no utility action but has item_slot_utility in PermittedSlots! Removing it.");
+            UnityEditor.EditorUtility.SetDirty(this);
+#endif
+        }
+        else if (HasUtilityAction && !PermittedSlotsHash.Contains("item_slot_utility"))
+        {
+            List<string> permittedSlots = new List<string>(PermittedSlots);
+            permittedSlots.Add("item_slot_utility");
+            PermittedSlotsHash.Add("item_slot_utility");
+            PermittedSlots = permittedSlots.ToArray();
+#if UNITY_EDITOR
+            Debug.LogError($"{Key} has utility actions but does not have item_slot_utility in PermittedSlots! Adding it.");
+            UnityEditor.EditorUtility.SetDirty(this);
+#endif
         }
 
         if (!string.IsNullOrEmpty(ItemSimulationID))
@@ -432,18 +501,6 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         }
     }
 #endif
-
-    public const string ITEM_STATE_EXPIRED = "item_state_expired";
-    public const string ITEM_STATE_CAN_FALL = "item_state_can_fall";
-
-    [System.NonSerialized]
-    private string[] _simStates = new string[]
-    {
-        ITEM_STATE_EXPIRED,
-        ITEM_STATE_CAN_FALL
-    };
-
-    public SimOptions[] StateOptions;
 
     public string[] GetSimStates()
     {

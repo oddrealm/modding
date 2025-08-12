@@ -12,16 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
   m_Name: scenario_animal_migration0
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  IsThreat: 0
   NotifOnActivate: notif_animal_migration
   EntitySpawns:
   - SpawnPointType: 2
     OverrideEntityWithNation: 0
     OverrideEntityWithFauna: 1
+    AutoGenEntityCount: 0
     SpawnData:
       EntityID: 
       ProfessionID: profession_unassigned
@@ -54,4 +56,6 @@ MonoBehaviour:
   MinKingdomLevel: 1
   MinMinutesSinceSettlementStart: 720
   MinMinutesSinceLastScenario: 60
-  MinMinutesSinceLastSameScenario: 7200
+  MinMinutesSinceLastSameScenario: 2880
+  MinTimeOfDay: 0
+  MaxTimeOfDay: 1440

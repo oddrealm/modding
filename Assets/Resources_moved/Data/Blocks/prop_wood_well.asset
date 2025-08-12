@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_wood_well
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_wood_well
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_prop_wood_well
+  TagIDs:
+  - tag_trigger_well_has_water
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
   - TriggerType: 8
@@ -46,7 +47,8 @@ MonoBehaviour:
     ElapsedTime: 60
   Triggers:
   - Comment: Has Water
-    TooltipID: tooltip_trigger_well_water
+    ActiveTooltipID: tooltip_well_has_water
+    InactiveTooltipID: tooltip_well_has_no_water
     ID: tag_trigger_well_has_water
     Permissions: 128
     Visuals: visuals_well_water
@@ -63,6 +65,7 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
   MaxItemCount: 0
   ItemTypePermissions: []

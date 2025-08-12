@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: plant_bronze_cap_mushroom
   m_EditorClassIdentifier: 
   TooltipID: tooltip_plant_bronze_cap_mushroom
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_biome_plants_tundra
   - tag_cave_gen_plants_default
+  - tag_mature_standing
+  - tag_mature_fruit
+  - tag_can_be_watered
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 7200

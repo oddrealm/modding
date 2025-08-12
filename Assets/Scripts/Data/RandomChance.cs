@@ -26,6 +26,7 @@ public struct RandomChance
     }
 
     public bool IsValid => Chance > 0 && SampleSize > 0;
+    public bool IsGuaranteed => Chance >= SampleSize;
 
 #if ODD_REALM_APP
     public bool Roll()

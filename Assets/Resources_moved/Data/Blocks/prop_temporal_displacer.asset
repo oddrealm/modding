@@ -12,18 +12,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_temporal_displacer
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_temporal_displacer
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_prop_temporal_displacer
+  TagIDs:
+  - tag_temporal_displacer_powered
+  - tag_void_prop
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   DefaultFill: block_fill_air
-  TriggerConditions: []
-  Triggers: []
+  TriggerConditions:
+  - ActivateTriggerID: tag_temporal_displacer_powered
+    DeactivateTriggerID: 
+    TriggerType: 5
+    HideInTooltips: 0
+    Invert: 0
+    SourceTagObjectRequirement0: prop_void_cell
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  - ActivateTriggerID: 
+    DeactivateTriggerID: tag_temporal_displacer_powered
+    TriggerType: 6
+    HideInTooltips: 0
+    Invert: 0
+    SourceTagObjectRequirement0: 
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  Triggers:
+  - Comment: Powered On
+    ID: tag_temporal_displacer_powered
+    ActiveTooltipID: tooltip_ancient_prop_powered_on
+    InactiveTooltipID: tooltip_ancient_prop_powered_off
+    Permissions: 0
+    Visuals: 
+    SFX: 
+    FX: 
+    Action: 0
+    ActionTagObjectID: 
+    DeactivateImmediate: 0
+    Buff:
+      TargetID: 
+      Amount: 0
+      Max: 0
+      Permanent: 0
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
   MaxItemCount: 0
   ItemTypePermissions: []
@@ -62,6 +97,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: fx_void_prop_unpowered
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

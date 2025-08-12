@@ -21,10 +21,10 @@ MonoBehaviour:
   Name: Lady Harp Flour
   NamePlural: 
   InlineIcon: <sprite=499>
-  Description: A sweet fragrence eminates from the flour. It evokes memories of summer
+  Description: A sweet fragrance eminates from the flour. It evokes memories of summer
     on a distant island. These are not your memories but somehow they feel like yours.
   Icon: sp_lady_harp_flour_icon
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1851
+  Order: 1876

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_vault
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_vault
   DEBUG: 0
+  TooltipID: tooltip_room_vault
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -27,13 +27,16 @@ MonoBehaviour:
   DefaultAutoJobs:
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 2
+      Priority: 3
       AutoJobType: 1
-    ResourcePermissions:
-    - TagObjectKey: item_ren
-      Min: 0
-      Max: 0
-  ShowProduction: 1
+    ProhibitedResources:
+    - item_type
+    PermittedResources:
+    - item_ren
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
+  ShowProduction: 0
   ShowStockpile: 1
   ShowOccupants: 1
   ShowMarket: 0

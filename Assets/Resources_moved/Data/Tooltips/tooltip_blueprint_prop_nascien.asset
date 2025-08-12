@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_prop_nascien
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -21,10 +21,10 @@ MonoBehaviour:
   Name: Build Nascien
   NamePlural: 
   InlineIcon: <sprite=1443>
-  Description: A container grown in Nelescuro grass that effortlessly reshapes itself
-    to accommodate more items.
+  Description: A container cultivated from Nelescuro grass, renowned for its exceptional
+    ability to preserve perishables.
   Icon: sp_nascien_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1771
+  Order: 561

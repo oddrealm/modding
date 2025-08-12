@@ -12,35 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_void_gate
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_void_gate
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_prop_void_gate
   TagIDs:
   - tag_void_prop
+  - tag_void_gate_powered
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_void_prop
   DefaultFill: block_fill_air
   TriggerConditions:
-  - TriggerType: 5
+  - ActivateTriggerID: tag_void_gate_powered
+    DeactivateTriggerID: 
+    TriggerType: 5
     HideInTooltips: 0
     Invert: 0
-    ActivateTriggerID: tag_can_summon_from_void
-    DeactivateTriggerID: 
     SourceTagObjectRequirement0: prop_void_cell
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
-  - TriggerType: 6
+  - ActivateTriggerID: 
+    DeactivateTriggerID: tag_void_gate_powered
+    TriggerType: 6
     HideInTooltips: 0
     Invert: 0
-    ActivateTriggerID: 
-    DeactivateTriggerID: tag_can_summon_from_void
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
   Triggers:
   - Comment: Powered On
-    TooltipID: 
-    ID: tag_can_summon_from_void
+    ID: tag_void_gate_powered
+    ActiveTooltipID: tooltip_ancient_prop_powered_on
+    InactiveTooltipID: tooltip_ancient_prop_powered_off
     Permissions: 0
     Visuals: visuals_prop_void_gate_powered
     SFX: 
@@ -56,6 +59,7 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
   MaxItemCount: 0
   ItemTypePermissions: []
@@ -94,6 +98,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: fx_void_prop_unpowered
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

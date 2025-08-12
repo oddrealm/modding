@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5adf3d9d82a1e7541b0268fc4d753467, type: 3}
   m_Name: item_rarity_common
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_rarity_common
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_item_rarity_common
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RarityScore: 0
+  DisposeIfCannotSpawn: 1
+  IsAvailableInCustomLoadout: 1

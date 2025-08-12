@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_tend_chronoblast
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_tend_chronoblast
   DEBUG: 0
+  TooltipID: tooltip_blueprint_tend_chronoblast
   TagIDs: []
   DiscoveryDependencies:
   - skill_misc
@@ -23,6 +23,7 @@ MonoBehaviour:
   XP: 1
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
+  DesignationListOrder: -1
   ResearchKey: research_ardyn_hortichron0
   Repeat: 0
   CheckStateForTransition: 0
@@ -30,56 +31,33 @@ MonoBehaviour:
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
   AddBlockSkillToJobSkill: 0
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 0
   LocationID: tag_can_be_time_weaved
   WorkPosition: 0
   PermissionType: 0
-  LocationPermissions:
-  - tag_can_be_time_weaved
-  WorkerPermissions:
-  - faction_player
-  - faction_captured
-  WorkerPermissionsToLock:
-  - faction_hostile
-  TargetPermissions:
-  - faction_player
-  - faction_captured
-  TargetPermissionsToLock: []
-  OnlyUseResourcesAtJobLocation: 0
-  ResourcePool: 1
-  ShowItemTypeResourcePermissions: 0
-  ResourcePermissionsToLock: []
-  MaxWorkers: 0
+  CanSitDuringJob: 0
+  WorkerID: skill_time_weave
+  TargetID: 
   JobActions:
   - ActionType: 3
-    MaxWorkers: 0
-    WorkerID: skill_time_weave
-    TargetID: 
     ResourceID: 
-    OnJobFinishActionID: tag_can_be_time_weaved
     WorkPosition: 0
     AnimationTrigger: 8192
-    AnimationHitEvent: 0
+    AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
   AddedProgressPerAction: 0
   ProgressMax: 1
   ProgressBarType: 2
-  InvertProgressDisplay: 1
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
     Layer: 16
-    Params:
-      disableRemoveSpawns: 0
-      disposeIfNotPermitted: 0
-      disableSpawnAtEntityOnFail: 0
-      disableClaimCheck: 0
-      setAsUnclaimed: 0
-      attempts: 0
-      seedOffset: 0
+    DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 1
   SpawnTagID: 
@@ -90,7 +68,9 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: tag_can_be_time_weaved
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs:
   - TargetID: attribute_age
@@ -122,7 +102,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
-  WorkerID: skill_time_weave

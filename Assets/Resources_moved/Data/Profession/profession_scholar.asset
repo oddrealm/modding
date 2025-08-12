@@ -12,23 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_scholar
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_profession_scholar
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_profession_scholar
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  OrderGroup: 0
   AutoCreateUniform: 1
   EarnBonusXPInCombat: 0
   ResearchKey: 
-  VisibleToPlayer: 0
-  CanBeAssigned: 0
+  VisibleToPlayer: 1
+  CanBeAssigned: 1
   CanBeChanged: 1
   CanDoSupplementCarryActions: 0
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
-  DefaultItems: []
   StartingItems: []
   GlobalIndicator: indicator_global_scholar
   SkillsActiveByDefault:

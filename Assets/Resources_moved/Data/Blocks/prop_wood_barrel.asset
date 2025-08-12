@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_wood_barrel
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_wood_barrel
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_prop_wood_barrel
   TagIDs:
   - tag_container
   - tag_container_treasure_easy
   - tag_barrel
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_container
+  - tag_barrel
   DefaultFill: block_fill_air
   TriggerConditions: []
   Triggers: []

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_pregnant
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_pregnant
   DEBUG: 0
+  TooltipID: tooltip_entity_status_pregnant
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
@@ -22,8 +22,8 @@ MonoBehaviour:
   VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
-  ExpireTimeMinutesMin: 8640
-  ExpireTimeMinutesMax: 10080
+  ExpireTimeMinutesMin: 5760
+  ExpireTimeMinutesMax: 7200
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders:

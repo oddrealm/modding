@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a5e3cb5356edc4b8208be3662c2800, type: 3}
   m_Name: notif_new_cave
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_notif_new_cave
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_notif_new_cave
+  TagIDs:
+  - tag_notif_group_discovery
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  FlashColor: {r: 0.5686275, g: 0.10196079, b: 0.77254903, a: 1}
+  NotifGroup: tag_notif_group_discovery
   SFXGroupID: sfx_notif_cave
   DefaultPermissions:
     ShowPreview: 1
@@ -29,4 +30,3 @@ MonoBehaviour:
     PauseGameOnCreate: 0
     HighlightOnCreate: 0
     HighlightText: <sprite=1654>
-  OverridePermissions: []

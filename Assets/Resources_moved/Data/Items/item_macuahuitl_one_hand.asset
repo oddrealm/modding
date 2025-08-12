@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_macuahuitl_one_hand
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_macuahuitl_one_hand
   DEBUG: 0
+  TooltipID: tooltip_item_macuahuitl_one_hand
   TagIDs:
   - tag_item_type_tool
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -36,7 +37,6 @@ MonoBehaviour:
   AccessoryData: {fileID: 11400000, guid: b4f2abc9b3b209b4eaa89f6c83c2fdcb, type: 2}
   Permissions: 0
   Prohibited: 0
-  DietGroup: diet_group_none
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
@@ -44,21 +44,15 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_macuahuitl_one_hand
-  StartDiscovered: 0
-  MaxCountInMerchantList: 1
-  GenerateNameKey: weapon
   MerchantBuyValue: 150
   MerchantSellValue: 30
   TuneRating: 2
-  ItemRarity: item_rarity_uncommon
+  ItemRarity: item_rarity_rare
   DecayRate: -1
   DecayItem: 
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 500
   StackSize: 1
-  JobOutputMod: 1
-  ArtifactID: 
   Actions: []
-  TimedActions: []
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
+  TimedActions: []

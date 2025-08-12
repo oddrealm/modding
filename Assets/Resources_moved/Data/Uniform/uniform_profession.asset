@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b870f66762af75b4f9be103f734253a2, type: 3}
   m_Name: uniform_profession
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_uniform_profession
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_uniform_profession
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}

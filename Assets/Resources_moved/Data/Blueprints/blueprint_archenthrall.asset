@@ -12,19 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
   m_Name: blueprint_archenthrall
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_archenthrall
   DEBUG: 0
+  TooltipID: tooltip_blueprint_archenthrall
   TagIDs: []
   DiscoveryDependencies:
   - item_sablixian_tar
   - skill_carry
   - skill_craft_void
   - skill_summoning
+  - item_arcane_dust
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SkillPriorityOverride: -1
   XP: 50
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
+  DesignationListOrder: -1
   ResearchKey: research_ancient_summoner2
   Repeat: 0
   CheckStateForTransition: 0
@@ -32,43 +34,45 @@ MonoBehaviour:
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
   AddBlockSkillToJobSkill: 0
-  LocationID: tag_can_summon_from_void
+  OnlyUseResourcesAtJobLocation: 0
+  ShowItemTypeResourcePermissions: 0
+  LocationID: tag_void_stabilizer_powered
   WorkPosition: 0
   PermissionType: 0
-  LocationPermissions:
-  - tag_can_summon_from_void
-  WorkerPermissions:
-  - faction_player
-  - faction_captured
-  WorkerPermissionsToLock:
-  - faction_hostile
-  TargetPermissions:
-  - faction_player
-  - faction_captured
-  TargetPermissionsToLock: []
-  OnlyUseResourcesAtJobLocation: 0
-  ResourcePool: 1
-  ShowItemTypeResourcePermissions: 0
-  ResourcePermissionsToLock: []
-  MaxWorkers: 0
+  CanSitDuringJob: 0
+  WorkerID: skill_summoning
+  TargetID: entity_status_can_be_archenthrall
   JobActions:
   - ActionType: 0
-    MaxWorkers: 0
-    WorkerID: skill_carry
-    TargetID: 
     ResourceID: item_sablixian_tar
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
     AnimStartFX: 
     AnimStartSFX: 
-  - ActionType: 3
-    MaxWorkers: 0
-    WorkerID: skill_summoning
-    TargetID: 
+  - ActionType: 0
+    ResourceID: item_sablixian_tar
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 0
+    ResourceID: item_sablixian_tar
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 0
+    ResourceID: item_arcane_dust
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 10
     ResourceID: 
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 8192
     AnimationHitEvent: 1
@@ -78,21 +82,13 @@ MonoBehaviour:
   AddedProgressPerAction: 0
   ProgressMax: 100
   ProgressBarType: 2
-  InvertProgressDisplay: 1
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
     Layer: 0
-    Params:
-      disableRemoveSpawns: 0
-      disposeIfNotPermitted: 0
-      disableSpawnAtEntityOnFail: 0
-      disableClaimCheck: 0
-      setAsUnclaimed: 0
-      attempts: 0
-      seedOffset: 0
+    DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 1
   SpawnTagID: 
@@ -103,15 +99,18 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
-  OnFinishWorkerStatusAdds:
-  - entity_status_archenthrall
+  OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
   OnFinishTargetBuffs: []
-  OnFinishTargetStatusAdds: []
-  OnFinishTargetStatusRemoves: []
+  OnFinishTargetStatusAdds:
+  - entity_status_archenthrall
+  OnFinishTargetStatusRemoves:
+  - entity_status_can_be_archenthrall
   TryCatchFish: 0
   TryHarvestFruit: 0
   CanSelectTarget: 0
@@ -132,7 +131,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 1
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0
-  WorkerID: skill_summoning

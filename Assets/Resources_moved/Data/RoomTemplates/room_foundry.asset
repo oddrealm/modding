@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_foundry
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_foundry
   DEBUG: 0
+  TooltipID: tooltip_room_foundry
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -28,31 +28,47 @@ MonoBehaviour:
   - BlueprintID: blueprint_iron_ingot
     Settings:
       Priority: 1
-      AutoJobType: 1
-    ResourcePermissions: []
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_bronze_ingot
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_steel_ingot
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_rutile_ingot
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
       Priority: 2
       AutoJobType: 0
-    ResourcePermissions:
-    - TagObjectKey: tag_item_type_ore
-      Min: 0
-      Max: 0
+    ProhibitedResources:
+    - item_type
+    PermittedResources:
+    - tag_item_type_ore
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
+  RoomQualities: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

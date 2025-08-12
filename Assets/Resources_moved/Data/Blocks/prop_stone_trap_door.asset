@@ -12,50 +12,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_stone_trap_door
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_stone_trap_door
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_prop_stone_trap_door
+  TagIDs:
+  - tag_trigger_door_open
+  - tag_trigger_trap_door_drop_entity
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
-  - TriggerType: 1
-    HideInTooltips: 1
-    Invert: 0
-    ActivateTriggerID: tag_trigger_door_open
+  - ActivateTriggerID: tag_trigger_door_open
     DeactivateTriggerID: 
-    SourceTagObjectRequirement0: 
-    SourceTagObjectRequirement1: 
-    ElapsedTime: 0
-  - TriggerType: 2
+    TriggerType: 1
     HideInTooltips: 1
     Invert: 0
-    ActivateTriggerID: 
-    DeactivateTriggerID: tag_trigger_door_open
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
-  - TriggerType: 1
+  - ActivateTriggerID: 
+    DeactivateTriggerID: tag_trigger_door_open
+    TriggerType: 2
+    HideInTooltips: 1
+    Invert: 0
+    SourceTagObjectRequirement0: 
+    SourceTagObjectRequirement1: 
+    ElapsedTime: 0
+  - ActivateTriggerID: tag_trigger_trap_door_drop_entity
+    DeactivateTriggerID: 
+    TriggerType: 1
     HideInTooltips: 0
     Invert: 0
-    ActivateTriggerID: tag_trigger_trap_door_drop_entity
-    DeactivateTriggerID: 
     SourceTagObjectRequirement0: faction_neutral
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
-  - TriggerType: 1
+  - ActivateTriggerID: tag_trigger_trap_door_drop_entity
+    DeactivateTriggerID: 
+    TriggerType: 1
     HideInTooltips: 0
     Invert: 0
-    ActivateTriggerID: tag_trigger_trap_door_drop_entity
-    DeactivateTriggerID: 
     SourceTagObjectRequirement0: faction_hostile
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
   Triggers:
   - Comment: Open door
-    TooltipID: tooltip_prop_door_open
     ID: tag_trigger_door_open
+    ActiveTooltipID: tooltip_prop_door_open
+    InactiveTooltipID: tooltip_prop_door_closed
     Permissions: 0
     Visuals: 
     SFX: sfx_door_interact
@@ -69,8 +72,9 @@ MonoBehaviour:
       Max: 0
       Permanent: 0
   - Comment: Drop entity
-    TooltipID: 
     ID: tag_trigger_trap_door_drop_entity
+    ActiveTooltipID: tooltip_tag_trigger_trap_door_drop_entity
+    InactiveTooltipID: 
     Permissions: 0
     Visuals: 
     SFX: 
@@ -86,6 +90,7 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
   MaxItemCount: 0
   ItemTypePermissions: []

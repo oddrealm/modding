@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29980e1a3c779fc4b95decfe8a376f99, type: 3}
   m_Name: faction_player
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_faction_player
   DEBUG: 0
+  TooltipID: tooltip_faction_player
   TagIDs:
   - tag_factions
   DiscoveryDependencies: []

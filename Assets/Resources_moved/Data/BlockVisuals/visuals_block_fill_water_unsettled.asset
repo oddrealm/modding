@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_block_fill_water_unsettled
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.23375754, g: 0.4847322, b: 0.9716981, a: 0.5019608}
@@ -41,6 +40,7 @@ MonoBehaviour:
   HideSurfaceWhenObscuredAbove: 1
   HideSurfaceWhenSameTypeAbove: 1
   CanTransitionIfObscuredAbove: 0
+  CanTransitionIfTargetCovered: 0
   HasSurface: 1
   CanFade: 0
   HasSeasonOffset: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   ShowLighting: 1
   DropShadow: 1
   LightSettings:
-    ReductionThreshold: 0
+    MinReductionThreshold: 2
     SkylightReduction: 0
     SkylightPass: 0
     BlockAmbientLight: 0

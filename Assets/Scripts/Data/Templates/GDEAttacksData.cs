@@ -63,9 +63,14 @@ public class GDEAttacksData : Scriptable
             SkillID = "skill_misc";
         }
 
+
         if (string.IsNullOrEmpty(TargetAttributeID))
         {
-            //Debug.LogError($"{Key} is missing target attribute!");
+            Debug.LogError($"{Key} is missing target attribute! Setting to use target health.");
+            TargetAttributeID = "attribute_health";
+#if UNITY_EDITOR
+            UnityEditor.EditorUtility.SetDirty(this);
+#endif
         }
     }
 #endif

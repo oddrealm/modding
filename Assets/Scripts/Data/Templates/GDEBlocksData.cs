@@ -8,8 +8,9 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     public struct Trigger
     {
         public string Comment;
-        public string TooltipID;
         public string ID;
+        public string ActiveTooltipID;
+        public string InactiveTooltipID;
         public BlockPermissionTypes Permissions;
         public string Visuals;
         public string SFX;
@@ -23,37 +24,32 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     [System.Serializable]
     public struct TriggerCondition
     {
+        public string ActivateTriggerID;
+        public string DeactivateTriggerID;
         public TriggerTypes TriggerType;
         public bool HideInTooltips;
         public bool Invert;
-        public string ActivateTriggerID;
-        public string DeactivateTriggerID;
         public string SourceTagObjectRequirement0;
         public string SourceTagObjectRequirement1;
         public uint ElapsedTime;
     }
 
-
+    [Header("Usage Tags")]
+    public string[] UsageTags = System.Array.Empty<string>();
     [Header("Fill")]
     public string DefaultFill = "block_fill_air";
-    [System.NonSerialized]
-    public GDEBlockFillData DefaultFillData;
-
     [Header("Triggers")]
     public TriggerCondition[] TriggerConditions;
     public Trigger[] Triggers;
-
     [Header("Hidden blocks are revealed up to this distance.")]
     public int RevealDistance = 0;
-
     [Header("Temperature Source")]
     public int TemperatureSource = 0;
-
+    [Header("Rotation")]
     public bool IsRotationFixture;
-
+    public string RotationFixtureKey = string.Empty;
     [Header("Used by jobs to determine work xp reward and work progress.")]
     public int SkillLevel = 0;
-
     [Header("Items")]
     public int MaxItemCount = 0;
     public string[] ItemTypePermissions;
@@ -63,7 +59,6 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     public bool RestrictItemsToSameKey = false;
     public int DecayBuff = 0;
     public string RemoveItemDrops = "";
-
     [Header("Pathing")]
     public int VerticalEntityLift = 0;
     public bool IsObstruction;
@@ -75,26 +70,21 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     public int MovementCost = 3;
     public bool VerticalMoveRequiresClimb = false;
     public bool ForceFocusDirection = false;
-
     [Header("Permissions/Prohibitions")]
     public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;
     public BlockPermissionTypes PermissionsAbove = BlockPermissionTypes.NONE;
     public BlockPermissionTypes Prohibited = BlockPermissionTypes.NONE;
     public BlockPermissionTypes ProhibitedAbove = BlockPermissionTypes.NONE;
-
     [Header("Layers")]
     public BlockLayers Layer = BlockLayers.BLOCK;
     public BlockLayers ProhibitedLayers = BlockLayers.PLATFORM;
-
     public bool CanHaveRoom = true;
     public bool CanHavePlatform = true;
     public BlockPlantTypes PermittedPlantTypes;
     public bool IsFertile = false;
     public bool CanSitAt = false;
-
     [Header("Lighting")]
     public bool IsSpotlight = false;
-
     [Header("Visuals")]
     public List<string> Visuals = new List<string>();
     public int TriggerOffsetX = 0;
@@ -103,17 +93,25 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     public int HasItemsOffsetY = 0;
     public int FullCapacityOffsetX = 0;
     public int FullCapacityOffsetY = 0;
-
     [Header("FX")]
     public string IdleFX = "";
-
+    public string UntriggeredFX = "";
     [Header("SFX")]
     public string AddSFX = "";
     public string RemoveSFX = "";
     public string InteractSFX = "";
+    [Header("Lifetime Minutes (-1 = disabled)")]
+    public int MaxLifeTime = 0;
+    [Header("Max amount to simulate for world gen")]
+    public int MaxDefaultSimTime = 24 * 60 * 10;
+    [Header("Simulation ID")]
+    public string BlockimulationID = "";
+    public SimOptions[] StateOptions = System.Array.Empty<SimOptions>();
+    [System.NonSerialized]
+    public Dictionary<string, SimOptions> TagObjectsByOptionID = new Dictionary<string, SimOptions>();
 
+    public bool IsNone { get; private set; }
     public bool CanShowInProgressUI { get { return true; } }
-
     public override bool ShowMinimapCutoutColor
     {
         get
@@ -129,7 +127,6 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
 #endif
         }
     }
-
     public override bool ShowOnMinimap
     {
         get
@@ -137,7 +134,6 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
             return Visuals.Count > 0;
         }
     }
-
     public override Color MinimapColor
     {
         get
@@ -153,53 +149,35 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
 #endif
         }
     }
-
     public BlockRotationTypes RotationType { get; private set; }
-
-    #region ITagObject
-
     public string TagObjectID
     {
         get { return Key; }
     }
-
     public string TagObjectTooltipID
     {
         get { return TooltipID; }
     }
-
-    [Header("Lifetime Minutes (-1 = disabled)")]
-    public int MaxLifeTime = 0;
-
-    [Header("Max amount to simulate for world gen")]
-    public int MaxDefaultSimTime = 24 * 60 * 10;
-
-    [Header("Simulation ID")]
-    public string BlockimulationID = "";
-
-    public void SetSimulationID(string simID)
-    {
-        BlockimulationID = simID;
-    }
-
     public string SimulationID { get { return BlockimulationID; } }
-    private GDESimulationData _simData;
     public GDESimulationData Simulation { get { return _simData; } }
-
     public SimTime MaxSimTime { get { return MaxDefaultSimTime; } }
+    public GDEBlockFillData DefaultFillData { get; private set; }
+    public GDETagsData[] UsageTagsData { get; private set; } = new GDETagsData[0];
+    public GDETagsData[] TriggerTagsData { get; private set; } = new GDETagsData[0];
 
-    public const string BLOCK_STATE_CAN_FALL = "block_state_can_fall";
-
-    [System.NonSerialized]
+    private GDESimulationData _simData;
     private string[] _simStates = new string[]
     {
         BLOCK_STATE_CAN_FALL
     };
 
-    public SimOptions[] StateOptions;
+    public const string BLOCK_STATE_CAN_FALL = "block_state_can_fall";
+    public const string TAG_HEAT_SOURCE = "tag_heat_source";
 
-    [System.NonSerialized]
-    public Dictionary<string, SimOptions> TagObjectsByOptionID = new Dictionary<string, SimOptions>();
+    public void SetSimulationID(string simID)
+    {
+        BlockimulationID = simID;
+    }
 
     public string[] GetSimStates()
     {
@@ -210,18 +188,88 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     {
         return StateOptions;
     }
-    #endregion
 
 #if ODD_REALM_APP
+    private static HashSet<string> _tagIDCache = new HashSet<string>(4);
     public override void OnLoaded()
     {
         base.OnLoaded();
 
+#if DEV_TESTING
+        // for (int i = 0; i < TriggerConditions.Length; i++)
+        // {
+        //     if (string.IsNullOrEmpty(TriggerConditions[i].ActivateTriggerID))
+        //     {
+        //         Debug.LogError($"Missing ActivateTriggerID for TriggerCondition {i} on {Key}");
+        //     }
+        // }
+
+        // for (int i = 0; i < Triggers.Length; i++)
+        // {
+        //     if (string.IsNullOrEmpty(Triggers[i].ActiveTooltipID)) { continue; }
+        //
+        //     if (string.IsNullOrEmpty(Triggers[i].InactiveTooltipID))
+        //     {
+        //         Debug.LogError($"Trigger {i} for {Key} - ID: {Triggers[i].ActiveTooltipID} does not have an inactive tooltip, setting to active tooltip.");
+        //     }
+        // }
+#endif
+
+        IsNone = Key == "block_none";
+
+        if (UsageTags.Length > 0)
+        {
+            UsageTagsData = new GDETagsData[UsageTags.Length];
+
+            for (int i = 0; UsageTags != null && i < UsageTags.Length; i++)
+            {
+                if (string.IsNullOrEmpty(UsageTags[i]))
+                {
+                    continue;
+                }
+
+                UsageTagsData[i] = DataManager.GetTagObject<GDETagsData>(UsageTags[i]);
+            }
+        }
+
+        if (Triggers != null && Triggers.Length > 0)
+        {
+            _tagIDCache.Clear();
+
+            for (int i = 0; i < Triggers.Length; i++)
+            {
+                if (string.IsNullOrEmpty(Triggers[i].ID))
+                {
+                    continue;
+                }
+
+                _tagIDCache.Add(Triggers[i].ID);
+
+                if (TagIDsHash.Add(Triggers[i].ID))
+                {
+                    TagIDs.Add(Triggers[i].ID);
+                }
+            }
+
+            if (_tagIDCache.Count > 0)
+            {
+                TriggerTagsData = new GDETagsData[_tagIDCache.Count];
+                int i = 0;
+
+                foreach (string tagID in _tagIDCache)
+                {
+                    TriggerTagsData[i] = DataManager.GetTagObject<GDETagsData>(tagID);
+                    i++;
+                }
+
+                _tagIDCache.Clear();
+            }
+        }
 
 #if DEV_TESTING
-        if (TemperatureSource > 0 && TagIDsHash.Add("tag_heat_source"))
+        if (TemperatureSource > 0 && TagIDsHash.Add(TAG_HEAT_SOURCE))
         {
-            TagIDs.Add("tag_heat_source");
+            TagIDs.Add(TAG_HEAT_SOURCE);
             Debug.LogError($"Adding heat source tag to: {Key}");
 #if UNITY_EDITOR
             UnityEditor.EditorUtility.SetDirty(this);
@@ -242,7 +290,6 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
             GDEBlockVisualsData visuals = DataManager.GetTagObject<GDEBlockVisualsData>(Visuals[i]);
             RotationType |= visuals.RotationType;
         }
-
 
         ItemTypePermissionsHash.Clear();
 

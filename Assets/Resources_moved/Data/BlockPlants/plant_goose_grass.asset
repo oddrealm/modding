@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: plant_goose_grass
   m_EditorClassIdentifier: 
   TooltipID: tooltip_plant_goose_grass
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_biome_plants_taiga
+  - tag_mature_standing
+  - tag_mature_fruit
+  - tag_can_be_watered
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 5760

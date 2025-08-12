@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842b8eea7ddea9440ab5a3a9f6389156, type: 3}
   m_Name: simulation_snow_default
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -33,9 +32,9 @@ MonoBehaviour:
           rid: 3
         RequireAllConditionsToBeMet: 1
         Conditions:
-        - rid: 8269333780745945089
+        - rid: 8674642720513327162
         Actions:
-        - rid: 8269333780745945088
+        - rid: 8674642720513327161
     - rid: 3
       type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
       data:
@@ -45,21 +44,11 @@ MonoBehaviour:
       type: {class: SimPositions, ns: , asm: Assembly-CSharp}
       data:
         Positions:
-        - {x: 0, y: 0, z: -1}
+        - {x: 0, y: 0, z: 0}
         MaxDistance: 1
         MinDistance: 1
         IterateToEnd: 0
         CheckAll: 0
-    - rid: 8269333780745945088
-      type: {class: DisposeSimAction, ns: , asm: Assembly-CSharp}
-      data:
-        DebugBreakpoint: 0
-    - rid: 8269333780745945089
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: block_fill_can_move_to
-        OptionID: 
     - rid: 8269333984846807040
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
@@ -72,7 +61,7 @@ MonoBehaviour:
         - rid: 8269333984846807042
         - rid: 8269333984846807043
         Actions:
-        - rid: 8269333984846807044
+        - rid: 8674642720513327163
     - rid: 8269333984846807041
       type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
       data:
@@ -89,10 +78,6 @@ MonoBehaviour:
         Outcome: 1
         StateID: block_fill_state_melt
         OptionID: 
-    - rid: 8269333984846807044
-      type: {class: DisposeSimAction, ns: , asm: Assembly-CSharp}
-      data:
-        DebugBreakpoint: 0
     - rid: 8269333984846807045
       type: {class: SimPositions, ns: , asm: Assembly-CSharp}
       data:
@@ -102,3 +87,21 @@ MonoBehaviour:
         MinDistance: 1
         IterateToEnd: 0
         CheckAll: 0
+    - rid: 8674642720513327161
+      type: {class: ClearSimAction, ns: , asm: Assembly-CSharp}
+      data:
+        DebugBreakpoint: 0
+        Clear:
+          Layer: 256
+          DisableRemoveSpawns: 1
+    - rid: 8674642720513327162
+      type: {class: CanSupportWeightSimCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Outcome: 0
+    - rid: 8674642720513327163
+      type: {class: ClearSimAction, ns: , asm: Assembly-CSharp}
+      data:
+        DebugBreakpoint: 0
+        Clear:
+          Layer: 256
+          DisableRemoveSpawns: 1

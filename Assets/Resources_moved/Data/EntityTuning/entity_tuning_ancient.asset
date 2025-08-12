@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_ancient
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -23,8 +22,8 @@ MonoBehaviour:
   MaxRandomLevel: 50
   MinRandomLevel: 45
   RandomProfessions: []
-  MaxRandomSkill: 10
-  MinRandomSkill: 1
+  MaxRandomSkill: 12
+  MinRandomSkill: 5
   SkillBonuses:
   - Skill: 2097152
     Amount: 5

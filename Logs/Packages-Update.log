@@ -62,3 +62,24 @@ The following packages were updated:
   com.unity.textmeshpro from version 2.1.6 to 3.0.6
   com.unity.timeline from version 1.2.18 to 1.7.6
   com.unity.toolchain.win-x86_64-linux-x86_64 from version 2.0.0 to 2.0.4
+
+=== Tue Aug 12 07:35:22 2025
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.modules.accessibility@1.0.0
+  com.unity.multiplayer.center@1.0.0
+The following packages were updated:
+  com.unity.addressables from version 1.21.19 to 2.6.0
+  com.unity.ai.navigation from version 1.1.5 to 2.0.8
+  com.unity.collab-proxy from version 2.3.1 to 2.8.2
+  com.unity.ide.rider from version 3.0.28 to 3.0.36
+  com.unity.ide.visualstudio from version 2.0.22 to 2.0.23
+  com.unity.test-framework from version 1.1.33 to 1.5.1
+  com.unity.timeline from version 1.7.6 to 1.8.7
+  com.unity.toolchain.win-x86_64-linux-x86_64 from version 2.0.4 to 2.0.10
+  com.unity.ugui from version 1.0.0 to 2.0.0
+The following packages were removed:
+  com.unity.textmeshpro@3.0.6

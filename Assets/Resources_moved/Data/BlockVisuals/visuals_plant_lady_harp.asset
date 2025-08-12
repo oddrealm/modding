@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_plant_lady_harp
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.4509804, g: 0.7294118, b: 0.2784314, a: 1}
   TextureX: 96
-  TextureY: 89
+  TextureY: 183
   SecondaryTextureX: 0
   SecondaryTextureY: 0
   FXTextureX: 0
@@ -48,11 +47,11 @@ MonoBehaviour:
   ShowAmbientLight: 1
   TailVariants: 0
   ShowTailVariant: 0
-  ShowAnims: 0
+  ShowAnims: 1
   ShowLighting: 1
   DropShadow: 1
   LightSettings:
-    ReductionThreshold: 0
+    MinReductionThreshold: 0
     SkylightReduction: 0
     SkylightPass: 0
     BlockAmbientLight: 0

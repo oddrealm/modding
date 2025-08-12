@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: tag_can_use_to_water_plant
   m_EditorClassIdentifier: 
   TooltipID: tooltip_tag_can_use_to_water_plant
-  GroupID: 
-  GroupIDs: []
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

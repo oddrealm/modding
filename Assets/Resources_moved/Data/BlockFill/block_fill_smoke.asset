@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2634f9e7acc089749996e3db72403e67, type: 3}
   m_Name: block_fill_smoke
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_block_fill_smoke
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_block_fill_smoke
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}

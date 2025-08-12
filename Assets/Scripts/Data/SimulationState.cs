@@ -6,16 +6,6 @@ public readonly struct SimulationState
     // The timestamp for when the sim obj was last simulated.
     public readonly SimTime LastSimulationTimestamp;
 
-    public static implicit operator SimulationState(int age)
-    {
-#if ODD_REALM_APP
-        SimTime spawnTime = (uint)(_session.GameTime.TotalElapsedMinutes - age);
-        return new SimulationState(spawnTime, spawnTime);
-#else
-        return new SimulationState();
-#endif
-    }
-
 #if ODD_REALM_APP
     // The game's current minute.
     public SimTime CurrentTimestamp { get { return _session.GameTime.TotalElapsedMinutes; } }
@@ -37,6 +27,11 @@ public readonly struct SimulationState
 
     private static GameSession _session;
 
+    public static implicit operator SimulationState(int age)
+    {
+        return NewAgeWithTimeToSim((uint)age);
+    }
+
     public static void Init(GameSession session)
     {
         _session = session;
@@ -48,7 +43,7 @@ public readonly struct SimulationState
         LastSimulationTimestamp = lastSimulationTimestamp;
     }
 
-    public static SimulationState NewAgeWithTimeToSim(SimTime age)
+    public static SimulationState NewAgeWithTimeToSim(uint age)
     {
         SimTime spawnTime = (_session.GameTime.TotalElapsedMinutes - age);
         SimTime lastSimTime = spawnTime;
@@ -57,6 +52,7 @@ public readonly struct SimulationState
 
     public static SimulationState NewAgeWithTimeToSim(SimTime age, SimTime timeToSim)
     {
+        // timeToSim cannot be greater than age - we simulate objects up to their current age.
         if (timeToSim > age)
         {
             timeToSim = age;

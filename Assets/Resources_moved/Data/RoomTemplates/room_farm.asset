@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_farm
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_farm
   DEBUG: 0
+  TooltipID: tooltip_room_farm
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -29,40 +29,62 @@ MonoBehaviour:
     Settings:
       Priority: 2
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_water_plant
     Settings:
       Priority: 3
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_plant_standing
     Settings:
       Priority: 1
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_harvest_ground_cover
     Settings:
       Priority: 2
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_till
     Settings:
       Priority: 2
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
       Priority: 2
       AutoJobType: 1
-    ResourcePermissions:
-    - TagObjectKey: tag_item_type_seed
-      Min: 0
-      Max: 0
+    ProhibitedResources:
+    - item_type
+    PermittedResources:
+    - tag_can_plant_standing
+    - tag_can_plant_ground_cover
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
   - BlueprintID: blueprint_plant_ground_cover
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

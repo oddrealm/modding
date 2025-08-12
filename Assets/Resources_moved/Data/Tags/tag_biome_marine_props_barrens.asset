@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: tag_biome_marine_props_barrens
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
-  GroupIDs: []
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

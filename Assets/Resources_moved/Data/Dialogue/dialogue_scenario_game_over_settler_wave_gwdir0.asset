@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_scenario_game_over_settler_wave_gwdir0
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -22,7 +22,7 @@ MonoBehaviour:
   SpeakerTarget: 
   Message: 
   Response: []
-  FocusOnSpeaker: 1
+  ShowOnce: 0
   DialogueSequences:
   - ID: seq_appear
     Text: "No banners, no subjects\u2026 yet the silence still bows before me."
@@ -33,26 +33,34 @@ MonoBehaviour:
       TagRequirement1ID: 
       TagRequirement2ID: 
     ActionA:
-      ID: 
       Text: 
       NextSequenceID: 
-      ActionTrigger: 0
+      ActionType: 0
+      SpeakerAction: 0
       ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
     ActionB:
-      ID: 
       Text: 
       NextSequenceID: 
-      ActionTrigger: 0
+      ActionType: 0
+      SpeakerAction: 0
       ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
     ActionC:
-      ID: 
       Text: 
       NextSequenceID: 
-      ActionTrigger: 0
+      ActionType: 0
+      SpeakerAction: 0
       ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
     ActionD:
-      ID: 
       Text: 
       NextSequenceID: 
-      ActionTrigger: 0
+      ActionType: 0
+      SpeakerAction: 0
       ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 

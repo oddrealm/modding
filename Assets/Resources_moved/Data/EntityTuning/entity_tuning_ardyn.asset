@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_ardyn
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -24,7 +23,7 @@ MonoBehaviour:
   MinRandomLevel: 1
   RandomProfessions: []
   MaxRandomSkill: 10
-  MinRandomSkill: 1
+  MinRandomSkill: 6
   SkillBonuses:
   - Skill: 33554432
     Amount: 10

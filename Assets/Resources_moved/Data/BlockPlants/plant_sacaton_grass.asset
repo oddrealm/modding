@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_sacaton_grass
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_plant_sacaton_grass
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_plant_sacaton_grass
   TagIDs:
   - tag_biome_plants_desert
   - tag_has_grazing_plant
+  - tag_mature_grass
+  - tag_mature_fruit
+  - tag_can_be_watered
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: -1
@@ -47,7 +49,7 @@ MonoBehaviour:
   NeedsFertileSoil: 1
   MaxTemp: 95
   MinTemp: -100
-  PlantSimulationID: simulation_plant_surface_default
+  PlantSimulationID: simulation_plant_surface_grass
   UseLocalFaunaReproduceMod: 1
   Seasons:
   - winter

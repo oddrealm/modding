@@ -12,19 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_ancient_summoner2
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_research_arcana_summoner2
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_research_arcana_summoner2
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 1
   ShowInSaga: 1
-  Races:
-  - race_ancient
-  Dependency: research_ancient_summoner1
+  Dependency: 
   Column: 3
-  Row: 2
+  Row: 3
   ResearchCategory: research_category_ancient
   RequireItemCountOverride: 0
-  ResearchTimeStep: 60
+  GlobalBuffs: []
+  RequiredDiscovery: 

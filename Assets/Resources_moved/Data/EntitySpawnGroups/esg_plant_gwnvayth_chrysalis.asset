@@ -13,30 +13,28 @@ MonoBehaviour:
   m_Name: esg_plant_gwnvayth_chrysalis
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  FriendlyName: 'Spawns:'
   Spawns:
   - EntityId: entity_gwdir
     EntityTag: 
     EntityProfession: 
     EntityGender: female
     EntityCount: 1
-    SameRoomAsPlayer: 0
     EntityFaction: faction_player
     EntityTuning: 
     EntityAppearance: 
     SpawnRate: 1000
     AgeType: 2
     ScenarioID: 
-    SchemaID: 
     SpawnEntityFromItem: 0
     AutoGenEquipment: 0
     AutoGenInventory: 0
     DisableItemEquipFromTuning: 1
     EquippedItems:
-    - item_rose_crown
+    - ItemID: item_rose_crown
+      SlotID: item_slot_head
+    InventoryItems: []
     AddedStatuses: []

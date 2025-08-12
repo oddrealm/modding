@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_stone_spear_two_hand
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_stone_spear_two_hand
   DEBUG: 0
+  TooltipID: tooltip_item_stone_spear_two_hand
   TagIDs:
   - tag_item_type_tool
   - tag_can_equip
@@ -21,6 +21,8 @@ MonoBehaviour:
   - tag_item_rarity_common
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_can_equip
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -37,29 +39,21 @@ MonoBehaviour:
   AccessoryData: {fileID: 11400000, guid: 2c7959e7e0614194a9f85074e28b7280, type: 2}
   Permissions: 0
   Prohibited: 0
-  DietGroup: diet_group_none
-  CanStackAttacks: 1
+  CanStackAttacks: 0
   FillAllSlots: 1
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_stone_spear_two_hand
-  StartDiscovered: 0
-  MaxCountInMerchantList: 1
-  GenerateNameKey: weapon
   MerchantBuyValue: 115
   MerchantSellValue: 23
   TuneRating: 2
   ItemRarity: item_rarity_common
   DecayRate: -1
   DecayItem: 
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 500
   StackSize: 1
-  JobOutputMod: 1
-  ArtifactID: 
   Actions: []
-  TimedActions: []
   StateOptions: []
+  TimedActions: []

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2634f9e7acc089749996e3db72403e67, type: 3}
   m_Name: block_fill_air
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_block_fill_air
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_block_fill_air
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -28,11 +27,9 @@ MonoBehaviour:
   FillNeighborBlocksOnNew: 0
   IsObstruction: 0
   IsVerticalAccess: 0
-  CanLoseMass: 0
-  FullThreshold: 0
   EmptyThreshold: 0
   FreezeThreshold: 0
-  MeltThreshold: 1
+  MeltThreshold: 100
   BurnThreshold: 100
   EmptyFill: block_fill_air
   SettledVisuals: 

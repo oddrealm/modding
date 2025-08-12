@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
   m_Name: input_command_toggle_lock_tooltip
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_input_toggle_lock_tooltip
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_input_toggle_lock_tooltip
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -26,7 +25,7 @@ MonoBehaviour:
     - Down: 0
       Hold: 1
       Up: 0
-      Key: 306
+      Key: 308
       Mouse: 0
   ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0

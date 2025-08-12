@@ -13,30 +13,12 @@ MonoBehaviour:
   m_Name: occupant_group_market_merchant
   m_EditorClassIdentifier: 
   TooltipID: tooltip_occupant_group_market_merchant
-  GroupID: 
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   OccupantManageType: 1
   OccupantsMustBePlayerControlled: 0
-  AvailableOccupantTagObjs:
-  - TagObjectKey: tag_races
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_professions
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_skills
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_factions
-    Min: -1
-    Max: -1
-  - TagObjectKey: tag_statuses
-    Min: -1
-    Max: -1
   RequiredOccupantTagObjs:
-  - TagObjectKey: entity_status_ai_merchant
-    Min: -1
-    Max: -1
+  - TagID: tag_statuses
+    TagObjectKey: entity_status_ai_merchant

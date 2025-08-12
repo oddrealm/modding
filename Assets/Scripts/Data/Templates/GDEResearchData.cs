@@ -77,7 +77,7 @@ public class GDEResearchData : Scriptable
             string t = TagObjectTypesUnlocked[i];
             TagObjectsByTypeUnlocked[t] = TagObjectsByTypeUnlocked[t].OrderBy((string tagObjID) =>
             {
-                return DataManager.GetTagObject(tagObjID).ObjectIndex;
+                return DataManager.GetTagObject(tagObjID).OrderIndex;
             }).ToList();
         }
 

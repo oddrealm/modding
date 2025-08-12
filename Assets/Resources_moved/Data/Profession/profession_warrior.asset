@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_warrior
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_profession_warrior
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_profession_warrior
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  OrderGroup: 0
   AutoCreateUniform: 1
   EarnBonusXPInCombat: 1
   ResearchKey: 
@@ -28,8 +28,6 @@ MonoBehaviour:
   CanDoSupplementCarryActions: 0
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
-  DefaultItems:
-  - item_wood_pointy_stick_two_hand
   StartingItems:
   - ItemID: item_wood_pointy_stick_two_hand
     ChanceToEquip: 0

@@ -1,24 +1,27 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-
+using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.AddressableAssets;
 using UnityEditor.AddressableAssets.Settings;
 using UnityEditor.AddressableAssets.Settings.GroupSchemas;
 #endif
-using UnityEngine;
 
 public static class DataUtility
 {
 #if UNITY_EDITOR
 
-    public static T CreateScriptableObject<T>(string name) where T : ScriptableObject
+    public static T CreateScriptableObject<T>(string name)
+        where T : ScriptableObject
     {
         T s = ImportDataSingle<T>(name);
 
-        if (s != null) { return s; }
+        if (s != null)
+        {
+            return s;
+        }
 
         return CreateScriptableObject(name, typeof(T).Name) as T;
     }
@@ -27,7 +30,11 @@ public static class DataUtility
     {
         ScriptableObject s = ScriptableObject.CreateInstance(typeName);
         string dataFolder = typeName.Replace("GDE", "").Replace("Data", "");
-        AssetDatabase.CreateAsset(s, string.Format("Assets/Resources_moved/Data/{0}/{1}.asset", dataFolder, name));
+
+        AssetDatabase.CreateAsset(
+            s,
+            string.Format("Assets/Resources_moved/Data/{0}/{1}.asset", dataFolder, name)
+        );
         AssetDatabase.SaveAssets();
 
         SetAddressableGroup(s, "Default Local Group", dataFolder.ToLower());
@@ -44,7 +51,10 @@ public static class DataUtility
         s.name = name;
         System.Type t = s.GetType();
         string dataFolder = t.Name.Replace("GDE", "").Replace("Data", "");
-        AssetDatabase.CreateAsset(s, string.Format("Assets/Resources_moved/Data/{0}/{1}.asset", dataFolder, name));
+        AssetDatabase.CreateAsset(
+            s,
+            string.Format("Assets/Resources_moved/Data/{0}/{1}.asset", dataFolder, name)
+        );
         AssetDatabase.SaveAssets();
 
         SetAddressableGroup(s, "Default Local Group", dataFolder.ToLower());
@@ -52,7 +62,11 @@ public static class DataUtility
         return s;
     }
 
-    public static void ReplaceTextInFields(ScriptableObject obj, string originalText, string newText)
+    public static void ReplaceTextInFields(
+        ScriptableObject obj,
+        string originalText,
+        string newText
+    )
     {
         FieldInfo[] fields = obj.GetType().GetFields();
 
@@ -62,7 +76,10 @@ public static class DataUtility
             {
                 string v = fields[i].GetValue(obj) as string;
 
-                if (string.IsNullOrEmpty(v) || !v.Contains(originalText)) { continue; }
+                if (string.IsNullOrEmpty(v) || !v.Contains(originalText))
+                {
+                    continue;
+                }
                 fields[i].SetValue(obj, (string)v.Replace(originalText, newText));
             }
             else if (fields[i].FieldType.Equals(typeof(List<string>)))
@@ -72,7 +89,11 @@ public static class DataUtility
                 for (int j = 0; j < vList.Count; j++)
                 {
                     string v = vList[j];
-                    if (string.IsNullOrEmpty(v) || !v.Contains(originalText)) { continue; }
+
+                    if (string.IsNullOrEmpty(v) || !v.Contains(originalText))
+                    {
+                        continue;
+                    }
                     vList[j] = v.Replace(originalText, newText);
                 }
             }
@@ -80,7 +101,6 @@ public static class DataUtility
 
         EditorUtility.SetDirty(obj);
     }
-
 
     public static void SetAddressableGroup(this Object obj, string groupName, string labelName)
     {
@@ -90,25 +110,46 @@ public static class DataUtility
         {
             var group = settings.FindGroup(groupName);
             if (!group)
-                group = settings.CreateGroup(groupName, false, false, true, null, typeof(ContentUpdateGroupSchema), typeof(BundledAssetGroupSchema));
+                group = settings.CreateGroup(
+                    groupName,
+                    false,
+                    false,
+                    true,
+                    null,
+                    typeof(ContentUpdateGroupSchema),
+                    typeof(BundledAssetGroupSchema)
+                );
 
             var assetpath = AssetDatabase.GetAssetPath(obj);
             var guid = AssetDatabase.AssetPathToGUID(assetpath);
-
             var e = settings.CreateOrMoveEntry(guid, group, false, false);
             var entriesAdded = new List<AddressableAssetEntry> { e };
 
             e.SetLabel(labelName, true);
-            group.SetDirty(AddressableAssetSettings.ModificationEvent.EntryMoved, entriesAdded, false, true);
-            settings.SetDirty(AddressableAssetSettings.ModificationEvent.EntryMoved, entriesAdded, true, false);
+            group.SetDirty(
+                AddressableAssetSettings.ModificationEvent.EntryMoved,
+                entriesAdded,
+                false,
+                true
+            );
+            settings.SetDirty(
+                AddressableAssetSettings.ModificationEvent.EntryMoved,
+                entriesAdded,
+                true,
+                false
+            );
         }
     }
 
     public static Sprite[] ImportAnimationSpriteSheetSprites(string entity)
     {
-        string path = "Assets/Resources_moved/Animation/Entities/" + entity + "/Sprites/" + entity + "_animations.png";
+        string path =
+            "Assets/Resources_moved/Animation/Entities/"
+            + entity
+            + "/Sprites/"
+            + entity
+            + "_animations.png";
         Object[] sheet = AssetDatabase.LoadAllAssetsAtPath(path);
-
 
         if (sheet == null)
         {
@@ -121,7 +162,10 @@ public static class DataUtility
         for (int i = 0; i < sheet.Length; i++)
         {
             Sprite s = sheet[i] as Sprite;
-            if (s == null) { continue; }
+            if (s == null)
+            {
+                continue;
+            }
 
             sheetSprites.Add(s);
         }
@@ -129,15 +173,20 @@ public static class DataUtility
         return sheetSprites.ToArray();
     }
 
-    public static T ImportDataSingle<T>(string name) where T : ScriptableObject
+    public static T ImportDataSingle<T>(string name)
+        where T : ScriptableObject
     {
-        if (string.IsNullOrEmpty(name)) { return null; }
+        if (string.IsNullOrEmpty(name))
+        {
+            return null;
+        }
         string dataFolder = typeof(T).Name.Replace("GDE", "").Replace("Data", "");
         string path = "Assets/Resources_moved/Data/" + dataFolder + "\\" + name + ".asset";
         return AssetDatabase.LoadAssetAtPath<T>(path);
     }
 
-    public static void ImportData<T>(List<T> l, string name, System.Action<T> onAdded = null) where T : ScriptableObject
+    public static void ImportData<T>(List<T> l, string name, System.Action<T> onAdded = null)
+        where T : ScriptableObject
     {
         l?.Clear();
 
@@ -148,7 +197,10 @@ public static class DataUtility
             string path = "Assets" + files[i].Replace(Application.dataPath, "");
             T asset = AssetDatabase.LoadAssetAtPath<T>(path);
 
-            if (asset == null) { continue; }
+            if (asset == null)
+            {
+                continue;
+            }
 
             onAdded?.Invoke(asset);
             l?.Add(asset);
@@ -159,7 +211,11 @@ public static class DataUtility
     {
         string dir = Application.dataPath + "/Resources_moved/Data/" + name;
 
-        if (!Directory.Exists(dir)) { return; }
+        if (!Directory.Exists(dir))
+        {
+            Debug.LogError("Directory does not exist: " + dir);
+            return;
+        }
 
         string[] files = Directory.GetFiles(dir);
 
@@ -168,7 +224,10 @@ public static class DataUtility
             string path = "Assets" + files[i].Replace(Application.dataPath, "");
             Scriptable asset = AssetDatabase.LoadAssetAtPath<Scriptable>(path);
 
-            if (asset == null) { continue; }
+            if (asset == null)
+            {
+                continue;
+            }
 
             onAdded?.Invoke(asset);
         }
@@ -176,7 +235,8 @@ public static class DataUtility
         //Debug.Log(name + " loaded.");
     }
 
-    public static T LoadEditorArtAsset<T>(string name) where T : Object
+    public static T LoadEditorArtAsset<T>(string name)
+        where T : Object
     {
         string path = "Assets/Editor/Art/" + name + ".png";
 

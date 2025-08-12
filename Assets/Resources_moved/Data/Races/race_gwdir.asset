@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_gwdir
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_race_gwdir
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_race_gwdir
   TagIDs:
   - tag_races
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  MerchantValue: 200
+  MerchantValue: 800
   Intelligence: intelligence_sapient
   Tags:
   - sapient
@@ -27,7 +26,8 @@ MonoBehaviour:
   Public: 1
   Perks:
   - '<sprite=53> One With Nature: Start with an increased farming skill.'
-  DefaultActiveResearch: []
+  DefaultActiveResearch:
+  - research_gwdir_tthdir0
   StartingItems:
   - ItemID: item_aiwir_hat
     ChanceToEquip: 1

@@ -12,14 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_wood_large_cage
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_wood_large_cage
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_prop_wood_large_cage
   TagIDs:
   - tag_container
   - tag_cage_large
+  - tag_trigger_cage_has_entity
+  - tag_trigger_cage_entity_exit
+  - tag_trigger_cage_entity_free
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_container
+  - tag_cage_large
   DefaultFill: block_fill_air
   TriggerConditions:
   - TriggerType: 1
@@ -56,7 +61,8 @@ MonoBehaviour:
     ElapsedTime: 0
   Triggers:
   - Comment: Capture Entity In Cage
-    TooltipID: 
+    ActiveTooltipID: tooltip_tag_trigger_cage_has_entity
+    InactiveTooltipID: tooltip_tag_trigger_cage_has_no_entity
     ID: tag_trigger_cage_has_entity
     Permissions: 24
     Visuals: visuals_prop_wood_large_cage_has_entity
@@ -71,7 +77,8 @@ MonoBehaviour:
       Max: 0
       Permanent: 0
   - Comment: Remove Caged Status
-    TooltipID: 
+    ActiveTooltipID: 
+    InactiveTooltipID: 
     ID: tag_trigger_cage_entity_exit
     Permissions: 0
     Visuals: 
@@ -86,7 +93,8 @@ MonoBehaviour:
       Max: 0
       Permanent: 0
   - Comment: Free Caged Entity
-    TooltipID: 
+    ActiveTooltipID: 
+    InactiveTooltipID: 
     ID: tag_trigger_cage_entity_free
     Permissions: 0
     Visuals: 
@@ -103,6 +111,7 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
   MaxItemCount: 0
   ItemTypePermissions: []

@@ -12,20 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_wood_small_cage
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_wood_small_cage
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_prop_wood_small_cage
   TagIDs:
   - tag_container
   - tag_cage_small
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_container
+  - tag_cage_small
   DefaultFill: block_fill_air
   TriggerConditions: []
   Triggers: []
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
   MaxItemCount: 1
   ItemTypePermissions: []

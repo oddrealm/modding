@@ -10,6 +10,7 @@ public class GDEFactionData : Scriptable
     public bool CanRespec = false;
     public Color SelectionColor = Color.white;
     public Color CursorHoverColor = Color.white;
+    public Color HighlightColor = Color.white;
     public FactionTypes FactionPathing = FactionTypes.PLAYER;
     public List<string> Statuses = new List<string>();
     public int Order = 0;

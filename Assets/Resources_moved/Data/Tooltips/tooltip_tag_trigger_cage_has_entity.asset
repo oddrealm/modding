@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_trigger_cage_has_entity
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  Action: Cage (Has Entity)
-  Name: Cage (Has Entity)
+  Action: Captured
+  Name: Captured
   NamePlural: 
   InlineIcon: <sprite=889>
   Description: 
@@ -26,4 +26,4 @@ MonoBehaviour:
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.4509804, a: 1}
   Type: 
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 941
+  Order: 907

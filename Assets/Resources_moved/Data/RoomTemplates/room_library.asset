@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_library
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_library
   DEBUG: 0
+  TooltipID: tooltip_room_library
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -29,41 +29,63 @@ MonoBehaviour:
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_tome_of_arcana
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_tome_of_cooking
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_tome_of_industry
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_item_tome_of_war
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_research
+    Settings:
+      Priority: 1
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
       Priority: 2
       AutoJobType: 1
-    ResourcePermissions:
-    - TagObjectKey: item_paper
-      Min: 0
-      Max: 0
-    - TagObjectKey: item_ink
-      Min: 0
-      Max: 0
-    - TagObjectKey: tag_item_type_book
-      Min: 0
-      Max: 0
+    ProhibitedResources:
+    - item_type
+    PermittedResources:
+    - tag_item_type_book
+    - item_paper
+    - item_ink
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
   m_Name: room_market
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_room_market
   DEBUG: 0
+  TooltipID: tooltip_room_market
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -29,12 +29,20 @@ MonoBehaviour:
     Settings:
       Priority: 1
       AutoJobType: 1
-    ResourcePermissions: []
+    ProhibitedResources:
+    - item_type
+    PermittedResources: []
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
   - BlueprintID: blueprint_buy_item
     Settings:
       Priority: 1
       AutoJobType: 0
-    ResourcePermissions: []
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   ShowProduction: 0
   ShowStockpile: 1
   ShowOccupants: 1

@@ -31,6 +31,6 @@ public enum BlockPermissionTypes
     HAS_ITEM = 67108864,
     HAS_GRAZING_PLANT = 134217728,
     CLAIM = 268435456,
-    // = 536870912,
+    REPAIR = 536870912,
     // = 1073741824
 }

@@ -5,22 +5,14 @@ public class GDEBlockFillData : Scriptable, ISimulationData
 {
     public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;
     public BlockPermissionTypes Prohibited = BlockPermissionTypes.NONE;
-
     public BlockPermissionTypes PermissionsAbove = BlockPermissionTypes.NONE;
     public BlockPermissionTypes ProhibitedAbove = BlockPermissionTypes.NONE;
-
     public int MovementCost = 0;
-
-
     public int FillPriority;
-    public int MaxMass = 100;
-    [System.NonSerialized]
-    public float MaxMassReciprocal;
+    public int MaxMass = 5;
     public bool FillNeighborBlocksOnNew = false;
     public bool IsObstruction = false;
     public bool IsVerticalAccess = false;
-    public bool CanLoseMass = false;
-    public int FullThreshold = 90;
     public int EmptyThreshold = 10;
     public int FreezeThreshold = 0;
     public int MeltThreshold = 1;
@@ -35,12 +27,10 @@ public class GDEBlockFillData : Scriptable, ISimulationData
     public string BackgroundIcon;
     public string MidgroundIcon;
     public string ForegroundIcon;
-    [System.NonSerialized]
-    public Sprite BackgroundSprite;
-    [System.NonSerialized]
-    public Sprite MidgroundSprite;
-    [System.NonSerialized]
-    public Sprite ForegroundSprite;
+    [Header("Max amount to simulate for world gen")]
+    public int MaxDefaultSimTime = 24 * 60 * 10;
+    [Header("Simulation ID")]
+    public string FillSimulationID = "";
 
     public override bool ShowMinimapCutoutColor { get { return true; } }
     public override bool ShowOnMinimap
@@ -50,7 +40,6 @@ public class GDEBlockFillData : Scriptable, ISimulationData
             return !string.IsNullOrEmpty(SettledVisuals);
         }
     }
-
     public override Color MinimapColor
     {
         get
@@ -66,29 +55,63 @@ public class GDEBlockFillData : Scriptable, ISimulationData
 #endif
         }
     }
+    public string SimulationID { get { return FillSimulationID; } }
+    public GDESimulationData Simulation { get { return _simData; } }
+    public SimTime MaxSimTime { get { return MaxDefaultSimTime; } }
+    public float MaxMassReciprocal { get; private set; }
+    public Sprite BackgroundSprite { get; private set; }
+    public Sprite MidgroundSprite { get; private set; }
+    public Sprite ForegroundSprite { get; private set; }
+    public bool IsWater { get; private set; }
+    public bool IsAir { get; private set; }
+    public bool IsSolid { get; private set; }
+    public bool IsFire { get; private set; }
+    public GDEBlockFillData EmptyFillData { get; private set; }
 
-    [Header("Max amount to simulate for world gen")]
-    public int MaxDefaultSimTime = 24 * 60 * 10;
-    [Header("Simulation ID")]
-    public string FillSimulationID = "";
+    private GDESimulationData _simData;
+    private string[] _simStates = new string[]
+    {
+        BLOCK_FILL_STATE_FULL,
+        BLOCK_FILL_STATE_FILL_TARGET,
+        BLOCK_FILL_STATE_EMPTY,
+        BLOCK_FILL_STATE_FREEZE,
+        BLOCK_FILL_STATE_MELT,
+        BLOCK_FILL_STATE_BURN,
+        BLOCK_FILL_CAN_MOVE_TO,
+    };
+
+    public const string BLOCK_FILL_STATE_FULL = "block_fill_state_full";
+    public const string BLOCK_FILL_STATE_EMPTY = "block_fill_state_empty";
+    public const string BLOCK_FILL_STATE_FILL_TARGET = "block_fill_state_fill_target";
+    public const string BLOCK_FILL_STATE_FREEZE = "block_fill_state_freeze";
+    public const string BLOCK_FILL_STATE_MELT = "block_fill_state_melt";
+    public const string BLOCK_FILL_STATE_BURN = "block_fill_state_burn";
+    public const string BLOCK_FILL_CAN_MOVE_TO = "block_fill_can_move_to";
 
     public void SetSimulationID(string simID)
     {
         FillSimulationID = simID;
     }
 
+    public string[] GetSimStates()
+    {
+        return _simStates;
+    }
 
-
-    public string SimulationID { get { return FillSimulationID; } }
-    private GDESimulationData _simData;
-    public GDESimulationData Simulation { get { return _simData; } }
-
-    //public int SimCount { get; }
-    public SimTime MaxSimTime { get { return MaxDefaultSimTime; } }
+    public SimOptions[] GetOptions()
+    {
+        return null;
+    }
 
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
+        EmptyFillData = DataManager.GetTagObject<GDEBlockFillData>(EmptyFill);
+        IsWater = Key == "block_fill_water";
+        IsAir = Key == "block_fill_air";
+        IsSolid = Key == "block_fill_solid";
+        IsFire = Key == "block_fill_fire";
+
         if (!string.IsNullOrEmpty(SimulationID))
         {
             _simData = DataManager.GetTagObject<GDESimulationData>(SimulationID);
@@ -101,35 +124,4 @@ public class GDEBlockFillData : Scriptable, ISimulationData
         base.OnLoaded();
     }
 #endif
-
-    public const string BLOCK_FILL_STATE_FULL = "block_fill_state_full";
-    public const string BLOCK_FILL_STATE_EMPTY = "block_fill_state_empty";
-    public const string BLOCK_FILL_STATE_FILL_TARGET = "block_fill_state_fill_target";
-    public const string BLOCK_FILL_STATE_FREEZE = "block_fill_state_freeze";
-    public const string BLOCK_FILL_STATE_MELT = "block_fill_state_melt";
-    public const string BLOCK_FILL_STATE_BURN = "block_fill_state_burn";
-    public const string BLOCK_FILL_CAN_MOVE_TO = "block_fill_can_move_to";
-
-    [System.NonSerialized]
-    private string[] _simStates = new string[]
-    {
-        BLOCK_FILL_STATE_FULL,
-        BLOCK_FILL_STATE_FILL_TARGET,
-        BLOCK_FILL_STATE_EMPTY,
-        BLOCK_FILL_STATE_FREEZE,
-        BLOCK_FILL_STATE_MELT,
-        BLOCK_FILL_STATE_BURN,
-        BLOCK_FILL_CAN_MOVE_TO,
-    };
-
-    public string[] GetSimStates()
-    {
-        return _simStates;
-    }
-
-    public SimOptions[] GetOptions()
-    {
-        return null;
-    }
-
 }

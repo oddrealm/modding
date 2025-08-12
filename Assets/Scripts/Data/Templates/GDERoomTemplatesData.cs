@@ -11,7 +11,18 @@ public class GDERoomTemplatesData : Scriptable
     {
         public string BlueprintID;
         public AutoJobSettings Settings;
-        public TagObjectSetting[] ResourcePermissions;
+        public string[] ProhibitedResources;
+        public string[] PermittedResources;
+        public string[] ProhibitedLocations;
+        public string[] PermittedLocations;
+    }
+
+    [System.Serializable]
+    public struct RoomQuality
+    {
+        public int level;
+        public string jobFinishWorkerAction;
+        public string jobFinishItemAction;
     }
 
     [Header("Category")]
@@ -32,6 +43,9 @@ public class GDERoomTemplatesData : Scriptable
     [Header("Jobs")]
     public List<RoomAutoJob> DefaultAutoJobs = new List<RoomAutoJob>();
 
+    [Header("Quality")]
+    public List<RoomQuality> RoomQualities = new List<RoomQuality>();
+
     [Header("Room Management")]
     public bool ShowProduction = true;
     public bool ShowStockpile = true;
@@ -41,6 +55,11 @@ public class GDERoomTemplatesData : Scriptable
     public override string ObjectTypeDisplay { get { return "Rooms"; } }
     public List<string> CommonProps { get; private set; } = new List<string>();
     public HashSet<string> CommonPropsSet { get; private set; } = new HashSet<string>();
+    public HashSet<string> DefaultAutoJobsHash { get; private set; } = new HashSet<string>();
+    public Dictionary<string, Dictionary<string, bool>> DefaultProhibitedLocations { get; private set; } = new Dictionary<string, Dictionary<string, bool>>();
+    public Dictionary<string, Dictionary<string, bool>> DefaultProhibitedResources { get; private set; } = new Dictionary<string, Dictionary<string, bool>>();
+    public Dictionary<int, List<RoomQuality>> RoomQualityByLevel { get; private set; } = new Dictionary<int, List<RoomQuality>>();
+    public int MaxQuality { get; private set; }
 
     public override bool TryGetDefaultTracking(out DefaultTracking tracking)
     {
@@ -56,18 +75,96 @@ public class GDERoomTemplatesData : Scriptable
         return true;
     }
 
+    public bool TryGetRoomQualitiesByLevel(int level, out List<RoomQuality> qualityList)
+    {
+        if (RoomQualityByLevel.TryGetValue(level, out qualityList))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
 #if ODD_REALM_APP
+    public bool IsLocationProhibitedByDefault(string blueprintID, string locationID)
+    {
+        if (string.IsNullOrEmpty(blueprintID) || string.IsNullOrEmpty(locationID) || DefaultProhibitedLocations.Count == 0)
+        {
+            return false;
+        }
+
+        if (DefaultProhibitedLocations.TryGetValue(blueprintID, out var locationPermissions) &&
+            locationPermissions.TryGetValue(locationID, out var isProhibited))
+        {
+            return isProhibited;
+        }
+
+        return false;
+    }
+
+    public bool IsResourceProhibitedByDefault(string blueprintID, string resourceID)
+    {
+        if (string.IsNullOrEmpty(blueprintID) || string.IsNullOrEmpty(resourceID) || DefaultProhibitedResources.Count == 0)
+        {
+            return false;
+        }
+
+        if (DefaultProhibitedResources.TryGetValue(blueprintID, out var resourcePermissions) &&
+            resourcePermissions.TryGetValue(resourceID, out var isProhibited))
+        {
+            return isProhibited;
+        }
+
+        return false;
+    }
+
     public override void OnLoaded()
     {
-        CommonProps.Clear();
-        CommonPropsSet.Clear();
+        RoomQualityByLevel.Clear();
+        MaxQuality = 0;
+
+        for (int i = 0; i < RoomQualities.Count; i++)
+        {
+            RoomQuality quality = RoomQualities[i];
+
+            if (!RoomQualityByLevel.TryGetValue(quality.level, out var qualityList))
+            {
+                qualityList = new List<RoomQuality>();
+                RoomQualityByLevel[quality.level] = qualityList;
+            }
+
+            qualityList.Add(quality);
+            MaxQuality = Mathf.Max(MaxQuality, quality.level);
+        }
+
+        DefaultAutoJobsHash.Clear();
 
         for (int i = 0; DefaultAutoJobs != null && i < DefaultAutoJobs.Count; i++)
         {
-            GDEBlueprintsData blueprint = DataManager.GetTagObject<GDEBlueprintsData>(DefaultAutoJobs[i].BlueprintID);
+            RoomAutoJob autoJob = DefaultAutoJobs[i];
+
+            if (!DefaultAutoJobsHash.Add(autoJob.BlueprintID))
+            {
+                Debug.LogError($"Duplicate auto job blueprint ID found: {autoJob.BlueprintID} in {Key}");
+            }
+        }
+
+        CommonProps.Clear();
+        CommonPropsSet.Clear();
+        DefaultProhibitedLocations.Clear();
+        DefaultProhibitedResources.Clear();
+
+        for (int i = 0; DefaultAutoJobs != null && i < DefaultAutoJobs.Count; i++)
+        {
+            RoomAutoJob autoJob = DefaultAutoJobs[i];
+            GDEBlueprintsData blueprint = DataManager.GetTagObject<GDEBlueprintsData>(autoJob.BlueprintID);
+            PopulateDefaultPermissions(autoJob.BlueprintID, autoJob.ProhibitedResources, DefaultProhibitedResources, true);
+            PopulateDefaultPermissions(autoJob.BlueprintID, autoJob.PermittedResources, DefaultProhibitedResources, false);
+            PopulateDefaultPermissions(autoJob.BlueprintID, autoJob.ProhibitedLocations, DefaultProhibitedLocations, true);
+            PopulateDefaultPermissions(autoJob.BlueprintID, autoJob.PermittedLocations, DefaultProhibitedLocations, false);
 
             if (!string.IsNullOrEmpty(blueprint.LocationID) &&
-                DataManager.TryGetTagObject(blueprint.LocationID, out var locationObj))
+                    DataManager.TryGetTagObject(blueprint.LocationID, out var locationObj))
             {
                 //Debug.Log("Location obj: " + locationObj.Key);
                 bool addToCommonProps = false;
@@ -126,23 +223,6 @@ public class GDERoomTemplatesData : Scriptable
                     }
                 }
             }
-
-#if UNITY_EDITOR
-            if (DefaultAutoJobs[i].ResourcePermissions == null ||
-                DefaultAutoJobs[i].ResourcePermissions.Length == 0)
-            {
-                continue;
-            }
-
-            for (int j = 0; j < DefaultAutoJobs[i].ResourcePermissions.Length; j++)
-            {
-                if (!string.IsNullOrEmpty(DefaultAutoJobs[i].ResourcePermissions[j].TagObjectKey) &&
-                    !DataManager.TagObjectExists(DefaultAutoJobs[i].ResourcePermissions[j].TagObjectKey))
-                {
-                    Debug.LogError(Key + " Auto Job " + DefaultAutoJobs[i].BlueprintID + " could find tag object for: " + DefaultAutoJobs[i].ResourcePermissions[j].TagObjectKey);
-                }
-            }
-#endif
         }
 
         if (CommonProps.Count > 0)
@@ -154,6 +234,77 @@ public class GDERoomTemplatesData : Scriptable
         }
 
         base.OnLoaded();
+    }
+
+    private static void PopulateDefaultPermissions(string blueprintID, string[] tagObjIDs, Dictionary<string, Dictionary<string, bool>> defaultPermissions, bool prohibit)
+    {
+        if (tagObjIDs == null || tagObjIDs.Length == 0)
+        {
+            return;
+        }
+
+        for (int j = 0; j < tagObjIDs.Length; j++)
+        {
+            string tagObjID = tagObjIDs[j];
+
+            if (string.IsNullOrEmpty(tagObjID))
+            {
+                continue;
+            }
+
+            Dictionary<string, bool> permissions;
+
+            if (!defaultPermissions.TryGetValue(blueprintID, out permissions))
+            {
+                permissions = new Dictionary<string, bool>();
+                defaultPermissions[blueprintID] = permissions;
+            }
+
+            if (DataManager.TryGetTagGroup(tagObjID, out var tagsByGroup))
+            {
+                for (int k = 0; k < tagsByGroup.Count; k++)
+                {
+                    List<ITagObject> tagObjects = DataManager.GetTagObjectsByTag(tagsByGroup[k].TagID);
+
+                    for (int l = 0; l < tagObjects.Count; l++)
+                    {
+                        if (!permissions.ContainsKey(tagObjects[l].Key))
+                        {
+                            permissions.Add(tagObjects[l].Key, prohibit);
+                        }
+                        else
+                        {
+                            permissions[tagObjects[l].Key] = prohibit;
+                        }
+                    }
+                }
+            }
+            else if (DataManager.TryGetTagData(tagObjID, out var tagData) && DataManager.TryGetTagObjectsByTag(tagData.TagID, out var tagObjectsByTag))
+            {
+                for (int l = 0; l < tagObjectsByTag.Count; l++)
+                {
+                    if (!permissions.ContainsKey(tagObjectsByTag[l].Key))
+                    {
+                        permissions.Add(tagObjectsByTag[l].Key, prohibit);
+                    }
+                    else
+                    {
+                        permissions[tagObjectsByTag[l].Key] = prohibit;
+                    }
+                }
+            }
+            else
+            {
+                if (!permissions.ContainsKey(tagObjID))
+                {
+                    permissions.Add(tagObjID, prohibit);
+                }
+                else
+                {
+                    permissions[tagObjID] = prohibit;
+                }
+            }
+        }
     }
 #endif
 }

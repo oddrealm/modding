@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
   m_Name: overworld_nation_ardyn
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_overworld_nation_ardyn
   DEBUG: 0
+  TooltipID: tooltip_overworld_nation_ardyn
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -60,19 +60,19 @@ MonoBehaviour:
   - NationID: overworld_nation_ardyn
     Relationship: 2
     Chances: 500
-  - NationID: overworld_natoin_ardyn
+  - NationID: overworld_nation_ardyn
     Relationship: 1
     Chances: 250
-  - NationID: overworld_natoin_human
+  - NationID: overworld_nation_human
     Relationship: 2
     Chances: 1000
-  - NationID: overworld_natoin_gwdir
+  - NationID: overworld_nation_gwdir
     Relationship: 2
     Chances: 1000
-  - NationID: overworld_natoin_tomek
+  - NationID: overworld_nation_tomek
     Relationship: 2
     Chances: 1000
-  - NationID: overworld_natoin_ancient
+  - NationID: overworld_nation_ancient
     Relationship: 2
     Chances: 1000
   MaxLeaders: 1

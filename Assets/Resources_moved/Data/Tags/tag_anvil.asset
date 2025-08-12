@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: tag_anvil
   m_EditorClassIdentifier: 
   TooltipID: tooltip_tag_anvil
-  GroupID: 
-  GroupIDs: []
   DEBUG: 0
   TagIDs: []
   DiscoveryDependencies: []

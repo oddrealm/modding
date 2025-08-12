@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2634f9e7acc089749996e3db72403e67, type: 3}
   m_Name: block_fill_snow
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_block_fill_snow
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_block_fill_snow
   TagIDs:
   - tag_terrain_gen_snow
   DiscoveryDependencies: []
@@ -25,15 +24,13 @@ MonoBehaviour:
   ProhibitedAbove: 0
   MovementCost: 0
   FillPriority: 1
-  MaxMass: 1
+  MaxMass: 5
   FillNeighborBlocksOnNew: 0
   IsObstruction: 0
   IsVerticalAccess: 0
-  CanLoseMass: 0
-  FullThreshold: 90
   EmptyThreshold: 0
   FreezeThreshold: 0
-  MeltThreshold: 1
+  MeltThreshold: 5
   BurnThreshold: 100
   EmptyFill: block_fill_air
   SettledVisuals: visuals_block_snow

@@ -12,16 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5fb1d1b07810e4ca30537b1d718d1f, type: 3}
   m_Name: weather_desert_winter_wind
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_weather_desert_winter_wind
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_weather_desert_winter_wind
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UIDisplayAnimKey: windy
   FlammabilityMod: 1
   WeatherType: 1
-  NightOffset: -5
+  NightOffset: -20
   DayOffset: 5
   MinTemp: 6
   MaxTemp: 20

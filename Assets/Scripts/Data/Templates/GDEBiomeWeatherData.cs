@@ -15,6 +15,9 @@ public class GDEBiomeWeatherData : Scriptable
     }
 
     public string UIDisplayAnimKey = "";
+    public string WeatherAnimID { get; private set; }
+    public string AnimControllerID { get; private set; }
+    public string WeatherImageID { get; private set; }
     public float FlammabilityMod = 0.0f;
     public int WeatherType = 0;
     public int NightOffset = 0;
@@ -53,4 +56,14 @@ public class GDEBiomeWeatherData : Scriptable
             ChanceToSpawnSize = 100
         }
     };
+
+#if ODD_REALM_APP
+    public override void OnLoaded()
+    {
+        base.OnLoaded();
+        WeatherAnimID = "Animation/Misc/WeatherGraphic/" + UIDisplayAnimKey + "/Animations/weather_" + UIDisplayAnimKey + "_idle";
+        AnimControllerID = "Animation/Controllers/weather_" + UIDisplayAnimKey;
+        WeatherImageID = "Art/Misc/sp_ui_weather_" + UIDisplayAnimKey;
+    }
+#endif
 }

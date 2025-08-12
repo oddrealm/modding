@@ -1,12 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Resources_moved/Data/InputCommand/input_command_open_settler_overview.asset.meta
 guid: 61eed14513d9cd144ae4101d205f3385
-========
-guid: e6552dfae5870c1459e09715c981ced3
->>>>>>>> c3f5b239c66e216a863d699e8e4790bba6a8646b:Assets/Resources_moved/Data/TagObjectSpawn/spawns_party_merchant_ancient_equipment.asset.meta
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 11400000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

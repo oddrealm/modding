@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
   m_Name: attack_void_craft_cloth_direct
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_attack_void_craft_cloth_direct
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_attack_void_craft_cloth_direct
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -34,7 +33,7 @@ MonoBehaviour:
   SourceAction: 0
   SourceAttributeID: 
   TargetAction: 1
-  TargetAttributeID: 
+  TargetAttributeID: attribute_health
   TargetAmountMin: 0
   TargetAmountMax: 2147483647
   AnimationTrigger: 1

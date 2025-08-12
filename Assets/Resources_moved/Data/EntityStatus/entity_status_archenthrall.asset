@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_archenthrall
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_archenthrall
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_entity_status_archenthrall
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
@@ -28,6 +27,11 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
@@ -35,9 +39,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: fx_entity_archenthrall_idle
   Actions:
-  - ConditionTarget: 
+  - Comment: 
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: 
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 0
@@ -46,8 +50,8 @@ MonoBehaviour:
     DeactivationAction: 4
     Buffs:
     - TargetID: attribute_health
-      Amount: 500
-      Max: 0
+      Amount: 0
+      Max: 500
       Permanent: 0
     - TargetID: attribute_move_speed
       Amount: -7

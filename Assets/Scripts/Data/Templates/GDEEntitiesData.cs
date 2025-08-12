@@ -302,9 +302,9 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
         for (int i = 0; i < AutoJobs.Count; i++)
         {
             GDEBlueprintsData blueprint = DataManager.GetTagObject<GDEBlueprintsData>(AutoJobs[i].BlueprintID);
-            if (!blueprint.DisposeIfNoSource)
+            if (!blueprint.DisposeIfNoSourceEntity)
             {
-                Debug.LogError(blueprint.Key);
+                Debug.LogError(blueprint.Key + " needs to dispose if no source entity!");
             }
         }
 #endif

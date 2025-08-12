@@ -12,26 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: prop_void_mine
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_prop_void_mine
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_prop_void_mine
+  TagIDs:
+  - tag_trigger_explode
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
-  - TriggerType: 1
+  - ActivateTriggerID: tag_trigger_explode
+    DeactivateTriggerID: 
+    TriggerType: 1
     HideInTooltips: 0
     Invert: 0
-    ActivateTriggerID: tag_trigger_explode
-    DeactivateTriggerID: 
     SourceTagObjectRequirement0: faction_hostile
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
   Triggers:
   - Comment: Explode
-    TooltipID: 
     ID: tag_trigger_explode
+    ActiveTooltipID: tooltip_tag_trigger_explode
+    InactiveTooltipID: 
     Permissions: 0
     Visuals: 
     SFX: 
@@ -47,6 +49,7 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
   MaxItemCount: 0
   ItemTypePermissions: []
@@ -85,6 +88,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

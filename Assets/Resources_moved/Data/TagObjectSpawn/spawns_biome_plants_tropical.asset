@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: spawns_biome_plants_tropical
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 0
   TagIDs:
   - tag_spawns_biome_plants_tropical
@@ -36,7 +35,7 @@ MonoBehaviour:
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
-    Weight: 0.025
+    Weight: 0.02
     TagObjectID: 
     TagID: tag_biome_trees_tropical
   - Comment: Grass

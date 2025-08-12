@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
   m_Name: item_rutile_pickaxe_two_hand
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_rutile_pickaxe_two_hand
   DEBUG: 0
+  TooltipID: tooltip_item_rutile_pickaxe_two_hand
   TagIDs:
   - tag_item_type_tool
   - tag_item
@@ -21,6 +21,8 @@ MonoBehaviour:
   - tag_item_rarity_rare
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags:
+  - tag_can_equip
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -37,29 +39,21 @@ MonoBehaviour:
   AccessoryData: {fileID: 11400000, guid: 45130da42cc85d5469700e5ac4ee595f, type: 2}
   Permissions: 0
   Prohibited: 0
-  DietGroup: diet_group_none
-  CanStackAttacks: 1
+  CanStackAttacks: 0
   FillAllSlots: 1
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_rutile_pickaxe_two_hand
-  StartDiscovered: 0
-  MaxCountInMerchantList: 1
-  GenerateNameKey: weapon
   MerchantBuyValue: 1005
   MerchantSellValue: 201
   TuneRating: 6
   ItemRarity: item_rarity_rare
   DecayRate: -1
   DecayItem: 
-  HasMeltThreshold: 0
-  MeltThreshold: 0
   FlammableChance: 100
   StackSize: 1
-  JobOutputMod: 1
-  ArtifactID: 
   Actions:
   - ActionID: tag_can_equip
     Buff:
@@ -69,5 +63,5 @@ MonoBehaviour:
       Permanent: 0
     Status: 
     SpawnID: 
-  TimedActions: []
   StateOptions: []
+  TimedActions: []

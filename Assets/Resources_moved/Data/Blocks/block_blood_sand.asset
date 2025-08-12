@@ -12,20 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
   m_Name: block_blood_sand
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_block_blood_sand
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_block_blood_sand
   TagIDs:
   - tag_terrain_gen_blood_sand
   DiscoveryDependencies:
   - blueprint_block_blood_sand
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
   DefaultFill: block_fill_solid
   TriggerConditions: []
   Triggers: []
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 1
+  RotationFixtureKey: 
   SkillLevel: 0
   MaxItemCount: 0
   ItemTypePermissions: []
@@ -44,7 +45,7 @@ MonoBehaviour:
   VerticalMoveRequiresClimb: 1
   ForceFocusDirection: 0
   Permissions: 2049
-  PermissionsAbove: 131072
+  PermissionsAbove: 918528
   Prohibited: 0
   ProhibitedAbove: 0
   Layer: 1

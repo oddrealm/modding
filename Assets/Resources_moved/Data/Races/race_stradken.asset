@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb373ddcbe5b242bd1142f0e391b19, type: 3}
   m_Name: race_stradken
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_race_stradken
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_race_stradken
   TagIDs:
   - tag_races
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  MerchantValue: 50
+  MerchantValue: 900
   Intelligence: intelligence_sapient
   Tags:
   - animal
@@ -27,4 +26,6 @@ MonoBehaviour:
   Public: 1
   Perks: []
   DefaultActiveResearch: []
+  StartingItems: []
   Buffs: []
+  AutoCreateUniform: 1

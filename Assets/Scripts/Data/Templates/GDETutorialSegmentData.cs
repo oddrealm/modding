@@ -3,7 +3,7 @@
 [CreateAssetMenu(menuName = "ScriptableObjects/TutorialSegment")]
 public class GDETutorialSegmentData : Scriptable
 {
-    public string Speaker = "Darby, the Historian";
+    public string Comment = "TUTORIAL";
 
     [Header("Requirements")]
     public string PreviousSegment;
@@ -25,25 +25,17 @@ public class GDETutorialSegmentData : Scriptable
     public ConditionTypes ItemConditionType = ConditionTypes.OR;
     public int ItemMinCount = -1;
     public BlueprintCategories ConstructionCategoryType = BlueprintCategories.NONE;
-
     public int MinRoomCount = -1;
     public int MinProductionRoomCount = -1;
     public int MinAutoJobCount = -1;
     public int ProfessionCount = -1;
     public string ProfessionID = "";
+    public string SkillID = "";
 
-    [Header("Pop-Up Settings")]
-    public float FadeInDelay = 0f;
-    public PanelPositions PopUpPosition;
-    public bool ShowBackground;
-    public bool ShowBackgroundMask;
-    public string BackgroundMaskTarget;
-    public string AnimatedImage;
-    public string PopUpTextBody;
-
-    public string Comment = "TUTORIAL";
+    [Header("Display")]
+    public string Speaker = "Darby, the Historian";
     public string Icon = "sp_adult_darby_ma0";
-
+    public string BackgroundMaskTarget = "";
     public TutorialMessage[] Message;
 
     [Header("On Completed")]

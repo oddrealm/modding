@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_aging_by_day
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_aging_by_day
   DEBUG: 0
+  TooltipID: tooltip_entity_status_aging_by_day
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}

@@ -87,7 +87,7 @@ public class SimulationCondition
 #if DEV_TESTING
         if (Master.IsDebugPoint(target))
         {
-            int j = 0;
+            // Breakpoint.
         }
 #endif
 
@@ -100,7 +100,7 @@ public class SimulationCondition
 #if DEV_TESTING
             if (condition.DebugBreakpoint)
             {
-                int j = 0;
+                // Breakpoint.
             }
 #endif
             bool conditionOutcome = condition.IsConditionMet(manager, target, simObj, prevState, newState) == condition.Outcome;
@@ -336,7 +336,7 @@ public class HasInstanceSimCondition : SimulationCondition
             ISimulationObject objInstance = manager.GetSimObjectByUID(instances[i]);
 
             if (!string.IsNullOrEmpty(key) && objInstance.TagObjectData.Key != key) { continue; }
-            if (!string.IsNullOrEmpty(StateID) && !objInstance.HasSimState(StateID, target, newState, OptionID)) { continue; }
+            if (!string.IsNullOrEmpty(StateID) && !objInstance.HasSimState(StateID, target, prevState, newState, OptionID)) { continue; }
             outcome |= true;
             break;
         }
@@ -540,7 +540,7 @@ public class HasSimStateSimCondition : SimulationCondition
     {
         bool outcome = base.IsConditionMet(manager, target, origin, prevState, newState);
 
-        outcome |= origin.HasSimState(StateID, target, newState, OptionID);
+        outcome |= origin.HasSimState(StateID, target, prevState, newState, OptionID);
 
         return outcome;
     }

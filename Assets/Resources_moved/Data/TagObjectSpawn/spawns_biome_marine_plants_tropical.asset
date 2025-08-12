@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: spawns_biome_marine_plants_tropical
   m_EditorClassIdentifier: 
   TooltipID: 
-  GroupID: 
   DEBUG: 1
   TagIDs:
   - tag_spawns_biome_marine_plants_tropical
@@ -24,24 +23,24 @@ MonoBehaviour:
   MinIterations: 1
   Spawns:
   - Comment: Plants (Ivory Coral and such)
-    MinCount: 0
-    MaxCount: 0
+    MinCount: 1
+    MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.05
     TagObjectID: 
     TagID: tag_biome_marine_plants_tropical
   - Comment: Props (Boulders and such)
-    MinCount: 0
-    MaxCount: 0
+    MinCount: 1
+    MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.01
     TagObjectID: 
     TagID: tag_biome_marine_props_tropical
   - Comment: Nothing
-    MinCount: 0
-    MaxCount: 0
+    MinCount: 1
+    MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.94

@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_notif_new_cave
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: New Location!
-  NamePlural: New Locations!
+  NamePlural: New Locations Found!
   InlineIcon: <sprite=1657>
   Description: 
   Icon: 
-  TextColor: {r: 0.5686275, g: 0.10196079, b: 0.7725491, a: 1}
+  TextColor: {r: 0.39607844, g: 0.29803923, b: 0.8509804, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2094
+  Order: 2108

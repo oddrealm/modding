@@ -17,4 +17,5 @@ public class GDEAttributesData : Scriptable
     public string OnAddIndicator = "";
     public string OnRemoveIndicator = "";
     public bool ShowActionText = false;
+    public bool IncreaseWithMaxIfEqual;
 }

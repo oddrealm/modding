@@ -83,6 +83,17 @@ public class GDEOverworldNationData : Scriptable
         base.OnLoaded();
 
         BiomesHash = new HashSet<string>(Biomes);
+
+        for (int i = 0; i < DiplomaticTuning.Count; i++)
+        {
+            DiplomaticTunigData tuning = DiplomaticTuning[i];
+
+            if (!DataManager.TagObjectExists(tuning.NationID))
+            {
+                Debug.LogError($"Invalid nation ID in diplomatic tuning: {tuning.NationID} for {Key}");
+            }
+
+        }
     }
 #endif
 }

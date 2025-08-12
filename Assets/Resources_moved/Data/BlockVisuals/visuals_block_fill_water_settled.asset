@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_block_fill_water_settled
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0, g: 0.31322837, b: 0.9245283, a: 0.5019608}
@@ -30,7 +29,7 @@ MonoBehaviour:
   CanTransitionNULL: 1
   IsEntityShadowObstruction: 0
   ReceiveSkylightColor: 0
-  ReceiveReducedLighting: 1
+  ReceiveReducedLighting: 0
   OnlyRenderIfVisible: 1
   ColorAddType: 1
   VisibilityFlag: 1
@@ -41,18 +40,19 @@ MonoBehaviour:
   HideSurfaceWhenObscuredAbove: 1
   HideSurfaceWhenSameTypeAbove: 1
   CanTransitionIfObscuredAbove: 0
+  CanTransitionIfTargetCovered: 0
   HasSurface: 1
   CanFade: 0
   HasSeasonOffset: 0
   WeatherY: 2
-  ShowAmbientLight: 0
+  ShowAmbientLight: 1
   TailVariants: 10
   ShowTailVariant: 1
   ShowAnims: 1
   ShowLighting: 1
   DropShadow: 1
   LightSettings:
-    ReductionThreshold: 0
+    MinReductionThreshold: 2
     SkylightReduction: 1
     SkylightPass: 0
     BlockAmbientLight: 0

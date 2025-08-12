@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_tutorial_workstation_settler0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -24,5 +23,5 @@ MonoBehaviour:
   Message: Our first <sprite=34> {!}workstation{!/}! Now, we can craft some <sprite=2>
     {!}items{!/}!
   Response: []
-  FocusOnSpeaker: 1
+  ShowOnce: 0
   DialogueSequences: []

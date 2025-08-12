@@ -9,5 +9,4 @@ public class GDEStartingLoadoutsData : Scriptable
     public string EntitySpawnGroupID = "";
     public string Items = "";
     public List<string> ContainerIDs = new List<string>();
-    public int StartingRen = 100;
 }

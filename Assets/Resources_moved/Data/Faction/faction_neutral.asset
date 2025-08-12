@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29980e1a3c779fc4b95decfe8a376f99, type: 3}
   m_Name: faction_neutral
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_faction_neutral
   DEBUG: 0
+  TooltipID: tooltip_faction_neutral
   TagIDs:
   - tag_factions
   DiscoveryDependencies: []
@@ -22,7 +22,8 @@ MonoBehaviour:
   IsPlayerControlled: 0
   CanRespec: 0
   SelectionColor: {r: 0.050980397, g: 0.5294118, b: 0.9921569, a: 1}
-  CursorHoverColor: {r: 0.050980397, g: 0.5294118, b: 0.9921569, a: 0.2509804}
+  CursorHoverColor: {r: 0.050980397, g: 0.5294118, b: 0.9921569, a: 0.5019608}
+  HighlightColor: {r: 1, g: 1, b: 1, a: 1}
   FactionPathing: 2
   Statuses:
   - entity_status_faction_neutral
