@@ -25,7 +25,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
       
 1.  Download the modding Unity project.  
     (https://github.com/oddrealm/modding)
-2.  Open the Unity Project (Unity Version 2022.3.28f1).
+2.  Open the Unity Project (Unity Version 6000.1.12f1).
       You can find unity downloads here: https://unity.com/releases/editor/archive
       You'll also want to download the Unity HUB Here: https://unity.com/download
             The Unity Hub is a dashboard app that manages projects and unity version.
