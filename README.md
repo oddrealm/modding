@@ -16,7 +16,7 @@ PART 1: CREATING A MOD
 
 NOTE: There is a tool to help view and edit data under TinyBeast > DataEdit. It isn't required to make mods, but it is useful for viewing and editing data in a more organized manner.
 
-There are many types of data objects to edit and create using this project, but, for this example, I'll walk you through creating a new item (Iron Shovel 2h).
+There are many types of data objects to edit and create using this project, but, for this example, I'll walk you through creating a new item (Iron Shovel 2h). The mod project should have this data already set up.
 This should give you a basic understanding of the modding pipeline.
 
 NOTE: The data that comes with the game in Resources_moved is what Odd Realm uses by default. 
@@ -25,7 +25,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
       
 1.  Download the modding Unity project.  
     (https://github.com/oddrealm/modding)
-2.  Open the Unity Project (Unity Version 6000.1.12f1).
+2.  Open the Unity Project (Unity Version 6000.2.8f1).
       You can find unity downloads here: https://unity.com/releases/editor/archive
       You'll also want to download the Unity HUB Here: https://unity.com/download
             The Unity Hub is a dashboard app that manages projects and unity version.
@@ -44,7 +44,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
           a. LocalBuildPath = [UnityEngine.Application.persistentDataPath]/Mods/MoreTools  
           b. LocalLoadPath = {UnityEngine.Application.persistentDataPath}/Mods/MoreTools  
     When the mod is ready to use in-game (all the data is set up by you), we 'build' (export the data) using these paths.  
-    IMPORTANT: Always make sure your mods are folders withing the Mods folder of the OddRealm save folder 
+    IMPORTANT: Always make sure your mods are folders within the Mods folder of the OddRealm save folder 
                (i.e., on Windows "C:/Users/You/AppData/LocalLow/Unknown Origin Games/OddRealm/Mods/MoreTools").  
                If a Mods folder doesn't exist in OddRealm, you can create one.   
                Without the mods in this folder, the game won't be able to find them.  
@@ -92,8 +92,9 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     'Icon' = 'sp_iron_shovel_two_hand_icon'  
     These values are used to display the item in UI text fields.  
     INLINE ICONS: What is an inline icon? &lt;sprite=1262&gt;? Wha? This is a graphic that is used in text strings and the number in <sprite=9999> is the index lookup  for the texture.  
-                  The index 1262 is pointing at the specific texture in our inline graphics atlas.  
-                  Think Odd Realm emoji.  
+                  The index 1262 is pointing at the specific texture in our inline graphics atlas.
+                  An index of 0 would be the top-left icon. As it increments it first moves horizontally to the right and jumps to the next line upon reaching the end.
+                  Think of an Inline Icon as an Odd Realm emoji.  
                   You can see the default inline graphics texture in the Resources folder ('sp_textmesh_inline_graphics').  
                   See Part II: Making New Textures for more about inline graphics.  
 14. Select the new blockvisuals object in the Project window and set the properties to:  
@@ -139,7 +140,7 @@ NOTE: The data that comes with the game in Resources_moved is what Odd Realm use
     IMPORTANT: Make sure not to change the names of any of these exported files.  
     NOTE: You might see the pop-up Addressables Build Report asking you if you want build reports turned on. You can hit no.
 20. Add a version.txt file to your mod folder with the text of the game's current version. 
-          i.e., "v1.0.31.2 - lost legends" (no quotes) inside the version.txt file. If this version doesn't match what is in-game, it will show it as "out-of-date".
+          i.e., "v1.0.38.4 - lost legends" (no quotes) inside the version.txt file. If this version doesn't match what is in-game, it will show it as "out-of-date".
 21. Run Odd Realm (v1.0.30.0 and higher).  
 22. You should see a pop-up window appear listing mods on your machine.  
           The game looks for folders in the Mods folder and will display these in this window.
