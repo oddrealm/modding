@@ -14,13 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_blueprint_harvest_ground_cover
-  TagIDs: []
+  TagIDs:
+  - tag_blueprints
   DiscoveryDependencies:
   - skill_misc
   - skill_plant
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SkillPriorityOverride: -1
-  XP: 25
+  XP: 5
+  BaseSkillCheckFailXP: 1
+  BaseSkillLevel: 1
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_jobs
   DesignationListOrder: -1
@@ -30,26 +33,27 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
+  CheckSkillFailure: 0
+  AddTargetAttributeToSkillFailCheck: 0
+  TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
   ShowItemTypeResourcePermissions: 0
   LocationID: tag_mature_grass
   WorkPosition: 0
   PermissionType: 4
+  CanSitDuringJob: 0
   WorkerID: skill_plant
   TargetID: 
   JobActions:
   - ActionType: 3
-    MaxWorkers: 0
     ResourceID: 
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 32768
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
-  AddedProgressPerAction: 0
   ProgressMax: 1
   ProgressBarType: 2
   ProgressFXMaxX: 0
@@ -69,7 +73,9 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
@@ -97,6 +103,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0

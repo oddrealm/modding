@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_rare
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 5
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -35,8 +37,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_rutile_crossbow_two_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: cfacb361651bc8e4590876f420ee9755, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_rutile_crossbow_two_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 0
@@ -45,10 +47,11 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_rutile_crossbow_two_hand
+  Attacks:
+  - attack_rutile_crossbow_two_hand_pierce
   MerchantBuyValue: 1050
   MerchantSellValue: 210
-  TuneRating: 6
+  TuneRating: 8
   ItemRarity: item_rarity_rare
   DecayRate: -1
   DecayItem: 
@@ -64,4 +67,5 @@ MonoBehaviour:
     Status: 
     SpawnID: 
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

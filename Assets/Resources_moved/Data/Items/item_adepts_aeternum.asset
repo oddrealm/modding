@@ -35,8 +35,8 @@ MonoBehaviour:
   PickUpSFX: 
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_adepts_aeternum
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: 14b598f0b61c6a844a6c0979736ca267, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_adepts_aeternum
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,7 +44,7 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_head
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 145
   MerchantSellValue: 29
   TuneRating: 2
@@ -79,4 +79,5 @@ MonoBehaviour:
     Status: 
     SpawnID: 
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

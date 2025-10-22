@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_block_wood_log
-  TagIDs: []
+  TagIDs:
+  - tag_blocks
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
@@ -26,6 +27,7 @@ MonoBehaviour:
   IsRotationFixture: 1
   RotationFixtureKey: wood_log
   SkillLevel: 1
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -63,6 +65,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_chop_wood

@@ -23,7 +23,7 @@ MonoBehaviour:
   InlineIcon: <sprite=115>
   Description: 
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.7411765, g: 0.5764706, b: 0.48235294, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 3495
+  Order: 3539

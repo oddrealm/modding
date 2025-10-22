@@ -13,21 +13,22 @@ MonoBehaviour:
   m_Name: tutorial_all_stockpiles0
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_all_stockpiles0
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Stockpile 0
-  PreviousSegment: 
   Trigger: 7
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
-  MinUnscaledPlayedTime: 10
+  MinUnscaledPlayedTime: 120
   MinCooldown: -1
   Hooks: []
   ActiveRaces: []
   PermittedWindows: []
-  SelectionType: 0
+  SelectionType: 1
   SelectionInputID: 
   AttributeRaces: []
   AttributeType: 0
@@ -50,8 +51,8 @@ MonoBehaviour:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: <sprite=1111> Stockpiles are used to organize items in the world. Try editing
-      your stockpile from
+    Body: <sprite=1111> Stockpiles are used to organize items in the world. Create
+      and edit rooms from
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}

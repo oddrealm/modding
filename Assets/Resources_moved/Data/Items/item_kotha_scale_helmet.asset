@@ -35,7 +35,9 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_kotha_scale_helmet
+  CharacterColorMaskID: 
   CharacterColorMask: {fileID: 0}
+  AccessoryID: accessory_item_kotha_scale_helmet
   AccessoryData: {fileID: 11400000, guid: f03a2c805ef94174182ff2972bd8402d, type: 2}
   Permissions: 0
   Prohibited: 0
@@ -71,5 +73,5 @@ MonoBehaviour:
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

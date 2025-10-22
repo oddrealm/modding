@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_slot_head
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   EmptyIcon: sp_empty_head_slot_icon
   GenerateItemChances: 100

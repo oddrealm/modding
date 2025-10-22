@@ -23,7 +23,7 @@ MonoBehaviour:
   InlineIcon: 
   Description: Caged entities can be added to your settlement with the seize job.
   Icon: 
-  TextColor: {r: 0.7803922, g: 0.33333334, b: 0.21176472, a: 1}
+  TextColor: {r: 0.10588236, g: 0.6666667, b: 0.28235295, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1416
+  Order: 1420

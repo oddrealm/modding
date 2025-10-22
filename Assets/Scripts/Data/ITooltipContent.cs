@@ -15,4 +15,5 @@ public interface ITooltipContent
     string TooltipType { get; }
     string TooltipDescription { get; }
     int TooltipOrder { get; }
+    string TooltipDiscoveryHint { get; }
 }

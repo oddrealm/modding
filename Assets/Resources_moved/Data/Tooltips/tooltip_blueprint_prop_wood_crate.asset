@@ -21,7 +21,7 @@ MonoBehaviour:
   Name: Build Wood Crate
   NamePlural: 
   InlineIcon: <sprite=467>
-  Description: 
+  Description: Ideal for holding most things.
   Icon: sp_wood_crate_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job

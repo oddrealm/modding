@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_rutile_stairs
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -22,9 +21,10 @@ MonoBehaviour:
   Name: Rutile Stairs
   NamePlural: 
   InlineIcon: <sprite=1340>
-  Description: 
+  Description: Stairs are faster than ladders, but they block pathing upwards from
+    below.
   Icon: sp_rutile_stairs_icon
   TextColor: {r: 0.85882354, g: 0.32156864, b: 0.28235295, a: 1}
   Type: Vertical Access
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2290
+  Order: 2597

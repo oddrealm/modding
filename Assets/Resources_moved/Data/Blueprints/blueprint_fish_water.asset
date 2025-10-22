@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_blueprint_fish_water
-  TagIDs: []
+  TagIDs:
+  - tag_blueprints
   DiscoveryDependencies:
   - skill_misc
   - entity_status_has_fishing_pole
   - skill_fish
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SkillPriorityOverride: -1
-  XP: 25
-  AwardXPForEachAction: 1
+  XP: 1
+  BaseSkillCheckFailXP: 2
+  BaseSkillLevel: 5
   CategoryID: blueprint_category_jobs
   DesignationListOrder: -1
   ResearchKey: research_industry_basics0
@@ -31,27 +34,26 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
+  TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
   ShowItemTypeResourcePermissions: 0
   LocationID: 
   WorkPosition: 0
   PermissionType: 32
+  CanSitDuringJob: 0
   WorkerID: skill_fish
   TargetID: 
   JobActions:
   - ActionType: 3
-    MaxWorkers: 0
     ResourceID: 
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 64
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
-  AddedProgressPerAction: 0
-  ProgressMax: 100
+  ProgressMax: 1
   ProgressBarType: 0
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
@@ -70,7 +72,9 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
@@ -80,7 +84,6 @@ MonoBehaviour:
   OnFinishTargetStatusRemoves: []
   TryCatchFish: 1
   TryHarvestFruit: 0
-  CanSelectTarget: 0
   ShowWorkOutputActionText: 0
   OnFinishedFX: 
   WorkFX: 
@@ -95,9 +98,6 @@ MonoBehaviour:
   - visuals_job_cursor_prohibited
   Visuals:
   - visuals_job_fish
-  ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSource: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0
+  DisposeIfNoSourceEntity: 0

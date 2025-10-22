@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_void_woken
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_void_woken
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -36,7 +38,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 0
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_void_woken
-  InherentCombatAttacks: attack_group_void_woken
+  Attacks:
+  - attack_energy_direct_bludgeon
   SkillPermissions:
   - SkillID: skill_carry
     PlayerCanEdit: 1
@@ -132,7 +135,6 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 0
     CanSpawnWith: 0
-  Race: race_void_woken
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand

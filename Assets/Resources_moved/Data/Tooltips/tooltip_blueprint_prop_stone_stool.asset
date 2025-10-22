@@ -21,7 +21,7 @@ MonoBehaviour:
   Name: Build Stone Stool
   NamePlural: 
   InlineIcon: <sprite=834>
-  Description: 
+  Description: This is livin'!
   Icon: sp_stone_stool_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job

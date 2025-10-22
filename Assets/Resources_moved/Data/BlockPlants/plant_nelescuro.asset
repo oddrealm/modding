@@ -19,6 +19,7 @@ MonoBehaviour:
   - tag_mature_grass
   - tag_mature_fruit
   - tag_can_be_watered
+  - tag_plants
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: -1

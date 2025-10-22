@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
   m_Name: spawns_terrain_gen_kalite_default
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs:
   - tag_spawns_terrain_gen_kalite_default
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 699258
   MaxIterations: 1
@@ -29,21 +29,21 @@ MonoBehaviour:
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.99
-    TagObjectID: 
-    TagID: tag_terrain_gen_kalite
+    TagObjectID: block_kalite
+    TagID: 
   - Comment: Iron Ore
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.009
-    TagObjectID: 
-    TagID: tag_terrain_gen_iron_ore
+    TagObjectID: block_lode_iron_ore
+    TagID: 
   - Comment: Coal Ore
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
     Weight: 0.001
-    TagObjectID: 
-    TagID: tag_terrain_gen_coal_ore
+    TagObjectID: block_lode_coal_ore
+    TagID: 

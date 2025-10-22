@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7db86f420f50c418342177bb967083, type: 3}
   m_Name: biome_barren
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_biome_barren
   DEBUG: 1
+  TooltipID: tooltip_biome_barren
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TerrainGenSettings:
     SpreadTerrainLayers:
@@ -20500,22 +20501,22 @@ MonoBehaviour:
     m_NumAlphaKeys: 3
   DayNightCloudColor:
     serializedVersion: 2
-    key0: {r: 0.49222797, g: 0.69430053, b: 1, a: 1}
-    key1: {r: 0.6401299, g: 0.7786745, b: 0.990566, a: 1}
-    key2: {r: 1, g: 0.7688679, b: 0.8495041, a: 0}
-    key3: {r: 1, g: 1, b: 1, a: 0}
-    key4: {r: 1, g: 1, b: 1, a: 0}
-    key5: {r: 1, g: 0.65882355, b: 0.9179531, a: 0}
-    key6: {r: 0.49411762, g: 0.6966058, b: 1, a: 0}
-    key7: {r: 0.49509805, g: 0.69607854, b: 1, a: 0}
+    key0: {r: 0, g: 0, b: 0.06666667, a: 1}
+    key1: {r: 0.06759523, g: 0.06759523, b: 0.2924528, a: 1}
+    key2: {r: 0, g: 0, b: 0.06666667, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 16384
-    ctime2: 19661
-    ctime3: 22937
-    ctime4: 49151
-    ctime5: 55705
-    ctime6: 58982
-    ctime7: 65535
+    ctime1: 34888
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
     atime0: 0
     atime1: 65535
     atime2: 0
@@ -20526,7 +20527,7 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_ColorSpace: -1
-    m_NumColorKeys: 8
+    m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   Seasons:
   - season_barren_spring

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_laborer
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_profession_laborer
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_profession_laborer
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  OrderGroup: 0
   AutoCreateUniform: 1
   EarnBonusXPInCombat: 0
   ResearchKey: 
@@ -28,10 +28,8 @@ MonoBehaviour:
   CanDoSupplementCarryActions: 1
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
-  DefaultItems:
-  - item_cloth_backpack
   StartingItems:
-  - ItemID: item_cloth_backpack
+  - ItemID: item_linen_backpack
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
   GlobalIndicator: indicator_global_laborer

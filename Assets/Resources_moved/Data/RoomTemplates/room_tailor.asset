@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_room_tailor
-  TagIDs: []
+  TagIDs:
+  - tag_rooms
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_industry
@@ -25,7 +26,7 @@ MonoBehaviour:
   Visuals:
   - visuals_room_display_tailor
   DefaultAutoJobs:
-  - BlueprintID: blueprint_item_cloth_backpack
+  - BlueprintID: blueprint_item_linen_backpack
     Settings:
       Priority: 1
       AutoJobType: 0
@@ -33,7 +34,7 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_item_cloth_boots
+  - BlueprintID: blueprint_item_linen_boots
     Settings:
       Priority: 1
       AutoJobType: 0
@@ -41,7 +42,7 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_item_cloth_hat
+  - BlueprintID: blueprint_item_linen_hat
     Settings:
       Priority: 1
       AutoJobType: 0
@@ -49,7 +50,7 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_item_cloth_pants
+  - BlueprintID: blueprint_item_linen_pants
     Settings:
       Priority: 1
       AutoJobType: 0
@@ -57,7 +58,7 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_item_cloth_vest
+  - BlueprintID: blueprint_item_linen_vest
     Settings:
       Priority: 1
       AutoJobType: 0
@@ -235,6 +236,39 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
+  - BlueprintID: blueprint_item_wool_apron
+    Settings:
+      Priority: 1
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_item_linen_apron
+    Settings:
+      Priority: 1
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_item_wool_chefs_hat
+    Settings:
+      Priority: 1
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_item_linen_chefs_hat
+    Settings:
+      Priority: 1
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  RoomQualities: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

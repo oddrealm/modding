@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e5796ebfde4de42b4d2b729764e81a, type: 3}
   m_Name: party_raiding
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_party_raiding
   DEBUG: 0
+  TooltipID: tooltip_party_raiding
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ArrivalNotif: notif_overworld_party_raiders
   MaxMemberSize: 5
@@ -23,4 +24,4 @@ MonoBehaviour:
   AutoGenMemberSize: 0
   RandomizeMembers: 0
   MemberTunings: []
-  FactionOverride: 
+  FactionOverride: faction_hostile

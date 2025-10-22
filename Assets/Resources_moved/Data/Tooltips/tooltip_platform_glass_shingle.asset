@@ -21,9 +21,10 @@ MonoBehaviour:
   Name: Glass Shingle Roof
   NamePlural: 
   InlineIcon: <sprite=1368>
-  Description: 
+  Description: Keeps heat in while letting sunlight through. Useful for greenhouses
+    in cold climates.
   Icon: sp_platform_glass_shingle_icon
   TextColor: {r: 0, g: 0.9803922, b: 0.9921569, a: 1}
   Type: Platform
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1555
+  Order: 1563

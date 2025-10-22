@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Spawns:
   - EntityId: entity_ardyn
@@ -59,7 +60,7 @@ MonoBehaviour:
     EntityProfession: profession_technochron
     EntityGender: priority
     EntityCount: 1
-    EntityFaction: 1
+    EntityFaction: faction_player
     EntityTuning: 
     EntityAppearance: 
     SpawnRate: 1000

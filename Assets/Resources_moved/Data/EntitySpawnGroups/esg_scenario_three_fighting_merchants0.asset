@@ -12,68 +12,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
   m_Name: esg_scenario_three_fighting_merchants0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  FriendlyName: 'Spawns:'
   Spawns:
   - EntityId: entity_ancient
     EntityTag: recondite_merchant0
     EntityProfession: profession_warrior
     EntityGender: random
     EntityCount: 1
-    SameRoomAsPlayer: 0
     EntityFaction: 2
     EntityTuning: entity_tuning_recondite
     EntityAppearance: 
     SpawnRate: 0
     AgeType: 2
     ScenarioID: 
-    SchemaID: 
     SpawnEntityFromItem: 0
     AutoGenEquipment: 1
     AutoGenInventory: 1
     DisableItemEquipFromTuning: 0
     EquippedItems: []
+    InventoryItems: []
     AddedStatuses: []
   - EntityId: entity_ancient
     EntityTag: gaiyus_merchant0
     EntityProfession: profession_archer
     EntityGender: random
     EntityCount: 1
-    SameRoomAsPlayer: 0
     EntityFaction: 2
     EntityTuning: entity_tuning_gaiyus
     EntityAppearance: 
     SpawnRate: 0
     AgeType: 2
     ScenarioID: 
-    SchemaID: 
     SpawnEntityFromItem: 0
     AutoGenEquipment: 1
     AutoGenInventory: 1
     DisableItemEquipFromTuning: 0
     EquippedItems: []
+    InventoryItems: []
     AddedStatuses: []
   - EntityId: entity_ancient
     EntityTag: popcornia_merchant0
     EntityProfession: profession_archer
     EntityGender: random
     EntityCount: 1
-    SameRoomAsPlayer: 0
     EntityFaction: 2
     EntityTuning: entity_tuning_popcornia
     EntityAppearance: 
     SpawnRate: 0
     AgeType: 2
     ScenarioID: 
-    SchemaID: 
     SpawnEntityFromItem: 0
     AutoGenEquipment: 1
     AutoGenInventory: 1
     DisableItemEquipFromTuning: 0
     EquippedItems: []
+    InventoryItems: []
     AddedStatuses: []

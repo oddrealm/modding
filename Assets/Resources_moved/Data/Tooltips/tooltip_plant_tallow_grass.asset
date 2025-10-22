@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_tallow_grass
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Tallow
   NamePlural: 
-  InlineIcon: <sprite=70>
-  Description: Endemic to the tundra regions of Odd.
+  InlineIcon: <sprite=1894>
+  Description: Endemic to the tundra regions of Odd, this hardy grass endures the
+    cold and offers several benefits when brewed into tea.
+  DiscoveryHint: 
   Icon: sp_tallow_grass_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Grass
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3025
+  Order: 3069

@@ -21,6 +21,7 @@ MonoBehaviour:
   - tag_biome_props_ocean
   - tag_biome_props_desert
   - tag_biome_props_barrens
+  - tag_props
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
@@ -31,7 +32,8 @@ MonoBehaviour:
   TemperatureSource: 0
   IsRotationFixture: 0
   RotationFixtureKey: 
-  SkillLevel: 0
+  SkillLevel: 12
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0

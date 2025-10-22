@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
   m_Name: overworld_nation_human
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_overworld_nation_human
   DEBUG: 0
+  TooltipID: tooltip_overworld_nation_human
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}

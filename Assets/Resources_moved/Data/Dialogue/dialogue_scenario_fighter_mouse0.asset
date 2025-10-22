@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_scenario_fighter_mouse0
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AppearanceID: 
+  NextDialogueID: []
+  SpeakerTarget: 
+  Message: 
+  Response: []
+  ShowOnce: 1
+  DialogueSequences:
+  - ID: narrator0
+    Text: A flash of light pierces the eye as sun reflects off polished armor and
+      a giant of a man steps forth. He salutes you and speaks in a suprisingly high,
+      squeaky voice.
+    OverrideSpeaker: 1
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: mouse0
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: mouse0
+    Text: Greetings! I am on a quest to become the greatest warrior in the realm
+      so that my name may live on for eternity. Who here would be brave enough to
+      fight me?
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: I think we're good. Try the village over. They have some folks that like
+        to scrap.
+      NextSequenceID: mouse_leave
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: What did he say? Speak up!
+      NextSequenceID: mouse_debuff
+      ActionType: 1
+      SpeakerAction: 2
+      ActionDataID: faction_hostile
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: Your name will certainly live on. Because people will talk about this
+        beating you're about to receive for generations.
+      NextSequenceID: mouse_angry
+      ActionType: 1
+      SpeakerAction: 2
+      ActionDataID: faction_hostile
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: mouse_leave
+    Text: Thank you. I will continue my quest there.
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: 
+      ActionType: 1
+      SpeakerAction: 1
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: mouse_debuff
+    Text: Well. I. Uh.
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: Oh my god--WHAT!?
+      NextSequenceID: 
+      ActionType: 1
+      SpeakerAction: 3
+      ActionDataID: entity_status_embarrassed
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: mouse_angry
+    Text: We shall see.
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 2
+      ActionDataID: faction_hostile
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 

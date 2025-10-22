@@ -33,8 +33,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_spellbook_of_destruction_one_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: 4828d96773ad88d47b9cd4fcb72d4949, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_spellbook_of_destruction_one_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,6 +44,8 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_spellbook_of_destruction_one_hand
+  Attacks:
+  - attack_spellbook_of_destruction_one_hand_strike
   MerchantBuyValue: 100
   MerchantSellValue: 20
   TuneRating: 6
@@ -54,4 +56,5 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

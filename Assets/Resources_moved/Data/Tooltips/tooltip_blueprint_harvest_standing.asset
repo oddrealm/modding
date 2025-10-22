@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Harvest Crop
   NamePlural: 
   InlineIcon: <sprite=1183>
   Description: Collect items from mature crop plants
+  DiscoveryHint: 
   Icon: sp_job_harvest_plant_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1648
+  Order: 1668

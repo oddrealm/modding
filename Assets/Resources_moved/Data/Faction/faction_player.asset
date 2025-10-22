@@ -17,13 +17,16 @@ MonoBehaviour:
   TagIDs:
   - tag_factions
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   EnemyFactions:
   - faction_hostile
   IsPlayerControlled: 1
+  UnlockRacialResearch: 1
   CanRespec: 1
   SelectionColor: {r: 1, g: 0.8862746, b: 0.7686275, a: 1}
   CursorHoverColor: {r: 1, g: 0.8862745, b: 0.76862746, a: 0.2509804}
+  HighlightColor: {r: 1, g: 1, b: 1, a: 1}
   FactionPathing: 1
   Statuses:
   - entity_status_faction_player

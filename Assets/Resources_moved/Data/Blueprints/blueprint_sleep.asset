@@ -14,13 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_blueprint_sleep
-  TagIDs: []
+  TagIDs:
+  - tag_blueprints
   DiscoveryDependencies:
   - entity_status_tired
   - tag_can_sleep_in_bed
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SkillPriorityOverride: 98
   XP: 5
+  BaseSkillCheckFailXP: 5
+  BaseSkillLevel: 0
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   DesignationListOrder: -1
@@ -30,12 +33,16 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
+  CheckSkillFailure: 0
+  AddTargetAttributeToSkillFailCheck: 0
+  TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
   ShowItemTypeResourcePermissions: 0
   LocationID: tag_bed
   WorkPosition: 1
   PermissionType: 0
+  CanSitDuringJob: 0
   WorkerID: entity_status_tired
   TargetID: 
   JobActions:
@@ -47,7 +54,6 @@ MonoBehaviour:
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: attribute_energy
-  AddedProgressPerAction: 3
   ProgressMax: 10
   ProgressBarType: 2
   ProgressFXMaxX: 0
@@ -69,7 +75,7 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: tag_can_sleep_in_bed
   OnItemConsumeActionID: 
-  OnFinishedResourcesActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds:
@@ -98,6 +104,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 1
   DisposeIfRequirementsNotMet: 1
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 5
   AutoJobOnFreedCooldown: 1

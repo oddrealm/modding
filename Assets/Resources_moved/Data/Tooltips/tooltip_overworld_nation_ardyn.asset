@@ -16,18 +16,20 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Ardyn
   Name: Ardyn
-  NamePlural: 
+  NamePlural: Ardyn
   InlineIcon: <sprite=241>
   Description: The Ardyn are a feared and mistrusted race. Their rapid aging combined
     with the inherent ability to siphon the life-force from other entities has produced
     a culture intent on the dominance and subjugation of others. Their profound understanding
     of void magic and the construction of beautiful works of art is often overshadowed
     by their brutal nature.
+  DiscoveryHint: 
   Icon: sp_race_ardyn
   TextColor: {r: 0.8867924, g: 0.28025985, b: 0.52310747, a: 1}
-  Type: Nation
+  Type: Race
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Order: 205

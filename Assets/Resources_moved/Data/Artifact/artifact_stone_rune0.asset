@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b80e12425600b64da05dc49cd1706be, type: 3}
   m_Name: artifact_stone_rune0
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_artifact_stone_rune0
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_artifact_stone_rune0
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ResearchToUnlock: artifact_stone_rune0
   ItemID: item_stone_rune0

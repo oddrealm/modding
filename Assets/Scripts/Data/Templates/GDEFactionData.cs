@@ -7,6 +7,7 @@ public class GDEFactionData : Scriptable
     public string[] EnemyFactions;
     public HashSet<string> EnemyFactionsHash = new HashSet<string>();
     public bool IsPlayerControlled = false;
+    public bool UnlockRacialResearch = false;
     public bool CanRespec = false;
     public Color SelectionColor = Color.white;
     public Color CursorHoverColor = Color.white;
@@ -24,6 +25,7 @@ public class GDEFactionData : Scriptable
     public override void OnLoaded()
     {
         base.OnLoaded();
+        EnsureTag("tag_factions");
 
         for (int i = 0; EnemyFactions != null && i < EnemyFactions.Length; i++)
         {

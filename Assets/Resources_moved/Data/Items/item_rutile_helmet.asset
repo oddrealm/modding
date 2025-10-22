@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_rare
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 5
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -35,8 +37,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_rutile_helmet
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: d312a995a7cdf1e43be2fdbcb897fecc, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_rutile_helmet
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,10 +46,10 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_head
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 1015
   MerchantSellValue: 203
-  TuneRating: 6
+  TuneRating: 7
   ItemRarity: item_rarity_rare
   DecayRate: -1
   DecayItem: 
@@ -71,4 +73,5 @@ MonoBehaviour:
     Status: 
     SpawnID: 
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

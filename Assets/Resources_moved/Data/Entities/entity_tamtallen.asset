@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_tamtallen
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_tamtallen
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -36,7 +38,9 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: room_animal_enclosure
   GenerateNameKey: entity_names_tamtallen
-  InherentCombatAttacks: attack_group_tamtallen
+  Attacks:
+  - attack_jab_direct_bludgeon
+  - attack_stomp_direct_bludgeon
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 0
@@ -210,7 +214,6 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_tamtallen
   PermittedItemSlots: []
   PathingType: 1
   DefaultTuning: entity_tuning_tamtallen
@@ -226,21 +229,20 @@ MonoBehaviour:
   - entity_age_tamtallen_adult
   - entity_age_tamtallen_elder
   Diets:
-  - TagObjectID: tag_cooked_food
-    Priority: 0
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_item_type_remains
+  - TagID: tag_item_type_remains
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
     - entity_status_well_fed
-  - TagObjectID: tag_item_type_fish
+  - TagID: tag_item_type_fish
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
     - entity_status_well_fed
-  - TagObjectID: tag_item_type_meat
+  - TagID: tag_item_type_meat
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
@@ -248,7 +250,7 @@ MonoBehaviour:
   AutoJobs:
   - BlueprintID: blueprint_eat_item
     Settings:
-      Priority: 4
+      Priority: 3
       AutoJobType: 1
   - BlueprintID: blueprint_drink_item
     Settings:
@@ -256,7 +258,7 @@ MonoBehaviour:
       AutoJobType: 1
   - BlueprintID: blueprint_drink_from_water
     Settings:
-      Priority: 4
+      Priority: 3
       AutoJobType: 1
   - BlueprintID: blueprint_sleep_on_ground
     Settings:

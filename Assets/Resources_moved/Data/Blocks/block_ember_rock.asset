@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_block_ember_rock
   TagIDs:
   - tag_terrain_gen_ember_rock
+  - tag_blocks
   DiscoveryDependencies:
   - blueprint_block_ember_rock
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -27,7 +28,8 @@ MonoBehaviour:
   TemperatureSource: 0
   IsRotationFixture: 1
   RotationFixtureKey: 
-  SkillLevel: 1
+  SkillLevel: 4
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -65,6 +67,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: sfx_stone_remove
   InteractSFX: sfx_stone_interact

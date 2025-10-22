@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_pregnant_gharox
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_pregnant
   DEBUG: 0
+  TooltipID: tooltip_entity_status_pregnant_gharox
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
   ExpireTimeMinutesMin: 5040

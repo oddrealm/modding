@@ -40,7 +40,9 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_egg_raw
+  CharacterColorMaskID: 
   CharacterColorMask: {fileID: 0}
+  AccessoryID: 
   AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
@@ -84,6 +86,7 @@ MonoBehaviour:
     Status: 
     SpawnID: entity_chicken
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions:
   - ActionID: tag_can_hatch
     ActivationTime: 2880

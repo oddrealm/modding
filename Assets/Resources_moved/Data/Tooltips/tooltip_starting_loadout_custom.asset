@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Custom
   Name: Custom
   NamePlural: 
-  InlineIcon: 
+  InlineIcon: <sprite=426>
   Description: Choose your own starting items, settlers, and animals.
+  DiscoveryHint: 
   Icon: sp_starting_loadout_custom
   TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Type: 
+  Type: Loadout
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1204
+  Order: 1203

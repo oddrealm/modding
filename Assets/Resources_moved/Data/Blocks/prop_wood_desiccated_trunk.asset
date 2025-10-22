@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_prop_wood_desiccated_trunk
   TagIDs:
   - tag_biome_props_desert
+  - tag_props
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
@@ -25,7 +26,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
-  SkillLevel: 1
+  RotationFixtureKey: 
+  SkillLevel: 3
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -63,6 +66,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_chop_wood

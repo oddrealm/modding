@@ -20,6 +20,7 @@ MonoBehaviour:
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 4
   UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
@@ -33,8 +34,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_steel_bow_two_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: f5c8ae85c6de87c40b1a22aedc09c61b, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_steel_bow_two_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 0
@@ -43,7 +44,8 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_steel_bow_two_hand
+  Attacks:
+  - attack_steel_bow_two_hand_pierce
   MerchantBuyValue: 540
   MerchantSellValue: 108
   TuneRating: 5
@@ -54,5 +56,5 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

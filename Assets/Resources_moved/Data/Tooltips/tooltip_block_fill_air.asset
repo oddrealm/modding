@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Air
   Name: Air
   NamePlural: 
   InlineIcon: <sprite=1156>
   Description: Smells good!
+  DiscoveryHint: 
   Icon: sp_block_none_icon
   TextColor: {r: 0.53844786, g: 0.8107407, b: 0.9433962, a: 1}
-  Type: Fill
+  Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Order: 108

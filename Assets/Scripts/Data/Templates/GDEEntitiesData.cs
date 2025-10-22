@@ -3,8 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Entities")]
-public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationData
+public class GDEEntitiesData : Scriptable, ISimulationData
 {
+
+    [System.Serializable]
+    public struct AttributeTuning
+    {
+        public string AttributeID;
+        public int StartingBase;
+    }
+
     [System.Serializable]
     public struct SkillPermission
     {
@@ -31,6 +39,7 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
     [System.Serializable]
     public struct DietSettings
     {
+        public string TagID;
         public string TagObjectID;
         public int Priority;
         public BuffData[] Buffs;
@@ -61,19 +70,14 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
         }
     }
 
+    public string Race = "";
     [Header("Lifetime Minutes (-1 = disabled)")]
     public int MaxLifeTime = -1;
-
     [Header("Max amount to simulate for world gen")]
     public int MaxDefaultSimTime = 24 * 60 * 10;
-
     [Header("Simulation ID")]
     public string EntitySimulationID = "";
-
     public string SizeTagID = "tag_entity_size_medium";
-
-    public GDETagsData SizeTag { get; private set; }
-
     public string[] LanguagesSpoken = new[] { "language_engel" };
     public string[] DefaultLeaderRoles = new[] { "" };
     public EntityCompanionTypes CompanionType = 0;
@@ -86,202 +90,40 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
     public bool CanBreathUnderWater = false;
     public bool TakeLastNameOfFamilyMembers = false;
     public int ReproductionIntervalMinutes = 0;
-
     public string RequiredReproductionRoom = "";
     public string GenerateNameKey = "";
-    public string InherentCombatAttacks = "";
-
-    public List<SkillPermission> SkillPermissions = new List<SkillPermission>();
-
-    public Dictionary<string, SkillPermission> SkillPermissionsByID { get; private set; } = new Dictionary<string, SkillPermission>();
-
-    public bool TryGetSkillPermission(string skillID, out SkillPermission permission)
-    {
-#if UNITY_EDITOR
-        if (!Application.isPlaying)
-        {
-            for (int i = 0; i < SkillPermissions.Count; i++)
-            {
-                if (SkillPermissions[i].SkillID == skillID)
-                {
-                    permission = SkillPermissions[i];
-                    return true;
-                }
-            }
-        }
-#endif
-        return SkillPermissionsByID.TryGetValue(skillID, out permission);
-    }
-
-    public void SetSkillPermission(SkillPermission permission)
-    {
-        for (int i = 0; i < SkillPermissions.Count; i++)
-        {
-            if (SkillPermissions[i].SkillID != permission.SkillID)
-            {
-                continue;
-            }
-
-            SkillPermissions[i] = permission;
-
-            return;
-        }
-
-        SkillPermissions.Add(permission);
-
-        if (!SkillPermissionsByID.ContainsKey(permission.SkillID))
-        {
-            SkillPermissionsByID.Add(permission.SkillID, permission);
-        }
-        else
-        {
-            SkillPermissionsByID[permission.SkillID] = permission;
-        }
-    }
-
-    public SkillPermission GetSkillPermissionByID(string skillID)
-    {
-        if (TryGetSkillPermission(skillID, out var permission))
-        {
-            return permission;
-        }
-
-        SkillPermission defaultPermission = new SkillPermission()
-        {
-            SkillID = skillID,
-            PlayerCanEdit = true,
-            EnabledByDefault = false
-        };
-
-        return defaultPermission;
-    }
-
-    public List<ProfessionPermission> ProfessionPermissions = new List<ProfessionPermission>();
-
-    public Dictionary<string, ProfessionPermission> ProfessionPermissionsByID { get; private set; } = new Dictionary<string, ProfessionPermission>();
-
-    public bool TryGetProfessionPermission(string ProfessionID, out ProfessionPermission permission)
-    {
-#if UNITY_EDITOR
-        if (!Application.isPlaying)
-        {
-            for (int i = 0; i < ProfessionPermissions.Count; i++)
-            {
-                if (ProfessionPermissions[i].ProfessionID == ProfessionID)
-                {
-                    permission = ProfessionPermissions[i];
-                    return true;
-                }
-            }
-        }
-#endif
-        return ProfessionPermissionsByID.TryGetValue(ProfessionID, out permission);
-    }
-
-    public void SetProfessionPermission(ProfessionPermission permission)
-    {
-        for (int i = 0; i < ProfessionPermissions.Count; i++)
-        {
-            if (ProfessionPermissions[i].ProfessionID != permission.ProfessionID)
-            {
-                continue;
-            }
-
-            ProfessionPermissions[i] = permission;
-
-            return;
-        }
-
-        ProfessionPermissions.Add(permission);
-
-        if (!ProfessionPermissionsByID.ContainsKey(permission.ProfessionID))
-        {
-            ProfessionPermissionsByID.Add(permission.ProfessionID, permission);
-        }
-        else
-        {
-            ProfessionPermissionsByID[permission.ProfessionID] = permission;
-        }
-    }
-
-    public ProfessionPermission GetProfessionPermissionByID(string ProfessionID)
-    {
-        if (TryGetProfessionPermission(ProfessionID, out var permission))
-        {
-            return permission;
-        }
-
-        ProfessionPermission defaultPermission = new ProfessionPermission()
-        {
-            ProfessionID = ProfessionID,
-            CanAssign = true,
-            CanSpawnWith = true
-        };
-
-        return defaultPermission;
-    }
-
-    public bool IsPermittedProfession(string professionID)
-    {
-        if (ProfessionPermissionsByID.TryGetValue(professionID, out var permission))
-        {
-            return permission.CanSpawnWith;
-        }
-
-        return false;
-    }
-
-    public string Race = "";
+    public string[] Attacks = System.Array.Empty<string>();
+    public List<SkillPermission> SkillPermissions = new();
+    public List<ProfessionPermission> ProfessionPermissions = new();
     public string[] PermittedItemSlots;
-    public HashSet<string> PermittedItemSlotsHash = new HashSet<string>();
+    public HashSet<string> PermittedItemSlotsHash = new();
     public PathingTypes PathingType = 0;
     public string DefaultTuning = "";
     public string DeathItemSpawnGroup = "";
-    public List<string> PreyRaces = new List<string>();
-    public List<string> ProhibitedStatuses = new List<string>();
-    public List<string> Statuses = new List<string>();
-    public List<string> Ages = new List<string>();
-    public List<DietSettings> Diets = new List<DietSettings>();
-    public List<EntityAutoJob> AutoJobs = new List<EntityAutoJob>();
+    public List<string> PreyRaces = new();
+    public List<string> ProhibitedStatuses = new();
+    public List<string> Statuses = new();
+    public List<string> Ages = new();
+    public List<DietSettings> Diets = new();
+    public List<EntityAutoJob> AutoJobs = new();
+    public List<AttributeTuning> Attributes = new();
+    public List<string> Biomes = new();
+    public HashSet<string> BiomesHash = new();
+    public SimOptions[] StateOptions;
 
-    [System.NonSerialized]
-    public Dictionary<string, DietSettings> DietByTagObjectID = new Dictionary<string, DietSettings>();
-
-    public bool TryGetDietByTagObjectID(string tagObjectID, out DietSettings diet)
-    {
-        return DietByTagObjectID.TryGetValue(tagObjectID, out diet);
-    }
-
-    public List<AttributeTuning> Attributes = new List<AttributeTuning>();
-
-    public List<string> Biomes = new List<string>();
-    public HashSet<string> BiomesHash = new HashSet<string>();
-
-    public bool CanShowInProgressUI
-    {
-        get
-        {
-            return true;
-        }
-    }
-
-    [System.Serializable]
-    public struct AttributeTuning
-    {
-        public string AttributeID;
-        public int StartingBase;
-    }
-
-    public void SetSimulationID(string simID)
-    {
-        EntitySimulationID = simID;
-    }
-
-    public string SimulationID { get { return EntitySimulationID; } }
     private GDESimulationData _simData;
-    public GDESimulationData Simulation { get { return _simData; } }
+    private readonly string[] _simStates = new string[]
+    {
+    };
 
+    public Dictionary<string, List<DietSettings>> DietAffectsByTagObjectID { get; private set; } = new Dictionary<string, List<DietSettings>>();
+    public Dictionary<string, ProfessionPermission> ProfessionPermissionsByID { get; private set; } = new Dictionary<string, ProfessionPermission>();
+    public Dictionary<string, SkillPermission> SkillPermissionsByID { get; private set; } = new Dictionary<string, SkillPermission>();
+    public GDETagsData SizeTag { get; private set; }
+    public string SimulationID { get { return EntitySimulationID; } }
+    public GDESimulationData Simulation { get { return _simData; } }
     public SimTime MaxSimTime { get { return MaxDefaultSimTime; } }
+    public HashSet<EntityAgeTypes> PermittedAgeTypes { get; private set; } = new HashSet<EntityAgeTypes>();
 
 #if ODD_REALM_APP
     public override void Init()
@@ -320,6 +162,14 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
             {
                 Debug.LogError($"Duplicate skill permission: {Key}.{SkillPermissions[i].SkillID}");
             }
+        }
+
+        PermittedAgeTypes.Clear();
+
+        for (int i = 0; i < Ages.Count; i++)
+        {
+            GDEEntityAgeData ageData = DataManager.GetTagObject<GDEEntityAgeData>(Ages[i]);
+            PermittedAgeTypes.Add(ageData.AgeType);
         }
 
         ProfessionPermissionsByID.Clear();
@@ -387,21 +237,44 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
             }
         }
 
-        DietByTagObjectID.Clear();
+        DietAffectsByTagObjectID.Clear();
 
         for (int i = 0; i < Diets.Count; i++)
         {
-            if (!DietByTagObjectID.ContainsKey(Diets[i].TagObjectID))
+            if (!Diets[i].HasAffects) { continue; }
+
+            if (!string.IsNullOrEmpty(Diets[i].TagObjectID))
             {
-                DietByTagObjectID.Add(Diets[i].TagObjectID, Diets[i]);
+                if (!DietAffectsByTagObjectID.ContainsKey(Diets[i].TagObjectID))
+                {
+                    DietAffectsByTagObjectID.Add(Diets[i].TagObjectID, new List<DietSettings>() { Diets[i] });
+                }
+                else
+                {
+                    DietAffectsByTagObjectID[Diets[i].TagObjectID].Add(Diets[i]);
+                }
+            }
+            else if (DataManager.TryGetTagObjectsByTag(Diets[i].TagID, out var tagObjs))
+            {
+                for (int j = 0; j < tagObjs.Count; j++)
+                {
+                    if (!DietAffectsByTagObjectID.ContainsKey(tagObjs[j].Key))
+                    {
+                        DietAffectsByTagObjectID.Add(tagObjs[j].Key, new List<DietSettings>() { Diets[i] });
+                    }
+                    else
+                    {
+                        DietAffectsByTagObjectID[tagObjs[j].Key].Add(Diets[i]);
+                    }
+                }
             }
             else
             {
-                Debug.LogError($"Duplicate diet tag object ID: {Key}.{Diets[i].TagObjectID}");
+                Debug.LogError($"Diet tag ID has no tag objects: {Key}.{Diets[i].TagID}");
             }
         }
 
-        List<AttributeTuning> passed = new List<AttributeTuning>();
+        List<AttributeTuning> passed = new();
 
         for (int i = 0; i < Attributes.Count; i++)
         {
@@ -436,12 +309,155 @@ public class GDEEntitiesData : Scriptable/*, IProgressionObject*/, ISimulationDa
     }
 #endif
 
-    [System.NonSerialized]
-    private string[] _simStates = new string[]
+    public bool TryGetSkillPermission(string skillID, out SkillPermission permission)
     {
-    };
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            for (int i = 0; i < SkillPermissions.Count; i++)
+            {
+                if (SkillPermissions[i].SkillID == skillID)
+                {
+                    permission = SkillPermissions[i];
+                    return true;
+                }
+            }
+        }
+#endif
+        return SkillPermissionsByID.TryGetValue(skillID, out permission);
+    }
 
-    public SimOptions[] StateOptions;
+    public void SetSkillPermission(SkillPermission permission)
+    {
+        for (int i = 0; i < SkillPermissions.Count; i++)
+        {
+            if (SkillPermissions[i].SkillID != permission.SkillID)
+            {
+                continue;
+            }
+
+            SkillPermissions[i] = permission;
+
+            return;
+        }
+
+        SkillPermissions.Add(permission);
+
+        if (!SkillPermissionsByID.ContainsKey(permission.SkillID))
+        {
+            SkillPermissionsByID.Add(permission.SkillID, permission);
+        }
+        else
+        {
+            SkillPermissionsByID[permission.SkillID] = permission;
+        }
+    }
+
+    public SkillPermission GetSkillPermissionByID(string skillID)
+    {
+        if (TryGetSkillPermission(skillID, out var permission))
+        {
+            return permission;
+        }
+
+        SkillPermission defaultPermission = new()
+        {
+            SkillID = skillID,
+            PlayerCanEdit = true,
+            EnabledByDefault = false
+        };
+
+        return defaultPermission;
+    }
+
+    public bool TryGetProfessionPermission(string ProfessionID, out ProfessionPermission permission)
+    {
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            for (int i = 0; i < ProfessionPermissions.Count; i++)
+            {
+                if (ProfessionPermissions[i].ProfessionID == ProfessionID)
+                {
+                    permission = ProfessionPermissions[i];
+                    return true;
+                }
+            }
+        }
+#endif
+        return ProfessionPermissionsByID.TryGetValue(ProfessionID, out permission);
+    }
+
+    public void SetProfessionPermission(ProfessionPermission permission)
+    {
+        for (int i = 0; i < ProfessionPermissions.Count; i++)
+        {
+            if (ProfessionPermissions[i].ProfessionID != permission.ProfessionID)
+            {
+                continue;
+            }
+
+            ProfessionPermissions[i] = permission;
+
+            return;
+        }
+
+        ProfessionPermissions.Add(permission);
+
+        if (!ProfessionPermissionsByID.ContainsKey(permission.ProfessionID))
+        {
+            ProfessionPermissionsByID.Add(permission.ProfessionID, permission);
+        }
+        else
+        {
+            ProfessionPermissionsByID[permission.ProfessionID] = permission;
+        }
+    }
+
+    public ProfessionPermission GetProfessionPermissionByID(string ProfessionID)
+    {
+        if (TryGetProfessionPermission(ProfessionID, out var permission))
+        {
+            return permission;
+        }
+
+        ProfessionPermission defaultPermission = new()
+        {
+            ProfessionID = ProfessionID,
+            CanAssign = true,
+            CanSpawnWith = true
+        };
+
+        return defaultPermission;
+    }
+
+    public bool IsPermittedProfession(string professionID)
+    {
+        if (ProfessionPermissionsByID.TryGetValue(professionID, out var permission))
+        {
+            return permission.CanSpawnWith;
+        }
+
+        return false;
+    }
+
+    public bool TryGetDietAffectsByTagObjID(string tagObjectID, out List<DietSettings> dietAffects)
+    {
+        return DietAffectsByTagObjectID.TryGetValue(tagObjectID, out dietAffects);
+    }
+
+    public bool CanShowInProgressUI
+    {
+        get
+        {
+            return true;
+        }
+    }
+
+    public void SetSimulationID(string simID)
+    {
+        EntitySimulationID = simID;
+    }
 
     public string[] GetSimStates()
     {

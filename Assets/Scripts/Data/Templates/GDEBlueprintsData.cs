@@ -55,7 +55,8 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     [Header("Used to force jobs to be done. i.e., blueprint_eat_item = 99")]
     public int SkillPriorityOverride = -1;
     public int XP = 10;
-    public bool AwardXPForEachAction = false;
+    public int BaseSkillCheckFailXP = 5;
+    public int BaseSkillLevel = 1;
     public string CategoryID = "blueprint_category_jobs";
     public int DesignationListOrder = -1;
     public string ResearchKey = "";
@@ -64,6 +65,8 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     public bool MarkItemsAtLocationClaimed = false;
     public bool MarkItemsAtLocationUnclaimed = false;
     public int SimTime = 0;
+    [Header("Skill Failures:")]
+    public string TargetAttributeForSkillFailCheck = "";
     public bool AddBlockSkillToJobSkill = false;
     [Header("Resource Permissions:")]
     public bool OnlyUseResourcesAtJobLocation = false;
@@ -87,7 +90,6 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     };
     [Header("Progress:")]
     public string ProgressWorkerAttribute = "";
-    public int AddedProgressPerAction = 0;
     public int ProgressMax = 100;
     public ProgressBarTypes ProgressBarType = ProgressBarTypes.CIRCLE;
     [Header("Progress FX X:")]
@@ -122,7 +124,6 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     [Header("Hack")]
     public bool TryCatchFish = false;
     public bool TryHarvestFruit = false;
-    public bool CanSelectTarget = false;
     [Header("Action Text:")]
     public bool ShowWorkOutputActionText = true;
     [Header("FX:")]
@@ -137,13 +138,10 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     public List<string> PermittedCursorVisualsOverride = new List<string>();
     public List<string> ProhibitedCursorVisualsOverride = new List<string>();
     public List<string> Visuals = new List<string>();
-    public bool ShowVisualsIfStarted = true;
     [Header("Auto-Job Settings")]
     public int MaxAutoJobQueueCount = 9;
     public bool DisposeIfRequirementsNotMet;
     public bool DisposeIfNoSourceEntity = false;
-    public int AutoJobOnCreateCooldown = 0;
-    public int AutoJobOnFreedCooldown = 0;
 
     public bool CanShowInProgressUI { get { return true; } }
     public bool HasRotationFixture { get; private set; }
@@ -176,22 +174,66 @@ public class GDEBlueprintsData : Scriptable, IProgressionObject
     public bool IsStockpileJob { get; private set; }
     public bool IsTradeJob { get; private set; }
     public ITagObject SpawnTagObject { get; private set; }
+    public List<string> UsedBy { get; private set; } = new();
+    public List<string> PermittedSeasons { get; private set; } = new();
+    public HashSet<string> PermittedSeasonsHash { get; private set; } = new();
 
 #if ODD_REALM_APP
     public override void SetOrderKey(string orderKey)
     {
-        orderKey = CategoryID + "/" + orderKey;
+        orderKey = $"{CategoryID}/{BaseSkillLevel:D4}/{orderKey}";
         base.SetOrderKey(orderKey);
     }
 
     public override void OnLoaded()
     {
         base.OnLoaded();
+        EnsureTag("tag_blueprints");
 
         if (!string.IsNullOrEmpty(SpawnTagObjectID))
         {
             SpawnTagObject = DataManager.GetTagObject(SpawnTagObjectID);
         }
+
+        PermittedSeasons.Clear();
+        PermittedSeasonsHash.Clear();
+
+        if (!string.IsNullOrEmpty(SpawnTagObjectID))
+        {
+            ITagObject tagObj = DataManager.GetTagObject(SpawnTagObjectID);
+
+            if (tagObj is GDEBlockPlantsData plantData)
+            {
+                for (int i = 0; i < plantData.Seasons.Count; i++)
+                {
+                    if (PermittedSeasonsHash.Add(plantData.Seasons[i]))
+                    {
+                        PermittedSeasons.Add(plantData.Seasons[i]);
+                    }
+                }
+            }
+        }
+
+        UsedBy.Clear();
+        List<ITagObject> roomTemplates = DataManager.GetTagObjects<GDERoomTemplatesData>();
+
+        for (int i = 0; i < roomTemplates.Count; i++)
+        {
+            GDERoomTemplatesData roomTemplate = DataManager.GetTagObject<GDERoomTemplatesData>(roomTemplates[i].Key);
+
+            if (roomTemplate == null) { continue; }
+            if (roomTemplate.IsNULL) { continue; }
+
+            for (int j = 0; roomTemplate.DefaultAutoJobs != null && j < roomTemplate.DefaultAutoJobs.Count; j++)
+            {
+                if (roomTemplate.DefaultAutoJobs[j].BlueprintID == Key)
+                {
+                    UsedBy.Add(roomTemplate.Key);
+                    break;
+                }
+            }
+        }
+
 
         IsTradeJob = Key == "blueprint_buy_item";
         IsStockpileJob = Key == "blueprint_stock_room";

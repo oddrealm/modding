@@ -16,12 +16,15 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Chicken
   NamePlural: Chickens
   InlineIcon: <sprite=49>
-  Description: 
+  Description: An ancient and proud race.
+  DiscoveryHint: We used to joke that chickens were the true masters of this realm.
+    Only a race so clever could become so ubiquitous.
   Icon: sp_race_chicken
   TextColor: {r: 0.49701598, g: 0.8773585, b: 0.17381631, a: 1}
   Type: Race

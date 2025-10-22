@@ -16,14 +16,17 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Stone Well
   NamePlural: 
   InlineIcon: <sprite=655>
-  Description: 
+  Description: Wells fill with water over time, and containers can then be filled
+    there.
+  DiscoveryHint: 
   Icon: sp_stone_well_icon
   TextColor: {r: 0.68235296, g: 0.7294118, b: 0.7490196, a: 1}
   Type: Station
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2935
+  Order: 2989

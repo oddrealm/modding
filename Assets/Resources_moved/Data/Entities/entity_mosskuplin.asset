@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_mosskuplin
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_mosskuplin
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -36,7 +38,9 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_mosskuplin
-  InherentCombatAttacks: attack_group_mosskuplin
+  Attacks:
+  - attack_slam_direct_bludgeon
+  - attack_jab_direct_bludgeon
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 0
@@ -48,8 +52,8 @@ MonoBehaviour:
     PlayerCanEdit: 0
     EnabledByDefault: 0
   - SkillID: skill_carry
-    PlayerCanEdit: 0
-    EnabledByDefault: 0
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
   - SkillID: skill_cook
     PlayerCanEdit: 0
     EnabledByDefault: 0
@@ -210,34 +214,52 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_mosskuplin
-  PermittedItemSlots: []
+  PermittedItemSlots:
+  - item_slot_back
   PathingType: 1
   DefaultTuning: entity_tuning_mosskuplin
   DeathItemSpawnGroup: spawns_entity_death_mosskuplin
   PreyRaces: []
   ProhibitedStatuses: []
   Statuses:
+  - entity_status_metabolism
   - entity_status_aging_by_day
   Ages:
   - entity_age_mosskuplin_adult
   - entity_age_mosskuplin_elder
   Diets:
-  - TagObjectID: tag_can_eat
-    Priority: 2
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_can_drink
-    Priority: 2
-    Buffs: []
-    Statuses:
-    - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
+  - TagID: tag_item_type_water
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
-    - entity_status_well_fed
-  AutoJobs: []
+    - entity_status_hydrated
+  - TagID: tag_item_type_vegetable
+    TagObjectID: 
+    Priority: 3
+    Buffs: []
+    Statuses: []
+  AutoJobs:
+  - BlueprintID: blueprint_eat_item
+    Settings:
+      Priority: 3
+      AutoJobType: 1
+  - BlueprintID: blueprint_drink_item
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+  - BlueprintID: blueprint_drink_from_water
+    Settings:
+      Priority: 3
+      AutoJobType: 1
+  - BlueprintID: blueprint_sleep_on_ground
+    Settings:
+      Priority: 2
+      AutoJobType: 1
+  - BlueprintID: blueprint_drink_from_well
+    Settings:
+      Priority: 3
+      AutoJobType: 1
   Attributes:
   - AttributeID: attribute_age
     StartingBase: 1
@@ -246,7 +268,7 @@ MonoBehaviour:
   - AttributeID: attribute_attack_speed_mod
     StartingBase: 0
   - AttributeID: attribute_climb_speed
-    StartingBase: 2
+    StartingBase: 12
   - AttributeID: attribute_cold_tolerance
     StartingBase: 0
   - AttributeID: attribute_crit_rate
@@ -256,7 +278,7 @@ MonoBehaviour:
   - AttributeID: attribute_energy
     StartingBase: 100
   - AttributeID: attribute_evasion
-    StartingBase: 10
+    StartingBase: 50
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
@@ -266,7 +288,7 @@ MonoBehaviour:
   - AttributeID: attribute_level
     StartingBase: 1
   - AttributeID: attribute_move_speed
-    StartingBase: 24
+    StartingBase: 30
   - AttributeID: attribute_none
     StartingBase: 0
   - AttributeID: attribute_oxygen

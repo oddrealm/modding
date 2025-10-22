@@ -16,9 +16,10 @@ MonoBehaviour:
   TooltipID: tooltip_notif_combat
   TagIDs:
   - tag_notif_group_entity
+  - tag_notif_group_combat
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  NotifGroup: tag_notif_group_entity
+  NotifGroup: tag_notif_group_combat
   SFXGroupID: sfx_notif_bad
   DefaultPermissions:
     ShowPreview: 0

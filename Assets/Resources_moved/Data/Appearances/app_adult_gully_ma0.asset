@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_gully_ma0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_gully_male_select_negative
   OrderPositiveSFX: sfx_gully_male_order_positive
   OrderNegativeSFX: sfx_gully_male_order_negative
+  ColorMaskID: ccm_gully_ma0
+  AnimationsID: gully
   ColorMask: {fileID: 11400000, guid: 4205223a5777ce54880011c7255d34b7, type: 2}
   Animations: {fileID: 11400000, guid: 7ef3b597442c16941b4ae322af96a950, type: 2}

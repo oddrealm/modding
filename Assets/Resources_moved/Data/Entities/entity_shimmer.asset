@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_shimmer
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_void_woken
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -37,7 +39,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 0
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_shimmer
-  InherentCombatAttacks: attack_group_shimmer
+  Attacks:
+  - attack_shimmer_ignite_source_aoe_energy
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 0
@@ -211,7 +214,6 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 0
     CanSpawnWith: 0
-  Race: race_unknown
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -230,21 +232,7 @@ MonoBehaviour:
   - entity_status_aging_by_day
   Ages:
   - entity_age_shimmer_adult
-  Diets:
-  - TagObjectID: tag_can_eat
-    Priority: 2
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_can_drink
-    Priority: 2
-    Buffs: []
-    Statuses:
-    - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
-    Priority: 3
-    Buffs: []
-    Statuses:
-    - entity_status_well_fed
+  Diets: []
   AutoJobs: []
   Attributes:
   - AttributeID: attribute_age

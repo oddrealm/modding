@@ -16,12 +16,14 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Free Entity
   NamePlural: 
   InlineIcon: <sprite=891>
   Description: Used to free entities that have been trapped.
+  DiscoveryHint: 
   Icon: sp_job_free_entity_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job

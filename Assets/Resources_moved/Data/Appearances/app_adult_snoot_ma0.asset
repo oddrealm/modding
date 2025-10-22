@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_snoot_ma0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_snoot_male_select_negative
   OrderPositiveSFX: sfx_snoot_male_order_positive
   OrderNegativeSFX: sfx_snoot_male_order_negative
+  ColorMaskID: ccm_snoot_ma0
+  AnimationsID: snoot
   ColorMask: {fileID: 11400000, guid: e529529b461fc9e40a8e87db46e16a9f, type: 2}
   Animations: {fileID: 11400000, guid: b1897eb7dc6788a4b9c5076dbfe4e4b5, type: 2}

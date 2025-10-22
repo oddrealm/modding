@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73b2bfdc033e354fa9a09aeafd5628c, type: 3}
   m_Name: starting_loadout_ardyn_tyrants
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_starting_loadout_ardyn_tyrants
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_starting_loadout_ardyn_tyrants
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Public: 1
   CanEdit: 0
   EntitySpawnGroupID: esg_starting_loadout_ardyn_tyrants
   Items: spawns_starting_loadout_ardyn_tyrants
-  ContainerIDs: []
-  StartingRen: 1000
+  ContainerIDs:
+  - prop_astracube

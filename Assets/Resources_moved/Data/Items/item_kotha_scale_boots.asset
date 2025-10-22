@@ -35,7 +35,9 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_kotha_scale_boots
+  CharacterColorMaskID: ccm_item_kotha_scale_boots
   CharacterColorMask: {fileID: 11400000, guid: f04e21c3b93995246b3f2020c08f417f, type: 2}
+  AccessoryID: 
   AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
@@ -71,5 +73,5 @@ MonoBehaviour:
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

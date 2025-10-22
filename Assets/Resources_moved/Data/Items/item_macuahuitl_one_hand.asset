@@ -33,8 +33,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_macuahuitl_one_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: b4f2abc9b3b209b4eaa89f6c83c2fdcb, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_macuahuitl_one_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,6 +44,9 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_macuahuitl_one_hand
+  Attacks:
+  - attack_macuahuitl_one_hand_cut
+  - attack_macuahuitl_one_hand_pierce
   MerchantBuyValue: 150
   MerchantSellValue: 30
   TuneRating: 2

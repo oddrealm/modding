@@ -24,7 +24,26 @@ public class GDEAppearancesData : Scriptable
     public string SelectNegativeSFX = "";
     public string OrderPositiveSFX = "";
     public string OrderNegativeSFX = "";
+    public string ColorMaskID = "";
+    public string AnimationsID = "";
 
-    public GDECharacterColorMaskData ColorMask;
-    public GDEAnimationSetGroupsData Animations;
+    public GDECharacterColorMaskData ColorMask { get; private set; }
+    public GDEAnimationSetGroupsData Animations { get; private set; }
+
+#if ODD_REALM_APP
+    public override void OnLoaded()
+    {
+        base.OnLoaded();
+
+        if (!string.IsNullOrEmpty(ColorMaskID))
+        {
+            ColorMask = DataManager.GetTagObject<GDECharacterColorMaskData>(ColorMaskID);
+        }
+
+        if (!string.IsNullOrEmpty(AnimationsID))
+        {
+            Animations = DataManager.GetTagObject<GDEAnimationSetGroupsData>(AnimationsID);
+        }
+    }
+#endif
 }

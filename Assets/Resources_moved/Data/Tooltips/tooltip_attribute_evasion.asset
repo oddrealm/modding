@@ -12,19 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_evasion
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Evasion
   Name: Evasion
   NamePlural: 
   InlineIcon: <sprite=82>
-  Description: The chance to dodge an incoming attack.
+  Description: The chance to dodge an incoming attack. e.g., An Evasion of 1 is a
+    1 in 100 chance to dodge.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.069686726, g: 0.5471698, b: 0.32832342, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1031
+  Order: 1434

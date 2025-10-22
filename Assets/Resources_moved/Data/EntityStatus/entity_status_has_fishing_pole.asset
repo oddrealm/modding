@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_has_fishing_pole
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_has_fishing_pole
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_entity_status_has_fishing_pole
+  TagIDs:
+  - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 0
   ShowIndicator: 0
   Notification: 
   ExpireTimeMinutesMin: 0
@@ -27,9 +27,14 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
-  TooltipBackgroundColor: {r: 0.105882354, g: 0.47219813, b: 0.6666667, a: 1}
+  TooltipBackgroundColor: {r: 0.105882354, g: 0.47058824, b: 0.6666667, a: 1}
   ColorMask: 
   Accessory: 
   IdleFXGroup: 

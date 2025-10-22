@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_rare
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 5
   UsageTags:
   - tag_can_smelt
   MaxLifeTime: 0
@@ -35,15 +37,15 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_rutile_ore
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 0}
+  CharacterColorMaskID: 
+  AccessoryID: 
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
   PermittedSlots: []
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 255
   MerchantSellValue: 51
   TuneRating: 6
@@ -62,4 +64,5 @@ MonoBehaviour:
     Status: 
     SpawnID: item_rutile_ingot
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

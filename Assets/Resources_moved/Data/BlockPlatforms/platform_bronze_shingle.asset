@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e256d1ab8c0d2438043b751e626442, type: 3}
   m_Name: platform_bronze_shingle
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_platform_bronze_shingle
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_platform_bronze_shingle
+  TagIDs:
+  - tag_platform
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Index: 16
@@ -23,14 +23,13 @@ MonoBehaviour:
   PhysicsHeatPass: 0
   HasMeltThreshold: 0
   MeltThreshold: 0
-  NeedsSupport: 0
   PermittedPaths: 31
   Permissions: 8388608
   Prohibited: 32
   MovementSpeedMod: 1
   MovementCost: 1
   IsRoof: 1
-  CanGrow: 0
+  CanGrowPlants: 0
   GrowTime: -1
   GrowLightReq: -1
   BlocksCursorRaycast: 1

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsThreat: 1
   NotifOnActivate: notif_overworld_party_bandits
@@ -25,11 +26,12 @@ MonoBehaviour:
   Conditions: []
   PartyID: party_bandits_human
   IsScheduled: 1
+  Biomes: []
   ActivationChance:
     Chance: 1
     SampleSize: 10
   MaxActivations: 0
-  MinKingdomLevel: 4
+  MinKingdomLevel: 8
   MinMinutesSinceSettlementStart: 1440
   MinMinutesSinceLastScenario: 1440
   MinMinutesSinceLastSameScenario: 4320

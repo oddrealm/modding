@@ -19,6 +19,7 @@ MonoBehaviour:
   - tag_mature_tree
   - tag_mature_fruit
   - tag_can_be_watered
+  - tag_plants
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 7200
@@ -71,6 +72,7 @@ MonoBehaviour:
   PlantType: 2
   PlantPermission: 0
   CanHaveGroup: 1
+  CanGrowInAnyRoom: 0
   Visuals:
   - visuals_plant_tree_nila_sapling
   RemoveFX: fx_remove_plant

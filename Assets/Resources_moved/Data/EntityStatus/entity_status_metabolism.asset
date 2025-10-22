@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_entity_status_metabolism
-  TagIDs: []
+  TagIDs:
+  - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
   ExpireTimeMinutesMin: 0
@@ -95,7 +96,7 @@ MonoBehaviour:
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 5668703833841467450
+    - rid: 8804896918184394834
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
@@ -111,7 +112,7 @@ MonoBehaviour:
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 5668703833841467451
+    - rid: 8804896918184394835
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
@@ -127,7 +128,7 @@ MonoBehaviour:
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 5668703833841467452
+    - rid: 8804896918184394836
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
@@ -143,7 +144,7 @@ MonoBehaviour:
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 5668703833841467453
+    - rid: 8804896918184394837
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
@@ -159,7 +160,7 @@ MonoBehaviour:
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 5668703833841467454
+    - rid: 8804896918184394838
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
@@ -175,27 +176,27 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5668703833841467450
+    - rid: 8804896918184394834
       type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0.25
         Normalized: 1
-    - rid: 5668703833841467451
+    - rid: 8804896918184394835
       type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0.25
         Normalized: 1
-    - rid: 5668703833841467452
+    - rid: 8804896918184394836
       type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0.1
         Normalized: 1
-    - rid: 5668703833841467453
+    - rid: 8804896918184394837
       type: {class: EqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0
         Normalized: 0
-    - rid: 5668703833841467454
+    - rid: 8804896918184394838
       type: {class: EqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0

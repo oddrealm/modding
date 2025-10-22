@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Water
   Name: Water
   NamePlural: 
   InlineIcon: <sprite=1158>
   Description: Clean and fresh.
+  DiscoveryHint: 
   Icon: sp_block_fill_water_foreground_icon
   TextColor: {r: 0.18396229, g: 0.43897408, b: 1, a: 1}
-  Type: Fill
+  Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3343
+  Order: 3429

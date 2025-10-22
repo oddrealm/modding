@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_room_transmutation_chamber
-  TagIDs: []
+  TagIDs:
+  - tag_rooms
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_arcana
@@ -99,6 +100,7 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
+  RoomQualities: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

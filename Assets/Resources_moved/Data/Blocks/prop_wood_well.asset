@@ -16,40 +16,42 @@ MonoBehaviour:
   TooltipID: tooltip_prop_wood_well
   TagIDs:
   - tag_trigger_well_has_water
+  - tag_props
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
-  - TriggerType: 8
-    HideInTooltips: 0
-    Invert: 0
-    ActivateTriggerID: tag_trigger_well_has_water
+  - ActivateTriggerID: tag_trigger_well_has_water
     DeactivateTriggerID: 
+    TriggerType: 8
+    HideInTooltips: 1
+    Invert: 0
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
-  - TriggerType: 4
-    HideInTooltips: 0
-    Invert: 0
-    ActivateTriggerID: 
+  - ActivateTriggerID: 
     DeactivateTriggerID: tag_trigger_well_has_water
+    TriggerType: 4
+    HideInTooltips: 0
+    Invert: 0
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
-  - TriggerType: 7
+  - ActivateTriggerID: tag_trigger_well_has_water
+    DeactivateTriggerID: 
+    TriggerType: 7
     HideInTooltips: 0
     Invert: 0
-    ActivateTriggerID: tag_trigger_well_has_water
-    DeactivateTriggerID: 
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 60
   Triggers:
   - Comment: Has Water
+    ID: tag_trigger_well_has_water
     ActiveTooltipID: tooltip_well_has_water
     InactiveTooltipID: tooltip_well_has_no_water
-    ID: tag_trigger_well_has_water
     Permissions: 128
     Visuals: visuals_well_water
     SFX: 
@@ -66,7 +68,8 @@ MonoBehaviour:
   TemperatureSource: 0
   IsRotationFixture: 0
   RotationFixtureKey: 
-  SkillLevel: 0
+  SkillLevel: 3
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -104,6 +107,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

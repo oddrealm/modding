@@ -14,14 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_blueprint_drink_from_water
-  TagIDs: []
+  TagIDs:
+  - tag_blueprints
   DiscoveryDependencies:
   - block_fill_water
   - entity_status_thirsty
   - entity_status_dehydrated
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SkillPriorityOverride: 99
   XP: 12
+  BaseSkillCheckFailXP: 5
+  BaseSkillLevel: 0
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   DesignationListOrder: -1
@@ -31,12 +35,16 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
+  CheckSkillFailure: 0
+  AddTargetAttributeToSkillFailCheck: 0
+  TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
   ShowItemTypeResourcePermissions: 0
   LocationID: block_fill_water
   WorkPosition: 0
   PermissionType: 0
+  CanSitDuringJob: 0
   WorkerID: entity_status_thirsty
   TargetID: 
   JobActions:
@@ -48,7 +56,6 @@ MonoBehaviour:
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
-  AddedProgressPerAction: 0
   ProgressMax: 25
   ProgressBarType: 2
   ProgressFXMaxX: 0
@@ -70,6 +77,7 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: tag_can_drink_water_source
   OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs:
   - TargetID: attribute_thirst

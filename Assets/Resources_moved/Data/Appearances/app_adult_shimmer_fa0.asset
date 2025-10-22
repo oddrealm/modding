@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_shimmer_fa0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Gender: female
-  Race: race_shimmer
+  Race: race_void_woken
   Group: race_unknown_shimmer_female
   Iteration: 0
   AppearanceType: 1
@@ -38,5 +38,5 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_unknown_shimmer_female_select_negative
   OrderPositiveSFX: sfx_unknown_shimmer_female_order_positive
   OrderNegativeSFX: sfx_unknown_shimmer_female_order_negative
-  ColorMask: {fileID: 11400000, guid: 8d1fbfcfa4a6c1547976a9bb4dc97cb7, type: 2}
-  Animations: {fileID: 11400000, guid: 8cea21519f2fd5f409a4e0ae00b4b22e, type: 2}
+  ColorMaskID: ccm_shimmer_fa0
+  AnimationsID: shimmer

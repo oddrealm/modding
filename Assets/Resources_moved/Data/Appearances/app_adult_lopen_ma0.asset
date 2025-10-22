@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_lopen_ma0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_lopen_male_select_negative
   OrderPositiveSFX: sfx_lopen_male_order_positive
   OrderNegativeSFX: sfx_lopen_male_order_negative
+  ColorMaskID: ccm_lopen_ma0
+  AnimationsID: lopen
   ColorMask: {fileID: 11400000, guid: abc6feb30c63f464882fdb6d44b4f53c, type: 2}
   Animations: {fileID: 11400000, guid: 006b64eaa47b95f44bd34b960e520094, type: 2}

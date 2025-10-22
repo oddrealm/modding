@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_artifact_stone_rune0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Wander Stone (Stone Rune I)
   Name: Wander Stone (Stone Rune I)
@@ -26,8 +26,9 @@ MonoBehaviour:
     Wanderer, a planet that sometimes can be seen in the sky. Under the image, the
     text, "Wander in peace, peacefully in wonder." On the reverse side of the rune
     is written a recipe for a tea using the seeds of Yellow Gale.
+  DiscoveryHint: 
   Icon: sp_stone_rune0_icon
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3200
+  Order: 3370

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_rat_fa0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_rat_female_select_negative
   OrderPositiveSFX: sfx_rat_female_order_positive
   OrderNegativeSFX: sfx_rat_female_order_negative
+  ColorMaskID: ccm_rat_fa0
+  AnimationsID: rat
   ColorMask: {fileID: 11400000, guid: a1914088dffa8df42968ffae4f999c44, type: 2}
   Animations: {fileID: 11400000, guid: 3bca3b88d128edf41ade16611c0d1a2b, type: 2}

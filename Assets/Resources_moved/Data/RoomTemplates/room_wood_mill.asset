@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_room_wood_mill
-  TagIDs: []
+  TagIDs:
+  - tag_rooms
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_industry
@@ -220,6 +221,15 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
+  - BlueprintID: blueprint_item_wood_hatchet_one_hand
+    Settings:
+      Priority: 1
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  RoomQualities: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

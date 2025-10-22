@@ -16,32 +16,33 @@ MonoBehaviour:
   TooltipID: tooltip_prop_steel_door
   TagIDs:
   - tag_trigger_door_open
+  - tag_props
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
-  - TriggerType: 1
+  - ActivateTriggerID: tag_trigger_door_open
+    DeactivateTriggerID: 
+    TriggerType: 1
     HideInTooltips: 1
     Invert: 0
-    ActivateTriggerID: tag_trigger_door_open
-    DeactivateTriggerID: 
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
-  - TriggerType: 2
+  - ActivateTriggerID: 
+    DeactivateTriggerID: tag_trigger_door_open
+    TriggerType: 2
     HideInTooltips: 1
     Invert: 0
-    ActivateTriggerID: 
-    DeactivateTriggerID: tag_trigger_door_open
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
   Triggers:
   - Comment: Open door
+    ID: tag_trigger_door_open
     ActiveTooltipID: tooltip_prop_door_open
     InactiveTooltipID: tooltip_prop_door_closed
-    ID: tag_trigger_door_open
     Permissions: 0
     Visuals: 
     SFX: sfx_door_interact
@@ -58,7 +59,8 @@ MonoBehaviour:
   TemperatureSource: 0
   IsRotationFixture: 1
   RotationFixtureKey: door
-  SkillLevel: 0
+  SkillLevel: 3
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -96,6 +98,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_koosh_kasheen_ma0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -38,5 +37,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_unknown_koosh_kasheen_male_select_negative
   OrderPositiveSFX: sfx_unknown_koosh_kasheen_male_order_positive
   OrderNegativeSFX: sfx_unknown_koosh_kasheen_male_order_negative
+  ColorMaskID: ccm_koosh_kasheen_ma0
+  AnimationsID: koosh
   ColorMask: {fileID: 11400000, guid: 977f8d4cde86db248a330ebf2447b988, type: 2}
   Animations: {fileID: 11400000, guid: 0949ced891d295048b8bf283512b819c, type: 2}

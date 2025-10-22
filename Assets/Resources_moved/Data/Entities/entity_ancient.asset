@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_ancient
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_ancient
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -37,7 +39,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 0
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_ancient
-  InherentCombatAttacks: attack_group_ancient
+  Attacks:
+  - attack_jab_direct_bludgeon
   SkillPermissions:
   - SkillID: skill_carry
     PlayerCanEdit: 1
@@ -133,7 +136,6 @@ MonoBehaviour:
   - ProfessionID: profession_arcanist
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_ancient
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -157,19 +159,7 @@ MonoBehaviour:
   - entity_status_can_be_archenthrall
   Ages:
   - entity_age_ancient_adult
-  Diets:
-  - TagObjectID: tag_can_eat
-    Priority: 0
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_can_drink
-    Priority: 0
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_cooked_food
-    Priority: 0
-    Buffs: []
-    Statuses: []
+  Diets: []
   AutoJobs: []
   Attributes:
   - AttributeID: attribute_age
@@ -193,7 +183,7 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 250
+    StartingBase: 350
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level

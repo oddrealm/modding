@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_leader_ancient_primarch
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Primarch
   NamePlural: Primarchs
   InlineIcon: <sprite=1732>
   Description: 
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.45882353, g: 0.8039216, b: 0.25882354, a: 1}
   Type: Role
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2041
+  Order: 2385

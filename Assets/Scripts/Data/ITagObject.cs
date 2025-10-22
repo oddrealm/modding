@@ -12,7 +12,7 @@ public struct DefaultTracking
     public string OnZeroNotif;
     public TrackingTypes TrackingType;
 
-    public bool IsNULL
+    public readonly bool IsNULL
     {
         get
         {
@@ -38,6 +38,7 @@ public interface ITagObject : ITooltipContent
     Color MinimapColor { get; }
     bool ShowMinimapCutoutColor { get; }
     bool ShowOnMinimap { get; }
+    bool ShowToPlayer { get; }
 
     bool TryGetDefaultTracking(out DefaultTracking tracking);
 }

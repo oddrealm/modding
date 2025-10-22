@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: tutorial_all_saga0
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_all_saga0
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Saga 0
-  PreviousSegment: 
   Trigger: 11
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
@@ -33,12 +34,7 @@ MonoBehaviour:
   AttributeType: 0
   MinAttributeAmount: -1
   MaxAttributeAmount: -1
-  ItemIDs:
-  - item_tome_of_arcana
-  - item_tome_of_industry
-  - item_tome_of_cooking
-  - item_tome_of_agriculture
-  - item_tome_of_war
+  ItemIDs: []
   ItemConditionType: 1
   ItemMinCount: -1
   ConstructionCategoryType: 0
@@ -55,8 +51,7 @@ MonoBehaviour:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: 'You can learn new technology from the <sprite=883> Research window. Open
-      it using:'
+    Body: You can learn new technology from the <sprite=883> Research (
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
@@ -64,6 +59,13 @@ MonoBehaviour:
     InputID: input_command_open_saga
     TagObjectID: 
     Body: 
+    NewLine: 0
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
+  - OnlyShowInputHotkey: 0
+    InputID: 
+    TagObjectID: 
+    Body: ) window.
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}

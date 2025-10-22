@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_glow_light
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_plant_glow_light
   DEBUG: 0
+  TooltipID: tooltip_plant_glow_light
   TagIDs:
   - tag_biome_plants_barrens
   - tag_mature_standing
   - tag_mature_fruit
   - tag_can_be_watered
+  - tag_plants
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 5760
   ReproduceTimeInterval: 1440
@@ -43,7 +45,7 @@ MonoBehaviour:
   DehydratedTag: tag_can_be_watered
   HydrationTooltip: tooltip_plant_hydration
   HydrationJob: blueprint_water_plant
-  MinLight: 6
+  MinLight: -1
   FillRequirement: 
   NeedsFertileSoil: 1
   MaxTemp: 75
@@ -72,6 +74,7 @@ MonoBehaviour:
   PlantType: 2
   PlantPermission: 1
   CanHaveGroup: 0
+  CanGrowInAnyRoom: 0
   Visuals:
   - visuals_plant_glow_light
   RemoveFX: fx_remove_plant

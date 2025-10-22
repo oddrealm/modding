@@ -1,0 +1,337 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
+  m_Name: dialogue_scenario_bandit_deen0
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  AppearanceID: 
+  NextDialogueID: []
+  SpeakerTarget: 
+  Message: 
+  Response: []
+  ShowOnce: 0
+  DialogueSequences:
+  - ID: deen0
+    Text: '*A dusty looking man and chicken appear.*'
+    OverrideSpeaker: 1
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: deen1
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: deen1
+    Text: Well, Greg, it looks like it's our lucky day. Ok, folks, hand over your
+      Ren and no one gets tussled.
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: Fine. Fine. Just leave us alone!
+      NextSequenceID: deen2a
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: Tussled?
+      NextSequenceID: deen2b
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: We need that to survive! Have mercy!
+      NextSequenceID: end0
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: deen2a
+    Text: Smart choice, chickens.
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: greg2a
+      ActionType: 0
+      SpeakerAction: 1
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: deen2b
+    Text: Yes. As in, scuffled.
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: Where are you from?
+      NextSequenceID: end0
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 1
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: greg2a
+    Text: Hey...
+    OverrideSpeaker: 1
+    OverrideSpeakerID: speaker1
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: end0
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: end0
+    Text: Ok. I'm sensing a trap. Quick, Greg, flee!
+    OverrideSpeaker: 0
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: end1
+      ActionType: 2
+      SpeakerAction: 1
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+  - ID: end1
+    Text: '*The two "Bandits" scamper off. And it looks like they dropped something
+      in their hurry.*'
+    OverrideSpeaker: 1
+    OverrideSpeakerID: speaker0
+    Condition:
+      TagRequirement0ID: 
+      TagRequirement1ID: 
+      TagRequirement2ID: 
+    ActionA:
+      Text: 
+      NextSequenceID: 
+      ActionType: 4
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: spawns_scenario_deen0_rune
+    ActionB:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionC:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 
+    ActionD:
+      Text: 
+      NextSequenceID: 
+      ActionType: 0
+      SpeakerAction: 0
+      ActionDataID: 
+      ActionCount: 0
+      ScenarioID: 
+      TagObjectID: 

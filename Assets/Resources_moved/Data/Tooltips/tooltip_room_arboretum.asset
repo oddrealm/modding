@@ -16,12 +16,14 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Arboretum
   Name: Arboretum
   NamePlural: Arboretums
   InlineIcon: <sprite=709>
   Description: The Arboretum is where saplings can be planted to grow trees.
+  DiscoveryHint: 
   Icon: sp_room_arboretum_icon
   TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
   Type: Room

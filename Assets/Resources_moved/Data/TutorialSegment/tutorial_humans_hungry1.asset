@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: tutorial_humans_hungry1
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_humans_hungry1
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Hungry settler 1
-  PreviousSegment: 
   Trigger: 0
   MinGameMinutes: -1
   MinScaledPlayedTime: -1

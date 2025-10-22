@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
   m_Name: spawns_fish_kotha
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 77591
   MaxIterations: 1
@@ -31,10 +31,10 @@ MonoBehaviour:
     TagObjectID: item_kotha_meat_raw
     TagID: 
   - Comment: 
-    MinCount: 3
+    MinCount: 1
     MaxCount: 3
     LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
+    DisableRoll: 1
     Weight: 0.5
     TagObjectID: item_kotha_scale
     TagID: 

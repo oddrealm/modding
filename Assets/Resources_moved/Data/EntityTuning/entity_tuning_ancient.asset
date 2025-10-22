@@ -16,21 +16,13 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  MaxRandomAge: 258000
-  MinRandomAge: 252000
-  MaxRandomLevel: 50
-  MinRandomLevel: 45
+  Age: -1
   RandomProfessions: []
   MaxRandomSkill: 12
   MinRandomSkill: 5
-  SkillBonuses:
-  - Skill: 2097152
-    Amount: 5
-  - Skill: 1048576
-    Amount: 5
-  - Skill: 8192
-    Amount: 5
+  SkillBonuses: []
   StartingStatuses: []
   RandomStartingStatuses:
   - entity_status_trait_big_boned

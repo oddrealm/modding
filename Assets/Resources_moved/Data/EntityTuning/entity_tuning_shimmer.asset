@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_shimmer
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  MaxRandomAge: 100
-  MinRandomAge: 18
+  Age: -1
   MaxRandomLevel: 5
   MinRandomLevel: 1
   RandomProfessions: []
@@ -28,10 +27,10 @@ MonoBehaviour:
   SkillBonuses: []
   StartingStatuses: []
   RandomStartingStatuses: []
-  FirstName: 
+  FirstName: Shimmer
   LastName: 
   Appearance: app_adult_shimmer_fa0
   InventoryGroupID: 
-  AutoGenerateInventory: 0
-  EquipmentGroupID: 
+  AutoGenerateInventory: 1
+  EquipmentGroupID: spawns_entity_equipment_shimmer
   AutoGenerateEquipment: 0

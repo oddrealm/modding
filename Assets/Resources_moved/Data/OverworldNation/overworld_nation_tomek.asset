@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
   m_Name: overworld_nation_tomek
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_overworld_nation_tomek
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_overworld_nation_tomek
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnMap: 1
   PlayerCanChoose: 0
@@ -35,6 +35,8 @@ MonoBehaviour:
   - race_tomek
   GenerateSettlementNameKey: location_names_tomek_settlements
   GenerateKingdomNameKey: location_names_tomek_kingdoms
+  GameOverScenarios:
+  - scenario_settler_wave
   ChanceToSendMerchant: 50
   MerchantPartyID: party_merchant_tomek
   ChanceToMigrate: 50

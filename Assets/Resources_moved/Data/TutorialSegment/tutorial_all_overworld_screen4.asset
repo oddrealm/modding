@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: tutorial_all_overworld_screen4
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_all_overworld_screen4
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
-  PreviousSegment: tutorial_all_overworld_screen2
   Trigger: 11
   MinGameMinutes: -1
   MinScaledPlayedTime: -1

@@ -22,7 +22,7 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObjec
     [Header("Reproduce Minutes")]
     public int ReproduceTimeInterval = 60 * 12;
     [Header("Max Natural Reproduce Count - only reproduce when plant count < this")]
-    [Header("(World size modifies this value by (blocks per layer / 16384)")]
+    [Header("Max count in 128x128 world. Bigger worlds will factor up.")]
     public int MaxNaturalSpawnCount = 0;
     public int MaxNaturalReproduceCount = 0;
     public string ReproductionPlant = "";
@@ -67,7 +67,7 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObjec
     [Header("Each tile has its own fauna rarity - if true, use this")]
     public bool UseLocalFaunaReproduceMod = true;
     [Header("Seasons (Empty = any season permitted)")]
-    public List<string> Seasons = new List<string>();
+    public List<string> Seasons = new();
     [Header("Pathing")]
     public bool IsObstruction = false;
     public BlockDirectionFlags PermittedPaths = BlockDirectionFlags.ALL;
@@ -95,7 +95,7 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObjec
     public bool CanHaveGroup = false;
     public bool CanGrowInAnyRoom = false;
     [Header("Visuals")]
-    public List<string> Visuals = new List<string>();
+    public List<string> Visuals = new();
     [Header("FX")]
     public string RemoveFX = "fx_remove_plant";
     [Header("Actions")]
@@ -159,7 +159,7 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObjec
     public const string PLANT_STATE_SPAWN = "plant_spawn";
     public const string PLANT_STATE_HAS_TAG_OBJECT_ID = "plant_has_tag_object_ID";
 
-    private string[] _simStates = new string[]
+    private readonly string[] _simStates = new string[]
     {
         PLANT_STATE_MATURE,
         PLANT_STATE_EXPIRED,
@@ -176,6 +176,7 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObjec
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
+        EnsureTag("tag_plants");
         if (!IsObstruction && PermittedPaths == BlockDirectionFlags.NONE)
         {
             Debug.LogError($"BlockPlantsData {Key} has no pathing permissions set. Defaulting to all paths.");

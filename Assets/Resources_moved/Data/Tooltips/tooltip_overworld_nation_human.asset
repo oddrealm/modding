@@ -16,17 +16,19 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Humans
-  Name: Humans
-  NamePlural: 
+  Action: Human
+  Name: Human
+  NamePlural: Humans
   InlineIcon: <sprite=63>
   Description: Living in small communities since the Fracture, Humans have only recently
     started to re-form their once great kingdoms. Experts at settling in any environment
     and having exceptional diplomatic skills, the Human race has excelled in the
     age of settlement.
+  DiscoveryHint: 
   Icon: sp_race_human
   TextColor: {r: 0, g: 0.41107982, b: 0.8050314, a: 1}
-  Type: Nation
+  Type: Race
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1715
+  Order: 1706

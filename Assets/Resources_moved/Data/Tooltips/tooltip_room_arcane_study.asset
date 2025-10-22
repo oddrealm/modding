@@ -16,12 +16,14 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Arcane Study
   Name: Arcane Study
   NamePlural: Arcane Studies
   InlineIcon: <sprite=1107>
   Description: Mages use the Arcane Study as a training ground.
+  DiscoveryHint: 
   Icon: sp_room_arcane_study_icon
   TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
   Type: Room

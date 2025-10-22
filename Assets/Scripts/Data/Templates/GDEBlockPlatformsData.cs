@@ -29,4 +29,12 @@ public class GDEBlockPlatformsData : Scriptable, IProgressionObject
     public string ItemDropGroupID = "";
 
     public bool CanShowInProgressUI { get { return true; } }
+
+#if ODD_REALM_APP
+    public override void OnLoaded()
+    {
+        base.OnLoaded();
+        EnsureTag("tag_platform");
+    }
+#endif
 }

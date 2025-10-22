@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_tamtallen_ma0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_tamtallen_male_select_negative
   OrderPositiveSFX: sfx_tamtallen_male_order_positive
   OrderNegativeSFX: sfx_tamtallen_male_order_negative
+  ColorMaskID: ccm_tamtallen_ma0
+  AnimationsID: tamtallen
   ColorMask: {fileID: 11400000, guid: e639a90137af49346a40ff6cfd0daebb, type: 2}
   Animations: {fileID: 11400000, guid: cdac7b74b9edebe4fbe61a425ca88316, type: 2}

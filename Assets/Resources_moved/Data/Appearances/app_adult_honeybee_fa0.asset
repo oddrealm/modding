@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_honeybee_fa0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_honeybee_female_select_negative
   OrderPositiveSFX: sfx_honeybee_female_order_positive
   OrderNegativeSFX: sfx_honeybee_female_order_negative
+  ColorMaskID: ccm_honeybee_fa0
+  AnimationsID: bee
   ColorMask: {fileID: 11400000, guid: acb31ae19c410564da17580f7c349cc8, type: 2}
   Animations: {fileID: 11400000, guid: 9aefebd35d641c24e9ff68afd008b58c, type: 2}

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Wood Cage
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=887>
   Description: Used to capture wild animals. Use the seize job on the cage when an
     animal is captured.
+  DiscoveryHint: 
   Icon: sp_wood_large_cage_icon
   TextColor: {r: 0.7411765, g: 0.5764706, b: 0.48235294, a: 1}
   Type: Traps
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3441
+  Order: 3525

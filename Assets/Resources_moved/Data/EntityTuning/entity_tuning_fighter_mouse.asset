@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
+  m_Name: entity_tuning_fighter_mouse
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Age: 25
+  MaxRandomLevel: 5
+  MinRandomLevel: 1
+  RandomProfessions:
+  - profession_warrior
+  MaxRandomSkill: 10
+  MinRandomSkill: 1
+  SkillBonuses: []
+  StartingStatuses: []
+  RandomStartingStatuses:
+  - entity_status_trait_big_boned
+  - entity_status_trait_lazy
+  - entity_status_trait_dull
+  - entity_status_trait_impaired_leg
+  - entity_status_trait_impaired_arm
+  - entity_status_trait_impaired_eye
+  - entity_status_trait_impaired_foot
+  - entity_status_trait_short_legs
+  - entity_status_trait_jack_of_all_trades
+  - entity_status_trait_sickly
+  - entity_status_trait_strong
+  - entity_status_trait_weak
+  - entity_status_trait_fast
+  - entity_status_trait_slow
+  - entity_status_trait_freakishly_big_hands
+  - entity_status_trait_hold_breath_longer
+  FirstName: Mouse
+  LastName: 
+  Appearance: app_adult_fighter_mouse_ma0
+  InventoryGroupID: 
+  AutoGenerateInventory: 1
+  EquipmentGroupID: spawns_entity_equipment_fighter_mouse
+  AutoGenerateEquipment: 0

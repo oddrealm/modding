@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_tomek
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_tomek
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -37,7 +39,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_tomek
-  InherentCombatAttacks: attack_group_tomek
+  Attacks:
+  - attack_jab_direct_bludgeon
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 1
@@ -211,7 +214,6 @@ MonoBehaviour:
   - ProfessionID: profession_arcanist
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_tomek
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -234,30 +236,26 @@ MonoBehaviour:
   - entity_age_tomek_adult
   - entity_age_tomek_elder
   Diets:
-  - TagObjectID: tag_can_eat
-    Priority: 0
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_can_drink
+  - TagID: tag_can_drink
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
     - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
-    Priority: 0
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_item_type_ore
-    Priority: 0
+  - TagID: tag_item_type_ore
+    TagObjectID: 
+    Priority: 3
     Buffs: []
     Statuses:
     - entity_status_well_fed
-  - TagObjectID: tag_item_type_ingot
-    Priority: 0
+  - TagID: tag_item_type_ingot
+    TagObjectID: 
+    Priority: 3
     Buffs: []
     Statuses:
     - entity_status_well_fed
-  - TagObjectID: tag_item_type_gem
+  - TagID: tag_item_type_gem
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
@@ -301,7 +299,7 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 90
+    StartingBase: 200
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level

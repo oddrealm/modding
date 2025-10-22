@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Human
@@ -25,8 +26,9 @@ MonoBehaviour:
     started to re-form their once great kingdoms. Experts at settling in any environment
     and having exceptional diplomatic skills, the Human race has excelled in the
     age of settlement.
+  DiscoveryHint: 
   Icon: sp_race_human
   TextColor: {r: 0.49701598, g: 0.8773585, b: 0.17381631, a: 1}
   Type: Race
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1702
+  Order: 1725

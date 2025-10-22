@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_biome_taiga
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Taiga (Plains)
   Name: Taiga (Plains)
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1217>
   Description: Full of life, the Taiga biome is a welcoming start for any settlement.
     The soil is rich and easily cultivated.
+  DiscoveryHint: 
   Icon: sp_biome_taiga_icon
   TextColor: {r: 0.42352942, g: 0.7490196, b: 0.27450982, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3022
+  Order: 3113

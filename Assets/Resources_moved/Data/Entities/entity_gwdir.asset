@@ -16,15 +16,16 @@ MonoBehaviour:
   TooltipID: tooltip_entity_gwdir
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_gwdir
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
   SizeTagID: tag_entity_size_medium
   LanguagesSpoken:
   - language_engel
-  DefaultLeaderRoles:
-  - leader_gwdir_gwnvayth
+  DefaultLeaderRoles: []
   CompanionType: 0
   CompanionPermanenceType: 0
   ReproductionType: 0
@@ -37,7 +38,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_gwdir
-  InherentCombatAttacks: attack_group_gwdir
+  Attacks:
+  - attack_jab_direct_bludgeon
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 1
@@ -89,7 +91,7 @@ MonoBehaviour:
     EnabledByDefault: 0
   - SkillID: skill_log
     PlayerCanEdit: 1
-    EnabledByDefault: 1
+    EnabledByDefault: 0
   - SkillID: skill_loot
     PlayerCanEdit: 1
     EnabledByDefault: 0
@@ -141,7 +143,7 @@ MonoBehaviour:
     CanSpawnWith: 0
   - ProfessionID: profession_summoner
     CanAssign: 1
-    CanSpawnWith: 1
+    CanSpawnWith: 0
   - ProfessionID: profession_miner
     CanAssign: 1
     CanSpawnWith: 1
@@ -165,7 +167,7 @@ MonoBehaviour:
     CanSpawnWith: 1
   - ProfessionID: profession_thaumaturge
     CanAssign: 1
-    CanSpawnWith: 1
+    CanSpawnWith: 0
   - ProfessionID: profession_fisherman
     CanAssign: 1
     CanSpawnWith: 1
@@ -177,7 +179,7 @@ MonoBehaviour:
     CanSpawnWith: 1
   - ProfessionID: profession_mage
     CanAssign: 1
-    CanSpawnWith: 1
+    CanSpawnWith: 0
   - ProfessionID: profession_forester
     CanAssign: 1
     CanSpawnWith: 1
@@ -211,7 +213,6 @@ MonoBehaviour:
   - ProfessionID: profession_arcanist
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_gwdir
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -234,16 +235,19 @@ MonoBehaviour:
   - entity_age_gwdir_adult
   - entity_age_gwdir_elder
   Diets:
-  - TagObjectID: tag_can_eat
+  - TagID: tag_can_eat
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses: []
-  - TagObjectID: tag_can_drink
+  - TagID: tag_can_drink
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses:
     - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
+  - TagID: tag_item_type_meal
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:

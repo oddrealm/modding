@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: tutorial_gwdir_perennium1
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_gwdir_perennium1
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
-  PreviousSegment: 
   Trigger: 0
   MinGameMinutes: 120
   MinScaledPlayedTime: -1

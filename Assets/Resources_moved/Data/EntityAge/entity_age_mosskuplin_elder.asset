@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d00b2297d00b5469484bfed9ac832d, type: 3}
   m_Name: entity_age_mosskuplin_elder
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_age_elder
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_entity_age_elder
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   AgeType: 4
-  Max: 2147483647
+  Max: 30
   Min: 10
+  CanEarnXP: 1
   CanRespec: 0
   Statuses:
   - StatusID: entity_status_elder

@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: tutorial_ancients_immortality_tomb0
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_ancients_immortality_tomb0
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
   PreviousSegment: 

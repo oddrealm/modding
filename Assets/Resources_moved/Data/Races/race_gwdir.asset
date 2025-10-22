@@ -17,6 +17,7 @@ MonoBehaviour:
   TagIDs:
   - tag_races
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 800
   Intelligence: intelligence_sapient
@@ -41,5 +42,7 @@ MonoBehaviour:
   - ItemID: item_aiwir_boots
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
+  Statuses:
+  - entity_status_gwdir_nature
   Buffs: []
   AutoCreateUniform: 1

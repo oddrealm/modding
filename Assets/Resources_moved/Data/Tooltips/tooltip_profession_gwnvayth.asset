@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_profession_gwnvayth
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Gwnvayth
   Name: Gwnvayth
@@ -24,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1444>
   Description: Queen of the Gwdir, the Gwnvayth is an integral role for producing
     more Gwdir offspring.
+  DiscoveryHint: 
   Icon: sp_profession_gwnvayth_icon
   TextColor: {r: 0.58431375, g: 0.121568635, b: 0.16862746, a: 1}
   Type: Profession
-  TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1221
+  TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
+  Order: 1627

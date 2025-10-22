@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: ardyn_tutorial_somnic_pool0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -23,5 +22,5 @@ MonoBehaviour:
   SpeakerTarget: '@0'
   Message: Urgh... I'm running out of time. Sabillix give me strength.
   Response: []
-  FocusOnSpeaker: 1
+  ShowOnce: 0
   DialogueSequences: []

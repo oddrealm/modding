@@ -253,12 +253,31 @@ public class DataEditTagPage : DataEditPage
 
             EditorUtility.DisplayProgressBar("FOO", "", t / (float)_visibleScripts.Count);
 
-            if (script is GDEXPGrowthData data)
+            if (script is GDERoomTemplatesData data)
             {
-                float n = data.Level / 99f;
-                float growth = 1 - Mathf.Exp(-2 * n);
-                data.KingdomXPRequiredToLevel = 51 + (int)Mathf.Lerp(0, 5000, growth);
-                Debug.LogError($"XP {data.Level}: {data.KingdomXPRequiredToLevel}");
+                // List<Scriptable> blueprints = GetDataByType<GDEBlueprintsData>();
+                //
+                // for (int i = 0; i < blueprints.Count; i++)
+                // {
+                //     if (blueprints[i].Key.Contains("blueprint_plant_tree"))
+                //     {
+                //         data.DefaultAutoJobs.Add(new()
+                //         {
+                //             BlueprintID = blueprints[i].Key,
+                //             Settings = new()
+                //             {
+                //                 AutoJobType = AutoJobTypes.MANUAL,
+                //                 Priority = 1
+                //             },
+                //             PermittedLocations = System.Array.Empty<string>(),
+                //             PermittedResources = System.Array.Empty<string>(),
+                //             ProhibitedLocations = System.Array.Empty<string>(),
+                //             ProhibitedResources = System.Array.Empty<string>()
+                //         });
+                //     }
+                // }
+
+                Debug.LogError($"FOO: {script.Key}");
                 MARK_DIRTY(script);
             }
         }
@@ -1016,6 +1035,11 @@ public class DataEditTagPage : DataEditPage
         {
             RenderEntityData(script, entityData);
         }
+        // Race.
+        else if (script is GDERacesData raceData)
+        {
+            RenderRaceData(script, raceData);
+        }
         // Leader.
         else if (script is GDELeaderData leaderData)
         {
@@ -1055,11 +1079,6 @@ public class DataEditTagPage : DataEditPage
         else if (script is GDESimulationData baseSimData)
         {
             RenderSimData(script, baseSimData);
-        }
-        // Attack Group.
-        else if (script is GDEAttackGroupsData attackGroup)
-        {
-            RenderAttackGroup(attackGroup);
         }
         // Attack.
         else if (script is GDEAttacksData attackData)
@@ -1186,6 +1205,7 @@ public class DataEditTagPage : DataEditPage
     {
         if (spawnData == null) { return; }
 
+        MARK_DIRTY(spawnData);
         BEGIN_HOR();
         BEGIN_DISABLED(string.IsNullOrEmpty(_newTagObjSpawnName) || ScriptExists(_newTagObjSpawnName));
         BTN("Create New Tag Obj Spawn", Color.green, () =>
@@ -1735,6 +1755,11 @@ public class DataEditTagPage : DataEditPage
             END_INDENT();
         }
 
+        scenariosData.Biomes = RENDER_VALUE_ARRAY<string>(scenariosData.Biomes, "Biomes", (biome) =>
+        {
+            return DATA_ID_INPUT<GDEBiomesData>(biome, "Biome ID", out var _);
+        });
+
         if (scenariosData.EntitySpawns != null)
         {
             scenariosData.EntitySpawns = RENDER_REF_ARRAY(scenariosData.EntitySpawns, "Entity Spawns", RenderScenarioEntitySpawn);
@@ -1872,7 +1897,11 @@ public class DataEditTagPage : DataEditPage
         sequence.Text = TEXT_INPUT(sequence.Text, "Text");
         END_CLR();
         sequence.OverrideSpeaker = TOGGLE(sequence.OverrideSpeaker, "Override Speaker");
-        sequence.OverrideSpeakerID = TEXT_INPUT(sequence.OverrideSpeakerID, "Override Speaker ID");
+        if (sequence.OverrideSpeaker)
+        {
+            sequence.OverrideSpeakerID = DROP_DOWN("Speaker Type", sequence.OverrideSpeakerID, DialogueSequence.SPEAKER_IDS);
+        }
+
         sequence.ActionA = RenderDialogueAction("Action A", sequence.ActionA);
 
         if (sequence.ActionA.IsValid)
@@ -1895,7 +1924,7 @@ public class DataEditTagPage : DataEditPage
     {
         LABEL(label, Color.cyan);
         BEGIN_INDENT();
-        dialogueAction.Text = TEXT_INPUT(dialogueAction.Text, "Text");
+        dialogueAction.Text = TEXT_INPUT(dialogueAction.Text, "Response");
         dialogueAction.NextSequenceID = TEXT_INPUT(dialogueAction.NextSequenceID, "Next Sequence ID");
         dialogueAction.ActionType = DROP_DOWN(dialogueAction.ActionType, "Action Type");
 
@@ -1911,7 +1940,10 @@ public class DataEditTagPage : DataEditPage
                     {
                         dialogueAction.ActionDataID = TEXT_INPUT(dialogueAction.ActionDataID, "Action Data ID");
                     }
-
+                    else if (dialogueAction.SpeakerAction == SpeakerActionTypes.ADD_STATUS)
+                    {
+                        dialogueAction.ActionDataID = DATA_ID_INPUT<GDEEntityStatusData>(dialogueAction.ActionDataID, "Status ID", out var _);
+                    }
                     END_INDENT();
                 }
                 break;
@@ -1920,6 +1952,15 @@ public class DataEditTagPage : DataEditPage
                 {
                     BEGIN_INDENT();
                     dialogueAction.ScenarioID = DATA_ID_INPUT<GDEScenariosData>(dialogueAction.ScenarioID, "Scenario ID", out var _);
+                    END_INDENT();
+                }
+                break;
+
+            case DialogueActionTypes.SPAWN_TAG_OBJ:
+                {
+                    BEGIN_INDENT();
+                    dialogueAction.TagObjectID = DATA_ID_INPUT<GDETagObjectSpawnData>(dialogueAction.TagObjectID, "Tag Object ID", out var tagObjSpawn);
+                    RenderTagObjectSpawn(tagObjSpawn);
                     END_INDENT();
                 }
                 break;
@@ -1963,8 +2004,8 @@ public class DataEditTagPage : DataEditPage
             terrainLayer.Comment = COMMENT(terrainLayer.Comment);
 
             BEGIN_HOR();
-            int maxZ = (int)(terrainLayer.Max * 10);
-            LABEL("Max Z (in cave of height 10):");
+            int maxZ = (int)(terrainLayer.Max * 255);
+            LABEL("Max Z:");
             LABEL(maxZ);
             terrainLayer.Max = FLOAT_INPUT01(terrainLayer.Max);
             END_HOR();
@@ -2128,9 +2169,10 @@ public class DataEditTagPage : DataEditPage
         if (showAttacks)
         {
             BEGIN_INDENT();
-            itemData.AttackGroup = DATA_ID_INPUT<GDEAttackGroupsData>(itemData.AttackGroup, "Attack Group", out var attackGroupData);
-
-            RenderAttackGroup(attackGroupData);
+            itemData.Attacks = RENDER_VALUE_ARRAY(itemData.Attacks, "Attacks", (string attackID) =>
+            {
+                return DATA_ID_INPUT<Scriptable>(attackID, "Attack ID", out var attackData);
+            });
             END_INDENT();
         }
 
@@ -2306,37 +2348,6 @@ public class DataEditTagPage : DataEditPage
         }
 
         return buffData;
-    }
-
-    // Attack Group.
-    private void RenderAttackGroup(GDEAttackGroupsData attackGroupData)
-    {
-        if (attackGroupData == null) { return; }
-
-        MARK_DIRTY(attackGroupData);
-        BEGIN_INDENT();
-
-        for (int i = 0; i < attackGroupData.Attacks.Count; i++)
-        {
-            BEGIN_HOR();
-
-            if (TRY_LIST_REMOVE_BTN<string>(attackGroupData.Attacks, i, out var newList))
-            {
-                attackGroupData.Attacks = newList;
-                END_HOR();
-                continue;
-            }
-
-            attackGroupData.Attacks[i] = DATA_ID_INPUT<GDEAttacksData>(attackGroupData.Attacks[i], "Attack", out var attackData);
-            END_HOR();
-
-            BEGIN_INDENT();
-            RenderAttack(attackData, attackData);
-            END_INDENT();
-        }
-
-        attackGroupData.Attacks = LIST_ADD_VALUE_BTN<string>(attackGroupData.Attacks, "+Attack");
-        END_INDENT();
     }
 
     private void RenderLandmarkData(Scriptable script, GDELandmarkData landmarkData)
@@ -2695,11 +2706,6 @@ public class DataEditTagPage : DataEditPage
         //END_HOR();
 
         tutorialData.SelectionType = (SelectionTypes)DROP_DOWN(tutorialData.SelectionType, "Selection Type");
-
-        BEGIN_HOR();
-        LABEL("REQ SEGMENT:", ColorUtility.warningYellow);
-        tutorialData.PreviousSegment = DATA_ID_INPUT<GDETutorialSegmentData>(tutorialData.PreviousSegment, "Segment ID", out var prevSegmentData);
-        END_HOR();
 
         BEGIN_HOR();
         LABEL("NEXT SEGMENT:", ColorUtility.blueprintBlue);
@@ -3084,6 +3090,7 @@ public class DataEditTagPage : DataEditPage
 
         MARK_DIRTY(statusData);
 
+        RenderTooltip(statusData);
         statusData.ExpireTimeMinutesMax = INT_INPUT(statusData.ExpireTimeMinutesMax, "Expire Time Max (Mins)");
         statusData.ExpireTimeMinutesMin = INT_INPUT(statusData.ExpireTimeMinutesMin, "Expire Time Min (Mins)");
 
@@ -3557,9 +3564,32 @@ public class DataEditTagPage : DataEditPage
         END_HOR();
     }
 
+    private void RenderRaceData(Scriptable script, GDERacesData raceData)
+    {
+        if (raceData == null) { return; }
+
+        MARK_DIRTY(raceData);
+
+        raceData.DefaultEntityID = DATA_ID_INPUT<GDEEntitiesData>(raceData.DefaultEntityID, "Default Entity", out var entityData);
+        raceData.Statuses = RENDER_VALUE_ARRAY<string>(raceData.Statuses, "Statuses", (string statusID) =>
+        {
+            statusID = DATA_ID_INPUT<GDEEntityStatusData>(statusID, "Status ID", out var statusData);
+            if (statusData != null)
+            {
+                RenderEntityStatusData(script, statusData);
+            }
+            return statusID;
+        });
+        raceData.Buffs = RENDER_VALUE_ARRAY<BuffData>(raceData.Buffs, "Buffs", (BuffData buff) =>
+        {
+            return RenderBuffData(script, buff);
+        });
+    }
+
     private GDEEntitiesData.DietSettings RenderEntityDiet(Scriptable script, GDEEntitiesData.DietSettings diet)
     {
-        diet.TagObjectID = DATA_ID_INPUT<Scriptable>(diet.TagObjectID, "Diet ID", out var dietData);
+        diet.TagID = DATA_ID_INPUT<Scriptable>(diet.TagID, "Diet Tag ID", out var dietTagData);
+        diet.TagObjectID = DATA_ID_INPUT<Scriptable>(diet.TagObjectID, "Diet Tag Obj ID (optional)", out var dietData);
         diet.Priority = INT_INPUT(diet.Priority, "Priority");
         diet.Buffs = RenderBuffs(script, diet.Buffs);
         diet.Statuses = RenderEntityStatuses(script, diet.Statuses);
@@ -3571,6 +3601,13 @@ public class DataEditTagPage : DataEditPage
         if (blueprintData == null) { return; }
 
         MARK_DIRTY(blueprintData);
+
+        LABEL("Create:", ColorUtility.green);
+        BEGIN_INDENT();
+        blueprintData.SpawnCount = INT_INPUT(blueprintData.SpawnCount, "Spawn Count");
+        blueprintData.SpawnTagID = DATA_ID_INPUT<Scriptable>(blueprintData.SpawnTagID, "Spawn Tag ID", out var _);
+        blueprintData.SpawnTagObjectID = DATA_ID_INPUT<Scriptable>(blueprintData.SpawnTagObjectID, "Spawn Tag Object ID", out var spawnTagObjData);
+        END_INDENT();
 
         blueprintData.ProgressMax = INT_INPUT(blueprintData.ProgressMax, "Progress Max", ColorUtility.blueprintBlue);
         blueprintData.AddBlockSkillToJobSkill = TOGGLE(blueprintData.AddBlockSkillToJobSkill, "Add Block Skill To Job Skill", ColorUtility.blueprintBlue);
@@ -3620,14 +3657,6 @@ public class DataEditTagPage : DataEditPage
         LABEL("Resource Restrictions:", ColorUtility.blueprintBlue);
         BEGIN_INDENT();
         blueprintData.ShowItemTypeResourcePermissions = TOGGLE(blueprintData.ShowItemTypeResourcePermissions, "Show Item Type Resource Restrictions");
-        END_INDENT();
-
-
-        LABEL("Create:", ColorUtility.green);
-        BEGIN_INDENT();
-        blueprintData.SpawnCount = INT_INPUT(blueprintData.SpawnCount, "Spawn Count");
-        blueprintData.SpawnTagID = DATA_ID_INPUT<Scriptable>(blueprintData.SpawnTagID, "Spawn Tag ID", out var spawnTagData);
-        blueprintData.SpawnTagObjectID = DATA_ID_INPUT<Scriptable>(blueprintData.SpawnTagObjectID, "Spawn Tag Object ID", out var spawnTagObjData);
         END_INDENT();
 
         LABEL("Trigger:", ColorUtility.green);

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: tag_skills
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_tag_skills
   DEBUG: 0
+  TooltipID: tooltip_tag_skills
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -22,3 +22,4 @@ MonoBehaviour:
   TrackingTypes: 1
   TagGroups:
   - entity_profile
+  - codex

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Ohmnix
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1469>
   Description: A vine-like object grown in Nelescuro grass, with strong, dexterous
     limbs used to create Wir and other items.
+  DiscoveryHint: 
   Icon: sp_ohmnix_icon
   TextColor: {r: 0.5882353, g: 0.2901961, b: 0.43137258, a: 1}
   Type: Station
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2165
+  Order: 2187

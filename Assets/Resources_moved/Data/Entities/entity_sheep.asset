@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_sheep
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_sheep
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -36,7 +38,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: room_animal_enclosure
   GenerateNameKey: entity_names_sheep
-  InherentCombatAttacks: attack_group_sheep
+  Attacks:
+  - attack_stomp_direct_bludgeon
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 0
@@ -210,7 +213,6 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_sheep
   PermittedItemSlots: []
   PathingType: 1
   DefaultTuning: entity_tuning_sheep
@@ -227,26 +229,26 @@ MonoBehaviour:
   - entity_age_sheep_adult
   - entity_age_sheep_elder
   Diets:
-  - TagObjectID: tag_cooked_food
-    Priority: 0
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_item_type_vegetable
+  - TagID: tag_item_type_vegetable
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
     - entity_status_well_fed
-  - TagObjectID: tag_item_type_plant_material
+  - TagID: tag_item_type_plant_material
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
     - entity_status_well_fed
-  - TagObjectID: tag_item_type_grain
+  - TagID: tag_item_type_grain
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
     - entity_status_well_fed
-  - TagObjectID: tag_item_type_water
+  - TagID: tag_item_type_water
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
@@ -258,11 +260,11 @@ MonoBehaviour:
       AutoJobType: 1
   - BlueprintID: blueprint_drink_item
     Settings:
-      Priority: 3
+      Priority: 4
       AutoJobType: 1
   - BlueprintID: blueprint_drink_from_water
     Settings:
-      Priority: 4
+      Priority: 3
       AutoJobType: 1
   - BlueprintID: blueprint_graze
     Settings:

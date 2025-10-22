@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219ac656b58d26f4fb45ea6176494879, type: 3}
+  m_Name: prop_stone_wall
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_prop_stone_wall
+  TagIDs:
+  - tag_props
+  DiscoveryDependencies: []
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  UsageTags: []
+  DefaultFill: block_fill_solid
+  TriggerConditions: []
+  Triggers: []
+  RevealDistance: 0
+  TemperatureSource: 0
+  IsRotationFixture: 1
+  RotationFixtureKey: wall
+  SkillLevel: 1
+  Toughness: 0
+  MaxItemCount: 0
+  ItemTypePermissions: []
+  CanShowItems: 0
+  RestrictItemsToSameKey: 1
+  DecayBuff: 0
+  RemoveItemDrops: spawns_prop_stone_wall
+  VerticalEntityLift: 0
+  IsObstruction: 1
+  IsVerticalAccess: 0
+  PermittedPathsAbove: 0
+  PermittedPaths: 0
+  VerticalMovementMod: 1
+  HorizontalMovementMod: 1
+  MovementCost: 3
+  VerticalMoveRequiresClimb: 1
+  ForceFocusDirection: 0
+  Permissions: 2112
+  PermissionsAbove: 0
+  Prohibited: 0
+  ProhibitedAbove: 0
+  Layer: 1
+  ProhibitedLayers: 4
+  CanHaveRoom: 0
+  CanHavePlatform: 0
+  PermittedPlantTypes: 0
+  IsFertile: 0
+  CanSitAt: 0
+  IsSpotlight: 0
+  Visuals:
+  - visuals_prop_stone_wall
+  TriggerOffsetX: 0
+  TriggerOffsetY: 0
+  HasItemsOffsetX: 0
+  HasItemsOffsetY: 0
+  FullCapacityOffsetX: 0
+  FullCapacityOffsetY: 0
+  IdleFX: 
+  UntriggeredFX: 
+  AddSFX: 
+  RemoveSFX: 
+  InteractSFX: sfx_stone_interact
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  BlockimulationID: 
+  StateOptions: []

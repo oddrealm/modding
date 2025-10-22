@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_deep_senectia
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Deep Senectia
   Name: Deep Senectia
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1200>
   Description: The late stages of time debt, which occurs when Ardyn go too long
     without siphoning life from other entities.
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  TextColor: {r: 0.2745098, g: 0.5925429, b: 0.77254903, a: 1}
   Type: Status
   TypeColor: {r: 0.34117648, g: 0.054901965, b: 0.027450982, a: 1}
-  Order: 1264
+  Order: 1292

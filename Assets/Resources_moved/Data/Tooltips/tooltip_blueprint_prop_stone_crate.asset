@@ -21,7 +21,7 @@ MonoBehaviour:
   Name: Build Stone Crate
   NamePlural: 
   InlineIcon: <sprite=719>
-  Description: 
+  Description: My god, this thing is heavy!
   Icon: sp_stone_crate_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job

@@ -12,20 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_crit_rate
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Crit Rate
   Name: Crit Rate
   NamePlural: 
   InlineIcon: <sprite=387>
-  Description: How likely the Entity's outgoing damage will get 2x damage. This is
-    calculated for each individual attack.
+  Description: How likely the Entity's outgoing damage will get 2x damage per attack.
+    e.,g., A Crit Rate of 1 is a 1 in 100 chance.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.909804, g: 0.75294125, b: 0.43921572, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 798
+  Order: 1195

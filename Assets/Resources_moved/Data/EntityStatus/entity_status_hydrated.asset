@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_hydrated
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_hydrated
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_entity_status_hydrated
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
@@ -28,6 +27,11 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
@@ -35,9 +39,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: 
+  - Comment: Increase Thirst
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: Increase Thirst
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 5

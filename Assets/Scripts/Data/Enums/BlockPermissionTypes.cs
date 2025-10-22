@@ -10,7 +10,7 @@ public enum BlockPermissionTypes
     FISH = 32,
     DECONSTRUCT_BLOCK = 64,
     COLLECT_WATER = 128,
-    BUTCHER = 256,
+    CLEAR_PLANT = 256,
     EXTINGUISH_FIRE = 512,
     PLANT_STANDING = 1024,
     BUILDING = 2048,
@@ -32,5 +32,5 @@ public enum BlockPermissionTypes
     HAS_GRAZING_PLANT = 134217728,
     CLAIM = 268435456,
     REPAIR = 536870912,
-    // = 1073741824
+    // NOTE: Cannot add more otherwise it messes up visual flags!
 }

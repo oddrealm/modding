@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_skyberry
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_plant_skyberry
   DEBUG: 0
+  TooltipID: tooltip_plant_skyberry
   TagIDs:
   - tag_biome_plants_barrens
   - tag_mature_standing
   - tag_mature_fruit
   - tag_can_be_watered
+  - tag_plants
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: 7200
@@ -72,6 +73,7 @@ MonoBehaviour:
   PlantType: 2
   PlantPermission: 1
   CanHaveGroup: 0
+  CanGrowInAnyRoom: 0
   Visuals:
   - visuals_plant_skyberry
   RemoveFX: fx_remove_plant

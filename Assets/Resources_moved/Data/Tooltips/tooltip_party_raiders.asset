@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Raiders
   NamePlural: 
   InlineIcon: <sprite=1095>
   Description: 
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
   Type: Party
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2424
+  Order: 2464

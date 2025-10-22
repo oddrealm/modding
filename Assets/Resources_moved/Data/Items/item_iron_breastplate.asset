@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 3
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -35,8 +37,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_iron_breastplate
-  CharacterColorMask: {fileID: 11400000, guid: b0385567a384f314e8853472dfd07da2, type: 2}
-  AccessoryData: {fileID: 0}
+  CharacterColorMaskID: ccm_item_iron_breastplate
+  AccessoryID: 
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,7 +46,7 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_body
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 545
   MerchantSellValue: 109
   TuneRating: 4

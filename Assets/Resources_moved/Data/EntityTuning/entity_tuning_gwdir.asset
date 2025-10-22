@@ -16,15 +16,15 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  MaxRandomAge: 100
-  MinRandomAge: 18
-  MaxRandomLevel: 5
-  MinRandomLevel: 1
+  Age: -1
   RandomProfessions: []
   MaxRandomSkill: 10
   MinRandomSkill: 5
-  SkillBonuses: []
+  SkillBonuses:
+  - Skill: skill_log
+    Amount: 5
   StartingStatuses: []
   RandomStartingStatuses: []
   FirstName: 

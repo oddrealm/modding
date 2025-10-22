@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_void_sick
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_void_sick
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_entity_status_void_sick
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
@@ -28,6 +27,11 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
@@ -35,9 +39,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: attribute_energy
+  - Comment: Remove health over time
+    ConditionTarget: attribute_energy
     HideInTooltips: 0
-    Comment: Remove health over time
     ActivationID: 
     Conditions:
     - rid: 8269333756994126503
@@ -54,9 +58,9 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
-  - ConditionTarget: attribute_energy
+  - Comment: Remove if energy is full
+    ConditionTarget: attribute_energy
     HideInTooltips: 0
-    Comment: Remove if energy is full
     ActivationID: 
     Conditions:
     - rid: 8269333756994126504

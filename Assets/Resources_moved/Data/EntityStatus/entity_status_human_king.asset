@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_human_king
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_human_king
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_entity_status_human_king
+  TagIDs:
+  - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
   ExpireTimeMinutesMin: 0
@@ -27,6 +27,11 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
@@ -34,9 +39,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: 
+  - Comment: HP Buff
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: HP Buff
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 0
@@ -44,9 +49,9 @@ MonoBehaviour:
     ActivationAction: 1
     DeactivationAction: 4
     Buffs:
-    - TargetID: attribute_health
-      Amount: 0
-      Max: 100
+    - TargetID: attribute_toughness
+      Amount: 10
+      Max: 0
       Permanent: 0
     Statuses: []
     SpawnID: 

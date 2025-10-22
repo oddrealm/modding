@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Right-Hand
   Name: Right-Hand
   NamePlural: 
   InlineIcon: <sprite=1398>
   Description: 
+  DiscoveryHint: 
   Icon: sp_empty_hand_slot_icon
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
   Type: Slot
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2173
+  Order: 2542

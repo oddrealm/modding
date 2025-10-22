@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 808216
   MaxIterations: 1
@@ -204,4 +205,12 @@ MonoBehaviour:
     DisableRoll: 1
     Weight: 1
     TagObjectID: item_glass_bottle
+    TagID: 
+  - Comment: 
+    MinCount: 15
+    MaxCount: 15
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 1
+    Weight: 1
+    TagObjectID: item_dirt_clod
     TagID: 

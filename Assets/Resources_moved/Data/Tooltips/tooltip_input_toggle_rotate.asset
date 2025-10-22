@@ -21,10 +21,9 @@ MonoBehaviour:
   Name: Rotate Props
   NamePlural: 
   InlineIcon: 
-  Description: Adjust the orientation of objects and furniture for optimal placement
-    and design.
+  Description: Adjust the orientation of props.
   Icon: 
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Input
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2571
+  Order: 2552

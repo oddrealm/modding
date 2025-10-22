@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Ancient (Not Archenthrall)
   NamePlural: 
   InlineIcon: <sprite=240>
   Description: 
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  TextColor: {r: 0.2745098, g: 0.5925429, b: 0.77254903, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 150
+  Order: 149

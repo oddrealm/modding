@@ -16,12 +16,14 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Apothecary
   Name: Apothecary
   NamePlural: Apothecaries
   InlineIcon: <sprite=900>
   Description: The Apothecary is where Alchemists create potions and other concoctions.
+  DiscoveryHint: 
   Icon: sp_room_apothecary_icon
   TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
   Type: Room

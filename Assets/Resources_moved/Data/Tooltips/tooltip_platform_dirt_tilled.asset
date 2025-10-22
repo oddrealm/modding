@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Tilled Earth
   Name: Tilled Earth
   NamePlural: 
   InlineIcon: <sprite=1380>
   Description: 
+  DiscoveryHint: 
   Icon: sp_platform_dirt_tilled_icon
   TextColor: {r: 0.5377358, g: 0.38300994, b: 0.38300994, a: 1}
-  Type: Status
+  Type: Platform
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3090
+  Order: 3162

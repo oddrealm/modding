@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_void_imp
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_void_imp
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -36,7 +38,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 0
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_void_imp
-  InherentCombatAttacks: attack_group_void_imp
+  Attacks:
+  - attack_claw_direct_slash
   SkillPermissions:
   - SkillID: skill_carry
     PlayerCanEdit: 0
@@ -210,7 +213,6 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 0
     CanSpawnWith: 0
-  Race: race_void_imp
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -226,16 +228,19 @@ MonoBehaviour:
   - entity_age_void_imp_adult
   - entity_age_void_imp_elder
   Diets:
-  - TagObjectID: tag_can_eat
+  - TagID: tag_can_eat
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses: []
-  - TagObjectID: tag_can_drink
+  - TagID: tag_can_drink
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses:
     - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
+  - TagID: tag_item_type_meal
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
@@ -247,11 +252,11 @@ MonoBehaviour:
       AutoJobType: 1
   - BlueprintID: blueprint_drink_item
     Settings:
-      Priority: 3
+      Priority: 4
       AutoJobType: 1
   - BlueprintID: blueprint_drink_from_water
     Settings:
-      Priority: 4
+      Priority: 3
       AutoJobType: 1
   - BlueprintID: blueprint_sleep_on_ground
     Settings:

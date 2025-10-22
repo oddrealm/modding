@@ -17,6 +17,7 @@ MonoBehaviour:
   TagIDs:
   - tag_terrain_gen_sand
   - tag_cave_gen_sand
+  - tag_blocks
   DiscoveryDependencies:
   - blueprint_block_sand
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -28,7 +29,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 1
+  RotationFixtureKey: 
   SkillLevel: 0
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -66,6 +69,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: sfx_sand_remove
   InteractSFX: sfx_sand_interact

@@ -17,17 +17,18 @@ MonoBehaviour:
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   OrderGroup: 0
   AutoCreateUniform: 1
   EarnBonusXPInCombat: 1
   ResearchKey: 
-  VisibleToPlayer: 1
   CanBeAssigned: 1
   CanBeChanged: 1
   CanDoSupplementCarryActions: 0
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
+  IsCombatProfession: 1
   StartingItems:
   - ItemID: item_wood_pointy_stick_two_hand
     ChanceToEquip: 0

@@ -12,18 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_lfeths_chain_whip
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
   Action: 
   Name: Lfeth's Chain Whip 2h
   NamePlural: 
   InlineIcon: <sprite=497>
-  Description: 
+  Description: Fabled weapon carried by the Ancient warrior, Lfeth.
+  DiscoveryHint: "Stories of this warrior have been shared around countless campfires.
+    I\u2019ve documented hundreds of legends, and this one appears time and time
+    again over thousands of years."
   Icon: sp_lfeths_chain_whip_icon
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1884
+  Order: 1946

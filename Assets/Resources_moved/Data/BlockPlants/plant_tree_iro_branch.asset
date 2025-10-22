@@ -18,6 +18,7 @@ MonoBehaviour:
   - tag_mature_tree
   - tag_mature_fruit
   - tag_can_be_watered
+  - tag_plants
   DiscoveryDependencies: []
   MapColor: {r: 0.14901961, g: 0.7647059, b: 0.18039216, a: 1}
   MaxLifeTime: -1
@@ -70,6 +71,7 @@ MonoBehaviour:
   PlantType: 4
   PlantPermission: 0
   CanHaveGroup: 1
+  CanGrowInAnyRoom: 0
   Visuals:
   - visuals_plant_tree_iro_branch
   RemoveFX: fx_remove_plant

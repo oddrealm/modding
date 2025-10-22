@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_blueprint_item_steel_crossbow_two_hand
-  TagIDs: []
+  TagIDs:
+  - tag_blueprints
   DiscoveryDependencies:
   - item_iron_ingot
   - skill_carry
@@ -25,6 +26,8 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SkillPriorityOverride: -1
   XP: 50
+  BaseSkillCheckFailXP: 5
+  BaseSkillLevel: 25
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   DesignationListOrder: -1
@@ -34,53 +37,48 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
+  CheckSkillFailure: 0
+  AddTargetAttributeToSkillFailCheck: 0
+  TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
   ShowItemTypeResourcePermissions: 0
   LocationID: tag_anvil
   WorkPosition: 0
   PermissionType: 0
+  CanSitDuringJob: 0
   WorkerID: skill_craft_metal
   TargetID: 
   JobActions:
   - ActionType: 0
-    MaxWorkers: 0
     ResourceID: item_steel_ingot
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
     AnimStartFX: 
     AnimStartSFX: 
   - ActionType: 0
-    MaxWorkers: 0
     ResourceID: item_steel_ingot
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
     AnimStartFX: 
     AnimStartSFX: 
   - ActionType: 0
-    MaxWorkers: 0
     ResourceID: item_steel_ingot
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
     AnimStartFX: 
     AnimStartSFX: 
   - ActionType: 3
-    MaxWorkers: 0
     ResourceID: 
-    OnJobFinishActionID: 
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
-  AddedProgressPerAction: 0
   ProgressMax: 100
   ProgressBarType: 2
   ProgressFXMaxX: 0
@@ -100,7 +98,9 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
@@ -126,6 +126,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 1
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0

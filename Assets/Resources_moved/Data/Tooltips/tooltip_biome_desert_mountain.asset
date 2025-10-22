@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_biome_desert_mountain
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Desert (Mountainous)
   Name: Desert (Mountainous)
@@ -24,8 +25,9 @@ MonoBehaviour:
   Description: An arid place welcome to only the strong willed. This biome may be
     devoid of life but, upon closer inspection, you'll discover it has many beautiful
     secrets to find.
+  DiscoveryHint: 
   Icon: sp_biome_desert_mountain_icon
   TextColor: {r: 0.8313726, g: 0.7803922, b: 0.5647059, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 905
+  Order: 1323

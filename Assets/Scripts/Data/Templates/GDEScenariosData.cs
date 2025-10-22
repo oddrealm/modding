@@ -43,6 +43,7 @@ public class GDEScenariosData : Scriptable
     public Condition[] Conditions = new Condition[0];
     public string PartyID = "";
     public bool IsScheduled = false;
+    public string[] Biomes = new string[0];
     public RandomChance ActivationChance;
     public int MaxActivations = 0;
     public uint MinKingdomLevel = 1;
@@ -52,9 +53,14 @@ public class GDEScenariosData : Scriptable
     public uint MinTimeOfDay = 0;
     public uint MaxTimeOfDay = 1440;
 
+    public HashSet<string> BiomesHash { get; private set; } = new HashSet<string>();
+
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
+        BiomesHash.Clear();
+        BiomesHash.UnionWith(Biomes);
+
         for (int i = 0; i < Dialogues.Length; i++)
         {
             if (string.IsNullOrEmpty(Dialogues[i].DialogueID) || !DataManager.TagObjectExists(Dialogues[i].DialogueID))

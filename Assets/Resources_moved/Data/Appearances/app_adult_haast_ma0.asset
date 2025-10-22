@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_haast_ma0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_haast_male_select_negative
   OrderPositiveSFX: sfx_haast_male_order_positive
   OrderNegativeSFX: sfx_haast_male_order_negative
+  ColorMaskID: ccm_haast_ma0
+  AnimationsID: giantspider
   ColorMask: {fileID: 11400000, guid: 400e26bfd04119345b2d2e3d0eb66a70, type: 2}
   Animations: {fileID: 11400000, guid: 3f15ce1e132822a44ba701e82fa10bd4, type: 2}

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73b2bfdc033e354fa9a09aeafd5628c, type: 3}
   m_Name: starting_loadout_human_dev
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_starting_loadout_human_dev
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_starting_loadout_human_dev
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -23,4 +22,3 @@ MonoBehaviour:
   EntitySpawnGroupID: esg_starting_loadout_human_dev
   Items: spawns_starting_loadout_dev
   ContainerIDs: []
-  StartingRen: 150

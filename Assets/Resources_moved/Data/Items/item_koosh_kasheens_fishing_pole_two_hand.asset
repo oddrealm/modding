@@ -37,8 +37,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_koosh_kasheens_fishing_pole_two_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 0}
+  CharacterColorMaskID: 
+  AccessoryID: 
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 0
@@ -48,6 +48,8 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_koosh_kasheens_fishing_pole_two_hand
+  Attacks:
+  - attack_koosh_kasheens_fishing_pole_two_hand_strike
   MerchantBuyValue: 6000
   MerchantSellValue: 1200
   TuneRating: -1
@@ -74,4 +76,5 @@ MonoBehaviour:
     Status: entity_status_has_fishing_pole
     SpawnID: 
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

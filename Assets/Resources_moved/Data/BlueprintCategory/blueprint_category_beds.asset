@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228f405f523bdfb47880414b6c55c5d0, type: 3}
   m_Name: blueprint_category_beds
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_category_beds
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_blueprint_category_beds
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   VisibleSelectionList: 15
   VisibilityFlags: 1024

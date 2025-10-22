@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_guard_post
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Guard Post
   Name: Guard Post
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=70>
   Description: The Guard Post is a place where military units can be posted to keep
     watch on an area.
+  DiscoveryHint: 
   Icon: sp_room_guard_post_icon
   TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
   Type: Room
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1580
+  Order: 1603

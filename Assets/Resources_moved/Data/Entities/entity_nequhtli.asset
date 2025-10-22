@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_nequhtli
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_nequhtli
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -37,7 +39,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_nequhtli
-  InherentCombatAttacks: attack_group_nequhtli
+  Attacks:
+  - attack_jab_direct_bludgeon
   SkillPermissions:
   - SkillID: skill_fight_melee
     PlayerCanEdit: 1
@@ -139,7 +142,6 @@ MonoBehaviour:
   - ProfessionID: profession_blacksmith
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_nequhtli
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -162,16 +164,19 @@ MonoBehaviour:
   - entity_age_nequhtli_adult
   - entity_age_nequhtli_elder
   Diets:
-  - TagObjectID: tag_can_eat
+  - TagID: tag_can_eat
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses: []
-  - TagObjectID: tag_can_drink
+  - TagID: tag_can_drink
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses:
     - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
+  - TagID: tag_item_type_meal
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:

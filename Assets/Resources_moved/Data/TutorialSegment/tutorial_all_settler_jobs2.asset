@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: tutorial_all_settler_jobs2
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_all_settler_jobs2
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Jobs 2
-  PreviousSegment: tutorial_all_settler_jobs1
   Trigger: 12
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
@@ -50,7 +51,7 @@ MonoBehaviour:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: Select a location (
+    Body: Use
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
@@ -64,8 +65,22 @@ MonoBehaviour:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: ) to place settler jobs in the world.
+    Body: to add jobs to the world and
+    NewLine: 1
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
+  - OnlyShowInputHotkey: 1
+    InputID: input_command_deselect_block
+    TagObjectID: 
+    Body: 
     NewLine: 0
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
+  - OnlyShowInputHotkey: 0
+    InputID: 
+    TagObjectID: 
+    Body: to remove them.
+    NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
   NextSegment: 

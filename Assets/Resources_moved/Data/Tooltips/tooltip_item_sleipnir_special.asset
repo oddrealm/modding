@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_sleipnir_special
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
   Action: 
   Name: Sleipnir Special
   NamePlural: 
   InlineIcon: <sprite=615>
   Description: I'm surprised there aren't any bugs in this recipe.
+  DiscoveryHint: Unknown Origin
   Icon: sp_sleipnir_special_icon
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.540621, g: 0.251068, b: 0.5849056, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2701
+  Order: 2725

@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_bronze_fishing_pole_two_hand
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
   Action: 
   Name: Bronze Fishing Pole 2h
   NamePlural: 
   InlineIcon: <sprite=972>
   Description: 
+  DiscoveryHint: 
   Icon: sp_bronze_fishing_pole_two_hand_icon
   TextColor: {r: 0.8588236, g: 0.47058827, b: 0.09411766, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 340
+  Order: 372

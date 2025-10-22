@@ -16,15 +16,16 @@ MonoBehaviour:
   TooltipID: tooltip_entity_ardyn
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_ardyn
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
   SizeTagID: tag_entity_size_medium
   LanguagesSpoken:
   - language_engel
-  DefaultLeaderRoles:
-  - 
+  DefaultLeaderRoles: []
   CompanionType: 2
   CompanionPermanenceType: 1
   ReproductionType: 0
@@ -37,7 +38,9 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_ardyn
-  InherentCombatAttacks: attack_group_ardyn
+  Attacks:
+  - attack_jab_direct_bludgeon
+  - attack_hand_time_weave_direct
   SkillPermissions:
   - SkillID: skill_carry
     PlayerCanEdit: 1
@@ -136,7 +139,6 @@ MonoBehaviour:
   - ProfessionID: profession_blacksmith
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_ardyn
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -156,19 +158,7 @@ MonoBehaviour:
   Ages:
   - entity_age_ardyn_adult
   - entity_age_ardyn_elder
-  Diets:
-  - TagObjectID: tag_can_eat
-    Priority: 0
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_can_drink
-    Priority: 0
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_cooked_food
-    Priority: 0
-    Buffs: []
-    Statuses: []
+  Diets: []
   AutoJobs:
   - BlueprintID: blueprint_sleep_on_ground
     Settings:

@@ -21,6 +21,7 @@ MonoBehaviour:
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 3
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -35,8 +36,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_iron_boots
-  CharacterColorMask: {fileID: 11400000, guid: 339fca2600600684ab24b63fc9cc1520, type: 2}
-  AccessoryData: {fileID: 0}
+  CharacterColorMaskID: ccm_item_iron_boots
+  AccessoryID: 
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,7 +45,7 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_feet
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 515
   MerchantSellValue: 103
   TuneRating: 4

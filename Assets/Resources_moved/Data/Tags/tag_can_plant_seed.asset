@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: tag_can_plant_seed
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_tag_can_plant_seed
-  GroupID: 
-  GroupIDs: []
   DEBUG: 0
+  TooltipID: tooltip_tag_can_plant_seed
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
   TrackPlayerCanEdit: 0

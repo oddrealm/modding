@@ -12,19 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_skill_fish
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Fish
-  Name: Fish
+  Action: Fishing
+  Name: Fishing
   NamePlural: 
   InlineIcon: <sprite=58>
-  Description: Added to fishing output and increases chances to lure fish.
+  Description: Increases distance which fish can be lured. Fish are caught when they
+    reach the fishing location.
+  DiscoveryHint: 
   Icon: sp_skill_fish_icon
   TextColor: {r: 0.9372549, g: 0.69411767, b: 0.12941177, a: 1}
   Type: Skill
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1087
+  Order: 1509

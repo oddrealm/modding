@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Simulations:
   - rid: 0
@@ -60,7 +61,6 @@ MonoBehaviour:
         RequireAllConditionsToBeMet: 1
         Conditions:
         - rid: 12
-        - rid: 13
         Actions:
         - rid: 14
     - rid: 3
@@ -120,12 +120,6 @@ MonoBehaviour:
       data:
         Outcome: 1
         StateID: plant_state_can_move_to_target
-        OptionID: 
-    - rid: 13
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: plant_is_permitted
         OptionID: 
     - rid: 14
       type: {class: MoveInstanceSimAction, ns: , asm: Assembly-CSharp}

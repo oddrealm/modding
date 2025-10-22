@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701e5e6cf84de544cb78430a61b6eb34, type: 3}
   m_Name: skill_animal_husbandry
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_skill_animal_husbandry
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_skill_animal_husbandry
   TagIDs:
   - tag_skills
   DiscoveryDependencies: []

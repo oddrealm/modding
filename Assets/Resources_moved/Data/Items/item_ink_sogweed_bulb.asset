@@ -34,15 +34,15 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_ink_sogweed_bulb
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 0}
+  CharacterColorMaskID: 
+  AccessoryID: 
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
   PermittedSlots: []
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 45
   MerchantSellValue: 9
   TuneRating: 0
@@ -53,4 +53,5 @@ MonoBehaviour:
   StackSize: 5
   Actions: []
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions: []

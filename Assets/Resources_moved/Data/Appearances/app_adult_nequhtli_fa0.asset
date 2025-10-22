@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_nequhtli_fa0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_nequhtli_female_select_negative
   OrderPositiveSFX: sfx_nequhtli_female_order_positive
   OrderNegativeSFX: sfx_nequhtli_female_order_negative
+  ColorMaskID: ccm_nequhtli_fa0
+  AnimationsID: nequhtli
   ColorMask: {fileID: 11400000, guid: a6d4fae7a0a1d7947b83572b69276dc6, type: 2}
   Animations: {fileID: 11400000, guid: 5fc0c766a6be6b04388797bbf0462a90, type: 2}

@@ -18,6 +18,7 @@ MonoBehaviour:
   - tag_races
   - tag_can_sleep_in_sarcophagus
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 1000
   Intelligence: intelligence_sapient
@@ -53,5 +54,7 @@ MonoBehaviour:
   - ItemID: item_adepts_aeternum
     ChanceToEquip: 1
     ChanceToEquipMaxRoll: 20
+  Statuses:
+  - entity_status_ancient_wisdom
   Buffs: []
   AutoCreateUniform: 1

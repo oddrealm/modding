@@ -16,13 +16,14 @@ MonoBehaviour:
   TooltipID: tooltip_attack_wood_war_hammer_two_hand_strike
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
   ProjectileType: 0
   FiringType: 1
   ActivationType: 2
-  DamageType: 1
+  DamageType: 3
   AttackFishInRange: 0
   SkillID: skill_fight_melee
   AddSkillToOutput: 1

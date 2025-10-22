@@ -17,6 +17,7 @@ MonoBehaviour:
   TagIDs:
   - tag_trigger_door_open
   - tag_trigger_trap_door_drop_entity
+  - tag_props
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
@@ -91,7 +92,8 @@ MonoBehaviour:
   TemperatureSource: 0
   IsRotationFixture: 0
   RotationFixtureKey: 
-  SkillLevel: 0
+  SkillLevel: 3
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -113,7 +115,7 @@ MonoBehaviour:
   Prohibited: 0
   ProhibitedAbove: 0
   Layer: 2
-  ProhibitedLayers: 0
+  ProhibitedLayers: 4
   CanHaveRoom: 1
   CanHavePlatform: 0
   PermittedPlantTypes: 1
@@ -129,6 +131,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

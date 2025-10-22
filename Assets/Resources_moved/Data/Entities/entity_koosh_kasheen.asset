@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_koosh_kasheen
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_unknown
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -37,7 +39,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 0
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_koosh_kasheen
-  InherentCombatAttacks: attack_group_koosh_kasheen
+  Attacks:
+  - attack_jab_direct_bludgeon
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 0
@@ -211,7 +214,6 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 0
     CanSpawnWith: 0
-  Race: race_unknown
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -231,16 +233,19 @@ MonoBehaviour:
   Ages:
   - entity_age_koosh_kasheen_adult
   Diets:
-  - TagObjectID: tag_can_eat
+  - TagID: tag_can_eat
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses: []
-  - TagObjectID: tag_can_drink
+  - TagID: tag_can_drink
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses:
     - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
+  - TagID: tag_item_type_meal
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:

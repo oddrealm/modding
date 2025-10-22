@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d81985b295399498626a621398670f, type: 3}
   m_Name: dialogue_desert_shimmer_seen0_shimmer0_d0_1
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   AppearanceID: 
   NextDialogueID: []
@@ -24,5 +24,5 @@ MonoBehaviour:
   Message: Don't be afraid. Let me be your shepherd to the void. The void will keep
     you safe.
   Response: []
-  FocusOnSpeaker: 1
+  ShowOnce: 0
   DialogueSequences: []

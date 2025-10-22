@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Moss Kuplin
   Name: Moss Kuplin
-  NamePlural: 
-  InlineIcon: <sprite=48>
-  Description: 
+  NamePlural: Moss Kuplins
+  InlineIcon: <sprite=1914>
+  Description: A quick, cheerful critter that takes pleasure in hauling.
+  DiscoveryHint: The Gwdir know much of this creature. Alas, I do not.
   Icon: 
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2063
+  Order: 2104

@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: tag_races
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_tag_races
   DEBUG: 0
+  TooltipID: tooltip_tag_races
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  TrackPlayerCanEdit: 0
+  TrackPlayerCanEdit: 1
   TrackingTypes: 0
   TagGroups:
   - entity_profile
+  - codex

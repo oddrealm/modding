@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_block_lode_void_crystal
-  TagIDs: []
+  TagIDs:
+  - tag_blocks
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
@@ -24,7 +25,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 1
-  SkillLevel: 5
+  RotationFixtureKey: 
+  SkillLevel: 20
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -34,7 +37,7 @@ MonoBehaviour:
   VerticalEntityLift: 0
   IsObstruction: 1
   IsVerticalAccess: 0
-  PermittedPathsAbove: 63
+  PermittedPathsAbove: -1
   PermittedPaths: 0
   VerticalMovementMod: 1
   HorizontalMovementMod: 1
@@ -64,6 +67,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: sfx_ore_remove
   InteractSFX: sfx_stone_interact

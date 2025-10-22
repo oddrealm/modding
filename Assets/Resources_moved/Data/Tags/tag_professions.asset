@@ -16,9 +16,11 @@ MonoBehaviour:
   TooltipID: tooltip_tag_professions
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  TrackPlayerCanEdit: 0
-  TrackingTypes: 1
+  TrackPlayerCanEdit: 1
+  TrackingTypes: 0
   TagGroups:
   - entity_profile
+  - codex

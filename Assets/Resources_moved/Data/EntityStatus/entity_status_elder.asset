@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_elder
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_elder
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_entity_status_elder
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
@@ -28,6 +27,11 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
   TooltipBackgroundColor: {r: 0.105882354, g: 0.47219813, b: 0.6666667, a: 1}
@@ -35,9 +39,9 @@ MonoBehaviour:
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: 
+  - Comment: Randomly kill.
+    ConditionTarget: 
     HideInTooltips: 1
-    Comment: Randomly kill.
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 10
@@ -53,9 +57,9 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
-  - ConditionTarget: 
+  - Comment: Move slower.
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: Move slower.
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 0

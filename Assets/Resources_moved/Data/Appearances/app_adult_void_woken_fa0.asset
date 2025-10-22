@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_void_woken_fa0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -38,5 +37,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_void_woken_female_select_negative
   OrderPositiveSFX: sfx_void_woken_female_order_positive
   OrderNegativeSFX: sfx_void_woken_female_order_negative
+  ColorMaskID: ccm_void_woken_fa0
+  AnimationsID: voidwoken
   ColorMask: {fileID: 11400000, guid: 940d83e2ebaf014478ae7e3acc88edf7, type: 2}
   Animations: {fileID: 11400000, guid: 24d9e9623b3e3354e8a6f2beafffe125, type: 2}

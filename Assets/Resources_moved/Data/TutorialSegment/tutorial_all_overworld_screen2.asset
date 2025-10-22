@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: tutorial_all_overworld_screen2
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_all_overworld_screen2
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
-  PreviousSegment: 
   Trigger: 0
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
@@ -50,14 +51,14 @@ MonoBehaviour:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: 'Alternatively, you can use:'
+    Body: You can also use the hotkeys.
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: 
+    Body: 'Zoom In:'
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
@@ -71,7 +72,7 @@ MonoBehaviour:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: and
+    Body: 'Zoom Out:'
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0.44705883, g: 0.35686275, b: 0.30588236, a: 1}

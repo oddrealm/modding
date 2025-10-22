@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_room_none
-  TagIDs: []
+  TagIDs:
+  - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_none
   ResearchKey: 
@@ -35,6 +37,7 @@ MonoBehaviour:
     ProhibitedLocations:
     - block_none
     PermittedLocations: []
+  RoomQualities: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

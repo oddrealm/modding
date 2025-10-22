@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Ice
   Name: Ice
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1176>
   Description: Covering much of the poles of Odd, ice walls can be used for reliable
     shelter.
+  DiscoveryHint: 
   Icon: sp_block_ice_icon
   TextColor: {r: 1, g: 1, b: 1, a: 1}
-  Type: 
+  Type: Block
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1727
+  Order: 1754

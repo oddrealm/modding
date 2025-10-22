@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_mosskuplin
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Create Moss Kuplin
   NamePlural: 
-  InlineIcon: <sprite=677>
-  Description: 
-  Icon: sp_summon_void_imp_icon
+  InlineIcon: <sprite=1914>
+  Description: A quick, cheerful critter that takes pleasure in hauling.
+  DiscoveryHint: The Gwdir know much of this creature. Alas, I do not.
+  Icon: sp_mosskuplin
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1755
+  Order: 1206

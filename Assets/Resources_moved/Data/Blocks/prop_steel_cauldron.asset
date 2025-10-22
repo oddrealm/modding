@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_prop_steel_cauldron
   TagIDs:
   - tag_cauldron
+  - tag_props
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags:
@@ -26,7 +27,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
-  SkillLevel: 0
+  RotationFixtureKey: 
+  SkillLevel: 3
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -64,6 +67,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

@@ -17,5 +17,6 @@
     MOVE_UP = 15,
     MOVE_DOWN = 16,
     MOVE_OPEN = 17,
-    SPAWN = 18
+    SPAWN = 18,
+    FLEE = 19,
 }

@@ -42,6 +42,8 @@ public class DialogueSequence
     public const string SPEAKER0 = "speaker0";
     public const string SPEAKER1 = "speaker1";
     public const string SPEAKER2 = "speaker2";
+    public const string RANDOM_SETTLER = "random_settler";
+    public readonly static string[] SPEAKER_IDS = new string[] { SPEAKER0, SPEAKER1, SPEAKER2, RANDOM_NEW_SPEAKER, RANDOM_SETTLER };
     [Header("Used by actions to find the next sequence to start.")]
     public string ID;
     [Header("Dialogue text body.")]
@@ -65,6 +67,7 @@ public struct DialogueAction
     public string ActionDataID;
     public int ActionCount;
     public string ScenarioID;
+    public string TagObjectID;
 
     public bool IsValid
     {
@@ -81,11 +84,14 @@ public enum DialogueActionTypes
     SPEAKER_ACTION,
     ALL_SPEAKERS_ACTION,
     ACTIVATE_SCENARIO,
+    SPAWN_TAG_OBJ,
 }
 
 public enum SpeakerActionTypes
 {
     NONE,
+    LEAVE_MAP_IMMEDIATE,
+    SET_FACTION,
+    ADD_STATUS,
     LEAVE_MAP,
-    SET_FACTION
 }

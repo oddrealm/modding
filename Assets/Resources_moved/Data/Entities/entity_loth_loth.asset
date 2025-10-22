@@ -17,6 +17,7 @@ MonoBehaviour:
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_nequhtli
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -37,7 +38,10 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_loth_loth
-  InherentCombatAttacks: attack_group_loth_loth
+  Attacks:
+  - attack_jab_direct_bludgeon
+  - attack_claw_direct_slash
+  - attack_bite_direct_pierce
   SkillPermissions:
   - SkillID: skill_carry
     PlayerCanEdit: 1
@@ -136,7 +140,6 @@ MonoBehaviour:
   - ProfessionID: profession_blacksmith
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_nequhtli
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -157,16 +160,19 @@ MonoBehaviour:
   Ages:
   - entity_age_loth_loth_adult
   Diets:
-  - TagObjectID: tag_can_eat
+  - TagID: tag_can_eat
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses: []
-  - TagObjectID: tag_can_drink
+  - TagID: tag_can_drink
+    TagObjectID: 
     Priority: 2
     Buffs: []
     Statuses:
     - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
+  - TagID: tag_item_type_meal
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:

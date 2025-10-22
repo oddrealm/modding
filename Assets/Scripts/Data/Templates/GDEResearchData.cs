@@ -14,15 +14,15 @@ public class GDEResearchData : Scriptable
     public int Row = 0;
     public string ResearchCategory = "";
     public int RequireItemCountOverride = 0;
-    public List<GlobalBuff> GlobalBuffs = new List<GlobalBuff>();
+    public List<GlobalBuff> GlobalBuffs = new();
     [System.NonSerialized]
-    public List<string> Dependencies = new List<string>();
+    public List<string> Dependencies = new();
     [System.NonSerialized]
-    public List<string> TagObjectTypesUnlocked = new List<string>();
+    public List<string> TagObjectTypesUnlocked = new();
     [System.NonSerialized]
-    public Dictionary<string, List<string>> TagObjectsByTypeUnlocked = new Dictionary<string, List<string>>();
+    public Dictionary<string, List<string>> TagObjectsByTypeUnlocked = new();
     [System.NonSerialized]
-    public List<string> TagObjectsUnlocked = new List<string>();
+    public List<string> TagObjectsUnlocked = new();
     public string RequiredDiscovery = "";
 
     public int ResearchCost { get { return 1; } }

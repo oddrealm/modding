@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
   m_Name: spawns_terrain_gen_ember_rock_default
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs:
   - tag_spawns_terrain_gen_ember_rock_default
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 292304
   MaxIterations: 1
@@ -28,6 +28,38 @@ MonoBehaviour:
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
-    Weight: 1
+    Weight: 0.994
     TagObjectID: 
     TagID: tag_terrain_gen_ember_rock
+  - Comment: Iron Ore
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.003
+    TagObjectID: block_lode_iron_ore
+    TagID: 
+  - Comment: Coal
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.001
+    TagObjectID: block_lode_coal_ore
+    TagID: 
+  - Comment: Copper
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.001
+    TagObjectID: block_lode_copper_ore
+    TagID: 
+  - Comment: Tin
+    MinCount: 1
+    MaxCount: 1
+    LimitMaxCountByLocationItemMax: 0
+    DisableRoll: 0
+    Weight: 0.001
+    TagObjectID: block_lode_tin_ore
+    TagID: 

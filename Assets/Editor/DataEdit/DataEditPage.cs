@@ -345,7 +345,24 @@ public abstract class DataEditPage
             _master.DebugTriggers = GUILayout.Toggle(_master.DebugTriggers, "Debug Triggers");
             _master.DebugDirty = GUILayout.Toggle(_master.DebugDirty, "Debug Dirty");
             _master.DebugWork = GUILayout.Toggle(_master.DebugWork, "Debug Work");
+            _master.DebugSkylight = GUILayout.Toggle(_master.DebugSkylight, "Debug Skylight");
+            _master.DebugEntityMovement = GUILayout.Toggle(_master.DebugEntityMovement, "Debug Entity Movement");
+            _master.DebugEntityState = GUILayout.Toggle(_master.DebugEntityState, "Debug Entity State");
+            _master.DebugDiets = GUILayout.Toggle(_master.DebugDiets, "Debug Diets");
+            _master.DebugTuneRating = GUILayout.Toggle(_master.DebugTuneRating, "Debug Tune Rating");
+            if (_master.DebugTuneRating)
+            {
+                _master.ForcedDebugTuneRating = INT_INPUT(_master.ForcedDebugTuneRating, "Forced Debug Tune Rating");
+            }
+            _master.DebugBlockRebuild = GUILayout.Toggle(_master.DebugBlockRebuild, "Debug Block Rebuild");
+            _master.DebugPlants = GUILayout.Toggle(_master.DebugPlants, "Debug Plants");
+            _master.DebugParties = GUILayout.Toggle(_master.DebugParties, "Debug Parties");
+            _master.DebugCombat = GUILayout.Toggle(_master.DebugCombat, "Debug Combat");
+            _master.DebugFishSpawn = GUILayout.Toggle(_master.DebugFishSpawn, "Debug Fish Spawn");
+            _master.DebugFishing = GUILayout.Toggle(_master.DebugFishing, "Debug Fishing");
             _master.UnlockAllTech = GUILayout.Toggle(_master.UnlockAllTech, "Unlock All Tech");
+            _master.DisableSkillCheckFails = GUILayout.Toggle(_master.DisableSkillCheckFails, "Disable Skill Check Fails");
+            _master.DiscoverAllCodex = GUILayout.Toggle(_master.DiscoverAllCodex, "Discover All Codex");
             _master.RandomizeSeed = GUILayout.Toggle(_master.RandomizeSeed, "Randomize Seed");
             _master.Seed = (uint)INT_INPUT((int)_master.Seed, "Seed");
             _master.NewGameElapsedTime = INT_INPUT(_master.NewGameElapsedTime, "Elapsed Time");
@@ -517,17 +534,6 @@ public abstract class DataEditPage
             ScriptableObject newObj = DataUtility.Clone(objectToDupe, newName);
             DataUtility.ReplaceTextInFields(newObj, prevName, newName);
         }
-    }
-
-    protected GDEAttackGroupsData CreateNewAttackGroup(string attackGroupName)
-    {
-        GDEAttackGroupsData attackGroup = CreateScriptableObject<GDEAttackGroupsData>(
-            attackGroupName
-        );
-
-        SetDataDirty();
-
-        return attackGroup;
     }
 
     protected GDEAttacksData CreateNewAttack(string attackName)
@@ -1832,6 +1838,41 @@ public abstract class DataEditPage
         return keys[index];
     }
 
+    protected string DROP_DOWN(string label, string selectionID, string[] keys, int width = -1)
+    {
+        int index = 0;
+
+        for (int i = 0; i < keys.Length; i++)
+        {
+            if (keys[i] != selectionID)
+            {
+                continue;
+            }
+            index = i;
+            break;
+        }
+
+        BEGIN_HOR();
+        LABEL(label);
+
+        if (width > 0)
+        {
+            index = EditorGUILayout.Popup(index, keys.ToArray(), GUILayout.Width(width));
+        }
+        else
+        {
+            index = EditorGUILayout.Popup(index, keys.ToArray());
+        }
+
+        END_HOR();
+
+        if (index >= keys.Length)
+        {
+            return selectionID;
+        }
+
+        return keys[index];
+    }
     protected AnimationCurve ANIM_CURVE(AnimationCurve curve, string label)
     {
         if (!string.IsNullOrEmpty(label))

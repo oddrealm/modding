@@ -22,6 +22,7 @@ MonoBehaviour:
   DiscoveryDependencies:
   - blueprint_plant_skyberry
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 10
   UsageTags:
   - tag_can_plant_seed
   MaxLifeTime: 0
@@ -36,15 +37,15 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_skyberry_seed
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 0}
+  CharacterColorMaskID: 
+  AccessoryID: 
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
   PermittedSlots: []
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 5
   MerchantSellValue: 1
   TuneRating: 0
@@ -63,4 +64,5 @@ MonoBehaviour:
     Status: 
     SpawnID: plant_skyberry
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions: []

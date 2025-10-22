@@ -15,12 +15,12 @@ public class GDEProfessionData : Scriptable
     public bool AutoCreateUniform = true;
     public bool EarnBonusXPInCombat = false;
     public string ResearchKey = "";
-    public bool VisibleToPlayer = false;
     public bool CanBeAssigned = true;
     public bool CanBeChanged = true;
     public bool CanDoSupplementCarryActions = false;
     public bool CanLevelUp;
     public bool FavoursRangedAttackItems = false;
+    public bool IsCombatProfession = false;
     public RandomEquipmentItem[] StartingItems = new RandomEquipmentItem[] { };
     public string GlobalIndicator = "";
     public string[] SkillsActiveByDefault;
@@ -75,6 +75,7 @@ public class GDEProfessionData : Scriptable
     public override void OnLoaded()
     {
         base.OnLoaded();
+        EnsureTag("tag_professions");
 
         SkillPrioritiesBySkillID.Clear();
 

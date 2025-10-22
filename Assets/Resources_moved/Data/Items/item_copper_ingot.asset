@@ -20,6 +20,7 @@ MonoBehaviour:
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 2
   UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
@@ -33,15 +34,15 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_copper_ingot
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 0}
+  CharacterColorMaskID: 
+  AccessoryID: 
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
   PermittedSlots: []
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 150
   MerchantSellValue: 30
   TuneRating: 3
@@ -52,4 +53,5 @@ MonoBehaviour:
   StackSize: 5
   Actions: []
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions: []

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_cow_ma0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_cow_male_select_negative
   OrderPositiveSFX: sfx_cow_male_order_positive
   OrderNegativeSFX: sfx_cow_male_order_negative
+  ColorMaskID: ccm_cow_ma0
+  AnimationsID: cow
   ColorMask: {fileID: 11400000, guid: c31e47af72440034b9413729643af4e5, type: 2}
   Animations: {fileID: 11400000, guid: a13cbed8e1e5bd64eade0ab2cb532c11, type: 2}

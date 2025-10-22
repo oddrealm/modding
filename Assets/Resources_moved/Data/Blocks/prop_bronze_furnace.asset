@@ -19,6 +19,7 @@ MonoBehaviour:
   - tag_fire
   - tag_heat_source
   - tag_trigger_furnace_used
+  - tag_props
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags:
@@ -27,27 +28,27 @@ MonoBehaviour:
   - tag_heat_source
   DefaultFill: block_fill_air
   TriggerConditions:
-  - TriggerType: 3
+  - ActivateTriggerID: tag_trigger_furnace_used
+    DeactivateTriggerID: 
+    TriggerType: 3
     HideInTooltips: 1
     Invert: 0
-    ActivateTriggerID: tag_trigger_furnace_used
-    DeactivateTriggerID: 
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
-  - TriggerType: 4
+  - ActivateTriggerID: 
+    DeactivateTriggerID: tag_trigger_furnace_used
+    TriggerType: 4
     HideInTooltips: 1
     Invert: 0
-    ActivateTriggerID: 
-    DeactivateTriggerID: tag_trigger_furnace_used
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
   Triggers:
   - Comment: Being Used
+    ID: tag_trigger_furnace_used
     ActiveTooltipID: 
     InactiveTooltipID: 
-    ID: tag_trigger_furnace_used
     Permissions: 0
     Visuals: 
     SFX: sfx_furnace_interact
@@ -64,7 +65,8 @@ MonoBehaviour:
   TemperatureSource: 50
   IsRotationFixture: 0
   RotationFixtureKey: 
-  SkillLevel: 0
+  SkillLevel: 3
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -102,6 +104,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

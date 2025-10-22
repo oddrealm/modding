@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 99447
   MaxIterations: 1
@@ -27,5 +28,5 @@ MonoBehaviour:
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 0
-    TagObjectID: item_cloth_backpack
+    TagObjectID: item_linen_backpack
     TagID: 

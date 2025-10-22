@@ -6,13 +6,14 @@ public class GDERacesData : Scriptable, IProgressionObject
 {
     public int MerchantValue = 0;
     public string Intelligence;
-    public List<string> Tags = new List<string>();
+    public List<string> Tags = new();
     public string DefaultEntityID = "";
     public bool Public = false;
-    public List<string> Perks = new List<string>();
-    public List<string> DefaultActiveResearch = new List<string>();
-    public RandomEquipmentItem[] StartingItems = new RandomEquipmentItem[] { };
-    public BuffData[] Buffs;
+    public List<string> Perks = new();
+    public List<string> DefaultActiveResearch = new();
+    public RandomEquipmentItem[] StartingItems = System.Array.Empty<RandomEquipmentItem>();
+    public string[] Statuses = System.Array.Empty<string>();
+    public BuffData[] Buffs = System.Array.Empty<BuffData>();
     public bool AutoCreateUniform = true;
 
     public bool CanShowInProgressUI
@@ -35,4 +36,17 @@ public class GDERacesData : Scriptable, IProgressionObject
 
         return true;
     }
+
+#if ODD_REALM_APP
+    public override void Init()
+    {
+        base.Init();
+    }
+
+    public override void OnLoaded()
+    {
+        base.OnLoaded();
+        EnsureTag("tag_races");
+    }
+#endif
 }

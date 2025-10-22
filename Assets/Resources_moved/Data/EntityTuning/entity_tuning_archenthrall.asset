@@ -12,25 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_archenthrall
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  MaxRandomAge: 100
-  MinRandomAge: 18
-  MaxRandomLevel: 5
-  MinRandomLevel: 1
+  Age: -1
   RandomProfessions: []
   MaxRandomSkill: 10
   MinRandomSkill: 1
   SkillBonuses:
-  - Skill: 2097152
+  - Skill: skill_craft_void
     Amount: 5
-  - Skill: 1048576
+  - Skill: skill_summoning
     Amount: 5
-  - Skill: 8192
+  - Skill: skill_fight_magic
     Amount: 5
   StartingStatuses: []
   RandomStartingStatuses:

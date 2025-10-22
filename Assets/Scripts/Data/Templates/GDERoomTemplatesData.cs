@@ -120,6 +120,7 @@ public class GDERoomTemplatesData : Scriptable
 
     public override void OnLoaded()
     {
+        EnsureTag("tag_rooms");
         RoomQualityByLevel.Clear();
         MaxQuality = 0;
 
@@ -158,6 +159,7 @@ public class GDERoomTemplatesData : Scriptable
         {
             RoomAutoJob autoJob = DefaultAutoJobs[i];
             GDEBlueprintsData blueprint = DataManager.GetTagObject<GDEBlueprintsData>(autoJob.BlueprintID);
+            // Debug.Log($"{Key}.{blueprint.Key}");
             PopulateDefaultPermissions(autoJob.BlueprintID, autoJob.ProhibitedResources, DefaultProhibitedResources, true);
             PopulateDefaultPermissions(autoJob.BlueprintID, autoJob.PermittedResources, DefaultProhibitedResources, false);
             PopulateDefaultPermissions(autoJob.BlueprintID, autoJob.ProhibitedLocations, DefaultProhibitedLocations, true);
@@ -252,9 +254,7 @@ public class GDERoomTemplatesData : Scriptable
                 continue;
             }
 
-            Dictionary<string, bool> permissions;
-
-            if (!defaultPermissions.TryGetValue(blueprintID, out permissions))
+            if (!defaultPermissions.TryGetValue(blueprintID, out Dictionary<string, bool> permissions))
             {
                 permissions = new Dictionary<string, bool>();
                 defaultPermissions[blueprintID] = permissions;
@@ -276,6 +276,8 @@ public class GDERoomTemplatesData : Scriptable
                         {
                             permissions[tagObjects[l].Key] = prohibit;
                         }
+
+                        // Debug.Log($"{tagObjID}.{tagObjects[l].Key} = {prohibit}");
                     }
                 }
             }
@@ -291,9 +293,11 @@ public class GDERoomTemplatesData : Scriptable
                     {
                         permissions[tagObjectsByTag[l].Key] = prohibit;
                     }
+
+                    // Debug.Log($"{tagObjID}.{tagObjectsByTag[l].Key} = {prohibit}");
                 }
             }
-            else
+            else if (DataManager.TryGetTagObject(tagObjID, out var _))
             {
                 if (!permissions.ContainsKey(tagObjID))
                 {
@@ -303,6 +307,12 @@ public class GDERoomTemplatesData : Scriptable
                 {
                     permissions[tagObjID] = prohibit;
                 }
+
+                // Debug.Log($"{tagObjID} = {prohibit}");
+            }
+            else
+            {
+                Debug.LogError($"Invalid tag object ID '{tagObjID}' in prohibited/permitted list for auto job '{blueprintID}'");
             }
         }
     }

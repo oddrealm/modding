@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Queen
   NamePlural: Queens
   InlineIcon: <sprite=1731>
-  Description: 
+  Description: Passed on to children.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.85098046, g: 0.6156863, b: 0.2509804, a: 1}
   Type: Role
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2395
+  Order: 2411

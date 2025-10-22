@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_prop_astracube
   TagIDs:
   - tag_container
+  - tag_props
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags:
   - tag_container
@@ -26,7 +28,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 1
-  SkillLevel: 0
+  RotationFixtureKey: 
+  SkillLevel: 3
+  Toughness: 0
   MaxItemCount: 200
   ItemTypePermissions: []
   CanShowItems: 0
@@ -34,7 +38,7 @@ MonoBehaviour:
   DecayBuff: 5760
   RemoveItemDrops: spawns_prop_astracube
   VerticalEntityLift: 2
-  IsObstruction: 1
+  IsObstruction: 0
   IsVerticalAccess: 0
   PermittedPathsAbove: -1
   PermittedPaths: -1
@@ -64,6 +68,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 2
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

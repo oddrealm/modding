@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Gwdir
@@ -24,8 +25,9 @@ MonoBehaviour:
   Description: Having a symbiotic relationship with the mighty T'Thdir tree, the
     Gwdir thrive effortlessly in the forests. They harness their expert farming skills
     to cultivate objects in harmony with the wilds.
+  DiscoveryHint: Mostly keep to their forests since the war.
   Icon: sp_race_gwdir
   TextColor: {r: 0.49701598, g: 0.8773585, b: 0.17381631, a: 1}
   Type: Race
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1590
+  Order: 1610

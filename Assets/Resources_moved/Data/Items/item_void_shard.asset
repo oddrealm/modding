@@ -33,7 +33,9 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_void_shard
+  CharacterColorMaskID: 
   CharacterColorMask: {fileID: 0}
+  AccessoryID: 
   AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
@@ -52,4 +54,5 @@ MonoBehaviour:
   StackSize: 5
   Actions: []
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions: []

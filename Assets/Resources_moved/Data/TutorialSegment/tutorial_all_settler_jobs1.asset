@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: tutorial_all_settler_jobs1
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_all_settler_jobs1
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Jobs 1
-  PreviousSegment: 
   Trigger: 0
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
@@ -51,7 +52,7 @@ MonoBehaviour:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: Try giving your settlers jobs from
+    Body: You can give your settlers jobs from
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}

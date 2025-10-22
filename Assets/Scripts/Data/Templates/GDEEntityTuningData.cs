@@ -6,22 +6,17 @@ public class GDEEntityTuningData : Scriptable
 {
     [Header("AGES:")]
     [Header("Exponential Random Age Generation")]
-    public int MaxRandomAge = 100;
-    public int MinRandomAge = 18;
-    [Header("LEVELS:")]
-    [Header("If faction != player, Exponential Random LVL Generation")]
-    public int MaxRandomLevel = 5;
-    public int MinRandomLevel = 1;
+    public int Age = -1;
     [Header("PROFESSIONS:")]
-    public List<string> RandomProfessions = new List<string>();
+    public List<string> RandomProfessions = new();
     [Header("SKILLS:")]
     [Header("Exponential Random Skill Generation")]
     public int MaxRandomSkill = 0;
     public int MinRandomSkill = 0;
     public SkillTuning[] SkillBonuses;
     [Header("STATUSES:")]
-    public List<string> StartingStatuses = new List<string>();
-    public List<string> RandomStartingStatuses = new List<string>();
+    public List<string> StartingStatuses = new();
+    public List<string> RandomStartingStatuses = new();
     public string FirstName = "";
     public string LastName = "";
     public string Appearance = "";
@@ -38,4 +33,18 @@ public class GDEEntityTuningData : Scriptable
         public string Skill;
         public int Amount;
     }
+
+#if ODD_REALM_APP
+    public override void OnLoaded()
+    {
+        for (int n = 0; n < SkillBonuses.Length; n++)
+        {
+            if (DataManager.TagObjectExists(SkillBonuses[n].Skill)) { continue; }
+
+            Debug.LogError($"{Key} skill tuning not found for: {SkillBonuses[n].Skill}");
+        }
+
+        base.OnLoaded();
+    }
+#endif
 }

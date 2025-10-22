@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_eat
   MaxLifeTime: 0
@@ -35,8 +37,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_fodder
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 0}
+  CharacterColorMaskID: 
+  AccessoryID: 
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,12 +46,12 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_utility
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 5
   MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
-  DecayRate: 5760
+  DecayRate: 17280
   DecayItem: item_waste_rotten_food
   FlammableChance: 100
   StackSize: 5
@@ -63,4 +65,5 @@ MonoBehaviour:
     Status: 
     SpawnID: 
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions: []

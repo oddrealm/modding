@@ -25,7 +25,7 @@ MonoBehaviour:
     - Down: 1
       Hold: 0
       Up: 0
-      Key: 47
+      Key: 39
       Mouse: 0
   ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0

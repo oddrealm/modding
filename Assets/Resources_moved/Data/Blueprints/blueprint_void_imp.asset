@@ -14,16 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_blueprint_void_imp
-  TagIDs: []
+  TagIDs:
+  - tag_blueprints
   DiscoveryDependencies:
   - item_arcane_dust
   - skill_carry
   - skill_craft_void
   - entity_void_imp
   - skill_summoning
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SkillPriorityOverride: -1
   XP: 10
+  BaseSkillCheckFailXP: 5
+  BaseSkillLevel: 10
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   DesignationListOrder: -1
@@ -33,12 +37,16 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
+  CheckSkillFailure: 0
+  AddTargetAttributeToSkillFailCheck: 0
+  TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
   ShowItemTypeResourcePermissions: 0
   LocationID: tag_void_gate_powered
   WorkPosition: 0
   PermissionType: 0
+  CanSitDuringJob: 0
   WorkerID: skill_summoning
   TargetID: 
   JobActions:
@@ -78,7 +86,6 @@ MonoBehaviour:
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
-  AddedProgressPerAction: 0
   ProgressMax: 20
   ProgressBarType: 2
   ProgressFXMaxX: 0
@@ -98,7 +105,9 @@ MonoBehaviour:
   ActiveWorkerStatus: 
   OnJobStartActionID: 
   OnJobQuitActionID: 
-  OnFinishedResourcesActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  DisableConsumeSpawns: 0
   SetTargetFactionTo: 
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
@@ -124,6 +133,6 @@ MonoBehaviour:
   ShowVisualsIfStarted: 1
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSource: 0
+  DisposeIfNoSourceEntity: 0
   AutoJobOnCreateCooldown: 0
   AutoJobOnFreedCooldown: 0

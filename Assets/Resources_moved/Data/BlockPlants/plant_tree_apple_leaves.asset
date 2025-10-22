@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
   m_Name: plant_tree_apple_leaves
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_plant_tree_apple_leaves
   DEBUG: 0
+  TooltipID: tooltip_plant_tree_apple_leaves
   TagIDs:
   - tag_mature_tree
   - tag_mature_fruit
   - tag_can_be_watered
+  - tag_plants
   DiscoveryDependencies: []
+  VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MaxLifeTime: -1
   ReproduceTimeInterval: 7200
@@ -72,6 +74,7 @@ MonoBehaviour:
   PlantType: 4
   PlantPermission: 0
   CanHaveGroup: 1
+  CanGrowInAnyRoom: 0
   Visuals:
   - visuals_plant_tree_apple_leaves
   RemoveFX: fx_remove_plant

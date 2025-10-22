@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_block_lode_coal_ore
   TagIDs:
   - tag_terrain_gen_coal_ore
+  - tag_blocks
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
@@ -25,7 +26,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 1
-  SkillLevel: 1
+  RotationFixtureKey: 
+  SkillLevel: 2
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -65,6 +68,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: sfx_ore_remove
   InteractSFX: sfx_stone_interact

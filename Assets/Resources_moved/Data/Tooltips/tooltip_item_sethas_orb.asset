@@ -16,14 +16,18 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
   Action: 
   Name: Setha's Orb 1h
   NamePlural: 
   InlineIcon: <sprite=409>
-  Description: 
+  Description: Said to be created from pure spite, this item has the power to unleash
+    a powerful blast.
+  DiscoveryHint: A legendary item carried by Setha, god of fury. Some say she slumbers
+    deep beneath the earth, waiting to exact her revenge.
   Icon: sp_sethas_orb_icon
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2648
+  Order: 2661

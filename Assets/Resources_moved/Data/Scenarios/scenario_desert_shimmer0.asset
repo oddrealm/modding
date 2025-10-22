@@ -12,9 +12,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcf90d588903d4ab180cd7b9fa43f7, type: 3}
   m_Name: scenario_desert_shimmer0
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_scenario_desert_shimmer0
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  IsThreat: 1
+  NotifOnActivate: 
+  EntitySpawns:
+  - SpawnPointType: 2
+    OverrideEntityWithNation: 0
+    OverrideEntityWithFauna: 0
+    AutoGenEntityCount: 0
+    SpawnData:
+      EntityID: entity_shimmer
+      ProfessionID: 
+      FactionID: faction_hostile
+      GenderID: 
+      TuningID: entity_tuning_shimmer
+      AppearanceID: 
+      AgeType: 2
+      StartingAgeMins: 0
+      Tag: 
+      Count: 1
+      Chance:
+        Chance: 0
+        SampleSize: 0
+      SpawnScenario: 
+      AutoGenEquipment: 0
+      AutoGenInventory: 0
+      DisableItemEquipFromTuning: 0
+      EquippedItems: []
+      InventoryItems: []
+      AddedStatuses: []
+  Dialogues:
+  - DialogueID: dialogue_scenario_desert_shimmer0
+  Conditions: []
+  PartyID: 
+  IsScheduled: 1
+  Biomes:
+  - biome_desert
+  - biome_desert_mountain
+  ActivationChance:
+    Chance: 1
+    SampleSize: 1000
+  MaxActivations: 1
+  MinKingdomLevel: 20
+  MinMinutesSinceSettlementStart: 1440
+  MinMinutesSinceLastScenario: 1440
+  MinMinutesSinceLastSameScenario: 7200
+  MinTimeOfDay: 800
+  MaxTimeOfDay: 1000

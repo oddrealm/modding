@@ -18,6 +18,7 @@ MonoBehaviour:
   - tag_container
   - tag_container_treasure_easy
   - tag_container_treasure_med
+  - tag_props
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags:
@@ -28,7 +29,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
-  SkillLevel: 0
+  RotationFixtureKey: 
+  SkillLevel: 3
+  Toughness: 0
   MaxItemCount: 144
   ItemTypePermissions: []
   CanShowItems: 0
@@ -66,6 +69,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 2
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Kalite
@@ -24,8 +25,9 @@ MonoBehaviour:
   Description: 'One of the most common forms of stone on Odd, this rock has been
     used for many a castle. Silv the builder was known for their beautiful stonework
     often using Kalite as a resource. '
+  DiscoveryHint: 
   Icon: sp_block_kalite_icon
   TextColor: {r: 0.5411765, g: 0.5411765, b: 0.60784316, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1851
+  Order: 1864

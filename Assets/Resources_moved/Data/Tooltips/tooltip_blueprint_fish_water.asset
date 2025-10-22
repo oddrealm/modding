@@ -12,18 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_fish_water
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Fish In Water
   NamePlural: 
   InlineIcon: <sprite=58>
-  Description: Used to catch fish at open bodies of water.
+  Description: Used to catch fish at open bodies of water. Job must be placed over
+    water. Fish skill increases the range that fish are attracted to fishing location.
+    Fish are caught when they reach the fishing location.
+  DiscoveryHint: 
   Icon: sp_job_fish_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1483
+  Order: 1506

@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_cat
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_cat
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -36,7 +38,9 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: room_animal_enclosure
   GenerateNameKey: entity_names_cat
-  InherentCombatAttacks: attack_group_cat
+  Attacks:
+  - attack_claw_direct_slash
+  - attack_bite_direct_pierce
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 0
@@ -210,7 +214,6 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_cat
   PermittedItemSlots: []
   PathingType: 1
   DefaultTuning: entity_tuning_cat
@@ -227,23 +230,27 @@ MonoBehaviour:
   - entity_age_cat_adult
   - entity_age_cat_elder
   Diets:
-  - TagObjectID: tag_item_type_water
+  - TagID: tag_item_type_water
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
     - entity_status_hydrated
-  - TagObjectID: tag_item_type_fish
+  - TagID: tag_item_type_fish
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
     - entity_status_well_fed
-  - TagObjectID: item_milk_raw
+  - TagID: tag_item_type_milk
+    TagObjectID: item_milk_raw
     Priority: 3
     Buffs: []
     Statuses:
     - entity_status_well_fed
     - entity_status_hydrated
-  - TagObjectID: tag_item_type_meat
+  - TagID: tag_item_type_meat
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
@@ -255,11 +262,11 @@ MonoBehaviour:
       AutoJobType: 1
   - BlueprintID: blueprint_drink_item
     Settings:
-      Priority: 3
+      Priority: 4
       AutoJobType: 1
   - BlueprintID: blueprint_drink_from_water
     Settings:
-      Priority: 4
+      Priority: 3
       AutoJobType: 1
   - BlueprintID: blueprint_sleep_on_ground
     Settings:

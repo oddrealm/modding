@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: tutorial_missing_skill1
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_missing_skill1
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Missing skill
-  PreviousSegment: 
   Trigger: 0
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
@@ -50,7 +51,7 @@ MonoBehaviour:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: You can change settler skill permissions from the Entity (
+    Body: Change skill permissions from the Entity (
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}

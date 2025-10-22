@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
   m_Name: ccm_mosskuplin_fa0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Priority: 0
   Pairs:
   - BodyPart: 257
-    Target: {r: 0.9622642, g: 0.41456035, b: 0.14070843, a: 1}
+    Target: {r: 0.49180025, g: 0.9607843, b: 0.14117643, a: 1}
   - BodyPart: 254
-    Target: {r: 0.9528302, g: 0.8956277, b: 0.79552335, a: 1}
+    Target: {r: 0.14733891, g: 0.7264151, b: 0.31731418, a: 1}

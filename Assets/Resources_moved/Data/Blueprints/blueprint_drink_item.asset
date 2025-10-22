@@ -14,13 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_blueprint_drink_item
-  TagIDs: []
+  TagIDs:
+  - tag_blueprints
   DiscoveryDependencies:
   - tag_can_drink
   - entity_status_thirsty
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SkillPriorityOverride: 99
   XP: 1
+  BaseSkillCheckFailXP: 5
+  BaseSkillLevel: 0
   AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
   DesignationListOrder: -1
@@ -30,6 +33,9 @@ MonoBehaviour:
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
+  CheckSkillFailure: 0
+  AddTargetAttributeToSkillFailCheck: 0
+  TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
   ShowItemTypeResourcePermissions: 0
@@ -48,7 +54,6 @@ MonoBehaviour:
     AnimStartFX: 
     AnimStartSFX: 
   ProgressWorkerAttribute: 
-  AddedProgressPerAction: 0
   ProgressMax: 1
   ProgressBarType: 2
   ProgressFXMaxX: 0

@@ -170,7 +170,6 @@ public struct GreaterThanEqualCondition : ICondition
 public class GDEEntityStatusData : Scriptable
 {
     public bool TrackByDefault = false;
-    public bool VisibleToPlayer = true;
     public bool ShowIndicator = false;
     public string Notification = "";
     public int ExpireTimeMinutesMin = 0;
@@ -232,6 +231,7 @@ public class GDEEntityStatusData : Scriptable
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
+        EnsureTag("tag_statuses");
         PermittedGendersHash = new HashSet<string>(PermittedGenders);
         PermittedFactionsHash = new HashSet<string>(PermittedFactions);
         SortedActionIndices.Clear();

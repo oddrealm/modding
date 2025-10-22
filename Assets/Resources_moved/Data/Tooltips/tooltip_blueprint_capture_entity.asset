@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Capture Caged Entity
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=890>
   Description: Used to remove captured entities from traps and add them to your settlement
     as "Captured".
+  DiscoveryHint: 
   Icon: sp_job_capture_entity_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 940
+  Order: 945

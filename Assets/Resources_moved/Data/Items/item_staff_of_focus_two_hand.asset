@@ -34,8 +34,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_staff_of_focus_two_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: d57c23c915ce5c74595e089dac3d78c1, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_staff_of_focus_two_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 0
@@ -45,6 +45,8 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_staff_of_focus_two_hand
+  Attacks:
+  - attack_staff_of_focus_two_hand_strike
   MerchantBuyValue: 105
   MerchantSellValue: 21
   TuneRating: 6

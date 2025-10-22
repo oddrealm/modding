@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_block_bronze_ornate
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Build Ornate Bronze Block
@@ -23,6 +24,7 @@ MonoBehaviour:
   InlineIcon: <sprite=1330>
   Description: Various designs and patterns depicting stories from legend can be
     seen on the wall. Is that a man and a chicken?
+  DiscoveryHint: 
   Icon: sp_block_bronze_ornate_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job

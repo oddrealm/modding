@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_hungry
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Hungry
   Name: Hungry
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=56>
   Description: A dire state of hunger, steadily draining Health, demanding nourishment
     to survive.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.85882354, g: 0.47058824, b: 0.09411765, a: 1}
   Type: Status
   TypeColor: {r: 0.42138356, g: 0.20671648, b: 0, a: 1}
-  Order: 1714
+  Order: 1724

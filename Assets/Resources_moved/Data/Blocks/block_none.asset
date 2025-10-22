@@ -18,7 +18,9 @@ MonoBehaviour:
   - tag_container
   - tag_block_none
   - tag_terrain_gen_cave_empty
+  - tag_blocks
   DiscoveryDependencies: []
+  VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags:
   - tag_container
@@ -28,7 +30,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
+  RotationFixtureKey: 
   SkillLevel: 0
+  Toughness: 0
   MaxItemCount: 5
   ItemTypePermissions: []
   CanShowItems: 1
@@ -42,7 +46,7 @@ MonoBehaviour:
   PermittedPaths: -1
   VerticalMovementMod: 1
   HorizontalMovementMod: 1
-  MovementCost: 2
+  MovementCost: 1
   VerticalMoveRequiresClimb: 1
   ForceFocusDirection: 0
   Permissions: 2048
@@ -65,6 +69,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: 

@@ -19,7 +19,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_common
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
@@ -33,8 +35,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_wood_spear_two_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: ca20a1640c3b2d844ac2604df5a351cc, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_wood_spear_two_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 0
@@ -43,10 +45,12 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_wood_spear_two_hand
+  Attacks:
+  - attack_wood_spear_two_hand_throw_pierce
+  - attack_wood_spear_two_hand_pierce
   MerchantBuyValue: 105
   MerchantSellValue: 21
-  TuneRating: 1
+  TuneRating: 2
   ItemRarity: item_rarity_common
   DecayRate: -1
   DecayItem: 
@@ -54,4 +58,5 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions: []

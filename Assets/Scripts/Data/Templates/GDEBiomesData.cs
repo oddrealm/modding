@@ -398,10 +398,10 @@ public class GDEBiomesData : Scriptable
         base.OnLoaded();
     }
 
-    private const float VERY_RARE = 0.01f;
-    private const float RARE = 0.05f;
-    private const float UNCOMMON = 0.25f;
-    private const float COMMON = 0.9f;
+    private const float VERY_RARE = 0.05f;
+    private const float RARE = 0.15f;
+    private const float UNCOMMON = 0.5f;
+    private const float COMMON = 0.666f;
     private const float VERY_COMMON = 1.0f;
 
     public static PopulationRatings GetRatingFromNormal(float n)

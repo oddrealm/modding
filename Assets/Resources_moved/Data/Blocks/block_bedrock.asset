@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_block_bedrock
   TagIDs:
   - tag_terrain_gen_bedrock
+  - tag_blocks
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
@@ -27,6 +28,7 @@ MonoBehaviour:
   IsRotationFixture: 1
   RotationFixtureKey: 
   SkillLevel: 0
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -64,6 +66,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: sfx_stone_remove
   InteractSFX: sfx_stone_interact

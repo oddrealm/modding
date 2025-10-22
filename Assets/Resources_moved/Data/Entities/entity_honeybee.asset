@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_honeybee
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_honeybee
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -36,7 +38,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: 
   GenerateNameKey: entity_names_honeybee
-  InherentCombatAttacks: attack_group_honeybee
+  Attacks:
+  - attack_sting_direct_pierce
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 0
@@ -210,7 +213,6 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_honeybee
   PermittedItemSlots: []
   PathingType: 2
   DefaultTuning: entity_tuning_honeybee
@@ -219,25 +221,10 @@ MonoBehaviour:
   ProhibitedStatuses: []
   Statuses:
   - entity_status_aging_by_day
-  - entity_status_can_butcher
   Ages:
   - entity_age_honeybee_adult
   - entity_age_honeybee_elder
-  Diets:
-  - TagObjectID: tag_can_eat
-    Priority: 2
-    Buffs: []
-    Statuses: []
-  - TagObjectID: tag_can_drink
-    Priority: 2
-    Buffs: []
-    Statuses:
-    - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
-    Priority: 3
-    Buffs: []
-    Statuses:
-    - entity_status_well_fed
+  Diets: []
   AutoJobs: []
   Attributes:
   - AttributeID: attribute_age

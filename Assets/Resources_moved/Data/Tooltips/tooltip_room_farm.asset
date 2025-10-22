@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Farm
   Name: Farm
   NamePlural: Farms
   InlineIcon: <sprite=1108>
   Description: Farms are where you can grow crops.
+  DiscoveryHint: 
   Icon: sp_room_farm_icon
   TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
   Type: Room
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1454
+  Order: 1478

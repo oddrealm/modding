@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_room_brood_garden
-  TagIDs: []
+  TagIDs:
+  - tag_rooms
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_agriculture
@@ -75,6 +76,7 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
+  RoomQualities: []
   ShowProduction: 1
   ShowStockpile: 1
   ShowOccupants: 1

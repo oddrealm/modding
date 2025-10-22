@@ -31,6 +31,7 @@ public struct RandomEquipmentItem
 [CreateAssetMenu(menuName = "ScriptableObjects/Items")]
 public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 {
+    public int BaseSkillLevel = 0;
     [Header("Usage Tags")]
     public string[] UsageTags = new string[0];
     [Header("Lifetime Minutes (-1 = disabled)")]
@@ -54,8 +55,8 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     [Header("World Visuals")]
     public string Visuals = "";
     [Header("Entity Visuals")]
-    public GDECharacterColorMaskData CharacterColorMask;
-    public GDECharacterAccessoryData AccessoryData;
+    public string CharacterColorMaskID = "";
+    public string AccessoryID = "";
     public BlockPermissionTypes Permissions = BlockPermissionTypes.NONE;
     public BlockPermissionTypes Prohibited = BlockPermissionTypes.NONE;
     [Header("Set false for 2-hand weapons so that they don't allow additional attacks from other items.")]
@@ -63,8 +64,8 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public bool FillAllSlots = false;
     public bool CannotBeUnequipped = false;
     public string[] PermittedSlots;
-    public HashSet<string> PermittedSlotsHash = new HashSet<string>();
-    public string AttackGroup = "";
+    public HashSet<string> PermittedSlotsHash = new();
+    public string[] Attacks = System.Array.Empty<string>();
     public int MerchantBuyValue = 0;
     public int MerchantSellValue = 0;
     [Header("Tuning set to < 0 will not be used for item generation. Use -1 for items meant to be unique/super rare.")]
@@ -79,7 +80,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public bool IsAvailableInCustomLoadout = false;
 
     public bool HasRangedAttack { get; private set; }
-    public bool HasAttacks { get { return !string.IsNullOrEmpty(AttackGroup); } }
+    public bool HasAttacks { get { return Attacks != null && Attacks.Length > 0; } }
     public int MaxGlobalCount { get; private set; }
     public bool HasTimedActions { get { return TimedActions.Length > 0; } }
     public AutomatedItemActionActivation[] TimedActions = new AutomatedItemActionActivation[0];
@@ -129,6 +130,8 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     };
     public List<string> UtilityActions { get; private set; } = new List<string>();
     public HashSet<string> UtilityActionsHash { get; private set; } = new HashSet<string>();
+    public GDECharacterColorMaskData CharacterColorMask { get; private set; }
+    public GDECharacterAccessoryData AccessoryData { get; private set; }
 
     private GDESimulationData _simData;
     private string[] _simStates = new string[]
@@ -222,6 +225,17 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public override void OnLoaded()
     {
         base.OnLoaded();
+        EnsureTag("tag_item");
+
+        if (!string.IsNullOrEmpty(AccessoryID))
+        {
+            AccessoryData = DataManager.GetTagObject<GDECharacterAccessoryData>(AccessoryID);
+        }
+
+        if (!string.IsNullOrEmpty(CharacterColorMaskID))
+        {
+            CharacterColorMask = DataManager.GetTagObject<GDECharacterColorMaskData>(CharacterColorMaskID);
+        }
 
         if (!string.IsNullOrEmpty(ItemType))
         {
@@ -231,7 +245,6 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         ItemTagData = DataManager.GetTagObject<GDETagsData>("tag_item");
         ItemRarityData = DataManager.GetTagObject<GDEItemRarityData>(ItemRarity);
         _isNull = Key == "item_none";
-        IsAvailableInCustomLoadout = ItemRarityData.IsAvailableInCustomLoadout;
         MaxGlobalCount = -1;
 
         switch (ItemRarity)
@@ -486,11 +499,9 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 
         if (HasAttacks)
         {
-            GDEAttackGroupsData attackGroup = DataManager.GetTagObject<GDEAttackGroupsData>(AttackGroup);
-
-            for (int i = 0; i < attackGroup.Attacks.Count; i++)
+            for (int i = 0; i < Attacks.Length; i++)
             {
-                GDEAttacksData attack = DataManager.GetTagObject<GDEAttacksData>(attackGroup.Attacks[i]);
+                GDEAttacksData attack = DataManager.GetTagObject<GDEAttacksData>(Attacks[i]);
 
                 if (attack.IsRanged)
                 {

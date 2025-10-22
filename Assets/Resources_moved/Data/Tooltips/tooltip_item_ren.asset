@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_ren
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
   Action: 
   Name: Ren
@@ -24,8 +25,9 @@ MonoBehaviour:
   Description: An enchanted, indestructible coin that reads, "Shin-Ghirinan," and
     has the portrait of a regal humanoid. It is the dominant form of currency in
     Odd.
+  DiscoveryHint: 
   Icon: sp_ren_icon
   TextColor: {r: 0.8207547, g: 0.5849298, b: 0.18195976, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2452
+  Order: 2477

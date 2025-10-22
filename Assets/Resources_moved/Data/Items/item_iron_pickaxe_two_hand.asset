@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 3
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -35,8 +37,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_iron_pickaxe_two_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: 45279d4481015ac41a658dce77f7e2b4, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_iron_pickaxe_two_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 0
@@ -45,7 +47,8 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_iron_pickaxe_two_hand
+  Attacks:
+  - attack_iron_pickaxe_two_hand_strike
   MerchantBuyValue: 505
   MerchantSellValue: 101
   TuneRating: 4
@@ -58,7 +61,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_mine
-      Amount: 14
+      Amount: 20
       Max: 0
       Permanent: 0
     Status: 

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_ancient_fa3
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -40,5 +39,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_ancient_female_select_negative
   OrderPositiveSFX: sfx_ancient_female_order_positive
   OrderNegativeSFX: sfx_ancient_female_order_negative
+  ColorMaskID: ccm_ancient_fa3
+  AnimationsID: humanoid
   ColorMask: {fileID: 11400000, guid: 1f794bf062f032a478e8ee07b6f6c82c, type: 2}
   Animations: {fileID: 11400000, guid: ed5baaf039825aa4e925426c97799d2c, type: 2}

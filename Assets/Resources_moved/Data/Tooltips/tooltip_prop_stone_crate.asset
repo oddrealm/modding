@@ -21,9 +21,9 @@ MonoBehaviour:
   Name: Stone Crate
   NamePlural: 
   InlineIcon: <sprite=719>
-  Description: 
+  Description: My god, this thing is heavy!
   Icon: sp_stone_crate_icon
   TextColor: {r: 0.68235296, g: 0.7294118, b: 0.7490196, a: 1}
   Type: Container
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2888
+  Order: 2911

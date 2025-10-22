@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
   m_Name: input_command_select_block
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_input_select_block
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_input_select_block
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 3
   InputState: 32
@@ -29,7 +29,7 @@ MonoBehaviour:
       Up: 0
       Key: 0
       Mouse: 1
-  ActiveUpdate: 1
+  ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 0

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Ascend to Archenthrall
@@ -24,8 +25,10 @@ MonoBehaviour:
   Description: In times of desperation, some Ancients choose to fully infuse their
     bodies with the void to become a powerful Archenthrall. They lose much of their
     previous knowledge, but gain immense power.
+  DiscoveryHint: I've heard this is something desperate Ancients will do, though
+    I have yet to encounter one.
   Icon: sp_summon_archenthrall_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 225
+  Order: 224

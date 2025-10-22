@@ -6,7 +6,6 @@ public class GDETutorialSegmentData : Scriptable
     public string Comment = "TUTORIAL";
 
     [Header("Requirements")]
-    public string PreviousSegment;
     public TutorialActivationTriggers Trigger;
     public int MinGameMinutes = -1;
     public float MinScaledPlayedTime = -1f;
@@ -40,12 +39,28 @@ public class GDETutorialSegmentData : Scriptable
 
     [Header("On Completed")]
     public string NextSegment;
+    public string PreviousSegment { get; private set; }
 
     public bool IsValid { get; private set; }
+
+    public void SetPreviousSegment(string previousSegment)
+    {
+        PreviousSegment = previousSegment;
+    }
 
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
+        EnsureTag("tag_tutorial");
+
+        if (!string.IsNullOrEmpty(NextSegment))
+        {
+            if (DataManager.TryGetTagObject(NextSegment, out GDETutorialSegmentData nextSegment))
+            {
+                nextSegment.SetPreviousSegment(Key);
+            }
+        }
+
         if (Message != null && Message.Length > 0)
         {
             for (int i = 0; i < Message.Length; i++)

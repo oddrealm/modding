@@ -35,8 +35,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_sethas_orb
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: f5d1cb3aca981b24ea658d2d5176ddb6, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_sethas_orb
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -46,6 +46,8 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_sethas_orb
+  Attacks:
+  - attack_sethas_orb_single_energy
   MerchantBuyValue: 6000
   MerchantSellValue: 1200
   TuneRating: -1
@@ -64,4 +66,5 @@ MonoBehaviour:
     Status: 
     SpawnID: 
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

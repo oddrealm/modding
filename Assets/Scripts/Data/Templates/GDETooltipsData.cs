@@ -6,10 +6,10 @@ public class GDETooltipsData : Scriptable
     public override GDETooltipsData TooltipData { get { return this; } }
 
     public new TooltipUID TooltipUID { get; private set; }
-    public string Action = "";
-    public string Name = "";
-    public string NamePlural = "";
-    public string InlineIcon = "";
+    public string Action = string.Empty;
+    public string Name = string.Empty;
+    public string NamePlural = string.Empty;
+    public string InlineIcon = string.Empty;
     public string InlineAndName
     {
         get
@@ -79,10 +79,11 @@ public class GDETooltipsData : Scriptable
     private string _prevInline;
     private string _prevName;
 #endif
-    public string Description = "";
-    public string Icon = "";
+    public string Description = string.Empty;
+    public string DiscoveryHint = string.Empty;
+    public string Icon = string.Empty;
     public Color TextColor = Color.white;
-    public string Type = "";
+    public string Type = string.Empty;
     public Color TypeColor = Color.white;
     public int Order;
 

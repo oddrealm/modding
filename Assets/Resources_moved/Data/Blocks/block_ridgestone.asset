@@ -16,8 +16,10 @@ MonoBehaviour:
   TooltipID: tooltip_block_ridgestone
   TagIDs:
   - tag_terrain_gen_ridgestone
+  - tag_blocks
   DiscoveryDependencies:
   - blueprint_block_ridgestone
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
   DefaultFill: block_fill_solid
@@ -26,7 +28,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 1
-  SkillLevel: 2
+  RotationFixtureKey: 
+  SkillLevel: 15
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -64,6 +68,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: sfx_stone_remove
   InteractSFX: sfx_stone_interact

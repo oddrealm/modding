@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
   m_Name: entity_status_drunk
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_entity_status_drunk
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_entity_status_drunk
+  TagIDs:
+  - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
   ExpireTimeMinutesMin: 60
@@ -27,16 +27,21 @@ MonoBehaviour:
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
-  TooltipBackgroundColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
+  TooltipBackgroundColor: {r: 0.105882354, g: 0.47058824, b: 0.6666667, a: 1}
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
   Actions:
-  - ConditionTarget: 
+  - Comment: Move faster / Lower HP.
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: Move faster / Lower HP.
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 0
@@ -56,9 +61,9 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
-  - ConditionTarget: 
+  - Comment: Regain energy over time.
+    ConditionTarget: 
     HideInTooltips: 0
-    Comment: Regain energy over time.
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 5

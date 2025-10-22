@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9d076a450aa194fbbc504e8c60abf3, type: 3}
   m_Name: tag_spawns_biome_marine_plants_tropical
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
-  GroupIDs: []
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.40154532, g: 0.8207547, b: 0.14324492, a: 1}
   TrackByDefault: 0
   TrackPlayerCanEdit: 0

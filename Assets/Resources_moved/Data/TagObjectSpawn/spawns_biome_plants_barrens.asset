@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
   m_Name: spawns_biome_plants_barrens
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs:
   - tag_spawns_biome_plants_barrens
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.6313726, g: 0.24705884, b: 0.38823533, a: 1}
   SeedOffset: 68442
   MaxIterations: 1

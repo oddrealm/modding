@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Spawns:
   - EntityId: entity_ardyn
@@ -35,4 +36,5 @@ MonoBehaviour:
     DisableItemEquipFromTuning: 0
     EquippedItems: []
     InventoryItems: []
-    AddedStatuses: []
+    AddedStatuses:
+    - entity_status_hermit

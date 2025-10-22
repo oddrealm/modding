@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_crab_fa0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -39,5 +38,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_crab_female_select_negative
   OrderPositiveSFX: sfx_crab_female_order_positive
   OrderNegativeSFX: sfx_crab_female_order_negative
+  ColorMaskID: ccm_crab_fa0
+  AnimationsID: crab
   ColorMask: {fileID: 11400000, guid: c230a0b041668b9469c3f235c37ae600, type: 2}
   Animations: {fileID: 11400000, guid: b1eba3eea85d4a94db55503dfa227e23, type: 2}

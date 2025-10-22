@@ -14,24 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_prop_stasis_crystal
-  TagIDs: []
+  TagIDs:
+  - tag_trigger_stasis_crystal_release_ancient
+  - tag_props
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
-  - TriggerType: 12
+  - ActivateTriggerID: tag_trigger_stasis_crystal_release_ancient
+    DeactivateTriggerID: 
+    TriggerType: 12
     HideInTooltips: 1
     Invert: 0
-    ActivateTriggerID: tag_trigger_stasis_crystal_release_ancient
-    DeactivateTriggerID: 
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
   Triggers:
   - Comment: Spawn Ancient
-    TooltipID: 
     ID: tag_trigger_stasis_crystal_release_ancient
+    ActiveTooltipID: 
+    InactiveTooltipID: 
     Permissions: 0
     Visuals: 
     SFX: 
@@ -47,7 +50,9 @@ MonoBehaviour:
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
-  SkillLevel: 0
+  RotationFixtureKey: 
+  SkillLevel: 3
+  Toughness: 0
   MaxItemCount: 0
   ItemTypePermissions: []
   CanShowItems: 0
@@ -85,6 +90,7 @@ MonoBehaviour:
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
   IdleFX: 
+  UntriggeredFX: 
   AddSFX: 
   RemoveSFX: sfx_stone_remove
   InteractSFX: sfx_stone_interact

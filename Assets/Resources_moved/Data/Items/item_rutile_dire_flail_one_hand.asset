@@ -19,7 +19,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_rare
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 5
   UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
@@ -33,8 +35,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_rutile_dire_flail_one_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: 0d4849b599d452640ab0c01b8f381524, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_rutile_dire_flail_one_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -43,10 +45,11 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_rutile_dire_flail_one_hand
+  Attacks:
+  - attack_rutile_dire_flail_one_hand_strike
   MerchantBuyValue: 1065
   MerchantSellValue: 213
-  TuneRating: 6
+  TuneRating: 8
   ItemRarity: item_rarity_rare
   DecayRate: -1
   DecayItem: 
@@ -54,4 +57,5 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

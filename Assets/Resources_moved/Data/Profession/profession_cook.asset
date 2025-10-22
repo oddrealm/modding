@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_cook
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_profession_cook
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_profession_cook
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  OrderGroup: 0
   AutoCreateUniform: 1
   EarnBonusXPInCombat: 0
   ResearchKey: 
@@ -28,10 +28,14 @@ MonoBehaviour:
   CanDoSupplementCarryActions: 0
   CanLevelUp: 0
   FavoursRangedAttackItems: 0
-  DefaultItems:
-  - item_wood_spoon_one_hand
   StartingItems:
   - ItemID: item_wood_spoon_one_hand
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_linen_chefs_hat
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_linen_apron
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
   GlobalIndicator: indicator_global_cook

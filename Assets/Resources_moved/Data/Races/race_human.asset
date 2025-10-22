@@ -18,6 +18,7 @@ MonoBehaviour:
   - tag_races
   - tag_can_sleep_in_bed
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 600
   Intelligence: intelligence_sapient
@@ -30,14 +31,16 @@ MonoBehaviour:
   DefaultActiveResearch:
   - research_human_home0
   StartingItems:
-  - ItemID: item_cloth_vest
+  - ItemID: item_linen_vest
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
-  - ItemID: item_cloth_boots
+  - ItemID: item_linen_boots
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
-  - ItemID: item_cloth_pants
+  - ItemID: item_linen_pants
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
+  Statuses:
+  - entity_status_human_resourceful
   Buffs: []
   AutoCreateUniform: 1

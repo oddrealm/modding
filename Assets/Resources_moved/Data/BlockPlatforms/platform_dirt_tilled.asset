@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_platform_dirt_tilled
   TagIDs:
   - tag_tilled
+  - tag_platform
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Index: 1

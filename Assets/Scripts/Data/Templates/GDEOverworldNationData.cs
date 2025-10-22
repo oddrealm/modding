@@ -7,6 +7,7 @@ public enum TrackingTypes
     ITEM,
     NATION,
     ROOM,
+    FISH,
 }
 
 [CreateAssetMenu(menuName = "ScriptableObjects/OverworldNation")]

@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cb679d16102814ebd643fd5fb2d2a3, type: 3}
   m_Name: attribute_happiness
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_attribute_happiness
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_attribute_happiness
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowInAttributeDisplay: 0
+  IsMainAttribute: 0
+  ShowInAttributeDisplay: 1
   StartMin: 0
   StartDefault: 1
   StartMax: 100
@@ -26,7 +27,9 @@ MonoBehaviour:
   ShowPositiveAndNegativeSign: 0
   DisplayType: 3
   ColorType: 1
+  MaxColorOverride: {r: 1, g: 1, b: 1, a: 1}
   NegativeIsPositive: 0
   OnAddIndicator: 
   OnRemoveIndicator: 
   ShowActionText: 0
+  IncreaseWithMaxIfEqual: 0

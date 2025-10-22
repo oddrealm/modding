@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
+  m_Name: item_linen_pants
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_item_linen_pants
+  TagIDs:
+  - tag_item_type_gear
+  - tag_can_equip
+  - tag_item
+  - tag_item_rarity_common
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
+  UsageTags:
+  - tag_can_equip
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  ItemSimulationID: simulation_item_default
+  ItemType: tag_item_type_gear
+  OnJobDisposedTagObjectID: 
+  ShowInTrackingByDefault: 0
+  IdleFX: 
+  PickUpFX: fx_block_item_picked_up
+  DropFX: fx_block_item_dropped
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
+  Visuals: visuals_item_linen_pants
+  CharacterColorMaskID: ccm_item_linen_pants
+  AccessoryID: 
+  Permissions: 0
+  Prohibited: 0
+  CanStackAttacks: 1
+  FillAllSlots: 0
+  CannotBeUnequipped: 0
+  PermittedSlots:
+  - item_slot_legs
+  Attacks: []
+  MerchantBuyValue: 60
+  MerchantSellValue: 12
+  TuneRating: 1
+  ItemRarity: item_rarity_common
+  DecayRate: -1
+  DecayItem: 
+  FlammableChance: 500
+  StackSize: 1
+  Actions:
+  - ActionID: tag_can_equip
+    Buff:
+      TargetID: attribute_cold_tolerance
+      Amount: 3
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: 
+  - ActionID: tag_can_equip
+    Buff:
+      TargetID: attribute_toughness
+      Amount: 1
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: 
+  StateOptions: []
+  IsAvailableInCustomLoadout: 1
+  TimedActions: []

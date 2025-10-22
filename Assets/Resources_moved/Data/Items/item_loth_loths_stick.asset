@@ -33,8 +33,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_loth_loths_stick
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: 26e798f5247dbdb438fa3f37665bb702, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_loth_loths_stick
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,6 +44,8 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_loth_loths_stick
+  Attacks:
+  - attack_loth_loths_stick_strike
   MerchantBuyValue: 5145
   MerchantSellValue: 1029
   TuneRating: -1
@@ -54,4 +56,5 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

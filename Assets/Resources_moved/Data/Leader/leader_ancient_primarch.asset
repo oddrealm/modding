@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2772aa81a88bd4c4ea135751a099f952, type: 3}
   m_Name: leader_ancient_primarch
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_leader_ancient_primarch
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_leader_ancient_primarch
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Statuses: []
+  Statuses:
+  - entity_status_ancient_primarch
   IsPassedToChildren: 0
   CompanionRole: 
   Requirements:

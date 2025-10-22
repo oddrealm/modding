@@ -12,20 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_overworld_nation_ancient
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.21568629, g: 0.41176474, b: 0.3647059, a: 1}
-  Action: Ancients
-  Name: Ancients
-  NamePlural: 
+  Action: Ancient
+  Name: Ancient
+  NamePlural: Ancients
   InlineIcon: <sprite=240>
   Description: The Ancients used the Void to achieve immortality while sacrificing
     their living forms. Although extremely powerful, their inability to procreate
     has resulted in their numbers dwindling over the last 500 years.
+  DiscoveryHint: 
   Icon: sp_race_ancient
   TextColor: {r: 0.6459604, g: 0.2004717, b: 0.8018868, a: 1}
-  Type: Nation
+  Type: Race
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 167
+  Order: 148

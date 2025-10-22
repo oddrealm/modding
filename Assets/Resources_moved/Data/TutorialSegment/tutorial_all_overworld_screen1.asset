@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: tutorial_all_overworld_screen1
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
-  TagIDs: []
+  TooltipID: tooltip_tutorial_all_overworld_screen1
+  TagIDs:
+  - tag_tutorial
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
   PreviousSegment: tutorial_all_overworld_screen0

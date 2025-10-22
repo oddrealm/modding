@@ -16,14 +16,18 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Void Woken
   NamePlural: Void Woken
   InlineIcon: <sprite=562>
-  Description: 
+  Description: A quiet and mysterious race, often found aiding the Ancients. They
+    return to the void when they grow tired of our realm.
+  DiscoveryHint: It's true. We often request assistance from these beings. Though,
+    why they agree to help us is anyone's guess.
   Icon: sp_race_void_woken
   TextColor: {r: 0.49701598, g: 0.8773585, b: 0.17381631, a: 1}
   Type: Race
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 3330
+  Order: 3407

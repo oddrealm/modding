@@ -1,0 +1,9 @@
+Steamworks.NET created by Riley Labrecque
+http://steamworks.github.io
+
+Steamworks.NET Version: 2024.8.0
+Steamworks SDK Version: 1.60
+Steam API DLL Version:  08.97.99.70
+Steam API DLL Size:     265064
+Steam API64 DLL Size:   300392
+

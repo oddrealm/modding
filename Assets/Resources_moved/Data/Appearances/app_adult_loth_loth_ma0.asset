@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
   m_Name: app_adult_loth_loth_ma0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -38,5 +37,7 @@ MonoBehaviour:
   SelectNegativeSFX: sfx_loth_loth_loth_loth_male_select_negative
   OrderPositiveSFX: sfx_loth_loth_loth_loth_male_order_positive
   OrderNegativeSFX: sfx_loth_loth_loth_loth_male_order_negative
+  ColorMaskID: ccm_loth_loth_ma0
+  AnimationsID: loth
   ColorMask: {fileID: 11400000, guid: 9659c36a16ddd774794d143e308b6f3c, type: 2}
   Animations: {fileID: 11400000, guid: 4d55e35fca774be4ca6501d85fe48a2c, type: 2}

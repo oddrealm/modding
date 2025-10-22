@@ -17,6 +17,7 @@ MonoBehaviour:
   TagIDs:
   - tag_races
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 750
   Intelligence: intelligence_sapient
@@ -34,6 +35,21 @@ MonoBehaviour:
     time.'
   DefaultActiveResearch:
   - research_agriculture_animals0
-  StartingItems: []
+  - research_ardyn_somnic_pools0
+  StartingItems:
+  - ItemID: item_light_leather_boots
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_light_leather_pants
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_light_leather_vest
+    ChanceToEquip: 0
+    ChanceToEquipMaxRoll: 0
+  - ItemID: item_light_leather_hat
+    ChanceToEquip: 1
+    ChanceToEquipMaxRoll: 5
+  Statuses:
+  - entity_status_ardyn_predator
   Buffs: []
   AutoCreateUniform: 1

@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b82001461fc34e9d1cf053d56a7e5, type: 3}
   m_Name: fish_chi_chi
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_fish_chi_chi
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: tooltip_fish_chi_chi
+  TagIDs:
+  - tag_fish
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Level: 1
+  MaxNaturalSpawnCount: 64
   AnimController: small_fish_animations
   IdealDepthMin: 0
   IdealDepthmax: 3

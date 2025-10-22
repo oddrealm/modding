@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_can_plant_ground_cover
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Plant Seed
   Name: Grass Seed
   NamePlural: 
   InlineIcon: <sprite=1488>
   Description: This item can be planted to create a ground cover plant.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.4509804, a: 1}
   Type: Type
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1538
+  Order: 1593

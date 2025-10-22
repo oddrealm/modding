@@ -12,30 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1513160470cae4d8203d0455b59b70, type: 3}
   m_Name: esg_scenario_emily_townsend_kidnapped_child0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  FriendlyName: 'Spawns:'
   Spawns:
   - EntityId: 
     EntityTag: entity_townsend_kidnapped_child0
     EntityProfession: 
     EntityGender: 
     EntityCount: 1
-    SameRoomAsPlayer: 0
     EntityFaction: 2
     EntityTuning: 
     EntityAppearance: 
     SpawnRate: 1000
     AgeType: 2
     ScenarioID: 
-    SchemaID: emily_townsend_kidnappee_returned
     SpawnEntityFromItem: 0
     AutoGenEquipment: 1
     AutoGenInventory: 1
     DisableItemEquipFromTuning: 0
     EquippedItems: []
+    InventoryItems: []
     AddedStatuses: []

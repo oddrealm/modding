@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72a33df1b6713348942bd46d87dbc10, type: 3}
   m_Name: visuals_item_winter_stew
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 0.7176471, g: 0.7176471, b: 0.7176471, a: 1}
@@ -41,6 +40,7 @@ MonoBehaviour:
   HideSurfaceWhenObscuredAbove: 0
   HideSurfaceWhenSameTypeAbove: 0
   CanTransitionIfObscuredAbove: 1
+  CanTransitionIfTargetCovered: 1
   HasSurface: 0
   CanFade: 0
   HasSeasonOffset: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   ShowLighting: 1
   DropShadow: 1
   LightSettings:
-    ReductionThreshold: 0
+    MinReductionThreshold: 0
     SkylightReduction: 0
     SkylightPass: 0
     BlockAmbientLight: 0

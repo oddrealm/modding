@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_item_type_fish
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Fish
   Name: Fish
   NamePlural: 
   InlineIcon: <sprite=1414>
   Description: 
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.08235294, g: 0.78823537, b: 0.9215687, a: 1}
   Type: Type
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1450
+  Order: 1502

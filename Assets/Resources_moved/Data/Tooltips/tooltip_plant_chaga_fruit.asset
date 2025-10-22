@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_plant_chaga_fruit
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Chaga Fruit
   NamePlural: 
-  InlineIcon: <sprite=233>
-  Description: 
+  InlineIcon: <sprite=1859>
+  Description: It is curious plant that smells of cinnamon and whose fruit tastes
+    like cream and honey.
   Icon: sp_chaga_fruit_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 563
+  Order: 981

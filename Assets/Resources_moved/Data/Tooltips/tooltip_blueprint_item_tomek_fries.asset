@@ -21,7 +21,7 @@ MonoBehaviour:
   Name: Build Tomek Fries
   NamePlural: 
   InlineIcon: <sprite=618>
-  Description: 'Just the way Tomek likes them: lots of salt.'
+  Description: 'The way the Tomek like them: lots of salt.'
   Icon: sp_tomek_fries_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job

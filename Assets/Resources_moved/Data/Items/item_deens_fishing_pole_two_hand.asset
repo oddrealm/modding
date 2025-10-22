@@ -36,8 +36,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_deens_fishing_pole_two_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: a79cf0f8a8e8b6a4cab3a1c5aeabe4a9, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_deens_fishing_pole_two_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 0
@@ -47,6 +47,8 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_deens_fishing_pole_two_hand
+  Attacks:
+  - attack_deens_fishing_pole_two_hand_strike
   MerchantBuyValue: 5045
   MerchantSellValue: 1009
   TuneRating: -1
@@ -73,4 +75,5 @@ MonoBehaviour:
     Status: entity_status_has_fishing_pole
     SpawnID: 
   StateOptions: []
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

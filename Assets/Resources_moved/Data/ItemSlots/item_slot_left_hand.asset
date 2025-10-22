@@ -16,7 +16,8 @@ MonoBehaviour:
   TooltipID: tooltip_slot_left_hand
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   EmptyIcon: sp_empty_hand_slot_icon
-  GenerateItemChances: 550
+  GenerateItemChances: 450
   ListOrder: 0

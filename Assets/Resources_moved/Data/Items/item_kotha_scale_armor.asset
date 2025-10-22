@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -35,8 +37,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_kotha_scale_armor
-  CharacterColorMask: {fileID: 11400000, guid: 819d5521a0ca2044c8349db36a1478be, type: 2}
-  AccessoryData: {fileID: 0}
+  CharacterColorMaskID: ccm_item_kotha_scale_armor
+  AccessoryID: 
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,7 +46,7 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_body
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 75
   MerchantSellValue: 15
   TuneRating: 3
@@ -71,5 +73,5 @@ MonoBehaviour:
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
+  IsAvailableInCustomLoadout: 0
   TimedActions: []

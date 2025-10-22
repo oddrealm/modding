@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
   m_Name: spawns_party_merchant_gwdir_equipment
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 89340
   MaxIterations: 1
@@ -28,5 +28,5 @@ MonoBehaviour:
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 0
-    TagObjectID: item_cloth_backpack
+    TagObjectID: item_linen_backpack
     TagID: 

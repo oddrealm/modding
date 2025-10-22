@@ -35,8 +35,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_stone_long_sword_two_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: 91f36f096dfaf194a994b4a4f0a25492, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_stone_long_sword_two_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 0
@@ -46,6 +46,9 @@ MonoBehaviour:
   - item_slot_left_hand
   - item_slot_right_hand
   AttackGroup: attack_group_stone_long_sword_two_hand
+  Attacks:
+  - attack_stone_long_sword_two_hand_cut
+  - attack_stone_long_sword_two_hand_pierce
   MerchantBuyValue: 125
   MerchantSellValue: 25
   TuneRating: 2
@@ -56,4 +59,5 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions: []

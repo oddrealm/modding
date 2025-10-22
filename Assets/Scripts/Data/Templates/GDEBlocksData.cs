@@ -50,6 +50,7 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     public string RotationFixtureKey = string.Empty;
     [Header("Used by jobs to determine work xp reward and work progress.")]
     public int SkillLevel = 0;
+    public int Toughness = 0;
     [Header("Items")]
     public int MaxItemCount = 0;
     public string[] ItemTypePermissions;
@@ -196,23 +197,14 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
         base.OnLoaded();
 
 #if DEV_TESTING
-        // for (int i = 0; i < TriggerConditions.Length; i++)
-        // {
-        //     if (string.IsNullOrEmpty(TriggerConditions[i].ActivateTriggerID))
-        //     {
-        //         Debug.LogError($"Missing ActivateTriggerID for TriggerCondition {i} on {Key}");
-        //     }
-        // }
-
-        // for (int i = 0; i < Triggers.Length; i++)
-        // {
-        //     if (string.IsNullOrEmpty(Triggers[i].ActiveTooltipID)) { continue; }
-        //
-        //     if (string.IsNullOrEmpty(Triggers[i].InactiveTooltipID))
-        //     {
-        //         Debug.LogError($"Trigger {i} for {Key} - ID: {Triggers[i].ActiveTooltipID} does not have an inactive tooltip, setting to active tooltip.");
-        //     }
-        // }
+        if (Key.Contains("prop_"))
+        {
+            EnsureTag("tag_props");
+        }
+        else
+        {
+            EnsureTag("tag_blocks");
+        }
 #endif
 
         IsNone = Key == "block_none";

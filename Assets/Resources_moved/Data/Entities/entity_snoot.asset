@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_entity_snoot
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Race: race_snoot
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
@@ -36,7 +38,8 @@ MonoBehaviour:
   ReproductionIntervalMinutes: 2880
   RequiredReproductionRoom: room_animal_enclosure
   GenerateNameKey: entity_names_snoot
-  InherentCombatAttacks: attack_group_snoot
+  Attacks:
+  - attack_bite_direct_pierce
   SkillPermissions:
   - SkillID: skill_alchemy
     PlayerCanEdit: 0
@@ -210,7 +213,6 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 1
     CanSpawnWith: 1
-  Race: race_snoot
   PermittedItemSlots: []
   PathingType: 1
   DefaultTuning: entity_tuning_snoot
@@ -227,20 +229,17 @@ MonoBehaviour:
   - entity_age_snoot_adult
   - entity_age_snoot_elder
   Diets:
-  - TagObjectID: tag_can_eat
-    Priority: 2
+  - TagID: tag_item_type_meat
+    TagObjectID: 
+    Priority: 3
     Buffs: []
     Statuses: []
-  - TagObjectID: tag_can_drink
-    Priority: 2
-    Buffs: []
-    Statuses:
-    - entity_status_hydrated
-  - TagObjectID: tag_cooked_food
+  - TagID: tag_item_type_water
+    TagObjectID: 
     Priority: 3
     Buffs: []
     Statuses:
-    - entity_status_well_fed
+    - entity_status_hydrated
   AutoJobs:
   - BlueprintID: blueprint_eat_item
     Settings:
@@ -248,11 +247,11 @@ MonoBehaviour:
       AutoJobType: 1
   - BlueprintID: blueprint_drink_item
     Settings:
-      Priority: 3
+      Priority: 4
       AutoJobType: 1
   - BlueprintID: blueprint_drink_from_water
     Settings:
-      Priority: 4
+      Priority: 3
       AutoJobType: 1
   - BlueprintID: blueprint_sleep_on_ground
     Settings:

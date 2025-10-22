@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Pregnant
-  Name: Pregnant
+  Action: Pregnant (Human)
+  Name: Pregnant (Human)
   NamePlural: 
   InlineIcon: <sprite=100>
   Description: Spawns a child when the duration ends.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Type: Status
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2363
+  Order: 2415

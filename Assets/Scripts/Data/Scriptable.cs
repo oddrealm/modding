@@ -1,17 +1,22 @@
 ﻿using Assets.GameData;
 using System.Collections.Generic;
 using UnityEngine;
+#if DEV_TESTING
+using System.Linq;
+#endif
 
 public class Scriptable : ScriptableObject, ITagObject
 {
     public bool DEBUG;
     public string TooltipID = "";
-    public List<string> TagIDs = new List<string>();
-    public List<string> DiscoveryDependencies = new List<string>();
+    public List<string> TagIDs = new();
+    public List<string> DiscoveryDependencies = new();
+    public bool VisibleToPlayer = true;
 
     public HashSet<string> TagIDsHash { get; private set; } = new HashSet<string>();
     public HashSet<string> DiscoveryDependenciesHash { get; private set; } = new HashSet<string>();
     public int TagCount { get { return TagIDs.Count; } }
+    public bool ShowToPlayer => VisibleToPlayer;
     public string Key
     {
         get
@@ -128,15 +133,15 @@ public class Scriptable : ScriptableObject, ITagObject
     public virtual bool ShowMinimapCutoutColor { get { return false; } }
 
 #if ODD_REALM_APP
-    public static readonly List<ITag> NULL_TAG_LIST = new List<ITag>();
-    public static readonly List<ITagObject> NULL_TAG_OBJECT_LIST = new List<ITagObject>();
-    public static readonly UintArray NULL_UID_ARRAY = new UintArray(true);
-    public static readonly NullTag NULL_TAG = new NullTag();
-    public static readonly NullTagObject NULL_TAG_OBJECT = new NullTagObject();
-    public static readonly NullTagObjectInstance NULL_TAG_OBJECT_INSTANCE = new NullTagObjectInstance();
-    public static readonly List<string> NULL_ID_LIST = new List<string>();
-    public static readonly HashSet<string> NULL_ID_SET = new HashSet<string>();
-    public static readonly List<InstanceUID> NULL_UID_LIST = new List<InstanceUID>();
+    public static readonly List<ITag> NULL_TAG_LIST = new();
+    public static readonly List<ITagObject> NULL_TAG_OBJECT_LIST = new();
+    public static readonly UintArray NULL_UID_ARRAY = new(true);
+    public static readonly NullTag NULL_TAG = new();
+    public static readonly NullTagObject NULL_TAG_OBJECT = new();
+    public static readonly NullTagObjectInstance NULL_TAG_OBJECT_INSTANCE = new();
+    public static readonly List<string> NULL_ID_LIST = new();
+    public static readonly HashSet<string> NULL_ID_SET = new();
+    public static readonly List<InstanceUID> NULL_UID_LIST = new();
 #endif
 
     #region ITooltipFormat
@@ -191,6 +196,7 @@ public class Scriptable : ScriptableObject, ITagObject
     public string TooltipIcon { get { return TooltipData.Icon; } }
     public string TooltipType { get { return TooltipData.Type; } }
     public string TooltipDescription { get { return TooltipData.Description; } }
+    public string TooltipDiscoveryHint { get { return TooltipData.DiscoveryHint; } }
 #if ODD_REALM_APP
     public Sprite TooltipIconSprite { get { return GlobalSettingsManager.GetIcon(TooltipData.Icon); } }
 #else
@@ -223,15 +229,44 @@ public class Scriptable : ScriptableObject, ITagObject
         DataIndex = dataIndex;
     }
 
+    public void EnsureTag(string tagID)
+    {
+#if DEV_TESTING
+        if (string.IsNullOrEmpty(tagID)) { return; }
+        if (TagIDs.Contains(tagID)) { return; }
+
+        TagIDs.Add(tagID);
+        TagIDsHash.Add(tagID);
+
+#if UNITY_EDITOR
+        UnityEditor.EditorUtility.SetDirty(this);
+#endif
+#endif
+    }
+
     public virtual void OnLoaded()
     {
         SetOrderKey(TooltipName);
 
 #if DEV_TESTING
+        // if (DiscoveryDependencies.Count > 0)
+        // {
+        //     Debug.LogError(_key + " has discovery dependencies!");
+        // }
         if (TagIDs.Count > 50)
         {
             Debug.LogError(_key + " has a high tag count!");
         }
+
+        // Remove duplicates from TagIDs list.
+        // var tagIDs = TagIDs.Distinct().ToList();
+        //
+        // if (tagIDs.Count != TagIDs.Count)
+        // {
+        //     UnityEditor.EditorUtility.SetDirty(this);
+        //     TagIDs = tagIDs;
+        // }
+
 #endif
 
         TagIDsHash.Clear();

@@ -17,6 +17,7 @@ MonoBehaviour:
   TagIDs:
   - tag_races
   DiscoveryDependencies: []
+  VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   MerchantValue: 5000
   Intelligence: intelligence_non_sapient

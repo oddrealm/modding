@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -35,8 +37,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_light_leather_hat
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: 07e2b019c63bef4428abc04b2c5fb317, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_light_leather_hat
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -44,10 +46,10 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_head
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 100
   MerchantSellValue: 20
-  TuneRating: 1
+  TuneRating: 2
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
   DecayItem: 
@@ -71,4 +73,5 @@ MonoBehaviour:
     Status: 
     SpawnID: 
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions: []

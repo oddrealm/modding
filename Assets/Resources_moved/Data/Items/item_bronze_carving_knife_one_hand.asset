@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_can_equip
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 2
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -35,8 +37,8 @@ MonoBehaviour:
   PickUpSFX: sfx_item_pick_up_soft
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_bronze_carving_knife_one_hand
-  CharacterColorMask: {fileID: 0}
-  AccessoryData: {fileID: 11400000, guid: 0829c848b9c482047b2645d0f94d8481, type: 2}
+  CharacterColorMaskID: 
+  AccessoryID: accessory_item_bronze_carving_knife_one_hand
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -45,7 +47,8 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_bronze_carving_knife_one_hand
+  Attacks:
+  - attack_bronze_carving_knife_one_hand_cut
   MerchantBuyValue: 300
   MerchantSellValue: 60
   TuneRating: 3
@@ -58,10 +61,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_craft_leather
-      Amount: 6
+      Amount: 7
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
+  IsAvailableInCustomLoadout: 1
   TimedActions: []

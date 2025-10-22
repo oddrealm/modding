@@ -17,13 +17,13 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
-  ExpireTimeMinutesMin: 5760
-  ExpireTimeMinutesMax: 7200
+  ExpireTimeMinutesMin: 7200
+  ExpireTimeMinutesMax: 7800
   StatusesToRemove: []
   StatusesToAddOnExpire: []
   PermittedGenders:
