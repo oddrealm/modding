@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07befc08ca8320d4d9131ed8e2f6f622, type: 3}
+  m_Name: attack_rocket_axe_one_hand_cut
+  m_EditorClassIdentifier: 
+  Key: attack_rocket_axe_one_hand_cut
+  TooltipID: tooltip_attack_rocket_axe_one_hand_cut
+  ShowOnAttacksDisplay: 1
+  ActivationWeight: 100
+  ProjectileType: 0
+  FiringType: 1
+  ActivationType: 2
+  DamageType: 0
+  AttackFishInRange: 0
+  SkillUsed: 2048
+  AddSkillToOutput: 1
+  MinAmount: 30
+  MaxAmount: 40
+  Range: 14
+  SourceAction: 2
+  SourceAttribute: 0
+  TargetAction: 1
+  TargetAttribute: 1
+  AnimationTrigger: 2
+  AnimationHitEvent: 1
+  OriginFX: []
+  HitFX: []
+  PrimeFX: []
+  AttackStartTargetColor: {r: 1, g: 1, b: 1, a: 0}
+  AttackStartTargetColorDuration: 0
+  AttackStartTargetColorFlashType: 1
+  AttackStartSourceColor: {r: 1, g: 0.30055168, b: 0.031372547, a: 0}
+  AttackStartSourceColorDuration: 0.5
+  AttackStartSourceColorFlashType: 1

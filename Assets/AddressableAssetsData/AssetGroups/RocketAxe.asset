@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: RocketAxe
+  m_EditorClassIdentifier: 
+  m_GroupName: RocketAxe
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d4a377028a9617449b3819d9e2a16c48
+  m_SerializeEntries:
+  - m_GUID: 1e2951199144d4d4f8bae693dcc0ccd0
+    m_Address: Assets/Resources_moved/Data/AttackGroups/attack_group_rocket_axe_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - attackgroups
+  - m_GUID: ac4bf68c93294b04f83ca8fc57e2ecd3
+    m_Address: Assets/Resources_moved/Data/Attacks/attack_rocket_axe_one_hand_cut.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - attacks
+  - m_GUID: 9ae78cb35115ed14ca24a2fffa35a8b6
+    m_Address: Assets/Resources_moved/Data/EntityBuffGroups/buffs_item_rocket_axe_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - entitybuffgroups
+  - m_GUID: 890d63492b45be646a7f94a9762eecf4
+    m_Address: Assets/Resources_moved/Data/Tooltips/tooltip_item_rocket_axe_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - tooltips
+  - m_GUID: c6dbb872cc51e554981c741972847349
+    m_Address: Assets/Resources_moved/Data/EntityBuffTuning/bt_item_rocket_axe_one_hand_crit_rate.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - entitybufftuning
+  - m_GUID: 9f232531b2995fe41bf2a1c87cfcb948
+    m_Address: Assets/Resources_moved/Data/EntityBuffTuning/bt_item_rocket_axe_one_hand_evasion.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - entitybufftuning
+  - m_GUID: ce737ff8104c72e40a25c3d6f3e9aa64
+    m_Address: Assets/Resources_moved/Data/EntityBuffTuning/bt_item_rocket_axe_one_hand_move_speed.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - entitybufftuning
+  - m_GUID: 7dd993e85db63444abc62ad9f6b01a22
+    m_Address: Assets/Resources_moved/Data/BlockVisuals/visuals_item_rocket_axe_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - blockvisuals
+  - m_GUID: d03b1dadefb8a264c96324b33621c574
+    m_Address: Assets/Resources_moved/Data/Items/item_rocket_axe_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - items
+  - m_GUID: 4f8a99929dfb66a449654ca9846021cb
+    m_Address: Assets/Resources_moved/Data/CharacterAccessory/accessory_item_rocket_axe_one_hand.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - characteraccessory
+  - m_GUID: 6d93756c7c313114c86e1da92258ff62
+    m_Address: Assets/Resources_moved/Data/EntityBuffTuning/bt_item_rocket_axe_one_hand_evasion
+      - Copy.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - entitybufftuning
+  - m_GUID: d0eaf5c01df831345a2eb687bac204c7
+    m_Address: Assets/Resources_moved/Data/Tooltips/tooltip_attack_steel_hatchet_one_hand_cut
+      - Copy.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - tooltips
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 757288c6465130c4684a328a469fff0a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b5619d761f21b8b4a9f934a3164b0d71, type: 2}
+    - {fileID: 11400000, guid: 83fad634e0c35494f954d63f8a9c9f23, type: 2}
