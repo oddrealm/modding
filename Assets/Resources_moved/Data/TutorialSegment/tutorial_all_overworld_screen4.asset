@@ -20,17 +20,18 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
-  Trigger: 11
+  Trigger: 15
+  CustomEventID: showing_start_kingdom_button
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
-  MinUnscaledPlayedTime: 10
+  MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks:
-  - hud_minimap
   ActiveRaces: []
   PermittedWindows: []
-  SelectionType: 4
+  SelectionType: 0
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -46,56 +47,14 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
-  BackgroundMaskTarget: hud_minimap
+  Icon: sp_settle_tile_icon
+  BackgroundMaskTarget: selection_actions
   Message:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: The top-right minimap shows you a preview of the selected tile.
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: 
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: 'Change the terrain cutout layer with:'
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: 
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 1
-    InputID: input_command_move_layer_up
-    TagObjectID: 
-    Body: 
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: and
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 1
-    InputID: input_command_move_layer_down
-    TagObjectID: 
-    Body: 
-    NewLine: 1
+    Body: Now that you've selected a tile, you can settle it from the actions panel.
+    NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
   NextSegment: 

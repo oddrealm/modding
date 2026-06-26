@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Ember Rock
@@ -24,8 +25,9 @@ MonoBehaviour:
   Description: Some think Ember Rock didn't exist before the Fracture. There are
     no records of it, but, then again, there aren't many records from before this
     time.
+  DiscoveryHint: 
   Icon: sp_block_ember_rock_icon
   TextColor: {r: 0.60784316, g: 0.42352945, b: 0.73333335, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1410
+  Order: 1437

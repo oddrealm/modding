@@ -17,9 +17,12 @@ MonoBehaviour:
   TagIDs:
   - tag_terrain_gen_dirt
   - tag_blocks
+  - tag_dungeon_cave_home_wall
   DiscoveryDependencies:
   - blueprint_block_dirt
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 50
   UsageTags: []
   DefaultFill: block_fill_solid
   TriggerConditions: []
@@ -66,8 +69,14 @@ MonoBehaviour:
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_dirt_removed
   AddSFX: 
   RemoveSFX: sfx_dirt_remove
   InteractSFX: sfx_dirt_interact

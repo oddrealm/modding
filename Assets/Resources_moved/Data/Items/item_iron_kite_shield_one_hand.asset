@@ -20,6 +20,7 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 3
   UsageTags:
@@ -49,7 +50,6 @@ MonoBehaviour:
   Attacks:
   - attack_iron_kite_shield_one_hand_slam
   MerchantBuyValue: 510
-  MerchantSellValue: 102
   TuneRating: 4
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -60,11 +60,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_toughness
+      SourceID: 
       Amount: 7
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

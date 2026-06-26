@@ -17,11 +17,12 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -38,6 +39,7 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: Buff Skills
     ConditionTarget: 
@@ -48,35 +50,49 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 4
+    ActionID: 
     Buffs:
     - TargetID: skill_carry
+      SourceID: 
       Amount: 25
       Max: 0
       Permanent: 0
     - TargetID: skill_log
+      SourceID: 
       Amount: 25
       Max: 0
       Permanent: 0
     - TargetID: skill_craft_wood
+      SourceID: 
       Amount: 25
       Max: 0
       Permanent: 0
     - TargetID: skill_craft_stone
+      SourceID: 
       Amount: 25
       Max: 0
       Permanent: 0
     - TargetID: skill_plant
+      SourceID: 
       Amount: 25
       Max: 0
       Permanent: 0
     - TargetID: skill_mine
+      SourceID: 
       Amount: 25
+      Max: 0
+      Permanent: 0
+    - TargetID: attribute_wisdom
+      SourceID: 
+      Amount: 100
       Max: 0
       Permanent: 0
     Statuses: []
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

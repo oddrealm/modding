@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_entity_void_woken
-  TagIDs: []
+  TagIDs:
+  - tag_entity_size_medium
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -24,8 +25,6 @@ MonoBehaviour:
   EntitySimulationID: simulation_entity_default
   SizeTagID: tag_entity_size_medium
   LanguagesSpoken: []
-  DefaultLeaderRoles:
-  - 
   CompanionType: 0
   CompanionPermanenceType: 0
   ReproductionType: 0
@@ -56,6 +55,54 @@ MonoBehaviour:
   - SkillID: skill_fight_magic
     PlayerCanEdit: 1
     EnabledByDefault: 0
+  - SkillID: skill_alchemy
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_animal_husbandry
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_cook
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_cloth
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_leather
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_metal
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_stone
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_craft_void
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_craft_wood
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_fish
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_log
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_mine
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_misc
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_plant
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
+  - SkillID: skill_summoning
+    PlayerCanEdit: 0
+    EnabledByDefault: 0
+  - SkillID: skill_writing
+    PlayerCanEdit: 1
+    EnabledByDefault: 0
   ProfessionPermissions:
   - ProfessionID: profession_alchemist
     CanAssign: 0
@@ -82,7 +129,7 @@ MonoBehaviour:
     CanAssign: 0
     CanSpawnWith: 0
   - ProfessionID: profession_forester
-    CanAssign: 0
+    CanAssign: 1
     CanSpawnWith: 0
   - ProfessionID: profession_gwnri
     CanAssign: 0
@@ -135,6 +182,21 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 0
     CanSpawnWith: 0
+  - ProfessionID: profession_king
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_queen
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_chief
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_dominus
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_primarch
+    CanAssign: 1
+    CanSpawnWith: 1
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -174,11 +236,11 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 55
+    StartingBase: 165
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level
-    StartingBase: 1
+    StartingBase: 0
   - AttributeID: attribute_move_speed
     StartingBase: 24
   - AttributeID: attribute_none
@@ -195,5 +257,7 @@ MonoBehaviour:
     StartingBase: 0
   - AttributeID: attribute_xp
     StartingBase: 0
+  - AttributeID: attribute_wisdom
+    StartingBase: 1
   Biomes: []
   StateOptions: []

@@ -22,9 +22,11 @@ MonoBehaviour:
   Name: Gwdir
   NamePlural: Gwdir
   InlineIcon: <sprite=242>
-  Description: 
+  Description: Having a symbiotic relationship with the mighty T'Thdir tree, the
+    Gwdir thrive effortlessly in the forests. They harness their expert farming skills
+    to cultivate objects in harmony with the wilds.
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_gwdir
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}

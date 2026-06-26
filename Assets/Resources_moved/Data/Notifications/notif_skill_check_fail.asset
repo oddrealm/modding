@@ -20,7 +20,7 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   NotifGroup: tag_notif_group_work
-  SFXGroupID: sfx_notif_bad
+  SFXGroupID: sfx_job_failure
   DefaultPermissions:
     ShowPreview: 0
     CanStackPreviews: 1
@@ -29,5 +29,5 @@ MonoBehaviour:
     - faction_captured
     FocusCamOnCreate: 0
     PauseGameOnCreate: 0
-    HighlightOnCreate: 1
-    HighlightText: Failed <sprite=1654>
+    HighlightOnCreate: 0
+    HighlightText: 

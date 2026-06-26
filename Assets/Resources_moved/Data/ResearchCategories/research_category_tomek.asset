@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dbdf9b21cc5294ebf461b92864882e, type: 3}
   m_Name: research_category_tomek
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_research_category_tomek
   DEBUG: 0
+  TooltipID: tooltip_research_category_tomek
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Hide: 0
   FriendlyName: 

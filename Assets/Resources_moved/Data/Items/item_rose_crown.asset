@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_rare
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -36,9 +38,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_rose_crown
   CharacterColorMaskID: 
-  CharacterColorMask: {fileID: 0}
   AccessoryID: accessory_item_rose_crown
-  AccessoryData: {fileID: 11400000, guid: fbd50b62ec2f5724e8c30cab0dc55e00, type: 2}
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -46,9 +46,8 @@ MonoBehaviour:
   CannotBeUnequipped: 1
   PermittedSlots:
   - item_slot_head
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 5195
-  MerchantSellValue: 1039
   TuneRating: -1
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -59,11 +58,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_plant
+      SourceID: 
       Amount: 20
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

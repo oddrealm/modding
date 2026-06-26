@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: vytrax_timeout1
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 672be28644883d24393b65e82c2e90fa, type: 2}
   UpAnimation: {fileID: 11400000, guid: 0f726d49d0b08d24787fe5ff6841c09e, type: 2}

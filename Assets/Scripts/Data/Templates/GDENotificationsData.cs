@@ -8,15 +8,34 @@ public class GDENotificationsData : Scriptable
     public class NotificationPermissionSettings
     {
         public bool ShowPreview = true;
+        public bool ShowInLog = true;
         public bool CanStackPreviews = true;
-        public List<string> Factions = new List<string>();
+        public List<string> Factions = new();
         public bool FocusCamOnCreate = false;
         public bool PauseGameOnCreate = false;
         public bool HighlightOnCreate = false;
         public string HighlightText = "<sprite=1654>";
+        [HideInInspector]
+        public bool IsOverride = false;
 
         public HashSet<string> FactionsHash { get; private set; } = new HashSet<string>();
         public bool Save { get; private set; } = true;
+
+        public bool IsMatch(NotificationPermissionSettings other)
+        {
+            if (ShowPreview != other.ShowPreview) { return false; }
+            if (ShowInLog != other.ShowInLog) { return false; }
+            if (FocusCamOnCreate != other.FocusCamOnCreate) { return false; }
+            if (PauseGameOnCreate != other.PauseGameOnCreate) { return false; }
+            if (FactionsHash.Count != other.FactionsHash.Count) { return false; }
+
+            foreach (string faction in FactionsHash)
+            {
+                if (!other.FactionsHash.Contains(faction)) { return false; }
+            }
+
+            return true;
+        }
 
         public void SetNeedsSave(bool save) { Save = save; }
 

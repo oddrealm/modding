@@ -19,23 +19,24 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxMembers: -1
   OrderGroup: 0
   AutoCreateUniform: 1
-  EarnBonusXPInCombat: 0
-  ResearchKey: 
+  ResearchKey: research_ardyn_somnic_pools0
+  RequiredRaceID: race_ardyn
+  RequiredGenderID: 
   CanBeAssigned: 1
   CanBeChanged: 1
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
   FavoursRangedAttackItems: 0
   IsCombatProfession: 1
   StartingItems: []
-  GlobalIndicator: indicator_global_technochron
   SkillsActiveByDefault:
-  - skill_carry
   - skill_time_weave
+  PlayerCanEditLevelUpSkills: 0
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp:
   - skill_time_weave
+  StatusesToAdd: []
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1

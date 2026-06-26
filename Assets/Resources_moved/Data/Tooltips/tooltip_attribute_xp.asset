@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: XP
   Name: XP
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1002>
   Description: XP is earned by completing jobs and defeating enemies in combat, allowing
     the entity to level up.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.71457654, g: 0.34905648, b: 1, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3519
+  Order: 3649

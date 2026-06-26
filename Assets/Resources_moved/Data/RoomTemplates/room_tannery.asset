@@ -17,18 +17,23 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_industry
   ResearchKey: research_industry_leather0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_tannery
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_tannery
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_tannery
   DefaultAutoJobs:
   - BlueprintID: blueprint_item_light_leather_boots
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -36,7 +41,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_leather_backpack
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -44,7 +49,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_from_cow
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -52,7 +57,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_from_deer
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -60,7 +65,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_from_lopen
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -68,7 +73,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_from_mirmit
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -76,7 +81,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_from_rabbit
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -84,7 +89,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_from_rat
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -92,7 +97,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_from_snoot
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -100,7 +105,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_hat
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -108,7 +113,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_pants
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -116,7 +121,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_light_leather_vest
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -124,7 +129,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_medium_leather_boots
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -132,7 +137,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_medium_leather_from_gharox
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -140,7 +145,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_medium_leather_from_vytrax
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -148,7 +153,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_medium_leather_hat
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -156,7 +161,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_medium_leather_pants
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -164,7 +169,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_medium_leather_vest
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -172,7 +177,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -181,7 +186,4 @@ MonoBehaviour:
     - block_none
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

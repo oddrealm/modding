@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_entity_void_imp
-  TagIDs: []
+  TagIDs:
+  - tag_entity_size_medium
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -24,8 +25,6 @@ MonoBehaviour:
   EntitySimulationID: simulation_entity_default
   SizeTagID: tag_entity_size_medium
   LanguagesSpoken: []
-  DefaultLeaderRoles:
-  - 
   CompanionType: 0
   CompanionPermanenceType: 0
   ReproductionType: 0
@@ -96,8 +95,8 @@ MonoBehaviour:
     PlayerCanEdit: 0
     EnabledByDefault: 0
   - SkillID: skill_log
-    PlayerCanEdit: 0
-    EnabledByDefault: 0
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
   - SkillID: skill_loot
     PlayerCanEdit: 0
     EnabledByDefault: 0
@@ -108,8 +107,8 @@ MonoBehaviour:
     PlayerCanEdit: 0
     EnabledByDefault: 0
   - SkillID: skill_plant
-    PlayerCanEdit: 0
-    EnabledByDefault: 0
+    PlayerCanEdit: 1
+    EnabledByDefault: 1
   - SkillID: skill_summoning
     PlayerCanEdit: 0
     EnabledByDefault: 0
@@ -213,6 +212,21 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 0
     CanSpawnWith: 0
+  - ProfessionID: profession_king
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_queen
+    CanAssign: 0
+    CanSpawnWith: 0
+  - ProfessionID: profession_chief
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_dominus
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_primarch
+    CanAssign: 1
+    CanSpawnWith: 1
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -284,11 +298,11 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 12
+    StartingBase: 108
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level
-    StartingBase: 1
+    StartingBase: 0
   - AttributeID: attribute_move_speed
     StartingBase: 24
   - AttributeID: attribute_none
@@ -305,5 +319,7 @@ MonoBehaviour:
     StartingBase: 0
   - AttributeID: attribute_xp
     StartingBase: 0
+  - AttributeID: attribute_wisdom
+    StartingBase: 1
   Biomes: []
   StateOptions: []

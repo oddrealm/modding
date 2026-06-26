@@ -57,19 +57,37 @@ public class GDEBiomesData : Scriptable
     }
 
     [System.Serializable]
-    public class CaveLayer
+    public class OreLayer
     {
-        public static CaveLayer NULL = new CaveLayer();
+        public string Comment = "";
+
+        [Header("Tags")]
+        public string[] TagIDs = System.Array.Empty<string>();
+
+        [HideInInspector]
+        public TagUID[] TagUIDs = System.Array.Empty<TagUID>();
+
+        [Header("Max Z")]
+        [Range(0f, 1f)]
+        public float Max;
+
+        [Header("Min Z")]
+        [Range(0f, 1f)]
+        public float Min;
+    }
+
+    [System.Serializable]
+    public class DungeonLayer
+    {
+        public static DungeonLayer NULL = new();
 
         public string Comment = "";
 
-        [Header("Interior Spawn IDs (i.e., \"cave_default\")")]
-        public string[] InteriorSpawnTags = new string[] { "cave_default" };
+        [Header("Dungeon IDs (i.e., \"dungeon_default\")")]
+        public string[] DungeonIDs = new string[] { "dungeon_default" };
 
         [HideInInspector]
-        public GDECaveData[] InteriorSpawns;
-
-        public AnimationCurve StrengthDistribution = new AnimationCurve();
+        public GDEDungeonData[] DungeonsData;
 
         [Header("Max Z")]
         [Range(0f, 1f)]
@@ -83,34 +101,33 @@ public class GDEBiomesData : Scriptable
         public int MaxZ { get; private set; }
         [HideInInspector]
         public int MinZ { get; private set; }
+    }
+
+    [System.Serializable]
+    public class CaveLayer
+    {
+        public static CaveLayer NULL = new();
+
+        public string Comment = "";
+
+        [Header("Interior Spawn IDs (i.e., \"cave_default\")")]
+        public string[] InteriorSpawnTags = new string[] { "cave_default" };
 
         [HideInInspector]
-        public float[] ZStrength;
+        public GDECaveData[] InteriorSpawns;
 
-        public void RebuildZStrength(int minZ, int maxZ)
-        {
-            if (InteriorSpawns == null) { return; }
-            MinZ = minZ;
-            MaxZ = maxZ;
-            int layers = (MaxZ - MinZ) + 1;
+        [Header("Max Z")]
+        [Range(0f, 1f)]
+        public float Max;
 
-            ZStrength = new float[layers];
+        [Header("Min Z")]
+        [Range(0f, 1f)]
+        public float Min;
 
-            for (int z = 0; z < layers; z++)
-            {
-                float s = (float)(1 + z) / (float)layers;
-
-                ZStrength[z] = StrengthDistribution.Evaluate(s);
-            }
-        }
-
-        public float GetCaveStrength(int z)
-        {
-            if (InteriorSpawns == null) { return 0f; }
-            if (ZStrength == null) { return 0f; }
-            if (z < MinZ || z > MaxZ) { return 0f; }
-            return ZStrength[z - MinZ];
-        }
+        [HideInInspector]
+        public int MaxZ { get; private set; }
+        [HideInInspector]
+        public int MinZ { get; private set; }
     }
 
     [System.Serializable]
@@ -119,13 +136,21 @@ public class GDEBiomesData : Scriptable
         [HideInInspector]
         public TerrainLayer[] SpreadTerrainLayers;
         [HideInInspector]
+        public OreLayer[] SpreadOreLayers;
+        [HideInInspector]
         public CaveLayer[] SpreadCaveLayers;
+        [HideInInspector]
+        public DungeonLayer[] SpreadDungeonLayers;
         [HideInInspector]
         public GDEBiomeNoiseData TerrainNoise;
         [HideInInspector]
+        public GDEBiomeNoiseData OreNoise;
+        [HideInInspector]
         public GDEBiomeNoiseData PlantNoise;
         [HideInInspector]
-        public GDEBiomeNoiseData CaveNoise;
+        public GDEBiomeNoiseData CaveLowFreqNoise;
+        [HideInInspector]
+        public GDEBiomeNoiseData CaveHighFreqNoise;
         [HideInInspector]
         public GDEBiomeNoiseData StitchNoise;
         [HideInInspector]
@@ -134,14 +159,20 @@ public class GDEBiomesData : Scriptable
         [Header("Terrain Layers")]
         public TerrainLayer[] Layers;
 
+        [Header("Ore Layers")]
+        public OreLayer[] Ores;
+
         [Header("Cave Layers")]
         public CaveLayer[] Caves;
 
+        [Header("Dungeon Layers")]
+        public DungeonLayer[] Dungeons;
+
         [Header("Terrain Height Distribution")]
-        public AnimationCurve TerrainDistributionCurve = new AnimationCurve();
+        public AnimationCurve TerrainDistributionCurve = new();
 
         [Header("Sim Obj Starting Age Dstribution")]
-        public AnimationCurve SimStartAgeDistributionCurve = new AnimationCurve();
+        public AnimationCurve SimStartAgeDistributionCurve = new();
 
         [Header("Noise")]
         public string NoiseID;
@@ -159,10 +190,18 @@ public class GDEBiomesData : Scriptable
         public float Snowline;
         public string SnowTagID;
 
-        [Header("Caves")]
-        public string CaveNoiseID;
+        [Header("Cave Low Freq Noise")]
+        public string CaveLowFreqNoiseID;
+
+        [Header("Cave High Freq Noise")]
+        public string CaveHighFreqNoiseID;
         [Range(0f, 1f)]
         public float CaveThreshold;
+
+        [Header("Ores")]
+        public string OreNoiseID;
+        [Range(0f, 1f)]
+        public float OreThreshold;
 
         [Header("Stitch")]
         public int StitchPriority;
@@ -187,8 +226,9 @@ public class GDEBiomesData : Scriptable
             if (!string.IsNullOrEmpty(NoiseID))
             {
                 TerrainNoise = DataManager.GetTagObject<GDEBiomeNoiseData>(NoiseID);
-                CaveNoise = DataManager.GetTagObject<GDEBiomeNoiseData>(CaveNoiseID);
-                //CavePropNoise = DataManager.GetTagObject<GDEBiomeNoiseData>(CavePropNoiseID);
+                CaveLowFreqNoise = DataManager.GetTagObject<GDEBiomeNoiseData>(CaveLowFreqNoiseID);
+                CaveHighFreqNoise = DataManager.GetTagObject<GDEBiomeNoiseData>(CaveHighFreqNoiseID);
+                OreNoise = DataManager.GetTagObject<GDEBiomeNoiseData>(OreNoiseID);
                 PlantNoise = DataManager.GetTagObject<GDEBiomeNoiseData>(PlantNoiseID);
                 StitchNoise = DataManager.GetTagObject<GDEBiomeNoiseData>(StitchNoiseID);
             }
@@ -212,16 +252,19 @@ public class GDEBiomesData : Scriptable
 
         public void RebuildSpread()
         {
-            if (SpreadCaveLayers == null)
+            if (SpreadCaveLayers == null || SpreadCaveLayers.Length != 256)
             {
                 SpreadCaveLayers = new CaveLayer[256];
+            }
+            else
+            {
+                System.Array.Clear(SpreadCaveLayers, 0, SpreadCaveLayers.Length);
             }
 
             for (int i = 0; Caves != null && i < Caves.Length; i++)
             {
                 int maxZ = (int)((Caves[i].Max + float.Epsilon) * 255);
                 int minZ = (int)((Caves[i].Min + float.Epsilon) * 255);
-                Caves[i].RebuildZStrength(minZ, maxZ - 1);
 
                 if (Caves[i].InteriorSpawns == null ||
                     Caves[i].InteriorSpawns.Length != Caves[i].InteriorSpawnTags.Length)
@@ -249,9 +292,84 @@ public class GDEBiomesData : Scriptable
                 }
             }
 
-            if (SpreadTerrainLayers == null)
+            // Dungeon Layers.
+            if (SpreadDungeonLayers == null || SpreadDungeonLayers.Length != 256)
+            {
+                SpreadDungeonLayers = new DungeonLayer[256];
+            }
+            else
+            {
+                System.Array.Clear(SpreadDungeonLayers, 0, SpreadDungeonLayers.Length);
+            }
+
+            for (int i = 0; Dungeons != null && i < Dungeons.Length; i++)
+            {
+                int maxZ = (int)((Dungeons[i].Max + float.Epsilon) * 255);
+                int minZ = (int)((Dungeons[i].Min + float.Epsilon) * 255);
+
+                if (Dungeons[i].DungeonsData == null ||
+                    Dungeons[i].DungeonsData.Length != Dungeons[i].DungeonIDs.Length)
+                {
+                    Dungeons[i].DungeonsData = new GDEDungeonData[Dungeons[i].DungeonIDs.Length];
+                }
+
+                for (int n = 0; n < Dungeons[i].DungeonIDs.Length; n++)
+                {
+                    Dungeons[i].DungeonsData[n] = DataManager.GetTagObject<GDEDungeonData>(Dungeons[i].DungeonIDs[n]);
+                }
+
+                for (int z = minZ; z <= maxZ; z++)
+                {
+                    SpreadDungeonLayers[z] = Dungeons[i];
+                }
+            }
+
+            // Null dungeons.
+            for (int i = 0; i < SpreadDungeonLayers.Length; i++)
+            {
+                if (SpreadDungeonLayers[i] == null)
+                {
+                    SpreadDungeonLayers[i] = DungeonLayer.NULL;
+                }
+            }
+
+            if (SpreadOreLayers == null || SpreadOreLayers.Length != 256)
+            {
+                SpreadOreLayers = new OreLayer[256];
+            }
+            else
+            {
+                System.Array.Clear(SpreadOreLayers, 0, SpreadOreLayers.Length);
+            }
+
+            for (int i = 0; Ores != null && i < Ores.Length; i++)
+            {
+                // int maxZ = (int)((Ores[i].Max + float.Epsilon) * 255);
+                // int minZ = (int)((Ores[i].Min + float.Epsilon) * 255);
+                int minZ = Mathf.CeilToInt(Ores[i].Min * 255f);
+                int maxZ = Mathf.FloorToInt(Ores[i].Max * 255f);
+
+                Ores[i].TagUIDs = new TagUID[Ores[i].TagIDs.Length];
+
+                for (int n = 0; n < Ores[i].TagIDs.Length; n++)
+                {
+                    Ores[i].TagUIDs[n] = DataManager.GetTagObject<GDETagsData>(Ores[i].TagIDs[n]).TagUID;
+                }
+
+                for (int z = minZ; z <= maxZ; z++)
+                {
+                    SpreadOreLayers[z] = Ores[i];
+                }
+            }
+
+            // Terrain.
+            if (SpreadTerrainLayers == null || SpreadTerrainLayers.Length != 256)
             {
                 SpreadTerrainLayers = new TerrainLayer[256];
+            }
+            else
+            {
+                System.Array.Clear(SpreadTerrainLayers, 0, SpreadTerrainLayers.Length);
             }
 
             SpreadTerrainLayers[0] = new TerrainLayer()
@@ -292,12 +410,14 @@ public class GDEBiomesData : Scriptable
         public bool IsNULL { get { return string.IsNullOrEmpty(TagID); } }
     }
 
-    public TerrainGen TerrainGenSettings = new TerrainGen();
+    public TerrainGen TerrainGenSettings = new();
     public DefaultPopulationRating[] DefaultFloraPopulationModifiers = new DefaultPopulationRating[0];
     public string OverworldMapGeneration = "";
     public string OverworldUnderlayVisuals = "overworld_visuals_ocean";
     public string OverworldTerrainVisuals = "";
+    public string OverworldFeatureVisuals = "";
     public string OverworldRiverVisuals = "";
+    public string OverworldRoadVisuals = "overworld_visuals_road_default";
     public float MovementCost = 1.0f;
     public float MovementSpeed = 0.2f;
     public string GenerateNameKey = "";
@@ -306,20 +426,31 @@ public class GDEBiomesData : Scriptable
     public Gradient DayNightColor;
     public Gradient DayNightCloudColor;
 
-    public List<string> Seasons = new List<string>();
+    public List<string> Seasons = new();
+
+    public List<string> SurfaceHostiles = new();
 
     [System.NonSerialized]
-    public List<ITagObject> LocalFauna = new List<ITagObject>();
+    public List<ITagObject> LocalFauna = new();
 
     [System.NonSerialized]
-    public List<ITagObject> LocalFish = new List<ITagObject>();
+    public List<ITagObject> LocalFish = new();
 
     [System.NonSerialized]
-    public List<ITagObject> LocalFlora = new List<ITagObject>();
+    public List<ITagObject> LocalFlora = new();
 
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
+#if DEV_TESTING
+        for (int i = 0; i < SurfaceHostiles.Count; i++)
+        {
+            if (!DataManager.TagObjectExists(SurfaceHostiles[i]))
+            {
+                Debug.LogError($"Biome {name} has a missing surface hostile tag object: {SurfaceHostiles[i]}");
+            }
+        }
+#endif
 
         if (DEBUG)
         {

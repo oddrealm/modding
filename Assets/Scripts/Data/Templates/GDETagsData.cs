@@ -5,7 +5,6 @@ public class GDETagsData : Scriptable, ITag
 {
     public bool TrackByDefault = false;
     public bool TrackPlayerCanEdit = false;
-    public TrackingTypes TrackingTypes = TrackingTypes.ITEM;
 
     public TagUID TagUID { get; private set; }
     public string TagID { get { return Key; } }
@@ -25,7 +24,6 @@ public class GDETagsData : Scriptable, ITag
             HideIfZero = true,
             StartDisabled = !TrackByDefault,
             PlayerEditDisabled = !TrackPlayerCanEdit,
-            TrackingType = TrackingTypes
         };
 
         return true;

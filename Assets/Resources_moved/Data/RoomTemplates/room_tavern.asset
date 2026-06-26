@@ -17,12 +17,17 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_community
   ResearchKey: research_cooking_tavern0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_tavern
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_tavern
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_tavern
   DefaultAutoJobs:
@@ -36,7 +41,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -44,16 +49,21 @@ MonoBehaviour:
     ProhibitedLocations:
     - block_none
     PermittedLocations: []
-  - BlueprintID: blueprint_sleep
+  - BlueprintID: blueprint_drink_item
     Settings:
-      Priority: 3
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_eat_item
+    Settings:
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

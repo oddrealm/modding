@@ -28,7 +28,7 @@ MonoBehaviour:
     a magical rod that can catch anything. Then again, Tomek are known for telling
     questionable stories...
   Icon: sp_koosh_kasheens_fishing_pole_two_hand_icon
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8392157, g: 0.7490196, b: 0.654902, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1874
+  Order: 1892

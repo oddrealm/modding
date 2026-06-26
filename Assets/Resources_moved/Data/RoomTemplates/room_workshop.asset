@@ -17,18 +17,23 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_industry
   ResearchKey: research_industry_basics0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_workshop
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_workshop
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_workshop
   DefaultAutoJobs:
   - BlueprintID: blueprint_item_coal
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -36,7 +41,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_sand_clod
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -44,7 +49,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_paper
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -52,7 +57,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_ink
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -60,7 +65,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -70,7 +75,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_glass_bottle
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -78,7 +83,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_glass_pane
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -86,7 +91,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_clay_brick
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -99,7 +104,4 @@ MonoBehaviour:
   - level: 1
     jobFinishWorkerAction: 
     jobFinishItemAction: action_room_quality_extra_spawns_med
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

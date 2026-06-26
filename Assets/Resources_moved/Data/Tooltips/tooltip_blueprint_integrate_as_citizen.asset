@@ -16,15 +16,17 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Integrate As Citizen
   NamePlural: 
   InlineIcon: <sprite=1277>
-  Description: Making an entity a citizen will unlock their racial technology, allow
-    them to form relationships, and enable profession changing.
+  Description: Integrating makes a captured entity a citizen and will unlock their
+    racial technology, allow them to form relationships, and enable profession changing.
+  DiscoveryHint: 
   Icon: sp_job_integrate_as_citizen_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1772
+  Order: 1807

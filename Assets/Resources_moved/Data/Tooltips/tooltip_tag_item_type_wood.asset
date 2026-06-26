@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Wood
+  Action: 
   Name: Wood
-  NamePlural: 
+  NamePlural: Wood
   InlineIcon: <sprite=1512>
   Description: 
+  DiscoveryHint: 
   Icon: sp_comp_wood_icon
   TextColor: {r: 0.7411765, g: 0.5764706, b: 0.48235297, a: 1}
-  Type: Type
+  Type: Item Type
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 3438
+  Order: 3544

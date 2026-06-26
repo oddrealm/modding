@@ -20,6 +20,7 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 3
   UsageTags:
@@ -49,7 +50,6 @@ MonoBehaviour:
   Attacks:
   - attack_iron_bow_two_hand_pierce
   MerchantBuyValue: 535
-  MerchantSellValue: 107
   TuneRating: 4
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -58,5 +58,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

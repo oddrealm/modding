@@ -26,8 +26,8 @@ MonoBehaviour:
     on it.
   DiscoveryHint: Personally, it looks more like a mushroom to me. The 'leaf' or 'cap'
     is hard as leather. It was fall when I saw them last.
-  Icon: sp_stoneleaf_icon
+  Icon: sp_plant_stoneleaf_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2954
+  Order: 3009

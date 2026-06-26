@@ -25,8 +25,8 @@ MonoBehaviour:
   Description: "You\u2019ll know Felix is near when a spicy scent tickles your nose."
   DiscoveryHint: Would you believe me if I told you they're named after my uncle,
     Felix the Great?
-  Icon: sp_felix_icon
+  Icon: sp_plant_felix_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1470
+  Order: 1475

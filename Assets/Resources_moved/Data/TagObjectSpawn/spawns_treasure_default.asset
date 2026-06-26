@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
   m_Name: spawns_treasure_default
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 1
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 651887
   MaxIterations: 1
@@ -35,14 +35,6 @@ MonoBehaviour:
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
-    Weight: 0.5
+    Weight: 1
     TagObjectID: spawns_treasure_item_pool_default
-    TagID: 
-  - Comment: Nothing
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.5
-    TagObjectID: 
     TagID: 

@@ -4,6 +4,7 @@ using UnityEngine;
 public class GDEItemRarityData : Scriptable
 {
     public int RarityScore;
+    public int SpawnCountTuningMax;
     public bool DisposeIfCannotSpawn = true;
     public bool IsAvailableInCustomLoadout = false;
 }

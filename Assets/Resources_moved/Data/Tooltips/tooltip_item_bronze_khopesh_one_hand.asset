@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
   Action: 
   Name: Bronze Khopesh 1h
   NamePlural: 
   InlineIcon: <sprite=307>
   Description: 
+  DiscoveryHint: 
   Icon: sp_bronze_khopesh_one_hand_icon
   TextColor: {r: 0.8588236, g: 0.47058827, b: 0.09411766, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 378
+  Order: 350

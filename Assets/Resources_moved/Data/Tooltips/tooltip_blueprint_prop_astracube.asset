@@ -23,8 +23,9 @@ MonoBehaviour:
   NamePlural: 
   InlineIcon: <sprite=1248>
   Description: Where is all this stuff going?
+  DiscoveryHint: 
   Icon: sp_astracube_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 411
+  Order: 387

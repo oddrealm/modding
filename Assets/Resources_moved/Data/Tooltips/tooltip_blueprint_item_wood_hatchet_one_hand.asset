@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Build Wood Hatchet 1h
   NamePlural: 
   InlineIcon: <sprite=1823>
   Description: 'What? Never seen a wood hatchet? '
+  DiscoveryHint: 
   Icon: sp_wood_hatchet_one_hand_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 816
+  Order: 811

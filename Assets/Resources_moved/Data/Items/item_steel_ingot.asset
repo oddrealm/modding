@@ -19,6 +19,7 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_common
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 4
   UsageTags: []
@@ -44,7 +45,6 @@ MonoBehaviour:
   PermittedSlots: []
   Attacks: []
   MerchantBuyValue: 255
-  MerchantSellValue: 51
   TuneRating: 5
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -53,5 +53,4 @@ MonoBehaviour:
   StackSize: 5
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

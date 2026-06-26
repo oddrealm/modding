@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Open Rooms Menu
-  Name: Rooms
+  Action: Open Rooms Toolbar
+  Name: Open Rooms Toolbar
   NamePlural: 
   InlineIcon: 
   Description: Designate rooms for different purposes within your settlement.
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8392157, g: 0.7490196, b: 0.654902, a: 1}
   Type: Input
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2539
+  Order: 2279

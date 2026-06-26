@@ -10,4 +10,5 @@ public struct GlobalBuff
     public BuffData Buff;
     [System.NonSerialized]
     public string SourceTagObjectID;
+    public bool Save;
 }

@@ -16,12 +16,13 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Simulations:
   - rid: 0
+  - rid: 3
   - rid: 1
   - rid: 2
-  - rid: 3
   references:
     version: 2
     RefIds:
@@ -29,7 +30,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: Is Expired
-        IsEnabled: 1
         Target:
           rid: 4
         RequireAllConditionsToBeMet: 1
@@ -41,21 +41,19 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Root: Turn Into Trunk'
-        IsEnabled: 1
         Target:
           rid: 7
         RequireAllConditionsToBeMet: 1
         Conditions:
-        - rid: 8
         - rid: 9
+        - rid: 2499668321292517449
         Actions:
-        - rid: 10
         - rid: 11
+        - rid: 10
     - rid: 2
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Root: Spawn Roots Down'
-        IsEnabled: 1
         Target:
           rid: 12
         RequireAllConditionsToBeMet: 1
@@ -71,17 +69,16 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Root: Spawn Roots Horizontally'
-        IsEnabled: 1
         Target:
           rid: 19
         RequireAllConditionsToBeMet: 1
         Conditions:
         - rid: 20
-        - rid: 21
+        - rid: 2499668321292517448
         - rid: 22
         - rid: 23
-        - rid: 24
         - rid: 4762757899725046466
+        - rid: 2499668321292517440
         Actions:
         - rid: 25
         - rid: 26
@@ -94,6 +91,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_expired
         OptionID: 
     - rid: 7
@@ -101,16 +99,11 @@ MonoBehaviour:
       data:
         TargetPositions:
           rid: 28
-    - rid: 8
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: plant_state_can_reproduce
-        OptionID: tree_trunk
     - rid: 9
       type: {class: MaxGroupRadiusSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         MaxRadiusPercent: 0.9
     - rid: 10
       type: {class: DisposeSimAction, ns: , asm: Assembly-CSharp}
@@ -132,23 +125,27 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
         OptionID: tree_root
     - rid: 14
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_can_reproduce
         OptionID: tree_root
     - rid: 15
       type: {class: RandomChanceSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         MaxRange: 28800
     - rid: 16
       type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 0
+        DebugString: 
     - rid: 17
       type: {class: ClearSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -172,31 +169,20 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
-        OptionID: tree_root
-    - rid: 21
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: plant_state_can_reproduce
         OptionID: tree_root
     - rid: 22
       type: {class: MaxGroupRadiusSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
-        MaxRadiusPercent: 2
+        DebugString: 
+        MaxRadiusPercent: 1.5
     - rid: 23
       type: {class: CanSupportWeightSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
-    - rid: 24
-      type: {class: HasNeighborSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 0
-        NeighborPositions:
-          rid: 31
-        NeighborConditions:
-        - rid: 32
+        DebugString: 
     - rid: 25
       type: {class: ClearSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -250,7 +236,23 @@ MonoBehaviour:
         MinDistance: 1
         IterateToEnd: 0
         CheckAll: 0
-    - rid: 31
+    - rid: 2025174578694979644
+      type: {class: ClearSimAction, ns: , asm: Assembly-CSharp}
+      data:
+        DebugBreakpoint: 0
+        Clear:
+          Layer: 64
+          DisableRemoveSpawns: 0
+    - rid: 2499668321292517440
+      type: {class: HasNeighborSimCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Outcome: 0
+        DebugString: 
+        NeighborPositions:
+          rid: 2499668321292517442
+        NeighborConditions:
+        - rid: 2499668321292517452
+    - rid: 2499668321292517442
       type: {class: SimPositions, ns: , asm: Assembly-CSharp}
       data:
         Positions:
@@ -262,19 +264,30 @@ MonoBehaviour:
         MinDistance: 1
         IterateToEnd: 0
         CheckAll: 0
-    - rid: 32
-      type: {class: HasBlockLayerSimCondition, ns: , asm: Assembly-CSharp}
+    - rid: 2499668321292517448
+      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
-        Layer: 64
-    - rid: 2025174578694979644
-      type: {class: ClearSimAction, ns: , asm: Assembly-CSharp}
+        DebugString: 
+        StateID: plant_state_can_reproduce
+        OptionID: tree_root
+    - rid: 2499668321292517449
+      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
-        DebugBreakpoint: 0
-        Clear:
-          Layer: 64
-          DisableRemoveSpawns: 0
+        Outcome: 1
+        DebugString: 
+        StateID: plant_state_can_reproduce
+        OptionID: tree_root
+    - rid: 2499668321292517452
+      type: {class: HasInstanceSimCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Outcome: 1
+        DebugString: 
+        TagObjectKey: 
+        StateID: plant_has_tag_object_ID
+        OptionID: tree_root
     - rid: 4762757899725046466
       type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 0
+        DebugString: 

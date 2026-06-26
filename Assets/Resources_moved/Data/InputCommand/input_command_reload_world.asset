@@ -16,23 +16,17 @@ MonoBehaviour:
   TooltipID: tooltip_input_reload_world
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 5
   InputState: 1
-  DeferTo: []
   DefaultTriggers:
-  - Hotkeys:
-    - Down: 0
-      Hold: 0
-      Up: 1
-      Key: 293
-      Mouse: 0
+  - Hotkeys: []
   ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0.2
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
   IsToggle: 0
-  BtnsForceActive: 0
-  MaxIncrement: 1
   PlayerCanEdit: 0
+  IgnoreModifiers: 0
   PrintEvents: 0

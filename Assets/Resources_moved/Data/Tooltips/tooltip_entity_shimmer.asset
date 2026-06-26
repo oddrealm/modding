@@ -22,10 +22,11 @@ MonoBehaviour:
   Name: Shimmer
   NamePlural: Shimmer
   InlineIcon: <sprite=538>
-  Description: 
+  Description: A quiet and mysterious race, often found aiding the Ancients. They
+    return to the void when they grow tired of our realm.
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_shimmer
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2736
+  Order: 2756

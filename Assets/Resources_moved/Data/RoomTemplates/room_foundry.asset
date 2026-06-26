@@ -17,18 +17,23 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_industry
-  ResearchKey: research_industry_bronze0
+  ResearchKey: 
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_foundry
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_foundry
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_foundry
   DefaultAutoJobs:
   - BlueprintID: blueprint_iron_ingot
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -36,7 +41,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_bronze_ingot
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -44,7 +49,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_steel_ingot
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -52,7 +57,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_rutile_ingot
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -60,7 +65,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 2
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources:
     - item_type
@@ -70,7 +75,4 @@ MonoBehaviour:
     - block_none
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

@@ -12,22 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
   m_Name: input_command_priority_zero
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_input_priority_zero
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_input_priority_zero
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 2
   InputState: 4
-  DeferTo: []
   DefaultTriggers: []
   ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
   IsToggle: 1
-  BtnsForceActive: 0
   MaxIncrement: 1
   PlayerCanEdit: 0
+  HotkeyCountMustBeExact: 0
   PrintEvents: 0

@@ -16,8 +16,6 @@ public interface ISimulationConditionSource
 public class InstanceSimulation : ISimulationActionSource, ISimulationConditionSource
 {
     public string Comment = "Instance Simulation";
-    public bool IsEnabled = true;
-
 
     [Header("Where we want to act")]
     [SerializeReference]
@@ -41,14 +39,6 @@ public class InstanceSimulation : ISimulationActionSource, ISimulationConditionS
     public SimulationCondition[] GetConditions() { return Conditions; }
     public void SetActions(SimulationAction[] actions) { Actions = actions; }
     public void SetConditions(SimulationCondition[] conditions) { Conditions = conditions; }
-
-    public void Init()
-    {
-        for (int i = 0; Conditions != null && i < Conditions.Length; i++)
-        {
-            Conditions[i].Init();
-        }
-    }
 
     public override string ToString()
     {

@@ -22,10 +22,12 @@ MonoBehaviour:
   Name: Snoot
   NamePlural: Snoots
   InlineIcon: <sprite=771>
-  Description: 
+  Description: A surprisingly friendly beast. These serpent-like critters love warm
+    weather, and will often curl up beside travelers for warmth. Unless provoked,
+    they rarely attack.
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_snoot
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2782
+  Order: 2808

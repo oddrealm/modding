@@ -19,12 +19,13 @@ MonoBehaviour:
   - tag_cave_gen_water
   DiscoveryDependencies:
   - blueprint_block_water
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Permissions: 128
   Prohibited: 131104
   PermissionsAbove: 32
   ProhibitedAbove: 0
-  MovementCost: 3
+  MovementCost: 2
   FillPriority: 2
   MaxMass: 5
   FillNeighborBlocksOnNew: 1

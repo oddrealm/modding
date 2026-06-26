@@ -34,14 +34,14 @@ public struct EntitySpawnData
         _session = session;
     }
 
-    public static EntitySpawnData NewDefault(string entityID, string factionID = "", InstanceUID nationUID = default, string tuningID = "")
+    public static EntitySpawnData NewDefault(string entityID, string factionID = "", InstanceUID nationUID = default, string tuningID = "", string professionID = "profession_random")
     {
         return new EntitySpawnData()
         {
             EntityID = entityID,
             NationUID = nationUID,
             FactionID = factionID,
-            ProfessionID = "profession_random",
+            ProfessionID = professionID,
             GenderID = "priority",
             TuningID = tuningID,
             AppearanceID = "",
@@ -66,6 +66,7 @@ public struct EntitySpawnData
     {
         InstanceUID[] parents = null;
         string faction = "";
+        InstanceUID nationUID = default;
 
         if (!newTagObjData.sourceUID.IsNULL && _session.Entities.TryGetEntityByUID(newTagObjData.sourceUID, out var parent))
         {
@@ -73,14 +74,18 @@ public struct EntitySpawnData
 
             parents[0] = parent.UID;
             parents[1] = parent.Family.CompanionUID;
+            nationUID = parent.Faction.NationUID;
 
-            faction = parent.Faction.Data.Key;
+            // if (parent.Race == entityData.Race)
+            // {
+            //     faction = parent.Faction.Data.Key;
+            // }
         }
 
         return new EntitySpawnData()
         {
             EntityID = entityData.Key,
-            NationUID = default,
+            NationUID = nationUID,
             FactionID = faction,
             ProfessionID = "profession_random",
             GenderID = "priority",

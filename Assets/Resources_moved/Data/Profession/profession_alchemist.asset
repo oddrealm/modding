@@ -17,24 +17,26 @@ MonoBehaviour:
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
+  VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxMembers: -1
   OrderGroup: 0
   AutoCreateUniform: 1
-  EarnBonusXPInCombat: 0
   ResearchKey: 
-  VisibleToPlayer: 0
+  RequiredRaceID: 
+  RequiredGenderID: 
   CanBeAssigned: 0
   CanBeChanged: 1
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
   FavoursRangedAttackItems: 0
+  IsCombatProfession: 0
   StartingItems: []
-  GlobalIndicator: indicator_global_alchemist
   SkillsActiveByDefault:
   - skill_alchemy
-  - skill_carry
+  PlayerCanEditLevelUpSkills: 0
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp:
   - skill_alchemy
+  StatusesToAdd: []
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 3

@@ -17,11 +17,13 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
+  ShowOnTooltip: 0
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -39,21 +41,25 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: Lay Egg
     ConditionTarget: 
     HideInTooltips: 0
-    ActivationID: tag_can_lay_egg
+    ActivationID: 
     Conditions: []
-    TimeThresholdMinutes: 0
+    TimeThresholdMinutes: 1440
     RandomChance: 0
     ActivationAction: 3
     DeactivationAction: 0
+    ActionID: 
     Buffs: []
     Statuses: []
     SpawnID: item_egg_raw
-    SpawnMin: 0
-    SpawnMax: 0
+    SpawnMin: 1
+    SpawnMax: 1
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

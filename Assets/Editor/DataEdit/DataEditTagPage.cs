@@ -158,7 +158,7 @@ public class DataEditTagPage : DataEditPage
         return false;
     }
 
-    private bool HasIssue(Scriptable script)
+    private bool IsMissingTooltip(Scriptable script)
     {
         if (string.IsNullOrEmpty(script.TooltipID))
         {
@@ -166,6 +166,16 @@ public class DataEditTagPage : DataEditPage
         }
 
         if (script.TooltipIcon == "tooltip_missing")
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    private bool HasIssue(Scriptable script)
+    {
+        if (IsMissingTooltip(script))
         {
             return true;
         }
@@ -253,32 +263,25 @@ public class DataEditTagPage : DataEditPage
 
             EditorUtility.DisplayProgressBar("FOO", "", t / (float)_visibleScripts.Count);
 
-            if (script is GDERoomTemplatesData data)
+            if (script is GDEItemsData itemData && itemData.DiscoveryDependencies.Count > 0)
             {
-                // List<Scriptable> blueprints = GetDataByType<GDEBlueprintsData>();
+                // string newDep = string.Empty;
                 //
-                // for (int i = 0; i < blueprints.Count; i++)
+                // for (int n = 0; n < itemData.DiscoveryDependencies.Count; n++)
                 // {
-                //     if (blueprints[i].Key.Contains("blueprint_plant_tree"))
-                //     {
-                //         data.DefaultAutoJobs.Add(new()
-                //         {
-                //             BlueprintID = blueprints[i].Key,
-                //             Settings = new()
-                //             {
-                //                 AutoJobType = AutoJobTypes.MANUAL,
-                //                 Priority = 1
-                //             },
-                //             PermittedLocations = System.Array.Empty<string>(),
-                //             PermittedResources = System.Array.Empty<string>(),
-                //             ProhibitedLocations = System.Array.Empty<string>(),
-                //             ProhibitedResources = System.Array.Empty<string>()
-                //         });
-                //     }
+                //     string depID = itemData.DiscoveryDependencies[n];
+                //
+                //     if (!depID.Contains("blueprint_plant_")) { continue; }
+                //     newDep = depID + "_in_room";
+                //     break;
                 // }
-
-                Debug.LogError($"FOO: {script.Key}");
-                MARK_DIRTY(script);
+                //
+                // if (ScriptExists(newDep))
+                // {
+                //     EditorUtility.SetDirty(itemData);
+                //     itemData.DiscoveryDependencies.Add(newDep);
+                //     Debug.LogError($"Adding new dep: {newDep}");
+                // }
             }
         }
 
@@ -663,7 +666,13 @@ public class DataEditTagPage : DataEditPage
                 LABEL("Children", Color.yellow);
             }
 
-            ASSERT_WARNING_ICON(!HasIssue(script));
+            if (IsMissingTooltip(script))
+            {
+                BTN("Generate Tooltip", Color.cornflowerBlue, () =>
+                {
+                    GenerateMissingTooltip(script);
+                });
+            }
             FLEX_SPACE();
             END_HOR();
 
@@ -941,7 +950,6 @@ public class DataEditTagPage : DataEditPage
         BEGIN_INDENT();
         LABEL("Core Script Data:", Color.grey);
         RenderTooltip(script);
-        // List/Edit tag IDs for script.
         LABEL("Tag IDs:", Color.yellow);
         BEGIN_INDENT();
 
@@ -1117,6 +1125,14 @@ public class DataEditTagPage : DataEditPage
         else if (script is GDETutorialSegmentData tutorialData)
         {
             RenderTutorialData(script, tutorialData);
+        }
+        else if (script is GDEHistoryData historyData)
+        {
+            RenderHistoryData(script, historyData);
+        }
+        else if (script is GDEDungeonData dungeonData)
+        {
+            RenderDungeonDataData(script, dungeonData);
         }
         else
         {
@@ -1431,8 +1447,8 @@ public class DataEditTagPage : DataEditPage
                                 {
                                     Location l = Session.World.Map.GetLocation(x, y, z);
                                     if (l.IsVisible) { continue; }
-                                    TerrainBuildOutput terrainData = TerrainBuilder.GetTerrainAtPoint(l.x, l.y, l.z, Session.Realm.Seed, ActiveTile.TerrainGen);
-                                    TagUID prototype = (uint)(terrainData.TagUID > 0 ? terrainData.TagUID : 1);
+                                    TerrainBuildOutput terrainData = TerrainBuilder.GetTerrainAtPoint(l.x, l.y, l.z, Session.Seed, ActiveTile.TerrainGen);
+                                    TagUID prototype = (uint)(terrainData.tagUID > 0 ? terrainData.tagUID : 1);
                                     if (prototype != TerrainBuilder.CAVE_TERRAIN) { continue; }
                                     Session.World.MarkLocationVisible(l.locationUID);
                                     found = true;
@@ -1450,11 +1466,6 @@ public class DataEditTagPage : DataEditPage
 
                 BEGIN_INDENT();
                 cave.Comment = COMMENT(cave.Comment);
-
-                // Distribution curve.
-                BEGIN_HOR();
-                cave.StrengthDistribution = ANIM_CURVE(cave.StrengthDistribution, "Size Distribution (Over Z)");
-                END_HOR();
 
                 BEGIN_HOR();
                 LABEL("Max Z:");
@@ -1747,10 +1758,9 @@ public class DataEditTagPage : DataEditPage
             scenariosData.Conditions = RENDER_REF_ARRAY<GDEScenariosData.Condition>(scenariosData.Conditions, "Conditions", (req) =>
             {
                 req.ConditionType = (ConditionTypes)DROP_DOWN(req.ConditionType);
-                req.MustFail = TOGGLE(req.MustFail, "Must Fail");
-                req.TagObjectRequirement.TagObjectID = DATA_ID_INPUT<Scriptable>(req.TagObjectRequirement.TagObjectID, "Tag Object ID", out var tagObjData);
-                req.TagObjectRequirement.Count = INT_INPUT(req.TagObjectRequirement.Count, "Count");
-                req.TagObjectRequirement.Comparison = (ThresholdConditionTypes)DROP_DOWN(req.TagObjectRequirement.Comparison);
+                req.Requirement.ID = DATA_ID_INPUT<Scriptable>(req.Requirement.ID, "ID", out var tagObjData);
+                req.Requirement.Count = INT_INPUT(req.Requirement.Count, "Count");
+                req.Requirement.Comparison = (ThresholdConditionTypes)DROP_DOWN(req.Requirement.Comparison);
             });
             END_INDENT();
         }
@@ -2336,12 +2346,21 @@ public class DataEditTagPage : DataEditPage
     // Buff Data.
     private BuffData RenderBuffData(Scriptable script, BuffData buffData)
     {
+        BEGIN_VERT();
         buffData.TargetID = DATA_ID_INPUT<Scriptable>(buffData.TargetID, "Buff", out var targetData);
+        buffData.SourceID = DATA_ID_INPUT<Scriptable>(buffData.SourceID, "Source", out var sourceData);
+        END_VERT();
 
         if (targetData != null)
         {
             BEGIN_INDENT();
+            BEGIN_DISABLED(sourceData != null);
+            if (sourceData != null)
+            {
+                LABEL("Using source for amount", Color.yellow);
+            }
             buffData.Amount = INT_INPUT(buffData.Amount, "Amount");
+            END_DISABLED();
             buffData.Max = INT_INPUT(buffData.Max, "Max");
             buffData.Permanent = TOGGLE(buffData.Permanent, "Permanent");
             END_INDENT();
@@ -2400,8 +2419,15 @@ public class DataEditTagPage : DataEditPage
         BEGIN_INDENT();
 
         //_prefabPaintID = DATA_ID_INPUT<Scriptable>(_prefabPaintID, "Paint ID", out var data);
-        _paintingPrefab = Event.current.modifiers != EventModifiers.Control;
-        TOGGLE(_paintingPrefab, "Ctrl to Paint");
+        //_paintingPrefab = Event.current.modifiers != EventModifiers.Control;
+        if (Event.current.modifiers == EventModifiers.Control)
+        {
+            _paintingPrefab = !_paintingPrefab;
+            _window.Repaint();
+        }
+
+        _paintingPrefab = TOGGLE(_paintingPrefab, _paintingPrefab ? "Painting" : "Coping");
+
         LABEL("Painting: " + _copiedText, Color.yellow);
         if (!string.IsNullOrEmpty(_copiedText))
         {
@@ -2434,6 +2460,8 @@ public class DataEditTagPage : DataEditPage
         {
             GDEPrefabData.LocationData locationData = prefabData.Locations[i];
 
+            _paintMaxX = Mathf.Max(_paintMaxX, locationData.Point.x + 1);
+            _paintMaxY = Mathf.Max(_paintMaxY, locationData.Point.y + 1);
             int index = locationData.Point.x | (locationData.Point.y << maxDimBits) | (locationData.Point.z << maxDimBits << maxDimBits);
 
             if (!_prefabLocationIndices.TryGetValue(index, out var locations))
@@ -2758,6 +2786,51 @@ public class DataEditTagPage : DataEditPage
 
         END_INDENT();
         END_INDENT();
+    }
+
+    private void RenderHistoryData(Scriptable script, GDEHistoryData historyData)
+    {
+        if (historyData == null) { return; }
+
+        historyData.GroupID = TEXT_INPUT(historyData.GroupID, "Group ID");
+        historyData.MaxOccurrences = INT_INPUT(historyData.MaxOccurrences, "Max Occurrences");
+        historyData.ChanceToOccur = RANDOM_CHANCE_INPUT(historyData.ChanceToOccur, "Chance To Occur");
+        historyData.RequirementTagObjIDs = RENDER_VALUE_ARRAY(historyData.RequirementTagObjIDs, "Requirement Tag Objects", (string tagObjID) =>
+        {
+            return DATA_ID_INPUT<Scriptable>(tagObjID, "Tag Object ID", out var tagObjData);
+        });
+
+        historyData.Displays = RENDER_VALUE_ARRAY<GDEHistoryData.HistoryDisplay>(historyData.Displays, "History Displays", (GDEHistoryData.HistoryDisplay display) =>
+        {
+            display.goToID = TEXT_INPUT(display.goToID, "Go To ID");
+            display.displayText = TEXT_INPUT(display.displayText, "Display Text");
+            display.objectID = DATA_ID_INPUT<Scriptable>(display.objectID, "Tag Object ID", out var tagObjData);
+            display.useInstance = TOGGLE(display.useInstance, "Use Instance");
+            display.onFailGoTo = TEXT_INPUT(display.onFailGoTo, "On Fail Go To ID");
+            display.onSuccessGoTo = TEXT_INPUT(display.onSuccessGoTo, "On Success Go To ID");
+            display.chance = RANDOM_CHANCE_INPUT(display.chance, "Chance To Display");
+            display.useObjFromPrevHistory = TOGGLE(display.useObjFromPrevHistory, "Use Object From Previous History");
+            display.prevHistoryID = DATA_ID_INPUT<GDEHistoryData>(display.prevHistoryID, "Previous History ID", out var _);
+            return display;
+        });
+
+        historyData.Buffs = RenderBuffs(script, historyData.Buffs);
+        historyData.StatusesToAdd = RenderEntityStatuses(script, historyData.StatusesToAdd);
+        historyData.StatusesToRemove = RenderEntityStatuses(script, historyData.StatusesToRemove);
+        historyData.DisabledFeatures = RENDER_VALUE_ARRAY(historyData.DisabledFeatures, "Disabled Features", (string featureID) =>
+        {
+            return DATA_ID_INPUT<Scriptable>(featureID, "Feature ID", out var featureData);
+        });
+    }
+
+    private void RenderDungeonDataData(Scriptable script, GDEDungeonData dungeonData)
+    {
+        if (dungeonData == null) { return; }
+
+        dungeonData.RoomSpawnChances = RANDOM_CHANCE_INPUT(dungeonData.RoomSpawnChances, "Room Spawn Chances");
+        dungeonData.RoomTagID = DATA_ID_INPUT<GDETagsData>(dungeonData.RoomTagID, "Room Tag ID", out var tagData);
+        dungeonData.WallTagID = DATA_ID_INPUT<GDETagsData>(dungeonData.WallTagID, "Wall Tag ID", out var wallTagData);
+        dungeonData.CorridorTagID = DATA_ID_INPUT<GDETagsData>(dungeonData.CorridorTagID, "Corridor Tag ID", out var corridorTagData);
     }
 
     private void RenderPrefabLocationLayerBtn(string tagObjID, int count, System.Action<string> onClick)
@@ -3571,19 +3644,6 @@ public class DataEditTagPage : DataEditPage
         MARK_DIRTY(raceData);
 
         raceData.DefaultEntityID = DATA_ID_INPUT<GDEEntitiesData>(raceData.DefaultEntityID, "Default Entity", out var entityData);
-        raceData.Statuses = RENDER_VALUE_ARRAY<string>(raceData.Statuses, "Statuses", (string statusID) =>
-        {
-            statusID = DATA_ID_INPUT<GDEEntityStatusData>(statusID, "Status ID", out var statusData);
-            if (statusData != null)
-            {
-                RenderEntityStatusData(script, statusData);
-            }
-            return statusID;
-        });
-        raceData.Buffs = RENDER_VALUE_ARRAY<BuffData>(raceData.Buffs, "Buffs", (BuffData buff) =>
-        {
-            return RenderBuffData(script, buff);
-        });
     }
 
     private GDEEntitiesData.DietSettings RenderEntityDiet(Scriptable script, GDEEntitiesData.DietSettings diet)
@@ -3609,9 +3669,11 @@ public class DataEditTagPage : DataEditPage
         blueprintData.SpawnTagObjectID = DATA_ID_INPUT<Scriptable>(blueprintData.SpawnTagObjectID, "Spawn Tag Object ID", out var spawnTagObjData);
         END_INDENT();
 
-        blueprintData.ProgressMax = INT_INPUT(blueprintData.ProgressMax, "Progress Max", ColorUtility.blueprintBlue);
         blueprintData.AddBlockSkillToJobSkill = TOGGLE(blueprintData.AddBlockSkillToJobSkill, "Add Block Skill To Job Skill", ColorUtility.blueprintBlue);
-        blueprintData.ResearchKey = DATA_ID_INPUT<GDEResearchData>(blueprintData.ResearchKey, "Research ID", out var researchData);
+        blueprintData.ResearchKeys = RENDER_VALUE_ARRAY(blueprintData.ResearchKeys, "Research ID", (string researchKey) =>
+        {
+            return DATA_ID_INPUT<GDEResearchData>(researchKey, "Research ID", out var researchData);
+        });
         blueprintData.CategoryID = DATA_ID_INPUT<GDEBlueprintCategoryData>(blueprintData.CategoryID, "Category ID", out var categoryData);
 
         LABEL("Audio", ColorUtility.purple);
@@ -3652,11 +3714,6 @@ public class DataEditTagPage : DataEditPage
         BEGIN_INDENT();
         blueprintData.LocationID = DATA_ID_INPUT<Scriptable>(blueprintData.LocationID, "Location ID", out var locationData);
         blueprintData.PermissionType = (BlockPermissionTypes)DROP_DOWN(blueprintData.PermissionType, "Location Permissions");
-        END_INDENT();
-
-        LABEL("Resource Restrictions:", ColorUtility.blueprintBlue);
-        BEGIN_INDENT();
-        blueprintData.ShowItemTypeResourcePermissions = TOGGLE(blueprintData.ShowItemTypeResourcePermissions, "Show Item Type Resource Restrictions");
         END_INDENT();
 
         LABEL("Trigger:", ColorUtility.green);
@@ -3814,17 +3871,21 @@ public class DataEditTagPage : DataEditPage
         {
             BEGIN_INDENT();
 
-            for (int i = 0; i < roomData.OccupantGroups.Count; i++)
+            for (int i = 0; i < roomData.OccupantGroupSettings.Count; i++)
             {
                 BEGIN_HOR();
-                if (TRY_LIST_REMOVE_BTN<string>(roomData.OccupantGroups, i, out var newList))
+                if (TRY_LIST_REMOVE_BTN<GDERoomTemplatesData.OccupantGroupSetting>(roomData.OccupantGroupSettings, i, out var newList))
                 {
-                    roomData.OccupantGroups = newList;
+                    roomData.OccupantGroupSettings = newList;
                     END_HOR();
                     continue;
                 }
 
-                roomData.OccupantGroups[i] = DATA_ID_INPUT<GDEOccupantGroupData>(roomData.OccupantGroups[i], "Occupant Group ID", out var occupantGroupData);
+                string groupID = roomData.OccupantGroupSettings[i].ID;
+                bool enabled = roomData.OccupantGroupSettings[i].Enabled;
+                groupID = DATA_ID_INPUT<GDEOccupantGroupData>(groupID, "Occupant Group ID", out var occupantGroupData);
+                enabled = TOGGLE(enabled, "Is Enabled By Default");
+                roomData.OccupantGroupSettings[i] = new() { ID = groupID, Enabled = enabled };
 
                 END_HOR();
 
@@ -3833,7 +3894,7 @@ public class DataEditTagPage : DataEditPage
                 END_INDENT();
             }
 
-            roomData.OccupantGroups = LIST_ADD_VALUE_BTN<string>(roomData.OccupantGroups, "+Occupant Group");
+            roomData.OccupantGroupSettings = LIST_ADD_VALUE_BTN<GDERoomTemplatesData.OccupantGroupSetting>(roomData.OccupantGroupSettings, "+Occupant Group");
 
             END_INDENT();
         }

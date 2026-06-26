@@ -16,16 +16,23 @@ MonoBehaviour:
   TooltipID: tooltip_overworld_nation_human
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  NewGameOrder: 0
   ShowOnMap: 1
   PlayerCanChoose: 1
   Unlocked: 1
   Banner: sp_human_banner
-  BannerColor: {r: 0.21568629, g: 0.41176474, b: 0.3647059, a: 1}
+  BannerColor: {r: 0.091224626, g: 0.31936136, b: 0.4716981, a: 1}
+  CaravanIcon: sp_caravan_human_icon
   KingdomIcon: <sprite=1700>
   SettlementIcon: <sprite=1693>
+  KingdomSpriteID: sp_human_kingdom_icon
+  SettlementSpriteID: sp_human_settlement_icon
+  NationTypeDisplay: Kingdom
   OverworldVisuals: overworld_visuals_human
   BorderVisuals: overworld_visuals_nation_border
+  RaidSpawnGroupID: spawns_raid_default
   Loadouts:
   - starting_loadout_human_settlers
   - starting_loadout_human_rangers
@@ -40,6 +47,17 @@ MonoBehaviour:
   - race_chicken
   - race_cow
   - race_sheep
+  RaidEventEntityIDs:
+  - entity_human
+  VictoryRaidDialogueIDs:
+  - dialogue_raid_default_victory0
+  - dialogue_raid_default_victory1
+  - dialogue_raid_default_victory2
+  - dialogue_raid_default_victory3
+  - dialogue_raid_default_victory4
+  - dialogue_raid_default_victory5
+  DefeatRaidDialogueIDs:
+  - dialogue_raid_default_defeat0
   GenerateSettlementNameKey: location_names_human_settlements
   GenerateKingdomNameKey: location_names_human_kingdoms
   GameOverScenarios:
@@ -55,7 +73,7 @@ MonoBehaviour:
   ChanceToExpandTerritory: 50
   ColonistPartyID: party_colonist
   NewPartyID: party_empty
-  KingdomSizeMax: 100
+  KingdomSizeMax: 300
   SettlementSimPopMax: 50
   SettlementSimPopMin: 5
   Landmarks:
@@ -72,3 +90,48 @@ MonoBehaviour:
   Leaders:
   - leader_human_king
   - leader_human_queen
+  RevealDepthOnSettlementStart: -1
+  Actions:
+  - ActionID: start_settlement
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_wood_log
+      Amount: 100
+    - ItemID: item_stone_chunk
+      Amount: 100
+  - ActionID: claim_territory
+    KingdomPointCost: 1
+    ItemRequirements: []
+  - ActionID: build_road
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_stone_chunk
+      Amount: 50
+  LeaderSpawnData:
+    EntityID: entity_human
+    ProfessionID: profession_king
+    FactionID: faction_nation
+    GenderID: 
+    TuningID: 
+    AppearanceID: 
+    AgeType: 8
+    StartingAgeMins: 0
+    Tag: 
+    Count: 0
+    Chance:
+      Chance: 0
+      SampleSize: 0
+    SpawnScenario: 
+    AutoGenEquipment: 0
+    AutoGenInventory: 0
+    DisableItemEquipFromTuning: 0
+    EquippedItems: []
+    InventoryItems: []
+    AddedStatuses: []
+  Perks:
+  - Title: <sprite=1666> Regular Metabolism
+    Description: Require food and drink to survive.
+  - Title: <sprite=54> Resourceful
+    Description: Receive a boost to resource gathering skills.
+  - Title: <sprite=100> Family Home
+    Description: Reproduce when they have both a partner and a home.

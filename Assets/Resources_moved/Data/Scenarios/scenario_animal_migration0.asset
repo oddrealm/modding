@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsThreat: 0
   NotifOnActivate: notif_animal_migration
@@ -23,6 +24,7 @@ MonoBehaviour:
   - SpawnPointType: 2
     OverrideEntityWithNation: 0
     OverrideEntityWithFauna: 1
+    OverrideEntityWithBiomeHostiles: 0
     AutoGenEntityCount: 0
     SpawnData:
       EntityID: 
@@ -49,6 +51,7 @@ MonoBehaviour:
   Conditions: []
   PartyID: 
   IsScheduled: 1
+  Biomes: []
   ActivationChance:
     Chance: 4
     SampleSize: 5
@@ -56,6 +59,6 @@ MonoBehaviour:
   MinKingdomLevel: 1
   MinMinutesSinceSettlementStart: 720
   MinMinutesSinceLastScenario: 60
-  MinMinutesSinceLastSameScenario: 2880
+  MinMinutesSinceLastSameScenario: 1440
   MinTimeOfDay: 0
   MaxTimeOfDay: 1440

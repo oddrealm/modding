@@ -21,6 +21,7 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_common
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 2
   UsageTags:
@@ -49,7 +50,6 @@ MonoBehaviour:
   - item_slot_utility
   Attacks: []
   MerchantBuyValue: 5
-  MerchantSellValue: 1
   TuneRating: 3
   ItemRarity: item_rarity_common
   DecayRate: 2880
@@ -60,6 +60,7 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_hunger
+      SourceID: 
       Amount: 15
       Max: 0
       Permanent: 1
@@ -68,11 +69,11 @@ MonoBehaviour:
   - ActionID: tag_can_roast
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: item_bronze_cap_mushroom_roasted
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

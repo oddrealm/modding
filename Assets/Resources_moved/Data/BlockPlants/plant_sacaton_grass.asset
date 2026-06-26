@@ -22,7 +22,9 @@ MonoBehaviour:
   - tag_can_be_watered
   - tag_plants
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 25
   MaxLifeTime: -1
   ReproduceTimeInterval: 1440
   MaxNaturalSpawnCount: 1024
@@ -83,6 +85,7 @@ MonoBehaviour:
     ActionID: tag_can_be_watered
     Buff:
       TargetID: attribute_thirst
+      SourceID: 
       Amount: 999
       Max: 0
       Permanent: 1

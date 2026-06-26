@@ -12,16 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cb679d16102814ebd643fd5fb2d2a3, type: 3}
   m_Name: attribute_energy
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_attribute_energy
   DEBUG: 0
+  TooltipID: tooltip_attribute_energy
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsMainAttribute: 1
   ShowInAttributeDisplay: 1
   StartMin: 0
   StartDefault: 1
   StartMax: 100
+  GlobalBuffsAffectMax: 1
+  GlobalBuffMultiplier: 5
+  CanBeKingdomLevelBuff: 1
   StartMaxIsStartBase: 0
   ShowPositiveAndNegativeSign: 0
   DisplayType: 3
@@ -31,3 +35,4 @@ MonoBehaviour:
   OnAddIndicator: indicator_energy_added
   OnRemoveIndicator: 
   ShowActionText: 0
+  IncreaseWithMaxIfEqual: 0

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Sight Range
   Name: Sight Range
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=954>
   Description: How far in pixels the entity can see threats. Each tile is 8px by
     8px. A sight of 128px sees up to 16 tiles away.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.9215687, g: 0.94117653, b: 0.95294124, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2683
+  Order: 2776

@@ -23,35 +23,11 @@ MonoBehaviour:
   MaxIterations: 1
   MinIterations: 1
   Spawns:
-  - Comment: Dirt
+  - TagObjectID: block_dirt
+    TagID: 
+    Comment: Dirt
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
-    Weight: 0.99
-    TagObjectID: block_dirt
-    TagID: 
-  - Comment: Copper Ore
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.004
-    TagObjectID: block_lode_copper_ore
-    TagID: 
-  - Comment: Coal Ore
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.003
-    TagObjectID: block_lode_coal_ore
-    TagID: 
-  - Comment: Tin Ore
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.003
-    TagObjectID: block_lode_tin_ore
-    TagID: 
+    Weight: 1

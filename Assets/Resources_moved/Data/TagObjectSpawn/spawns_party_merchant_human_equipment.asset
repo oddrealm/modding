@@ -22,11 +22,11 @@ MonoBehaviour:
   MaxIterations: 1
   MinIterations: 1
   Spawns:
-  - Comment: Backpack
+  - TagObjectID: item_linen_backpack
+    TagID: 
+    Comment: Backpack
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 0
-    TagObjectID: item_linen_backpack
-    TagID: 

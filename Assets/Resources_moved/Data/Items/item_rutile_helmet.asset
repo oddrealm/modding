@@ -48,7 +48,6 @@ MonoBehaviour:
   - item_slot_head
   Attacks: []
   MerchantBuyValue: 1015
-  MerchantSellValue: 203
   TuneRating: 7
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -59,6 +58,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_cold_tolerance
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
@@ -67,11 +67,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_toughness
+      SourceID: 
       Amount: 9
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

@@ -25,7 +25,7 @@ MonoBehaviour:
   Description: Doing things yourself has honed your skills.
   DiscoveryHint: 
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8392157, g: 0.7490196, b: 0.654902, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1682
+  Order: 1697

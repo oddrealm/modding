@@ -21,6 +21,7 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 2
   UsageTags:
@@ -47,7 +48,6 @@ MonoBehaviour:
   PermittedSlots: []
   Attacks: []
   MerchantBuyValue: 75
-  MerchantSellValue: 15
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -58,11 +58,11 @@ MonoBehaviour:
   - ActionID: tag_can_smelt
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: item_copper_ingot
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

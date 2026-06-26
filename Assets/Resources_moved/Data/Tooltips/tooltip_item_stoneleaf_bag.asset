@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_stoneleaf_bag
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
   Action: 
   Name: Stoneleaf Bag
   NamePlural: 
   InlineIcon: <sprite=1144>
   Description: 
+  DiscoveryHint: 
   Icon: sp_stoneleaf_bag_icon
-  TextColor: {r: 0.4901961, g: 0.29803923, b: 0.29803923, a: 1}
+  TextColor: {r: 0.5943396, g: 0.27754536, b: 0.27754536, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2889
+  Order: 3026

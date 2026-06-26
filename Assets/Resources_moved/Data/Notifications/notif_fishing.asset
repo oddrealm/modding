@@ -24,6 +24,7 @@ MonoBehaviour:
   SFXGroupID: sfx_notif_default
   DefaultPermissions:
     ShowPreview: 0
+    ShowInLog: 1
     CanStackPreviews: 1
     Factions:
     - faction_player
@@ -32,3 +33,4 @@ MonoBehaviour:
     PauseGameOnCreate: 0
     HighlightOnCreate: 0
     HighlightText: <sprite=1654>
+    IsOverride: 0

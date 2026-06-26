@@ -22,14 +22,18 @@ MonoBehaviour:
   CategoryID: room_category_agriculture
   ResearchKey: research_agriculture_forestry0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_arboretum
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_arboretum
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_arboretum
   DefaultAutoJobs:
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 2
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -38,7 +42,7 @@ MonoBehaviour:
     ProhibitedLocations:
     - block_none
     PermittedLocations: []
-  - BlueprintID: blueprint_log
+  - BlueprintID: blueprint_log_in_room
     Settings:
       Priority: 1
       AutoJobType: 0
@@ -56,70 +60,75 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_plant_tree_apple_sapling
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   - BlueprintID: blueprint_plant_tree_berara_sapling
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   - BlueprintID: blueprint_plant_tree_caelum_oscula_sapling
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   - BlueprintID: blueprint_plant_tree_iro_sapling
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   - BlueprintID: blueprint_plant_tree_nila_sapling
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   - BlueprintID: blueprint_plant_tree_oak_sapling
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   - BlueprintID: blueprint_plant_tree_pala_sapling
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   - BlueprintID: blueprint_plant_tree_palm_sapling
     Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_till_forestry_in_room
+    Settings:
       Priority: 1
-      AutoJobType: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 0

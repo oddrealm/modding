@@ -39,7 +39,7 @@ MonoBehaviour:
     AddedStatuses: []
   - EntityId: entity_gwdir
     EntityTag: 
-    EntityProfession: profession_forester
+    EntityProfession: profession_gwnvayth
     EntityGender: female
     EntityCount: 1
     EntityFaction: faction_player

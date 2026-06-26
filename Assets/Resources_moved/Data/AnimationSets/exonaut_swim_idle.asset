@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
+  m_Name: exonaut_swim_idle
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  State: {fileID: 11400000, guid: 52f7e62038e9f5c4bbeb2c62a88a25fb, type: 2}
+  UpAnimation: {fileID: 11400000, guid: b05c30e09fc5a7268b00f246bd10bee8, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 8bbe69c0527f4eeb8a882f278b173d6b, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 6f16bbb17921d65468005d0d4478ce1f, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: 44bddd7185efca22fa9e63ae61bdc53f, type: 2}

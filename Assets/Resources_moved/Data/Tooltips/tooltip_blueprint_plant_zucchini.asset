@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=181>
   Description: A versatile, green squash, perfect for both savory and sweet dishes.
   DiscoveryHint: 
-  Icon: sp_zucchini_icon
+  Icon: sp_plant_zucchini_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2392
+  Order: 2417

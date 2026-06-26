@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_room_hortichron
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Hortichron
   Name: Hortichron
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1204>
   Description: The Hortichron is where <sprite=1204> Chronoblasts are grown from
     <sprite=1201> Astrasomes into adult Ardyn.
+  DiscoveryHint: 
   Icon: sp_room_hortichron_icon
   TextColor: {r: 0.7254902, g: 0.38039216, b: 0.45882353, a: 1}
   Type: Room
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1692
+  Order: 1718

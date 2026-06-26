@@ -23,27 +23,11 @@ MonoBehaviour:
   MaxIterations: 1
   MinIterations: 1
   Spawns:
-  - Comment: Kalite
+  - TagObjectID: block_kalite
+    TagID: 
+    Comment: Kalite
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
-    Weight: 0.99
-    TagObjectID: block_kalite
-    TagID: 
-  - Comment: Iron Ore
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.009
-    TagObjectID: block_lode_iron_ore
-    TagID: 
-  - Comment: Coal Ore
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.001
-    TagObjectID: block_lode_coal_ore
-    TagID: 
+    Weight: 1

@@ -21,16 +21,18 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
   Trigger: 1
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: 240
   MinScaledPlayedTime: -1
   MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks: []
   ActiveRaces:
   - race_gwdir
   PermittedWindows: []
   SelectionType: 1
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -46,7 +48,7 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
+  Icon: 
   BackgroundMaskTarget: 
   Message: []
   NextSegment: 

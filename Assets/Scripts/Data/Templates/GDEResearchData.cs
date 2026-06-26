@@ -26,6 +26,8 @@ public class GDEResearchData : Scriptable
     public string RequiredDiscovery = "";
 
     public int ResearchCost { get { return 1; } }
+    public GDERoomTemplatesData FirstRoomUnlock { get { return RoomUnlocks.Count > 0 ? RoomUnlocks[0] : null; } }
+    public List<GDERoomTemplatesData> RoomUnlocks { get; private set; } = new();
 
 #if ODD_REALM_APP
     public override void OnLoaded()
@@ -49,12 +51,17 @@ public class GDEResearchData : Scriptable
         {
             GDEBlueprintsData blueprint = blueprints[i] as GDEBlueprintsData;
 
-            if (blueprint.ResearchKey != Key) { continue; }
+            for (int j = 0; j < blueprint.ResearchKeys.Length; j++)
+            {
+                if (blueprint.ResearchKeys[j] != Key) { continue; }
 
-            AddTagObjUnlock(blueprints[i]);
+                AddTagObjUnlock(blueprints[i]);
+                break;
+            }
         }
 
         List<ITagObject> rooms = DataManager.GetTagObjects<GDERoomTemplatesData>();
+        RoomUnlocks.Clear();
 
         for (int i = 0; i < rooms.Count; i++)
         {
@@ -63,6 +70,18 @@ public class GDEResearchData : Scriptable
             if (room.ResearchKey != Key) { continue; }
 
             AddTagObjUnlock(rooms[i]);
+            RoomUnlocks.Add(room);
+        }
+
+        List<ITagObject> professions = DataManager.GetTagObjects<GDEProfessionData>();
+
+        for (int i = 0; i < professions.Count; i++)
+        {
+            GDEProfessionData profession = professions[i] as GDEProfessionData;
+
+            if (profession.ResearchKey != Key) { continue; }
+
+            AddTagObjUnlock(professions[i]);
         }
 
         base.OnLoaded();

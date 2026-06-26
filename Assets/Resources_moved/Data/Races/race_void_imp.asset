@@ -28,6 +28,5 @@ MonoBehaviour:
   Perks: []
   DefaultActiveResearch: []
   StartingItems: []
-  Statuses: []
-  Buffs: []
   AutoCreateUniform: 1
+  TrackByDefault: 0

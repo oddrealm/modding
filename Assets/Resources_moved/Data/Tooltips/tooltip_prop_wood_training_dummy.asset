@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Wood Training Dummy
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=508>
   Description: You won't look cool using it, but you might just learn something.
     Like how to beat a foe that stands perfectly still.
+  DiscoveryHint: 
   Icon: sp_wood_training_dummy_icon
   TextColor: {r: 0.7411765, g: 0.5764706, b: 0.48235294, a: 1}
   Type: Station
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3522
+  Order: 3602

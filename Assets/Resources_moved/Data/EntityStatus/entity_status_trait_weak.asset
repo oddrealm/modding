@@ -17,11 +17,12 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -38,7 +39,30 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
-  Actions: []
+  MaskIsThreat: 0
+  Actions:
+  - Comment: 
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 0
+    DeactivationAction: 0
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_strength
+      SourceID: 
+      Amount: -1
+      Max: 0
+      Permanent: 0
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

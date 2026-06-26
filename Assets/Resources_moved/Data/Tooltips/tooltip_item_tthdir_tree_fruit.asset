@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_tthdir_tree_fruit
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
   Action: 
   Name: Merescis
   NamePlural: 
   InlineIcon: <sprite=1436>
-  Description: 
-  Icon: sp_tthdir_tree_icon
+  Description: A vibrant fruit that grows on T'Thdir trees. Its flavor is a mix of
+    strawberry and banana.
+  DiscoveryHint: 
+  Icon: sp_plant_tthdir_sapling_icon
   TextColor: {r: 0.50980395, g: 0.23137257, b: 0.3921569, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1989
+  Order: 2052

@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_can_equip
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -45,7 +47,6 @@ MonoBehaviour:
   PermittedSlots: []
   Attacks: []
   MerchantBuyValue: 25
-  MerchantSellValue: 5
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -54,5 +55,4 @@ MonoBehaviour:
   StackSize: 5
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

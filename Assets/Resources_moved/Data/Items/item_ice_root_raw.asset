@@ -48,9 +48,8 @@ MonoBehaviour:
   - item_slot_utility
   Attacks: []
   MerchantBuyValue: 5
-  MerchantSellValue: 1
   TuneRating: 0
-  ItemRarity: item_rarity_common
+  ItemRarity: item_rarity_uncommon
   DecayRate: 5760
   DecayItem: item_waste_rotten_food
   FlammableChance: 100
@@ -59,6 +58,7 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_hunger
+      SourceID: 
       Amount: 17
       Max: 0
       Permanent: 1
@@ -67,6 +67,7 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_temperature
+      SourceID: 
       Amount: 10
       Max: 0
       Permanent: 1
@@ -75,11 +76,11 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: entity_status_warmed
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

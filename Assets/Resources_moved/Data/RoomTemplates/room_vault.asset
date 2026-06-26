@@ -17,12 +17,17 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_storage
   ResearchKey: research_industry_vault0
   MaxRoomAmount: 1
-  OccupantGroups:
-  - occupant_group_vault
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_vault
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_vault
   DefaultAutoJobs:
@@ -38,7 +43,4 @@ MonoBehaviour:
     - block_none
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 0
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

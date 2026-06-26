@@ -12,19 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_energy
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Energy
   Name: Energy
   NamePlural: 
   InlineIcon: <sprite=83>
-  Description: Entities move slower when they are low on Energy. Sleeping restores
-    Energy.
+  Description: Energy is consumed when entities do jobs and fight. Entities move
+    slower when they are low on Energy. Sleeping restores Energy.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.8392157, g: 0.6666667, b: 0.42745098, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1383
+  Order: 1401

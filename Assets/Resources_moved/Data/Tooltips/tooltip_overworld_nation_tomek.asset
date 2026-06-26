@@ -19,16 +19,14 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Tomek
-  Name: Tomek
+  Name: Tomek Stonehold
   NamePlural: Tomek
   InlineIcon: <sprite=243>
-  Description: Covered in stone scales, the Tomek possess incredible toughness and
-    have few natural predators. Unless threatened, they will rarely venture outside
-    their subterranean homes. To this day, the location of their capital city, Fengold
-    Keep, is still unknown.
+  Description: Tomek clans fiercly claim Stoneholds in mountains or regions rich
+    in gemstones.
   DiscoveryHint: 
   Icon: sp_race_tomek
-  TextColor: {r: 0.7176471, g: 0.569045, b: 0.32941177, a: 1}
+  TextColor: {r: 0.8018868, g: 0.51726085, b: 0.12482201, a: 1}
   Type: Race
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3166
+  Order: 3289

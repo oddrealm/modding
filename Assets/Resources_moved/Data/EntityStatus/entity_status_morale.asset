@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
+  m_Name: entity_status_morale
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_entity_status_morale
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  VisibleToPlayer: 0
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIndicator: 0
+  Notification: 
+  SourceTooltipID: 
+  ExpireTimeMinutesMin: 0
+  ExpireTimeMinutesMax: 0
+  StatusesToRemove: []
+  StatusesToAddOnExpire: []
+  PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_captured
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  TooltipBackgroundColor: {r: 0.105882354, g: 0.47219813, b: 0.6666667, a: 1}
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  MaskIsThreat: 0
+  Actions:
+  - Comment: 
+    ConditionTarget: attribute_happiness
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 3251425357455950009
+    TimeThresholdMinutes: 0
+    RandomChance: 100000
+    ActivationAction: 2
+    DeactivationAction: 5
+    ActionID: 
+    Buffs: []
+    Statuses:
+    - entity_status_happy
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: 
+    ConditionTarget: attribute_happiness
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 3251425357455950010
+    TimeThresholdMinutes: 0
+    RandomChance: 100000
+    ActivationAction: 2
+    DeactivationAction: 5
+    ActionID: 
+    Buffs: []
+    Statuses:
+    - entity_status_unhappy
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: 
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 1
+    RandomChance: 10000
+    ActivationAction: 1
+    DeactivationAction: 0
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_happiness
+      SourceID: attribute_morale
+      Amount: 0
+      Max: 0
+      Permanent: 1
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3251425357455950009
+      type: {class: GreaterThanEqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0.75
+        Normalized: 1
+    - rid: 3251425357455950010
+      type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0.25
+        Normalized: 1

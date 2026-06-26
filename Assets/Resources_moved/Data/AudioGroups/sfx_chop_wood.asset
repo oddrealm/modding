@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  PitchOverride: 1
   SFX:
   - audio_sfx_chop_wood_00
   - audio_sfx_chop_wood_01
@@ -28,3 +30,5 @@ MonoBehaviour:
   - audio_sfx_chop_wood_06
   - audio_sfx_chop_wood_07
   - audio_sfx_chop_wood_08
+  - audio_sfx_chop_wood_13
+  - audio_sfx_chop_wood_09

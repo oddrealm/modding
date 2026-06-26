@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
   m_Name: location_names_ancient_kingdoms
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Determiner: []
   Prepends:
+  - Ax
+  - Axan
+  - Char
   - Chell
   - Del
   - Et
@@ -27,8 +30,22 @@ MonoBehaviour:
   - Itan
   - Lan
   - Moon
+  - Mog
+  - Mor
+  - Nix
+  - Ox
+  - Par
+  - Qi
+  - Qan
+  - Rin
+  - Sig
+  - Sin
+  - Ta
+  - Un
+  - Vi
+  - Vi
   SpaceAfterPrepend: 0
   Names:
-  - '''ogo'
+  - '''dras'
   SpaceBeforeAppend: 0
   Appends: []

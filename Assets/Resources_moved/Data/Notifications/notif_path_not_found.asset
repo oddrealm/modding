@@ -18,6 +18,7 @@ MonoBehaviour:
   - tag_notif_group_event
   - tag_notif_group_entity
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   NotifGroup: tag_notif_group_entity
   SFXGroupID: 

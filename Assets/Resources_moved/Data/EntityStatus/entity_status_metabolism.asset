@@ -22,6 +22,7 @@ MonoBehaviour:
   TrackByDefault: 0
   ShowIndicator: 0
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -36,6 +37,7 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: Lower Hunger Over Time
     ConditionTarget: 
@@ -46,8 +48,10 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 0
+    ActionID: 
     Buffs:
     - TargetID: attribute_hunger
+      SourceID: 
       Amount: -1
       Max: 0
       Permanent: 1
@@ -55,6 +59,8 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   - Comment: Lower Energy Over Time
     ConditionTarget: 
     HideInTooltips: 0
@@ -64,8 +70,10 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 0
+    ActionID: 
     Buffs:
     - TargetID: attribute_energy
+      SourceID: 
       Amount: -1
       Max: 0
       Permanent: 1
@@ -73,6 +81,8 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   - Comment: Lower Thirst Over Time
     ConditionTarget: 
     HideInTooltips: 0
@@ -82,8 +92,10 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 0
+    ActionID: 
     Buffs:
     - TargetID: attribute_thirst
+      SourceID: 
       Amount: -1
       Max: 0
       Permanent: 1
@@ -91,112 +103,129 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   - Comment: Add hungry status if hunger is low.
     ConditionTarget: attribute_hunger
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 8804896918184394834
+    - rid: 2499668344035082255
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
     DeactivationAction: 0
+    ActionID: 
     Buffs: []
     Statuses:
     - entity_status_hungry
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   - Comment: Add thirsty status if thirst is low
     ConditionTarget: attribute_thirst
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 8804896918184394835
+    - rid: 2499668344035082256
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
     DeactivationAction: 0
+    ActionID: 
     Buffs: []
     Statuses:
     - entity_status_thirsty
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   - Comment: Add tired status if energy is low.
     ConditionTarget: attribute_energy
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 8804896918184394836
+    - rid: 2499668344035082257
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
     DeactivationAction: 0
+    ActionID: 
     Buffs: []
     Statuses:
     - entity_status_tired
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   - Comment: Add starving status if hunger is zero.
     ConditionTarget: attribute_hunger
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 8804896918184394837
+    - rid: 2499668344035082258
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
     DeactivationAction: 5
+    ActionID: 
     Buffs: []
     Statuses:
     - entity_status_starving
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   - Comment: Add dehydrated status if thirst is zero
     ConditionTarget: attribute_thirst
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 8804896918184394838
+    - rid: 2499668344035082259
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 2
     DeactivationAction: 5
+    ActionID: 
     Buffs: []
     Statuses:
     - entity_status_dehydrated
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:
     version: 2
     RefIds:
-    - rid: 8804896918184394834
+    - rid: 2499668344035082255
       type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0.25
         Normalized: 1
-    - rid: 8804896918184394835
+    - rid: 2499668344035082256
       type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0.25
         Normalized: 1
-    - rid: 8804896918184394836
+    - rid: 2499668344035082257
       type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0.1
         Normalized: 1
-    - rid: 8804896918184394837
+    - rid: 2499668344035082258
       type: {class: EqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0
         Normalized: 0
-    - rid: 8804896918184394838
+    - rid: 2499668344035082259
       type: {class: EqualCondition, ns: , asm: Assembly-CSharp}
       data:
         Amount: 0

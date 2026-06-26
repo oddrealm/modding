@@ -22,10 +22,11 @@ MonoBehaviour:
   Name: Tamtallen
   NamePlural: Tamtallen
   InlineIcon: <sprite=533>
-  Description: 
+  Description: A completely blind creature that is often found in the caves under
+    the voidlands.
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_tamtallen
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3123
+  Order: 3150

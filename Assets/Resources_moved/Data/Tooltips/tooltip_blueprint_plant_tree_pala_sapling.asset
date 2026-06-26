@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Plant Pala Tree (Sapling)
+  Name: Plant Pala Sapling
   NamePlural: 
   InlineIcon: <sprite=821>
   Description: 
-  Icon: sp_sapling_pala_icon
+  DiscoveryHint: 
+  Icon: sp_plant_pala_sapling_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2338
+  Order: 2387

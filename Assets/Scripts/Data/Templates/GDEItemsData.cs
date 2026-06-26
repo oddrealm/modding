@@ -67,9 +67,10 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public HashSet<string> PermittedSlotsHash = new();
     public string[] Attacks = System.Array.Empty<string>();
     public int MerchantBuyValue = 0;
-    public int MerchantSellValue = 0;
-    [Header("Tuning set to < 0 will not be used for item generation. Use -1 for items meant to be unique/super rare.")]
+    public int MerchantSellValue { get { return Mathf.Max(1, MerchantBuyValue / 2); } }
+    [Header("Tuning set to < 0 will not be used for item generation. Use -1 for items meant to be unique/super rare. 0-9")]
     public int TuneRating = 0;
+    [Header("Legendary items have a max global count of 1")]
     public string ItemRarity = "item_rarity_common";
     public int DecayRate = 0;
     public string DecayItem = "";
@@ -77,7 +78,6 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public int StackSize = 1;
     public ItemAction[] Actions = new ItemAction[0];
     public SimOptions[] StateOptions;
-    public bool IsAvailableInCustomLoadout = false;
 
     public bool HasRangedAttack { get; private set; }
     public bool HasAttacks { get { return Attacks != null && Attacks.Length > 0; } }
@@ -88,6 +88,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public List<string> ActionIDs { get; private set; } = new List<string>();
     public Dictionary<string, ItemAction[]> ActionsByID { get; private set; } = new Dictionary<string, ItemAction[]>();
     public Dictionary<string, BuffData[]> BuffsByID { get; private set; } = new Dictionary<string, BuffData[]>();
+    public HashSet<string> BuffTargetIDs { get; private set; } = new HashSet<string>();
     public Dictionary<string, string[]> StatusesByID { get; private set; } = new Dictionary<string, string[]>();
     public Dictionary<string, ITagObject[]> SpawnsByID { get; private set; } = new Dictionary<string, ITagObject[]>();
     public GDETagsData ItemTypeData { get; private set; }
@@ -127,6 +128,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         "tag_can_use",
         "tag_can_drink",
         "tag_can_eat",
+        "tag_can_eat_tomek"
     };
     public List<string> UtilityActions { get; private set; } = new List<string>();
     public HashSet<string> UtilityActionsHash { get; private set; } = new HashSet<string>();
@@ -134,7 +136,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public GDECharacterAccessoryData AccessoryData { get; private set; }
 
     private GDESimulationData _simData;
-    private string[] _simStates = new string[]
+    private readonly string[] _simStates = new string[]
     {
         ITEM_STATE_EXPIRED,
         ITEM_STATE_CAN_FALL
@@ -183,11 +185,10 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     {
         tracking = new DefaultTracking()
         {
-            TagID = ItemType,
+            TagID = "tag_item",
             TagObjectID = Key,
             HideIfZero = true,
             StartDisabled = !ShowInTrackingByDefault,
-            TrackingType = TrackingTypes.ITEM
         };
 
         return true;
@@ -225,6 +226,12 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
     public override void OnLoaded()
     {
         base.OnLoaded();
+
+        // if (TuneRating == -1)
+        // {
+        //     Debug.LogError($"{Key}");
+        // }
+
         EnsureTag("tag_item");
 
         if (!string.IsNullOrEmpty(AccessoryID))
@@ -263,7 +270,7 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
             MaxGlobalCount = -1;
         }
 
-#if DEV_TESTING
+#if DEV_TESTING && UNITY_EDITOR
         if (string.IsNullOrEmpty(Visuals))
         {
             Debug.LogError($"Visuals Key is empty for {Key}!");
@@ -277,6 +284,8 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
         }
 #endif
 
+        UsageTagsData = System.Array.Empty<GDETagsData>();
+
         if (UsageTags.Length > 0)
         {
             UsageTagsData = new GDETagsData[UsageTags.Length];
@@ -289,12 +298,18 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
                 }
 
                 UsageTagsData[i] = DataManager.GetTagObject<GDETagsData>(UsageTags[i]);
+
+                if (!TagIDsHash.Contains(UsageTags[i]))
+                {
+                    Debug.LogError($"{Key} has usage tag {UsageTags[i]} that is not in tag IDs!");
+                }
             }
         }
 
         ActionIDs.Clear();
         ActionsByID.Clear();
         BuffsByID.Clear();
+        BuffTargetIDs.Clear();
         StatusesByID.Clear();
         SpawnsByID.Clear();
         UtilityActions.Clear();
@@ -375,6 +390,11 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 
             if (!Actions[i].Buff.IsNULL)
             {
+                if (!string.IsNullOrEmpty(Actions[i].Buff.TargetID))
+                {
+                    BuffTargetIDs.Add(Actions[i].Buff.TargetID);
+                }
+
                 hasOutput = true;
                 if (!BuffsByID.TryGetValue(Actions[i].ActionID, out var buffs))
                 {
@@ -469,23 +489,16 @@ public class GDEItemsData : Scriptable, ISimulationData, IProgressionObject
 
         if (!HasUtilityAction && PermittedSlotsHash.Contains("item_slot_utility"))
         {
-            List<string> permittedSlots = new List<string>(PermittedSlots);
-            permittedSlots.Remove("item_slot_utility");
-            PermittedSlotsHash.Remove("item_slot_utility");
-            PermittedSlots = permittedSlots.ToArray();
+            // NOTE: Only items that can be USED should be in the utility slot!!!
 #if UNITY_EDITOR
-            Debug.LogError($"{Key} has no utility action but has item_slot_utility in PermittedSlots! Removing it.");
+            Debug.LogError($"{Key} has no utility action but has item_slot_utility in PermittedSlots!");
             UnityEditor.EditorUtility.SetDirty(this);
 #endif
         }
         else if (HasUtilityAction && !PermittedSlotsHash.Contains("item_slot_utility"))
         {
-            List<string> permittedSlots = new List<string>(PermittedSlots);
-            permittedSlots.Add("item_slot_utility");
-            PermittedSlotsHash.Add("item_slot_utility");
-            PermittedSlots = permittedSlots.ToArray();
 #if UNITY_EDITOR
-            Debug.LogError($"{Key} has utility actions but does not have item_slot_utility in PermittedSlots! Adding it.");
+            Debug.LogError($"{Key} has utility actions but does not have item_slot_utility in PermittedSlots!");
             UnityEditor.EditorUtility.SetDirty(this);
 #endif
         }

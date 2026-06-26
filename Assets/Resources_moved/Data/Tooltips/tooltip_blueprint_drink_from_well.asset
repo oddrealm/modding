@@ -22,10 +22,10 @@ MonoBehaviour:
   Name: Drink From Well
   NamePlural: 
   InlineIcon: <sprite=951>
-  Description: 
+  Description: Will move to closest well with water to drink from.
   DiscoveryHint: 
   Icon: sp_job_drink_from_water_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1375
+  Order: 1374

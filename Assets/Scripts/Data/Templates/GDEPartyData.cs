@@ -24,5 +24,6 @@ public class GDEPartyData : Scriptable
     public List<MemberTuning> MemberTunings = new List<MemberTuning>();
     [Header("Used instead of the party's nation relationship with player.")]
     public string FactionOverride = "";
+    public string ProfessionOverride = "";
 
 }

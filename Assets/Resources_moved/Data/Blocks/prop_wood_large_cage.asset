@@ -25,6 +25,7 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 55
   UsageTags:
   - tag_container
   - tag_cage_large
@@ -36,7 +37,7 @@ MonoBehaviour:
     HideInTooltips: 0
     Invert: 0
     SourceTagObjectRequirement0: faction_neutral
-    SourceTagObjectRequirement1: 
+    SourceTagObjectRequirement1: tag_entity_size_large
     ElapsedTime: 0
   - ActivateTriggerID: tag_trigger_cage_has_entity
     DeactivateTriggerID: 
@@ -44,14 +45,14 @@ MonoBehaviour:
     HideInTooltips: 0
     Invert: 0
     SourceTagObjectRequirement0: faction_hostile
-    SourceTagObjectRequirement1: 
+    SourceTagObjectRequirement1: tag_entity_size_large
     ElapsedTime: 0
   - ActivateTriggerID: tag_trigger_cage_entity_free
     DeactivateTriggerID: 
     TriggerType: 4
     HideInTooltips: 1
     Invert: 0
-    SourceTagObjectRequirement0: entity_status_caged
+    SourceTagObjectRequirement0: entity_status_caged_large
     SourceTagObjectRequirement1: 
     ElapsedTime: 0
   - ActivateTriggerID: tag_trigger_cage_entity_exit
@@ -76,14 +77,15 @@ MonoBehaviour:
     ActiveTooltipID: tooltip_tag_trigger_cage_has_entity
     InactiveTooltipID: tooltip_tag_trigger_cage_has_no_entity
     Permissions: 24
-    Visuals: visuals_prop_wood_large_cage_has_entity
+    Visuals: 
     SFX: 
     FX: fx_captured_large
     Action: 6
-    ActionTagObjectID: entity_status_caged
+    ActionTagObjectID: entity_status_caged_large
     DeactivateImmediate: 0
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -96,10 +98,11 @@ MonoBehaviour:
     SFX: 
     FX: 
     Action: 9
-    ActionTagObjectID: entity_status_caged
+    ActionTagObjectID: entity_status_caged_large
     DeactivateImmediate: 1
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -116,6 +119,7 @@ MonoBehaviour:
     DeactivateImmediate: 1
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -132,6 +136,7 @@ MonoBehaviour:
     DeactivateImmediate: 1
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -177,8 +182,14 @@ MonoBehaviour:
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

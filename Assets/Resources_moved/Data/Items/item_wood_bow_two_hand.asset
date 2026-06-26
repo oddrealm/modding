@@ -48,7 +48,6 @@ MonoBehaviour:
   Attacks:
   - attack_wood_bow_two_hand_pierce
   MerchantBuyValue: 110
-  MerchantSellValue: 22
   TuneRating: 2
   ItemRarity: item_rarity_common
   DecayRate: -1
@@ -57,5 +56,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

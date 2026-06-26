@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=70>
   Description: Endemic to the desert regions of Odd.
   DiscoveryHint: 
-  Icon: sp_sacaton_grass_icon
+  Icon: sp_plant_sacaton_grass_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2371
+  Order: 2396

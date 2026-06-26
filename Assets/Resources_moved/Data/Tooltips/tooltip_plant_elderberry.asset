@@ -22,11 +22,11 @@ MonoBehaviour:
   Name: Elderberry
   NamePlural: 
   InlineIcon: <sprite=1837>
-  Description: Dark, luscious berries, ideal for flavorful syrups and immune-boosting
-    teas.
+  Description: Thought to be named after the Elders whose ruins often depicted themselves
+    eating the fruit.
   DiscoveryHint: You often see these sprinkled amongst great Oaks.
-  Icon: sp_elderberry_icon
+  Icon: sp_plant_elderberry_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1401
+  Order: 1386

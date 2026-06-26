@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsThreat: 1
   NotifOnActivate: 
@@ -24,13 +25,14 @@ MonoBehaviour:
   - DialogueID: dialogue_scenario_slavers_ardyn0
   Conditions:
   - ConditionType: 1
-    TagObjectRequirement:
-      TagObjectID: race_ardyn
+    Requirement:
+      GroupID: player_nation
+      ID: overworld_nation_ardyn
       Count: 0
       Comparison: 1
-    MustFail: 0
   PartyID: party_slavers_ardyn
   IsScheduled: 1
+  Biomes: []
   ActivationChance:
     Chance: 1
     SampleSize: 20

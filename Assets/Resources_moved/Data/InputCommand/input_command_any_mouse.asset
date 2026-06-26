@@ -12,31 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
   m_Name: input_command_any_mouse
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_input_any_mouse
   DEBUG: 0
+  TooltipID: tooltip_input_any_mouse
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 5
   InputState: -1
-  DeferTo: []
   DefaultTriggers:
   - Hotkeys:
-    - Down: 1
-      Hold: 1
-      Up: 1
+    - Motion: -1
       Key: 0
       Mouse: 1
   - Hotkeys:
-    - Down: 1
-      Hold: 1
-      Up: 1
+    - Motion: -1
       Key: 0
       Mouse: 3
   - Hotkeys:
-    - Down: 1
-      Hold: 1
-      Up: 1
+    - Motion: -1
       Key: 0
       Mouse: 2
   ActiveUpdate: 0
@@ -44,7 +38,6 @@ MonoBehaviour:
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
   IsToggle: 0
-  BtnsForceActive: 0
-  MaxIncrement: 1
   PlayerCanEdit: 0
+  IgnoreModifiers: 0
   PrintEvents: 0

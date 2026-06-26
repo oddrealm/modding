@@ -16,23 +16,21 @@ MonoBehaviour:
   TooltipID: tooltip_input_overworld_open
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 2
   InputState: 4
-  DeferTo: []
   DefaultTriggers:
   - Hotkeys:
-    - Down: 0
-      Hold: 0
-      Up: 1
+    - Motion: 2
       Key: 109
       Mouse: 0
   ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
-  IsToggle: 1
-  BtnsForceActive: 1
+  IsToggle: 0
   MaxIncrement: 1
   PlayerCanEdit: 1
+  HotkeyCountMustBeExact: 0
   PrintEvents: 0

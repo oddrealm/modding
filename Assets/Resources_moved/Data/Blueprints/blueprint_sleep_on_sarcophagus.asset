@@ -20,32 +20,36 @@ MonoBehaviour:
   - skill_craft_void
   - tag_can_sleep_in_sarcophagus
   - entity_status_void_sick
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: -1
+  SuppressDiscoveredNotif: 0
   SkillPriorityOverride: 99
   XP: 25
-  BaseSkillCheckFailXP: 5
   BaseSkillLevel: 0
-  AwardXPForEachAction: 0
   CategoryID: blueprint_category_none
-  DesignationListOrder: -1
-  ResearchKey: research_ancient_immortality_tomb0
+  ResearchKeys:
+  - research_ancient_immortality_tomb0
   Repeat: 0
   CheckStateForTransition: 0
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
   LocationID: tag_voidweave_sarcophagus_powered
   WorkPosition: 1
   PermissionType: 0
   CanSitDuringJob: 0
-  WorkerID: entity_status_void_sick
+  WorkerID0: entity_status_void_sick
+  WorkerID1: 
   TargetID: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
   - ActionType: 3
     ResourceID: 
@@ -54,8 +58,8 @@ MonoBehaviour:
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
+  IsInstant: 0
   ProgressWorkerAttribute: attribute_energy
-  ProgressMax: 50
   ProgressBarType: 2
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
@@ -68,6 +72,7 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: 
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -76,8 +81,17 @@ MonoBehaviour:
   OnJobQuitActionID: tag_sleeping_end
   OnJobFinishActionID: tag_can_sleep_in_sarcophagus
   OnItemConsumeActionID: 
+  TargetIsConsumer: 0
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs:
+  - TargetID: attribute_energy
+    SourceID: 
+    Amount: 2
+    Max: 0
+    Permanent: 1
+  OnProgressTargetBuffs: []
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
@@ -86,7 +100,6 @@ MonoBehaviour:
   OnFinishTargetStatusRemoves: []
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
   ShowWorkOutputActionText: 0
   OnFinishedFX: 
   WorkFX: fx_entity_ancient_sleep
@@ -101,9 +114,5 @@ MonoBehaviour:
   - visuals_job_cursor_prohibited
   Visuals:
   - visuals_job_sleep_on_sarcophagus
-  ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 1
   DisposeIfRequirementsNotMet: 1
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 5
-  AutoJobOnFreedCooldown: 1

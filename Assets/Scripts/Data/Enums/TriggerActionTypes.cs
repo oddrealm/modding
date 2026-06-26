@@ -19,4 +19,5 @@
     MOVE_OPEN = 17,
     SPAWN = 18,
     FLEE = 19,
+    REPAIR = 20,
 }

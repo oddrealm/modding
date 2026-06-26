@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_entity_gwdir
-  TagIDs: []
+  TagIDs:
+  - tag_entity_size_medium
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -25,7 +26,6 @@ MonoBehaviour:
   SizeTagID: tag_entity_size_medium
   LanguagesSpoken:
   - language_engel
-  DefaultLeaderRoles: []
   CompanionType: 0
   CompanionPermanenceType: 0
   ReproductionType: 0
@@ -213,6 +213,21 @@ MonoBehaviour:
   - ProfessionID: profession_arcanist
     CanAssign: 1
     CanSpawnWith: 1
+  - ProfessionID: profession_king
+    CanAssign: 1
+    CanSpawnWith: 0
+  - ProfessionID: profession_queen
+    CanAssign: 1
+    CanSpawnWith: 0
+  - ProfessionID: profession_chief
+    CanAssign: 1
+    CanSpawnWith: 0
+  - ProfessionID: profession_dominus
+    CanAssign: 1
+    CanSpawnWith: 0
+  - ProfessionID: profession_primarch
+    CanAssign: 1
+    CanSpawnWith: 0
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -230,6 +245,8 @@ MonoBehaviour:
   Statuses:
   - entity_status_metabolism
   - entity_status_aging_by_day
+  - entity_status_gwdir_nature
+  - entity_status_can_relax_with_drink
   Ages:
   - entity_age_gwdir_child
   - entity_age_gwdir_adult
@@ -295,11 +312,11 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 45
+    StartingBase: 135
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level
-    StartingBase: 1
+    StartingBase: 0
   - AttributeID: attribute_move_speed
     StartingBase: 24
   - AttributeID: attribute_none
@@ -316,5 +333,7 @@ MonoBehaviour:
     StartingBase: 0
   - AttributeID: attribute_xp
     StartingBase: 0
+  - AttributeID: attribute_wisdom
+    StartingBase: 5
   Biomes: []
   StateOptions: []

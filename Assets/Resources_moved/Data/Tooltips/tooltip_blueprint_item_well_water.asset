@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Draw Well Water
   NamePlural: 
   InlineIcon: <sprite=653>
   Description: Wells slowly fill up with water and can be drawn from when full.
+  DiscoveryHint: 
   Icon: sp_water_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1354
+  Order: 1359

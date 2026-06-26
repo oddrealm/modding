@@ -19,13 +19,13 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Plant Caelum Oscula Tree (Sapling)
+  Name: Plant Caelum Oscula Sapling
   NamePlural: 
   InlineIcon: <sprite=822>
   Description: 
   DiscoveryHint: 
-  Icon: sp_sapling_caelum_oscula_icon
+  Icon: sp_plant_caelum_oscula_sapling_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2317
+  Order: 2338

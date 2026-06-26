@@ -7,7 +7,7 @@ public struct HotkeyGroup
     public Hotkey[] Hotkeys;
 
 #if ODD_REALM_APP
-    public bool IsTriggered()
+    public readonly bool IsTriggered(InputSet activeInput)
     {
         if (Hotkeys == null || Hotkeys.Length == 0) { return false; }
         if (!string.IsNullOrEmpty(SaveKey) &&
@@ -19,7 +19,7 @@ public struct HotkeyGroup
 
         for (int i = 0; i < Hotkeys.Length; i++)
         {
-            if (!Hotkeys[i].IsTriggered()) { return false; }
+            if (!Hotkeys[i].IsTriggered(activeInput)) { return false; }
         }
 
         return true;

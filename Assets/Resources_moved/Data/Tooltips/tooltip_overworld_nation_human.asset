@@ -19,16 +19,14 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Human
-  Name: Human
+  Name: Human Kingdom
   NamePlural: Humans
   InlineIcon: <sprite=63>
-  Description: Living in small communities since the Fracture, Humans have only recently
-    started to re-form their once great kingdoms. Experts at settling in any environment
-    and having exceptional diplomatic skills, the Human race has excelled in the
-    age of settlement.
+  Description: "Human kingdoms serve as bastions, standing against Odd\u2019s violent
+    threats."
   DiscoveryHint: 
   Icon: sp_race_human
-  TextColor: {r: 0, g: 0.41107982, b: 0.8050314, a: 1}
+  TextColor: {r: 0.26366144, g: 0.745283, b: 0.63231003, a: 1}
   Type: Race
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1706
+  Order: 1738

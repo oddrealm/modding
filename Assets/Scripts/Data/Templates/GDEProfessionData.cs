@@ -11,26 +11,29 @@ public class GDEProfessionData : Scriptable
         public int Priority;
     }
 
+    public int MaxMembers = -1;
     public int OrderGroup = 0;
     public bool AutoCreateUniform = true;
-    public bool EarnBonusXPInCombat = false;
     public string ResearchKey = "";
+    public string RequiredRaceID = "";
+    public string RequiredGenderID = "";
     public bool CanBeAssigned = true;
     public bool CanBeChanged = true;
-    public bool CanDoSupplementCarryActions = false;
-    public bool CanLevelUp;
     public bool FavoursRangedAttackItems = false;
     public bool IsCombatProfession = false;
+    public bool IsLeader = false;
     public RandomEquipmentItem[] StartingItems = new RandomEquipmentItem[] { };
-    public string GlobalIndicator = "";
     public string[] SkillsActiveByDefault;
-    public HashSet<string> SkillsActiveByDefaultHash = new HashSet<string>();
+    public HashSet<string> SkillsActiveByDefaultHash = new();
+    public bool PlayerCanEditLevelUpSkills = false;
+    public int RandomSkillsToIncreaseOnLevelUp = 0;
     public string[] SkillsToIncreaseOnLevelUp;
-    public HashSet<string> SkillsToIncreaseOnLevelUpHash = new HashSet<string>();
+    public HashSet<string> SkillsToIncreaseOnLevelUpHash = new();
+    public string[] StatusesToAdd = System.Array.Empty<string>();
 
-    public List<SkillPriority> SkillPriorities = new List<SkillPriority>();
+    public List<SkillPriority> SkillPriorities = new();
     [System.NonSerialized]
-    public Dictionary<string, SkillPriority> SkillPrioritiesBySkillID = new Dictionary<string, SkillPriority>();
+    public Dictionary<string, SkillPriority> SkillPrioritiesBySkillID = new();
 
     public int GetSkillPriority(string skillID)
     {
@@ -54,7 +57,6 @@ public class GDEProfessionData : Scriptable
             TagObjectID = Key,
             HideIfZero = true,
             StartDisabled = true,
-            TrackingType = TrackingTypes.ENTITY
         };
 
         return true;

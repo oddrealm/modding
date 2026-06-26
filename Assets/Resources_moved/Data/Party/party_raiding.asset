@@ -18,10 +18,11 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  ArrivalNotif: notif_overworld_party_raiders
+  ArrivalNotif: notif_scenario_raiders
   MaxMemberSize: 5
   MinMemberSize: 1
   AutoGenMemberSize: 0
   RandomizeMembers: 0
   MemberTunings: []
   FactionOverride: faction_hostile
+  ProfessionOverride: profession_random_fighters

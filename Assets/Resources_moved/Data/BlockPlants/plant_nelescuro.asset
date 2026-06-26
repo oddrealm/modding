@@ -21,7 +21,9 @@ MonoBehaviour:
   - tag_can_be_watered
   - tag_plants
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 70
   MaxLifeTime: -1
   ReproduceTimeInterval: 4320
   MaxNaturalSpawnCount: 0
@@ -30,8 +32,10 @@ MonoBehaviour:
   MaxDefaultSimTime: 86400
   MatureThreshold: 0.5
   MatureTag: tag_mature_grass
+  AdditionalMatureTags: []
   MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 2500
+  MaxHeight: -1
   RemoveItemDrops: spawns_plant_remove_drops_default
   MatureItemDrops: spawns_plant_mature_drops_nelescuro
   MatureTagObjectSpawn: 

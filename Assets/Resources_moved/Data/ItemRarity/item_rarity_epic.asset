@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5adf3d9d82a1e7541b0268fc4d753467, type: 3}
   m_Name: item_rarity_epic
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_rarity_epic
   DEBUG: 0
+  TooltipID: tooltip_item_rarity_epic
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   RarityScore: 3
+  SpawnCountTuningMax: 1
   DisposeIfCannotSpawn: 0
+  IsAvailableInCustomLoadout: 0

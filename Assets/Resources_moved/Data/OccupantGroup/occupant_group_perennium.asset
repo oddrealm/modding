@@ -16,9 +16,12 @@ MonoBehaviour:
   TooltipID: tooltip_room_occupant_group_occupants
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   OccupantManageType: 2
   OccupantsMustBePlayerControlled: 1
+  CanCustomize: 0
+  NeedsAllRequirements: 0
   RequiredOccupantTagObjs:
   - TagID: tag_races
     TagObjectKey: race_gwdir

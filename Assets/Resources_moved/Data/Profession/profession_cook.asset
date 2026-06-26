@@ -17,17 +17,18 @@ MonoBehaviour:
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxMembers: -1
   OrderGroup: 0
   AutoCreateUniform: 1
-  EarnBonusXPInCombat: 0
   ResearchKey: 
-  VisibleToPlayer: 1
+  RequiredRaceID: 
+  RequiredGenderID: 
   CanBeAssigned: 1
   CanBeChanged: 1
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
   FavoursRangedAttackItems: 0
+  IsCombatProfession: 0
   StartingItems:
   - ItemID: item_wood_spoon_one_hand
     ChanceToEquip: 0
@@ -38,12 +39,13 @@ MonoBehaviour:
   - ItemID: item_linen_apron
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
-  GlobalIndicator: indicator_global_cook
   SkillsActiveByDefault:
-  - skill_carry
   - skill_cook
+  PlayerCanEditLevelUpSkills: 0
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp:
   - skill_cook
+  StatusesToAdd: []
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1

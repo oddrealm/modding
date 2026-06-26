@@ -17,18 +17,23 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_industry
   ResearchKey: research_cooking_alcohol0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_distillery
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_distillery
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_distillery
   DefaultAutoJobs:
   - BlueprintID: blueprint_item_apple_cider
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -36,7 +41,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_blackberry_wine
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -44,7 +49,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_mushroom_wine
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -52,7 +57,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_coconut_brew
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -60,7 +65,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_elderberry_wine
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -68,7 +73,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_gooseberry_wine
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -76,7 +81,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_pineapple_brew
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -84,7 +89,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_wheat_ale
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -92,7 +97,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_whiskey
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -100,7 +105,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_pumpkin_ale
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -108,7 +113,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_sake
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -150,7 +155,4 @@ MonoBehaviour:
     - block_none
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

@@ -19,14 +19,13 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Eldest
+  Name: Primarch
   NamePlural: 
-  InlineIcon: <sprite=1902>
-  Description: "Most \u2014 but not all \u2014 Primarchs are selected based on age.
-    They are often referred to as the \u2018Eldest.\u2019"
+  InlineIcon: <sprite=1732>
+  Description: A leader of an Ancient empire.
   DiscoveryHint: 
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8392157, g: 0.7490196, b: 0.654902, a: 1}
   Type: Status
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1406
+  Order: 2484

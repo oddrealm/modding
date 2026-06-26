@@ -34,6 +34,7 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
         public uint ElapsedTime;
     }
 
+    public int RoomQualityAdd = 50;
     [Header("Usage Tags")]
     public string[] UsageTags = System.Array.Empty<string>();
     [Header("Fill")]
@@ -94,9 +95,16 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     public int HasItemsOffsetY = 0;
     public int FullCapacityOffsetX = 0;
     public int FullCapacityOffsetY = 0;
+    [Header("Turret")]
+    public bool IsTurret = false;
+    public float TurretRange = 0f;
+    public float TurretFireRate = 1f;
+    public string TurretAttackID = "";
     [Header("FX")]
-    public string IdleFX = "";
-    public string UntriggeredFX = "";
+    public string IdleFX = string.Empty;
+    public string UntriggeredFX = string.Empty;
+    public string AddFX = string.Empty;
+    public string RemoveFX = string.Empty;
     [Header("SFX")]
     public string AddSFX = "";
     public string RemoveSFX = "";
@@ -164,10 +172,12 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     public SimTime MaxSimTime { get { return MaxDefaultSimTime; } }
     public GDEBlockFillData DefaultFillData { get; private set; }
     public GDETagsData[] UsageTagsData { get; private set; } = new GDETagsData[0];
+    public HashSet<string> UsageTagsHash { get; private set; } = new HashSet<string>();
+    public GDETagsData RoomTagData { get; private set; }
     public GDETagsData[] TriggerTagsData { get; private set; } = new GDETagsData[0];
 
     private GDESimulationData _simData;
-    private string[] _simStates = new string[]
+    private readonly string[] _simStates = new string[]
     {
         BLOCK_STATE_CAN_FALL
     };
@@ -196,7 +206,70 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
     {
         base.OnLoaded();
 
-#if DEV_TESTING
+
+#if DEV_TESTING && UNITY_EDITOR
+        if (Key.Contains("stone"))
+        {
+            RoomQualityAdd = 54;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        else if (Key.Contains("wood"))
+        {
+            RoomQualityAdd = 55;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        else if (Key.Contains("brick"))
+        {
+            RoomQualityAdd = 58;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        else if (Key.Contains("bronze"))
+        {
+            RoomQualityAdd = 83;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        else if (Key.Contains("iron"))
+        {
+            RoomQualityAdd = 84;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        else if (Key.Contains("steel"))
+        {
+            RoomQualityAdd = 85;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        else if (Key.Contains("rutile"))
+        {
+            RoomQualityAdd = 97;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        else if (Key.Contains("rope"))
+        {
+            RoomQualityAdd = 53;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        else if (Key.Contains("clay"))
+        {
+            RoomQualityAdd = 52;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        else if (Key.Contains("sable"))
+        {
+            RoomQualityAdd = 97;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+        // else
+        // {
+        //     RoomQualityAdd = 50;
+        //     EditorUtility.SetDirty(this);
+        // }
+
+        if (MaxItemCount > Location.MAX_ITEM_COUNT)
+        {
+            Debug.LogError($"{Key} has MaxItemCount of {MaxItemCount} which exceeds the limit of {Location.MAX_ITEM_COUNT}, setting to max.");
+            MaxItemCount = (int)Location.MAX_ITEM_COUNT;
+        }
+
         if (Key.Contains("prop_"))
         {
             EnsureTag("tag_props");
@@ -208,6 +281,9 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
 #endif
 
         IsNone = Key == "block_none";
+
+        UsageTagsHash.Clear();
+        UsageTagsData = System.Array.Empty<GDETagsData>();
 
         if (UsageTags.Length > 0)
         {
@@ -221,8 +297,11 @@ public class GDEBlocksData : Scriptable, ISimulationData, IProgressionObject
                 }
 
                 UsageTagsData[i] = DataManager.GetTagObject<GDETagsData>(UsageTags[i]);
+                UsageTagsHash.Add(UsageTags[i]);
             }
         }
+
+        RoomTagData = DataManager.GetTagObject<GDETagsData>("tag_room_location");
 
         if (Triggers != null && Triggers.Length > 0)
         {

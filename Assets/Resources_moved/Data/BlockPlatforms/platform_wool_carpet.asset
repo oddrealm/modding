@@ -17,8 +17,11 @@ MonoBehaviour:
   TagIDs:
   - tag_platform
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 15
   Index: 12
+  IsFertile: 0
   Visuals: visuals_platform_wool_carpet
   PhysicsHeatPass: 0.05
   HasMeltThreshold: 0
@@ -42,3 +45,4 @@ MonoBehaviour:
   BaseHealth: 25
   BaseToughness: 0
   ItemDropGroupID: spawns_platform_wool_carpet
+  UsageTagIDs: []

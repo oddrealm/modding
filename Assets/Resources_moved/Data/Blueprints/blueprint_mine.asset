@@ -20,31 +20,33 @@ MonoBehaviour:
   - skill_mine
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  SkillPriorityOverride: -1
-  XP: 25
-  BaseSkillCheckFailXP: 5
-  BaseSkillLevel: 1
-  AwardXPForEachAction: 0
-  CategoryID: blueprint_category_jobs
   DesignationListOrder: 0
-  ResearchKey: research_industry_basics0
+  SuppressDiscoveredNotif: 0
+  SkillPriorityOverride: -1
+  XP: 10
+  BaseSkillLevel: 5
+  CategoryID: blueprint_category_jobs
+  ResearchKeys:
+  - research_industry_basics0
   Repeat: 0
   CheckStateForTransition: 1
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 1
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
   LocationID: 
   WorkPosition: 0
   PermissionType: 1
   CanSitDuringJob: 0
-  WorkerID: skill_mine
-  TargetID: 
+  WorkerID0: skill_mine
+  WorkerID1: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
   - ActionType: 3
     ResourceID: 
@@ -53,9 +55,9 @@ MonoBehaviour:
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
+  IsInstant: 0
   ProgressWorkerAttribute: 
-  ProgressMax: 50
-  ProgressBarType: 0
+  ProgressBarType: 2
   ProgressFXMaxX: 146
   ProgressFXMinX: 146
   ProgressFXMaxY: 6
@@ -63,10 +65,11 @@ MonoBehaviour:
   Clear:
     Layer: 259
     DisableRemoveSpawns: 0
-  RevealDistance: 5
+  RevealDistance: 7
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: 
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -75,8 +78,12 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: 
   OnItemConsumeActionID: 
+  TargetIsConsumer: 0
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
@@ -85,7 +92,6 @@ MonoBehaviour:
   OnFinishTargetStatusRemoves: []
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
   ShowWorkOutputActionText: 1
   OnFinishedFX: 
   WorkFX: fx_block_hit
@@ -100,9 +106,5 @@ MonoBehaviour:
   - visuals_job_cursor_prohibited
   Visuals:
   - visuals_job_mine
-  ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0

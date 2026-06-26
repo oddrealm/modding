@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_attack_spellbook_of_cleaving_one_hand_cut
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
@@ -27,7 +28,7 @@ MonoBehaviour:
   SkillID: skill_fight_magic
   AddSkillToOutput: 1
   MinAmount: 12
-  MaxAmount: 30
+  MaxAmount: 55
   Range: 14
   StatusesToApplyToTarget: []
   SourceAction: 0

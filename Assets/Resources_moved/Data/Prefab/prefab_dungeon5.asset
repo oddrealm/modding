@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93411bf4023950646b46925b4de6f11a, type: 3}
   m_Name: prefab_dungeon5
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: 
+  TagIDs:
+  - tag_dungeon_default_room
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 538342
   UseRandomRotation: 1
+  Buffer: {x: 2, y: 2, z: 0}
   Locations:
   - TagObjectID: block_stone_ornate
     TagObjectID0: 
@@ -67,20 +69,6 @@ MonoBehaviour:
     TagObjectID0: 
     TagObjectID1: 
     TagObjectID2: 
-    X: 2
-    Y: 2
-    Z: 0
-  - TagObjectID: platform_stone_tile
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 3
-    Y: 2
-    Z: 0
-  - TagObjectID: platform_stone_tile
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
     X: 3
     Y: 1
     Z: 0
@@ -98,150 +86,143 @@ MonoBehaviour:
     X: 1
     Y: 1
     Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 2
-    Y: 1
-    Z: 0
-  - TagObjectID: spawns_treasure_mid
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 1
-    Y: 1
-    Z: 0
-  - TagObjectID: spawns_caves_dungeon_debris
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 1
-    Y: 2
-    Z: 0
-  - TagObjectID: spawns_caves_dungeon_debris
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 2
-    Y: 2
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 0
-    Y: 3
-    Z: 0
   - TagObjectID: platform_stone_tile
     TagObjectID0: 
     TagObjectID1: 
     TagObjectID2: 
-    X: 1
-    Y: 3
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
     X: 2
-    Y: 3
-    Z: 0
-  - TagObjectID: platform_stone_tile
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 3
-    Y: 3
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 0
-    Y: 4
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 1
-    Y: 4
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 2
-    Y: 4
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 3
-    Y: 4
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 4
-    Y: 4
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 4
-    Y: 3
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 4
-    Y: 2
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 4
-    Y: 1
-    Z: 0
-  - TagObjectID: block_stone_ornate
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 4
-    Y: 0
-    Z: 0
-  - TagObjectID: spawns_treasure_mid
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 3
     Y: 1
     Z: 0
   - TagObjectID: spawns_treasure_mid
     TagObjectID0: 
     TagObjectID1: 
     TagObjectID2: 
-    X: 3
-    Y: 3
+    X: 1
+    Y: 1
     Z: 0
   - TagObjectID: prop_bronze_chest
     TagObjectID0: 
     TagObjectID1: 
     TagObjectID2: 
     X: 1
+    Y: 2
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 0
     Y: 3
+    Z: 0
+  - TagObjectID: platform_stone_tile
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 2
+    Y: 3
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 0
+    Y: 4
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 1
+    Y: 4
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 2
+    Y: 4
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 3
+    Y: 4
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 4
+    Y: 4
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 4
+    Y: 3
+    Z: 0
+  - TagObjectID: prop_stone_door
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 4
+    Y: 2
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 4
+    Y: 1
+    Z: 0
+  - TagObjectID: block_stone_ornate
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 4
+    Y: 0
     Z: 0
   - TagObjectID: spawns_treasure_mid
     TagObjectID0: 
     TagObjectID1: 
     TagObjectID2: 
+    X: 3
+    Y: 1
+    Z: 0
+  - TagObjectID: spawns_treasure_item_pool_mid
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
     X: 1
+    Y: 2
+    Z: 0
+  - TagObjectID: platform_stone_tile
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 2
+    Y: 2
+    Z: 0
+  - TagObjectID: platform_stone_tile
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 3
+    Y: 2
+    Z: 0
+  - TagObjectID: platform_stone_tile
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 1
+    Y: 3
+    Z: 0
+  - TagObjectID: platform_stone_tile
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 3
     Y: 3
     Z: 0

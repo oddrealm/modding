@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsThreat: 1
   NotifOnActivate: 
@@ -23,9 +24,10 @@ MonoBehaviour:
   - SpawnPointType: 2
     OverrideEntityWithNation: 0
     OverrideEntityWithFauna: 0
+    OverrideEntityWithBiomeHostiles: 1
     AutoGenEntityCount: 0
     SpawnData:
-      EntityID: entity_vytrax
+      EntityID: 
       ProfessionID: 
       FactionID: faction_hostile
       GenderID: 
@@ -49,13 +51,14 @@ MonoBehaviour:
   Conditions: []
   PartyID: 
   IsScheduled: 1
+  Biomes: []
   ActivationChance:
     Chance: 1
-    SampleSize: 4
+    SampleSize: 5
   MaxActivations: 0
   MinKingdomLevel: 6
   MinMinutesSinceSettlementStart: 1440
-  MinMinutesSinceLastScenario: 1440
+  MinMinutesSinceLastScenario: 120
   MinMinutesSinceLastSameScenario: 2440
   MinTimeOfDay: 1200
   MaxTimeOfDay: 240

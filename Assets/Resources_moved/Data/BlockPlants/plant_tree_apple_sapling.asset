@@ -23,6 +23,7 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 25
   MaxLifeTime: 7200
   ReproduceTimeInterval: 1440
   MaxNaturalSpawnCount: 8
@@ -31,7 +32,7 @@ MonoBehaviour:
   MaxDefaultSimTime: 864000
   MatureThreshold: 0.5
   MatureTag: tag_mature_tree
-  MatureInlineIcon: <sprite=9>
+  MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 500
   RemoveItemDrops: spawns_plant_remove_drops_default
   MatureItemDrops: 
@@ -84,6 +85,7 @@ MonoBehaviour:
     ActionID: tag_can_be_watered
     Buff:
       TargetID: attribute_thirst
+      SourceID: 
       Amount: 999
       Max: 0
       Permanent: 1

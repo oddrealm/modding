@@ -21,11 +21,12 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
   Trigger: 11
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
   MinUnscaledPlayedTime: 1
   MinCooldown: -1
-  Hooks: []
   ActiveRaces: []
   PermittedWindows: []
   SelectionType: 4
@@ -45,34 +46,13 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
+  Icon: 
   BackgroundMaskTarget: 
   Message:
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: Ah, the realm of Odd!
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
   - OnlyShowInputHotkey: 1
     InputID: 
     TagObjectID: 
-    Body: Shattered by the Fracture 500 years ago, it now appears to be slowly mending...
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: 
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 1
-    InputID: 
-    TagObjectID: 
-    Body: 'Try moving around with:'
+    Body: 'You can move the camera with:'
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
@@ -104,4 +84,4 @@ MonoBehaviour:
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  NextSegment: 
+  NextSegment: tutorial_all_overworld_screen1

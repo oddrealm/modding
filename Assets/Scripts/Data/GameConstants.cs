@@ -306,17 +306,13 @@ public static class GameConstants
     public const string NOTIF_ENTITY_CAPTURED = "notif_entity_captured";
     public const string NOTIF_ENTITY_CAPTURE_FAILED = "notif_entity_capture_failed";
     public const string NOTIF_ENTITY_CAPTURE_SUCCESS = "notif_entity_capture_success";
-    public const string NOTIF_ENTITY_INTEGRATE_SUCCESS = "notif_entity_integrate_success";
     public const string NOTIF_ENTITY_LEAVING = "notif_entity_leaving";
     public const string NOTIF_ENTITY_SIGHTED = "notif_entity_sighted";
     public const string NOTIF_ENTITY_STUCK = "notif_entity_stuck";
     public const string NOTIF_ENTITY_NO_PROFESSION = "notif_entity_no_profession";
     public const string NOTIF_TRACKED_STAT_LOW = "notif_tracked_stat_low";
     public const string NOTIF_LOW_ON_BEVERAGES = "notif_low_beverages";
-    public const string NOTIF_ENTITY_CANNOT_REACH_JOB = "notif_entity_cannot_reach_job";
-    public const string NOTIF_ENTITY_CANNOT_REACH_JOB_ITEM = "notif_entity_cannot_reach_job_item";
     public const string NOTIF_THREAT_INCOMING = "notif_threat_incoming";
-    public const string NOTIF_BANDITS_ARRIVED = "notif_bandits_arrived";
     public const string NOTIF_OCCUPANT_ADDED_TO_ROOM = "notif_occupant_added_to_room";
     public const string NOTIF_OCCUPANT_REMOVED_FROM_ROOM = "notif_occupant_removed_from_room";
 

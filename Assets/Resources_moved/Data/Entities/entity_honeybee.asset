@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_entity_honeybee
-  TagIDs: []
+  TagIDs:
+  - tag_entity_size_small
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -22,10 +23,8 @@ MonoBehaviour:
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
-  SizeTagID: tag_entity_size_medium
+  SizeTagID: tag_entity_size_small
   LanguagesSpoken: []
-  DefaultLeaderRoles:
-  - 
   CompanionType: 0
   CompanionPermanenceType: -1
   ReproductionType: 0
@@ -213,6 +212,21 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 1
     CanSpawnWith: 1
+  - ProfessionID: profession_king
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_queen
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_chief
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_dominus
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_primarch
+    CanAssign: 1
+    CanSpawnWith: 1
   PermittedItemSlots: []
   PathingType: 2
   DefaultTuning: entity_tuning_honeybee
@@ -221,6 +235,7 @@ MonoBehaviour:
   ProhibitedStatuses: []
   Statuses:
   - entity_status_aging_by_day
+  - entity_status_ai_bee
   Ages:
   - entity_age_honeybee_adult
   - entity_age_honeybee_elder
@@ -248,13 +263,13 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 5
+    StartingBase: 30
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level
-    StartingBase: 1
+    StartingBase: 0
   - AttributeID: attribute_move_speed
-    StartingBase: 24
+    StartingBase: 10
   - AttributeID: attribute_none
     StartingBase: 0
   - AttributeID: attribute_oxygen
@@ -269,6 +284,8 @@ MonoBehaviour:
     StartingBase: 0
   - AttributeID: attribute_xp
     StartingBase: 0
+  - AttributeID: attribute_wisdom
+    StartingBase: 1
   Biomes:
   - biome_taiga
   - biome_taiga_forest
@@ -277,4 +294,6 @@ MonoBehaviour:
   - biome_tropical
   - biome_tropical_forest
   - biome_tropical_mountain
+  ProhibitedSeasons:
+  - winter
   StateOptions: []

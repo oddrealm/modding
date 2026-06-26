@@ -21,7 +21,9 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
   ShowIndicator: 0
+  ShowOnTooltip: 1
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 60
   ExpireTimeMinutesMax: 60
   StatusesToRemove: []
@@ -38,6 +40,7 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: Lowers Hunger
     ConditionTarget: 
@@ -48,8 +51,10 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 0
+    ActionID: 
     Buffs:
     - TargetID: attribute_hunger
+      SourceID: 
       Amount: -1
       Max: 0
       Permanent: 1
@@ -57,6 +62,30 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: 
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 4
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_morale
+      SourceID: 
+      Amount: -5
+      Max: 0
+      Permanent: 0
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsThreat: 0
   NotifOnActivate: 
@@ -49,18 +50,19 @@ MonoBehaviour:
   Dialogues: []
   Conditions:
   - ConditionType: 1
-    TagObjectRequirement:
-      TagObjectID: item_ren
+    Requirement:
+      GroupID: settlement_item_count
+      ID: item_ren
       Count: 100
-      Comparison: 2
-    MustFail: 0
+      Comparison: 4
   PartyID: 
   IsScheduled: 1
+  Biomes: []
   ActivationChance:
     Chance: 0
     SampleSize: 0
   MaxActivations: 0
-  MinKingdomLevel: 1
+  MinKingdomLevel: 3
   MinMinutesSinceSettlementStart: 1440
   MinMinutesSinceLastScenario: 1440
   MinMinutesSinceLastSameScenario: 7200

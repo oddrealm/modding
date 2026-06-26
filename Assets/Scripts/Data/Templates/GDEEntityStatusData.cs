@@ -24,7 +24,9 @@ public enum StatusActionTypes
     ADD_STATUSES = 2,
     SPAWN_TAG_OBJECT = 3,
     REMOVE_BUFFS = 4,
-    REMOVE_STATUSES = 5
+    REMOVE_STATUSES = 5,
+    ACTIVATE_LOCATION_ACTIONS = 6,
+    MOVE_TO_TARGET = 7
 }
 
 [System.Serializable]
@@ -44,16 +46,19 @@ public struct StatusAction
     public uint RandomChance;
     public StatusActionTypes ActivationAction;
     public StatusActionTypes DeactivationAction;
+    public string ActionID;
     public BuffData[] Buffs;
     public string[] Statuses;
     public string SpawnID;
     public int SpawnMin;
     public int SpawnMax;
+    public float MinMoveDistance;
+    public float MaxMoveDistance;
 
 #if ODD_REALM_APP
-    public ITagObject ConditionTargetObj { get { return string.IsNullOrEmpty(ConditionTarget) ? Scriptable.NULL_TAG_OBJECT : DataManager.GetTagObject(ConditionTarget); } }
+    public readonly ITagObject ConditionTargetObj { get { return string.IsNullOrEmpty(ConditionTarget) ? Scriptable.NULL_TAG_OBJECT : DataManager.GetTagObject(ConditionTarget); } }
 
-    public bool HasConditions
+    public readonly bool HasConditions
     {
         get
         {
@@ -66,7 +71,7 @@ public struct StatusAction
         }
     }
 
-    public bool AreConditionsPassed(float current, float max)
+    public readonly bool AreConditionsPassed(float current, float max)
     {
         if (Conditions == null || Conditions.Length == 0) { return true; }
 
@@ -94,7 +99,7 @@ public struct EqualCondition : ICondition
     public float Amount;
     public bool Normalized;
 
-    public bool IsPassed(float current, float max)
+    public readonly bool IsPassed(float current, float max)
     {
         if (Normalized) current = (max > 0f ? (current / max) : 0f);
         return Mathf.Approximately(current, Amount);
@@ -107,7 +112,7 @@ public struct NotEqualCondition : ICondition
     public float Amount;
     public bool Normalized;
 
-    public bool IsPassed(float current, float max)
+    public readonly bool IsPassed(float current, float max)
     {
         if (Normalized) current = (max > 0f ? (current / max) : 0f);
         return !Mathf.Approximately(current, Amount);
@@ -120,7 +125,7 @@ public struct LessThanCondition : ICondition
     public float Amount;
     public bool Normalized;
 
-    public bool IsPassed(float current, float max)
+    public readonly bool IsPassed(float current, float max)
     {
         if (Normalized) current = (max > 0f ? (current / max) : 0f);
         return current < Amount;
@@ -133,7 +138,7 @@ public struct LessThanEqualCondition : ICondition
     public float Amount;
     public bool Normalized;
 
-    public bool IsPassed(float current, float max)
+    public readonly bool IsPassed(float current, float max)
     {
         if (Normalized) current = (max > 0f ? (current / max) : 0f);
         return current <= Amount;
@@ -146,7 +151,7 @@ public struct GreaterThanCondition : ICondition
     public float Amount;
     public bool Normalized;
 
-    public bool IsPassed(float current, float max)
+    public readonly bool IsPassed(float current, float max)
     {
         if (Normalized) current = (max > 0f ? (current / max) : 0f);
         return current > Amount;
@@ -159,7 +164,7 @@ public struct GreaterThanEqualCondition : ICondition
     public float Amount;
     public bool Normalized;
 
-    public bool IsPassed(float current, float max)
+    public readonly bool IsPassed(float current, float max)
     {
         if (Normalized) current = (max > 0f ? (current / max) : 0f);
         return current >= Amount;
@@ -171,7 +176,10 @@ public class GDEEntityStatusData : Scriptable
 {
     public bool TrackByDefault = false;
     public bool ShowIndicator = false;
+    public bool ShowOnTooltip = false;
     public string Notification = "";
+    [Header("Option display to show for source text. i.e., 'Killed by [source text override]'")]
+    public string SourceTooltipID = "";
     public int ExpireTimeMinutesMin = 0;
     public int ExpireTimeMinutesMax = 0;
     public List<string> StatusesToRemove = new List<string>();
@@ -194,6 +202,7 @@ public class GDEEntityStatusData : Scriptable
     public string ColorMask;
     public string Accessory;
     public string IdleFXGroup = "";
+    public bool MaskIsThreat;
     [Header("Actions change attributes and can be set on timers.")]
     public StatusAction[] Actions = new StatusAction[0];
     [System.NonSerialized]
@@ -206,6 +215,7 @@ public class GDEEntityStatusData : Scriptable
     public bool CanExpire { get { return ExpireTimeMinutesMax > 0; } }
     public HashSet<string> PermittedGendersHash { get; private set; }
     public HashSet<string> PermittedFactionsHash { get; private set; }
+    public bool AppearAsPositiveStatus { get; private set; }
 
     public override bool TryGetDefaultTracking(out DefaultTracking tracking)
     {
@@ -215,7 +225,6 @@ public class GDEEntityStatusData : Scriptable
             TagObjectID = Key,
             HideIfZero = true,
             StartDisabled = !TrackByDefault,
-            TrackingType = TrackingTypes.ENTITY
         };
 
         return true;
@@ -235,12 +244,30 @@ public class GDEEntityStatusData : Scriptable
         PermittedGendersHash = new HashSet<string>(PermittedGenders);
         PermittedFactionsHash = new HashSet<string>(PermittedFactions);
         SortedActionIndices.Clear();
+        AppearAsPositiveStatus = true;
 
         if (Actions != null && Actions.Length > 0)
         {
             for (int i = 0; i < Actions.Length; i++)
             {
                 SortedActionIndices.Add(i);
+
+                for (int j = 0; j < Actions[i].Buffs.Length; j++)
+                {
+                    BuffData buffData = Actions[i].Buffs[j];
+
+                    if (DataManager.TryGetTagObject<GDEAttributesData>(buffData.TargetID, out GDEAttributesData attrData))
+                    {
+                        if (attrData.NegativeIsPositive)
+                        {
+                            AppearAsPositiveStatus = buffData.Amount < 0 || buffData.Max < 0;
+                        }
+                        else
+                        {
+                            AppearAsPositiveStatus = buffData.Amount > 0 || buffData.Max > 0;
+                        }
+                    }
+                }
             }
 
             // Sort actions by activation ID.

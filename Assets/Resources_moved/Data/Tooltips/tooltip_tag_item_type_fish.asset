@@ -18,14 +18,14 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Fish
+  Action: 
   Name: Fish
-  NamePlural: 
+  NamePlural: Fish
   InlineIcon: <sprite=1414>
   Description: 
   DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.08235294, g: 0.78823537, b: 0.9215687, a: 1}
-  Type: Type
+  Type: Item Type
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1502
+  Order: 1513

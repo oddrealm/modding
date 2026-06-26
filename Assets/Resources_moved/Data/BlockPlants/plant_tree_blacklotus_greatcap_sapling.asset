@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfdcc2fb5b07f24cb8fd555274f1ec0, type: 3}
+  m_Name: plant_tree_blacklotus_greatcap_sapling
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_plant_tree_blacklotus_greatcap_sapling
+  TagIDs:
+  - tag_mature_tree
+  - tag_mature_fruit
+  - tag_can_be_watered
+  - tag_plants
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 25
+  MaxLifeTime: 7200
+  ReproduceTimeInterval: 1440
+  MaxNaturalSpawnCount: 8
+  MaxNaturalReproduceCount: 32
+  ReproductionPlant: 
+  MaxDefaultSimTime: 8640000
+  MatureThreshold: 0.5
+  MatureTag: tag_mature_tree
+  AdditionalMatureTags: []
+  MatureInlineIcon: <sprite=1183>
+  LimitGroupSizeThreshold: 2500
+  MaxHeight: -1
+  RemoveItemDrops: spawns_plant_remove_drops_default
+  MatureItemDrops: 
+  MatureTagObjectSpawn: 
+  AutoClearOnMature: 0
+  SpawnItemsOnAutoClear: 0
+  GrowthStages: 4
+  HealthMax: 100
+  HydrationMax: -1
+  HydrationDecay: 0
+  DehydratedTag: tag_can_be_watered
+  HydrationTooltip: tooltip_plant_hydration
+  HydrationJob: blueprint_water_plant
+  MinLight: 6
+  FillRequirement: 
+  NeedsFertileSoil: 1
+  MaxTemp: 75
+  MinTemp: -100
+  PlantSimulationID: simulation_tree_sapling_default
+  UseLocalFaunaReproduceMod: 1
+  Seasons: []
+  IsObstruction: 0
+  PermittedPaths: -1
+  NeedsSupport: 1
+  FruitingTag: tag_mature_fruit
+  FruitItemDrops: 
+  FruitMaxCount: 1
+  FruitMinInterval: 64
+  FruitMaxInterval: 64
+  FruitSeasons: []
+  FruitVisuals: 
+  LayerPriority: 0
+  Layer: 32
+  ProhibitedLayers: 32
+  Permissions: 0
+  Prohibited: 263168
+  MaturePermissions: 0
+  MatureProhibitions: 0
+  PlantType: 2
+  PlantPermission: 0
+  CanHaveGroup: 1
+  CanGrowInAnyRoom: 0
+  Visuals:
+  - visuals_plant_tree_blacklotus_greatcap_sapling
+  RemoveFX: fx_remove_plant
+  Actions:
+  - ActionID: tag_can_be_watered
+    Comment: 
+    TargetType: 0
+    Buff:
+      TargetID: attribute_thirst
+      SourceID: 
+      Amount: 999
+      Max: 0
+      Permanent: 1
+    StatusID: 
+  StateOptions:
+  - OptionID: tree_trunk
+    TagObjectID: spawns_prefabs_tree_blacklotus_greatcap

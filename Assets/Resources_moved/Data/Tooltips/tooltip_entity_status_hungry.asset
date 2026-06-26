@@ -22,11 +22,11 @@ MonoBehaviour:
   Name: Hungry
   NamePlural: 
   InlineIcon: <sprite=56>
-  Description: A dire state of hunger, steadily draining Health, demanding nourishment
-    to survive.
+  Description: This entity is in the early stage of hunger and should eat food. Before
+    long, they will become starved and start to lose health.
   DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.85882354, g: 0.47058824, b: 0.09411765, a: 1}
   Type: Status
   TypeColor: {r: 0.42138356, g: 0.20671648, b: 0, a: 1}
-  Order: 1724
+  Order: 1753

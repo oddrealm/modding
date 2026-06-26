@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Relax With Drink
   NamePlural: 
   InlineIcon: <sprite=1285>
   Description: Relaxing with a drink increases happiness and will.
+  DiscoveryHint: 
   Icon: sp_job_relax_with_drink_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2450
+  Order: 2546

@@ -17,11 +17,13 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
-  MapColor: {r: 1, g: 1, b: 1, a: 1}
-  TrackByDefault: 1
   VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
   ShowIndicator: 1
+  ShowOnTooltip: 1
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -38,6 +40,7 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: Lower Health over time.
     ConditionTarget: 
@@ -48,8 +51,10 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 0
+    ActionID: 
     Buffs:
     - TargetID: attribute_health
+      SourceID: 
       Amount: -2
       Max: 0
       Permanent: 1
@@ -57,6 +62,8 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

@@ -23,35 +23,11 @@ MonoBehaviour:
   MaxIterations: 1
   MinIterations: 1
   Spawns:
-  - Comment: Sand
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.997
-    TagObjectID: 
+  - TagObjectID: 
     TagID: tag_terrain_gen_sand
-  - Comment: Coal
+    Comment: Sand
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
-    Weight: 0.001
-    TagObjectID: block_lode_coal_ore
-    TagID: 
-  - Comment: Copper
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.001
-    TagObjectID: block_lode_copper_ore
-    TagID: 
-  - Comment: New Spawn
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.001
-    TagObjectID: block_lode_tin_ore
-    TagID: 
+    Weight: 1

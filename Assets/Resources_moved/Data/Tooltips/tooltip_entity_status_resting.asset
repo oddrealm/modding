@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Rested
   Name: Rested
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1065>
   Description: Gained when entities are idle. Rested entities regain Health over
     time.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.10588236, g: 0.6666667, b: 0.28235295, a: 1}
   Type: Status
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2468
+  Order: 2586

@@ -16,9 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_tag_props
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
   TrackPlayerCanEdit: 0
-  TrackingTypes: 1
   TagGroups:
   - codex

@@ -12,21 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
   m_Name: spawns_party_merchant_ardyn_inventory
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 4081
   MaxIterations: 1
   MinIterations: 1
-  Spawns:
-  - Comment: Starting Ren
-    MinCount: 50
-    MaxCount: 500
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 1
-    TagObjectID: item_ren
-    TagID: 
+  Spawns: []

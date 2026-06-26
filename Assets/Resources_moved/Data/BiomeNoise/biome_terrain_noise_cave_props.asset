@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabe01ffe9f45bc469183b78bfdfe9ab, type: 3}
   m_Name: biome_terrain_noise_cave_props
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Frequency: 0.2
   Octaves: 3
   Lacunarity: 2
-  Persistence: 0.5
+  Persistence: 0.3
   MiddlePlateauStrength: 0
   PeakStrength: 0
   ValleyStrength: 0

@@ -50,7 +50,6 @@ MonoBehaviour:
   Attacks:
   - attack_iron_hammer_one_hand_strike
   MerchantBuyValue: 505
-  MerchantSellValue: 101
   TuneRating: 4
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -61,11 +60,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_craft_wood
+      SourceID: 
       Amount: 9
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

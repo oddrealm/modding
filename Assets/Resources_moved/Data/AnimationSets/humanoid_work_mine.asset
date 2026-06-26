@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: humanoid_work_mine
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: 1f0961e45dbbb8e47b80903da40a2533, type: 2}
   UpAnimation: {fileID: 11400000, guid: 0ebe83518b9fef64488a0cff787661a8, type: 2}

@@ -16,10 +16,11 @@ MonoBehaviour:
   TooltipID: tooltip_attack_dweller_beam_direct_energy
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
-  ProjectileType: 0
+  ProjectileType: 5
   FiringType: 0
   ActivationType: 2
   DamageType: 4
@@ -28,7 +29,7 @@ MonoBehaviour:
   AddSkillToOutput: 1
   MinAmount: 21
   MaxAmount: 120
-  Range: 14
+  Range: 144
   StatusesToApplyToTarget: []
   SourceAction: 0
   SourceAttributeID: 

@@ -28,22 +28,19 @@ MonoBehaviour:
     - rid: 0
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
-        Comment: 'Sapling: Turn Into Tree Trunk'
-        IsEnabled: 1
+        Comment: 'Sapling: Turn Into Tree Root'
         Target:
           rid: 3
         RequireAllConditionsToBeMet: 1
         Conditions:
         - rid: 4
         - rid: 5
-        - rid: 6
         Actions:
         - rid: 7
     - rid: 1
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Sapling: Dispose If Expired'
-        IsEnabled: 1
         Target:
           rid: 8
         RequireAllConditionsToBeMet: 1
@@ -55,7 +52,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Sapling: Fall'
-        IsEnabled: 1
         Target:
           rid: 11
         RequireAllConditionsToBeMet: 1
@@ -72,22 +68,16 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
         OptionID: tree_trunk
     - rid: 5
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_mature
         OptionID: tree_trunk
-    - rid: 6
-      type: {class: HasNeighborSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 0
-        NeighborPositions:
-          rid: 16
-        NeighborConditions:
-        - rid: 17
     - rid: 7
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -104,6 +94,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_expired
         OptionID: 
     - rid: 10
@@ -119,6 +110,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_can_move_to_target
         OptionID: 
     - rid: 14
@@ -134,23 +126,6 @@ MonoBehaviour:
         MinDistance: 1
         IterateToEnd: 0
         CheckAll: 0
-    - rid: 16
-      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
-      data:
-        Positions:
-        - {x: -1, y: 0, z: 0}
-        - {x: 0, y: 1, z: 0}
-        - {x: 0, y: -1, z: 0}
-        - {x: 1, y: 0, z: 0}
-        MaxDistance: 1
-        MinDistance: 1
-        IterateToEnd: 0
-        CheckAll: 0
-    - rid: 17
-      type: {class: HasBlockLayerSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        Layer: 64
     - rid: 18
       type: {class: SimPositions, ns: , asm: Assembly-CSharp}
       data:

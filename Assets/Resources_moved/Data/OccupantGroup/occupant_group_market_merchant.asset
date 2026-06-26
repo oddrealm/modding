@@ -12,13 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 632786be8b6c58c4bb860c8f91a6bbfb, type: 3}
   m_Name: occupant_group_market_merchant
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_occupant_group_market_merchant
   DEBUG: 0
+  TooltipID: tooltip_occupant_group_market_merchant
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   OccupantManageType: 1
   OccupantsMustBePlayerControlled: 0
+  CanCustomize: 0
+  NeedsAllRequirements: 0
   RequiredOccupantTagObjs:
   - TagID: tag_statuses
     TagObjectKey: entity_status_ai_merchant
+    Prohibit: 0

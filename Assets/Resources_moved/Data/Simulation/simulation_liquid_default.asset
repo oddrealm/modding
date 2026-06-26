@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Simulations:
   - rid: 1
@@ -28,7 +29,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Liquid: Fill Neighbors'
-        IsEnabled: 1
         Target:
           rid: 7
         RequireAllConditionsToBeMet: 1
@@ -41,7 +41,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: Is Empty
-        IsEnabled: 1
         Target:
           rid: 11
         RequireAllConditionsToBeMet: 1
@@ -115,7 +114,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Liquid: Freeze'
-        IsEnabled: 1
         Target:
           rid: 2072088653822427139
         RequireAllConditionsToBeMet: 1

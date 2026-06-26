@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_starting_loadout_human_rangers
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Public: 1
   CanEdit: 0

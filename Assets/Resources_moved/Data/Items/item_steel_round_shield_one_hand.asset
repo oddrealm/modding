@@ -20,6 +20,7 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_common
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 4
   UsageTags:
@@ -49,7 +50,6 @@ MonoBehaviour:
   Attacks:
   - attack_steel_round_shield_one_hand_slam
   MerchantBuyValue: 530
-  MerchantSellValue: 106
   TuneRating: 5
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -60,6 +60,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_move_speed
+      SourceID: 
       Amount: -2
       Max: 0
       Permanent: 0
@@ -68,11 +69,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_toughness
+      SourceID: 
       Amount: 8
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

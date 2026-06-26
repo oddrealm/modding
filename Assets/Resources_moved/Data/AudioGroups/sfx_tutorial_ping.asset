@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SFX:
-  - audio_sfx_alert_ding0
-  - audio_sfx_alert_ding1
+  - audio_sfx_snes_echo_19
+  - audio_sfx_snes_echo_20
+  - audio_sfx_snes_echo_22

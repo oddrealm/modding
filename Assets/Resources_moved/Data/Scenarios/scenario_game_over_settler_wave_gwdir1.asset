@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsThreat: 0
   NotifOnActivate: 
@@ -81,6 +82,7 @@ MonoBehaviour:
   Conditions: []
   PartyID: 
   IsScheduled: 0
+  Biomes: []
   ActivationChance:
     Chance: 0
     SampleSize: 0

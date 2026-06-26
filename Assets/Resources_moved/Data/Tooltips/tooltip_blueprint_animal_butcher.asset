@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Butcher Animal
   NamePlural: 
   InlineIcon: <sprite=1760>
   Description: Butcher animal for their meat, skins, or fur.
+  DiscoveryHint: 
   Icon: sp_job_animal_butcher_icon
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 863
+  Order: 841

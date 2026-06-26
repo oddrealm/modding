@@ -48,7 +48,6 @@ MonoBehaviour:
   Attacks:
   - attack_rutile_bow_two_hand_pierce
   MerchantBuyValue: 1045
-  MerchantSellValue: 209
   TuneRating: 8
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -57,5 +56,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

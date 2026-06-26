@@ -47,7 +47,6 @@ MonoBehaviour:
   PermittedSlots: []
   Attacks: []
   MerchantBuyValue: 625
-  MerchantSellValue: 125
   TuneRating: 6
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -58,11 +57,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_cold_tolerance
+      SourceID: 
       Amount: 3
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

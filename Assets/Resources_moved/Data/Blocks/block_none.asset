@@ -22,8 +22,10 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 0
   UsageTags:
   - tag_container
+  - tag_block_none
   DefaultFill: block_fill_air
   TriggerConditions: []
   Triggers: []
@@ -68,8 +70,14 @@ MonoBehaviour:
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: 
   AddSFX: 
   RemoveSFX: 
   InteractSFX: 

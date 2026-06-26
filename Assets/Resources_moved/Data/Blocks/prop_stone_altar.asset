@@ -16,9 +16,13 @@ MonoBehaviour:
   TooltipID: tooltip_prop_stone_altar
   TagIDs:
   - tag_props
+  - tag_altar
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  UsageTags: []
+  RoomQualityAdd: 54
+  UsageTags:
+  - tag_altar
   DefaultFill: block_fill_air
   TriggerConditions: []
   Triggers: []
@@ -64,8 +68,14 @@ MonoBehaviour:
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

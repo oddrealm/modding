@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Build Iron Stairs
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1337>
   Description: Stairs are faster than ladders, but they block pathing upwards from
     below.
+  DiscoveryHint: 
   Icon: sp_iron_stairs_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 515
+  Order: 488

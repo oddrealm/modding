@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_attack_wood_heater_shield_one_hand_slam
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100

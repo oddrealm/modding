@@ -19,23 +19,24 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxMembers: -1
   OrderGroup: 0
   AutoCreateUniform: 1
-  EarnBonusXPInCombat: 0
   ResearchKey: 
+  RequiredRaceID: 
+  RequiredGenderID: 
   CanBeAssigned: 1
   CanBeChanged: 1
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
   FavoursRangedAttackItems: 0
   IsCombatProfession: 0
   StartingItems: []
-  GlobalIndicator: indicator_global_thaumaturge
   SkillsActiveByDefault:
-  - skill_carry
   - skill_craft_void
+  PlayerCanEditLevelUpSkills: 0
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp:
   - skill_craft_void
+  StatusesToAdd: []
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1

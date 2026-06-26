@@ -20,17 +20,20 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Missing skill
+  NextSegment: 
+  PreviousSegment: tutorial_missing_skill1
   Trigger: 0
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
   MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks:
-  - settlers_button
   ActiveRaces: []
   PermittedWindows: []
   SelectionType: 1
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -70,4 +73,3 @@ MonoBehaviour:
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  NextSegment: 

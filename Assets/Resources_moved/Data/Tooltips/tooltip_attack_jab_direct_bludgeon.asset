@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Jab
   Name: Jab
   NamePlural: 
   InlineIcon: <sprite=315>
   Description: A swift hit with the fist.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.7725491, g: 0.6313726, b: 0.62352943, a: 1}
-  Type: 
+  Type: Attack
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1836
+  Order: 1854

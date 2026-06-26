@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Loop: 1
   FramesPerSecond: 16
@@ -28,7 +29,7 @@ MonoBehaviour:
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 2
-      Position: {x: 0, y: 2, z: 1}
+      Position: {x: 0, y: 3, z: 1}
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 4
@@ -50,7 +51,7 @@ MonoBehaviour:
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 2
-      Position: {x: 0, y: 2, z: 1}
+      Position: {x: 0, y: 3, z: 1}
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 4
@@ -94,7 +95,7 @@ MonoBehaviour:
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 2
-      Position: {x: 0, y: 1, z: 1}
+      Position: {x: 0, y: 2, z: 1}
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 4
@@ -116,7 +117,7 @@ MonoBehaviour:
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 2
-      Position: {x: 0, y: 2, z: 1}
+      Position: {x: 0, y: 3, z: 1}
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 4
@@ -138,7 +139,7 @@ MonoBehaviour:
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 2
-      Position: {x: 0, y: 2, z: 1}
+      Position: {x: 0, y: 3, z: 1}
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 4
@@ -182,7 +183,7 @@ MonoBehaviour:
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 2
-      Position: {x: 0, y: 1, z: 1}
+      Position: {x: 0, y: 2, z: 1}
       TextureOffset: {x: 1, y: 0}
       Rotation: 0
     - Point: 4

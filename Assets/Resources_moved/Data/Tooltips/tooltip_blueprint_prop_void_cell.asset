@@ -16,14 +16,17 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Build Void Cell
   NamePlural: 
   InlineIcon: <sprite=573>
-  Description: Primarily a power source for other void magic props.
+  Description: A void crystal that has been fixed in place. These are used as power
+    sources for other magical props.
+  DiscoveryHint: 
   Icon: sp_void_cell_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 766
+  Order: 765

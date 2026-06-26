@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c2bcdc6177343449fac4bab1cafddf, type: 3}
+  m_Name: item_blacklotus_greatcap_tree_seed
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_item_blacklotus_greatcap_tree_seed
+  TagIDs:
+  - tag_item_type_seed
+  - tag_item
+  - tag_can_plant_tree
+  - tag_item_rarity_common
+  DiscoveryDependencies:
+  - blueprint_plant_tree_blacklotus_greatcap_sapling
+  - blueprint_plant_tree_blacklotus_greatcap_sapling_in_room
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 10
+  UsageTags:
+  - tag_can_plant_tree
+  MaxLifeTime: 0
+  MaxDefaultSimTime: 14400
+  ItemSimulationID: simulation_item_default
+  ItemType: tag_item_type_seed
+  OnJobDisposedTagObjectID: 
+  ShowInTrackingByDefault: 0
+  IdleFX: 
+  PickUpFX: fx_block_item_picked_up
+  DropFX: fx_block_item_dropped
+  PickUpSFX: sfx_item_pick_up_soft
+  DropSFX: sfx_item_drop_soft
+  Visuals: visuals_item_blacklotus_greatcap_tree_seed
+  CharacterColorMaskID: 
+  AccessoryID: 
+  Permissions: 0
+  Prohibited: 0
+  CanStackAttacks: 1
+  FillAllSlots: 0
+  CannotBeUnequipped: 0
+  PermittedSlots: []
+  Attacks: []
+  MerchantBuyValue: 6
+  TuneRating: 0
+  ItemRarity: item_rarity_uncommon
+  DecayRate: 43200
+  DecayItem: item_waste_rotten_food
+  FlammableChance: 500
+  StackSize: 5
+  Actions:
+  - ActionID: tag_can_plant_tree
+    Buff:
+      TargetID: 
+      SourceID: 
+      Amount: 0
+      Max: 0
+      Permanent: 0
+    Status: 
+    SpawnID: plant_tree_blacklotus_greatcap_sapling
+  StateOptions: []
+  TimedActions: []

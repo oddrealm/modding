@@ -20,12 +20,12 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Fishing
-  NamePlural: 
-  InlineIcon: 
+  NamePlural: Fishing
+  InlineIcon: <sprite=58>
   Description: 
   DiscoveryHint: 
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1510
+  Order: 1498

@@ -16,14 +16,17 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Buckhorn
   NamePlural: 
   InlineIcon: <sprite=1850>
-  Description: 
-  Icon: sp_buckhorn_icon
+  Description: Buckhorn is a hardy wild herb with spear-shaped leaves and quiet restorative
+    properties, prized by travelers and healers for treating wounds and easing fatigue.
+  DiscoveryHint: 
+  Icon: sp_plant_buckhorn_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 400
+  Order: 380

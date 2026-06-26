@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Gender: female
   Race: race_snoot
@@ -40,5 +41,3 @@ MonoBehaviour:
   OrderNegativeSFX: sfx_snoot_female_order_negative
   ColorMaskID: ccm_snoot_fa0
   AnimationsID: snoot
-  ColorMask: {fileID: 11400000, guid: 6d5c0f19ec22fe44dad1d4f7ff826d78, type: 2}
-  Animations: {fileID: 11400000, guid: b1897eb7dc6788a4b9c5076dbfe4e4b5, type: 2}

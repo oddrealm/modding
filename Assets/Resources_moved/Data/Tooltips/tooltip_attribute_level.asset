@@ -16,15 +16,17 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Level
   Name: Level
   NamePlural: 
   InlineIcon: <sprite=931>
-  Description: Each entity level enhances the core skills relevant to their profession.
+  Description: Each entity level increases the core skills relevant to their profession.
     The maximum entity level is determined by the kingdom's level.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.8627451, g: 0.57254905, b: 0.078431375, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1914
+  Order: 1942

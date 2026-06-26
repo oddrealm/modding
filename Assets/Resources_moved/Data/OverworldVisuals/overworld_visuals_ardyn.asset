@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f3a63260dd3054eba2ee68ee867d93, type: 3}
   m_Name: overworld_visuals_ardyn
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 0.70850736, b: 0, a: 1}
   TextureX: 0
   TextureY: 39
   Layer: 4
   TransitionChannel: 0
   TransitionKey: 13
+  CanTransitionWithOutOfBounds: 0
   HasTransition: 0
   TailVariantCount: 6
   Animated: 0

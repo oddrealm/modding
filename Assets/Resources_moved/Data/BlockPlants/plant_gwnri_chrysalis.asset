@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_can_be_watered
   - tag_plants
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 75
   MaxLifeTime: 7920
   ReproduceTimeInterval: 1440
   MaxNaturalSpawnCount: 0
@@ -29,6 +31,7 @@ MonoBehaviour:
   MaxDefaultSimTime: 86400
   MatureThreshold: 0.5
   MatureTag: tag_mature_standing
+  AdditionalMatureTags: []
   MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 2500
   RemoveItemDrops: 
@@ -46,8 +49,8 @@ MonoBehaviour:
   MinLight: 0
   FillRequirement: 
   NeedsFertileSoil: 0
-  MaxTemp: 75
-  MinTemp: -10
+  MaxTemp: 99
+  MinTemp: -99
   PlantSimulationID: simulation_plant_surface_default
   UseLocalFaunaReproduceMod: 1
   Seasons: []
@@ -76,11 +79,14 @@ MonoBehaviour:
   - visuals_plant_gwnri_chrysalis
   RemoveFX: fx_remove_plant
   Actions:
-  - Comment: 
-    ActionID: tag_can_be_watered
+  - ActionID: tag_can_be_watered
+    Comment: 
+    TargetType: 0
     Buff:
       TargetID: attribute_thirst
+      SourceID: 
       Amount: 999
       Max: 0
       Permanent: 1
+    StatusID: 
   StateOptions: []

@@ -17,11 +17,13 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
-  MapColor: {r: 1, g: 1, b: 1, a: 1}
-  TrackByDefault: 0
   VisibleToPlayer: 1
-  ShowIndicator: 0
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 1
+  ShowIndicator: 1
+  ShowOnTooltip: 1
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -34,11 +36,34 @@ MonoBehaviour:
   - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
-  TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
+  TooltipBackgroundColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
-  Actions: []
+  MaskIsThreat: 0
+  Actions:
+  - Comment: 
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 4
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_core_skills
+      SourceID: 
+      Amount: -5
+      Max: 0
+      Permanent: 0
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

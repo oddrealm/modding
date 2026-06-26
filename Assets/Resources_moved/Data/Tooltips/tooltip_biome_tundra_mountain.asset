@@ -18,10 +18,10 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Tundra (Mountainous)
-  Name: Tundra (Mountainous)
+  Action: Mountainous Tundra
+  Name: Mountainous Tundra
   NamePlural: 
-  InlineIcon: <sprite=1217>
+  InlineIcon: <sprite=1939>
   Description: A harsh environment where even the bravest souls are often lost without
     a trace. A preferred place to call home for Ancients due to its natural ability
     to keep outsiders away.
@@ -30,4 +30,4 @@ MonoBehaviour:
   TextColor: {r: 0.78823537, g: 0.94117653, b: 0.94117653, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3302
+  Order: 2133

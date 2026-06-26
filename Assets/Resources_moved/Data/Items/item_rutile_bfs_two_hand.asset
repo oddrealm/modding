@@ -19,6 +19,7 @@ MonoBehaviour:
   - tag_can_equip
   - tag_item
   - tag_item_rarity_rare
+  - tag_raid_default_melee_weapons
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -50,7 +51,6 @@ MonoBehaviour:
   Attacks:
   - attack_rutile_bfs_two_hand_slam
   MerchantBuyValue: 1095
-  MerchantSellValue: 219
   TuneRating: 8
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -61,6 +61,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_move_speed
+      SourceID: 
       Amount: -1
       Max: 0
       Permanent: 0
@@ -69,11 +70,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_toughness
+      SourceID: 
       Amount: 18
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

@@ -17,18 +17,23 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_industry
   ResearchKey: research_ardyn_astralarium0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_astralarium
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_astralarium
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_astralarium
   DefaultAutoJobs:
   - BlueprintID: blueprint_item_astralite
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -36,7 +41,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_astrasome
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -44,7 +49,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_nyctium_boots
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -52,7 +57,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_nyctium_breastplate
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -60,7 +65,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_nyctium_brick
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -68,7 +73,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_nyctium_helmet
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -76,7 +81,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_nyctium_leggings
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -84,7 +89,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -93,7 +98,4 @@ MonoBehaviour:
     - block_none
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

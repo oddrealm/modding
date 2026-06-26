@@ -21,7 +21,9 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
   ShowIndicator: 0
+  ShowOnTooltip: 1
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 60
   ExpireTimeMinutesMax: 60
   StatusesToRemove: []
@@ -38,6 +40,7 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: Move faster / Lower HP.
     ConditionTarget: 
@@ -48,12 +51,15 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 4
+    ActionID: 
     Buffs:
     - TargetID: attribute_move_speed
+      SourceID: 
       Amount: 2
       Max: 0
       Permanent: 0
     - TargetID: attribute_health
+      SourceID: 
       Amount: 0
       Max: -25
       Permanent: 0
@@ -61,6 +67,8 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   - Comment: Regain energy over time.
     ConditionTarget: 
     HideInTooltips: 0
@@ -70,8 +78,10 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 0
+    ActionID: 
     Buffs:
     - TargetID: attribute_energy
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 1
@@ -79,6 +89,30 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Regain happiness over time.
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 5
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 0
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_happiness
+      SourceID: 
+      Amount: 1
+      Max: 0
+      Permanent: 1
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

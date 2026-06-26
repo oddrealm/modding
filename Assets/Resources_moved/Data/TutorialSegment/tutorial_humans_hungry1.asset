@@ -20,16 +20,20 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Hungry settler 1
+  NextSegment: 
+  PreviousSegment: tutorial_humans_hungry0
   Trigger: 0
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
   MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks: []
   ActiveRaces: []
   PermittedWindows: []
   SelectionType: 0
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -45,7 +49,7 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
+  Icon: 
   BackgroundMaskTarget: jobs_cmd_btn
   Message:
   - OnlyShowInputHotkey: 0
@@ -56,4 +60,3 @@ MonoBehaviour:
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  NextSegment: 

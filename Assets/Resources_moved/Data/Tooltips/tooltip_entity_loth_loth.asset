@@ -16,14 +16,18 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Loth Loth
   Name: Loth Loth
   NamePlural: Loth Loth
   InlineIcon: <sprite=534>
-  Description: 
-  Icon: 
+  Description: Despite their resemblance to rats, these subterranean creatures are
+    unrelated. The Tomek consider the Nequhtli bitter enemies and wage an endless
+    war against them in the depths of Odd.
+  DiscoveryHint: 
+  Icon: sp_entity_loth_loth
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1969
+  Order: 1990

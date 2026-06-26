@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228f405f523bdfb47880414b6c55c5d0, type: 3}
   m_Name: blueprint_category_plants
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_blueprint_category_plants
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_blueprint_category_plants
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  VisibleSelectionList: 15
+  VisibleSelectionList: 7
   VisibilityFlags: 1024
   JobNormalTxtColor: {r: 0, g: 0.5647059, b: 0.9686275, a: 1}
   JobNormalBtnColor: {r: 0, g: 0.29699793, b: 0.509434, a: 1}

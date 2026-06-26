@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Powered
   NamePlural: 
   InlineIcon: <sprite=1743>
   Description: 
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.7725491, g: 0.40000004, b: 0.7176471, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2379
+  Order: 2441

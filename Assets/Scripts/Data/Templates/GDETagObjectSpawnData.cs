@@ -10,7 +10,7 @@ public class GDETagObjectSpawnData : Scriptable
 
     public TagObjectSpawn[] Spawns;
 
-    public WeightedSpawns SpawnWeights = new WeightedSpawns();
+    public WeightedSpawns SpawnWeights = new();
 
 #if ODD_REALM_APP
     public override void OnLoaded()
@@ -39,14 +39,14 @@ public class GDETagObjectSpawnData : Scriptable
 [System.Serializable]
 public struct TagObjectSpawn
 {
+    public string TagObjectID;
+    public string TagID;
     public string Comment;
     public int MinCount;
     public int MaxCount;
     public bool LimitMaxCountByLocationItemMax;
     public bool DisableRoll;
     public float Weight;
-    public string TagObjectID;
-    public string TagID;
     [HideInInspector]
     public TagUID TagUID;
 
@@ -67,15 +67,15 @@ public class WeightedSpawns
     public int TotalWeight;
 
     [HideInInspector]
-    public List<int> SpawnWeights = new List<int>();
+    public List<int> SpawnWeights = new();
 
     [HideInInspector]
-    public List<TagObjectSpawn> Spawns = new List<TagObjectSpawn>();
+    public List<TagObjectSpawn> Spawns = new();
 
     [HideInInspector]
-    public List<TagObjectSpawn> GuaranteedSpawns = new List<TagObjectSpawn>();
+    public List<TagObjectSpawn> GuaranteedSpawns = new();
 
-    private List<TagObjectSpawn> _rollResultsCache = new List<TagObjectSpawn>();
+    private readonly List<TagObjectSpawn> _rollResultsCache = new();
 
 #if ODD_REALM_APP
     public List<TagObjectSpawn> RollRandomPool()
@@ -155,7 +155,7 @@ public class WeightedSpawns
                 continue;
             }
 
-            TagObjectSpawn spawn = new TagObjectSpawn();
+            TagObjectSpawn spawn = new();
 
             if (!string.IsNullOrEmpty(spawns[i].TagID))
             {
@@ -184,7 +184,7 @@ public class WeightedSpawns
         // If the total weight is less than 1, fill the rest with NULL to pad the pool.
         if (totalWeightNormal < (1f - float.Epsilon) && FillEmptyWeightWithNULL)
         {
-            TagObjectSpawn nullSpawn = new TagObjectSpawn();
+            TagObjectSpawn nullSpawn = new();
             nullSpawn.TagID = "";
             nullSpawn.TagUID = TagUID.NULL;
             nullSpawn.Weight = 1f - totalWeightNormal;

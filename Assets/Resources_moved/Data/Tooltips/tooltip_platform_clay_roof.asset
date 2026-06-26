@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Clay Shingle Roof
   Name: Clay Shingle Roof
   NamePlural: 
   InlineIcon: <sprite=1377>
   Description: 
+  DiscoveryHint: 
   Icon: sp_platform_clay_roof_icon
   TextColor: {r: 0.7803922, g: 0.33333334, b: 0.21176472, a: 1}
   Type: Platform
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1032
+  Order: 1045

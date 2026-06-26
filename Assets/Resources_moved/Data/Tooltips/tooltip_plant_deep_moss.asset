@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=1866>
   Description: A thick carpet-like moss which produces an odor akin to old shoes.
   DiscoveryHint: 
-  Icon: sp_deep_moss_icon
+  Icon: sp_plant_deep_moss_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1290
+  Order: 1288

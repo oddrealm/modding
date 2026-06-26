@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_blueprint_prop_wood_large_cage
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Build Wood Cage
+  Name: Build Large Wood Cage
   NamePlural: 
   InlineIcon: <sprite=887>
-  Description: Used to capture wild animals.
+  Description: Used to capture large sized animals. Use the "Capture Caged Entity"
+    job on the cage when an animal is captured.
+  DiscoveryHint: 
   Icon: sp_wood_large_cage_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 797
+  Order: 527

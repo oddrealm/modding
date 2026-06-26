@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Clear All Plants
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=8>
   Description: Clear all plants regardless of being mature or not. Mature items will
     spawn if plant is mature.
+  DiscoveryHint: 
   Icon: sp_job_clear_plants_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1059
+  Order: 1076

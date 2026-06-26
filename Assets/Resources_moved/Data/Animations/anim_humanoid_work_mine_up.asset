@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Loop: 1
   FramesPerSecond: 16
@@ -24,7 +25,7 @@ MonoBehaviour:
       type: 3}
     Accessories:
     - Point: 2
-      Position: {x: -1, y: 2, z: -1}
+      Position: {x: -1, y: 3, z: -1}
       TextureOffset: {x: 3, y: 0}
       Rotation: 0
     - Point: 1
@@ -46,7 +47,7 @@ MonoBehaviour:
       type: 3}
     Accessories:
     - Point: 2
-      Position: {x: -1, y: 2, z: -1}
+      Position: {x: -1, y: 3, z: -1}
       TextureOffset: {x: 3, y: 0}
       Rotation: 0
     - Point: 1
@@ -68,7 +69,7 @@ MonoBehaviour:
       type: 3}
     Accessories:
     - Point: 2
-      Position: {x: -1, y: 1, z: -1}
+      Position: {x: -1, y: 3, z: -1}
       TextureOffset: {x: 3, y: 0}
       Rotation: 0
     - Point: 1
@@ -85,12 +86,12 @@ MonoBehaviour:
       Rotation: 0
     Triggers: 0
     Events: 0
-    ShadowPosition: {x: -1, y: -1}
+    ShadowPosition: {x: -1, y: 0}
   - AnimSprite: {fileID: -8706365673283778019, guid: 407c2f3ec5149cf4c827fa43d521f272,
       type: 3}
     Accessories:
     - Point: 2
-      Position: {x: -1, y: 1, z: -1}
+      Position: {x: -1, y: 3, z: -1}
       TextureOffset: {x: 3, y: 0}
       Rotation: 0
     - Point: 1
@@ -107,4 +108,4 @@ MonoBehaviour:
       Rotation: 0
     Triggers: 0
     Events: 0
-    ShadowPosition: {x: -1, y: -1}
+    ShadowPosition: {x: -1, y: 0}

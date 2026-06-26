@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.078431375, g: 0, b: 0.10588236, a: 1}
   Action: 
   Name: Bedrock
   NamePlural: 
   InlineIcon: <sprite=1160>
   Description: Indestructible. What sorcery created such strong rock?
+  DiscoveryHint: 
   Icon: sp_block_bedrock_icon
   TextColor: {r: 0.4901961, g: 0.2901961, b: 0.34901962, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 282
+  Order: 256

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsThreat: 1
   NotifOnActivate: notif_insane_ancient
@@ -23,6 +24,7 @@ MonoBehaviour:
   - SpawnPointType: 2
     OverrideEntityWithNation: 0
     OverrideEntityWithFauna: 0
+    OverrideEntityWithBiomeHostiles: 0
     AutoGenEntityCount: 0
     SpawnData:
       EntityID: entity_ancient
@@ -55,6 +57,7 @@ MonoBehaviour:
   Conditions: []
   PartyID: party_insane_ancient
   IsScheduled: 1
+  Biomes: []
   ActivationChance:
     Chance: 1
     SampleSize: 20

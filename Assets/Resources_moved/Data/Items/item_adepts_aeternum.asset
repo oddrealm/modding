@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_can_equip
   - tag_item
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -46,7 +48,6 @@ MonoBehaviour:
   - item_slot_head
   Attacks: []
   MerchantBuyValue: 145
-  MerchantSellValue: 29
   TuneRating: 2
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -56,28 +57,12 @@ MonoBehaviour:
   Actions:
   - ActionID: tag_can_equip
     Buff:
-      TargetID: skill_fight_magic
-      Amount: 3
-      Max: 0
-      Permanent: 0
-    Status: 
-    SpawnID: 
-  - ActionID: tag_can_equip
-    Buff:
-      TargetID: skill_craft_void
-      Amount: 3
-      Max: 0
-      Permanent: 0
-    Status: 
-    SpawnID: 
-  - ActionID: tag_can_equip
-    Buff:
-      TargetID: skill_summoning
-      Amount: 3
-      Max: 0
+      TargetID: attribute_energy
+      SourceID: 
+      Amount: 0
+      Max: 30
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

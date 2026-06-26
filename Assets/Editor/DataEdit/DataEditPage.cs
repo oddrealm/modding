@@ -205,6 +205,7 @@ public abstract class DataEditPage
         if (GUILayout.Button("Reload Data"))
         {
             LoadAllData();
+            LoadAllClips(true);
         }
 
         GUI.color = Color.yellow;
@@ -277,7 +278,7 @@ public abstract class DataEditPage
             );
             BTN(
                 "LAST SAVE",
-                Color.white,
+                Color.dodgerBlue,
                 () =>
                 {
                     _master.LoadType = Master.QuickLoadTypes.LAST_SAVE;
@@ -321,52 +322,110 @@ public abstract class DataEditPage
             _master.LoadoutID = DROP_DOWN("Loadout", _master.LoadoutID, loadoutKeys);
             _master.NationID = DROP_DOWN("Nation", _master.NationID, nationKeys);
             _master.BiomeID = DROP_DOWN("Biome", _master.BiomeID, biomeKeys);
+            _master.RandomizeSeed = GUILayout.Toggle(_master.RandomizeSeed, "Randomize Seed");
+            _master.Seed = (uint)INT_INPUT((int)_master.Seed, "Seed");
+            _master.WorldSizeX = INT_INPUT(_master.WorldSizeX, "World Size");
+            _master.WorldSizeY = _master.WorldSizeX;
+            _master.OverworldSizeX = INT_INPUT(_master.OverworldSizeX, "Overworld Size");
+            _master.OverworldSizeY = _master.OverworldSizeX;
+            _master.NewGameElapsedTime = INT_INPUT(_master.NewGameElapsedTime, "Elapsed Time");
+            BEGIN_HOR();
+            BEGIN_VERT();
             LABEL("GUI:", Color.grey);
             _master.ShowGUIStats = GUILayout.Toggle(_master.ShowGUIStats, "Show GUI Stats");
-            _master.ShowTutorialStats = GUILayout.Toggle(
-                _master.ShowTutorialStats,
-                "Show Tutorial Stats"
-            );
-            _master.ShowSaveLoadTimesGUI = GUILayout.Toggle(
-                _master.ShowSaveLoadTimesGUI,
-                "Show Save Load Times"
-            );
+            _master.ShowActiveInput = GUILayout.Toggle(_master.ShowActiveInput, "Show Active Input");
+            _master.ShowAllInstanceTags = GUILayout.Toggle(_master.ShowAllInstanceTags, "Show All Instance Tags");
+            _master.ShowArchives = GUILayout.Toggle(_master.ShowArchives, "Show Archives");
+            _master.ShowAutoJobGUI = GUILayout.Toggle(_master.ShowAutoJobGUI, "Show Auto Job GUI");
+            if (_master.ShowAutoJobGUI)
+            {
+                _master.ShowSelectedAutoJobsOnly = GUILayout.Toggle(_master.ShowSelectedAutoJobsOnly, "Show Selected Auto Jobs Only");
+            }
             _master.ShowJobGUI = GUILayout.Toggle(_master.ShowJobGUI, "Show Job GUI");
+            _master.ShowItemGUI = GUILayout.Toggle(_master.ShowItemGUI, "Show Item GUI");
+            _master.ShowPathGUI = GUILayout.Toggle(_master.ShowPathGUI, "Show Path GUI");
+            _master.ShowProgressGUI = GUILayout.Toggle(_master.ShowProgressGUI, "Show Progress GUI");
+            _master.ShowOverworldGUI = GUILayout.Toggle(_master.ShowOverworldGUI, "Show Overworld GUI");
+            _master.ShowSaveLoadTimesGUI = GUILayout.Toggle(_master.ShowSaveLoadTimesGUI, "Show Save Load Times");
+            _master.ShowSelectionGUI = GUILayout.Toggle(_master.ShowSelectionGUI, "Show Selection GUI");
+            _master.ShowTutorialStats = GUILayout.Toggle(_master.ShowTutorialStats, "Show Tutorial Stats");
             _master.ShowWorldGUI = GUILayout.Toggle(_master.ShowWorldGUI, "Show World GUI");
-            _master.ShowProgressGUI = GUILayout.Toggle(
-                _master.ShowProgressGUI,
-                "Show Progress GUI"
-            );
-            _master.ShowAllInstanceTags = GUILayout.Toggle(
-                _master.ShowAllInstanceTags,
-                "Show All Instance Tags"
-            );
-            LABEL("Misc:", Color.grey);
-            _master.DebugTriggers = GUILayout.Toggle(_master.DebugTriggers, "Debug Triggers");
-            _master.DebugDirty = GUILayout.Toggle(_master.DebugDirty, "Debug Dirty");
-            _master.DebugWork = GUILayout.Toggle(_master.DebugWork, "Debug Work");
-            _master.DebugSkylight = GUILayout.Toggle(_master.DebugSkylight, "Debug Skylight");
-            _master.DebugEntityMovement = GUILayout.Toggle(_master.DebugEntityMovement, "Debug Entity Movement");
-            _master.DebugEntityState = GUILayout.Toggle(_master.DebugEntityState, "Debug Entity State");
+            END_VERT();
+            BEGIN_VERT();
+            LABEL("Debug:", Color.grey);
+            _master.DebugAttributes = GUILayout.Toggle(_master.DebugAttributes, "Debug Attributes");
+            _master.DebugArchives = GUILayout.Toggle(_master.DebugArchives, "Debug Archives");
+            _master.DebugAutoJobs = GUILayout.Toggle(_master.DebugAutoJobs, "Debug Auto Jobs");
+            _master.DebugAutoJobDirtyingEvents = GUILayout.Toggle(_master.DebugAutoJobDirtyingEvents, "Debug Auto Job Dirtying Events");
+            _master.DebugAutoJobScanMS = GUILayout.Toggle(_master.DebugAutoJobScanMS, "Debug Auto Job Scan MS");
+            _master.DebugBlockRebuild = GUILayout.Toggle(_master.DebugBlockRebuild, "Debug Block Rebuild");
+            _master.DebugCombat = GUILayout.Toggle(_master.DebugCombat, "Debug Combat");
+            _master.DebugCaves = GUILayout.Toggle(_master.DebugCaves, "Debug Caves");
+            _master.DebugDialogue = GUILayout.Toggle(_master.DebugDialogue, "Debug Dialogue");
             _master.DebugDiets = GUILayout.Toggle(_master.DebugDiets, "Debug Diets");
-            _master.DebugTuneRating = GUILayout.Toggle(_master.DebugTuneRating, "Debug Tune Rating");
-            if (_master.DebugTuneRating)
+            _master.DebugDirty = GUILayout.Toggle(_master.DebugDirty, "Debug Dirty");
+            _master.DebugEntityAnimation = GUILayout.Toggle(_master.DebugEntityAnimation, "Debug Entity Animation");
+            _master.DebugEntityHistory = GUILayout.Toggle(_master.DebugEntityHistory, "Debug Entity History");
+            _master.DebugEntityMovement = GUILayout.Toggle(_master.DebugEntityMovement, "Debug Entity Movement");
+            _master.DebugEntityInit = GUILayout.Toggle(_master.DebugEntityInit, "Debug Entity NPC Tuning");
+            if (_master.DebugEntityInit)
             {
                 _master.ForcedDebugTuneRating = INT_INPUT(_master.ForcedDebugTuneRating, "Forced Debug Tune Rating");
             }
-            _master.DebugBlockRebuild = GUILayout.Toggle(_master.DebugBlockRebuild, "Debug Block Rebuild");
-            _master.DebugPlants = GUILayout.Toggle(_master.DebugPlants, "Debug Plants");
-            _master.DebugParties = GUILayout.Toggle(_master.DebugParties, "Debug Parties");
-            _master.DebugCombat = GUILayout.Toggle(_master.DebugCombat, "Debug Combat");
+            _master.DebugEntitySight = GUILayout.Toggle(_master.DebugEntitySight, "Debug Entity Sight");
+            _master.DebugEntityState = GUILayout.Toggle(_master.DebugEntityState, "Debug Entity State");
             _master.DebugFishSpawn = GUILayout.Toggle(_master.DebugFishSpawn, "Debug Fish Spawn");
             _master.DebugFishing = GUILayout.Toggle(_master.DebugFishing, "Debug Fishing");
+            _master.DebugIdleJobs = GUILayout.Toggle(_master.DebugIdleJobs, "Debug Idle Jobs");
+            _master.DebugInput = GUILayout.Toggle(_master.DebugInput, "Debug Input");
+            _master.DebugItemEquipping = GUILayout.Toggle(_master.DebugItemEquipping, "Debug Item Equipping");
+            _master.DebugItems = GUILayout.Toggle(_master.DebugItems, "Debug Items");
+            _master.DebugParties = GUILayout.Toggle(_master.DebugParties, "Debug Parties");
+            _master.DebugPathfinding = GUILayout.Toggle(_master.DebugPathfinding, "Debug Pathfinding");
+            _master.DebugPlants = GUILayout.Toggle(_master.DebugPlants, "Debug Plants");
+            _master.DebugPrefabs = GUILayout.Toggle(_master.DebugPrefabs, "Debug Prefabs");
+            _master.DebugOverworldSim = GUILayout.Toggle(_master.DebugOverworldSim, "Debug Overworld Sim");
+            _master.DebugRooms = GUILayout.Toggle(_master.DebugRooms, "Debug Rooms");
+            _master.DebugRoomTracking = GUILayout.Toggle(_master.DebugRoomTracking, "Debug Room Tracking");
+            _master.DebugScenarios = GUILayout.Toggle(_master.DebugScenarios, "Debug Scenarios");
+            _master.DebugSelections = GUILayout.Toggle(_master.DebugSelections, "Debug Selections");
+            _master.DebugSkylight = GUILayout.Toggle(_master.DebugSkylight, "Debug Skylight");
+            _master.DebugTriggers = GUILayout.Toggle(_master.DebugTriggers, "Debug Triggers");
+            _master.DebugTutorial = GUILayout.Toggle(_master.DebugTutorial, "Debug Tutorial");
+            _master.DebugUniforms = GUILayout.Toggle(_master.DebugUniforms, "Debug Uniforms");
+            _master.DebugWork = GUILayout.Toggle(_master.DebugWork, "Debug Work");
+            _master.DebugWindows = GUILayout.Toggle(_master.DebugWindows, "Debug Windows");
+            END_VERT();
+            BEGIN_VERT();
+            LABEL("Misc:", Color.grey);
             _master.UnlockAllTech = GUILayout.Toggle(_master.UnlockAllTech, "Unlock All Tech");
+            _master.DeletePlayerSettings = GUILayout.Toggle(_master.DeletePlayerSettings, "Delete Player Settings On Start");
             _master.DisableSkillCheckFails = GUILayout.Toggle(_master.DisableSkillCheckFails, "Disable Skill Check Fails");
             _master.DiscoverAllCodex = GUILayout.Toggle(_master.DiscoverAllCodex, "Discover All Codex");
-            _master.RandomizeSeed = GUILayout.Toggle(_master.RandomizeSeed, "Randomize Seed");
-            _master.Seed = (uint)INT_INPUT((int)_master.Seed, "Seed");
-            _master.NewGameElapsedTime = INT_INPUT(_master.NewGameElapsedTime, "Elapsed Time");
+            _master.DisableTutorial = GUILayout.Toggle(_master.DisableTutorial, "Disable Tutorial");
+            _master.DisableSaveOnSettlementStart = GUILayout.Toggle(_master.DisableSaveOnSettlementStart, "Disable Save On Settlement Start");
+            _master.DisableBonusRen = GUILayout.Toggle(_master.DisableBonusRen, "Disable Bonus Ren");
+            _master.DisableOverworldAIActions = GUILayout.Toggle(_master.DisableOverworldAIActions, "Disable Overworld AI Actions");
+            _master.ResetTutorialOnStart = GUILayout.Toggle(_master.ResetTutorialOnStart, "Reset Tutorial On Start");
+            _master.InstantJobFinish = GUILayout.Toggle(_master.InstantJobFinish, "Instant Job Finish");
+            _master.InstantBirths = GUILayout.Toggle(_master.InstantBirths, "Instant Births");
+            _master.FastOverworldTravel = GUILayout.Toggle(_master.FastOverworldTravel, "Fast Overworld Travel");
+            _master.SelectStartPosition = GUILayout.Toggle(_master.SelectStartPosition, "Select Start Position");
+            _master.StartInvincible = GUILayout.Toggle(_master.StartInvincible, "Start Invincible");
+            END_VERT();
+            FLEX_SPACE();
+            END_HOR();
             END_INDENT();
+
+            if (_master.GameManager != null && _master.GameManager.Session != null && _master.GameManager.Session.Realm != null && _master.GameManager.Session.Realm.PlayerNation != null)
+            {
+                OverworldNation nation = _master.GameManager.Session.Realm.PlayerNation;
+                BEGIN_HOR();
+                LABEL("Level");
+                LABEL(nation.KingdomLevel);
+                BTN("Level Up", () => { nation.AddKingdomXP(nation.GetRequiredKingdomXPToLevel()); });
+                END_HOR();
+            }
 
             if (EditorGUI.EndChangeCheck())
             {
@@ -2423,15 +2482,7 @@ public abstract class DataEditPage
 
         if (data != null && data is Scriptable s)
         {
-            BTN(
-                "[]",
-                ColorUtility.selectedGold,
-                () =>
-                {
-                    SELECT(s);
-                },
-                18
-            );
+            BTN("[]", ColorUtility.selectedGold, () => { SELECT(s); }, 18);
         }
         END_HOR();
 
@@ -3098,18 +3149,16 @@ public abstract class DataEditPage
         {
             return new EntryOutput();
         }
-        Color simColor = sim.IsEnabled ? SIM_COLOR : Color.gray;
+        Color simColor = SIM_COLOR;
         int simCount = simScriptObj.Simulations.Length;
         EntryOutput simOutput = LIST_ENTRY_HEADER(
             index,
             simCount,
             sim.Comment,
             sim.DebugMaximized,
-            sim.IsEnabled,
+            true,
             simColor
         );
-
-        sim.IsEnabled = simOutput.Enabled;
 
         if (!simOutput.Expanded)
         {
@@ -3122,7 +3171,6 @@ public abstract class DataEditPage
 
         BEGIN_INDENT();
 
-        BEGIN_DISABLED(!sim.IsEnabled);
         sim.DebugBreakpoint = TOGGLE(sim.DebugBreakpoint, "Breakpoint");
 
         // Target
@@ -3137,7 +3185,6 @@ public abstract class DataEditPage
         RenderSimActions(sim, simData);
 
         END_INDENT();
-        END_DISABLED();
 
         return simOutput;
     }
@@ -3233,19 +3280,18 @@ public abstract class DataEditPage
 
         SimulationCondition[] conditions = sim.GetConditions();
 
-        Color conditionColor = condition.Enabled ? CONDITION_COLOR : Color.gray;
+        Color conditionColor = CONDITION_COLOR;
         EntryOutput output = LIST_ENTRY_HEADER(
             index,
             conditions.Length,
             condition.GetDisplayName(),
             condition.Expanded,
-            condition.Enabled,
+            true,
             conditionColor
         );
         condition.Expanded = output.Expanded;
-        condition.Enabled = output.Enabled;
 
-        if (condition.Expanded && condition.Enabled)
+        if (condition.Expanded)
         {
             BEGIN_INDENT();
 
@@ -3405,7 +3451,7 @@ public abstract class DataEditPage
                 hasInstanceCondition.TagObjectKey = TEXT_INPUT(hasInstanceCondition.TagObjectKey);
                 END_HOR();
 
-                BEGIN_HOR();
+                // BEGIN_HOR();
                 LABEL("Sim State");
                 string[] simStates = simData.GetSimStates();
 
@@ -3468,7 +3514,7 @@ public abstract class DataEditPage
                         END_INDENT();
                     }
                 }
-                END_HOR();
+                // END_HOR();
             }
             else if (condition is HasNeighborSimCondition hasNeighborCondition)
             {
@@ -4936,9 +4982,9 @@ public abstract class DataEditPage
 
     private static AudioClip[] _loadedClips;
 
-    public static AudioClip[] LoadAllClips()
+    public static AudioClip[] LoadAllClips(bool force = false)
     {
-        if (_loadedClips != null && _loadedClips.Length > 0)
+        if (_loadedClips != null && _loadedClips.Length > 0 && !force)
         {
             return _loadedClips;
         }
@@ -5024,5 +5070,28 @@ public abstract class DataEditPage
 
         //AudioUtil.StopAllPreviewClips();
         //AudioUtil.PlayPreviewClip(clip, startSample, loop);
+    }
+
+    protected void GenerateMissingTooltip(Scriptable script)
+    {
+        if (script == null) { return; }
+
+        string tooltipID = "tooltip_" + script.Key;
+        script.TooltipID = tooltipID;
+        MARK_DIRTY(script);
+
+        if (TryGetDataByID<GDETooltipsData>(tooltipID, out var tooltipData))
+        {
+            return;
+        }
+
+        tooltipData = CreateScriptableObject<GDETooltipsData>(tooltipID);
+
+        if (tooltipData == null) { return; }
+
+        string tooltipName = script.Key.Replace("_", " ");
+        tooltipName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(tooltipName);
+        tooltipData.Name = tooltipName;
+        MarkDataNeedsReload();
     }
 }

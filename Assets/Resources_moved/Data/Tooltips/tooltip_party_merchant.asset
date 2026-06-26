@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Merchants
   Name: Merchants
   NamePlural: Merchants
   InlineIcon: <sprite=698>
   Description: 
-  Icon: 
+  DiscoveryHint: 
+  Icon: sp_overworld_party_settlers_icon
   TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Type: Party
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2024
+  Order: 2062

@@ -30,7 +30,7 @@ MonoBehaviour:
       a giant of a man steps forth. He salutes you and speaks in a suprisingly high,
       squeaky voice.
     OverrideSpeaker: 1
-    OverrideSpeakerID: speaker0
+    OverrideSpeakerID: 
     Condition:
       TagRequirement0ID: 
       TagRequirement1ID: 

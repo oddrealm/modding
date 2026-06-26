@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Transitions:
   - NextState: {fileID: 11400000, guid: 1e6a859c913a2d940b7db7c995938744, type: 2}
@@ -110,7 +111,7 @@ MonoBehaviour:
     IsComplete: 0
   - NextState: {fileID: 11400000, guid: 7af7740d1c2f88647ad5c759a3ad39bf, type: 2}
     TrueFlags: 0
-    FalseFlags: 2
+    FalseFlags: 0
     Triggers: 4096
     IsComplete: 0
   - NextState: {fileID: 11400000, guid: 1ed53c1dc40bcf5479c299856c928383, type: 2}

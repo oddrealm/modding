@@ -26,7 +26,7 @@ MonoBehaviour:
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
-  ItemType: tag_item_type_refined_material
+  ItemType: tag_item_type_ore
   OnJobDisposedTagObjectID: 
   ShowInTrackingByDefault: 0
   IdleFX: 
@@ -45,7 +45,6 @@ MonoBehaviour:
   PermittedSlots: []
   Attacks: []
   MerchantBuyValue: 85
-  MerchantSellValue: 17
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -54,5 +53,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

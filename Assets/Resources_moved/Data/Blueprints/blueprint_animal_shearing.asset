@@ -21,32 +21,36 @@ MonoBehaviour:
   - skill_animal_husbandry
   - entity_status_has_wool
   - item_wool
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: -1
+  SuppressDiscoveredNotif: 0
   SkillPriorityOverride: -1
   XP: 50
-  BaseSkillCheckFailXP: 5
-  BaseSkillLevel: 1
-  AwardXPForEachAction: 0
+  BaseSkillLevel: 10
   CategoryID: blueprint_category_none
-  DesignationListOrder: -1
-  ResearchKey: research_agriculture_animals0
+  ResearchKeys:
+  - research_agriculture_animals0
+  HideInResearchWindow: 0
   Repeat: 0
   CheckStateForTransition: 0
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
-  LocationID: 
+  LocationID: tag_room_location
   WorkPosition: 0
   PermissionType: 0
   CanSitDuringJob: 0
-  WorkerID: skill_animal_husbandry
-  TargetID: entity_status_has_wool
+  WorkerID0: skill_animal_husbandry
+  WorkerID1: 
+  TargetID0: entity_status_has_wool
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
   - ActionType: 10
     ResourceID: 
@@ -55,8 +59,8 @@ MonoBehaviour:
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
+  IsInstant: 0
   ProgressWorkerAttribute: 
-  ProgressMax: 1
   ProgressBarType: 2
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
@@ -69,6 +73,7 @@ MonoBehaviour:
   SpawnCount: 5
   SpawnTagID: 
   SpawnTagObjectID: item_wool
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -77,8 +82,12 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: 
   OnItemConsumeActionID: 
+  TargetIsConsumer: 0
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
@@ -88,7 +97,6 @@ MonoBehaviour:
   - entity_status_has_wool
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
   ShowWorkOutputActionText: 0
   OnFinishedFX: 
   WorkFX: 
@@ -103,9 +111,5 @@ MonoBehaviour:
   - visuals_job_cursor_prohibited
   Visuals:
   - visuals_job_animal_shearing
-  ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0

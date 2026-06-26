@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_senescence
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Senescence
   Name: Senescence
   NamePlural: 
   InlineIcon: <sprite=1716>
   Description: 'The rapid aging of Ardyn. '
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.8207547, g: 0.375534, b: 0.6012798, a: 1}
   Type: Status
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2629
+  Order: 2743

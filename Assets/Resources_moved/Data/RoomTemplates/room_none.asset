@@ -22,14 +22,18 @@ MonoBehaviour:
   CategoryID: room_category_none
   ResearchKey: 
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_stockpile
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_stockpile
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_stockpile
   DefaultAutoJobs:
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -38,7 +42,4 @@ MonoBehaviour:
     - block_none
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

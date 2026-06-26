@@ -16,14 +16,17 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Wood Small Cage
+  Name: Small Wood Cage
   NamePlural: 
   InlineIcon: <sprite=885>
-  Description: 
+  Description: Used to capture small sized animals. Use the "Capture Caged Entity"
+    job on the cage when an animal is captured.
+  DiscoveryHint: 
   Icon: sp_wood_small_cage_icon
   TextColor: {r: 0.7411765, g: 0.5764706, b: 0.48235294, a: 1}
   Type: None
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3478
+  Order: 2814

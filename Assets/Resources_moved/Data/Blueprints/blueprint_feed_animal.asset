@@ -17,43 +17,49 @@ MonoBehaviour:
   TagIDs:
   - tag_blueprints
   DiscoveryDependencies:
-  - skill_misc
+  - tag_can_eat
+  - entity_status_hungry
+  - item_fodder
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  SkillPriorityOverride: 98
-  XP: 50
-  BaseSkillCheckFailXP: 5
-  BaseSkillLevel: 1
-  AwardXPForEachAction: 0
-  CategoryID: blueprint_category_none
   DesignationListOrder: -1
-  ResearchKey: 
+  SuppressDiscoveredNotif: 0
+  SkillPriorityOverride: 99
+  XP: 0
+  BaseSkillLevel: 0
+  CategoryID: blueprint_category_none
+  ResearchKeys:
+  - research_industry_basics0
+  HideInResearchWindow: 0
   Repeat: 0
   CheckStateForTransition: 0
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
-  LocationID: 
+  LocationID: tag_room_location
   WorkPosition: 0
   PermissionType: 0
-  CanSitDuringJob: 0
-  WorkerID: skill_misc
-  TargetID: 
+  CanSitDuringJob: 1
+  WorkerID0: entity_status_hungry
+  WorkerID1: entity_status_intelligence_non_sapient
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
-  - ActionType: 3
-    ResourceID: 
+  - ActionType: 2
+    ResourceID: item_fodder
     WorkPosition: 0
     AnimationTrigger: 0
-    AnimationHitEvent: 0
+    AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
+  IsInstant: 1
   ProgressWorkerAttribute: 
-  ProgressMax: 100
   ProgressBarType: 2
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
@@ -66,6 +72,7 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: 
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -73,23 +80,28 @@ MonoBehaviour:
   OnJobStartActionID: 
   OnJobQuitActionID: 
   OnJobFinishActionID: 
-  OnItemConsumeActionID: 
+  OnItemConsumeActionID: tag_can_eat
+  TargetIsConsumer: 1
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
   OnFinishTargetBuffs: []
   OnFinishTargetStatusAdds: []
-  OnFinishTargetStatusRemoves: []
+  OnFinishTargetStatusRemoves:
+  - entity_status_hungry
+  - entity_status_starving
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
-  ShowWorkOutputActionText: 1
+  ShowWorkOutputActionText: 0
   OnFinishedFX: 
-  WorkFX: fx_block_hit
-  WorkSFX: sfx_hammer_wood
-  OnFinishedSFX: 
+  WorkFX: 
+  WorkSFX: 
+  OnFinishedSFX: sfx_eat
   ShowVisualsOnCursor: 1
   ClearJobCursorVisuals:
   - visuals_job_cursor_clear
@@ -98,10 +110,6 @@ MonoBehaviour:
   ProhibitedCursorVisualsOverride:
   - visuals_job_cursor_prohibited
   Visuals:
-  - visuals_job_feed_animal
-  ShowVisualsIfStarted: 0
-  MaxAutoJobQueueCount: 9
-  DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0
+  - visuals_job_eat_item
+  MaxAutoJobQueueCount: 1
+  DisposeIfRequirementsNotMet: 1

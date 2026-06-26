@@ -16,15 +16,13 @@ MonoBehaviour:
   TooltipID: tooltip_input_toggle_temperature
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 2
   InputState: 4
-  DeferTo: []
   DefaultTriggers:
   - Hotkeys:
-    - Down: 1
-      Hold: 0
-      Up: 0
+    - Motion: 2
       Key: 39
       Mouse: 0
   ActiveUpdate: 0
@@ -32,7 +30,7 @@ MonoBehaviour:
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
   IsToggle: 1
-  BtnsForceActive: 1
   MaxIncrement: 1
   PlayerCanEdit: 1
+  HotkeyCountMustBeExact: 0
   PrintEvents: 0

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
+  m_Name: entity_status_ai_bee
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_entity_status_ai_bee
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIndicator: 0
+  Notification: 
+  SourceTooltipID: 
+  ExpireTimeMinutesMin: 0
+  ExpireTimeMinutesMax: 0
+  StatusesToRemove: []
+  StatusesToAddOnExpire: []
+  PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  MaskIsThreat: 0
+  Actions:
+  - Comment: Activate pollination
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 1
+    RandomChance: 0
+    ActivationAction: 6
+    DeactivationAction: 0
+    ActionID: tag_can_be_pollinated
+    Buffs: []
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Find flowers
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 45
+    RandomChance: 0
+    ActivationAction: 7
+    DeactivationAction: 0
+    ActionID: tag_mature_flower
+    Buffs: []
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 128
+  - Comment: Find Hive
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 30
+    RandomChance: 0
+    ActivationAction: 7
+    DeactivationAction: 0
+    ActionID: prop_beehive
+    Buffs: []
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds: []

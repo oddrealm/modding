@@ -20,7 +20,6 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
   TrackPlayerCanEdit: 1
-  TrackingTypes: 0
   TagGroups:
   - entity_profile
   - codex

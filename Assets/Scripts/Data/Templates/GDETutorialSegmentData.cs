@@ -5,17 +5,22 @@ public class GDETutorialSegmentData : Scriptable
 {
     public string Comment = "TUTORIAL";
 
+    [Header("On Completed")]
+    public string NextSegment;
     [Header("Requirements")]
+    public string PreviousSegment = "";
     public TutorialActivationTriggers Trigger;
+    public string CustomEventID = "";
+    public string EarlyCompleteCustomEvent = "";
     public int MinGameMinutes = -1;
     public float MinScaledPlayedTime = -1f;
     public float MinUnscaledPlayedTime = -1f;
     public float MinCooldown = -1;
-    public string[] Hooks;
     public string[] ActiveRaces;
     public string[] PermittedWindows;
     public SelectionTypes SelectionType = SelectionTypes.NONE;
     public string SelectionInputID = "";
+    public SelectionTargetTypes SelectionTargetType = SelectionTargetTypes.NONE;
     public string[] AttributeRaces;
     public string AttributeType = "";
     public int MinAttributeAmount = -1;
@@ -37,14 +42,17 @@ public class GDETutorialSegmentData : Scriptable
     public string BackgroundMaskTarget = "";
     public TutorialMessage[] Message;
 
-    [Header("On Completed")]
-    public string NextSegment;
-    public string PreviousSegment { get; private set; }
 
     public bool IsValid { get; private set; }
 
     public void SetPreviousSegment(string previousSegment)
     {
+        if (previousSegment == PreviousSegment) { return; }
+
+#if DEV_TESTING && UNITY_EDITOR
+        UnityEditor.EditorUtility.SetDirty(this);
+        Debug.LogError($"Setting previous segment of {Key} to {previousSegment}");
+#endif
         PreviousSegment = previousSegment;
     }
 

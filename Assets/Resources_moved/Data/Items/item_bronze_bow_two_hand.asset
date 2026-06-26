@@ -48,7 +48,6 @@ MonoBehaviour:
   Attacks:
   - attack_bronze_bow_two_hand_pierce
   MerchantBuyValue: 305
-  MerchantSellValue: 61
   TuneRating: 3
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -57,5 +56,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

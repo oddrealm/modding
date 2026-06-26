@@ -10,7 +10,6 @@ public struct DefaultTracking
     public bool StartDisabled;
     public bool PlayerEditDisabled;
     public string OnZeroNotif;
-    public TrackingTypes TrackingType;
 
     public readonly bool IsNULL
     {

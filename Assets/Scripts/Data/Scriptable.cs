@@ -205,7 +205,6 @@ public class Scriptable : ScriptableObject, ITagObject
     public Color TooltipTextColor { get { return TooltipData.TextColor; } }
     public Color TooltipTypeColor { get { return TooltipData.TypeColor; } }
     public int TooltipOrder { get { return TooltipData.Order; } }
-    public TooltipUID TooltipUID { get { return TooltipData.TooltipUID; } }
     #endregion
 
     public void UpdateKey()

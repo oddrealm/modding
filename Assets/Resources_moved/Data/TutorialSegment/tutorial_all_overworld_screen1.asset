@@ -20,18 +20,20 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
+  NextSegment: tutorial_all_overworld_screen2
   PreviousSegment: tutorial_all_overworld_screen0
-  Trigger: 2
+  Trigger: 0
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: 10
   MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks:
-  - minimap_buttons
   ActiveRaces: []
   PermittedWindows: []
   SelectionType: 4
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -47,7 +49,7 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
+  Icon: 
   BackgroundMaskTarget: minimap_buttons
   Message:
   - OnlyShowInputHotkey: 0
@@ -58,4 +60,3 @@ MonoBehaviour:
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  NextSegment: tutorial_all_overworld_screen2

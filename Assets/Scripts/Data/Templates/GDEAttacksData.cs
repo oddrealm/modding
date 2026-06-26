@@ -51,11 +51,21 @@ public class GDEAttacksData : Scriptable
     public Color AttackStartSourceColor;
     public float AttackStartSourceColorDuration = 0f;
     public EntityFlashTypes AttackStartSourceColorFlashType = EntityFlashTypes.OUT;
+    public const float MIN_ATTACK_RANGE = 11.4f;
 
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
         base.OnLoaded();
+
+        if (Range < MIN_ATTACK_RANGE)
+        {
+            Debug.LogError($"{Key} has range less than {MIN_ATTACK_RANGE}! Setting to {MIN_ATTACK_RANGE}.");
+            Range = Mathf.CeilToInt(MIN_ATTACK_RANGE);
+#if UNITY_EDITOR
+            UnityEditor.EditorUtility.SetDirty(this);
+#endif
+        }
 
         if (string.IsNullOrEmpty(SkillID))
         {
@@ -63,6 +73,10 @@ public class GDEAttacksData : Scriptable
             SkillID = "skill_misc";
         }
 
+        if (string.IsNullOrEmpty(TooltipType))
+        {
+            Debug.LogError($"{Key} is missing tooltip type!");
+        }
 
         if (string.IsNullOrEmpty(TargetAttributeID))
         {

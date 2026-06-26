@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item_rarity_rare
   - tag_can_use
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
@@ -35,9 +37,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_sablixian_tar
   CharacterColorMaskID: 
-  CharacterColorMask: {fileID: 0}
   AccessoryID: 
-  AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -45,9 +45,8 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_utility
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 355
-  MerchantSellValue: 71
   TuneRating: 0
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -58,11 +57,11 @@ MonoBehaviour:
   - ActionID: tag_can_use
     Buff:
       TargetID: attribute_health
+      SourceID: 
       Amount: 0
       Max: 5
       Permanent: 1
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

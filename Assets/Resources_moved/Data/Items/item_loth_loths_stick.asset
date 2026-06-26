@@ -19,7 +19,9 @@ MonoBehaviour:
   - tag_item_rarity_epic
   - tag_item
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
@@ -43,11 +45,9 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_loth_loths_stick
   Attacks:
   - attack_loth_loths_stick_strike
   MerchantBuyValue: 5145
-  MerchantSellValue: 1029
   TuneRating: -1
   ItemRarity: item_rarity_epic
   DecayRate: -1
@@ -56,5 +56,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

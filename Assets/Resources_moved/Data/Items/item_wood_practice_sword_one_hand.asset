@@ -48,7 +48,6 @@ MonoBehaviour:
   Attacks:
   - attack_wood_practice_sword_one_hand_strike
   MerchantBuyValue: 60
-  MerchantSellValue: 12
   TuneRating: 1
   ItemRarity: item_rarity_common
   DecayRate: -1
@@ -57,5 +56,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

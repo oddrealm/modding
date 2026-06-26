@@ -27,7 +27,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: Aging
-        IsEnabled: 1
         Target:
           rid: 3977580378903281905
         RequireAllConditionsToBeMet: 1

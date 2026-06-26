@@ -21,6 +21,7 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 97
   UsageTags:
   - tag_container
   DefaultFill: block_fill_air
@@ -32,8 +33,9 @@ MonoBehaviour:
   RotationFixtureKey: 
   SkillLevel: 3
   Toughness: 0
-  MaxItemCount: 144
-  ItemTypePermissions: []
+  MaxItemCount: 255
+  ItemTypePermissions:
+  - tag_item_type_trinket
   CanShowItems: 0
   RestrictItemsToSameKey: 0
   DecayBuff: 2880
@@ -68,8 +70,14 @@ MonoBehaviour:
   HasItemsOffsetY: 1
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 2
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

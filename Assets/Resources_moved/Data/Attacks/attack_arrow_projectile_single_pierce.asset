@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_attack_arrow_projectile_single_pierce
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
@@ -27,7 +28,7 @@ MonoBehaviour:
   SkillID: skill_fight_range
   AddSkillToOutput: 1
   MinAmount: 1
-  MaxAmount: 2
+  MaxAmount: 4
   Range: 128
   StatusesToApplyToTarget: []
   SourceAction: 0

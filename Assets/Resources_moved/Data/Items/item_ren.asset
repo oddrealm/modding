@@ -46,8 +46,7 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots: []
   Attacks: []
-  MerchantBuyValue: 5
-  MerchantSellValue: 1
+  MerchantBuyValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -56,5 +55,4 @@ MonoBehaviour:
   StackSize: 50
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

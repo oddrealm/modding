@@ -12,20 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_attribute_happiness
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Will
-  Name: Will
+  Action: Spirit
+  Name: Spirit
   NamePlural: 
   InlineIcon: <sprite=506>
-  Description: How happy an entity is. Low Will may cause Entities to go mad or leave
-    the settlement.
+  Description: "Spirit reflects an entity\u2019s overall happiness and changes over
+    time based on morale. Happy entities gain bonuses to core skills, while unhappy
+    entities suffer penalties."
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 0.39607847, g: 0.10980393, b: 0.56078434, a: 1}
+  TextColor: {r: 0.46996292, g: 0.21568626, b: 0.77254903, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3250
+  Order: 2866

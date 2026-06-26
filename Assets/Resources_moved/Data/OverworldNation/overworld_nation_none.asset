@@ -12,26 +12,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8357e10c2c4548d4ea8f91b8c73161d2, type: 3}
   m_Name: overworld_nation_none
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_overworld_nation_none
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_overworld_nation_none
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  NewGameOrder: 0
   ShowOnMap: 0
   PlayerCanChoose: 0
   Unlocked: 0
   Banner: 
   BannerColor: {r: 1, g: 1, b: 1, a: 1}
+  CaravanIcon: sp_caravan_human_icon
   KingdomIcon: 
   SettlementIcon: 
+  KingdomSpriteID: 
+  SettlementSpriteID: 
+  NationTypeDisplay: Kingdom
   OverworldVisuals: 
   BorderVisuals: 
+  RaidSpawnGroupID: spawns_raid_default
   Loadouts: []
-  Races: []
+  Races:
+  - race_cat
   DiscoveredRaces: []
+  RaidEventEntityIDs: []
+  VictoryRaidDialogueIDs:
+  - dialogue_raid_default_victory0
+  - dialogue_raid_default_victory1
+  - dialogue_raid_default_victory2
+  - dialogue_raid_default_victory3
+  - dialogue_raid_default_victory4
+  - dialogue_raid_default_victory5
+  DefeatRaidDialogueIDs:
+  - dialogue_raid_default_defeat0
   GenerateSettlementNameKey: 
   GenerateKingdomNameKey: 
+  GameOverScenarios:
+  - scenario_settler_wave
   ChanceToSendMerchant: 0
   MerchantPartyID: 0
   ChanceToMigrate: 0
@@ -49,3 +68,42 @@ MonoBehaviour:
   DiplomaticTuning: []
   MaxLeaders: 0
   Leaders: []
+  RevealDepthOnSettlementStart: -1
+  Actions:
+  - ActionID: start_settlement
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_wood_log
+      Amount: 20
+    - ItemID: item_stone_chunk
+      Amount: 10
+  - ActionID: claim_territory
+    KingdomPointCost: 1
+    ItemRequirements: []
+  - ActionID: build_road
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_stone_chunk
+      Amount: 50
+  LeaderSpawnData:
+    EntityID: 
+    ProfessionID: 
+    FactionID: 
+    GenderID: 
+    TuningID: 
+    AppearanceID: 
+    AgeType: 0
+    StartingAgeMins: 0
+    Tag: 
+    Count: 0
+    Chance:
+      Chance: 0
+      SampleSize: 0
+    SpawnScenario: 
+    AutoGenEquipment: 0
+    AutoGenInventory: 0
+    DisableItemEquipFromTuning: 0
+    EquippedItems: []
+    InventoryItems: []
+    AddedStatuses: []
+  Perks: []

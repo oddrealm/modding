@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_can_equip
   - tag_item_rarity_legendary
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -45,12 +47,10 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_axeward_two_hand
   Attacks:
   - attack_axeward_two_hand_strike
   MerchantBuyValue: 1005
-  MerchantSellValue: 201
-  TuneRating: -1
+  TuneRating: 9
   ItemRarity: item_rarity_legendary
   DecayRate: -1
   DecayItem: 
@@ -60,11 +60,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_mine
+      SourceID: 
       Amount: 18
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

@@ -12,10 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bbd2cf8d9e60a40b72614a6e504830, type: 3}
   m_Name: sfx_gwdir_male_order_positive
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  SFX: []
+  PitchOverride: 1.1
+  SFX:
+  - audio_sfx_select_male_hmm_question_00
+  - audio_sfx_select_male_hmm_question_01
+  - audio_sfx_select_male_hmm_question_02
+  - audio_sfx_select_male_hmm_question_03
+  - audio_sfx_select_male_ah_00
+  - audio_sfx_select_male_ah_01
+  - audio_sfx_select_male_ah_02
+  - audio_sfx_select_male_ah_03
+  - audio_sfx_select_male_yea_00
+  - audio_sfx_select_male_yea_01
+  - audio_sfx_select_male_yea_02
+  - audio_sfx_select_male_yea_03
+  - audio_sfx_select_male_yea_04
+  - audio_sfx_select_male_huh_00
+  - audio_sfx_select_male_huh_01
+  - audio_sfx_select_male_huh_02
+  - audio_sfx_select_male_huh_03

@@ -19,7 +19,9 @@ MonoBehaviour:
   - tag_can_equip
   - tag_item
   - tag_item_rarity_uncommon
+  - tag_raid_default_melee_weapons
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 3
   UsageTags:
@@ -50,7 +52,6 @@ MonoBehaviour:
   - attack_iron_flail_one_hand_strike
   - attack_iron_flail_one_hand_pierce
   MerchantBuyValue: 505
-  MerchantSellValue: 101
   TuneRating: 4
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -59,5 +60,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

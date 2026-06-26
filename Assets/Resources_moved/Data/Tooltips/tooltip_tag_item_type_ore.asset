@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Ores
-  Name: Ores
-  NamePlural: 
+  Action: 
+  Name: Ore
+  NamePlural: Ores
   InlineIcon: <sprite=1523>
   Description: 
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.3896404, g: 0.50614095, b: 0.6226415, a: 1}
-  Type: Type
+  Type: Item Type
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2188
+  Order: 2257

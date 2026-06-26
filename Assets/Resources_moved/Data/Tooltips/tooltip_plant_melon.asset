@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=1875>
   Description: 
   DiscoveryHint: 
-  Icon: sp_melon_icon
+  Icon: sp_plant_melon_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2035
+  Order: 2044

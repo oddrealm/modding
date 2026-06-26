@@ -20,17 +20,21 @@ MonoBehaviour:
   - tag_can_be_time_weaved
   - tag_plants
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 75
   MaxLifeTime: 7920
   ReproduceTimeInterval: 1440
-  MaxNaturalSpawnCount: 32
-  MaxNaturalReproduceCount: 128
+  MaxNaturalSpawnCount: 16
+  MaxNaturalReproduceCount: 64
   ReproductionPlant: plant_nyctoid
   MaxDefaultSimTime: 86400
   MatureThreshold: 0.5
   MatureTag: tag_mature_nyctoid
+  AdditionalMatureTags: []
   MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 2500
+  MaxHeight: -1
   RemoveItemDrops: 
   MatureItemDrops: spawns_plant_mature_drops_nyctoid
   MatureTagObjectSpawn: 
@@ -76,11 +80,14 @@ MonoBehaviour:
   - visuals_plant_nyctoid
   RemoveFX: fx_remove_plant
   Actions:
-  - Comment: 
-    ActionID: tag_can_be_time_weaved
+  - ActionID: tag_can_be_time_weaved
+    Comment: 
+    TargetType: 0
     Buff:
       TargetID: attribute_thirst
+      SourceID: 
       Amount: 999
       Max: 0
       Permanent: 1
+    StatusID: 
   StateOptions: []

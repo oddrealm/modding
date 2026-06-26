@@ -50,7 +50,6 @@ MonoBehaviour:
   Attacks:
   - attack_steel_pickaxe_two_hand_strike
   MerchantBuyValue: 525
-  MerchantSellValue: 105
   TuneRating: 5
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -61,11 +60,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_mine
+      SourceID: 
       Amount: 25
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

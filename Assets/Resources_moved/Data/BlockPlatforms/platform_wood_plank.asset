@@ -18,8 +18,11 @@ MonoBehaviour:
   - tag_settlement_start_raft
   - tag_platform
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 11
   Index: 10
+  IsFertile: 0
   Visuals: visuals_platform_wood_plank
   PhysicsHeatPass: 0.05
   HasMeltThreshold: 0
@@ -43,3 +46,4 @@ MonoBehaviour:
   BaseHealth: 25
   BaseToughness: 0
   ItemDropGroupID: spawns_platform_wood_plank
+  UsageTagIDs: []

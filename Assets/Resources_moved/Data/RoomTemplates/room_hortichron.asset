@@ -17,12 +17,17 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_agriculture
   ResearchKey: research_ardyn_hortichron0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_hortichron
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_hortichron
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_hortichron
   DefaultAutoJobs:
@@ -44,7 +49,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -54,22 +59,19 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_plant_chronoblast
     Settings:
-      Priority: 1
-      AutoJobType: 1
+      Priority: 0
+      AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   - BlueprintID: blueprint_plant_nyctoid
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 0

@@ -18,7 +18,9 @@ MonoBehaviour:
   - tag_biome_props_desert
   - tag_props
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 55
   UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions: []
@@ -65,8 +67,14 @@ MonoBehaviour:
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_chop_wood

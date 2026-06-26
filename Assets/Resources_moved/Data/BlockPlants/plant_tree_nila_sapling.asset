@@ -21,7 +21,9 @@ MonoBehaviour:
   - tag_can_be_watered
   - tag_plants
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 25
   MaxLifeTime: 7200
   ReproduceTimeInterval: 1440
   MaxNaturalSpawnCount: 8
@@ -30,7 +32,8 @@ MonoBehaviour:
   MaxDefaultSimTime: 864000
   MatureThreshold: 0.5
   MatureTag: tag_mature_tree
-  MatureInlineIcon: <sprite=9>
+  AdditionalMatureTags: []
+  MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 2500
   RemoveItemDrops: spawns_plant_remove_drops_default
   MatureItemDrops: 
@@ -77,13 +80,16 @@ MonoBehaviour:
   - visuals_plant_tree_nila_sapling
   RemoveFX: fx_remove_plant
   Actions:
-  - Comment: 
-    ActionID: tag_can_be_watered
+  - ActionID: tag_can_be_watered
+    Comment: 
+    TargetType: 0
     Buff:
       TargetID: attribute_thirst
+      SourceID: 
       Amount: 999
       Max: 0
       Permanent: 1
+    StatusID: 
   StateOptions:
   - OptionID: tree_trunk
     TagObjectID: spawns_prefabs_tree_nila

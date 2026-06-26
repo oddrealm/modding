@@ -5,7 +5,6 @@ public class GDETooltipsData : Scriptable
 {
     public override GDETooltipsData TooltipData { get { return this; } }
 
-    public new TooltipUID TooltipUID { get; private set; }
     public string Action = string.Empty;
     public string Name = string.Empty;
     public string NamePlural = string.Empty;
@@ -97,7 +96,13 @@ public class GDETooltipsData : Scriptable
 
     public override void OnLoaded()
     {
-        TooltipUID = TooltipUID.Next();
+#if UNITY_EDITOR
+        if (TextColor == Color.white)
+        {
+            TextColor = UIPretty.UI_LIGHT_BEIGE_COLOR;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+#endif
 
         base.OnLoaded();
     }

@@ -27,7 +27,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: Gravity
-        IsEnabled: 1
         Target:
           rid: 3977580178340315137
         RequireAllConditionsToBeMet: 1
@@ -53,6 +52,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: block_state_can_fall
         OptionID: 
     - rid: 8621546761653846020

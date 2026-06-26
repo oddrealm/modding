@@ -28,7 +28,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: Gravity
-        IsEnabled: 1
         Target:
           rid: 3977580206250000385
         RequireAllConditionsToBeMet: 1
@@ -45,6 +44,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: item_state_can_fall
         OptionID: 
     - rid: 3977580206250000387
@@ -67,7 +67,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: Expire
-        IsEnabled: 1
         Target:
           rid: 5668703833841467456
         RequireAllConditionsToBeMet: 1
@@ -84,6 +83,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: item_state_expired
         OptionID: 
     - rid: 5668703833841467458

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d93561218bf8945bab29bee26c6f17, type: 3}
   m_Name: global_stat_xp_mod
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_global_stat_xp_mod
   DEBUG: 0
+  TooltipID: tooltip_global_stat_xp_mod
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  DefaultValue: 100
+  DefaultValue: 0
   DisplayType: 4

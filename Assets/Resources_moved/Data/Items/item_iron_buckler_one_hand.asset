@@ -20,6 +20,7 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 3
   UsageTags:
@@ -49,7 +50,6 @@ MonoBehaviour:
   Attacks:
   - attack_iron_buckler_one_hand_slam
   MerchantBuyValue: 505
-  MerchantSellValue: 101
   TuneRating: 4
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -60,6 +60,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_toughness
+      SourceID: 
       Amount: 6
       Max: 0
       Permanent: 0
@@ -68,11 +69,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_evasion
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

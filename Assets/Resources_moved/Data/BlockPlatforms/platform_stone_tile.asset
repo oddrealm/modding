@@ -16,9 +16,13 @@ MonoBehaviour:
   TooltipID: tooltip_platform_stone_tile
   TagIDs:
   - tag_platform
+  - tag_dungeon_default_corridor
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 11
   Index: 9
+  IsFertile: 0
   Visuals: visuals_platform_stone_tile
   PhysicsHeatPass: 0.05
   HasMeltThreshold: 0
@@ -30,6 +34,7 @@ MonoBehaviour:
   MovementCost: -1
   IsRoof: 0
   CanGrowPlants: 0
+  AllowNaturalPlantGrowth: 0
   GrowTime: -1
   GrowLightReq: -1
   BlocksCursorRaycast: 1
@@ -42,3 +47,4 @@ MonoBehaviour:
   BaseHealth: 50
   BaseToughness: 0
   ItemDropGroupID: spawns_platform_stone_tile
+  UsageTagIDs: []

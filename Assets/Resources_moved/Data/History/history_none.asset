@@ -12,14 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1fbe9d986f0ef48aace51b354888fc, type: 3}
   m_Name: history_none
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  CanBeRandomHistory: 0
-  AutoPopulateTooltipPoolCount: 0
-  HistoryType: 2
-  RestrictedIntelligenceTypes: 2
-  RestrictedRaces: []
+  GroupID: 
+  RequirementTagObjIDs: []
+  Displays: []
+  MaxOccurrences: 0
+  ChanceToOccur:
+    Chance: 1
+    SampleSize: 100
+  MinRequiredTime: -1
+  MaxRequiredTime: -1
+  Buffs: []
+  StatusesToAdd: []
+  StatusesToRemove: []
+  DisabledFeatures: []

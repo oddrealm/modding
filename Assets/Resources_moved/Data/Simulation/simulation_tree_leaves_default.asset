@@ -16,32 +16,19 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Simulations:
-  - rid: 0
   - rid: 1
   - rid: 2
   - rid: 3
   references:
     version: 2
     RefIds:
-    - rid: 0
-      type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
-      data:
-        Comment: 'Leaves: Dispose If In Obstruction'
-        IsEnabled: 1
-        Target:
-          rid: 4
-        RequireAllConditionsToBeMet: 1
-        Conditions:
-        - rid: 5
-        Actions:
-        - rid: 6
     - rid: 1
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: Is Expired
-        IsEnabled: 1
         Target:
           rid: 7
         RequireAllConditionsToBeMet: 1
@@ -53,7 +40,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Leaves: Grow Leaves'
-        IsEnabled: 1
         Target:
           rid: 10
         RequireAllConditionsToBeMet: 1
@@ -67,7 +53,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Leaves: Turn Into Trunk'
-        IsEnabled: 1
         Target:
           rid: 15
         RequireAllConditionsToBeMet: 1
@@ -78,19 +63,6 @@ MonoBehaviour:
         Actions:
         - rid: 19
         - rid: 20
-    - rid: 4
-      type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
-      data:
-        TargetPositions:
-          rid: 21
-    - rid: 5
-      type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-    - rid: 6
-      type: {class: DisposeSimAction, ns: , asm: Assembly-CSharp}
-      data:
-        DebugBreakpoint: 0
     - rid: 7
       type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
       data:
@@ -100,6 +72,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_expired
         OptionID: 
     - rid: 10
@@ -111,18 +84,21 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
         OptionID: tree_leaves
     - rid: 12
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_can_reproduce
         OptionID: tree_leaves
     - rid: 13
       type: {class: MaxGroupRadiusSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         MaxRadiusPercent: 2
     - rid: 14
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
@@ -140,6 +116,7 @@ MonoBehaviour:
       type: {class: HasNeighborSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         NeighborPositions:
           rid: 25
         NeighborConditions:
@@ -148,12 +125,14 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_can_reproduce
         OptionID: tree_trunk
     - rid: 18
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
         OptionID: tree_trunk
     - rid: 19
@@ -170,15 +149,6 @@ MonoBehaviour:
         StateID: plant_spawn
         OptionID: tree_trunk
         UseGroupUID: 1
-    - rid: 21
-      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
-      data:
-        Positions:
-        - {x: 0, y: 0, z: 0}
-        MaxDistance: 1
-        MinDistance: 1
-        IterateToEnd: 0
-        CheckAll: 0
     - rid: 22
       type: {class: SimPositions, ns: , asm: Assembly-CSharp}
       data:
@@ -223,6 +193,7 @@ MonoBehaviour:
       type: {class: HasInstanceSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         TagObjectKey: 
         StateID: plant_has_tag_object_ID
         OptionID: tree_trunk

@@ -25,7 +25,7 @@ MonoBehaviour:
   Description: 
   DiscoveryHint: 
   Icon: sp_block_snow_icon
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  Type: Block
+  TextColor: {r: 0.8392157, g: 0.7490196, b: 0.654902, a: 1}
+  Type: Fill
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2777
+  Order: 2813

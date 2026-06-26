@@ -150,6 +150,11 @@ public readonly struct LocationUID : IEquatable<LocationUID>
         }
     }
 
+    public BlockPoint ToBlockPoint()
+    {
+        return new BlockPoint(x, y, z);
+    }
+
     public static BlockPoint ToBlockPoint(LocationUID locationUID)
     {
         return new BlockPoint(locationUID.x,
@@ -325,6 +330,26 @@ public readonly struct LocationUID : IEquatable<LocationUID>
         return origin;
     }
 
+    public static LocationUID GetCardinalNeighbor(LocationUID origin, int i)
+    {
+        switch (i)
+        {
+            case 0:
+                return North(origin);
+            case 1:
+                return East(origin);
+            case 2:
+                return South(origin);
+            case 3:
+                return West(origin);
+            case 4:
+                return Up(origin);
+            case 5:
+                return Down(origin);
+        }
+
+        return origin;
+    }
     public override string ToString()
     {
         if (IsNULL) { return "[NULL]"; }

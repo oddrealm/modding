@@ -16,15 +16,17 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Chaga Fruit
   NamePlural: 
   InlineIcon: <sprite=1859>
-  Description: It is curious plant that smells of cinnamon and whose fruit tastes
-    like cream and honey.
-  Icon: sp_chaga_fruit_icon
+  Description: 'It is a curious plant that smells of cinnamon and whose fruit tastes
+    like cream and honey. '
+  DiscoveryHint: 
+  Icon: sp_plant_chaga_fruit_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 981
+  Order: 972

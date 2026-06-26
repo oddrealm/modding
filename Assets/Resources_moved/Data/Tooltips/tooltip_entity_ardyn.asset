@@ -22,10 +22,14 @@ MonoBehaviour:
   Name: Ardyn
   NamePlural: Ardyn
   InlineIcon: <sprite=241>
-  Description: 
+  Description: The Ardyn are a feared and mistrusted race. Their rapid aging combined
+    with the inherent ability to siphon the life-force from other entities has produced
+    a culture intent on the dominance and subjugation of others. Their profound understanding
+    of void magic and the construction of beautiful works of art is often overshadowed
+    by their brutal nature.
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_ardyn
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 203
+  Order: 170

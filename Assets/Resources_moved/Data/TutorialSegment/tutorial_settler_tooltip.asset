@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a00dbda15e8c40b27f028ea2a5e51, type: 3}
+  m_Name: tutorial_settler_tooltip
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_tutorial_settler_tooltip
+  TagIDs:
+  - tag_tutorial
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Comment: Jobs 1
+  NextSegment: 
+  PreviousSegment: tutorial_settler_orders_move
+  Trigger: 11
+  CustomEventID: 
+  EarlyCompleteCustomEvent: showing_settler_window
+  MinGameMinutes: -1
+  MinScaledPlayedTime: -1
+  MinUnscaledPlayedTime: 1
+  MinCooldown: -1
+  ActiveRaces: []
+  PermittedWindows: []
+  SelectionType: 1
+  SelectionInputID: 
+  SelectionTargetType: 1
+  AttributeRaces: []
+  AttributeType: 0
+  MinAttributeAmount: -1
+  MaxAttributeAmount: -1
+  ItemIDs: []
+  ItemConditionType: 1
+  ItemMinCount: -1
+  ConstructionCategoryType: 0
+  MinRoomCount: -1
+  MinProductionRoomCount: -1
+  MinAutoJobCount: -1
+  ProfessionCount: -1
+  ProfessionID: 
+  SkillID: 
+  Speaker: Darby, the Historian
+  Icon: 
+  BackgroundMaskTarget: entity_tooltip
+  Message:
+  - OnlyShowInputHotkey: 0
+    InputID: 
+    TagObjectID: 
+    Body: Important entity info is shown on this tooltip.\nAdditional info such as
+      history and uniforms can be seen by opening the entity window with
+    NewLine: 0
+    UseOverrideColor: 0
+    OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
+  - OnlyShowInputHotkey: 1
+    InputID: input_command_open_entity_overlay
+    TagObjectID: 
+    Body: 
+    NewLine: 0
+    UseOverrideColor: 0
+    OverrideColor: {r: 0, g: 0, b: 0, a: 0}

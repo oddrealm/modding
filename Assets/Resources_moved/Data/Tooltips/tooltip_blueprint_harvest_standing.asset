@@ -21,11 +21,11 @@ MonoBehaviour:
   Action: 
   Name: Harvest Crop
   NamePlural: 
-  InlineIcon: <sprite=1183>
+  InlineIcon: <sprite=1182>
   Description: Collect items from mature crop plants
   DiscoveryHint: 
   Icon: sp_job_harvest_plant_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1668
+  Order: 1676

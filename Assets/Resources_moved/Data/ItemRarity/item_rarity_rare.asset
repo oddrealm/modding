@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5adf3d9d82a1e7541b0268fc4d753467, type: 3}
   m_Name: item_rarity_rare
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_item_rarity_rare
   DEBUG: 0
+  TooltipID: tooltip_item_rarity_rare
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   RarityScore: 2
+  SpawnCountTuningMax: 5
   DisposeIfCannotSpawn: 0
+  IsAvailableInCustomLoadout: 0

@@ -17,42 +17,45 @@ MonoBehaviour:
   TagIDs:
   - tag_blueprints
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: 7
+  SuppressDiscoveredNotif: 0
   SkillPriorityOverride: -1
   XP: 12
-  BaseSkillCheckFailXP: 5
-  BaseSkillLevel: 1
-  AwardXPForEachAction: 0
+  BaseSkillLevel: 10
   CategoryID: blueprint_category_jobs
-  DesignationListOrder: 1
-  ResearchKey: research_industry_basics0
+  ResearchKeys:
+  - research_industry_basics0
   Repeat: 0
   CheckStateForTransition: 1
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 1
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
   LocationID: 
   WorkPosition: 0
   PermissionType: 536870912
   CanSitDuringJob: 0
-  WorkerID: skill_misc
-  TargetID: 
+  WorkerID0: skill_misc
+  WorkerID1: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
   - ActionType: 3
     ResourceID: 
     WorkPosition: 0
-    AnimationTrigger: 1
+    AnimationTrigger: 0
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
+  IsInstant: 1
   ProgressWorkerAttribute: 
-  ProgressMax: 100
   ProgressBarType: 2
   ProgressFXMaxX: 146
   ProgressFXMinX: 146
@@ -65,6 +68,7 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: 
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -73,8 +77,12 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: 
   OnItemConsumeActionID: 
+  TargetIsConsumer: 0
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
@@ -83,11 +91,10 @@ MonoBehaviour:
   OnFinishTargetStatusRemoves: []
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
-  ShowWorkOutputActionText: 1
+  ShowWorkOutputActionText: 0
   OnFinishedFX: 
-  WorkFX: fx_block_hit
-  WorkSFX: sfx_chop_wood
+  WorkFX: 
+  WorkSFX: 
   OnFinishedSFX: 
   ShowVisualsOnCursor: 1
   ClearJobCursorVisuals:
@@ -98,9 +105,5 @@ MonoBehaviour:
   - visuals_job_cursor_prohibited
   Visuals:
   - visuals_job_repair
-  ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0

@@ -20,16 +20,20 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
+  NextSegment: tutorial_all_overworld_screen3
+  PreviousSegment: tutorial_all_overworld_screen1
   Trigger: 0
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
   MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks: []
   ActiveRaces: []
   PermittedWindows: []
   SelectionType: 4
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -45,42 +49,13 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
+  Icon: sp_biome_taiga_icon
   BackgroundMaskTarget: 
   Message:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: You can also use the hotkeys.
+    Body: Each tile represents a biome with unique terrain, flora, and fauna.
     NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: 'Zoom In:'
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 1
-    InputID: input_command_zoom_in
-    TagObjectID: 
-    Body: 
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: 'Zoom Out:'
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0.44705883, g: 0.35686275, b: 0.30588236, a: 1}
-  - OnlyShowInputHotkey: 1
-    InputID: input_command_zoom_out
-    TagObjectID: 
-    Body: 
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  NextSegment: 

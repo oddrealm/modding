@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_block_kwlix
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Kwlix
@@ -24,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1735>
   Description: 'Gwdir homes often use Kwlix as their walls. Surprisingly, they''re
     quite cozy. '
+  DiscoveryHint: 
   Icon: sp_block_kwlix_icon
   TextColor: {r: 0.22352943, g: 0.7137255, b: 0.7411765, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1545
+  Order: 1929

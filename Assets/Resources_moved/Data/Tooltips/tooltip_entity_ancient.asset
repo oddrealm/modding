@@ -22,10 +22,12 @@ MonoBehaviour:
   Name: Ancient
   NamePlural: Ancients
   InlineIcon: <sprite=240>
-  Description: 
+  Description: The Ancients used the Void to achieve immortality while sacrificing
+    their living forms. Although extremely powerful, their inability to procreate
+    has resulted in their numbers dwindling over the last 500 years.
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_ancient
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 147
+  Order: 110

@@ -48,8 +48,7 @@ MonoBehaviour:
   - item_slot_legs
   Attacks: []
   MerchantBuyValue: 60
-  MerchantSellValue: 12
-  TuneRating: 1
+  TuneRating: 0
   ItemRarity: item_rarity_common
   DecayRate: -1
   DecayItem: 
@@ -59,6 +58,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_cold_tolerance
+      SourceID: 
       Amount: 3
       Max: 0
       Permanent: 0
@@ -67,11 +67,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_toughness
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

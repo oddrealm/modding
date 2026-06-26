@@ -8,6 +8,9 @@ public class GDEAttributesData : Scriptable
     public int StartMin = 0;
     public int StartDefault = 0;
     public int StartMax = 0;
+    public bool GlobalBuffsAffectMax = false;
+    public int GlobalBuffMultiplier = 1;
+    public bool CanBeKingdomLevelBuff = false;
     public bool StartMaxIsStartBase = false;
     public bool ShowPositiveAndNegativeSign = false;
     public AttributeDisplayTypes DisplayType = AttributeDisplayTypes.AMOUNT;

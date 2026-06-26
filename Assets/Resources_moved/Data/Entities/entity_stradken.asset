@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_entity_stradken
-  TagIDs: []
+  TagIDs:
+  - tag_entity_size_large
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -22,11 +23,9 @@ MonoBehaviour:
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
-  SizeTagID: tag_entity_size_medium
+  SizeTagID: tag_entity_size_large
   LanguagesSpoken:
   - language_engel
-  DefaultLeaderRoles:
-  - 
   CompanionType: 1
   CompanionPermanenceType: -1
   ReproductionType: 1
@@ -216,6 +215,21 @@ MonoBehaviour:
   - ProfessionID: profession_blacksmith
     CanAssign: 1
     CanSpawnWith: 1
+  - ProfessionID: profession_king
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_queen
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_chief
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_dominus
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_primarch
+    CanAssign: 1
+    CanSpawnWith: 1
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -299,11 +313,11 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 40
+    StartingBase: 120
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level
-    StartingBase: 1
+    StartingBase: 0
   - AttributeID: attribute_move_speed
     StartingBase: 24
   - AttributeID: attribute_none
@@ -320,5 +334,7 @@ MonoBehaviour:
     StartingBase: 0
   - AttributeID: attribute_xp
     StartingBase: 0
+  - AttributeID: attribute_wisdom
+    StartingBase: 1
   Biomes: []
   StateOptions: []

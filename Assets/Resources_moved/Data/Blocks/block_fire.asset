@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_blocks
   DiscoveryDependencies:
   - blueprint_block_fire
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 50
   UsageTags:
   - tag_block_fire
   - tag_heat_source
@@ -69,8 +71,14 @@ MonoBehaviour:
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: fx_fire_big
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: sfx_fire
   RemoveSFX: 
   InteractSFX: sfx_fire

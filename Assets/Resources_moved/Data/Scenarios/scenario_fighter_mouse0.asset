@@ -51,6 +51,7 @@ MonoBehaviour:
   Conditions: []
   PartyID: 
   IsScheduled: 1
+  Biomes: []
   ActivationChance:
     Chance: 1
     SampleSize: 1000

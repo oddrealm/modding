@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_attack_void_summoning_direct
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 0
   ActivationWeight: 100

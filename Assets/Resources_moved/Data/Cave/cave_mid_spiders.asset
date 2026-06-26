@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ab9f9f4e1cf71469ba836d1bd1a335, type: 3}
   m_Name: cave_mid_spiders
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_cave_spiders
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_cave_spiders
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   FillUnusedWithSurroundingBlocks: 0
   Layers:

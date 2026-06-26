@@ -20,16 +20,20 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Stockpile 0
+  NextSegment: 
+  PreviousSegment: 
   Trigger: 7
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
-  MinUnscaledPlayedTime: 120
+  MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks: []
   ActiveRaces: []
   PermittedWindows: []
   SelectionType: 1
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -45,21 +49,14 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
-  BackgroundMaskTarget: room_cmd_btn
+  Icon: 
+  BackgroundMaskTarget: toolbar_menu_rooms
   Message:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: <sprite=1111> Stockpiles are used to organize items in the world. Create
-      and edit rooms from
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: the Rooms (
+    Body: Settlement getting cluttered?\n<sprite=1111> Stockpiles are used to organize
+      items in the world. Try creating one from the <sprite=124> Rooms menu
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
@@ -70,11 +67,3 @@ MonoBehaviour:
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: ) menu.
-    NewLine: 0
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  NextSegment: 

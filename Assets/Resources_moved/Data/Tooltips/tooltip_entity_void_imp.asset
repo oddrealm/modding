@@ -22,10 +22,11 @@ MonoBehaviour:
   Name: Void Imp
   NamePlural: Void Imps
   InlineIcon: <sprite=677>
-  Description: 
+  Description: Void Imps are a subterranean creature that can easily dig tunnels
+    with the long claws on their hands.
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_void_imp
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3360
+  Order: 3392

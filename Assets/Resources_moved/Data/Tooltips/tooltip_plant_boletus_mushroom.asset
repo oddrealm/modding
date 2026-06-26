@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=1856>
   Description: Earthy, robust fungi, commonly found in shaded, woodland areas.
   DiscoveryHint: 
-  Icon: sp_boletus_mushroom_icon
+  Icon: sp_plant_boletus_mushroom_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Mushroom
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 329
+  Order: 311

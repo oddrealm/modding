@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b430687389d853f48ba3d8c7adf38bfb, type: 3}
   m_Name: anim_humanoid_attack_melee_right
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Loop: 1
   FramesPerSecond: 16
@@ -25,7 +25,7 @@ MonoBehaviour:
       type: 3}
     Accessories:
     - Point: 2
-      Position: {x: 0, y: 1, z: 1}
+      Position: {x: 0, y: 2, z: 1}
       TextureOffset: {x: 2, y: 0}
       Rotation: 0
     - Point: 1
@@ -47,7 +47,7 @@ MonoBehaviour:
       type: 3}
     Accessories:
     - Point: 2
-      Position: {x: 0, y: 1, z: 1}
+      Position: {x: 0, y: 2, z: 1}
       TextureOffset: {x: 2, y: 0}
       Rotation: 0
     - Point: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
       type: 3}
     Accessories:
     - Point: 2
-      Position: {x: -1, y: 1, z: 1}
+      Position: {x: -1, y: 2, z: 1}
       TextureOffset: {x: 2, y: 0}
       Rotation: 0
     - Point: 1
@@ -91,7 +91,7 @@ MonoBehaviour:
       type: 3}
     Accessories:
     - Point: 2
-      Position: {x: -1, y: 1, z: 1}
+      Position: {x: -1, y: 2, z: 1}
       TextureOffset: {x: 2, y: 0}
       Rotation: 0
     - Point: 1

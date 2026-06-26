@@ -12,20 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
   m_Name: input_command_open_settlements
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_input_open_settlements
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_input_open_settlements
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 4
   InputState: 8
-  DeferTo: []
   DefaultTriggers:
   - Hotkeys:
-    - Down: 0
-      Hold: 0
-      Up: 1
+    - Motion: 2
       Key: 98
       Mouse: 0
   ActiveUpdate: 0
@@ -33,7 +30,7 @@ MonoBehaviour:
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
   IsToggle: 1
-  BtnsForceActive: 1
   MaxIncrement: 1
   PlayerCanEdit: 1
+  HotkeyCountMustBeExact: 0
   PrintEvents: 0

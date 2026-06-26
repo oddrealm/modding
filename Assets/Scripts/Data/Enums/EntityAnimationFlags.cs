@@ -11,5 +11,6 @@ public enum EntityAnimationFlags
     FLYING = 32,
     SWIMMING = 64,
     DEAD = 128,
-    FISHING = 256
+    FISHING = 256,
+    ACTIVE_READY = 512,
 }

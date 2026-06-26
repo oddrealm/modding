@@ -25,7 +25,7 @@ MonoBehaviour:
   Description: These are--without a doubt--the ugliest pants I've ever seen.
   DiscoveryHint: 
   Icon: sp_light_leather_pants_icon
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8392157, g: 0.7490196, b: 0.654902, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1953
+  Order: 1949

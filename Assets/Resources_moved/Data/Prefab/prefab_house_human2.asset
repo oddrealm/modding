@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93411bf4023950646b46925b4de6f11a, type: 3}
   m_Name: prefab_house_human2
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 68442
   UseRandomRotation: 1
+  Buffer: {x: 0, y: 0, z: 0}
   Locations:
   - TagObjectID: block_stone_brick
     TagObjectID0: 

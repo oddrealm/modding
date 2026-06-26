@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
+  m_Name: entity_status_void_sick_damage
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_entity_status_void_sick_damage
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIndicator: 1
+  ShowOnTooltip: 1
+  Notification: notif_entity_void_sickness
+  SourceTooltipID: 
+  ExpireTimeMinutesMin: 0
+  ExpireTimeMinutesMax: 0
+  StatusesToRemove: []
+  StatusesToAddOnExpire: []
+  PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  TooltipBackgroundColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  MaskIsThreat: 0
+  Actions:
+  - Comment: Remove health over time
+    ConditionTarget: attribute_energy
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 2499668479991349333
+    TimeThresholdMinutes: 60
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 0
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_health
+      SourceID: 
+      Amount: -25
+      Max: 0
+      Permanent: 1
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Remove if energy above 0
+    ConditionTarget: attribute_energy
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 2499668479991349334
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 5
+    DeactivationAction: 0
+    ActionID: 
+    Buffs: []
+    Statuses:
+    - entity_status_void_sick_damage
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2499668479991349333
+      type: {class: EqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0
+        Normalized: 0
+    - rid: 2499668479991349334
+      type: {class: GreaterThanEqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0.01
+        Normalized: 0

@@ -20,7 +20,6 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
-  PreviousSegment: 
   Trigger: 11
   MinGameMinutes: 120
   MinScaledPlayedTime: -1
@@ -47,7 +46,7 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
+  Icon: 
   BackgroundMaskTarget: 
   Message:
   - OnlyShowInputHotkey: 0

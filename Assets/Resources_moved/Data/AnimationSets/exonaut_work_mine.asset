@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
+  m_Name: exonaut_work_mine
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  State: {fileID: 11400000, guid: 1f0961e45dbbb8e47b80903da40a2533, type: 2}
+  UpAnimation: {fileID: 11400000, guid: a7294d5397083ae67808a1c7aef1a350, type: 2}
+  DownAnimation: {fileID: 11400000, guid: 8aab9cbf29c990e479928e2002a60efe, type: 2}
+  RightAnimation: {fileID: 11400000, guid: 640c862505929e874822b4137f5d2843, type: 2}
+  LeftAnimation: {fileID: 11400000, guid: a22fcc2bd9aa7f8e0ba6e4290c1a76ab, type: 2}

@@ -12,33 +12,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
   m_Name: entity_names_tomek
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  SeparateFirstNamePrepends: 0
+  SeparateFirstNameAppends: 0
+  FirstNameNeutralPrependChances: 0
+  FirstNameNeutralPrepends: []
+  NeutralFirstNames: []
+  FirstNameNeutralAppendChances: 0
+  FirstNameNeutralAppends: []
   FirstNameMasculinePrependChances: 0
   FirstNameMasculinePrepends: []
   MasculineFirstNames:
-  - Arak
-  - Btak
-  - Cobak
-  - Dranak
-  - Elak
+  - Ar
+  - Bt
+  - Cob
+  - Dran
+  - El
+  - Fir
+  - Fir
+  - Girth
+  - Grim
+  - Har
+  - Hell
+  - Ign
+  - Jet
+  - Kol
+  - Lor
+  - Marr
+  - Nor
+  - Or
+  - Ohm
+  - Pat
+  - Qim
+  - Riy
+  - Sim
+  - Tyr
+  - Uglat
+  - Vundn
+  - Waln
+  - Zig
+  FirstNameMasculineAppendChances: 1000
+  FirstNameMasculineAppends:
+  - '''Nak'
   FirstNameFemininePrependChances: 0
-  FirstNameFemininePrepends:
-  - Ant'krl
-  - Bin'krl
-  - Ceten'krl
-  - Dayla'krl
-  - Em'krl
-  FeminineFirstNames: []
+  FirstNameFemininePrepends: []
+  FeminineFirstNames:
+  - Ant
+  - Bin
+  - Ceten
+  - Dayla
+  - Em
+  - Fey
+  - Ghi
+  - Hlin
+  - Itol
+  - Jyt
+  - Katn
+  - Livga
+  - Mizn
+  - Nyn
+  - Oken
+  - Pem
+  - Qel
+  - Rezs
+  - Stet
+  - Tlyn
+  - Uma
+  - Veks
+  - Wemg
+  - Ygg
+  - Zazgn
+  FirstNameFeminineAppendChances: 1000
+  FirstNameFeminineAppends:
+  - '''Krl'
+  SeparateLastNamePrepends: 0
   LastNamePrependChances: 1000
   LastNamePrepends:
-  - K'Den'
-  - Ko'Den'
+  - Den'
+  - Thar'
+  - Sig'
   LastNames:
-  - Anvil
-  - Breaker
-  - Crag
+  - Nvil
+  - Rekter
+  - Crak
+  - Nache
+  - Ulcane
+  - Magmar
+  - Magnun
+  - Mignane
+  - Mignar
+  - Mignus
+  - Hamner
+  - Aks
+  - Fiyar
+  - Rogk
+  - Stirm

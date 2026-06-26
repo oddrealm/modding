@@ -10,6 +10,7 @@ public class GDEScenariosData : Scriptable
         public SpawnPointTypes SpawnPointType = SpawnPointTypes.RANDOM_BORDER_GROUND_FALLBACK_WATER;
         public bool OverrideEntityWithNation = false;
         public bool OverrideEntityWithFauna = false;
+        public bool OverrideEntityWithBiomeHostiles = false;
         public bool AutoGenEntityCount = false;
         public EntitySpawnData SpawnData;
     }
@@ -21,19 +22,19 @@ public class GDEScenariosData : Scriptable
     }
 
     [System.Serializable]
-    public class TagObjectRequirement
+    public struct ConditionRequirement
     {
-        public string TagObjectID = "";
-        public int Count = 0;
-        public ThresholdConditionTypes Comparison = ThresholdConditionTypes.GREATER_THAN;
+        public string GroupID;
+        public string ID;
+        public int Count;
+        public ThresholdConditionTypes Comparison;
     }
 
     [System.Serializable]
-    public class Condition
+    public struct Condition
     {
-        public ConditionTypes ConditionType = ConditionTypes.OR;
-        public TagObjectRequirement TagObjectRequirement = new TagObjectRequirement();
-        public bool MustFail = false;
+        public ConditionTypes ConditionType;
+        public ConditionRequirement Requirement;
     }
 
     public bool IsThreat = false;
@@ -52,6 +53,9 @@ public class GDEScenariosData : Scriptable
     public uint MinMinutesSinceLastSameScenario = 1440;
     public uint MinTimeOfDay = 0;
     public uint MaxTimeOfDay = 1440;
+
+    public const string SETTLEMENT_ITEM_COUNT_GROUP = "settlement_item_count";
+    public const string PLAYER_NATION_GROUP = "player_nation";
 
     public HashSet<string> BiomesHash { get; private set; } = new HashSet<string>();
 

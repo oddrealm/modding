@@ -22,8 +22,12 @@ MonoBehaviour:
   CategoryID: room_category_trade
   ResearchKey: research_industry_market0
   MaxRoomAmount: 1
-  OccupantGroups:
-  - occupant_group_market
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_market
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_market
   DefaultAutoJobs:
@@ -37,16 +41,5 @@ MonoBehaviour:
     ProhibitedLocations:
     - block_none
     PermittedLocations: []
-  - BlueprintID: blueprint_buy_item
-    Settings:
-      Priority: 1
-      AutoJobType: 0
-    ProhibitedResources: []
-    PermittedResources: []
-    ProhibitedLocations: []
-    PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 0
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 1
+  QualityImprovedByRoof: 1

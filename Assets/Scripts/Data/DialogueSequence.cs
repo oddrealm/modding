@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 
-public interface IDialogueSpeaker : ITooltipContent
+public interface IDialogueSpeaker
 {
     void ActivateDialogueOption(string optionID);
     void OnDialogueAction(DialogueAction action);
     int GetDialogueOptionCount();
     DialogueOption GetDialogueOption(int index);
     bool IsDialogueSequencePassed(SequenceCondition condition);
+    ITooltipContent GetTooltipContent();
+    string GetSpeakerName();
+    Sprite GetSpeakerPortraitSprite();
     LocationUID LocationUID { get; }
     InstanceUID UID { get; }
 }

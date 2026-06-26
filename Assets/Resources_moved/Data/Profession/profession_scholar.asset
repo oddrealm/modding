@@ -17,24 +17,27 @@ MonoBehaviour:
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxMembers: -1
   OrderGroup: 0
   AutoCreateUniform: 1
-  EarnBonusXPInCombat: 0
   ResearchKey: 
-  VisibleToPlayer: 1
+  RequiredRaceID: 
+  RequiredGenderID: 
   CanBeAssigned: 1
   CanBeChanged: 1
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
   FavoursRangedAttackItems: 0
+  IsCombatProfession: 0
+  IsLeader: 0
   StartingItems: []
-  GlobalIndicator: indicator_global_scholar
   SkillsActiveByDefault:
-  - skill_carry
   - skill_writing
+  PlayerCanEditLevelUpSkills: 0
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp:
   - skill_writing
+  StatusesToAdd: []
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1

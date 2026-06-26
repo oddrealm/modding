@@ -12,15 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a537451162d52d14481f084aaa83a819, type: 3}
   m_Name: entity_names_chicken
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeparateFirstNamePrepends: 1
+  SeparateFirstNameAppends: 0
   FirstNameNeutralPrependChances: 0
   FirstNameNeutralPrepends: []
   NeutralFirstNames: []
+  FirstNameNeutralAppendChances: 0
+  FirstNameNeutralAppends: []
   FirstNameMasculinePrependChances: 300
   FirstNameMasculinePrepends:
   - Mr
@@ -43,6 +47,8 @@ MonoBehaviour:
   - Koo
   - Coo
   - CooCoo
+  FirstNameMasculineAppendChances: 0
+  FirstNameMasculineAppends: []
   FirstNameFemininePrependChances: 300
   FirstNameFemininePrepends:
   - Mrs
@@ -65,6 +71,8 @@ MonoBehaviour:
   - Koo
   - Koo
   - CooCoo
+  FirstNameFeminineAppendChances: 0
+  FirstNameFeminineAppends: []
   SeparateLastNamePrepends: 0
   LastNamePrependChances: 1000
   LastNamePrepends: []

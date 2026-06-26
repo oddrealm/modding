@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Build Void Gate
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1690>
   Description: Used to summon creatures from the void. Needs an adjacent void cell
     to function.
+  DiscoveryHint: 
   Icon: sp_void_gate_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 769
+  Order: 747

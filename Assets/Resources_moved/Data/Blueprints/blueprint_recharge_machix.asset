@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
+  m_Name: blueprint_recharge_machix
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_blueprint_recharge_machix
+  TagIDs:
+  - tag_blueprints
+  DiscoveryDependencies:
+  - entity_status_tired
+  - tag_can_sleep_in_bed
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: -1
+  SuppressDiscoveredNotif: 0
+  SkillPriorityOverride: 98
+  XP: 5
+  BaseSkillLevel: 0
+  CategoryID: blueprint_category_none
+  ResearchKeys:
+  - research_ancient_crafting0
+  Repeat: 0
+  CheckStateForTransition: 0
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  FailJobOnSkillFailure: 0
+  TargetAttributeForSkillFailCheck: 
+  AddBlockSkillToJobSkill: 0
+  OnlyUseResourcesAtJobLocation: 0
+  LocationID: tag_void_catalyst_powered
+  WorkPosition: 1
+  PermissionType: 0
+  CanSitDuringJob: 0
+  WorkerID0: race_ancient
+  WorkerID1: 
+  TargetID: entity_status_machix_drained
+  TargetID0: entity_status_machix_drained
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
+  JobActions:
+  - ActionType: 10
+    ResourceID: 
+    WorkPosition: 1
+    AnimationTrigger: 8192
+    AnimationHitEvent: 1
+    AnimStartFX: 
+    AnimStartSFX: 
+  IsInstant: 1
+  ProgressWorkerAttribute: 
+  ProgressBarType: 2
+  ProgressFXMaxX: 0
+  ProgressFXMinX: 0
+  ProgressFXMaxY: 0
+  ProgressFXMinY: 0
+  Clear:
+    Layer: 0
+    DisableRemoveSpawns: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: 
+  ConsumeWorker: 0
+  ChangeFillMass: 0
+  SetMass: 0
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  TargetIsConsumer: 0
+  DisableConsumeSpawns: 0
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
+  OnFinishWorkerBuffs:
+  - TargetID: attribute_energy
+    SourceID: 
+    Amount: -40
+    Max: 0
+    Permanent: 1
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves: []
+  OnFinishTargetBuffs:
+  - TargetID: attribute_energy
+    SourceID: 
+    Amount: 100
+    Max: 0
+    Permanent: 1
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  ShowWorkOutputActionText: 0
+  OnFinishedFX: 
+  WorkFX: 
+  WorkSFX: 
+  OnFinishedSFX: 
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride:
+  - visuals_job_cursor_permitted
+  ProhibitedCursorVisualsOverride:
+  - visuals_job_cursor_prohibited
+  Visuals:
+  - visuals_job_sleep
+  MaxAutoJobQueueCount: 1
+  DisposeIfRequirementsNotMet: 1

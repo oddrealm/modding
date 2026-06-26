@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_attack_iron_crossbow_two_hand_pierce
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
@@ -28,7 +29,7 @@ MonoBehaviour:
   AddSkillToOutput: 1
   MinAmount: 20
   MaxAmount: 22
-  Range: 128
+  Range: 96
   StatusesToApplyToTarget: []
   SourceAction: 0
   SourceAttributeID: 

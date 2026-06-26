@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Thirsty
   Name: Thirsty
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=650>
   Description: A parched condition that saps vitality, gradually lowering Health
     over time until quenched by drinking.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.85882354, g: 0.47058824, b: 0.09411765, a: 1}
   Type: Status
   TypeColor: {r: 0.42352942, g: 0.20784314, b: 0, a: 1}
-  Order: 3082
+  Order: 3209

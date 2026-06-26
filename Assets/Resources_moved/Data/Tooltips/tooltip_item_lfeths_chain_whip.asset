@@ -27,7 +27,7 @@ MonoBehaviour:
     I\u2019ve documented hundreds of legends, and this one appears time and time
     again over thousands of years."
   Icon: sp_lfeths_chain_whip_icon
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8392157, g: 0.7490196, b: 0.654902, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1946
+  Order: 1942

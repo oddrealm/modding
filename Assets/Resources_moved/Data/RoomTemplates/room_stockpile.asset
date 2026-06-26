@@ -17,12 +17,19 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_storage
   ResearchKey: research_industry_basics0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_stockpile
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_haulers
+    Enabled: 1
+  - ID: occupant_group_settlement_start_stockpile
+    Enabled: 1
+  - ID: occupant_group_settlement_start_stockpile_animals
+    Enabled: 1
   Visuals:
   - visuals_room_display_stockpile
   DefaultAutoJobs:
@@ -34,8 +41,45 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
+  - BlueprintID: blueprint_eat_item
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_drink_item
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_feed_animal
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_water_animal
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_eat_tomek_item
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 0
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

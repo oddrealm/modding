@@ -20,6 +20,7 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 3
   UsageTags:
@@ -47,7 +48,6 @@ MonoBehaviour:
   - item_slot_head
   Attacks: []
   MerchantBuyValue: 515
-  MerchantSellValue: 103
   TuneRating: 4
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -58,6 +58,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_cold_tolerance
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
@@ -66,11 +67,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_toughness
+      SourceID: 
       Amount: 7
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
+  m_Name: blueprint_transmute_to_dirt
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_blueprint_transmute_to_dirt
+  TagIDs:
+  - tag_blueprints
+  DiscoveryDependencies:
+  - item_void_shard
+  - block_dirt
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: -1
+  SuppressDiscoveredNotif: 0
+  SkillPriorityOverride: -1
+  XP: 5
+  BaseSkillLevel: 25
+  CategoryID: blueprint_category_jobs
+  ResearchKeys:
+  - research_arcana_mage0
+  Repeat: 0
+  CheckStateForTransition: 1
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  FailJobOnSkillFailure: 0
+  TargetAttributeForSkillFailCheck: 
+  AddBlockSkillToJobSkill: 1
+  OnlyUseResourcesAtJobLocation: 0
+  LocationID: 
+  WorkPosition: 0
+  PermissionType: 2048
+  CanSitDuringJob: 0
+  WorkerID0: skill_craft_void
+  WorkerID1: 
+  TargetID: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
+  JobActions:
+  - ActionType: 0
+    ResourceID: item_void_shard
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 3
+    ResourceID: 
+    WorkPosition: 0
+    AnimationTrigger: 8192
+    AnimationHitEvent: 1
+    AnimStartFX: 
+    AnimStartSFX: 
+  IsInstant: 0
+  ProgressWorkerAttribute: 
+  ProgressBarType: 2
+  ProgressFXMaxX: 146
+  ProgressFXMinX: 146
+  ProgressFXMaxY: 6
+  ProgressFXMinY: 1
+  Clear:
+    Layer: -1
+    DisableRemoveSpawns: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: block_dirt
+  ConsumeWorker: 0
+  ChangeFillMass: 0
+  SetMass: 0
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  TargetIsConsumer: 0
+  DisableConsumeSpawns: 0
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
+  OnFinishWorkerBuffs: []
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves: []
+  OnFinishTargetBuffs: []
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  ShowWorkOutputActionText: 1
+  OnFinishedFX: 
+  WorkFX: fx_block_hit
+  WorkSFX: sfx_dirt_interact
+  OnFinishedSFX: 
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride:
+  - visuals_job_cursor_permitted
+  ProhibitedCursorVisualsOverride:
+  - visuals_job_cursor_prohibited
+  Visuals:
+  - visuals_job_transmute_to_dirt
+  MaxAutoJobQueueCount: 9
+  DisposeIfRequirementsNotMet: 0

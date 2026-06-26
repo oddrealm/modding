@@ -17,11 +17,13 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
+  ShowOnTooltip: 1
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove:
@@ -50,6 +52,7 @@ MonoBehaviour:
   ColorMask: ccm_resurrected0
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions: []
   AutoJobs: []
   DialogueOptions: []

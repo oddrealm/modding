@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Loop: 1
   FramesPerSecond: 16
@@ -24,7 +25,7 @@ MonoBehaviour:
       type: 3}
     Accessories:
     - Point: 2
-      Position: {x: -1, y: 1, z: 0}
+      Position: {x: -1, y: 2, z: 0}
       TextureOffset: {x: 3, y: 0}
       Rotation: 0
     - Point: 1

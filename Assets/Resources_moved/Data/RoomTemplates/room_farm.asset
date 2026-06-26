@@ -22,8 +22,12 @@ MonoBehaviour:
   CategoryID: room_category_agriculture
   ResearchKey: research_agriculture_farm0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_farm
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_farm
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_farm
   DefaultAutoJobs:
@@ -51,9 +55,9 @@ MonoBehaviour:
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_till
+  - BlueprintID: blueprint_till_in_room
     Settings:
-      Priority: 2
+      Priority: 1
       AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
@@ -61,7 +65,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 2
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -71,552 +75,549 @@ MonoBehaviour:
     ProhibitedLocations:
     - block_none
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_agave
+  - BlueprintID: blueprint_plant_agave_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_alura
+  - BlueprintID: blueprint_plant_alura_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_beetroot
+  - BlueprintID: blueprint_plant_beetroot_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_blackberry
+  - BlueprintID: blueprint_plant_blackberry_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_blood_crown_mushroom
+  - BlueprintID: blueprint_plant_blood_crown_mushroom_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_boletus_mushroom
+  - BlueprintID: blueprint_plant_boletus_mushroom_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_broccoli
+  - BlueprintID: blueprint_plant_broccoli_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_bronze_cap_mushroom
+  - BlueprintID: blueprint_plant_bronze_cap_mushroom_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_buckhorn
+  - BlueprintID: blueprint_plant_buckhorn_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_burclover
+  - BlueprintID: blueprint_plant_burclover_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_cabbage
+  - BlueprintID: blueprint_plant_cabbage_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_carrot
+  - BlueprintID: blueprint_plant_carrot_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_cat_grass
+  - BlueprintID: blueprint_plant_cat_grass_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_cauliflower
+  - BlueprintID: blueprint_plant_cauliflower_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_celery
+  - BlueprintID: blueprint_plant_celery_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_chaga_fruit
+  - BlueprintID: blueprint_plant_chaga_fruit_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_cherry_corn
+  - BlueprintID: blueprint_plant_cherry_corn_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_chickweed
+  - BlueprintID: blueprint_plant_chickweed_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_cholla
+  - BlueprintID: blueprint_plant_cholla_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_chongo
+  - BlueprintID: blueprint_plant_chongo_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_corn
+  - BlueprintID: blueprint_plant_corn_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_cresis
+  - BlueprintID: blueprint_plant_cresis_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_dax_web
+  - BlueprintID: blueprint_plant_dax_web_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_deep_moss
+  - BlueprintID: blueprint_plant_deep_moss_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_dragon_fern
+  - BlueprintID: blueprint_plant_dragon_fern_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_elderberry
+  - BlueprintID: blueprint_plant_elderberry_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_felix
+  - BlueprintID: blueprint_plant_felix_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_glow_light
+  - BlueprintID: blueprint_plant_glow_light_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_goose_grass
+  - BlueprintID: blueprint_plant_goose_grass_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_gooseberry
+  - BlueprintID: blueprint_plant_gooseberry_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_green_thumb
+  - BlueprintID: blueprint_plant_green_thumb_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_hook_thorn
+  - BlueprintID: blueprint_plant_hook_thorn_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_ice_root
+  - BlueprintID: blueprint_plant_ice_root_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_ivory_coral
+  - BlueprintID: blueprint_plant_ivory_coral_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_lady_harp
+  - BlueprintID: blueprint_plant_lady_harp_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_large_crabgrass
+  - BlueprintID: blueprint_plant_large_crabgrass_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_lirium
+  - BlueprintID: blueprint_plant_lirium_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_melon
+  - BlueprintID: blueprint_plant_melon_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_mirtle_grass
+  - BlueprintID: blueprint_plant_mirtle_grass_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_night_sleep
+  - BlueprintID: blueprint_plant_night_sleep_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_onion
+  - BlueprintID: blueprint_plant_onion_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_pineapple
+  - BlueprintID: blueprint_plant_pineapple_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_potato
+  - BlueprintID: blueprint_plant_potato_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_prickly_bear
+  - BlueprintID: blueprint_plant_prickly_bear_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_prim_grass
+  - BlueprintID: blueprint_plant_prim_grass_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_pumpkin
+  - BlueprintID: blueprint_plant_pumpkin_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_rhodo
+  - BlueprintID: blueprint_plant_rhodo_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_rice
+  - BlueprintID: blueprint_plant_rice_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_sacaton_grass
+  - BlueprintID: blueprint_plant_sacaton_grass_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_sandbur
+  - BlueprintID: blueprint_plant_sandbur_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_sendalo
+  - BlueprintID: blueprint_plant_sendalo_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_shadow_fern
+  - BlueprintID: blueprint_plant_shadow_fern_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_sikari
+  - BlueprintID: blueprint_plant_sikari_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_skyberry
+  - BlueprintID: blueprint_plant_skyberry_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_sogweed
+  - BlueprintID: blueprint_plant_sogweed_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_staghorn
+  - BlueprintID: blueprint_plant_staghorn_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_stoneleaf
+  - BlueprintID: blueprint_plant_stoneleaf_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_sweet_potato
+  - BlueprintID: blueprint_plant_sweet_potato_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_sweet_root
+  - BlueprintID: blueprint_plant_sweet_root_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_tallow_grass
+  - BlueprintID: blueprint_plant_tallow_grass_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_temba
+  - BlueprintID: blueprint_plant_temba_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_tomato
+  - BlueprintID: blueprint_plant_tomato_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_twilight
+  - BlueprintID: blueprint_plant_twilight_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_viola
+  - BlueprintID: blueprint_plant_viola_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_weep_wisp
+  - BlueprintID: blueprint_plant_weep_wisp_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_wheat
+  - BlueprintID: blueprint_plant_wheat_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_yellow_gale
+  - BlueprintID: blueprint_plant_yellow_gale_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
-  - BlueprintID: blueprint_plant_zucchini
+  - BlueprintID: blueprint_plant_zucchini_in_room
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 0

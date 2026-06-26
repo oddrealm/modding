@@ -20,12 +20,13 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Adult
   Name: Adult
-  NamePlural: 
+  NamePlural: Adults
   InlineIcon: <sprite=1256>
-  Description: 
+  Description: How old the Entity is in days. Entities that get old enough will likely
+    die of Cardiac Arrest. Children do not get a profession or experience.
   DiscoveryHint: 
   Icon: 
-  TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  TextColor: {r: 0.6313726, g: 0.56078434, b: 0.4862745, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 89
+  Order: 52

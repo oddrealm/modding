@@ -50,7 +50,6 @@ MonoBehaviour:
   Attacks:
   - attack_stone_sickle_one_hand_cut
   MerchantBuyValue: 110
-  MerchantSellValue: 22
   TuneRating: 2
   ItemRarity: item_rarity_common
   DecayRate: -1
@@ -61,11 +60,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_plant
+      SourceID: 
       Amount: 4
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

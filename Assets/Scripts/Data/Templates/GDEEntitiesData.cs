@@ -45,7 +45,7 @@ public class GDEEntitiesData : Scriptable, ISimulationData
         public BuffData[] Buffs;
         public string[] Statuses;
 
-        public bool HasAffects
+        public readonly bool HasAffects
         {
             get
             {
@@ -53,7 +53,7 @@ public class GDEEntitiesData : Scriptable, ISimulationData
             }
         }
 
-        public bool HasBuffs
+        public readonly bool HasBuffs
         {
             get
             {
@@ -61,7 +61,7 @@ public class GDEEntitiesData : Scriptable, ISimulationData
             }
         }
 
-        public bool HasStatuses
+        public readonly bool HasStatuses
         {
             get
             {
@@ -79,7 +79,6 @@ public class GDEEntitiesData : Scriptable, ISimulationData
     public string EntitySimulationID = "";
     public string SizeTagID = "tag_entity_size_medium";
     public string[] LanguagesSpoken = new[] { "language_engel" };
-    public string[] DefaultLeaderRoles = new[] { "" };
     public EntityCompanionTypes CompanionType = 0;
     public EntityCompanionPermanenceTypes CompanionPermanenceType = 0;
     public EntityReproductionTypes ReproductionType = 0;
@@ -109,6 +108,8 @@ public class GDEEntitiesData : Scriptable, ISimulationData
     public List<AttributeTuning> Attributes = new();
     public List<string> Biomes = new();
     public HashSet<string> BiomesHash = new();
+    public List<string> ProhibitedSeasons = new();
+    public HashSet<string> ProhibitedSeasonsHash = new();
     public SimOptions[] StateOptions;
 
     private GDESimulationData _simData;
@@ -124,6 +125,7 @@ public class GDEEntitiesData : Scriptable, ISimulationData
     public GDESimulationData Simulation { get { return _simData; } }
     public SimTime MaxSimTime { get { return MaxDefaultSimTime; } }
     public HashSet<EntityAgeTypes> PermittedAgeTypes { get; private set; } = new HashSet<EntityAgeTypes>();
+    public GDERacesData RaceData { get; private set; }
 
 #if ODD_REALM_APP
     public override void Init()
@@ -136,20 +138,18 @@ public class GDEEntitiesData : Scriptable, ISimulationData
         {
             BiomesHash.Add(Biomes[i]);
         }
+
+        ProhibitedSeasonsHash.Clear();
+
+        for (int i = 0; i < ProhibitedSeasons.Count; i++)
+        {
+            ProhibitedSeasonsHash.Add(ProhibitedSeasons[i]);
+        }
     }
 
     public override void OnLoaded()
     {
-#if DEV_TESTING
-        for (int i = 0; i < AutoJobs.Count; i++)
-        {
-            GDEBlueprintsData blueprint = DataManager.GetTagObject<GDEBlueprintsData>(AutoJobs[i].BlueprintID);
-            if (!blueprint.DisposeIfNoSourceEntity)
-            {
-                Debug.LogError(blueprint.Key + " needs to dispose if no source entity!");
-            }
-        }
-#endif
+        EnsureTag(SizeTagID);
         SkillPermissionsByID.Clear();
 
         for (int i = 0; i < SkillPermissions.Count; i++)
@@ -173,6 +173,7 @@ public class GDEEntitiesData : Scriptable, ISimulationData
         }
 
         ProfessionPermissionsByID.Clear();
+        RaceData = DataManager.GetTagObject<GDERacesData>(Race);
 
 #if DEV_TESTING
         List<ITagObject> professions = DataManager.GetTagObjects<GDEProfessionData>();
@@ -192,6 +193,9 @@ public class GDEEntitiesData : Scriptable, ISimulationData
 
             if (!hasProfession)
             {
+#if DEV_TESTING && UNITY_EDITOR
+                UnityEditor.EditorUtility.SetDirty(this);
+#endif
                 Debug.LogError($"Adding profession permission: {Key}.{professions[i].Key}");
                 ProfessionPermissions.Add(new ProfessionPermission()
                 {
@@ -202,7 +206,22 @@ public class GDEEntitiesData : Scriptable, ISimulationData
             }
         }
 
-        //GDERacesData race = DataManager.GetTagObject<GDERacesData>(Race);
+
+
+
+        if (string.IsNullOrEmpty(TooltipDescription) && RaceData.TooltipDescription != TooltipDescription)
+        {
+            GDETooltipsData tooltip = DataManager.GetTagObject<GDETooltipsData>(TooltipID);
+
+            if (tooltip.Key == TooltipID)
+            {
+                Debug.LogError($"Setting tooltip description from race: {Key} - {TooltipID}");
+                tooltip.Description = RaceData.TooltipDescription;
+#if UNITY_EDITOR
+                UnityEditor.EditorUtility.SetDirty(tooltip);
+#endif
+            }
+        }
 
         //if (race.Intelligence == "intelligence_non_sapient")
         //{
@@ -289,6 +308,15 @@ public class GDEEntitiesData : Scriptable, ISimulationData
         for (int i = 0; i < passed.Count; i++)
         {
             Attributes.Add(passed[i]);
+
+            // if (passed[i].AttributeID == "attribute_level")
+            // {
+            //     AttributeTuning t = passed[i];
+            //     t.StartingBase = 0;
+            //     Attributes[i] = t;
+            //     EditorUtility.SetDirty(this);
+            //     Debug.LogError($"{Key} changed attribute base: {Attributes[i].StartingBase}");
+            // }
         }
 
         PermittedItemSlotsHash.Clear();

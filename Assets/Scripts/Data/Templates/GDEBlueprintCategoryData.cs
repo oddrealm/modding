@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/BlueprintCategory")]
 public class GDEBlueprintCategoryData : Scriptable
@@ -13,7 +14,7 @@ public class GDEBlueprintCategoryData : Scriptable
     public Color JobSelectedBtnColor;
 
     [System.NonSerialized]
-    public List<GDEBlueprintsData> Blueprints = new List<GDEBlueprintsData>();
+    public List<GDEBlueprintsData> Blueprints = new();
 
 #if ODD_REALM_APP
     public override void OnReordered(int dataIndex)

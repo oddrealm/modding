@@ -27,7 +27,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: Is Expired
-        IsEnabled: 1
         Target:
           rid: 7
         RequireAllConditionsToBeMet: 1
@@ -44,6 +43,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_expired
         OptionID: 
     - rid: 9

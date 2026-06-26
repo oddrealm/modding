@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Tin Vein
   NamePlural: 
   InlineIcon: <sprite=848>
   Description: 
+  DiscoveryHint: 
   Icon: sp_block_tin_ore_icon
   TextColor: {r: 0.72156864, g: 0.854902, b: 0.8705883, a: 1}
   Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3119
+  Order: 3214

@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Room
-  Name: Room
+  Action: Any Room Location
+  Name: Any Room Location
   NamePlural: 
   InlineIcon: <sprite=1532>
   Description: 
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
   Type: Location
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2549
+  Order: 2605

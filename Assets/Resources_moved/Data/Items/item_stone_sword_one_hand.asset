@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_common
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -45,12 +47,10 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_stone_sword_one_hand
   Attacks:
   - attack_stone_sword_one_hand_cut
   - attack_stone_sword_one_hand_pierce
   MerchantBuyValue: 115
-  MerchantSellValue: 23
   TuneRating: 2
   ItemRarity: item_rarity_common
   DecayRate: -1
@@ -59,5 +59,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

@@ -18,15 +18,21 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  NewGameOrder: 1
   ShowOnMap: 1
   PlayerCanChoose: 1
   Unlocked: 1
   Banner: sp_ancient_banner
-  BannerColor: {r: 0.49411768, g: 0.33333334, b: 0.52156866, a: 1}
+  BannerColor: {r: 0.27450982, g: 0.043137245, b: 0.23179798, a: 1}
+  CaravanIcon: sp_caravan_human_icon
   KingdomIcon: <sprite=1695>
   SettlementIcon: <sprite=1017>
+  KingdomSpriteID: sp_ancient_kingdom_icon
+  SettlementSpriteID: sp_ancient_settlement_icon
+  NationTypeDisplay: Empire
   OverworldVisuals: overworld_visuals_ancient
   BorderVisuals: overworld_visuals_nation_border
+  RaidSpawnGroupID: spawns_raid_default
   Loadouts:
   - starting_loadout_ancient_immortal_conquest
   - starting_loadout_ancient_void_lord
@@ -39,6 +45,21 @@ MonoBehaviour:
   - race_cat
   - race_void_woken
   - race_ancient
+  RaidEventEntityIDs:
+  - entity_ancient
+  - entity_void_woken
+  - entity_void_imp
+  - entity_machix
+  - entity_exonaut
+  VictoryRaidDialogueIDs:
+  - dialogue_raid_default_victory0
+  - dialogue_raid_default_victory1
+  - dialogue_raid_default_victory2
+  - dialogue_raid_default_victory3
+  - dialogue_raid_default_victory4
+  - dialogue_raid_default_victory5
+  DefeatRaidDialogueIDs:
+  - dialogue_raid_default_defeat0
   GenerateSettlementNameKey: location_names_ancient_settlements
   GenerateKingdomNameKey: location_names_ancient_kingdoms
   GameOverScenarios:
@@ -72,3 +93,51 @@ MonoBehaviour:
   MaxLeaders: 1
   Leaders:
   - leader_ancient_primarch
+  RevealDepthOnSettlementStart: -1
+  Actions:
+  - ActionID: start_settlement
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_void_shard
+      Amount: 100
+    - ItemID: item_stone_chunk
+      Amount: 10
+  - ActionID: claim_territory
+    KingdomPointCost: 1
+    ItemRequirements: []
+  - ActionID: build_road
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_stone_chunk
+      Amount: 50
+  LeaderSpawnData:
+    EntityID: entity_ancient
+    ProfessionID: profession_primarch
+    FactionID: faction_nation
+    GenderID: 
+    TuningID: 
+    AppearanceID: 
+    AgeType: 8
+    StartingAgeMins: 0
+    Tag: 
+    Count: 0
+    Chance:
+      Chance: 0
+      SampleSize: 0
+    SpawnScenario: 
+    AutoGenEquipment: 1
+    AutoGenInventory: 1
+    DisableItemEquipFromTuning: 0
+    EquippedItems: []
+    InventoryItems: []
+    AddedStatuses: []
+  Perks:
+  - Title: <sprite=1689> Immortal
+    Description: Do not die of old age.
+  - Title: <sprite=580> Last Of Their Kind
+    Description: Do not reproduce naturally, and must discover more Ancients in the
+      world to grow their population.
+  - Title: <sprite=1690> High Lords
+    Description: Can summon and construct minions to serve them.
+  - Title: <sprite=566> Masters Of The Void
+    Description: Gain a boost to all magic skills.

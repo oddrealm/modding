@@ -17,11 +17,12 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -38,6 +39,7 @@ MonoBehaviour:
   ColorMask: ccm_archenthrall0
   Accessory: 
   IdleFXGroup: fx_entity_archenthrall_idle
+  MaskIsThreat: 0
   Actions:
   - Comment: 
     ConditionTarget: 
@@ -48,16 +50,20 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 4
+    ActionID: 
     Buffs:
     - TargetID: attribute_health
+      SourceID: 
       Amount: 0
       Max: 500
       Permanent: 0
     - TargetID: attribute_move_speed
+      SourceID: 
       Amount: -7
       Max: 0
       Permanent: 0
     - TargetID: attribute_toughness
+      SourceID: 
       Amount: 20
       Max: 0
       Permanent: 0
@@ -65,6 +71,8 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

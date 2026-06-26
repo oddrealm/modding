@@ -16,14 +16,15 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 441628
   MaxIterations: 1
   MinIterations: 1
   Spawns:
   - Comment: 
-    MinCount: 4800
-    MaxCount: 4800
+    MinCount: 7000
+    MaxCount: 7000
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 1

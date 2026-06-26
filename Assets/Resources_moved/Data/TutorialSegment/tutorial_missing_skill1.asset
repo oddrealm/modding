@@ -20,16 +20,20 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Missing skill
+  NextSegment: tutorial_missing_skill2
+  PreviousSegment: tutorial_missing_skill0
   Trigger: 0
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
   MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks: []
   ActiveRaces: []
   PermittedWindows: []
   SelectionType: 1
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -69,4 +73,3 @@ MonoBehaviour:
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  NextSegment: tutorial_missing_skill2

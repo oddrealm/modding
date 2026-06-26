@@ -23,35 +23,11 @@ MonoBehaviour:
   MaxIterations: 1
   MinIterations: 1
   Spawns:
-  - Comment: Blood Sand
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.99
-    TagObjectID: 
+  - TagObjectID: 
     TagID: tag_terrain_gen_blood_sand
-  - Comment: Copper Ore
+    Comment: Blood Sand
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 0
-    Weight: 0.004
-    TagObjectID: block_lode_copper_ore
-    TagID: 
-  - Comment: Coal
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.003
-    TagObjectID: block_lode_coal_ore
-    TagID: 
-  - Comment: Tin Ore
-    MinCount: 1
-    MaxCount: 1
-    LimitMaxCountByLocationItemMax: 0
-    DisableRoll: 0
-    Weight: 0.003
-    TagObjectID: block_lode_tin_ore
-    TagID: 
+    Weight: 1

@@ -12,19 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_ardyn_somnic_pools0
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_research_ardyn_somnic_pools0
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_research_ardyn_somnic_pools0
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 1
   ShowInSaga: 1
-  Races:
-  - race_ardyn
   Dependency: 
   Column: 0
   Row: 2
   ResearchCategory: research_category_ardyn
   RequireItemCountOverride: 0
-  ResearchTimeStep: 60
+  GlobalBuffs: []
+  RequiredDiscovery: 

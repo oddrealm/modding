@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Event Logs
   NamePlural: 
-  InlineIcon: <sprite=805>
+  InlineIcon: <sprite=656>
   Description: 
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.7411765, g: 0.5764706, b: 0.48235294, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1437
+  Order: 1466

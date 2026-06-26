@@ -16,8 +16,9 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  IsThreat: 1
+  IsThreat: 0
   NotifOnActivate: notif_settler_migration
   EntitySpawns:
   - SpawnPointType: 2
@@ -49,20 +50,21 @@ MonoBehaviour:
   - DialogueID: dialogue_scenario_settler_migration0
   Conditions:
   - ConditionType: 1
-    TagObjectRequirement:
-      TagObjectID: race_ancient
+    Requirement:
+      GroupID: player_nation
+      ID: overworld_nation_ancient
       Count: 0
       Comparison: 1
-    MustFail: 0
   PartyID: 
   IsScheduled: 1
+  Biomes: []
   ActivationChance:
     Chance: 1
     SampleSize: 3
-  MaxActivations: 3
+  MaxActivations: 1
   MinKingdomLevel: 3
-  MinMinutesSinceSettlementStart: 4320
-  MinMinutesSinceLastScenario: 1440
+  MinMinutesSinceSettlementStart: 11520
+  MinMinutesSinceLastScenario: 360
   MinMinutesSinceLastSameScenario: 14400
   MinTimeOfDay: 0
   MaxTimeOfDay: 1440

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e16db10602efed498fdc7fa1f3c5a89, type: 3}
+  m_Name: room_ardyn_home
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_room_ardyn_home
+  TagIDs:
+  - tag_rooms
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 1
+  CategoryID: room_category_homes
+  ResearchKey: research_ardyn_home0
+  MaxRoomAmount: -1
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_ardyn_home
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
+  Visuals:
+  - visuals_room_display_ardyn_home
+  DefaultAutoJobs:
+  - BlueprintID: blueprint_stock_room
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources:
+    - item_type
+    PermittedResources: []
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
+  - BlueprintID: blueprint_sleep
+    Settings:
+      Priority: 3
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_sleep_on_ground
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  RoomQualities: []
+  QualityImprovedByRoof: 1

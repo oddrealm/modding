@@ -24,7 +24,7 @@ MonoBehaviour:
   InlineIcon: <sprite=535>
   Description: 
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_koosh_kasheen
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}

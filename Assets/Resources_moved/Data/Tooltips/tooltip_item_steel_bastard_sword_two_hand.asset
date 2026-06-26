@@ -16,12 +16,14 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0.7411765, g: 0.57254905, b: 0.29411766, a: 1}
   Action: 
   Name: Steel Bastard Sword 2h
   NamePlural: 
   InlineIcon: <sprite=980>
   Description: A titanic sword, almost a shield in itself.
+  DiscoveryHint: 
   Icon: sp_steel_bastard_sword_two_hand_icon
   TextColor: {r: 0.2901961, g: 0.57254905, b: 0.7607844, a: 1}
   Type: Item

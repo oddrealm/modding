@@ -19,42 +19,53 @@ MonoBehaviour:
   DiscoveryDependencies:
   - tag_can_drink
   - entity_status_thirsty
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  SkillPriorityOverride: -1
-  XP: 50
-  BaseSkillCheckFailXP: 5
-  BaseSkillLevel: 0
-  AwardXPForEachAction: 0
-  CategoryID: blueprint_category_none
   DesignationListOrder: -1
-  ResearchKey: research_cooking_tavern0
+  SuppressDiscoveredNotif: 0
+  SkillPriorityOverride: -1
+  XP: 0
+  BaseSkillLevel: 0
+  CategoryID: blueprint_category_none
+  ResearchKeys:
+  - research_cooking_tavern0
   Repeat: 0
   CheckStateForTransition: 0
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
   LocationID: tag_seat
-  WorkPosition: 0
+  WorkPosition: 1
   PermissionType: 0
   CanSitDuringJob: 1
-  WorkerID: entity_status_thirsty
+  WorkerID0: entity_status_unhappy
+  WorkerID1: entity_status_can_relax_with_drink
   TargetID: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
-  - ActionType: 3
+  - ActionType: 0
     ResourceID: tag_can_drink
     WorkPosition: 0
     AnimationTrigger: 0
     AnimationHitEvent: 0
     AnimStartFX: 
     AnimStartSFX: 
+  - ActionType: 3
+    ResourceID: 
+    WorkPosition: 0
+    AnimationTrigger: 16384
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  IsInstant: 1
   ProgressWorkerAttribute: 
-  ProgressMax: 100
   ProgressBarType: 2
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
@@ -67,6 +78,7 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: 
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -75,9 +87,18 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: 
   OnItemConsumeActionID: 
+  TargetIsConsumer: 0
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
-  OnFinishWorkerBuffs: []
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
+  OnFinishWorkerBuffs:
+  - TargetID: attribute_happiness
+    SourceID: 
+    Amount: 25
+    Max: 0
+    Permanent: 1
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
   OnFinishTargetBuffs: []
@@ -85,11 +106,10 @@ MonoBehaviour:
   OnFinishTargetStatusRemoves: []
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
-  ShowWorkOutputActionText: 1
+  ShowWorkOutputActionText: 0
   OnFinishedFX: 
-  WorkFX: fx_block_hit
-  WorkSFX: sfx_hammer_wood
+  WorkFX: 
+  WorkSFX: 
   OnFinishedSFX: 
   ShowVisualsOnCursor: 1
   ClearJobCursorVisuals:
@@ -100,9 +120,5 @@ MonoBehaviour:
   - visuals_job_cursor_prohibited
   Visuals:
   - visuals_job_relax_with_drink
-  ShowVisualsIfStarted: 0
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0

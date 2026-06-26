@@ -12,18 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842b8eea7ddea9440ab5a3a9f6389156, type: 3}
   m_Name: simulation_tree_trunk_tthdir
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Simulations:
   - rid: 0
   - rid: 1
   - rid: 2
   - rid: 3
-  - rid: 4
   - rid: 5
   - rid: 6
   references:
@@ -33,7 +32,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: Is Expired
-        IsEnabled: 1
         Target:
           rid: 7
         RequireAllConditionsToBeMet: 1
@@ -45,7 +43,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Trunk: Spawn Trunk Upwards'
-        IsEnabled: 1
         Target:
           rid: 10
         RequireAllConditionsToBeMet: 1
@@ -59,7 +56,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Trunk: Spawn Roots'
-        IsEnabled: 1
         Target:
           rid: 15
         RequireAllConditionsToBeMet: 1
@@ -75,7 +71,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Trunk: Spawn Leaves Up'
-        IsEnabled: 1
         Target:
           rid: 22
         RequireAllConditionsToBeMet: 1
@@ -85,27 +80,10 @@ MonoBehaviour:
         - rid: 25
         Actions:
         - rid: 26
-    - rid: 4
-      type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
-      data:
-        Comment: 'Trunk: Spawn Branches'
-        IsEnabled: 1
-        Target:
-          rid: 27
-        RequireAllConditionsToBeMet: 1
-        Conditions:
-        - rid: 28
-        - rid: 29
-        - rid: 30
-        - rid: 31
-        - rid: 32
-        Actions:
-        - rid: 33
     - rid: 5
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Trunk: Spawn Nelescuro'
-        IsEnabled: 1
         Target:
           rid: 34
         RequireAllConditionsToBeMet: 1
@@ -119,7 +97,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Trunk: Grow Width'
-        IsEnabled: 1
         Target:
           rid: 40
         RequireAllConditionsToBeMet: 1
@@ -139,6 +116,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_expired
         OptionID: 
     - rid: 9
@@ -154,12 +132,14 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
         OptionID: tree_trunk
     - rid: 12
       type: {class: HasNeighborSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         NeighborPositions:
           rid: 48
         NeighborConditions:
@@ -170,14 +150,7 @@ MonoBehaviour:
         DebugBreakpoint: 0
         Clear:
           Layer: -1
-          Params:
-            disableRemoveSpawns: 1
-            disposeIfNotPermitted: 0
-            disableSpawnAtEntityOnFail: 0
-            disableClaimCheck: 0
-            setAsUnclaimed: 0
-            attempts: 0
-            seedOffset: 0
+          DisableRemoveSpawns: 0
     - rid: 14
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -194,36 +167,33 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
         OptionID: tree_root
     - rid: 17
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_can_reproduce
         OptionID: tree_root
     - rid: 18
       type: {class: CanSupportWeightSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
     - rid: 19
       type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 0
+        DebugString: 
     - rid: 20
       type: {class: ClearSimAction, ns: , asm: Assembly-CSharp}
       data:
         DebugBreakpoint: 0
         Clear:
           Layer: -1
-          Params:
-            disableRemoveSpawns: 1
-            disposeIfNotPermitted: 0
-            disableSpawnAtEntityOnFail: 0
-            disableClaimCheck: 0
-            setAsUnclaimed: 0
-            attempts: 0
-            seedOffset: 0
+          DisableRemoveSpawns: 0
     - rid: 21
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -240,61 +210,27 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
         OptionID: tree_leaves
     - rid: 24
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_can_reproduce
         OptionID: tree_leaves
     - rid: 25
       type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 0
+        DebugString: 
     - rid: 26
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
         DebugBreakpoint: 0
         StateID: plant_spawn
         OptionID: tree_leaves
-        UseGroupUID: 1
-    - rid: 27
-      type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
-      data:
-        TargetPositions:
-          rid: 52
-    - rid: 28
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: plant_is_permitted
-        OptionID: tree_branch
-    - rid: 29
-      type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        StateID: plant_state_can_reproduce
-        OptionID: tree_branch
-    - rid: 30
-      type: {class: CanSupportWeightSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 0
-    - rid: 31
-      type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 0
-    - rid: 32
-      type: {class: RandomChanceSimCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Outcome: 1
-        MaxRange: 14400
-    - rid: 33
-      type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
-      data:
-        DebugBreakpoint: 0
-        StateID: plant_spawn
-        OptionID: tree_branch
         UseGroupUID: 1
     - rid: 34
       type: {class: SimulationTarget, ns: , asm: Assembly-CSharp}
@@ -305,11 +241,13 @@ MonoBehaviour:
       type: {class: RandomChanceSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         MaxRange: 86400
     - rid: 38
       type: {class: IsObstructionSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 0
+        DebugString: 
     - rid: 39
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -326,18 +264,21 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
         OptionID: 
     - rid: 42
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_can_reproduce
         OptionID: 
     - rid: 43
       type: {class: HasNeighborSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         NeighborPositions:
           rid: 55
         NeighborConditions:
@@ -348,14 +289,7 @@ MonoBehaviour:
         DebugBreakpoint: 0
         Clear:
           Layer: -1
-          Params:
-            disableRemoveSpawns: 1
-            disposeIfNotPermitted: 0
-            disableSpawnAtEntityOnFail: 0
-            disableClaimCheck: 0
-            setAsUnclaimed: 0
-            attempts: 0
-            seedOffset: 0
+          DisableRemoveSpawns: 0
     - rid: 45
       type: {class: ActivateStateSimAction, ns: , asm: Assembly-CSharp}
       data:
@@ -394,6 +328,7 @@ MonoBehaviour:
       type: {class: HasInstanceSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         TagObjectKey: 
         StateID: plant_has_tag_object_ID
         OptionID: tree_leaves
@@ -414,18 +349,6 @@ MonoBehaviour:
       data:
         Positions:
         - {x: 0, y: 0, z: 1}
-        MaxDistance: 1
-        MinDistance: 1
-        IterateToEnd: 0
-        CheckAll: 0
-    - rid: 52
-      type: {class: SimPositions, ns: , asm: Assembly-CSharp}
-      data:
-        Positions:
-        - {x: 0, y: 1, z: 0}
-        - {x: -1, y: 0, z: 0}
-        - {x: 0, y: -1, z: 0}
-        - {x: 1, y: 0, z: 0}
         MaxDistance: 1
         MinDistance: 1
         IterateToEnd: 0
@@ -467,6 +390,7 @@ MonoBehaviour:
       type: {class: HasInstanceSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         TagObjectKey: 
         StateID: 
         OptionID: 
@@ -476,11 +400,4 @@ MonoBehaviour:
         DebugBreakpoint: 0
         Clear:
           Layer: 8
-          Params:
-            disableRemoveSpawns: 0
-            disposeIfNotPermitted: 0
-            disableSpawnAtEntityOnFail: 0
-            disableClaimCheck: 0
-            setAsUnclaimed: 0
-            attempts: 0
-            seedOffset: 0
+          DisableRemoveSpawns: 0

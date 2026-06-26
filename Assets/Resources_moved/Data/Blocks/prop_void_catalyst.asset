@@ -19,7 +19,9 @@ MonoBehaviour:
   - tag_void_prop
   - tag_props
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 60
   UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
@@ -53,6 +55,7 @@ MonoBehaviour:
     DeactivateImmediate: 0
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -98,8 +101,14 @@ MonoBehaviour:
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: fx_void_prop_unpowered
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

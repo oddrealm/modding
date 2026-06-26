@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=70>
   Description: A bright yellow flower, perfect for a soothing, aromatic tea.
   DiscoveryHint: 
-  Icon: sp_yellow_gale_icon
+  Icon: sp_plant_yellow_gale_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2391
+  Order: 2416

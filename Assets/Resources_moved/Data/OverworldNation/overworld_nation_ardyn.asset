@@ -18,15 +18,21 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  NewGameOrder: 2
   ShowOnMap: 1
   PlayerCanChoose: 1
   Unlocked: 1
   Banner: sp_ardyn_banner
-  BannerColor: {r: 0.67058825, g: 0.38823533, b: 0.43921572, a: 1}
+  BannerColor: {r: 0.3078899, g: 0.13675556, b: 0.36200002, a: 1}
+  CaravanIcon: sp_caravan_human_icon
   KingdomIcon: <sprite=1696>
   SettlementIcon: <sprite=1018>
+  KingdomSpriteID: sp_ardyn_kingdom_icon
+  SettlementSpriteID: sp_ardyn_settlement_icon
+  NationTypeDisplay: Dominion
   OverworldVisuals: overworld_visuals_ardyn
   BorderVisuals: overworld_visuals_nation_border
+  RaidSpawnGroupID: spawns_raid_default
   Loadouts:
   - starting_loadout_ardyn_tyrants
   - starting_loadout_ardyn_herders
@@ -36,6 +42,18 @@ MonoBehaviour:
   - race_ardyn
   DiscoveredRaces:
   - race_ardyn
+  - race_chicken
+  RaidEventEntityIDs:
+  - entity_ardyn
+  VictoryRaidDialogueIDs:
+  - dialogue_raid_default_victory0
+  - dialogue_raid_default_victory1
+  - dialogue_raid_default_victory2
+  - dialogue_raid_default_victory3
+  - dialogue_raid_default_victory4
+  - dialogue_raid_default_victory5
+  DefeatRaidDialogueIDs:
+  - dialogue_raid_default_defeat0
   GenerateSettlementNameKey: location_names_ardyn_settlements
   GenerateKingdomNameKey: location_names_ardyn_kingdoms
   GameOverScenarios:
@@ -49,7 +67,7 @@ MonoBehaviour:
   ChanceToExpandTerritory: 100
   ColonistPartyID: party_colonist
   NewPartyID: party_empty
-  KingdomSizeMax: 70
+  KingdomSizeMax: 100
   SettlementSimPopMax: 36
   SettlementSimPopMin: 5
   Landmarks:
@@ -79,3 +97,50 @@ MonoBehaviour:
   MaxLeaders: 1
   Leaders:
   - leader_ardyn_dominus
+  RevealDepthOnSettlementStart: -1
+  Actions:
+  - ActionID: start_settlement
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_nyctium
+      Amount: 50
+    - ItemID: item_stone_chunk
+      Amount: 25
+  - ActionID: claim_territory
+    KingdomPointCost: 1
+    ItemRequirements: []
+  - ActionID: build_road
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_stone_chunk
+      Amount: 50
+  LeaderSpawnData:
+    EntityID: entity_ardyn
+    ProfessionID: profession_dominus
+    FactionID: faction_nation
+    GenderID: 
+    TuningID: 
+    AppearanceID: 
+    AgeType: 8
+    StartingAgeMins: 0
+    Tag: 
+    Count: 0
+    Chance:
+      Chance: 0
+      SampleSize: 0
+    SpawnScenario: 
+    AutoGenEquipment: 0
+    AutoGenInventory: 0
+    DisableItemEquipFromTuning: 0
+    EquippedItems: []
+    InventoryItems: []
+    AddedStatuses: []
+  Perks:
+  - Title: <sprite=1199> Eternal Youth
+    Description: Age faster than other races, but can leech life from others to stave
+      off death by old age.
+  - Title: <sprite=1215> Lack Of Hunger
+    Description: Do not need to eat food.
+  - Title: <sprite=740> From Death, Many
+    Description: Ardyn remains are used to grow new Ardyn, meaning they only reproduce
+      when one of their kind dies.

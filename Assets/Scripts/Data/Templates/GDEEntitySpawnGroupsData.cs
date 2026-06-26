@@ -29,5 +29,13 @@ public class GDEEntitySpawnGroupsData : Scriptable
         public List<EntitySpawnEquippedItem> EquippedItems = new List<EntitySpawnEquippedItem>();
         public List<EntitySpawnInventoryItem> InventoryItems = new List<EntitySpawnInventoryItem>();
         public List<string> AddedStatuses = new List<string>();
+
+        public bool IsGuaranteedSpawn
+        {
+            get
+            {
+                return SpawnRate >= 1000;
+            }
+        }
     }
 }

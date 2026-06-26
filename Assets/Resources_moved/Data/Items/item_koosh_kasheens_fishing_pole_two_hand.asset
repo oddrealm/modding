@@ -22,7 +22,9 @@ MonoBehaviour:
   - tag_fishing_pole
   - tag_item_rarity_epic
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -47,11 +49,9 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_koosh_kasheens_fishing_pole_two_hand
   Attacks:
   - attack_koosh_kasheens_fishing_pole_two_hand_strike
   MerchantBuyValue: 6000
-  MerchantSellValue: 1200
   TuneRating: -1
   ItemRarity: item_rarity_epic
   DecayRate: -1
@@ -62,6 +62,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_fish
+      SourceID: 
       Amount: 28
       Max: 0
       Permanent: 0
@@ -70,11 +71,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 54
       Max: 0
       Permanent: 0
     Status: entity_status_has_fishing_pole
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Simulations:
   - rid: 0
@@ -28,7 +29,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Plant: Fall If Not Supported'
-        IsEnabled: 1
         Target:
           rid: 3
         RequireAllConditionsToBeMet: 1
@@ -40,7 +40,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Plant: Dispose If Expired'
-        IsEnabled: 1
         Target:
           rid: 6
         RequireAllConditionsToBeMet: 1
@@ -52,7 +51,6 @@ MonoBehaviour:
       type: {class: InstanceSimulation, ns: , asm: Assembly-CSharp}
       data:
         Comment: 'Plant: Reproduce'
-        IsEnabled: 1
         Target:
           rid: 9
         RequireAllConditionsToBeMet: 1
@@ -70,6 +68,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_can_move_to_target
         OptionID: 
     - rid: 5
@@ -85,6 +84,7 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_expired
         OptionID: 
     - rid: 8
@@ -100,12 +100,14 @@ MonoBehaviour:
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_is_permitted
         OptionID: 
     - rid: 11
       type: {class: HasSimStateSimCondition, ns: , asm: Assembly-CSharp}
       data:
         Outcome: 1
+        DebugString: 
         StateID: plant_state_can_reproduce
         OptionID: 
     - rid: 12

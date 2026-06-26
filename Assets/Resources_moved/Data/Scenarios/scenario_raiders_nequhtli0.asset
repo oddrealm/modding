@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsThreat: 1
   NotifOnActivate: notif_scenario_raiders
@@ -50,6 +51,7 @@ MonoBehaviour:
   Conditions: []
   PartyID: party_scenario_template
   IsScheduled: 1
+  Biomes: []
   ActivationChance:
     Chance: 1
     SampleSize: 5

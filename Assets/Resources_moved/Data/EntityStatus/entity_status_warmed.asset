@@ -21,7 +21,9 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
   ShowIndicator: 0
+  ShowOnTooltip: 1
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 120
   ExpireTimeMinutesMax: 120
   StatusesToRemove: []
@@ -38,6 +40,7 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions: []
   AutoJobs: []
   DialogueOptions: []

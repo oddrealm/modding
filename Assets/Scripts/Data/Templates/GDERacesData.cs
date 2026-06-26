@@ -12,9 +12,8 @@ public class GDERacesData : Scriptable, IProgressionObject
     public List<string> Perks = new();
     public List<string> DefaultActiveResearch = new();
     public RandomEquipmentItem[] StartingItems = System.Array.Empty<RandomEquipmentItem>();
-    public string[] Statuses = System.Array.Empty<string>();
-    public BuffData[] Buffs = System.Array.Empty<BuffData>();
     public bool AutoCreateUniform = true;
+    public bool TrackByDefault = false;
 
     public bool CanShowInProgressUI
     {
@@ -31,7 +30,7 @@ public class GDERacesData : Scriptable, IProgressionObject
             TagID = "tag_races",
             TagObjectID = Key,
             HideIfZero = true,
-            TrackingType = TrackingTypes.ENTITY
+            StartDisabled = !TrackByDefault,
         };
 
         return true;

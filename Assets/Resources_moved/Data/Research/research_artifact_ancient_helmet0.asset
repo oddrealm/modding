@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_artifact_ancient_helmet0
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_artifact_ancient_helmet
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_artifact_ancient_helmet
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Enabled: 1
   ShowInSaga: 0
-  Races: []
   Dependency: 
   Column: -1
   Row: -1
   ResearchCategory: research_category_ancient
   RequireItemCountOverride: 0
-  ResearchTimeStep: 60
+  GlobalBuffs: []
+  RequiredDiscovery: 

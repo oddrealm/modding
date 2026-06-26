@@ -15,10 +15,10 @@ MonoBehaviour:
   DEBUG: 0
   TooltipID: tooltip_item_fodder
   TagIDs:
-  - tag_item_type_vegetable
   - tag_can_eat
   - tag_item
   - tag_item_rarity_uncommon
+  - tag_item_type_meal
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -28,7 +28,7 @@ MonoBehaviour:
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
-  ItemType: tag_item_type_vegetable
+  ItemType: tag_item_type_meal
   OnJobDisposedTagObjectID: 
   ShowInTrackingByDefault: 0
   IdleFX: 
@@ -48,7 +48,6 @@ MonoBehaviour:
   - item_slot_utility
   Attacks: []
   MerchantBuyValue: 5
-  MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: 17280
@@ -59,11 +58,11 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_hunger
-      Amount: 10
+      SourceID: 
+      Amount: 40
       Max: 0
       Permanent: 1
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

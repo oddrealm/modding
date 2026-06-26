@@ -21,7 +21,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_common
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_roast
   - tag_can_eat
@@ -38,9 +40,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_crab_meat_raw
   CharacterColorMaskID: 
-  CharacterColorMask: {fileID: 0}
   AccessoryID: 
-  AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -48,11 +48,10 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_utility
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 40
-  MerchantSellValue: 8
   TuneRating: 0
-  ItemRarity: item_rarity_common
+  ItemRarity: item_rarity_uncommon
   DecayRate: 2880
   DecayItem: item_waste_rotten_food
   FlammableChance: 100
@@ -61,6 +60,7 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_hunger
+      SourceID: 
       Amount: 19
       Max: 0
       Permanent: 1
@@ -69,11 +69,11 @@ MonoBehaviour:
   - ActionID: tag_can_roast
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: item_crab_meat_roasted
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

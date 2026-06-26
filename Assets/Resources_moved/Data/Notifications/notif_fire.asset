@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: notif_fire
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: tooltip_notif_path_not_found
+  TooltipID: tooltip_notif_fire
   TagIDs:
   - tag_notif_group_event
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   NotifGroup: tag_notif_group_event
   SFXGroupID: sfx_notif_bad

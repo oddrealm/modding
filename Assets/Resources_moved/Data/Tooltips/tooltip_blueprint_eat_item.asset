@@ -22,10 +22,10 @@ MonoBehaviour:
   Name: Eat Item
   NamePlural: 
   InlineIcon: <sprite=950>
-  Description: Consumes an edible item.
+  Description: Consumes an edible item to relieve hunger.
   DiscoveryHint: 
   Icon: sp_job_eat_item_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1397
+  Order: 1379

@@ -22,7 +22,7 @@ MonoBehaviour:
   Name: Ren
   NamePlural: 
   InlineIcon: <sprite=698>
-  Description: An enchanted, indestructible coin that reads, "Shin-Ghirinan," and
+  Description: An enchanted, indestructible coin that reads, 'Shin-Ghirinan,' and
     has the portrait of a regal humanoid. It is the dominant form of currency in
     Odd.
   DiscoveryHint: 
@@ -30,4 +30,4 @@ MonoBehaviour:
   TextColor: {r: 0.8207547, g: 0.5849298, b: 0.18195976, a: 1}
   Type: Item
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2477
+  Order: 2571

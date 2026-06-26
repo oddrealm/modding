@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_entity_gully
-  TagIDs: []
+  TagIDs:
+  - tag_entity_size_medium
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -24,8 +25,6 @@ MonoBehaviour:
   EntitySimulationID: simulation_entity_default
   SizeTagID: tag_entity_size_medium
   LanguagesSpoken: []
-  DefaultLeaderRoles:
-  - 
   CompanionType: 1
   CompanionPermanenceType: -1
   ReproductionType: 2
@@ -213,6 +212,21 @@ MonoBehaviour:
   - ProfessionID: profession_animal
     CanAssign: 1
     CanSpawnWith: 1
+  - ProfessionID: profession_king
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_queen
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_chief
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_dominus
+    CanAssign: 1
+    CanSpawnWith: 1
+  - ProfessionID: profession_primarch
+    CanAssign: 1
+    CanSpawnWith: 1
   PermittedItemSlots: []
   PathingType: 2
   DefaultTuning: entity_tuning_gully
@@ -285,11 +299,11 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 16
+    StartingBase: 144
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level
-    StartingBase: 1
+    StartingBase: 0
   - AttributeID: attribute_move_speed
     StartingBase: 24
   - AttributeID: attribute_none
@@ -306,6 +320,8 @@ MonoBehaviour:
     StartingBase: 0
   - AttributeID: attribute_xp
     StartingBase: 0
+  - AttributeID: attribute_wisdom
+    StartingBase: 1
   Biomes:
   - biome_desert
   - biome_desert_mountain
@@ -313,4 +329,6 @@ MonoBehaviour:
   - biome_tropical_mountain
   - biome_tropical_forest
   - biome_tropical
+  ProhibitedSeasons:
+  - winter
   StateOptions: []

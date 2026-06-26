@@ -12,35 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
   m_Name: input_command_move_layer_up
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_input_move_layer_up
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_input_move_layer_up
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 1
   InputState: 2
-  DeferTo:
-  - input_command_zoom_out
   DefaultTriggers:
   - Hotkeys:
-    - Down: 1
-      Hold: 1
-      Up: 0
+    - Motion: 5
       Key: 113
       Mouse: 0
   - Hotkeys:
-    - Down: 0
-      Hold: 0
-      Up: 0
+    - Motion: 7
       Key: 0
-      Mouse: 4
+      Mouse: 5
   ActiveUpdate: 1
   ActiveUpdateDelaySeconds: 0.2
-  CanTriggerOverUI: 1
+  CanTriggerOverUI: 0
   CanTriggerOutsideScreen: 1
   IsToggle: 0
-  BtnsForceActive: 0
-  MaxIncrement: 1
   PlayerCanEdit: 1
+  IgnoreModifiers: 0
   PrintEvents: 0

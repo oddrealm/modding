@@ -1,11 +1,12 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/OccupantGroup")]
 public class GDEOccupantGroupData : Scriptable
 {
     public OccupantManagementTypes OccupantManageType = OccupantManagementTypes.AUTO;
     public bool OccupantsMustBePlayerControlled = true;
+    public bool CanCustomize = false;
+    public bool NeedsAllRequirements = false;
 
     [Header("Permissions:")]
     public TagObjectSetting[] RequiredOccupantTagObjs = new TagObjectSetting[] {
@@ -16,17 +17,31 @@ public class GDEOccupantGroupData : Scriptable
         new TagObjectSetting(){ TagObjectKey = "tag_statuses" },
     };
 
+    public ITagObject FirstRequirement { get; private set; }
+
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
         base.OnLoaded();
 
-#if UNITY_EDITOR
         for (int j = 0; RequiredOccupantTagObjs != null && j < RequiredOccupantTagObjs.Length; j++)
         {
             string tagObjectKey = RequiredOccupantTagObjs[j].TagObjectKey;
             string tagID = RequiredOccupantTagObjs[j].TagID;
 
+            if (FirstRequirement == null)
+            {
+                if (!string.IsNullOrEmpty(tagObjectKey))
+                {
+                    FirstRequirement = DataManager.GetTagObject(tagObjectKey);
+                }
+                else if (!string.IsNullOrEmpty(tagID))
+                {
+                    FirstRequirement = DataManager.GetTagObject(tagID);
+                }
+            }
+
+#if UNITY_EDITOR
             if (!string.IsNullOrEmpty(tagObjectKey))
             {
                 ITagObject tagObj = DataManager.GetTagObject(tagObjectKey);
@@ -84,8 +99,8 @@ public class GDEOccupantGroupData : Scriptable
                 UnityEditor.EditorUtility.SetDirty(this);
             }
 
-        }
 #endif
+        }
     }
 #endif
 }

@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Make Health Potion
   NamePlural: 
   InlineIcon: <sprite=1270>
   Description: Mends flesh and bone but leaves the soul to ache alone.
+  DiscoveryHint: 
   Icon: sp_health_potion_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1973
+  Order: 2004

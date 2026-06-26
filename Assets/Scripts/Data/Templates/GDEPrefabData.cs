@@ -3,10 +3,16 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Prefab")]
 public class GDEPrefabData : Scriptable
 {
-    public struct PrefabPaint
+    public readonly struct PrefabPaint
     {
-        public uint LocationUID;
-        public LocationData Data;
+        public readonly uint locationUID;
+        public readonly LocationData data;
+
+        public PrefabPaint(uint locationUID, LocationData data)
+        {
+            this.locationUID = locationUID;
+            this.data = data;
+        }
     }
 
     [System.Serializable]
@@ -37,14 +43,16 @@ public class GDEPrefabData : Scriptable
         public Column[] Columns;
     }
 
-
     public int SeedOffset = 0;
     public bool UseRandomRotation = true;
-
+    public Vector3Int Buffer = new();
     public LocationData[] Locations = new LocationData[] { };
 
 #if ODD_REALM_APP
     public BlockPoint OriginOffset { get; private set; }
+    public BlockPoint Size { get; private set; }
+    public BlockPoint MinBounds { get; private set; }
+    public BlockPoint MaxBounds { get; private set; }
 
     public override void OnLoaded()
     {
@@ -69,9 +77,13 @@ public class GDEPrefabData : Scriptable
 #endif
         }
 #endif
-        int minX = 8;
-        int minY = 8;
-        int minZ = 8;
+        int minX = int.MaxValue;
+        int minY = int.MaxValue;
+        int minZ = int.MaxValue;
+        Size = BlockPoint.ZERO;
+        MinBounds = BlockPoint.ZERO;
+        MaxBounds = BlockPoint.ZERO;
+        OriginOffset = BlockPoint.ZERO;
 
         for (int i = 0; i < Locations.Length; i++)
         {
@@ -85,9 +97,15 @@ public class GDEPrefabData : Scriptable
                 minY = l.Y;
                 minZ = l.Z;
             }
+
+            if (l.X > Size.x) { Size = new(l.X, Size.y, Size.z); }
+            if (l.Y > Size.y) { Size = new(Size.x, l.Y, Size.z); }
+            if (l.Z > Size.z) { Size = new(Size.x, Size.y, l.Z); }
         }
 
         OriginOffset = new BlockPoint(minX, minY, minZ);
+        MinBounds = BlockPoint.ZERO - new BlockPoint(Buffer.x, Buffer.y, 0);
+        MaxBounds = Size + new BlockPoint(Buffer.x, Buffer.y, 0);
     }
 #endif
 }

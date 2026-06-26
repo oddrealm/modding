@@ -16,12 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeparateFirstNamePrepends: 1
+  SeparateFirstNameAppends: 0
   FirstNameNeutralPrependChances: 100
   FirstNameNeutralPrepends: []
   NeutralFirstNames: []
-  FirstNameMasculinePrependChances: 300
+  FirstNameNeutralAppendChances: 0
+  FirstNameNeutralAppends: []
+  FirstNameMasculinePrependChances: 1000
   FirstNameMasculinePrepends:
   - Mr
   - Big
@@ -30,11 +34,14 @@ MonoBehaviour:
   - Large
   - Sir
   MasculineFirstNames:
-  - Bull
-  - Horn
-  - Moo
+  - Burger
   - Beef
-  FirstNameFemininePrependChances: 300
+  - Moo
+  - Buff
+  - Milkins
+  FirstNameMasculineAppendChances: 0
+  FirstNameMasculineAppends: []
+  FirstNameFemininePrependChances: 1000
   FirstNameFemininePrepends:
   - Miss
   - Mrs
@@ -43,10 +50,13 @@ MonoBehaviour:
   - Dame
   - Mistress
   FeminineFirstNames:
-  - Beefens
+  - Udder
   - Moo
-  - Milk
-  - Udders
+  - Milkie
+  - Nosie
+  - Stamps
+  FirstNameFeminineAppendChances: 0
+  FirstNameFeminineAppends: []
   SeparateLastNamePrepends: 0
   LastNamePrependChances: 1000
   LastNamePrepends: []

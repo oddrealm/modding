@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Make Youth Potion
   NamePlural: 
   InlineIcon: <sprite=1781>
   Description: You'll look younger but never feel it.
+  DiscoveryHint: 
   Icon: sp_youth_potion_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1983
+  Order: 2035

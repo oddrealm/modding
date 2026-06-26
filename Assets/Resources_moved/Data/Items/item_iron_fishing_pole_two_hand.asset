@@ -51,7 +51,6 @@ MonoBehaviour:
   Attacks:
   - attack_iron_fishing_pole_two_hand_strike
   MerchantBuyValue: 505
-  MerchantSellValue: 101
   TuneRating: 4
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -62,6 +61,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_fish
+      SourceID: 
       Amount: 20
       Max: 0
       Permanent: 0
@@ -70,11 +70,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: entity_status_has_fishing_pole
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

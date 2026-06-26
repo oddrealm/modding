@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Blueprints
   NamePlural: 
   InlineIcon: <sprite=115>
   Description: 
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.6313726, g: 0.56078434, b: 0.4862745, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 321
+  Order: 327

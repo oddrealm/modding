@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0.2745098, g: 0.5925429, b: 0.77254903, a: 1}
   Type: Status
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 307
+  Order: 291

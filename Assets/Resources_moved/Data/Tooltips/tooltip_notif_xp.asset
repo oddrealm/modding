@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: XP Earned
-  NamePlural: 
+  NamePlural: XP Earned
   InlineIcon: <sprite=1002>
   Description: 
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: 
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 3519
+  Order: 3628

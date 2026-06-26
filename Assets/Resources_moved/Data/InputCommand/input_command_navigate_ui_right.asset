@@ -16,15 +16,16 @@ MonoBehaviour:
   TooltipID: tooltip_input_navigate_ui_right
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 2
   InputState: 4
-  DeferTo: []
   DefaultTriggers:
   - Hotkeys:
     - Down: 1
       Hold: 1
       Up: 0
+      Motion: 5
       Key: 275
       Mouse: 0
   ActiveUpdate: 1
@@ -35,4 +36,5 @@ MonoBehaviour:
   BtnsForceActive: 0
   MaxIncrement: 1
   PlayerCanEdit: 1
+  HotkeyCountMustBeExact: 0
   PrintEvents: 0

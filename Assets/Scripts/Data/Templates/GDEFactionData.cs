@@ -12,9 +12,23 @@ public class GDEFactionData : Scriptable
     public Color SelectionColor = Color.white;
     public Color CursorHoverColor = Color.white;
     public Color HighlightColor = Color.white;
-    public FactionTypes FactionPathing = FactionTypes.PLAYER;
+    public FactionTypes FactionType = FactionTypes.PLAYER;
     public List<string> Statuses = new List<string>();
     public int Order = 0;
+    public bool TrackByDefault = false;
+
+    public override bool TryGetDefaultTracking(out DefaultTracking tracking)
+    {
+        tracking = new DefaultTracking()
+        {
+            TagID = "",
+            TagObjectID = Key,
+            HideIfZero = true,
+            StartDisabled = !TrackByDefault,
+        };
+
+        return true;
+    }
 
 #if ODD_REALM_APP
     public override void SetOrderKey(string orderKey)

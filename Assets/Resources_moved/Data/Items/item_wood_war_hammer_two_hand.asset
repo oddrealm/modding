@@ -48,7 +48,6 @@ MonoBehaviour:
   Attacks:
   - attack_wood_war_hammer_two_hand_strike
   MerchantBuyValue: 110
-  MerchantSellValue: 22
   TuneRating: 1
   ItemRarity: item_rarity_common
   DecayRate: -1
@@ -57,5 +56,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

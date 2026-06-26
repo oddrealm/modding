@@ -18,21 +18,42 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  NewGameOrder: 4
   ShowOnMap: 1
-  PlayerCanChoose: 0
-  Unlocked: 0
+  PlayerCanChoose: 1
+  Unlocked: 1
   Banner: sp_tomek_banner
-  BannerColor: {r: 0.21568629, g: 0.34509805, b: 0.41176474, a: 1}
+  BannerColor: {r: 0.3490566, g: 0.1990577, b: 0.19593272, a: 1}
+  CaravanIcon: sp_caravan_human_icon
   KingdomIcon: <sprite=1697>
   SettlementIcon: <sprite=1029>
+  KingdomSpriteID: sp_tomek_kingdom_icon
+  SettlementSpriteID: sp_tomek_settlement_icon
+  NationTypeDisplay: Stonehold
   OverworldVisuals: overworld_visuals_tomek
   BorderVisuals: overworld_visuals_nation_border
+  RaidSpawnGroupID: spawns_raid_default
   Loadouts:
+  - starting_loadout_tomek_settlers
+  - starting_loadout_tomek_pathfinders
+  - starting_loadout_tomek_explorer
   - starting_loadout_custom
   Races:
   - race_tomek
   DiscoveredRaces:
   - race_tomek
+  - race_cave_mip
+  RaidEventEntityIDs:
+  - entity_tomek
+  VictoryRaidDialogueIDs:
+  - dialogue_raid_default_victory0
+  - dialogue_raid_default_victory1
+  - dialogue_raid_default_victory2
+  - dialogue_raid_default_victory3
+  - dialogue_raid_default_victory4
+  - dialogue_raid_default_victory5
+  DefeatRaidDialogueIDs:
+  - dialogue_raid_default_defeat0
   GenerateSettlementNameKey: location_names_tomek_settlements
   GenerateKingdomNameKey: location_names_tomek_kingdoms
   GameOverScenarios:
@@ -46,7 +67,7 @@ MonoBehaviour:
   ChanceToExpandTerritory: 50
   ColonistPartyID: party_colonist
   NewPartyID: party_empty
-  KingdomSizeMax: 12
+  KingdomSizeMax: 30
   SettlementSimPopMax: 15
   SettlementSimPopMin: 5
   Landmarks:
@@ -59,3 +80,52 @@ MonoBehaviour:
   DiplomaticTuning: []
   MaxLeaders: 1
   Leaders: []
+  RevealDepthOnSettlementStart: 115
+  Actions:
+  - ActionID: start_settlement
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_stone_chunk
+      Amount: 200
+  - ActionID: claim_territory
+    KingdomPointCost: 1
+    ItemRequirements: []
+  - ActionID: build_road
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_stone_chunk
+      Amount: 50
+  LeaderSpawnData:
+    EntityID: entity_tomek
+    ProfessionID: profession_chief
+    FactionID: faction_nation
+    GenderID: 
+    TuningID: 
+    AppearanceID: 
+    AgeType: 8
+    StartingAgeMins: 0
+    Tag: 
+    Count: 0
+    Chance:
+      Chance: 0
+      SampleSize: 0
+    SpawnScenario: 
+    AutoGenEquipment: 0
+    AutoGenInventory: 0
+    DisableItemEquipFromTuning: 0
+    EquippedItems: []
+    InventoryItems: []
+    AddedStatuses: []
+  Perks:
+  - Title: <sprite=116> Long Lived
+    Description: Have longer natural lifespans than most other races.
+  - Title: <sprite=1978> Stone Gut
+    Description: Gain nourishment from stone and ore-based foods instead of regular
+      food.
+  - Title: <sprite=1970> Sig'Mokr'a
+    Description: Reproduce when one adult Tomek sacrifices themselves to split into
+      several Tomek pups.
+  - Title: <sprite=10> Master Miners
+    Description: Receive a boost to mining skill.
+  - Title: <sprite=81> Stone Skin
+    Description: Receive a boost to toughness attribute.

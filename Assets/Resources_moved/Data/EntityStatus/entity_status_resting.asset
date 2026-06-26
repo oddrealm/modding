@@ -17,11 +17,13 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
+  ShowOnTooltip: 1
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 10
   ExpireTimeMinutesMax: 10
   StatusesToRemove: []
@@ -38,19 +40,21 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: +1 Health Every Minute When Below 100%
     ConditionTarget: attribute_health
     HideInTooltips: 0
     ActivationID: 
-    Conditions:
-    - rid: 458055040193528201
+    Conditions: []
     TimeThresholdMinutes: 5
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 0
+    ActionID: 
     Buffs:
     - TargetID: attribute_health
+      SourceID: 
       Amount: 3
       Max: 0
       Permanent: 1
@@ -58,13 +62,10 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:
     version: 2
-    RefIds:
-    - rid: 458055040193528201
-      type: {class: LessThanCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Amount: 1
-        Normalized: 1
+    RefIds: []

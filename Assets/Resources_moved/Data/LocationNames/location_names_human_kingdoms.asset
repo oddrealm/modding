@@ -12,36 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
   m_Name: location_names_human_kingdoms
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Determiner: []
   Prepends:
+  - And
+  - Arod
+  - Arid
   - Arch
   - Am
   - Al
   - Am
+  - Ba
+  - Baldr
+  - Bandor
   - Bin
+  - Byl
   - Cran
   - Crel
+  - Dalin
+  - Dagol
   - Deg
   - Eman
   - Fin
   - Gen
+  - Har
   - Hil
+  - Ho
   - Jan
   - Kin
+  - Lad
+  - Lan
   - Lin
   - Mar
+  - Mor
+  - Nam
   - Ne
   - Pas
   - Qin
   - Riv
   - Sin
   - Tar
+  - Tarod
+  - Tol
+  - Tyr
   - Vel
   SpaceAfterPrepend: 0
   Names:
@@ -71,3 +89,5 @@ MonoBehaviour:
   - iay
   - io
   - an
+  - en
+  - iar

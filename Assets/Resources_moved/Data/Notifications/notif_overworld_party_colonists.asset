@@ -17,11 +17,13 @@ MonoBehaviour:
   TagIDs:
   - tag_notif_group_event
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   NotifGroup: tag_notif_group_event
   SFXGroupID: sfx_notif_colonists
   DefaultPermissions:
     ShowPreview: 1
+    ShowInLog: 1
     CanStackPreviews: 1
     Factions:
     - faction_player
@@ -30,3 +32,4 @@ MonoBehaviour:
     PauseGameOnCreate: 0
     HighlightOnCreate: 0
     HighlightText: <sprite=1654>
+    IsOverride: 0

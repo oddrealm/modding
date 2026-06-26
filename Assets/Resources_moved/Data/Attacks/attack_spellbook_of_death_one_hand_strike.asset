@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_attack_spellbook_of_death_one_hand_strike
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
@@ -26,8 +27,8 @@ MonoBehaviour:
   AttackFishInRange: 0
   SkillID: skill_fight_magic
   AddSkillToOutput: 1
-  MinAmount: 8
-  MaxAmount: 16
+  MinAmount: 1
+  MaxAmount: 55
   Range: 128
   StatusesToApplyToTarget: []
   SourceAction: 0

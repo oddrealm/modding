@@ -12,27 +12,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
   m_Name: location_names_tomek_settlements
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Determiner: []
   Prepends:
+  - Axe-
+  - Big-
+  - Bigrock-
   - Coldwell-
+  - Dark-
+  - Echo-
+  - Fallen-
+  - Great-
+  - High-
+  - Inner-
+  - Jagged-
+  - Kindred-
   - Longlost-
+  - Mighty-
   - Darkrock-
   - Ember-
   - Grey-
+  - Narrow-
+  - Old-
+  - Proud-
+  - Quiet-
   - Redrock-
+  - Stone-
+  - Stonerock-
+  - Titan-
+  - Under-
+  - Valient-
+  - Winding-
   SpaceAfterPrepend: 0
   Names:
+  - Barrow
+  - Cave
+  - Crack
+  - Chasm
   - Deep
   - Downs
   - Furnace
+  - Forge
   - Hold
   - Keep
   - Mine
+  - Pit
+  - Vault
   SpaceBeforeAppend: 0
   Appends: []

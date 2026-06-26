@@ -12,27 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_animal
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_profession_animal
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_profession_animal
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxMembers: -1
   OrderGroup: 1
   AutoCreateUniform: 0
-  EarnBonusXPInCombat: 0
   ResearchKey: 
-  VisibleToPlayer: 1
+  RequiredRaceID: 
+  RequiredGenderID: 
   CanBeAssigned: 1
   CanBeChanged: 0
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
   FavoursRangedAttackItems: 0
+  IsCombatProfession: 0
+  IsLeader: 0
   StartingItems: []
-  GlobalIndicator: indicator_global_none
   SkillsActiveByDefault: []
+  PlayerCanEditLevelUpSkills: 0
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp: []
+  StatusesToAdd: []
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1

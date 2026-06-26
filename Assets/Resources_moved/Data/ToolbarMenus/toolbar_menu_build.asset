@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ac1c6d5b00c5243a09b3c978f5097b, type: 3}
   m_Name: toolbar_menu_build
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_toolbar_menu_build
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_toolbar_menu_build
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TabOrder: 1
   ToggleType: 1
-  SelectionType: 2
-  HotkeyID: open_build
+  SelectionType: 15
+  InputID: input_command_open_build
   MenuList:
   - jobs
   ButtonConstructionCategories: 38675

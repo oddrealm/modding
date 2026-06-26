@@ -21,7 +21,9 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
   ShowIndicator: 0
+  ShowOnTooltip: 1
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 5040
   ExpireTimeMinutesMax: 5760
   StatusesToRemove: []
@@ -39,6 +41,7 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: Spawn Child On Expiry
     ConditionTarget: 
@@ -49,11 +52,14 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 0
     DeactivationAction: 3
+    ActionID: 
     Buffs: []
     Statuses: []
     SpawnID: entity_sheep
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

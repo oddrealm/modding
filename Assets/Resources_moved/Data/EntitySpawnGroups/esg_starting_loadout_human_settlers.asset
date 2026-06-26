@@ -147,7 +147,7 @@ MonoBehaviour:
     AddedStatuses: []
   - EntityId: entity_human
     EntityTag: 
-    EntityProfession: profession_random
+    EntityProfession: profession_laborer
     EntityGender: priority
     EntityCount: 1
     EntityFaction: faction_player

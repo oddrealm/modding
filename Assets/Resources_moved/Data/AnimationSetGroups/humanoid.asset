@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Sets:
   - {fileID: 11400000, guid: 0851d1f181f73d54c86ba2840a73a692, type: 2}
@@ -42,3 +43,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fadc3394ddff2ed47ba164f6a4735900, type: 2}
   - {fileID: 11400000, guid: 7973c0f4e830b8d4282d3bac566fe650, type: 2}
   - {fileID: 11400000, guid: 5695208d48dc5bf41886f5b308365d90, type: 2}
+  - {fileID: 11400000, guid: 719f7ff25692b927cba93417ddf60eb4, type: 2}

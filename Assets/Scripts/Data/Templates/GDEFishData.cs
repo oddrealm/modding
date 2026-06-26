@@ -31,7 +31,6 @@ public class GDEFishData : Scriptable, IProgressionObject
             TagID = "tag_fish",
             TagObjectID = Key,
             HideIfZero = true,
-            TrackingType = TrackingTypes.FISH
         };
 
         return true;

@@ -21,6 +21,8 @@ MonoBehaviour:
   - tag_item_rarity_rare
   DiscoveryDependencies:
   - blueprint_plant_tree_tthdir_sapling
+  - blueprint_plant_tree_tthdir_sapling_in_room
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 10
   UsageTags:
@@ -46,23 +48,22 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots: []
   Attacks: []
-  MerchantBuyValue: 1000
-  MerchantSellValue: 250
+  MerchantBuyValue: 100
   TuneRating: 0
   ItemRarity: item_rarity_rare
-  DecayRate: -1
-  DecayItem: 
+  DecayRate: 57600
+  DecayItem: item_waste_rotten_food
   FlammableChance: 500
   StackSize: 1
   Actions:
   - ActionID: tag_can_plant_tree
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: plant_tree_tthdir_sapling
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

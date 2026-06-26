@@ -25,7 +25,7 @@ MonoBehaviour:
   Description: Animals do not increase any skills when they level up.
   DiscoveryHint: 
   Icon: sp_profession_animal_icon
-  TextColor: {r: 0.66666657, g: 0.59634864, b: 0.32914037, a: 1}
+  TextColor: {r: 0.7830189, g: 0.6263717, b: 0.40258992, a: 1}
   Type: Profession
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 168
+  Order: 131

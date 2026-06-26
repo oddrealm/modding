@@ -22,32 +22,36 @@ MonoBehaviour:
   - skill_misc
   - prop_nyctium_door
   - skill_time_weave
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: -1
+  SuppressDiscoveredNotif: 0
   SkillPriorityOverride: -1
   XP: 50
-  BaseSkillCheckFailXP: 5
-  BaseSkillLevel: 5
-  AwardXPForEachAction: 0
+  BaseSkillLevel: 10
   CategoryID: blueprint_category_doors
-  DesignationListOrder: -1
-  ResearchKey: research_ardyn_astralarium1
+  ResearchKeys:
+  - research_ardyn_astralarium1
   Repeat: 0
   CheckStateForTransition: 0
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
   LocationID: 
   WorkPosition: 0
   PermissionType: 2048
   CanSitDuringJob: 0
-  WorkerID: skill_time_weave
+  WorkerID0: skill_time_weave
+  WorkerID1: 
   TargetID: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
   - ActionType: 0
     ResourceID: item_nyctium
@@ -77,8 +81,8 @@ MonoBehaviour:
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
+  IsInstant: 0
   ProgressWorkerAttribute: 
-  ProgressMax: 100
   ProgressBarType: 2
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
@@ -91,6 +95,7 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: prop_nyctium_door
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -99,8 +104,12 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: 
   OnItemConsumeActionID: 
+  TargetIsConsumer: 0
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
@@ -109,7 +118,6 @@ MonoBehaviour:
   OnFinishTargetStatusRemoves: []
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
   ShowWorkOutputActionText: 1
   OnFinishedFX: 
   WorkFX: fx_block_hit
@@ -122,9 +130,5 @@ MonoBehaviour:
   ProhibitedCursorVisualsOverride: []
   Visuals:
   - visuals_prop_nyctium_door
-  ShowVisualsIfStarted: 1
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0

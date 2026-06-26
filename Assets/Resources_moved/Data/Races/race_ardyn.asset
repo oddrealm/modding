@@ -34,8 +34,10 @@ MonoBehaviour:
   - '<sprite=376> Time Weave: The ability to build and grow objects by manipulating
     time.'
   DefaultActiveResearch:
-  - research_agriculture_animals0
   - research_ardyn_somnic_pools0
+  - research_war_prison_cell0
+  - research_ardyn_home0
+  - research_agriculture_animals0
   StartingItems:
   - ItemID: item_light_leather_boots
     ChanceToEquip: 0
@@ -49,7 +51,4 @@ MonoBehaviour:
   - ItemID: item_light_leather_hat
     ChanceToEquip: 1
     ChanceToEquipMaxRoll: 5
-  Statuses:
-  - entity_status_ardyn_predator
-  Buffs: []
   AutoCreateUniform: 1

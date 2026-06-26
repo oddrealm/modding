@@ -12,19 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_entity_status_unhappy
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Unhappy
   Name: Unhappy
   NamePlural: 
   InlineIcon: <sprite=84>
-  Description: Unhappy settlers may leave the settlement or go mad. Ensure settlers
-    have beds to sleep in and Taverns to relax at to improve happiness.
+  Description: Is not happy with how things are being run. Skill output is decreased.
+    Try increasing room quality to improve this entity's morale.
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
+  TextColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
   Type: Status
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 3182
+  Order: 3369

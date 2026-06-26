@@ -21,7 +21,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_common
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_burn
   MaxLifeTime: 0
@@ -37,18 +39,15 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_wood
   Visuals: visuals_item_wood_log
   CharacterColorMaskID: 
-  CharacterColorMask: {fileID: 0}
   AccessoryID: 
-  AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
   FillAllSlots: 0
   CannotBeUnequipped: 0
   PermittedSlots: []
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 5
-  MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_common
   DecayRate: -1
@@ -59,11 +58,11 @@ MonoBehaviour:
   - ActionID: tag_can_burn
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: item_coal
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

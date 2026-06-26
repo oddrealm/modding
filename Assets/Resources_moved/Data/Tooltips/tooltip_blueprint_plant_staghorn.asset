@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=70>
   Description: A unique plant that gets its name from its unusually shaped fronds.
   DiscoveryHint: 
-  Icon: sp_staghorn_icon
+  Icon: sp_plant_staghorn_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2378
+  Order: 2403

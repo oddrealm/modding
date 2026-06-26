@@ -19,7 +19,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_rare
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
@@ -43,11 +45,9 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_spellbook_of_cleaving_one_hand
   Attacks:
   - attack_spellbook_of_cleaving_one_hand_cut
   MerchantBuyValue: 100
-  MerchantSellValue: 20
   TuneRating: 6
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -56,5 +56,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

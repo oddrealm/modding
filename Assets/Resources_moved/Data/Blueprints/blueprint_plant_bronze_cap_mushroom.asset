@@ -24,31 +24,32 @@ MonoBehaviour:
   - plant_bronze_cap_mushroom
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: -1
+  SuppressDiscoveredNotif: 0
   SkillPriorityOverride: -1
   XP: 5
-  BaseSkillCheckFailXP: 10
-  BaseSkillLevel: 15
-  AwardXPForEachAction: 0
-  CategoryID: blueprint_category_plants
-  DesignationListOrder: -1
-  ResearchKey: 
+  BaseSkillLevel: 10
+  CategoryID: blueprint_category_none
+  ResearchKeys: []
   Repeat: 0
   CheckStateForTransition: 0
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
-  LocationID: 
+  LocationID: block_none
   WorkPosition: 0
   PermissionType: 1024
   CanSitDuringJob: 0
-  WorkerID: skill_plant
-  TargetID: 
+  WorkerID0: skill_plant
+  WorkerID1: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
   - ActionType: 0
     ResourceID: item_bronze_cap_mushroom_seed
@@ -61,7 +62,7 @@ MonoBehaviour:
     ResourceID: item_coal
     WorkPosition: 0
     AnimationTrigger: 32768
-    AnimationHitEvent: 0
+    AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
   - ActionType: 0
@@ -85,8 +86,8 @@ MonoBehaviour:
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
+  IsInstant: 1
   ProgressWorkerAttribute: 
-  ProgressMax: 1
   ProgressBarType: 2
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
@@ -99,6 +100,7 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: plant_bronze_cap_mushroom
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -107,8 +109,12 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: 
   OnItemConsumeActionID: 
+  TargetIsConsumer: 0
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
@@ -117,7 +123,6 @@ MonoBehaviour:
   OnFinishTargetStatusRemoves: []
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
   ShowWorkOutputActionText: 0
   OnFinishedFX: 
   WorkFX: 
@@ -130,9 +135,5 @@ MonoBehaviour:
   ProhibitedCursorVisualsOverride: []
   Visuals:
   - visuals_plant_bronze_cap_mushroom
-  ShowVisualsIfStarted: 1
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0

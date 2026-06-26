@@ -19,7 +19,9 @@ MonoBehaviour:
   - tag_can_equip
   - tag_item
   - tag_item_rarity_uncommon
+  - tag_raid_default_melee_weapons
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 2
   UsageTags:
@@ -50,7 +52,6 @@ MonoBehaviour:
   - attack_bronze_khopesh_one_hand_cut
   - attack_bronze_khopesh_one_hand_pierce
   MerchantBuyValue: 330
-  MerchantSellValue: 66
   TuneRating: 3
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -61,11 +62,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_evasion
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

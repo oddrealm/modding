@@ -27,7 +27,9 @@ MonoBehaviour:
   SelectionColor: {r: 1, g: 0.5411765, b: 0, a: 1}
   CursorHoverColor: {r: 1, g: 0.5411765, b: 0, a: 0.2509804}
   HighlightColor: {r: 1, g: 1, b: 1, a: 1}
-  FactionPathing: 8
+  FactionType: 8
   Statuses:
   - entity_status_faction_captured
+  - entity_status_morale
   Order: 1
+  TrackByDefault: 1

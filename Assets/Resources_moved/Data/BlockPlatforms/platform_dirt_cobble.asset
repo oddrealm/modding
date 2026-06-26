@@ -16,9 +16,13 @@ MonoBehaviour:
   TooltipID: tooltip_platform_dirt_cobble
   TagIDs:
   - tag_platform
+  - tag_dungeon_cave_home_corridor
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 7
   Index: 1
+  IsFertile: 0
   Visuals: visuals_platform_dirt_cobble
   PhysicsHeatPass: 0.05
   HasMeltThreshold: 0
@@ -42,3 +46,4 @@ MonoBehaviour:
   BaseHealth: 25
   BaseToughness: 0
   ItemDropGroupID: spawns_platform_dirt_cobble
+  UsageTagIDs: []

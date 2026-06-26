@@ -23,10 +23,10 @@ MonoBehaviour:
   NamePlural: 
   InlineIcon: <sprite=890>
   Description: Used to remove captured entities from traps and add them to your settlement
-    as "Captured".
+    as "Captured". Failing to capture the entity will cause them to become hostile.
   DiscoveryHint: 
   Icon: sp_job_capture_entity_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 945
+  Order: 952

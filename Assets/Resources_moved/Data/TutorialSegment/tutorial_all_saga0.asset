@@ -20,15 +20,16 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Saga 0
-  Trigger: 11
+  Trigger: 15
+  CustomEventID: kingdom_level_up
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
-  MinUnscaledPlayedTime: 60
+  MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks: []
   ActiveRaces: []
   PermittedWindows: []
-  SelectionType: 1
+  SelectionType: 0
   SelectionInputID: 
   AttributeRaces: []
   AttributeType: 0
@@ -45,28 +46,22 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
+  Icon: 
   BackgroundMaskTarget: saga_cmd_btn
   Message:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: You can learn new technology from the <sprite=883> Research (
-    NewLine: 0
+    Body: Your kingdom has levelled up!
+    NewLine: 1
     UseOverrideColor: 0
     OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
   - OnlyShowInputHotkey: 1
-    InputID: input_command_open_saga
-    TagObjectID: 
-    Body: 
-    NewLine: 0
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: ) window.
+    Body: As your settlers complete jobs, they will earn XP towards the kingdom level
+      and their own level.
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  NextSegment: 
+  NextSegment: tutorial_all_saga1

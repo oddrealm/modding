@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Entity is now an adult!
-  NamePlural: Entities are now adults!
-  InlineIcon: 
+  Name: Entity Now Adult
+  NamePlural: Entities Now Adults
+  InlineIcon: <sprite=1256>
   Description: 
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 0.8196079, g: 0.77647066, b: 0.6666667, a: 1}
+  TextColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1422
+  Order: 1421

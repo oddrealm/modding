@@ -22,10 +22,10 @@ MonoBehaviour:
   Name: King
   NamePlural: Kings
   InlineIcon: <sprite=1730>
-  Description: Passed on to children.
+  Description: King of a human nation. Passed on to children.
   DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.85098046, g: 0.6156863, b: 0.2509804, a: 1}
   Type: Role
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1865
+  Order: 1878

@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -36,9 +38,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_nyctium_leggings
   CharacterColorMaskID: ccm_item_nyctium_leggings
-  CharacterColorMask: {fileID: 11400000, guid: 88f45609192603b458b824274b60f609, type: 2}
   AccessoryID: 
-  AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -46,9 +46,8 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_legs
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 470
-  MerchantSellValue: 94
   TuneRating: 3
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -59,6 +58,7 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_move_speed
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
@@ -67,11 +67,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_toughness
+      SourceID: 
       Amount: 4
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

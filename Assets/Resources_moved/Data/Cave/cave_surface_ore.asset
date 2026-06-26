@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ab9f9f4e1cf71469ba836d1bd1a335, type: 3}
   m_Name: cave_surface_ore
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_cave_ore
-  GroupID: 
   DEBUG: 1
+  TooltipID: tooltip_cave_ore
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   FillUnusedWithSurroundingBlocks: 0
   Layers:

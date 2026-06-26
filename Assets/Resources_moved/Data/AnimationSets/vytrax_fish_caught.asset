@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fa77f0c3f4631449e0bbaa550fdadc, type: 3}
   m_Name: vytrax_fish_caught
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   State: {fileID: 11400000, guid: addb0449603f8fe4e8447b395983126b, type: 2}
   UpAnimation: {fileID: 11400000, guid: 99d1fa33a473fba46a7e0b73f8cd43d8, type: 2}

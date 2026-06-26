@@ -24,3 +24,5 @@ MonoBehaviour:
   Items: spawns_starting_loadout_ancient_void_lord
   ContainerIDs:
   - prop_bronze_chest
+  - prop_stone_crate
+  - prop_stone_bin

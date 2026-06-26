@@ -48,7 +48,6 @@ MonoBehaviour:
   - item_slot_utility
   Attacks: []
   MerchantBuyValue: 5
-  MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: 5760
@@ -59,11 +58,11 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_hunger
+      SourceID: 
       Amount: 70
       Max: 0
       Permanent: 1
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

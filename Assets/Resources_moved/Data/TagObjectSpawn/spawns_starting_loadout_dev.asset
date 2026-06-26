@@ -16,16 +16,17 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 341848
   MaxIterations: 1
   MinIterations: 1
   Spawns:
-  - Comment: 
-    MinCount: 5
-    MaxCount: 5
+  - TagObjectID: item_water_purified
+    TagID: 
+    Comment: 
+    MinCount: 1
+    MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 1
-    TagObjectID: item_water_purified
-    TagID: 

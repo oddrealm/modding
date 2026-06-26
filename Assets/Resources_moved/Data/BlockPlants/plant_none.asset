@@ -22,6 +22,7 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 75
   MaxLifeTime: 5760
   ReproduceTimeInterval: 1440
   MaxNaturalSpawnCount: 32
@@ -82,6 +83,7 @@ MonoBehaviour:
     ActionID: tag_can_be_watered
     Buff:
       TargetID: attribute_thirst
+      SourceID: 
       Amount: 999
       Max: 0
       Permanent: 1

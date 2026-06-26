@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_item_rarity_rare
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Rare
   Name: Rare
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1754>
   Description: Shrouded in the whispers of rarity, these treasures are sought by
     those who wish to stand apart.
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.17332679, g: 0.50864756, b: 0.8962264, a: 1}
   Type: 
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2447
+  Order: 2548

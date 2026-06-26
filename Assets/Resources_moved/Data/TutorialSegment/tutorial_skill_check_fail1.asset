@@ -20,16 +20,20 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: Skill check fail
+  NextSegment: 
+  PreviousSegment: tutorial_skill_check_fail0
   Trigger: 0
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
   MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks: []
   ActiveRaces: []
   PermittedWindows: []
   SelectionType: 1
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -51,16 +55,8 @@ MonoBehaviour:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: "Failed jobs still award XP but don\u2019t complete."
-    NewLine: 0
-    UseOverrideColor: 0
-    OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
     Body: Skills can be increased by levelling up the profession related to the skill,
       or equipping items with skill buffs.
     NewLine: 1
     UseOverrideColor: 1
     OverrideColor: {r: 0.10588236, g: 0.6666667, b: 0.28235295, a: 1}
-  NextSegment: 

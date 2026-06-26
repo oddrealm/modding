@@ -19,13 +19,15 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Age: -1
-  MaxRandomLevel: 5
-  MinRandomLevel: 1
   RandomProfessions: []
   MaxRandomSkill: 15
   MinRandomSkill: 5
   SkillBonuses:
   - Skill: skill_mine
+    Amount: 15
+  - Skill: skill_plant
+    Amount: 15
+  - Skill: skill_log
     Amount: 15
   StartingStatuses: []
   RandomStartingStatuses: []

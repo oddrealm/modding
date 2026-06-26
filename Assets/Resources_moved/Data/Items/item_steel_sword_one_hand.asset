@@ -48,7 +48,6 @@ MonoBehaviour:
   Attacks:
   - attack_steel_sword_one_hand_cut
   MerchantBuyValue: 530
-  MerchantSellValue: 106
   TuneRating: 5
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -57,5 +56,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

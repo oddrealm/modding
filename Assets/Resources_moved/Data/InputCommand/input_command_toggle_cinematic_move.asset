@@ -12,22 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df2580c288e574db31bb8254b49819, type: 3}
   m_Name: input_command_toggle_cinematic_move
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_input_toggle_cinematic_move
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_input_toggle_cinematic_move
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 1
   InputState: 1
-  DeferTo: []
-  DefaultTriggers: []
+  DefaultTriggers:
+  - Hotkeys:
+    - Motion: 2
+      Key: 292
+      Mouse: 0
   ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
   IsToggle: 0
-  BtnsForceActive: 0
-  MaxIncrement: 1
   PlayerCanEdit: 1
+  IgnoreModifiers: 0
   PrintEvents: 0

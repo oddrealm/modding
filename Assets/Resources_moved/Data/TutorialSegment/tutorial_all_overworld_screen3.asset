@@ -20,16 +20,20 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
+  NextSegment: 
+  PreviousSegment: tutorial_all_overworld_screen2
   Trigger: 0
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: -1
   MinScaledPlayedTime: -1
   MinUnscaledPlayedTime: -1
   MinCooldown: -1
-  Hooks: []
   ActiveRaces: []
   PermittedWindows: []
   SelectionType: 4
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -45,42 +49,20 @@ MonoBehaviour:
   ProfessionID: 
   SkillID: 
   Speaker: Darby, the Historian
-  Icon: sp_adult_darby_ma0
-  BackgroundMaskTarget: top_panel
+  Icon: sp_biome_taiga_icon
+  BackgroundMaskTarget: 
   Message:
   - OnlyShowInputHotkey: 0
     InputID: 
     TagObjectID: 
-    Body: And
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0.6431373, g: 0.54509807, b: 0.45098042, a: 1}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: 
-    NewLine: 1
+    Body: You can select a tile with
+    NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
   - OnlyShowInputHotkey: 1
-    InputID: input_command_zoom_out
+    InputID: input_command_left_mouse
     TagObjectID: 
     Body: 
-    NewLine: 1
+    NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: 
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  - OnlyShowInputHotkey: 0
-    InputID: 
-    TagObjectID: 
-    Body: to zoom out.
-    NewLine: 1
-    UseOverrideColor: 0
-    OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  NextSegment: 

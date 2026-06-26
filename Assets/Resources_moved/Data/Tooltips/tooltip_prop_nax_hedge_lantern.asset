@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_prop_nax_hedge_lantern
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Nax Hedge Lantern
   NamePlural: 
   InlineIcon: <sprite=683>
   Description: 
+  DiscoveryHint: 
   Icon: sp_nax_hedge_lantern_icon
   TextColor: {r: 0.4862745, g: 0.1764706, b: 0.59607846, a: 1}
   Type: Light
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1775
+  Order: 2127

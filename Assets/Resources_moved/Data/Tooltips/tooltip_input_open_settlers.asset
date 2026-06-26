@@ -16,15 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Open Settler Overview
-  Name: Settler Overview
+  Action: Open Settlement Overview
+  Name: Open Settlement Overview
   NamePlural: 
   InlineIcon: 
-  Description: Get a comprehensive view of all your settlers, including their stats
-    and tasks.
+  Description: An overview of all settlers and discovered nations.
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
+  TextColor: {r: 0.8392157, g: 0.7490196, b: 0.654902, a: 1}
   Type: Input
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2681
+  Order: 2253

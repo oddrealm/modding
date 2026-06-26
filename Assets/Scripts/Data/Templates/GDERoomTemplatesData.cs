@@ -25,6 +25,15 @@ public class GDERoomTemplatesData : Scriptable
         public string jobFinishItemAction;
     }
 
+    [System.Serializable]
+    public struct OccupantGroupSetting
+    {
+        public string ID;
+        public bool Enabled;
+    }
+
+    public bool TrackByDefault = false;
+
     [Header("Category")]
     public string CategoryID = "room_category_homes";
 
@@ -33,24 +42,20 @@ public class GDERoomTemplatesData : Scriptable
 
     [Header("Max rooms that can be placed in a settlement.")]
     public int MaxRoomAmount = -1;
+    public int MaxRoomSize = 100;
 
     [Header("Occupants")]
-    public List<string> OccupantGroups = new List<string>();
+    public List<OccupantGroupSetting> OccupantGroupSettings = new();
 
     [Header("Visuals")]
-    public List<string> Visuals = new List<string>();
+    public List<string> Visuals = new();
 
     [Header("Jobs")]
-    public List<RoomAutoJob> DefaultAutoJobs = new List<RoomAutoJob>();
+    public List<RoomAutoJob> DefaultAutoJobs = new();
 
     [Header("Quality")]
-    public List<RoomQuality> RoomQualities = new List<RoomQuality>();
-
-    [Header("Room Management")]
-    public bool ShowProduction = true;
-    public bool ShowStockpile = true;
-    public bool ShowOccupants = true;
-    public bool ShowMarket = true;
+    public List<RoomQuality> RoomQualities = new();
+    public bool QualityImprovedByRoof = true;
 
     public override string ObjectTypeDisplay { get { return "Rooms"; } }
     public List<string> CommonProps { get; private set; } = new List<string>();
@@ -68,8 +73,7 @@ public class GDERoomTemplatesData : Scriptable
             TagID = "",
             TagObjectID = Key,
             HideIfZero = true,
-            StartDisabled = false,
-            TrackingType = TrackingTypes.ROOM
+            StartDisabled = !TrackByDefault,
         };
 
         return true;
@@ -121,6 +125,22 @@ public class GDERoomTemplatesData : Scriptable
     public override void OnLoaded()
     {
         EnsureTag("tag_rooms");
+
+#if DEV_TESTING
+        // if (!OccupantGroups.Contains("occupant_group_haulers"))
+        // {
+        //     OccupantGroups.Add("occupant_group_haulers");
+        // }
+        //
+        // OccupantGroupSettings.Clear();
+        //
+        // for (int i = 0; i < OccupantGroups.Count; i++)
+        // {
+        //     string groupID = OccupantGroups[i];
+        //     OccupantGroupSettings.Add(new OccupantGroupSetting() { ID = groupID, Enabled = groupID != "occupant_group_haulers" });
+        // }
+        // UnityEditor.EditorUtility.SetDirty(this);
+#endif
         RoomQualityByLevel.Clear();
         MaxQuality = 0;
 
@@ -234,6 +254,45 @@ public class GDERoomTemplatesData : Scriptable
                 return DataManager.GetTagObject(propID).TooltipOrder;
             }).ToList();
         }
+
+#if DEV_TESTING
+        for (int i = 0; i < DefaultAutoJobs.Count; i++)
+        {
+            RoomAutoJob autoJob = DefaultAutoJobs[i];
+            GDEBlueprintsData blueprint = DataManager.GetTagObject<GDEBlueprintsData>(autoJob.BlueprintID);
+
+            if (string.IsNullOrEmpty(blueprint.LocationID))
+            {
+                Debug.LogError($"Auto job '{autoJob.BlueprintID}' in room '{Key}' is missing a location");
+            }
+        }
+
+        bool debugFarm = false;
+        if (debugFarm && Key == "room_farm")
+        {
+            // for (int i = 0; i < DefaultAutoJobs.Count; i++)
+            // {
+            //     RoomAutoJob autoJob = DefaultAutoJobs[i];
+            //
+            //     autoJob.Settings.Priority = 0;
+            //     autoJob.Settings.AutoJobType = AutoJobTypes.AUTO;
+            //     DefaultAutoJobs[i] = autoJob;
+            //     UnityEditor.EditorUtility.SetDirty(this);
+            // }
+
+            // List<ITagObject> blueprints = DataManager.GetTagObjects<GDEBlueprintsData>();
+            //
+            // for (int i = 0; i < blueprints.Count; i++)
+            // {
+            //     GDEBlueprintsData blueprint = blueprints[i] as GDEBlueprintsData;
+            //
+            //     if (!blueprint.Key.Contains("blueprint_plant_")) { continue; }
+            //     if (DefaultAutoJobsHash.Contains(blueprint.Key)) { continue; }
+            //
+            //     Debug.LogError($"Farm is missing plant job: {blueprint.Key}");
+            // }
+        }
+#endif
 
         base.OnLoaded();
     }

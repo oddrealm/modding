@@ -12,45 +12,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f261f7e265adce4e84ea1e9db916f43, type: 3}
   m_Name: spawns_ancient_equipment_default
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 158727
   MaxIterations: 1
   MinIterations: 1
   Spawns:
-  - Comment: 
+  - TagObjectID: item_fledgling_aeternum
+    TagID: 
+    Comment: 
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 1
-    TagObjectID: item_fledgling_aeternum
+  - TagObjectID: item_gibaren_robe
     TagID: 
-  - Comment: 
+    Comment: 
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 1
-    TagObjectID: item_gibaren_robe
+  - TagObjectID: item_gibaren_pants
     TagID: 
-  - Comment: 
+    Comment: 
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 1
-    TagObjectID: item_gibaren_pants
+  - TagObjectID: item_gibaren_boots
     TagID: 
-  - Comment: 
+    Comment: 
     MinCount: 1
     MaxCount: 1
     LimitMaxCountByLocationItemMax: 0
     DisableRoll: 1
     Weight: 1
-    TagObjectID: item_gibaren_boots
-    TagID: 

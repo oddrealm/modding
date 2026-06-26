@@ -25,8 +25,8 @@ MonoBehaviour:
   Description: Some find this plant unsettling as it has the tendency to reach out
     and touch passers by.
   DiscoveryHint: Said to grow in Voidlands.
-  Icon: sp_sikari_icon
+  Icon: sp_plant_sikari_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Plant
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2694
+  Order: 2742

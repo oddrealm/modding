@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f5278ca67bd724e98d0f8f380f223a, type: 3}
+  m_Name: blueprint_prop_stone_chest
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_blueprint_prop_stone_chest
+  TagIDs:
+  - tag_blueprints
+  DiscoveryDependencies:
+  - item_stone_chunk
+  - skill_craft_stone
+  - prop_stone_chest
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: -1
+  SuppressDiscoveredNotif: 0
+  SkillPriorityOverride: -1
+  XP: 25
+  BaseSkillLevel: 10
+  CategoryID: blueprint_category_containers
+  ResearchKeys:
+  - research_industry_stone0
+  Repeat: 0
+  CheckStateForTransition: 0
+  MarkItemsAtLocationClaimed: 0
+  MarkItemsAtLocationUnclaimed: 0
+  SimTime: 0
+  FailJobOnSkillFailure: 0
+  TargetAttributeForSkillFailCheck: 
+  AddBlockSkillToJobSkill: 0
+  OnlyUseResourcesAtJobLocation: 0
+  LocationID: 
+  WorkPosition: 0
+  PermissionType: 2048
+  CanSitDuringJob: 0
+  WorkerID0: skill_craft_stone
+  WorkerID1: 
+  TargetID: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
+  JobActions:
+  - ActionType: 0
+    ResourceID: item_stone_chunk
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 0
+    ResourceID: item_stone_chunk
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 0
+    ResourceID: item_stone_chunk
+    WorkPosition: 0
+    AnimationTrigger: 0
+    AnimationHitEvent: 0
+    AnimStartFX: 
+    AnimStartSFX: 
+  - ActionType: 3
+    ResourceID: 
+    WorkPosition: 0
+    AnimationTrigger: 1
+    AnimationHitEvent: 1
+    AnimStartFX: 
+    AnimStartSFX: 
+  IsInstant: 0
+  ProgressWorkerAttribute: 
+  ProgressBarType: 2
+  ProgressFXMaxX: 0
+  ProgressFXMinX: 0
+  ProgressFXMaxY: 0
+  ProgressFXMinY: 0
+  Clear:
+    Layer: 99
+    DisableRemoveSpawns: 0
+  RevealDistance: 0
+  SpawnCount: 1
+  SpawnTagID: 
+  SpawnTagObjectID: prop_stone_chest
+  ConsumeWorker: 0
+  ChangeFillMass: 0
+  SetMass: 0
+  TriggerActivationID: 
+  ActiveWorkerStatus: 
+  OnJobStartActionID: 
+  OnJobQuitActionID: 
+  OnJobFinishActionID: 
+  OnItemConsumeActionID: 
+  TargetIsConsumer: 0
+  DisableConsumeSpawns: 0
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
+  OnFinishWorkerBuffs: []
+  OnFinishWorkerStatusAdds: []
+  OnFinishWorkerStatusRemoves: []
+  OnFinishTargetBuffs: []
+  OnFinishTargetStatusAdds: []
+  OnFinishTargetStatusRemoves: []
+  TryCatchFish: 0
+  TryHarvestFruit: 0
+  ShowWorkOutputActionText: 1
+  OnFinishedFX: 
+  WorkFX: fx_block_hit
+  WorkSFX: sfx_hammer_stone
+  OnFinishedSFX: 
+  ShowVisualsOnCursor: 1
+  ClearJobCursorVisuals:
+  - visuals_job_cursor_clear
+  PermittedCursorVisualsOverride: []
+  ProhibitedCursorVisualsOverride: []
+  Visuals:
+  - visuals_prop_stone_chest
+  MaxAutoJobQueueCount: 9
+  DisposeIfRequirementsNotMet: 0

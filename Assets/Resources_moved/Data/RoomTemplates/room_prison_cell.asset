@@ -17,18 +17,63 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   CategoryID: room_category_community
   ResearchKey: research_war_prison_cell0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_prison_cell
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_prison_cell
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_prison_cell
   DefaultAutoJobs:
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources:
+    - item_type
+    PermittedResources: []
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
+  - BlueprintID: blueprint_sleep
+    Settings:
+      Priority: 3
+      AutoJobType: 1
+    ProhibitedResources:
+    - item_type
+    PermittedResources: []
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
+  - BlueprintID: blueprint_sleep_on_ground
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources:
+    - item_type
+    PermittedResources: []
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
+  - BlueprintID: blueprint_eat_item
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources:
+    - item_type
+    PermittedResources: []
+    ProhibitedLocations:
+    - block_none
+    PermittedLocations: []
+  - BlueprintID: blueprint_drink_item
+    Settings:
+      Priority: 4
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -37,7 +82,4 @@ MonoBehaviour:
     - block_none
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

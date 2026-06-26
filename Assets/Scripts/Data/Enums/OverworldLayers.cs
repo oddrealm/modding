@@ -7,5 +7,7 @@ public enum OverworldLayers
     RIVERS = 2,
     SETTLEMENTS = 4,
     BORDERS = 8,
-    ALL = TERRAIN | RIVERS | SETTLEMENTS | BORDERS
+    PATHS = 16,
+    ROADS = 32,
+    ALL = TERRAIN | RIVERS | SETTLEMENTS | BORDERS | PATHS | ROADS
 }

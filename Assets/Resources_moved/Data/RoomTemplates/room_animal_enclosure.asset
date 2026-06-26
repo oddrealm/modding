@@ -17,20 +17,27 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
   CategoryID: room_category_agriculture
   ResearchKey: research_agriculture_animals0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_animal_enclosure_shepherds
-  - occupant_group_animal_enclosure_animals
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_animal_enclosure_shepherds
+    Enabled: 1
+  - ID: occupant_group_animal_enclosure_animals
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_animal_enclosure
   DefaultAutoJobs:
   - BlueprintID: blueprint_animal_milking
     Settings:
       Priority: 1
-      AutoJobType: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
@@ -38,15 +45,15 @@ MonoBehaviour:
   - BlueprintID: blueprint_animal_shearing
     Settings:
       Priority: 1
-      AutoJobType: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   - BlueprintID: blueprint_item_tallow_grass_hay
     Settings:
-      Priority: 1
-      AutoJobType: 0
+      Priority: 0
+      AutoJobType: 1
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
@@ -66,14 +73,115 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_animal_butcher
     Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_lay_egg
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_graze
+    Settings:
       Priority: 1
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_feed_animal
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_water_animal
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_plant_cat_grass
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_plant_mirtle_grass
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_plant_prim_grass
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_plant_tallow_grass
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_sleep_on_ground_animals
+    Settings:
+      Priority: 3
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_item_fodder
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_item_fodder_from_veg
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_item_fodder_from_fiber
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_incubate_egg
+    Settings:
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 0

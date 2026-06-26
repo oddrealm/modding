@@ -1,18 +1,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlantActionTargets
+{
+    PLANT,
+    ENTITY_AT_PLANT,
+}
+
 [System.Serializable]
 public struct PlantAction
 {
-    public string Comment;
     [Header("Used to activate from external sources (Optional). i.e., on watered 'tag_can_be_watered' plant action.")]
     public string ActionID;
+    public string Comment;
+    public PlantActionTargets TargetType;
     public BuffData Buff;
+    public string StatusID;
 }
 
 [CreateAssetMenu(menuName = "ScriptableObjects/BlockPlants")]
 public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObject
 {
+    public int RoomQualityAdd = 75;
     [Header("Lifetime Minutes (-1 = disabled)")]
     public int MaxLifeTime = 0;
     [System.NonSerialized]
@@ -33,9 +42,11 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObjec
     public float MatureThreshold = 0.5f;
     [Header("Mature Tag (i.e., tag_mature_tree")]
     public string MatureTag = "tag_mature_standing";
+    public string[] AdditionalMatureTags = System.Array.Empty<string>();
     public string MatureInlineIcon = "<sprite=1183>";
     [Header("If the plant gets bigger than this size, it grows much less.")]
     public int LimitGroupSizeThreshold = 2500;
+    public int MaxHeight = -1;
     [Header("Item Spawns")]
     public string RemoveItemDrops = "";
     public string MatureItemDrops = "";
@@ -102,10 +113,13 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObjec
     public PlantAction[] Actions = new PlantAction[0];
     public SimOptions[] StateOptions;
 
+    public GDEBlockPlantsData ReproductionPlantData { get; private set; }
+    public HashSet<string> ActionIDsHash { get; private set; } = new HashSet<string>();
     public HashSet<string> SeasonsHash { get; private set; } = new HashSet<string>();
     public ITagObject FruitingTagObj { get; private set; }
     public ITagObject DehydratedTagObj { get; private set; }
     public ITagObject MatureTagObj { get; private set; }
+    public ITagObject[] AdditionalMatureTagObjs { get; private set; } = System.Array.Empty<ITagObject>();
     public override bool IsNULL { get { return _isNull; } }
     public bool CanShowInProgressUI { get { return true; } }
     public override bool ShowMinimapCutoutColor
@@ -176,6 +190,19 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObjec
 #if ODD_REALM_APP
     public override void OnLoaded()
     {
+        // #if DEV_TESTING
+        //         if (RoomQualityAdd < 75)
+        //         {
+        //             RoomQualityAdd = 75;
+        //             UnityEditor.EditorUtility.SetDirty(this);
+        //         }
+        // #endif
+        //
+        // if (GlobalSettingsManager.GetIcon(TooltipIcon) == null)
+        // {
+        //
+        // }
+
         EnsureTag("tag_plants");
         if (!IsObstruction && PermittedPaths == BlockDirectionFlags.NONE)
         {
@@ -217,8 +244,36 @@ public class GDEBlockPlantsData : Scriptable, ISimulationData, IProgressionObjec
         }
 
         MatureTagObj = DataManager.GetTagObject(MatureTag);
+
+        if (AdditionalMatureTags != null && AdditionalMatureTags.Length > 0)
+        {
+            AdditionalMatureTagObjs = new ITagObject[AdditionalMatureTags.Length];
+
+            for (int i = 0; i < AdditionalMatureTags.Length; i++)
+            {
+                AdditionalMatureTagObjs[i] = DataManager.GetTagObject(AdditionalMatureTags[i]);
+            }
+        }
+
         FruitingTagObj = DataManager.GetTagObject(FruitingTag);
         DehydratedTagObj = DataManager.GetTagObject(DehydratedTag);
+
+        ActionIDsHash.Clear();
+
+        for (int i = 0; i < Actions.Length; i++)
+        {
+            if (!string.IsNullOrEmpty(Actions[i].ActionID))
+            {
+                ActionIDsHash.Add(Actions[i].ActionID);
+            }
+        }
+
+        ReproductionPlantData = null;
+
+        if (!string.IsNullOrEmpty(ReproductionPlant))
+        {
+            ReproductionPlantData = DataManager.GetTagObject<GDEBlockPlantsData>(ReproductionPlant);
+        }
 
         base.OnLoaded();
     }

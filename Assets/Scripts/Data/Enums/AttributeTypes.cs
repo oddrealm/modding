@@ -6,8 +6,8 @@ public enum AttributeDisplayTypes
     MAX = 2,
     AMOUNT_AND_MAX = 3,
     PERCENT = 4,
-    PERCENT_INT = 5
-
+    PERCENT_INT = 5,
+    AGE = 6,
 }
 
 public enum AttributeColorTypes

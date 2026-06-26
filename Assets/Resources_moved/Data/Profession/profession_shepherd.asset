@@ -12,30 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_shepherd
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_profession_shepherd
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_profession_shepherd
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
-  MapColor: {r: 1, g: 1, b: 1, a: 1}
-  AutoCreateUniform: 1
-  EarnBonusXPInCombat: 0
-  ResearchKey: 
   VisibleToPlayer: 0
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxMembers: -1
+  OrderGroup: 0
+  AutoCreateUniform: 1
+  ResearchKey: 
+  RequiredRaceID: 
+  RequiredGenderID: 
   CanBeAssigned: 0
   CanBeChanged: 1
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
   FavoursRangedAttackItems: 0
-  DefaultItems: []
+  IsCombatProfession: 0
   StartingItems: []
-  GlobalIndicator: indicator_global_shepherd
   SkillsActiveByDefault:
   - skill_animal_husbandry
-  - skill_carry
+  PlayerCanEditLevelUpSkills: 0
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp:
   - skill_animal_husbandry
+  StatusesToAdd: []
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1

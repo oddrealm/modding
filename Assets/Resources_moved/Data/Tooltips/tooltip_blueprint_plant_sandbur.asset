@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=70>
   Description: A resilient little weed that produces a prickly bur when ripe.
   DiscoveryHint: 
-  Icon: sp_sandbur_icon
+  Icon: sp_plant_sandbur_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2372
+  Order: 2397

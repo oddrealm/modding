@@ -4,5 +4,6 @@
     ARROW = 1,
     SPEAR = 2,
     ENERGY = 3,
-    ROCK = 4
+    ROCK = 4,
+    BEAM = 5
 }

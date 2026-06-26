@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f3a63260dd3054eba2ee68ee867d93, type: 3}
   m_Name: overworld_visuals_nation_border
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TextureX: 0
   TextureY: 62
   Layer: 8
   TransitionChannel: 4
   TransitionKey: 31
+  CanTransitionWithOutOfBounds: 0
   HasTransition: 1
   TailVariantCount: 0
   Animated: 0

@@ -22,10 +22,11 @@ MonoBehaviour:
   Name: Traelik
   NamePlural: Traeliks
   InlineIcon: <sprite=235>
-  Description: 
+  Description: Not the prettiest creature to grace our realm, but they are loyal
+    and dependable.
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_traelik
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3245
+  Order: 3282

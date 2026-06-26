@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Plant Apple Tree (Sapling)
+  Name: Plant Apple Tree Sapling
   NamePlural: 
   InlineIcon: <sprite=552>
   Description: 
-  Icon: sp_sapling_apple_icon
+  DiscoveryHint: 
+  Icon: sp_plant_apple_tree_sapling_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2282
+  Order: 2327

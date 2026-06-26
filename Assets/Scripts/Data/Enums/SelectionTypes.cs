@@ -4,7 +4,7 @@
     OBJECT = 1,
     JOBS = 2,
     ZONES = 3,
-    KINGDOMS = 4,
+    //KINGDOM = 4,
     ROOMS = 5,
     UTILITY = 6,
     PLANT = 7,
@@ -21,7 +21,5 @@
     OVERLAY = 18,
     NOTIFICATIONS = 19,
     TRACKING = 20,
-    PARTY = 21,
-    SETTLEMENT = 22,
     CLAIM = 23
 }

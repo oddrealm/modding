@@ -19,26 +19,27 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxMembers: -1
   OrderGroup: 0
   AutoCreateUniform: 1
-  EarnBonusXPInCombat: 1
   ResearchKey: 
+  RequiredRaceID: 
+  RequiredGenderID: 
   CanBeAssigned: 1
   CanBeChanged: 1
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
   FavoursRangedAttackItems: 1
   IsCombatProfession: 1
   StartingItems:
   - ItemID: item_wood_bow_two_hand
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
-  GlobalIndicator: indicator_global_archer
   SkillsActiveByDefault:
-  - skill_carry
   - skill_fight_range
+  PlayerCanEditLevelUpSkills: 0
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp:
   - skill_fight_range
+  StatusesToAdd: []
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1

@@ -16,13 +16,16 @@ MonoBehaviour:
   TooltipID: tooltip_room_occupant_group_occupants
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   OccupantManageType: 1
   OccupantsMustBePlayerControlled: 1
+  CanCustomize: 0
+  NeedsAllRequirements: 1
   RequiredOccupantTagObjs:
   - TagID: tag_races
     TagObjectKey: race_ancient
     Prohibit: 0
-  - TagID: tag_skills
-    TagObjectKey: skill_craft_void
+  - TagID: tag_professions
+    TagObjectKey: profession_thaumaturge
     Prohibit: 0

@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0.2627451, g: 0.94117653, b: 0.40784317, a: 1}
   Type: Profession
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 115
+  Order: 78

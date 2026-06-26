@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=1456>
   Description: A curious plant that grows bulbs containing air.
   DiscoveryHint: 
-  Icon: sp_sogweed_icon
+  Icon: sp_plant_sogweed_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2377
+  Order: 2402

@@ -12,7 +12,7 @@ public struct RandomChance
         SampleSize = sampleSize;
     }
 
-    public float Percentage
+    public readonly float Percentage
     {
         get
         {
@@ -25,13 +25,13 @@ public struct RandomChance
         }
     }
 
-    public bool IsValid => Chance > 0 && SampleSize > 0;
-    public bool IsGuaranteed => Chance >= SampleSize;
+    public readonly bool IsValid => Chance > 0 && SampleSize > 0;
+    public readonly bool IsGuaranteed => Chance >= SampleSize;
 
 #if ODD_REALM_APP
-    public bool Roll()
+    public readonly bool Roll()
     {
-        if (Chance == SampleSize) { return true; }
+        if (IsGuaranteed) { return true; }
         return TinyBeast.Random.Range(0, (int)SampleSize) < Chance;
     }
 #endif

@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: notif_new_elder
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
+  TooltipID: tooltip_notif_new_elder
   TagIDs:
   - tag_notif_group_entity
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   NotifGroup: tag_notif_group_entity
   SFXGroupID: sfx_notif_default

@@ -17,11 +17,12 @@ public class SimulationCondition
     [System.NonSerialized]
     public bool Expanded;
 
-    [System.NonSerialized]
-    public bool Enabled = true;
-
     [Header("Whether the outcome must be true or false")]
     public bool Outcome = true;
+
+#if DEV_TESTING
+    public string DebugString = "";
+#endif
 
     [System.NonSerialized]
     public bool FORCE_PASS;
@@ -33,7 +34,6 @@ public class SimulationCondition
     // Called when game data loads
     public virtual void Init()
     {
-
     }
 
     public virtual string GetDisplayName()
@@ -76,42 +76,19 @@ public class SimulationCondition
                                          SimulationState newState)
     {
         if (target.IsNULL) { return false; }
+        if (conditions == null || conditions.Length == 0) { return true; }
 
-        int conditionCount = conditions.Length;
-
-        if (conditionCount == 0) { return true; }
-
-        int req = requireAll ? conditionCount : 1;
-        int pass = 0;
-
-#if DEV_TESTING
-        if (Master.IsDebugPoint(target))
-        {
-            // Breakpoint.
-        }
-#endif
-
-        for (int i = 0; i < conditionCount; i++)
+        for (int i = 0; i < conditions.Length; i++)
         {
             SimulationCondition condition = conditions[i];
 
-            if (!condition.Enabled) { continue; }
-
-#if DEV_TESTING
-            if (condition.DebugBreakpoint)
-            {
-                // Breakpoint.
-            }
-#endif
             bool conditionOutcome = condition.IsConditionMet(manager, target, simObj, prevState, newState) == condition.Outcome;
 
-            pass += conditionOutcome ? 1 : 0;
-
-            if (!requireAll && pass >= req) return true;
-            if (requireAll && !conditionOutcome) return false;
+            if (!requireAll && conditionOutcome) { return true; }
+            if (requireAll && !conditionOutcome) { return false; }
         }
 
-        return pass >= req;
+        return requireAll;
     }
 #endif
 
@@ -320,7 +297,7 @@ public class HasInstanceSimCondition : SimulationCondition
     {
         bool outcome = base.IsConditionMet(manager, target, origin, prevState, newState);
 
-        if (target.packedCounts == 0) { return outcome; }
+        //if (target.packedCounts == 0) { return outcome; }
 
         string key = TagObjectKey;
 
@@ -331,16 +308,45 @@ public class HasInstanceSimCondition : SimulationCondition
 
         UintArray instances = manager.GetSimObjectsByLocation(target.locationUID);
 
+        if (instances == null || instances.Count == 0) { return outcome; }
+
         for (int i = 0; i < instances.Count; i++)
         {
             ISimulationObject objInstance = manager.GetSimObjectByUID(instances[i]);
 
+            if (!string.IsNullOrEmpty(StateID))
+            {
+                if (!objInstance.HasSimState(StateID, target, prevState, newState, OptionID)) { continue; }
+
+
+#if DEV_TESTING
+                if (!string.IsNullOrEmpty(DebugString))
+                {
+                    Debug.LogError($"{DebugString} origin:{origin} objInstance:{objInstance} target:{target}");
+                }
+#endif
+                outcome = true;
+                break;
+            }
+
             if (!string.IsNullOrEmpty(key) && objInstance.TagObjectData.Key != key) { continue; }
-            if (!string.IsNullOrEmpty(StateID) && !objInstance.HasSimState(StateID, target, prevState, newState, OptionID)) { continue; }
-            outcome |= true;
+
+#if DEV_TESTING
+            if (!string.IsNullOrEmpty(DebugString))
+            {
+                Debug.LogError($"{DebugString} origin:{origin} objInstance:{objInstance} target:{target}");
+            }
+#endif
+            outcome = true;
             break;
         }
 
+#if DEV_TESTING
+        if (!string.IsNullOrEmpty(DebugString))
+        {
+            Debug.LogError($"{DebugString} origin:{origin} target:{target} OUTCOME = {outcome}");
+        }
+#endif
         return outcome;
     }
 #endif
@@ -370,18 +376,18 @@ public class HasNeighborSimCondition : SimulationCondition, ISimulationCondition
 
         BlockPoint targetPoint = target.Point;
         BlockPoint originPoint = origin.Point;
+        int indexOffset = TinyBeast.Random.Range(0, NeighborPositions.Positions.Length);
 
         for (int i = 0; !outcome && i < NeighborPositions.Positions.Length; i++)
         {
-            BlockPoint np = targetPoint + new BlockPoint(NeighborPositions.Positions[i]);
+            Vector3Int positionOffset = NeighborPositions.Positions[(i + indexOffset) % NeighborPositions.Positions.Length];
+            BlockPoint np = targetPoint + new BlockPoint(positionOffset);
+
             if (np == originPoint) { continue; }
+
             Location l = manager.GetSimLocation(new LocationUID(np));
 
-            for (int n = 0; !outcome && n < NeighborConditions.Length; n++)
-            {
-                SimulationCondition neighborCondition = NeighborConditions[n];
-                outcome |= neighborCondition.IsConditionMet(manager, l, origin, prevState, newState) == neighborCondition.Outcome;
-            }
+            outcome = IsSimConditionMet(manager, origin, true, l, NeighborConditions, prevState, newState);
         }
 
         return outcome;
@@ -692,7 +698,7 @@ public class RandomChanceSimCondition : SimulationCondition
 
         int minPerDay = 60 * 24;
 
-        float probabilityOfWinPerDay = 1f - Mathf.Pow((float)(MaxRange - 1) / (float)MaxRange, (float)minPerDay);
+        float probabilityOfWinPerDay = 1f - Mathf.Pow((MaxRange - 1) / (float)MaxRange, minPerDay);
 
         display += $" (per min {probabilityOfWinPerMinute.ToString("0.000%")} - per day {probabilityOfWinPerDay.ToString("0.000%")}";
 
@@ -709,8 +715,8 @@ public class RandomChanceSimCondition : SimulationCondition
         // 0.08
         // 1 / 1,000,000s
         int roll = (int)TinyBeast.Random.FloatRange(0, MaxRange);
-        SimTime difference = (newState.SimAge - prevState.SimAge);
-        outcome |= (roll) < 1 + difference;
+        SimTime difference = newState.SimAge - prevState.SimAge;
+        outcome |= roll < 1 + difference;
 
         return outcome;
     }

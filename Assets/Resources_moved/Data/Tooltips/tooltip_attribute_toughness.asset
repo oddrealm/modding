@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Toughness
   Name: Toughness
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=81>
   Description: How much damage is reduced from incoming attacks. Damage can only
     be reduced to a minimum of 1.
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 0.39312124, g: 0.68177676, b: 0.8742138, a: 1}
+  TextColor: {r: 0.37486652, g: 0.56808776, b: 0.6792453, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3149
+  Order: 3299

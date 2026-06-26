@@ -21,6 +21,7 @@ MonoBehaviour:
   - tag_item_type_meal
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 2
   UsageTags:
@@ -48,7 +49,6 @@ MonoBehaviour:
   - item_slot_utility
   Attacks: []
   MerchantBuyValue: 10
-  MerchantSellValue: 2
   TuneRating: 3
   ItemRarity: item_rarity_uncommon
   DecayRate: 5760
@@ -59,11 +59,11 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_hunger
+      SourceID: 
       Amount: 35
       Max: 0
       Permanent: 1
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

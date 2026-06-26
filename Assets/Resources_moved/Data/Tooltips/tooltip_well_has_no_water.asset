@@ -26,6 +26,6 @@ MonoBehaviour:
   DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.7568628, g: 0.18039216, b: 0.18039216, a: 1}
-  Type: 
+  Type: Status
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 1661
+  Order: 1683

@@ -50,7 +50,6 @@ MonoBehaviour:
   Attacks:
   - attack_bronze_carving_knife_one_hand_cut
   MerchantBuyValue: 300
-  MerchantSellValue: 60
   TuneRating: 3
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -61,11 +60,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_craft_leather
+      SourceID: 
       Amount: 7
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

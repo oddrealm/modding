@@ -108,13 +108,13 @@ public class ActivateStateSimAction : SimulationAction
     {
         base.Simulate(manager, target, originInstance, prevState, newState);
 
-        InstanceGroupUID groupUID = 0;
+        InstanceUID groupUID = 0;
 
         if (UseGroupUID)
         {
             if (originInstance.GroupUID == 0)
             {
-                groupUID = InstanceGroupUID.Next();
+                groupUID = InstanceUID.Next();
             }
             else
             {
@@ -202,11 +202,11 @@ public class DuplicateInstanceSimAction : SimulationAction
     {
         base.Simulate(manager, target, originInstance, prevState, newState);
 
-        InstanceGroupUID groupUID = originInstance.GroupUID;
+        InstanceUID groupUID = originInstance.GroupUID;
 
         if (UseGroupUID && groupUID == 0)
         {
-            groupUID = InstanceGroupUID.Next();
+            groupUID = InstanceUID.Next();
             originInstance.SetGroup(groupUID);
         }
 
@@ -258,11 +258,11 @@ public class SpawnInstanceFromTagSimAction : SimulationAction
             return;
         }
 
-        InstanceGroupUID groupUID = originInstance.GroupUID;
+        InstanceUID groupUID = originInstance.GroupUID;
 
         if (UseGroupUID && groupUID == 0)
         {
-            groupUID = InstanceGroupUID.Next();
+            groupUID = InstanceUID.Next();
             originInstance.SetGroup(groupUID);
         }
 
@@ -319,11 +319,11 @@ public class SpawnInstanceFromTagObjectSimAction : SimulationAction
             return;
         }
 
-        InstanceGroupUID groupUID = originInstance.GroupUID;
+        InstanceUID groupUID = originInstance.GroupUID;
 
         if (UseGroupUID && groupUID == 0)
         {
-            groupUID = InstanceGroupUID.Next();
+            groupUID = InstanceUID.Next();
             originInstance.SetGroup(groupUID);
         }
 

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93411bf4023950646b46925b4de6f11a, type: 3}
   m_Name: prefab_house_gwdir0
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 1736
   UseRandomRotation: 1
@@ -182,13 +182,6 @@ MonoBehaviour:
     X: 1
     Y: 2
     Z: 0
-  - TagObjectID: entity_spawn_prefab_house_gwdir
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 1
-    Y: 1
-    Z: 0
   - TagObjectID: prop_wood_chest
     TagObjectID0: 
     TagObjectID1: 
@@ -291,13 +284,6 @@ MonoBehaviour:
     TagObjectID0: 
     TagObjectID1: 
     TagObjectID2: 
-    X: 2
-    Y: 1
-    Z: 2
-  - TagObjectID: plant_nelescuro
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
     X: 1
     Y: 1
     Z: 2
@@ -314,4 +300,11 @@ MonoBehaviour:
     TagObjectID2: 
     X: 2
     Y: 2
+    Z: 2
+  - TagObjectID: plant_tree_tthdir_sapling
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 2
+    Y: 1
     Z: 2

@@ -16,11 +16,15 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeparateFirstNamePrepends: 0
+  SeparateFirstNameAppends: 0
   FirstNameNeutralPrependChances: 0
   FirstNameNeutralPrepends: []
   NeutralFirstNames: []
+  FirstNameNeutralAppendChances: 0
+  FirstNameNeutralAppends: []
   FirstNameMasculinePrependChances: 0
   FirstNameMasculinePrepends: []
   MasculineFirstNames:
@@ -126,6 +130,8 @@ MonoBehaviour:
   - Zed
   - Zim
   - Zunder
+  FirstNameMasculineAppendChances: 0
+  FirstNameMasculineAppends: []
   FirstNameFemininePrependChances: 0
   FirstNameFemininePrepends: []
   FeminineFirstNames:
@@ -183,6 +189,8 @@ MonoBehaviour:
   - Yilliny
   - Zara
   - Zia
+  FirstNameFeminineAppendChances: 0
+  FirstNameFeminineAppends: []
   SeparateLastNamePrepends: 0
   LastNamePrependChances: 50
   LastNamePrepends:

@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
+  m_Name: entity_status_machix
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_entity_status_machix
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIndicator: 0
+  ShowOnTooltip: 0
+  Notification: 
+  SourceTooltipID: 
+  ExpireTimeMinutesMin: 0
+  ExpireTimeMinutesMax: 0
+  StatusesToRemove: []
+  StatusesToAddOnExpire: []
+  PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_neutral
+  - faction_hostile
+  - faction_captured
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  TooltipBackgroundColor: {r: 0.105882354, g: 0.47058824, b: 0.6666667, a: 1}
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  MaskIsThreat: 0
+  Actions:
+  - Comment: Lower energy over time
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 30
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 0
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_energy
+      SourceID: 
+      Amount: -1
+      Max: 0
+      Permanent: 1
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Debuff if energy == 0
+    ConditionTarget: attribute_energy
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 2499668487597981758
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 2
+    DeactivationAction: 5
+    ActionID: 
+    Buffs: []
+    Statuses:
+    - entity_status_machix_drained
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Cold resist
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 4
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_cold_tolerance
+      SourceID: 
+      Amount: 50
+      Max: 0
+      Permanent: 0
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2499668487597981758
+      type: {class: EqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0
+        Normalized: 0

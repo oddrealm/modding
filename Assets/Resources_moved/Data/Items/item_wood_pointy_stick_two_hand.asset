@@ -48,7 +48,6 @@ MonoBehaviour:
   Attacks:
   - attack_wood_pointy_stick_two_hand_pierce
   MerchantBuyValue: 45
-  MerchantSellValue: 9
   TuneRating: 1
   ItemRarity: item_rarity_common
   DecayRate: -1
@@ -57,5 +56,4 @@ MonoBehaviour:
   StackSize: 1
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

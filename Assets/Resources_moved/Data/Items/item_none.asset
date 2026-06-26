@@ -21,8 +21,7 @@ MonoBehaviour:
   VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 0
-  UsageTags:
-  - tag_can_equip
+  UsageTags: []
   MaxLifeTime: 0
   MaxDefaultSimTime: 14400
   ItemSimulationID: simulation_item_default
@@ -45,8 +44,7 @@ MonoBehaviour:
   PermittedSlots: []
   Attacks: []
   MerchantBuyValue: 15
-  MerchantSellValue: 3
-  TuneRating: 0
+  TuneRating: -1
   ItemRarity: item_rarity_common
   DecayRate: -1
   DecayItem: 
@@ -54,5 +52,4 @@ MonoBehaviour:
   StackSize: 5
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

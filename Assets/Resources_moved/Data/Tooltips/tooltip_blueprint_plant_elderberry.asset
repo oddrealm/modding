@@ -25,8 +25,8 @@ MonoBehaviour:
   Description: Dark, luscious berries, ideal for flavorful syrups and immune-boosting
     teas.
   DiscoveryHint: 
-  Icon: sp_elderberry_icon
+  Icon: sp_plant_elderberry_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2334
+  Order: 2359

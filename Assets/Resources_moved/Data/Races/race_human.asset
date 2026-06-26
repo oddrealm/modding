@@ -40,7 +40,4 @@ MonoBehaviour:
   - ItemID: item_linen_pants
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
-  Statuses:
-  - entity_status_human_resourceful
-  Buffs: []
   AutoCreateUniform: 1

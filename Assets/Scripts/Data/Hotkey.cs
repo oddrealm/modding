@@ -4,6 +4,16 @@ using UnityEngine;
 [System.Serializable]
 public struct Hotkey
 {
+    [System.Flags]
+    public enum MotionTypes
+    {
+        NONE = 0,
+        PRESS = 1,
+        RELEASE = 2,
+        HOLD = 4,
+        ANY = PRESS | RELEASE | HOLD
+    }
+
     public enum MouseTypes
     {
         NONE = 0,
@@ -14,14 +24,11 @@ public struct Hotkey
         SCROLL_DOWN = 5
     }
 
-    public bool Down;
-    public bool Hold;
-    public bool Up;
-
+    public MotionTypes Motion;
     public KeyCode Key;
     public MouseTypes Mouse;
 
-    public int UID
+    public readonly int UID
     {
         get
         {
@@ -32,7 +39,7 @@ public struct Hotkey
     }
 
 #if ODD_REALM_APP
-    public string GetDisplay()
+    public readonly string GetDisplay()
     {
         string txt = "???";
         string inline = "<sprite=1576>";
@@ -78,48 +85,45 @@ public struct Hotkey
         return inline + txt;
     }
 
-    public bool IsTriggered()
+    public readonly bool IsTriggered(InputSet activeInput)
     {
         if (Mouse != MouseTypes.NONE)
         {
-            if (Mouse != MouseTypes.SCROLL_UP && Mouse != MouseTypes.SCROLL_DOWN)
-            {
-                if (!(Hold && Input.GetMouseButton((int)Mouse - 1)) &&
-                    !(Down && Input.GetMouseButtonDown((int)Mouse - 1)) &&
-                    !(Up && Input.GetMouseButtonUp((int)Mouse - 1))) { return false; }
-            }
-            else
-            {
-                if (InputReceiverManager.Instance.IsMouseOverUI()) { return false; }
-
-                float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-
-                if (SaveLoadManager.Instance.PlayerSettings.InvertScrollWheelDir)
-                {
-                    scrollInput = -scrollInput;
-                }
-
-                if (scrollInput >= -float.Epsilon && Mouse == MouseTypes.SCROLL_UP)
-                {
-                    return false;
-                }
-
-                if (scrollInput <= float.Epsilon && Mouse == MouseTypes.SCROLL_DOWN)
-                {
-                    return false;
-                }
-            }
-
-            return true;
+            if (activeInput.IsActive(Mouse, Motion)) { return true; }
+            // if (Mouse != MouseTypes.SCROLL_UP && Mouse != MouseTypes.SCROLL_DOWN)
+            // {
+            //     if (!(Hold && Input.GetMouseButton((int)Mouse - 1)) &&
+            //         !(Down && Input.GetMouseButtonDown((int)Mouse - 1)) &&
+            //         !(Up && Input.GetMouseButtonUp((int)Mouse - 1))) { return false; }
+            // }
+            // else
+            // {
+            //     if (InputReceiverManager.Instance.IsMouseOverUI()) { return false; }
+            //
+            //     float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+            //
+            //     if (scrollInput >= -float.Epsilon && Mouse == MouseTypes.SCROLL_DOWN)
+            //     {
+            //         return false;
+            //     }
+            //
+            //     if (scrollInput <= float.Epsilon && Mouse == MouseTypes.SCROLL_UP)
+            //     {
+            //         return false;
+            //     }
+            // }
+            //
+            // return true;
         }
 
         if (Key != KeyCode.None)
         {
-            if (!(Hold && Input.GetKey(Key)) &&
-                !(Down && Input.GetKeyDown(Key)) &&
-                !(Up && Input.GetKeyUp(Key))) { return false; }
-
-            return true;
+            if (activeInput.IsActive(Key, Motion)) { return true; }
+            // if (!(Hold && Input.GetKey(Key)) &&
+            //     !(Down && Input.GetKeyDown(Key)) &&
+            //     !(Up && Input.GetKeyUp(Key))) { return false; }
+            //
+            // return true;
         }
 
         return false;

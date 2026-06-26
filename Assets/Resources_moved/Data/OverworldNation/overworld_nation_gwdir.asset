@@ -18,15 +18,21 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  NewGameOrder: 3
   ShowOnMap: 1
   PlayerCanChoose: 1
   Unlocked: 1
   Banner: sp_gwdir_banner
-  BannerColor: {r: 0.5176471, g: 0.56078434, b: 0.43137258, a: 1}
+  BannerColor: {r: 0.109803915, g: 0.39607844, b: 0.27363974, a: 1}
+  CaravanIcon: sp_caravan_human_icon
   KingdomIcon: <sprite=1694>
   SettlementIcon: <sprite=1028>
+  KingdomSpriteID: sp_gwdir_kingdom_icon
+  SettlementSpriteID: sp_gwdir_settlement_icon
+  NationTypeDisplay: Mothergrove
   OverworldVisuals: overworld_visuals_gwdir
   BorderVisuals: overworld_visuals_nation_border
+  RaidSpawnGroupID: spawns_raid_default
   Loadouts:
   - starting_loadout_gwdir_dwellers
   - starting_loadout_gwdir_caretakers
@@ -36,6 +42,17 @@ MonoBehaviour:
   - race_gwdir
   DiscoveredRaces:
   - race_gwdir
+  RaidEventEntityIDs:
+  - entity_gwdir
+  VictoryRaidDialogueIDs:
+  - dialogue_raid_default_victory0
+  - dialogue_raid_default_victory1
+  - dialogue_raid_default_victory2
+  - dialogue_raid_default_victory3
+  - dialogue_raid_default_victory4
+  - dialogue_raid_default_victory5
+  DefeatRaidDialogueIDs:
+  - dialogue_raid_default_defeat0
   GenerateSettlementNameKey: location_names_gwdir_settlements
   GenerateKingdomNameKey: location_names_gwdir_kingdoms
   GameOverScenarios:
@@ -50,7 +67,7 @@ MonoBehaviour:
   ChanceToExpandTerritory: 50
   ColonistPartyID: party_colonist
   NewPartyID: party_empty
-  KingdomSizeMax: 30
+  KingdomSizeMax: 1
   SettlementSimPopMax: 15
   SettlementSimPopMin: 5
   Landmarks:
@@ -61,3 +78,51 @@ MonoBehaviour:
   MaxLeaders: 1
   Leaders:
   - leader_gwdir_gwnvayth
+  RevealDepthOnSettlementStart: -1
+  Actions:
+  - ActionID: start_settlement
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_tthdir_tree_seed
+      Amount: 1
+    - ItemID: item_wir
+      Amount: 100
+  - ActionID: claim_territory
+    KingdomPointCost: 1
+    ItemRequirements: []
+  - ActionID: build_road
+    KingdomPointCost: 0
+    ItemRequirements:
+    - ItemID: item_stone_chunk
+      Amount: 50
+  LeaderSpawnData:
+    EntityID: entity_gwdir
+    ProfessionID: profession_gwnvayth
+    FactionID: faction_nation
+    GenderID: 
+    TuningID: 
+    AppearanceID: 
+    AgeType: 8
+    StartingAgeMins: 0
+    Tag: 
+    Count: 0
+    Chance:
+      Chance: 0
+      SampleSize: 0
+    SpawnScenario: 
+    AutoGenEquipment: 0
+    AutoGenInventory: 0
+    DisableItemEquipFromTuning: 0
+    EquippedItems: []
+    InventoryItems: []
+    AddedStatuses: []
+  Perks:
+  - Title: <sprite=1444> Gwnvayth
+    Description: Led by a single female that grows male Gwdir to reproduce.
+  - Title: <sprite=1437> T'Thdir
+    Description: Have a symbiotic relationship with the T'Thdir tree that provides
+      resources.
+  - Title: <sprite=1666> Regular Metabolism
+    Description: Require food and drink to survive.
+  - Title: <sprite=11> Master Farmers
+    Description: Receive a boost to farming skill.

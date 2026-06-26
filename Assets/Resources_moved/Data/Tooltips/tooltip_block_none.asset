@@ -19,12 +19,13 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Open
+  Name: Empty
   NamePlural: 
   InlineIcon: <sprite=1672>
-  Description: No objects fill this space.
+  Description: No props or blocks fill this space.
+  DiscoveryHint: 
   Icon: sp_block_none_icon
-  TextColor: {r: 0.60223085, g: 0.93313545, b: 0.9433962, a: 1}
-  Type: Location
+  TextColor: {r: 0.6981132, g: 0.6956435, b: 0.6289605, a: 1}
+  Type: Block
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2170
+  Order: 1394

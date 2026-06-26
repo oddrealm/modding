@@ -23,31 +23,33 @@ MonoBehaviour:
   - plant_gooseberry
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: -1
+  SuppressDiscoveredNotif: 0
   SkillPriorityOverride: -1
   XP: 5
-  BaseSkillCheckFailXP: 10
-  BaseSkillLevel: 3
-  AwardXPForEachAction: 0
+  BaseSkillLevel: 5
   CategoryID: blueprint_category_plants
-  DesignationListOrder: -1
-  ResearchKey: 
+  ResearchKeys: []
   Repeat: 0
   CheckStateForTransition: 0
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
-  LocationID: 
+  LocationID: block_none
   WorkPosition: 0
   PermissionType: 1024
   CanSitDuringJob: 0
-  WorkerID: skill_plant
+  WorkerID0: skill_plant
+  WorkerID1: 
   TargetID: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
   - ActionType: 0
     ResourceID: item_gooseberry_seed
@@ -63,8 +65,8 @@ MonoBehaviour:
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
+  IsInstant: 1
   ProgressWorkerAttribute: 
-  ProgressMax: 1
   ProgressBarType: 2
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
@@ -77,6 +79,7 @@ MonoBehaviour:
   SpawnCount: 1
   SpawnTagID: 
   SpawnTagObjectID: plant_gooseberry
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -85,8 +88,12 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: 
   OnItemConsumeActionID: 
+  TargetIsConsumer: 0
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
@@ -95,7 +102,6 @@ MonoBehaviour:
   OnFinishTargetStatusRemoves: []
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
   ShowWorkOutputActionText: 0
   OnFinishedFX: 
   WorkFX: 
@@ -108,9 +114,5 @@ MonoBehaviour:
   ProhibitedCursorVisualsOverride: []
   Visuals:
   - visuals_plant_gooseberry
-  ShowVisualsIfStarted: 1
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0

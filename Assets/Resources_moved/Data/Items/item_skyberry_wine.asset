@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_drink
   MaxLifeTime: 0
@@ -36,9 +38,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_skyberry_wine
   CharacterColorMaskID: 
-  CharacterColorMask: {fileID: 0}
   AccessoryID: 
-  AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -46,9 +46,8 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_utility
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 125
-  MerchantSellValue: 25
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -59,6 +58,7 @@ MonoBehaviour:
   - ActionID: tag_can_drink
     Buff:
       TargetID: attribute_thirst
+      SourceID: 
       Amount: 50
       Max: 0
       Permanent: 1
@@ -67,6 +67,7 @@ MonoBehaviour:
   - ActionID: tag_can_drink
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -75,11 +76,11 @@ MonoBehaviour:
   - ActionID: tag_can_drink
     Buff:
       TargetID: attribute_xp
+      SourceID: 
       Amount: 25
       Max: 0
       Permanent: 1
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

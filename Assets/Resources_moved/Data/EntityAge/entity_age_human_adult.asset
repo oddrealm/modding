@@ -16,10 +16,11 @@ MonoBehaviour:
   TooltipID: tooltip_entity_age_adult
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   AgeType: 2
   Max: 64
-  Min: 16
+  Min: 18
   CanEarnXP: 1
   CanRespec: 1
   Statuses:

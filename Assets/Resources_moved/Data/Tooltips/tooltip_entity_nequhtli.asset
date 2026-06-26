@@ -22,10 +22,12 @@ MonoBehaviour:
   Name: Nequhtli
   NamePlural: Nequhtlis
   InlineIcon: <sprite=530>
-  Description: 
+  Description: Despite their resemblance to rats, these subterranean creatures are
+    unrelated. The Tomek consider the Nequhtli bitter enemies and wage an endless
+    war against them in the depths of Odd.
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_nequhtli
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2138
+  Order: 2157

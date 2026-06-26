@@ -21,6 +21,8 @@ MonoBehaviour:
   - tag_item_rarity_common
   DiscoveryDependencies:
   - blueprint_plant_prickly_bear
+  - blueprint_plant_prickly_bear_in_room
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 10
   UsageTags:
@@ -46,23 +48,22 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots: []
   Attacks: []
-  MerchantBuyValue: 5
-  MerchantSellValue: 1
+  MerchantBuyValue: 4
   TuneRating: 0
-  ItemRarity: item_rarity_common
-  DecayRate: -1
-  DecayItem: 
+  ItemRarity: item_rarity_uncommon
+  DecayRate: 43200
+  DecayItem: item_waste_rotten_food
   FlammableChance: 500
   StackSize: 5
   Actions:
   - ActionID: tag_can_plant_seed
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: plant_prickly_bear
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

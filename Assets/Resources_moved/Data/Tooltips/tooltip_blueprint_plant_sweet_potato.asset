@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=186>
   Description: 
   DiscoveryHint: 
-  Icon: sp_sweetpotato_icon
+  Icon: sp_plant_sweet_potato_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 2380
+  Order: 2405

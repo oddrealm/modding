@@ -12,10 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bbd2cf8d9e60a40b72614a6e504830, type: 3}
   m_Name: sfx_ardyn_male_select_negative
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  SFX: []
+  PitchOverride: 0.6
+  SFX:
+  - audio_sfx_select_male_hrmph_00
+  - audio_sfx_select_male_hrmph_01
+  - audio_sfx_select_male_hrmph_02
+  - audio_sfx_select_male_oh_00
+  - audio_sfx_select_male_oh_01
+  - audio_sfx_select_male_oh_02
+  - audio_sfx_select_male_wha_00
+  - audio_sfx_select_male_wha_01
+  - audio_sfx_select_male_wha_02
+  - audio_sfx_select_male_wha_03
+  - audio_sfx_select_male_wha_04
+  - audio_sfx_select_male_wha_05

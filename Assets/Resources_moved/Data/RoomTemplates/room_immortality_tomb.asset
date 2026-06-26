@@ -17,12 +17,18 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 1
   CategoryID: room_category_homes
   ResearchKey: research_ancient_immortality_tomb0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_immortality_tomb
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_immortality_tomb
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_immortality_tomb
   DefaultAutoJobs:
@@ -36,7 +42,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -45,7 +51,4 @@ MonoBehaviour:
     - block_none
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

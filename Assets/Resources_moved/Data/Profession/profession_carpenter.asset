@@ -12,38 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_carpenter
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_profession_carpenter
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_profession_carpenter
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
-  MapColor: {r: 1, g: 1, b: 1, a: 1}
-  AutoCreateUniform: 1
-  EarnBonusXPInCombat: 0
-  ResearchKey: 
   VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  MaxMembers: -1
+  OrderGroup: 0
+  AutoCreateUniform: 1
+  ResearchKey: 
+  RequiredRaceID: 
+  RequiredGenderID: 
   CanBeAssigned: 1
   CanBeChanged: 1
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
   FavoursRangedAttackItems: 0
-  DefaultItems:
-  - item_wood_hammer_one_hand
+  IsCombatProfession: 0
   StartingItems:
   - ItemID: item_wood_hammer_one_hand
     ChanceToEquip: 0
     ChanceToEquipMaxRoll: 0
-  GlobalIndicator: indicator_global_carpenter
   SkillsActiveByDefault:
-  - skill_carry
   - skill_craft_wood
   - skill_misc
   - skill_craft_stone
+  PlayerCanEditLevelUpSkills: 0
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp:
   - skill_craft_wood
   - skill_misc
   - skill_craft_stone
+  StatusesToAdd: []
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1

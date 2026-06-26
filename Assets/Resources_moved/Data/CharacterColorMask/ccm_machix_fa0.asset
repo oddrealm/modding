@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa18d667109b9247a65849dba25a10a, type: 3}
+  m_Name: ccm_machix_fa0
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Priority: 0
+  Pairs:
+  - BodyPart: 2
+    Target: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+  - BodyPart: 1
+    Target: {r: 0.5943396, g: 0.43679142, b: 0.32800817, a: 1}
+  - BodyPart: 8
+    Target: {r: 0.6886792, g: 0.5126018, b: 0.41255784, a: 1}
+  - BodyPart: 144
+    Target: {r: 0.4811321, g: 0.37012157, b: 0.23829655, a: 1}
+  - BodyPart: 288
+    Target: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+  - BodyPart: 68
+    Target: {r: 0.8584906, g: 0.7511793, b: 0.64386797, a: 1}

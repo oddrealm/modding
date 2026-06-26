@@ -22,10 +22,10 @@ MonoBehaviour:
   Name: Noble Strength
   NamePlural: 
   InlineIcon: <sprite=1904>
-  Description: 
+  Description: A kingly power emanates from this leader of humans.
   DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.85098046, g: 0.6156863, b: 0.2509804, a: 1}
   Type: Status
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 2141
+  Order: 2174

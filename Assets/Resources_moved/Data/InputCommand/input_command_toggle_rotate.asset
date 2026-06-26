@@ -16,23 +16,23 @@ MonoBehaviour:
   TooltipID: tooltip_input_toggle_rotate
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 2
   InputState: 4
-  DeferTo: []
   DefaultTriggers:
   - Hotkeys:
-    - Down: 1
-      Hold: 0
-      Up: 0
-      Key: 121
+    - Motion: 2
+      Key: 114
+      Mouse: 0
+    - Motion: -1
+      Key: 306
       Mouse: 0
   ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
-  IsToggle: 1
-  BtnsForceActive: 1
-  MaxIncrement: 1
+  IsToggle: 0
   PlayerCanEdit: 1
+  IgnoreModifiers: 0
   PrintEvents: 0

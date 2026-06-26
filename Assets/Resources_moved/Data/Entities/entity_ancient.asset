@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 0
   TooltipID: tooltip_entity_ancient
-  TagIDs: []
+  TagIDs:
+  - tag_entity_size_large
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
@@ -22,11 +23,9 @@ MonoBehaviour:
   MaxLifeTime: -1
   MaxDefaultSimTime: 14400
   EntitySimulationID: simulation_entity_default
-  SizeTagID: tag_entity_size_medium
+  SizeTagID: tag_entity_size_large
   LanguagesSpoken:
   - language_engel
-  DefaultLeaderRoles:
-  - 
   CompanionType: 2
   CompanionPermanenceType: 1
   ReproductionType: 0
@@ -136,6 +135,21 @@ MonoBehaviour:
   - ProfessionID: profession_arcanist
     CanAssign: 1
     CanSpawnWith: 1
+  - ProfessionID: profession_king
+    CanAssign: 1
+    CanSpawnWith: 0
+  - ProfessionID: profession_queen
+    CanAssign: 1
+    CanSpawnWith: 0
+  - ProfessionID: profession_chief
+    CanAssign: 1
+    CanSpawnWith: 0
+  - ProfessionID: profession_dominus
+    CanAssign: 1
+    CanSpawnWith: 0
+  - ProfessionID: profession_primarch
+    CanAssign: 1
+    CanSpawnWith: 0
   PermittedItemSlots:
   - item_slot_left_hand
   - item_slot_right_hand
@@ -157,6 +171,7 @@ MonoBehaviour:
   - entity_status_aging_by_day
   - entity_status_ancient_buffs
   - entity_status_can_be_archenthrall
+  - entity_status_ancient_wisdom
   Ages:
   - entity_age_ancient_adult
   Diets: []
@@ -183,11 +198,11 @@ MonoBehaviour:
   - AttributeID: attribute_happiness
     StartingBase: 100
   - AttributeID: attribute_health
-    StartingBase: 350
+    StartingBase: 1050
   - AttributeID: attribute_hunger
     StartingBase: 100
   - AttributeID: attribute_level
-    StartingBase: 1
+    StartingBase: 0
   - AttributeID: attribute_move_speed
     StartingBase: 24
   - AttributeID: attribute_none
@@ -204,5 +219,8 @@ MonoBehaviour:
     StartingBase: 0
   - AttributeID: attribute_xp
     StartingBase: 0
+  - AttributeID: attribute_wisdom
+    StartingBase: 10
   Biomes: []
+  ProhibitedSeasons: []
   StateOptions: []

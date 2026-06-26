@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Build Skyberry Wine
   NamePlural: 
   InlineIcon: <sprite=606>
   Description: Prepare to meet god. This drink is potent.
+  DiscoveryHint: 
   Icon: sp_skyberry_wine_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 648
+  Order: 617

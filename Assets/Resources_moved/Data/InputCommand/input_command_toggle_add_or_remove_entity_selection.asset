@@ -16,15 +16,13 @@ MonoBehaviour:
   TooltipID: tooltip_input_toggle_add_or_remove_entity_selection
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 2
   InputState: 5
-  DeferTo: []
   DefaultTriggers:
   - Hotkeys:
-    - Down: 0
-      Hold: 1
-      Up: 0
+    - Motion: 4
       Key: 304
       Mouse: 0
   ActiveUpdate: 0
@@ -32,7 +30,6 @@ MonoBehaviour:
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
   IsToggle: 0
-  BtnsForceActive: 1
-  MaxIncrement: 1
   PlayerCanEdit: 1
+  IgnoreModifiers: 1
   PrintEvents: 0

@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: notif_entity_stuck
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: 
+  TooltipID: tooltip_notif_entity_stuck
   TagIDs:
   - tag_notif_group_entity
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   NotifGroup: tag_notif_group_entity
   SFXGroupID: sfx_notif_bad
@@ -30,3 +31,4 @@ MonoBehaviour:
     PauseGameOnCreate: 0
     HighlightOnCreate: 0
     HighlightText: <sprite=1654>
+    IsOverride: 0

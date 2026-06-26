@@ -20,6 +20,7 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 54
   UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
@@ -46,7 +47,7 @@ MonoBehaviour:
     Invert: 0
     SourceTagObjectRequirement0: 
     SourceTagObjectRequirement1: 
-    ElapsedTime: 60
+    ElapsedTime: 180
   Triggers:
   - Comment: Has Water
     ID: tag_trigger_well_has_water
@@ -61,6 +62,7 @@ MonoBehaviour:
     DeactivateImmediate: 0
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -106,8 +108,14 @@ MonoBehaviour:
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

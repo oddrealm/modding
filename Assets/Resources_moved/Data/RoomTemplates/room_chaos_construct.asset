@@ -17,18 +17,24 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
   CategoryID: room_category_arcana
   ResearchKey: research_ancient_crafting1
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_chaos_construct
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_chaos_construct
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_chaos_construct
   DefaultAutoJobs:
   - BlueprintID: blueprint_item_adepts_aeternum
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -36,7 +42,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_arcane_dust
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -44,7 +50,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_architect_aeternum
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -52,7 +58,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_dominators_aeternum
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -60,7 +66,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_fledgling_aeternum
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -68,7 +74,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_invokers_aeternum
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -76,7 +82,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_makeshift_aeternum
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -84,7 +90,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_primarchs_aeternum
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
@@ -92,7 +98,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -102,14 +108,19 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_item_staff_of_focus_two_hand
     Settings:
-      Priority: 1
+      Priority: 0
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_machix
+    Settings:
+      Priority: 3
       AutoJobType: 0
     ProhibitedResources: []
     PermittedResources: []
     ProhibitedLocations: []
     PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

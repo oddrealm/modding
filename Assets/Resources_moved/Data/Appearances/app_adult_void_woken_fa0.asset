@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Gender: female
   Race: race_void_woken
@@ -31,13 +32,11 @@ MonoBehaviour:
   SleepFX: []
   DeathFX: []
   Accessories: []
-  KilledSFX: sfx_void_woken_female_killed
-  HitSFX: sfx_void_woken_female_hit
-  SelectPositiveSFX: sfx_void_woken_female_select_positive
-  SelectNegativeSFX: sfx_void_woken_female_select_negative
-  OrderPositiveSFX: sfx_void_woken_female_order_positive
-  OrderNegativeSFX: sfx_void_woken_female_order_negative
+  KilledSFX: sfx_void_woken_death
+  HitSFX: sfx_void_woken_select_negative
+  SelectPositiveSFX: sfx_void_woken_select_positive
+  SelectNegativeSFX: sfx_void_woken_select_negative
+  OrderPositiveSFX: sfx_void_woken_select_positive
+  OrderNegativeSFX: sfx_void_woken_select_negative
   ColorMaskID: ccm_void_woken_fa0
   AnimationsID: voidwoken
-  ColorMask: {fileID: 11400000, guid: 940d83e2ebaf014478ae7e3acc88edf7, type: 2}
-  Animations: {fileID: 11400000, guid: 24d9e9623b3e3354e8a6f2beafffe125, type: 2}

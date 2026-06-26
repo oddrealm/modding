@@ -19,13 +19,13 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: You discovered the fish, {0}.
-  Name: You discovered the fish, {0}.
-  NamePlural: 
-  InlineIcon: 
+  Name: Fish Discovered
+  NamePlural: Fish Discovered
+  InlineIcon: <sprite=302>
   Description: 
   DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3624
+  Order: 1494

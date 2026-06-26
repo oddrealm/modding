@@ -1,0 +1,232 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abd98f049dd8f44ca21354994507dca, type: 3}
+  m_Name: entity_status_metabolism_tomek
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: tooltip_entity_status_metabolism_tomek
+  TagIDs:
+  - tag_statuses
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 0
+  ShowIndicator: 0
+  Notification: 
+  SourceTooltipID: 
+  ExpireTimeMinutesMin: 0
+  ExpireTimeMinutesMax: 0
+  StatusesToRemove: []
+  StatusesToAddOnExpire: []
+  PermittedGenders: []
+  PermittedFactions:
+  - faction_player
+  - faction_captured
+  StatusesToProhibit: []
+  StatusesToDisable: []
+  TooltipBackgroundColor: {r: 0.105882354, g: 0.47219813, b: 0.6666667, a: 1}
+  ColorMask: 
+  Accessory: 
+  IdleFXGroup: 
+  MaskIsThreat: 0
+  Actions:
+  - Comment: Lower Hunger Over Time
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 30
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 0
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_hunger
+      SourceID: 
+      Amount: -1
+      Max: 0
+      Permanent: 1
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Lower Energy Over Time
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 30
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 0
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_energy
+      SourceID: 
+      Amount: -1
+      Max: 0
+      Permanent: 1
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Lower Thirst Over Time
+    ConditionTarget: 
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions: []
+    TimeThresholdMinutes: 15
+    RandomChance: 0
+    ActivationAction: 1
+    DeactivationAction: 0
+    ActionID: 
+    Buffs:
+    - TargetID: attribute_thirst
+      SourceID: 
+      Amount: -1
+      Max: 0
+      Permanent: 1
+    Statuses: []
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Add hungry status if hunger is low.
+    ConditionTarget: attribute_hunger
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 2499668344035082245
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 2
+    DeactivationAction: 0
+    ActionID: 
+    Buffs: []
+    Statuses:
+    - entity_status_hungry_tomek
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Add thirsty status if thirst is low
+    ConditionTarget: attribute_thirst
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 2499668344035082246
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 2
+    DeactivationAction: 0
+    ActionID: 
+    Buffs: []
+    Statuses:
+    - entity_status_thirsty
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Add tired status if energy is low.
+    ConditionTarget: attribute_energy
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 2499668344035082247
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 2
+    DeactivationAction: 0
+    ActionID: 
+    Buffs: []
+    Statuses:
+    - entity_status_tired
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Add starving status if hunger is zero.
+    ConditionTarget: attribute_hunger
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 2499668344035082248
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 2
+    DeactivationAction: 5
+    ActionID: 
+    Buffs: []
+    Statuses:
+    - entity_status_starving_tomek
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  - Comment: Add dehydrated status if thirst is zero
+    ConditionTarget: attribute_thirst
+    HideInTooltips: 0
+    ActivationID: 
+    Conditions:
+    - rid: 2499668344035082249
+    TimeThresholdMinutes: 0
+    RandomChance: 0
+    ActivationAction: 2
+    DeactivationAction: 5
+    ActionID: 
+    Buffs: []
+    Statuses:
+    - entity_status_dehydrated
+    SpawnID: 
+    SpawnMin: 0
+    SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
+  AutoJobs: []
+  DialogueOptions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2499668344035082245
+      type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0.25
+        Normalized: 1
+    - rid: 2499668344035082246
+      type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0.25
+        Normalized: 1
+    - rid: 2499668344035082247
+      type: {class: LessThanEqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0.1
+        Normalized: 1
+    - rid: 2499668344035082248
+      type: {class: EqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0
+        Normalized: 0
+    - rid: 2499668344035082249
+      type: {class: EqualCondition, ns: , asm: Assembly-CSharp}
+      data:
+        Amount: 0
+        Normalized: 0

@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_can_be_time_weaved
   - tag_plants
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 75
   MaxLifeTime: 7920
   ReproduceTimeInterval: 1440
   MaxNaturalSpawnCount: 999
@@ -29,11 +31,13 @@ MonoBehaviour:
   MaxDefaultSimTime: 86400
   MatureThreshold: 0.5
   MatureTag: tag_mature_chronoblast
+  AdditionalMatureTags: []
   MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 2500
+  MaxHeight: -1
   RemoveItemDrops: 
   MatureItemDrops: 
-  MatureTagObjectSpawn: entity_ardyn
+  MatureTagObjectSpawn: esg_chronoblast_ardyn
   AutoClearOnMature: 1
   SpawnItemsOnAutoClear: 1
   GrowthStages: 4
@@ -76,11 +80,14 @@ MonoBehaviour:
   - visuals_plant_chronoblast
   RemoveFX: fx_remove_plant
   Actions:
-  - Comment: 
-    ActionID: tag_can_be_time_weaved
+  - ActionID: tag_can_be_time_weaved
+    Comment: 
+    TargetType: 0
     Buff:
       TargetID: attribute_thirst
+      SourceID: 
       Amount: 100
       Max: 0
       Permanent: 0
+    StatusID: 
   StateOptions: []

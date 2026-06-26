@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: Aeternal
   Name: Aeternal
@@ -24,8 +25,9 @@ MonoBehaviour:
   Description: 'Long ago, the Ancients harnessed their knowledge and ingenuity to
     extend their lifespans, but this came at a steep price: they relinquished their
     physical forms, leaving behind nothing but their eternal skeletons.'
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.227451, g: 0.92549026, b: 0.14509805, a: 1}
   Type: Status
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 91
+  Order: 55

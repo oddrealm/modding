@@ -22,10 +22,10 @@ MonoBehaviour:
   Name: Water
   NamePlural: 
   InlineIcon: <sprite=1158>
-  Description: Clean and fresh.
+  Description: Filled with fresh water.
   DiscoveryHint: 
   Icon: sp_block_fill_water_foreground_icon
   TextColor: {r: 0.18396229, g: 0.43897408, b: 1, a: 1}
-  Type: Block
+  Type: Fill
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 3429
+  Order: 3477

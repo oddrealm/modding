@@ -20,18 +20,21 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Comment: TUTORIAL
-  PreviousSegment: 
+  NextSegment: tutorial_ancients_immortality_tomb2
+  PreviousSegment: tutorial_ancients_immortality_tomb0
   Trigger: 0
+  CustomEventID: 
+  EarlyCompleteCustomEvent: 
   MinGameMinutes: 120
   MinScaledPlayedTime: -1
   MinUnscaledPlayedTime: 3
   MinCooldown: -1
-  Hooks: []
   ActiveRaces:
   - race_ancient
   PermittedWindows: []
   SelectionType: 1
   SelectionInputID: 
+  SelectionTargetType: 0
   AttributeRaces: []
   AttributeType: 0
   MinAttributeAmount: -1
@@ -57,4 +60,3 @@ MonoBehaviour:
     NewLine: 0
     UseOverrideColor: 0
     OverrideColor: {r: 0, g: 0, b: 0, a: 0}
-  NextSegment: tutorial_ancients_immortality_tomb2

@@ -23,6 +23,9 @@ MonoBehaviour:
   StartMin: 0
   StartDefault: 0
   StartMax: 100
+  GlobalBuffsAffectMax: 0
+  GlobalBuffMultiplier: 1
+  CanBeKingdomLevelBuff: 1
   StartMaxIsStartBase: 0
   ShowPositiveAndNegativeSign: 0
   DisplayType: 4

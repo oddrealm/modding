@@ -18,14 +18,14 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Raiders
-  Name: Raiders
-  NamePlural: Raiders
+  Action: Army
+  Name: Army
+  NamePlural: Army
   InlineIcon: <sprite=1095>
   Description: 
   DiscoveryHint: 
-  Icon: 
-  TextColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
+  Icon: sp_overworld_party_raiders_icon
+  TextColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
   Type: Party
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2465
+  Order: 186

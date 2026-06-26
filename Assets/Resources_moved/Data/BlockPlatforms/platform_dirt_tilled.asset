@@ -18,8 +18,11 @@ MonoBehaviour:
   - tag_tilled
   - tag_platform
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 3
   Index: 1
+  IsFertile: 1
   Visuals: visuals_platform_dirt_tilled
   PhysicsHeatPass: 0.05
   HasMeltThreshold: 0
@@ -31,6 +34,7 @@ MonoBehaviour:
   MovementCost: 1
   IsRoof: 0
   CanGrowPlants: 1
+  AllowNaturalPlantGrowth: 0
   GrowTime: -1
   GrowLightReq: -1
   BlocksCursorRaycast: 1
@@ -43,3 +47,5 @@ MonoBehaviour:
   BaseHealth: 25
   BaseToughness: 0
   ItemDropGroupID: 
+  UsageTagIDs:
+  - tag_tilled

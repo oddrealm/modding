@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_attack_spellbook_of_healing_one_hand_heal
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
@@ -26,7 +27,7 @@ MonoBehaviour:
   AttackFishInRange: 0
   SkillID: skill_fight_magic
   AddSkillToOutput: 1
-  MinAmount: 20
+  MinAmount: 5
   MaxAmount: 30
   Range: 128
   StatusesToApplyToTarget: []

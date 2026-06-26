@@ -22,6 +22,7 @@ MonoBehaviour:
   TrackByDefault: 0
   ShowIndicator: 0
   Notification: 
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -38,6 +39,7 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: 
     ConditionTarget: 
@@ -48,16 +50,20 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 4
+    ActionID: 
     Buffs:
     - TargetID: attribute_move_speed
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
     - TargetID: attribute_evasion
+      SourceID: 
       Amount: 5
       Max: 0
       Permanent: 0
     - TargetID: skill_fight_melee
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
@@ -65,6 +71,8 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: occupant_group_tavern
   m_EditorClassIdentifier: 
   DEBUG: 0
-  TooltipID: tooltip_room_occupant_group_occupants
+  TooltipID: tooltip_room_occupant_group_tavern
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   OccupantManageType: 1
   OccupantsMustBePlayerControlled: 1
+  CanCustomize: 0
+  NeedsAllRequirements: 0
   RequiredOccupantTagObjs:
   - TagID: tag_factions
-    TagObjectKey: faction_citizen
+    TagObjectKey: faction_player
     Prohibit: 0

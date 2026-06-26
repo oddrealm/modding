@@ -22,11 +22,11 @@ MonoBehaviour:
   Name: Crit Rate
   NamePlural: 
   InlineIcon: <sprite=387>
-  Description: How likely the Entity's outgoing damage will get 2x damage per attack.
+  Description: How likely the Entity's job and combat output will get a 200% bonus.
     e.,g., A Crit Rate of 1 is a 1 in 100 chance.
   DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.909804, g: 0.75294125, b: 0.43921572, a: 1}
   Type: Attribute
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1195
+  Order: 1188

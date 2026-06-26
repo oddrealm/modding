@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c2d6aa7c9595d444950c9b47e1ac867, type: 3}
   m_Name: selection_party
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_selection_party
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_selection_party
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}

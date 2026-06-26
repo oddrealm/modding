@@ -19,15 +19,14 @@ MonoBehaviour:
   VisibleToPlayer: 1
   MapColor: {r: 0.21568629, g: 0.41176474, b: 0.3647059, a: 1}
   Action: Ancient
-  Name: Ancient
+  Name: Ancient Empire
   NamePlural: Ancients
   InlineIcon: <sprite=240>
-  Description: The Ancients used the Void to achieve immortality while sacrificing
-    their living forms. Although extremely powerful, their inability to procreate
-    has resulted in their numbers dwindling over the last 500 years.
+  Description: The Ancients once ruled vast empires. Now, unable to reproduce, their
+    numbers dwindle and only small pockets of them can be found spread across Odd.
   DiscoveryHint: 
   Icon: sp_race_ancient
   TextColor: {r: 0.6459604, g: 0.2004717, b: 0.8018868, a: 1}
   Type: Race
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 148
+  Order: 115

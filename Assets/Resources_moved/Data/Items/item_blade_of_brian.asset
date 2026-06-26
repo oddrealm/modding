@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_epic
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -49,9 +51,8 @@ MonoBehaviour:
   - attack_blade_of_brian_cut
   - attack_blade_of_brian_pierce
   MerchantBuyValue: 5000
-  MerchantSellValue: 1000
-  TuneRating: -1
-  ItemRarity: item_rarity_epic
+  TuneRating: 9
+  ItemRarity: item_rarity_legendary
   DecayRate: -1
   DecayItem: 
   FlammableChance: 100
@@ -60,11 +61,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_evasion
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

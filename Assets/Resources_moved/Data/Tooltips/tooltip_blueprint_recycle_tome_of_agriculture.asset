@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Recycle Tome Of Agriculture
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=1071>
   Description: Chronicles the evolution of farming, from ancient techniques to advanced
     cultivation methods, shaping the foundation of civilizations.
+  DiscoveryHint: 
   Icon: sp_recycle_tome_of_agriculture_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2442
+  Order: 2513

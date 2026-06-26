@@ -24,7 +24,7 @@ MonoBehaviour:
   MinRandomSkill: 1
   SkillBonuses:
   - Skill: skill_carry
-    Amount: 10
+    Amount: 30
   StartingStatuses: []
   RandomStartingStatuses: []
   FirstName: 

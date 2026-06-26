@@ -17,12 +17,18 @@ MonoBehaviour:
   TagIDs:
   - tag_rooms
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  TrackByDefault: 1
   CategoryID: room_category_homes
   ResearchKey: research_human_home0
   MaxRoomAmount: -1
-  OccupantGroups:
-  - occupant_group_home
+  MaxRoomSize: 100
+  OccupantGroupSettings:
+  - ID: occupant_group_home
+    Enabled: 1
+  - ID: occupant_group_haulers
+    Enabled: 0
   Visuals:
   - visuals_room_display_home
   DefaultAutoJobs:
@@ -36,7 +42,7 @@ MonoBehaviour:
     PermittedLocations: []
   - BlueprintID: blueprint_stock_room
     Settings:
-      Priority: 1
+      Priority: 0
       AutoJobType: 1
     ProhibitedResources:
     - item_type
@@ -44,8 +50,61 @@ MonoBehaviour:
     ProhibitedLocations:
     - block_none
     PermittedLocations: []
+  - BlueprintID: blueprint_eat_item
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_drink_item
+    Settings:
+      Priority: 4
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_cooking_roast
+    Settings:
+      Priority: 0
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_cooking_boil
+    Settings:
+      Priority: 0
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_item_trailmix
+    Settings:
+      Priority: 0
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_butcher_item
+    Settings:
+      Priority: 0
+      AutoJobType: 0
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
+  - BlueprintID: blueprint_sleep_on_ground
+    Settings:
+      Priority: 0
+      AutoJobType: 1
+    ProhibitedResources: []
+    PermittedResources: []
+    ProhibitedLocations: []
+    PermittedLocations: []
   RoomQualities: []
-  ShowProduction: 1
-  ShowStockpile: 1
-  ShowOccupants: 1
-  ShowMarket: 0
+  QualityImprovedByRoof: 1

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Gender: male
   Race: race_ardyn
@@ -41,5 +42,3 @@ MonoBehaviour:
   OrderNegativeSFX: sfx_ardyn_male_order_negative
   ColorMaskID: ccm_ardyn_ma0
   AnimationsID: humanoid
-  ColorMask: {fileID: 11400000, guid: d61fa063c7d1e6c41a15ad493caa978f, type: 2}
-  Animations: {fileID: 11400000, guid: ed5baaf039825aa4e925426c97799d2c, type: 2}

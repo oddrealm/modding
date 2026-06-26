@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -45,13 +47,11 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_vanguard_one_hand
   Attacks:
   - attack_vanguard_one_hand_slam
   MerchantBuyValue: 1045
-  MerchantSellValue: 209
   TuneRating: 6
-  ItemRarity: item_rarity_uncommon
+  ItemRarity: item_rarity_rare
   DecayRate: -1
   DecayItem: 
   FlammableChance: 500
@@ -60,11 +60,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_toughness
+      SourceID: 
       Amount: 10
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

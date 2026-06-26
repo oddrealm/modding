@@ -6,5 +6,5 @@ public struct TagObjectSetting
     public string TagObjectKey;
     public bool Prohibit;
 
-    public bool IsPermitted { get { return !Prohibit; } }
+    public readonly bool IsPermitted { get { return !Prohibit; } }
 }

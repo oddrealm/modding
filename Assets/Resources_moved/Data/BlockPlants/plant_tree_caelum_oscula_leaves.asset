@@ -20,8 +20,9 @@ MonoBehaviour:
   - tag_can_be_watered
   - tag_plants
   DiscoveryDependencies: []
-  VisibleToPlayer: 0
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 25
   MaxLifeTime: -1
   ReproduceTimeInterval: 7200
   MaxNaturalSpawnCount: 0
@@ -30,7 +31,8 @@ MonoBehaviour:
   MaxDefaultSimTime: 14400
   MatureThreshold: 0.5
   MatureTag: tag_mature_tree
-  MatureInlineIcon: <sprite=9>
+  AdditionalMatureTags: []
+  MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 2500
   RemoveItemDrops: spawns_tree_spring_caelum_oscula_leaves
   MatureItemDrops: 

@@ -50,9 +50,8 @@ MonoBehaviour:
   Attacks:
   - attack_lfeths_chain_whip_cut
   MerchantBuyValue: 1505
-  MerchantSellValue: 301
-  TuneRating: -1
-  ItemRarity: item_rarity_epic
+  TuneRating: 9
+  ItemRarity: item_rarity_legendary
   DecayRate: -1
   DecayItem: 
   FlammableChance: 100
@@ -61,11 +60,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_crit_rate
+      SourceID: 
       Amount: 5
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

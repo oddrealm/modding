@@ -16,13 +16,14 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Priority: 1
   TexX: 64
   TexY: 219
-  ColorA: {r: 0.70980394, g: 0.65882355, b: 0.62352943, a: 1}
-  ColorB: {r: 0.59607846, g: 0.5529412, b: 0.52156866, a: 1}
-  ColorC: {r: 0.41960785, g: 0.35686275, b: 0.3137255, a: 1}
+  ColorA: {r: 0.5377358, g: 0.4884981, b: 0.45403165, a: 1}
+  ColorB: {r: 0.46226418, g: 0.40422156, b: 0.36850303, a: 1}
+  ColorC: {r: 0.3679245, g: 0.31958783, b: 0.28635633, a: 1}
   ColorMaskA: {r: 1, g: 0, b: 0, a: 1}
   ColorMaskB: {r: 0, g: 1, b: 0, a: 1}
   ColorMaskC: {r: 0, g: 0, b: 1, a: 1}

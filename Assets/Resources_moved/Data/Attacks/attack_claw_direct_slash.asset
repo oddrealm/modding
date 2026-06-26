@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_attack_claw_direct_slash
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
@@ -27,7 +28,7 @@ MonoBehaviour:
   SkillID: skill_fight_melee
   AddSkillToOutput: 1
   MinAmount: 3
-  MaxAmount: 20
+  MaxAmount: 6
   Range: 14
   StatusesToApplyToTarget: []
   SourceAction: 0

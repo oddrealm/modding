@@ -22,10 +22,11 @@ MonoBehaviour:
   Name: Pit Zargl
   NamePlural: Pit Zargls
   InlineIcon: <sprite=1468>
-  Description: 
+  Description: A slimy creature that devours its prey by encasing it within its body.
+    Kill it before it duplicates!
   DiscoveryHint: 
-  Icon: 
+  Icon: sp_entity_pitzargl
   TextColor: {r: 0.49803922, g: 0.8784314, b: 0.17254902, a: 1}
   Type: Entity
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2298
+  Order: 2322

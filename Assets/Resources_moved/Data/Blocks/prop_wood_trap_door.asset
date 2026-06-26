@@ -19,7 +19,9 @@ MonoBehaviour:
   - tag_trigger_trap_door_drop_entity
   - tag_props
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 55
   UsageTags: []
   DefaultFill: block_fill_air
   TriggerConditions:
@@ -69,6 +71,7 @@ MonoBehaviour:
     DeactivateImmediate: 0
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -85,6 +88,7 @@ MonoBehaviour:
     DeactivateImmediate: 1
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -130,8 +134,14 @@ MonoBehaviour:
   HasItemsOffsetY: 0
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

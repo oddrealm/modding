@@ -17,11 +17,13 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 1
-  VisibleToPlayer: 1
   ShowIndicator: 1
+  ShowOnTooltip: 1
   Notification: notif_entity_void_sickness
+  SourceTooltipID: 
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -34,58 +36,38 @@ MonoBehaviour:
   - faction_captured
   StatusesToProhibit: []
   StatusesToDisable: []
-  TooltipBackgroundColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
+  TooltipBackgroundColor: {r: 0.75686276, g: 0.18039216, b: 0.18039216, a: 1}
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
-  - Comment: Remove health over time
-    ConditionTarget: attribute_energy
-    HideInTooltips: 0
-    ActivationID: 
-    Conditions:
-    - rid: 8269333756994126503
-    TimeThresholdMinutes: 60
-    RandomChance: 0
-    ActivationAction: 1
-    DeactivationAction: 0
-    Buffs:
-    - TargetID: attribute_health
-      Amount: -25
-      Max: 0
-      Permanent: 1
-    Statuses: []
-    SpawnID: 
-    SpawnMin: 0
-    SpawnMax: 0
   - Comment: Remove if energy is full
     ConditionTarget: attribute_energy
     HideInTooltips: 0
     ActivationID: 
     Conditions:
-    - rid: 8269333756994126504
+    - rid: 2499668479991349335
     TimeThresholdMinutes: 0
     RandomChance: 0
     ActivationAction: 5
     DeactivationAction: 0
+    ActionID: 
     Buffs: []
     Statuses:
     - entity_status_void_sick
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:
     version: 2
     RefIds:
-    - rid: 8269333756994126503
-      type: {class: EqualCondition, ns: , asm: Assembly-CSharp}
-      data:
-        Amount: 0
-        Normalized: 0
-    - rid: 8269333756994126504
+    - rid: 2499668479991349335
       type: {class: GreaterThanEqualCondition, ns: , asm: Assembly-CSharp}
       data:
-        Amount: 100
-        Normalized: 0
+        Amount: 0.99
+        Normalized: 1

@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -36,9 +38,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_tome_of_cooking
   CharacterColorMaskID: 
-  CharacterColorMask: {fileID: 0}
   AccessoryID: accessory_item_tome_of_cooking
-  AccessoryData: {fileID: 11400000, guid: f5ad7a122b4942749a9013463552ba35, type: 2}
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -47,10 +47,9 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 75
-  MerchantSellValue: 15
-  TuneRating: 0
+  TuneRating: 1
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
   DecayItem: 
@@ -60,11 +59,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_cook
+      SourceID: 
       Amount: 1
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

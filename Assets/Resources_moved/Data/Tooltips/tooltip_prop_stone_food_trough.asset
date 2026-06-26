@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Stone Food Trough
   NamePlural: 
   InlineIcon: <sprite=657>
   Description: 
+  DiscoveryHint: 
   Icon: sp_stone_food_trough_icon
   TextColor: {r: 0.68235296, g: 0.7294118, b: 0.7490196, a: 1}
   Type: Container
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2916
+  Order: 3021

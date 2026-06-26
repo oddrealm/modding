@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_eat
   MaxLifeTime: 0
@@ -36,9 +38,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_meat_burger
   CharacterColorMaskID: 
-  CharacterColorMask: {fileID: 0}
   AccessoryID: 
-  AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -46,9 +46,8 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_utility
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 55
-  MerchantSellValue: 11
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: 7200
@@ -59,11 +58,11 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_hunger
-      Amount: 70
+      SourceID: 
+      Amount: 85
       Max: 0
       Permanent: 1
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

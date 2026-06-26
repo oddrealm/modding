@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0213a4de9e4e74d41b330785bb4c7fff, type: 3}
   m_Name: accessory_item_rose_crown
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Priority: 3
   TexX: 64
   TexY: 180
   ColorA: {r: 1, g: 0.61960787, b: 0.94509804, a: 1}
-  ColorB: {r: 0.92941177, g: 0.44313726, b: 0.85882354, a: 1}
-  ColorC: {r: 0.84705883, g: 0.30980393, b: 0.5647059, a: 1}
+  ColorB: {r: 0.17657894, g: 0.6226415, b: 0.085172676, a: 1}
+  ColorC: {r: 0.1185227, g: 0.5849056, b: 0.08552865, a: 1}
   ColorMaskA: {r: 1, g: 0, b: 0, a: 1}
   ColorMaskB: {r: 0, g: 1, b: 0, a: 1}
   ColorMaskC: {r: 0, g: 0, b: 1, a: 1}

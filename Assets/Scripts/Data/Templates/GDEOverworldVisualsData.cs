@@ -10,6 +10,8 @@ public class GDEOverworldVisualsData : Scriptable
     [Header("Visuals will try to transition with other visuals in this channel")]
     public int TransitionChannel;
     public int TransitionKey = 0;
+    public bool CanTransitionWithOutOfBounds = false;
+    public bool CanTransitionWithSettlement = false;
     public bool HasTransition = false;
     public int TailVariantCount = 0;
     public bool Animated = false;

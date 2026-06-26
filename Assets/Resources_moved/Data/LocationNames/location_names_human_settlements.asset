@@ -12,30 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bd78411bf58f9458e329495654851b, type: 3}
   m_Name: location_names_human_settlements
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Determiner: []
+  PrependChances: 600
   Prepends:
   - Alter-
   - Anvil-
   - Bell-
+  - Big-
   - Calm-
+  - Cold-
   - Dark-
+  - Deep-
   - Ember-
-  - Fire-
+  - Far-
   - Grey-
   - High-
   - Ingle-
   - Jade-
   - Kit-
+  - Kings-
+  - Last-
   - Long-
   - Lost-
   - Little-
   - Merry-
+  - Narrow-
   - New-
   - Old-
   - Pretty-
@@ -43,25 +50,40 @@ MonoBehaviour:
   - Red-
   - Stone-
   - Titan-
+  - Twilight-
   - Under-
   - Vine-
   - West-
   - Yellow-
   - Zero-
+  - Back-
+  - Still-
+  - Break-
+  - Mighty-
+  - Strong-
+  - Mid-
+  - Slip-
+  - Shallow-
+  - Battle-
+  - Safe-
+  - Lady-
   SpaceAfterPrepend: 0
   Names:
+  - Axe
   - Arch
   - Bath
   - Court
+  - Chapel
   - Dam
-  - End
-  - Fall
-  - Gorge
-  - Hall
+  - Dawn
+  - Din
+  - Elm
+  - Horn
   - Ink
   - Joy
   - Knock
   - Leaf
+  - Light
   - Moon
   - Nook
   - Oak
@@ -69,9 +91,59 @@ MonoBehaviour:
   - Quest
   - Rose
   - Sentinel
-  - Tower
   - Valor
-  - Wall
   - Yoke
-  SpaceBeforeAppend: 0
-  Appends: []
+  - Water
+  - Fire
+  - Pine
+  - Seed
+  - Mark
+  - Bucket
+  - Shield
+  - Honor
+  - Near
+  - Knot
+  - Beacon
+  - Night
+  - Day
+  - Lamp
+  - Harp
+  - Slumber
+  - Mason
+  - Smith
+  - Guard
+  AppendChances: 600
+  SpaceBeforeAppend: 1
+  Appends:
+  - Bend
+  - End
+  - Hill
+  - Run
+  - Keep
+  - Tower
+  - Town
+  - Wall
+  - Way
+  - Rest
+  - Hall
+  - Gorge
+  - Fort
+  - Fall
+  - Gate
+  - Ruin
+  - Eyrie
+  - Field
+  - Bridge
+  - Haven
+  - Pass
+  - Hold
+  - Watch
+  - House
+  - Home
+  - Lodge
+  - Inn
+  - Vale
+  - Pass
+  - Creak
+  - Marsh
+  - March

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88947da1edb225d47ba98a8694456b27, type: 3}
+  m_Name: app_child_tomek_ma0
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  Gender: male
+  Race: race_tomek
+  Group: race_tomek_male
+  Iteration: 0
+  AppearanceType: 1
+  AgeType: 1
+  ShadowType: 1
+  Portrait: sp_child_tomek_ma0
+  HealthBarOffset: 0
+  StealthSightingDialogueGroup: 
+  FX: []
+  SleepFX: []
+  DeathFX:
+  - fx_entity_death
+  Accessories: []
+  KilledSFX: sfx_tomek_male_killed
+  HitSFX: sfx_tomek_male_hit
+  SelectPositiveSFX: sfx_tomek_male_select_positive
+  SelectNegativeSFX: sfx_tomek_male_select_negative
+  OrderPositiveSFX: sfx_tomek_male_order_positive
+  OrderNegativeSFX: sfx_tomek_male_order_negative
+  ColorMaskID: ccm_tomek_ma0
+  AnimationsID: smolkin

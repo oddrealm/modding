@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Gender: female
   Race: race_human
@@ -41,5 +42,3 @@ MonoBehaviour:
   OrderNegativeSFX: sfx_human_female_order_negative
   ColorMaskID: ccm_human_fc0
   AnimationsID: humanoid
-  ColorMask: {fileID: 11400000, guid: 071b8eea8c196e941af270b58e9c452f, type: 2}
-  Animations: {fileID: 11400000, guid: ed5baaf039825aa4e925426c97799d2c, type: 2}

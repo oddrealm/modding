@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beedb4eb6f530ce418213157018d62e5, type: 3}
   m_Name: tooltip_tag_item_type_egg
   m_EditorClassIdentifier: 
-  TooltipID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Eggs
-  Name: Eggs
-  NamePlural: 
+  Action: 
+  Name: Egg
+  NamePlural: Eggs
   InlineIcon: <sprite=1412>
   Description: 
+  DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.9921569, g: 0.98823535, b: 0.9803922, a: 1}
-  Type: Type
+  Type: Item Type
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.1137255, a: 1}
-  Order: 1369
+  Order: 1426

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
   Name: Make Chicken And Waffles
@@ -23,8 +24,9 @@ MonoBehaviour:
   InlineIcon: <sprite=616>
   Description: You've heard of chicken and pancakes? Well, be prepared to experience
     a delicacy manifested from the very heavens.
+  DiscoveryHint: 
   Icon: sp_chicken_and_waffles_icon
   TextColor: {r: 0, g: 0.5647059, b: 0.96862745, a: 1}
   Type: Job
   TypeColor: {r: 1, g: 1, b: 1, a: 1}
-  Order: 454
+  Order: 2000

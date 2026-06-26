@@ -23,7 +23,9 @@ MonoBehaviour:
   - tag_can_hatch
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_boil
   - tag_can_eat
@@ -41,9 +43,7 @@ MonoBehaviour:
   DropSFX: sfx_item_drop_soft
   Visuals: visuals_item_egg_raw
   CharacterColorMaskID: 
-  CharacterColorMask: {fileID: 0}
   AccessoryID: 
-  AccessoryData: {fileID: 0}
   Permissions: 0
   Prohibited: 0
   CanStackAttacks: 1
@@ -51,9 +51,8 @@ MonoBehaviour:
   CannotBeUnequipped: 0
   PermittedSlots:
   - item_slot_utility
-  AttackGroup: 
+  Attacks: []
   MerchantBuyValue: 10
-  MerchantSellValue: 2
   TuneRating: 0
   ItemRarity: item_rarity_uncommon
   DecayRate: 14400
@@ -64,6 +63,7 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_hunger
+      SourceID: 
       Amount: 8
       Max: 0
       Permanent: 1
@@ -72,6 +72,7 @@ MonoBehaviour:
   - ActionID: tag_can_boil
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
@@ -80,13 +81,13 @@ MonoBehaviour:
   - ActionID: tag_can_hatch
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: entity_chicken
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions:
   - ActionID: tag_can_hatch
     ActivationTime: 2880

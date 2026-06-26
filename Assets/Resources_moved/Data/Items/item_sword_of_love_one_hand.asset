@@ -20,7 +20,9 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_epic
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  BaseSkillLevel: 0
   UsageTags:
   - tag_can_equip
   MaxLifeTime: 0
@@ -45,14 +47,12 @@ MonoBehaviour:
   PermittedSlots:
   - item_slot_left_hand
   - item_slot_right_hand
-  AttackGroup: attack_group_sword_of_love_one_hand
   Attacks:
   - attack_sword_of_love_one_hand_cut
   - attack_sword_of_love_one_hand_pierce
   MerchantBuyValue: 1505
-  MerchantSellValue: 301
-  TuneRating: -1
-  ItemRarity: item_rarity_epic
+  TuneRating: 9
+  ItemRarity: item_rarity_legendary
   DecayRate: -1
   DecayItem: 
   FlammableChance: 100
@@ -61,11 +61,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_health
+      SourceID: 
       Amount: 100
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

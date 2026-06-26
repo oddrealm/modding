@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1fbe9d986f0ef48aace51b354888fc, type: 3}
+  m_Name: history_entity_injury_bitten
+  m_EditorClassIdentifier: Assembly-CSharp::GDEHistoryData
+  DEBUG: 0
+  TooltipID: 
+  TagIDs: []
+  DiscoveryDependencies: []
+  VisibleToPlayer: 1
+  MapColor: {r: 1, g: 1, b: 1, a: 1}
+  GroupID: 
+  RequirementTagObjIDs:
+  - intelligence_sapient
+  Displays:
+  - displayText: Bitten by a
+    objectID: tag_races
+    useInstance: 0
+    prevHistoryID: 
+    useObjFromPrevHistory: 0
+    goToID: 
+    onSuccessGoTo: 
+    onFailGoTo: 
+    chance:
+      Chance: 0
+      SampleSize: 0
+  MaxOccurrences: 1
+  UseForRandomGen: 1
+  ChanceToOccur:
+    Chance: 5
+    SampleSize: 100
+  MinRequiredTime: 5
+  MaxRequiredTime: -1
+  Buffs: []
+  StatusesToAdd: []
+  StatusesToRemove: []
+  DisabledFeatures: []

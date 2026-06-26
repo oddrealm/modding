@@ -12,16 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9bd3388154074ab9ee631e05391dc, type: 3}
   m_Name: entity_tuning_human
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
+  TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  MaxRandomAge: 100
-  MinRandomAge: 18
-  MaxRandomLevel: 5
-  MinRandomLevel: 1
+  Age: -1
   RandomProfessions: []
   MaxRandomSkill: 10
   MinRandomSkill: 5
@@ -29,23 +26,7 @@ MonoBehaviour:
   - Skill: skill_carry
     Amount: 5
   StartingStatuses: []
-  RandomStartingStatuses:
-  - entity_status_trait_big_boned
-  - entity_status_trait_lazy
-  - entity_status_trait_dull
-  - entity_status_trait_impaired_leg
-  - entity_status_trait_impaired_arm
-  - entity_status_trait_impaired_eye
-  - entity_status_trait_impaired_foot
-  - entity_status_trait_short_legs
-  - entity_status_trait_jack_of_all_trades
-  - entity_status_trait_sickly
-  - entity_status_trait_strong
-  - entity_status_trait_weak
-  - entity_status_trait_fast
-  - entity_status_trait_slow
-  - entity_status_trait_freakishly_big_hands
-  - entity_status_trait_hold_breath_longer
+  RandomStartingStatuses: []
   FirstName: 
   LastName: 
   Appearance: 

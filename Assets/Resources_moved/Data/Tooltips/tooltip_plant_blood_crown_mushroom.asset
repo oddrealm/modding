@@ -24,8 +24,8 @@ MonoBehaviour:
   InlineIcon: <sprite=1855>
   Description: 
   DiscoveryHint: 
-  Icon: sp_blood_crown_mushroom_icon
+  Icon: sp_plant_blood_crown_mushroom_icon
   TextColor: {r: 0, g: 0.63529414, b: 0.27058825, a: 1}
   Type: Mushroom
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 315
+  Order: 297

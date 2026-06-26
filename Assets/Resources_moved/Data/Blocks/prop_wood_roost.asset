@@ -20,53 +20,15 @@ MonoBehaviour:
   - tag_roost_open
   - tag_props
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 55
   UsageTags:
   - tag_roost
   - tag_container
   DefaultFill: block_fill_air
-  TriggerConditions:
-  - ActivateTriggerID: 
-    DeactivateTriggerID: tag_roost_open
-    TriggerType: 10
-    HideInTooltips: 1
-    Invert: 0
-    SourceTagObjectRequirement0: 
-    SourceTagObjectRequirement1: 
-    ElapsedTime: 0
-  - ActivateTriggerID: tag_roost_open
-    DeactivateTriggerID: 
-    TriggerType: 11
-    HideInTooltips: 1
-    Invert: 0
-    SourceTagObjectRequirement0: 
-    SourceTagObjectRequirement1: 
-    ElapsedTime: 0
-  - ActivateTriggerID: tag_roost_open
-    DeactivateTriggerID: 
-    TriggerType: 8
-    HideInTooltips: 1
-    Invert: 0
-    SourceTagObjectRequirement0: 
-    SourceTagObjectRequirement1: 
-    ElapsedTime: 0
-  Triggers:
-  - Comment: Open for an Egg to be laid.
-    ID: tag_roost_open
-    ActiveTooltipID: tag_roost_open
-    InactiveTooltipID: tag_roost_closed
-    Permissions: 0
-    Visuals: 
-    SFX: 
-    FX: 
-    Action: 0
-    ActionTagObjectID: 
-    DeactivateImmediate: 0
-    Buff:
-      TargetID: 
-      Amount: 0
-      Max: 0
-      Permanent: 0
+  TriggerConditions: []
+  Triggers: []
   RevealDistance: 0
   TemperatureSource: 0
   IsRotationFixture: 0
@@ -110,8 +72,14 @@ MonoBehaviour:
   HasItemsOffsetY: 1
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 0
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: 
   RemoveSFX: 
   InteractSFX: 

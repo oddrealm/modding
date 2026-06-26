@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703941300de1452409604be627798c40, type: 3}
   m_Name: research_industry_fiber0
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_research_fiber0
   DEBUG: 0
+  TooltipID: tooltip_research_fiber0
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 0
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Enabled: 1
+  Enabled: 0
   ShowInSaga: 1
   Dependency: 
   Column: 0

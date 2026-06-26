@@ -50,7 +50,6 @@ MonoBehaviour:
   - item_slot_utility
   Attacks: []
   MerchantBuyValue: 5
-  MerchantSellValue: 1
   TuneRating: 0
   ItemRarity: item_rarity_common
   DecayRate: 7200
@@ -61,6 +60,7 @@ MonoBehaviour:
   - ActionID: tag_can_eat
     Buff:
       TargetID: attribute_hunger
+      SourceID: 
       Amount: 11
       Max: 0
       Permanent: 1
@@ -69,11 +69,11 @@ MonoBehaviour:
   - ActionID: tag_can_roast
     Buff:
       TargetID: 
+      SourceID: 
       Amount: 0
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: item_sweet_potato_roasted
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

@@ -47,8 +47,7 @@ MonoBehaviour:
   PermittedSlots: []
   Attacks: []
   MerchantBuyValue: 35
-  MerchantSellValue: 7
-  TuneRating: 1
+  TuneRating: 0
   ItemRarity: item_rarity_common
   DecayRate: -1
   DecayItem: 
@@ -56,5 +55,4 @@ MonoBehaviour:
   StackSize: 5
   Actions: []
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

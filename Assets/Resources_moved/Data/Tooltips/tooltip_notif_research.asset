@@ -16,14 +16,16 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Action: 
-  Name: Research task finished!
-  NamePlural: Research tasks finished!
+  Name: Research Complete
+  NamePlural: Research Complete
   InlineIcon: <sprite=883>
   Description: 
+  DiscoveryHint: 
   Icon: 
-  TextColor: {r: 0.066082224, g: 0.9339623, b: 0.5578809, a: 1}
+  TextColor: {r: 0.105882354, g: 0.6666667, b: 0.28235295, a: 1}
   Type: Notification
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2468
+  Order: 2557

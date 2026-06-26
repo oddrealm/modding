@@ -18,7 +18,9 @@ MonoBehaviour:
   - tag_container
   - tag_props
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 54
   UsageTags:
   - tag_container
   DefaultFill: block_fill_air
@@ -30,7 +32,7 @@ MonoBehaviour:
   RotationFixtureKey: 
   SkillLevel: 3
   Toughness: 0
-  MaxItemCount: 128
+  MaxItemCount: 125
   ItemTypePermissions:
   - tag_item_type_water
   CanShowItems: 0
@@ -67,8 +69,14 @@ MonoBehaviour:
   HasItemsOffsetY: 1
   FullCapacityOffsetX: 0
   FullCapacityOffsetY: 1
+  IsTurret: 0
+  TurretRange: 0
+  TurretFireRate: 1
+  TurretAttackID: 
   IdleFX: 
   UntriggeredFX: 
+  AddFX: 
+  RemoveFX: fx_stone_removed
   AddSFX: 
   RemoveSFX: 
   InteractSFX: sfx_hammer_wood

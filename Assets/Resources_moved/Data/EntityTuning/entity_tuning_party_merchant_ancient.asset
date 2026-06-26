@@ -16,11 +16,9 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  MaxRandomAge: 258000
-  MinRandomAge: 252000
-  MaxRandomLevel: 5
-  MinRandomLevel: 1
+  Age: -1
   RandomProfessions: []
   MaxRandomSkill: 5
   MinRandomSkill: 1

@@ -20,6 +20,7 @@ MonoBehaviour:
   - tag_item
   - tag_item_rarity_uncommon
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   BaseSkillLevel: 3
   UsageTags:
@@ -50,7 +51,6 @@ MonoBehaviour:
   - attack_iron_dagger_one_hand_cut
   - attack_iron_dagger_one_hand_pierce
   MerchantBuyValue: 500
-  MerchantSellValue: 100
   TuneRating: 4
   ItemRarity: item_rarity_uncommon
   DecayRate: -1
@@ -61,11 +61,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: attribute_crit_rate
+      SourceID: 
       Amount: 50
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 1
   TimedActions: []

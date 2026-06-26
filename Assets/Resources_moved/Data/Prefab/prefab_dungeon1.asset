@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93411bf4023950646b46925b4de6f11a, type: 3}
   m_Name: prefab_dungeon1
   m_EditorClassIdentifier: 
-  TooltipID: 
-  GroupID: 
   DEBUG: 0
-  TagIDs: []
+  TooltipID: 
+  TagIDs:
+  - tag_dungeon_default_room
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   SeedOffset: 926337
   UseRandomRotation: 1
+  Buffer: {x: 2, y: 2, z: 0}
   Locations:
   - TagObjectID: platform_stone_tile
     TagObjectID0: 
@@ -70,13 +72,6 @@ MonoBehaviour:
     X: 3
     Y: 1
     Z: 0
-  - TagObjectID: platform_stone_tile
-    TagObjectID0: 
-    TagObjectID1: 
-    TagObjectID2: 
-    X: 3
-    Y: 2
-    Z: 0
   - TagObjectID: block_stone_ornate
     TagObjectID0: 
     TagObjectID1: 
@@ -161,17 +156,45 @@ MonoBehaviour:
     X: 4
     Y: 2
     Z: 0
+  - TagObjectID: prop_stone_door
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 3
+    Y: 1
+    Z: 0
   - TagObjectID: prop_bronze_chest
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 2
+    Y: 2
+    Z: 0
+  - TagObjectID: spawns_treasure_item_pool_mid
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 2
+    Y: 2
+    Z: 0
+  - TagObjectID: block_stone_ornate
     TagObjectID0: 
     TagObjectID1: 
     TagObjectID2: 
     X: 3
     Y: 2
     Z: 0
-  - TagObjectID: spawns_prefab_house_ancient_container_items
+  - TagObjectID: prop_torch
     TagObjectID0: 
     TagObjectID1: 
     TagObjectID2: 
-    X: 3
+    X: 1
+    Y: 1
+    Z: 0
+  - TagObjectID: spawns_treasure_item_pool_surface
+    TagObjectID0: 
+    TagObjectID1: 
+    TagObjectID2: 
+    X: 1
     Y: 2
     Z: 0

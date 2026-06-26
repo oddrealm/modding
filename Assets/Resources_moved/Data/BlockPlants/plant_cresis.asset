@@ -21,17 +21,21 @@ MonoBehaviour:
   - tag_can_be_watered
   - tag_plants
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  RoomQualityAdd: 75
   MaxLifeTime: 5760
   ReproduceTimeInterval: 1440
-  MaxNaturalSpawnCount: 32
-  MaxNaturalReproduceCount: 128
+  MaxNaturalSpawnCount: 16
+  MaxNaturalReproduceCount: 64
   ReproductionPlant: plant_cresis
   MaxDefaultSimTime: 86400
   MatureThreshold: 0.5
   MatureTag: tag_mature_standing
+  AdditionalMatureTags: []
   MatureInlineIcon: <sprite=1183>
   LimitGroupSizeThreshold: 2500
+  MaxHeight: -1
   RemoveItemDrops: spawns_plant_remove_drops_default
   MatureItemDrops: spawns_plant_mature_drops_cresis
   MatureTagObjectSpawn: 
@@ -78,11 +82,14 @@ MonoBehaviour:
   - visuals_plant_cresis
   RemoveFX: fx_remove_plant
   Actions:
-  - Comment: 
-    ActionID: tag_can_be_watered
+  - ActionID: tag_can_be_watered
+    Comment: 
+    TargetType: 0
     Buff:
       TargetID: attribute_thirst
+      SourceID: 
       Amount: 999
       Max: 0
       Permanent: 1
+    StatusID: 
   StateOptions: []

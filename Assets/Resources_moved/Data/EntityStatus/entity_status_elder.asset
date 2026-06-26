@@ -17,11 +17,13 @@ MonoBehaviour:
   TagIDs:
   - tag_statuses
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   TrackByDefault: 0
-  VisibleToPlayer: 1
   ShowIndicator: 0
+  ShowOnTooltip: 1
   Notification: 
+  SourceTooltipID: tooltip_old_age
   ExpireTimeMinutesMin: 0
   ExpireTimeMinutesMax: 0
   StatusesToRemove: []
@@ -38,6 +40,7 @@ MonoBehaviour:
   ColorMask: 
   Accessory: 
   IdleFXGroup: 
+  MaskIsThreat: 0
   Actions:
   - Comment: Randomly kill.
     ConditionTarget: 
@@ -45,11 +48,13 @@ MonoBehaviour:
     ActivationID: 
     Conditions: []
     TimeThresholdMinutes: 10
-    RandomChance: 500
+    RandomChance: 1000
     ActivationAction: 1
     DeactivationAction: 0
+    ActionID: 
     Buffs:
     - TargetID: attribute_health
+      SourceID: 
       Amount: -99999
       Max: 0
       Permanent: 1
@@ -57,6 +62,8 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   - Comment: Move slower.
     ConditionTarget: 
     HideInTooltips: 0
@@ -66,8 +73,10 @@ MonoBehaviour:
     RandomChance: 0
     ActivationAction: 1
     DeactivationAction: 4
+    ActionID: 
     Buffs:
     - TargetID: attribute_move_speed
+      SourceID: 
       Amount: -4
       Max: 0
       Permanent: 0
@@ -75,6 +84,8 @@ MonoBehaviour:
     SpawnID: 
     SpawnMin: 0
     SpawnMax: 0
+    MinMoveDistance: 0
+    MaxMoveDistance: 0
   AutoJobs: []
   DialogueOptions: []
   references:

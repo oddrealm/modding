@@ -16,7 +16,9 @@ MonoBehaviour:
   TooltipID: tooltip_item_rarity_common
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   RarityScore: 0
+  SpawnCountTuningMax: 25
   DisposeIfCannotSpawn: 1
   IsAvailableInCustomLoadout: 1

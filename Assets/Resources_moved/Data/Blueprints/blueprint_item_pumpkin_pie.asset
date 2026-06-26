@@ -24,32 +24,36 @@ MonoBehaviour:
   - skill_misc
   - item_pumpkin_pie
   - skill_cook
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
+  DesignationListOrder: -1
+  SuppressDiscoveredNotif: 0
   SkillPriorityOverride: -1
   XP: 50
-  BaseSkillCheckFailXP: 5
-  BaseSkillLevel: 1
-  AwardXPForEachAction: 0
+  BaseSkillLevel: 10
   CategoryID: blueprint_category_none
-  DesignationListOrder: -1
-  ResearchKey: research_cooking_baking1
+  ResearchKeys:
+  - research_cooking_baking1
+  HideInResearchWindow: 0
   Repeat: 0
   CheckStateForTransition: 0
   MarkItemsAtLocationClaimed: 0
   MarkItemsAtLocationUnclaimed: 0
   SimTime: 0
-  CheckSkillFailure: 0
-  AddTargetAttributeToSkillFailCheck: 0
+  FailJobOnSkillFailure: 0
   TargetAttributeForSkillFailCheck: 
   AddBlockSkillToJobSkill: 0
   OnlyUseResourcesAtJobLocation: 0
-  ShowItemTypeResourcePermissions: 0
-  LocationID: 
+  LocationID: tag_oven
   WorkPosition: 0
   PermissionType: 0
   CanSitDuringJob: 0
-  WorkerID: skill_cook
-  TargetID: 
+  WorkerID0: skill_cook
+  WorkerID1: 
+  TargetID0: 
+  TargetID1: 
+  ResourceRestriction: 0
+  LocationRestriction: 0
   JobActions:
   - ActionType: 0
     ResourceID: item_pumpkin_raw
@@ -79,20 +83,21 @@ MonoBehaviour:
     AnimationHitEvent: 1
     AnimStartFX: 
     AnimStartSFX: 
+  IsInstant: 0
   ProgressWorkerAttribute: 
-  ProgressMax: 100
   ProgressBarType: 2
   ProgressFXMaxX: 0
   ProgressFXMinX: 0
   ProgressFXMaxY: 0
   ProgressFXMinY: 0
   Clear:
-    Layer: 16
+    Layer: 0
     DisableRemoveSpawns: 0
   RevealDistance: 0
   SpawnCount: 3
   SpawnTagID: 
   SpawnTagObjectID: item_pumpkin_pie
+  ConsumeWorker: 0
   ChangeFillMass: 0
   SetMass: 0
   TriggerActivationID: 
@@ -101,8 +106,12 @@ MonoBehaviour:
   OnJobQuitActionID: 
   OnJobFinishActionID: 
   OnItemConsumeActionID: 
+  TargetIsConsumer: 0
   DisableConsumeSpawns: 0
-  SetTargetFactionTo: 
+  SetTargetFactionOnComplete: 
+  SetTargetFactionOnSkillFailure: 
+  OnProgressWorkerBuffs: []
+  OnProgressTargetBuffs: []
   OnFinishWorkerBuffs: []
   OnFinishWorkerStatusAdds: []
   OnFinishWorkerStatusRemoves: []
@@ -111,7 +120,6 @@ MonoBehaviour:
   OnFinishTargetStatusRemoves: []
   TryCatchFish: 0
   TryHarvestFruit: 0
-  CanSelectTarget: 0
   ShowWorkOutputActionText: 1
   OnFinishedFX: 
   WorkFX: fx_block_hit
@@ -124,9 +132,5 @@ MonoBehaviour:
   ProhibitedCursorVisualsOverride: []
   Visuals:
   - visuals_item_pumpkin_pie
-  ShowVisualsIfStarted: 1
   MaxAutoJobQueueCount: 9
   DisposeIfRequirementsNotMet: 0
-  DisposeIfNoSourceEntity: 0
-  AutoJobOnCreateCooldown: 0
-  AutoJobOnFreedCooldown: 0

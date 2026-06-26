@@ -20,14 +20,13 @@ MonoBehaviour:
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Category: 5
   InputState: -1
-  DeferTo: []
   DefaultTriggers: []
   ActiveUpdate: 0
   ActiveUpdateDelaySeconds: 0
   CanTriggerOverUI: 1
   CanTriggerOutsideScreen: 1
   IsToggle: 0
-  BtnsForceActive: 0
   MaxIncrement: 1
   PlayerCanEdit: 0
+  HotkeyCountMustBeExact: 0
   PrintEvents: 0

@@ -50,7 +50,6 @@ MonoBehaviour:
   Attacks:
   - attack_thresk_one_hand_strike
   MerchantBuyValue: 220
-  MerchantSellValue: 44
   TuneRating: 3
   ItemRarity: item_rarity_rare
   DecayRate: -1
@@ -61,11 +60,11 @@ MonoBehaviour:
   - ActionID: tag_can_equip
     Buff:
       TargetID: skill_plant
+      SourceID: 
       Amount: 5
       Max: 0
       Permanent: 0
     Status: 
     SpawnID: 
   StateOptions: []
-  IsAvailableInCustomLoadout: 0
   TimedActions: []

@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: tooltip_attack_bite_direct_venom
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   ShowOnAttacksDisplay: 1
   ActivationWeight: 100
@@ -27,7 +28,7 @@ MonoBehaviour:
   SkillID: skill_fight_melee
   AddSkillToOutput: 1
   MinAmount: 5
-  MaxAmount: 15
+  MaxAmount: 7
   Range: 14
   StatusesToApplyToTarget:
   - entity_status_poisoned

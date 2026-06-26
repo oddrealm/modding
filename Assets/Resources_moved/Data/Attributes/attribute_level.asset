@@ -16,12 +16,16 @@ MonoBehaviour:
   TooltipID: tooltip_attribute_level
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   IsMainAttribute: 0
   ShowInAttributeDisplay: 1
   StartMin: 1
   StartDefault: 1
   StartMax: 99
+  GlobalBuffsAffectMax: 0
+  GlobalBuffMultiplier: 1
+  CanBeKingdomLevelBuff: 0
   StartMaxIsStartBase: 0
   ShowPositiveAndNegativeSign: 0
   DisplayType: 1

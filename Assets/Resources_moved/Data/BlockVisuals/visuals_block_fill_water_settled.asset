@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 0, g: 0.31322837, b: 0.9245283, a: 0.5019608}
   TextureX: 192
   TextureY: 0

@@ -18,7 +18,7 @@ MonoBehaviour:
   DiscoveryDependencies: []
   VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  Action: Night Ghost
+  Action: 
   Name: Night Ghost
   NamePlural: 
   InlineIcon: <sprite=323>
@@ -28,4 +28,4 @@ MonoBehaviour:
   TextColor: {r: 0, g: 0.5647059, b: 0.9686275, a: 1}
   Type: Fish
   TypeColor: {r: 0.14117648, g: 0.12941177, b: 0.11372549, a: 1}
-  Order: 2152
+  Order: 2174

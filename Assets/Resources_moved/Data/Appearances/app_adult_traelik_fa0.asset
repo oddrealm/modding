@@ -16,6 +16,7 @@ MonoBehaviour:
   TooltipID: 
   TagIDs: []
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
   Gender: female
   Race: race_traelik
@@ -40,5 +41,3 @@ MonoBehaviour:
   OrderNegativeSFX: sfx_traelik_female_order_negative
   ColorMaskID: ccm_traelik_fa0
   AnimationsID: traelik
-  ColorMask: {fileID: 11400000, guid: 6ca8e4933b1522348a72d27956ba0ee1, type: 2}
-  Animations: {fileID: 11400000, guid: dfb0cd3fa3a71c346b782e9b7eafefd2, type: 2}

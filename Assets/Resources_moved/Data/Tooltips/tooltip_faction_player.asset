@@ -23,10 +23,10 @@ MonoBehaviour:
   NamePlural: Citizens
   InlineIcon: <sprite=947>
   Description: The player can control this entity, access their racial technology,
-    and change their profession.
+    and change their profession (if adult).
   DiscoveryHint: 
   Icon: 
   TextColor: {r: 0.10588236, g: 0.6666667, b: 0.28235295, a: 1}
   Type: Faction
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 1039
+  Order: 1019

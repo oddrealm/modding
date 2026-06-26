@@ -21,11 +21,11 @@ MonoBehaviour:
   Action: Ocean
   Name: Ocean
   NamePlural: 
-  InlineIcon: <sprite=1217>
+  InlineIcon: <sprite=1930>
   Description: Dark, blue water stretches as far as the eye can see.
   DiscoveryHint: 
   Icon: sp_biome_ocean_icon
   TextColor: {r: 0.22358674, g: 0.4952088, b: 0.836478, a: 1}
   Type: 
   TypeColor: {r: 0.83921576, g: 0.7490196, b: 0.654902, a: 1}
-  Order: 2212
+  Order: 2243

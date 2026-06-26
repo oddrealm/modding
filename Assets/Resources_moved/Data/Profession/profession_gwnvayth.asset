@@ -12,29 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca836ab91d894004bac38b4ef2fca63d, type: 3}
   m_Name: profession_gwnvayth
   m_EditorClassIdentifier: 
-  TooltipID: tooltip_profession_gwnvayth
-  GroupID: 
   DEBUG: 0
+  TooltipID: tooltip_profession_gwnvayth
   TagIDs:
   - tag_professions
   DiscoveryDependencies: []
+  VisibleToPlayer: 1
   MapColor: {r: 1, g: 1, b: 1, a: 1}
-  AutoCreateUniform: 0
-  EarnBonusXPInCombat: 0
-  ResearchKey: 
-  VisibleToPlayer: 0
-  CanBeAssigned: 0
-  CanBeChanged: 0
-  CanDoSupplementCarryActions: 0
-  CanLevelUp: 0
+  MaxMembers: 1
+  OrderGroup: 0
+  AutoCreateUniform: 1
+  ResearchKey: research_gwdir_town_hall0
+  RequiredRaceID: race_gwdir
+  RequiredGenderID: female
+  CanBeAssigned: 1
+  CanBeChanged: 1
   FavoursRangedAttackItems: 0
-  DefaultItems: []
+  IsCombatProfession: 0
+  IsLeader: 1
   StartingItems: []
-  GlobalIndicator: indicator_global_gwnvayth
   SkillsActiveByDefault:
-  - skill_carry
-  - skill_misc
+  - skill_plant
+  PlayerCanEditLevelUpSkills: 1
+  RandomSkillsToIncreaseOnLevelUp: 0
   SkillsToIncreaseOnLevelUp: []
+  StatusesToAdd:
+  - entity_status_gwdir_gwnvayth
   SkillPriorities:
   - SkillID: skill_alchemy
     Priority: 1
